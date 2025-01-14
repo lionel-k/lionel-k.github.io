@@ -9,7 +9,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-black text-white">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container max-w-screen-xl mx-auto flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <BookOpen className="h-6 w-6 text-[#DAA520]" />
           <span className="text-xl font-bold text-[#DAA520]">

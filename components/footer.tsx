@@ -5,12 +5,14 @@ import { NewsletterForm } from "@/components/newsletter-form";
 export function Footer() {
   return (
     <footer className="border-t bg-black text-white">
-      <div className="container py-8 md:py-12">
+      <div className="container max-w-screen-xl mx-auto py-8 md:py-12">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           <div>
             <Link href="/" className="flex items-center space-x-2">
               <BookOpen className="h-6 w-6 text-[#DAA520]" />
-              <span className="text-xl font-bold text-[#DAA520]">African Stories</span>
+              <span className="text-xl font-bold text-[#DAA520]">
+                African Stories
+              </span>
             </Link>
             <p className="mt-4 text-sm text-gray-400">
               Discover the beauty of African languages through bilingual books.
@@ -18,7 +20,9 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-[#DAA520]">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-[#DAA520]">
+              Quick Links
+            </h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <Link href="/en/books" className="text-sm hover:text-[#DAA520]">

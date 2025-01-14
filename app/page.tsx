@@ -32,7 +32,7 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative bg-black py-20 text-white">
-        <div className="container relative z-10">
+        <div className="container max-w-screen-xl mx-auto relative z-10">
           <div className="mx-auto max-w-3xl text-left">
             {" "}
             {/* Changed text-center to text-left */}
@@ -66,7 +66,7 @@ export default function Home() {
 
       {/* Languages Section */}
       <section className="py-16 bg-white">
-        <div className="container">
+        <div className="container max-w-screen-xl mx-auto">
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
             Available African Languages
           </h2>
@@ -96,7 +96,7 @@ export default function Home() {
 
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container">
+        <div className="container max-w-screen-xl mx-auto">
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
             Frequently Asked Questions
           </h2>
@@ -117,7 +117,7 @@ export default function Home() {
 
       {/* Newsletter Section */}
       <section className="bg-black py-16 text-white">
-        <div className="container">
+        <div className="container max-w-screen-xl mx-auto">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-[#DAA520]">
               Get Your Free Coloring Book
