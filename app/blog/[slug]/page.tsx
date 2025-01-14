@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { useRouter } from "next/router";
+import { BLOG_POSTS } from "@/app/blog/page"; // Ensure this path is correct
 
 interface BlogPostParams {
   params: {
@@ -11,7 +13,8 @@ interface BlogPostParams {
 const POST_CONTENT = {
   "importance-of-bilingual-education": {
     title: "The Importance of Bilingual Education for African Children",
-    description: "Discover how bilingual education can help preserve cultural heritage while preparing children for a global future.",
+    description:
+      "Discover how bilingual education can help preserve cultural heritage while preparing children for a global future.",
     date: "2024-03-20",
     author: "Dr. Sarah Johnson",
     content: `
@@ -38,9 +41,11 @@ Bilingual education is not just about learning two languages; it's about preserv
   },
 };
 
-export async function generateMetadata({ params }: BlogPostParams): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: BlogPostParams): Promise<Metadata> {
   const post = POST_CONTENT[params.slug as keyof typeof POST_CONTENT];
-  
+
   if (!post) {
     return {
       title: "Not Found",
@@ -66,6 +71,12 @@ export async function generateMetadata({ params }: BlogPostParams): Promise<Meta
   };
 }
 
+export async function generateStaticParams() {
+  return BLOG_POSTS.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
 export default function BlogPost({ params }: BlogPostParams) {
   const post = POST_CONTENT[params.slug as keyof typeof POST_CONTENT];
 
@@ -81,9 +92,7 @@ export default function BlogPost({ params }: BlogPostParams) {
           By {post.author} · {new Date(post.date).toLocaleDateString()}
         </p>
       </header>
-      <div className="prose prose-lg mx-auto">
-        {post.content}
-      </div>
+      <div className="prose prose-lg mx-auto">{post.content}</div>
     </article>
   );
 }

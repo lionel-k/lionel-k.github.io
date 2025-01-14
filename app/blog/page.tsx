@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { formatDate } from "@/lib/utils";
 
-const BLOG_POSTS = [
+export const BLOG_POSTS = [
   {
     slug: "importance-of-bilingual-education",
     title: "The Importance of Bilingual Education for African Children",
