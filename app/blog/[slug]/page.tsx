@@ -1,7 +1,8 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { useRouter } from "next/router";
-import { BLOG_POSTS } from "@/app/blog/page"; // Ensure this path is correct
+import { getPostBySlug, getPostSlugs } from "@/lib/posts";
+import { remark } from "remark";
+import html from "remark-html";
 
 interface BlogPostParams {
   params: {
@@ -9,42 +10,17 @@ interface BlogPostParams {
   };
 }
 
-// This would typically come from a CMS or markdown files
-const POST_CONTENT = {
-  "importance-of-bilingual-education": {
-    title: "The Importance of Bilingual Education for African Children",
-    description:
-      "Discover how bilingual education can help preserve cultural heritage while preparing children for a global future.",
-    date: "2024-03-20",
-    author: "Dr. Sarah Johnson",
-    content: `
-# The Importance of Bilingual Education for African Children
-
-Bilingual education plays a crucial role in preserving cultural heritage while preparing children for a global future. This article explores the benefits and challenges of bilingual education in the African context.
-
-## Benefits of Bilingual Education
-
-1. Cultural Preservation
-2. Cognitive Development
-3. Global Opportunities
-
-## Implementation Strategies
-
-- Start early
-- Use engaging materials
-- Create immersive environments
-
-## Conclusion
-
-Bilingual education is not just about learning two languages; it's about preserving identity while embracing opportunity.
-    `,
-  },
-};
+export async function generateStaticParams() {
+  const slugs = getPostSlugs();
+  return slugs.map((slug) => ({
+    slug: slug.replace(/\.md$/, ""),
+  }));
+}
 
 export async function generateMetadata({
   params,
 }: BlogPostParams): Promise<Metadata> {
-  const post = POST_CONTENT[params.slug as keyof typeof POST_CONTENT];
+  const post = getPostBySlug(params.slug);
 
   if (!post) {
     return {
@@ -54,45 +30,48 @@ export async function generateMetadata({
   }
 
   return {
-    title: post.title,
-    description: post.description,
+    title: post.metadata.title,
+    description: post.metadata.excerpt,
     openGraph: {
-      title: post.title,
-      description: post.description,
+      title: post.metadata.title,
+      description: post.metadata.excerpt,
       type: "article",
-      publishedTime: post.date,
-      authors: [post.author],
+      publishedTime: post.metadata.date,
+      authors: [post.metadata.author],
     },
     twitter: {
       card: "summary_large_image",
-      title: post.title,
-      description: post.description,
+      title: post.metadata.title,
+      description: post.metadata.excerpt,
     },
   };
 }
 
-export async function generateStaticParams() {
-  return BLOG_POSTS.map((post) => ({
-    slug: post.slug,
-  }));
-}
-
-export default function BlogPost({ params }: BlogPostParams) {
-  const post = POST_CONTENT[params.slug as keyof typeof POST_CONTENT];
+export default async function BlogPost({ params }: BlogPostParams) {
+  const post = getPostBySlug(params.slug);
 
   if (!post) {
     notFound();
   }
 
+  const processedContent = await remark().use(html).process(post.content);
+  const contentHtml = processedContent.toString();
+
   return (
-    <article className="container py-16">
+    <article className="container max-w-screen-xl mx-auto py-16">
       <header className="mb-8 text-center">
-        <h1 className="mb-4 text-4xl font-bold tracking-tight">{post.title}</h1>
+        <h1 className="mb-4 text-4xl font-bold tracking-tight">
+          {post.metadata.title}
+        </h1>
         <p className="text-gray-500">
-          By {post.author} · {new Date(post.date).toLocaleDateString()}
+          By {post.metadata.author} ·{" "}
+          {new Date(post.metadata.date).toLocaleDateString()}
         </p>
       </header>
-      <div className="prose prose-lg mx-auto">{post.content}</div>
+      <div
+        className="prose prose-lg mx-auto"
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      />
     </article>
   );
 }
