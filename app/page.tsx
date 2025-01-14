@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { LANGUAGES } from "@/lib/constants";
+import { FAQ } from "@/components/FAQ";
 
 const FAQ_ITEMS = [
   {
@@ -101,16 +102,7 @@ export default function Home() {
             Frequently Asked Questions
           </h2>
           <div className="mx-auto max-w-3xl">
-            <div className="divide-y divide-gray-200">
-              {FAQ_ITEMS.map((item, index) => (
-                <div key={index} className="py-6">
-                  <h3 className="text-lg font-semibold mb-2">
-                    {item.question}
-                  </h3>
-                  <p className="text-gray-600">{item.answer}</p>
-                </div>
-              ))}
-            </div>
+            <FAQ items={FAQ_ITEMS} />
           </div>
         </div>
       </section>
