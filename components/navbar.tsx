@@ -25,10 +25,10 @@ export function Navbar() {
             Home
           </Link>
           <Link
-            href={`/${currentMarket}/books`}
+            href="/about"
             className="text-sm font-medium text-white hover:text-[#DAA520]"
           >
-            Books
+            About
           </Link>
           <Link
             href="/blog"

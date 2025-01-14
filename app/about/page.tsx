@@ -1,34 +1,27 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { NewsletterForm } from "@/components/newsletter-form";
-import { LANGUAGES } from "@/lib/constants";
 import { FAQ } from "@/components/FAQ";
 
 const FAQ_ITEMS = [
   {
-    question: "What languages are available?",
+    question: "What is the purpose of this site?",
     answer:
-      "We offer books in Kirundi, Kinyarwanda, and Lingala, paired with either English or French translations.",
+      "Our mission is to preserve and promote African heritage through bilingual books.",
   },
   {
-    question: "Are the books suitable for children?",
+    question: "Who are we?",
     answer:
-      "Yes! Our books are designed for readers of all ages, with a focus on family-friendly content that helps preserve African heritage.",
+      "We are a team of passionate individuals dedicated to sharing African stories with the world.",
   },
   {
-    question: "How do bilingual books work?",
+    question: "How can you support us?",
     answer:
-      "Each book features text in both an African language and either English or French, allowing readers to learn and compare both languages side by side.",
+      "You can support us by purchasing our books, sharing our content, and subscribing to our newsletter.",
   },
 ];
 
-const LANGUAGE_IMAGES = {
-  kirundi: "/images/kirundi.png",
-  kinyarwanda: "/images/kinyarwanda.png",
-  lingala: "/images/lingala.png",
-};
-
-export default function Home() {
+export default function About() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
@@ -36,12 +29,11 @@ export default function Home() {
         <div className="container max-w-screen-xl mx-auto relative z-10">
           <div className="mx-auto max-w-3xl text-left">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
-              Discover African Stories in Multiple Languages
+              About Us
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Explore our collection of bilingual books featuring Kirundi,
-              Kinyarwanda, and Lingala. Perfect for families wanting to connect
-              with African heritage and language.
+              Learn more about our mission to connect people with African
+              heritage through bilingual books.
             </p>
             <div className="mt-10 flex items-center justify-start gap-x-6">
               <Link
@@ -61,36 +53,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Languages Section */}
+      {/* About the Brand Section */}
       <section className="py-16 bg-white">
         <div className="container max-w-screen-xl mx-auto">
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-            Available African Languages
+            About the Brand
           </h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            {LANGUAGES.map((language) => (
-              <div
-                key={language}
-                className="rounded-lg border border-gray-200 p-8 text-center"
-              >
-                <img
-                  src={LANGUAGE_IMAGES[language.toLowerCase()]}
-                  alt={`${language} book`}
-                  className="mb-4 w-32 h-32 object-cover rounded-md mx-auto"
-                />
-                <h3 className="text-xl font-semibold mb-4 capitalize">
-                  {language}
-                </h3>
-                <p className="text-gray-600">
-                  Discover our collection of {language} books, available with
-                  English and French translations.
-                </p>
-              </div>
-            ))}
-          </div>
+          <p className="text-center text-lg text-gray-600">
+            Our brand is dedicated to preserving and promoting African heritage
+            through bilingual books. We believe in the power of stories to
+            connect people across cultures and generations.
+          </p>
         </div>
       </section>
 
+      {/* Our Story Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="container max-w-screen-xl mx-auto">
+          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
+            Our Story
+          </h2>
+          <p className="text-center text-lg text-gray-600">
+            Founded by a passionate storyteller, our project began as a way to
+            share the rich tapestry of African narratives with the world. Our
+            founder's journey is one of discovery, connection, and a deep love
+            for the diverse cultures of Africa.
+          </p>
+        </div>
+      </section>
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
         <div className="container max-w-screen-xl mx-auto">
