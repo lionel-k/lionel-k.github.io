@@ -33,7 +33,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-black py-20 text-white">
         <div className="container relative z-10">
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-3xl text-left">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
               Discover African Stories in Multiple Languages
             </h1>
@@ -42,7 +42,8 @@ export default function Home() {
               Kinyarwanda, and Lingala. Perfect for families wanting to connect
               with African heritage and language.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-end gap-x-6">
+              {/* Changed justify-start to justify-end */}
               <Link
                 href="/en/books"
                 className="rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
