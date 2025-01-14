@@ -1,0 +1,65 @@
+import Link from "next/link";
+import { BookOpen } from "lucide-react";
+import { NewsletterForm } from "@/components/newsletter-form";
+
+export function Footer() {
+  return (
+    <footer className="border-t bg-black text-white">
+      <div className="container py-8 md:py-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div>
+            <Link href="/" className="flex items-center space-x-2">
+              <BookOpen className="h-6 w-6 text-[#DAA520]" />
+              <span className="text-xl font-bold text-[#DAA520]">African Stories</span>
+            </Link>
+            <p className="mt-4 text-sm text-gray-400">
+              Discover the beauty of African languages through bilingual books.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-[#DAA520]">Quick Links</h3>
+            <ul className="mt-4 space-y-2">
+              <li>
+                <Link href="/en/books" className="text-sm hover:text-[#DAA520]">
+                  English Books
+                </Link>
+              </li>
+              <li>
+                <Link href="/fr/books" className="text-sm hover:text-[#DAA520]">
+                  French Books
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="text-sm hover:text-[#DAA520]">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/en/faq" className="text-sm hover:text-[#DAA520]">
+                  FAQ
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold text-[#DAA520]">Newsletter</h3>
+            <p className="mt-4 text-sm text-gray-400">
+              Subscribe to get updates and receive a free coloring book.
+            </p>
+            <div className="mt-4">
+              <NewsletterForm />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-8 border-t border-gray-800 pt-8 text-center">
+          <p className="text-sm text-gray-400">
+            © {new Date().getFullYear()} African Stories. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
