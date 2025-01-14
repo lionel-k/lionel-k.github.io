@@ -24,9 +24,10 @@ export function FAQ({ items }: FAQProps) {
         <div key={index} className="py-6">
           <button
             onClick={() => toggleFAQ(index)}
-            className="text-lg font-semibold mb-2 w-full text-left"
+            className="flex justify-between items-center text-lg font-semibold mb-2 w-full text-left"
           >
             {item.question}
+            <span className="ml-2">{openIndex === index ? "-" : "+"}</span>
           </button>
           {openIndex === index && (
             <p className="text-gray-600 mt-2">{item.answer}</p>
