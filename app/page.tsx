@@ -75,7 +75,7 @@ export default function Home() {
                 <img
                   src={LANGUAGE_IMAGES[language.toLowerCase()]}
                   alt={`${language} book`}
-                  className="mb-4 w-full h-32 object-cover rounded-md"
+                  className="mb-4 w-32 h-32 object-cover rounded-md mx-auto"
                 />
                 <h3 className="text-xl font-semibold mb-4 capitalize">
                   {language}
