@@ -6,17 +6,26 @@ import { LANGUAGES } from "@/lib/constants";
 const FAQ_ITEMS = [
   {
     question: "What languages are available?",
-    answer: "We offer books in Kirundi, Kinyarwanda, and Lingala, paired with either English or French translations.",
+    answer:
+      "We offer books in Kirundi, Kinyarwanda, and Lingala, paired with either English or French translations.",
   },
   {
     question: "Are the books suitable for children?",
-    answer: "Yes! Our books are designed for readers of all ages, with a focus on family-friendly content that helps preserve African heritage.",
+    answer:
+      "Yes! Our books are designed for readers of all ages, with a focus on family-friendly content that helps preserve African heritage.",
   },
   {
     question: "How do bilingual books work?",
-    answer: "Each book features text in both an African language and either English or French, allowing readers to learn and compare both languages side by side.",
+    answer:
+      "Each book features text in both an African language and either English or French, allowing readers to learn and compare both languages side by side.",
   },
 ];
+
+const LANGUAGE_IMAGES = {
+  kirundi: "/images/kirundi.png",
+  kinyarwanda: "/images/kinyarwanda.png",
+  lingala: "/images/lingala.png",
+};
 
 export default function Home() {
   return (
@@ -59,10 +68,21 @@ export default function Home() {
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             {LANGUAGES.map((language) => (
-              <div key={language} className="rounded-lg border border-gray-200 p-8 text-center">
-                <h3 className="text-xl font-semibold mb-4 capitalize">{language}</h3>
+              <div
+                key={language}
+                className="rounded-lg border border-gray-200 p-8 text-center"
+              >
+                <img
+                  src={LANGUAGE_IMAGES[language.toLowerCase()]}
+                  alt={`${language} book`}
+                  className="mb-4 w-full h-32 object-cover rounded-md"
+                />
+                <h3 className="text-xl font-semibold mb-4 capitalize">
+                  {language}
+                </h3>
                 <p className="text-gray-600">
-                  Discover our collection of {language} books, available with English and French translations.
+                  Discover our collection of {language} books, available with
+                  English and French translations.
                 </p>
               </div>
             ))}
@@ -80,7 +100,9 @@ export default function Home() {
             <div className="divide-y divide-gray-200">
               {FAQ_ITEMS.map((item, index) => (
                 <div key={index} className="py-6">
-                  <h3 className="text-lg font-semibold mb-2">{item.question}</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {item.question}
+                  </h3>
                   <p className="text-gray-600">{item.answer}</p>
                 </div>
               ))}
@@ -97,8 +119,8 @@ export default function Home() {
               Get Your Free Coloring Book
             </h2>
             <p className="mt-4 text-lg text-gray-300">
-              Subscribe to our newsletter and receive a free printable coloring book
-              featuring African art and culture.
+              Subscribe to our newsletter and receive a free printable coloring
+              book featuring African art and culture.
             </p>
             <NewsletterForm />
           </div>
