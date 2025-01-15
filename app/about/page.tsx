@@ -26,8 +26,8 @@ export default function About() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative bg-black py-20 text-white">
-        <div className="container max-w-screen-xl mx-auto relative z-10">
-          <div className="mx-auto max-w-3xl text-left">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
               About Us
             </h1>
@@ -35,7 +35,7 @@ export default function About() {
               Learn more about our mission to connect people with African
               heritage through bilingual books.
             </p>
-            <div className="mt-10 flex items-center justify-start gap-x-6">
+            <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/en/books"
                 className="rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
@@ -55,7 +55,7 @@ export default function About() {
 
       {/* About the Brand Section */}
       <section className="py-16 bg-white">
-        <div className="container max-w-screen-xl mx-auto">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
             About the Brand
           </h2>
@@ -69,7 +69,7 @@ export default function About() {
 
       {/* Our Story Section */}
       <section className="py-16 bg-gray-100">
-        <div className="container max-w-screen-xl mx-auto">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
             Our Story
           </h2>
@@ -81,9 +81,10 @@ export default function About() {
           </p>
         </div>
       </section>
+
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
-        <div className="container max-w-screen-xl mx-auto">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
             Frequently Asked Questions
           </h2>
@@ -94,7 +95,7 @@ export default function About() {
       </section>
 
       <section className="bg-black text-white">
-        <div className="container max-w-screen-xl mx-auto">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <div className="mx-auto max-w-2xl text-center">
             <NewsletterForm />
           </div>

@@ -12,8 +12,10 @@ export default function BlogPage() {
   const posts = getAllPosts();
 
   return (
-    <div className="container max-w-screen-xl mx-auto py-16">
-      <h1 className="mb-8 text-4xl font-bold tracking-tight">Blog</h1>
+    <div className="container max-w-screen-xl mx-auto py-16 px-4 sm:px-6">
+      <h1 className="mb-8 text-4xl font-bold tracking-tight text-center">
+        Blog
+      </h1>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {posts.map((post) => (
           <article

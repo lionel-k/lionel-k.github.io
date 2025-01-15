@@ -13,19 +13,19 @@ export const NAV_SECTIONS: { [key: string]: NavSection[] } = {
       title: "Books",
       items: [
         {
-          title: "All Books",
-          href: "/en/books",
-          description: "Browse our collection of bilingual African books",
-        },
-        {
           title: "Kirundi Books",
-          href: "/en/books/kirundi",
+          href: "/books/kirundi",
           description: "Books featuring Kirundi language",
         },
         {
           title: "Kinyarwanda Books",
-          href: "/en/books/kinyarwanda",
+          href: "/books/kinyarwanda",
           description: "Books featuring Kinyarwanda language",
+        },
+        {
+          title: "Lingala Books",
+          href: "/books/lingala",
+          description: "Books featuring Lingala language",
         },
       ],
     },
