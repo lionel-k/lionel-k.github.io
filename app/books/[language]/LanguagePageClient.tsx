@@ -24,7 +24,7 @@ export default function LanguagePageClient() {
 
   return (
     <>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col">
         <BreadcrumbNav
           items={[
             { name: "Home", href: "/" },
