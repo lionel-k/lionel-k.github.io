@@ -34,7 +34,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-black py-20 text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-3xl text-left">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
               Discover Lingu.Africa in Multiple Languages
             </h1>
@@ -43,7 +43,7 @@ export default function Home() {
               Kinyarwanda, and Lingala. Perfect for families wanting to connect
               with African heritage and language.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            <div className="mt-10 flex items-center justify-start gap-x-6">
               <Link
                 href="/en/books"
                 className="rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
@@ -68,25 +68,30 @@ export default function Home() {
             Available African Languages
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
-            {LANGUAGES.map((language) => (
-              <div
-                key={language}
-                className="rounded-lg border border-gray-200 p-8 text-center"
-              >
-                <img
-                  src={LANGUAGE_IMAGES[language.toLowerCase()]}
-                  alt={`${language} book`}
-                  className="mb-4 w-32 h-32 object-cover rounded-md mx-auto"
-                />
-                <h3 className="text-xl font-semibold mb-4 capitalize">
-                  {language}
-                </h3>
-                <p className="text-gray-600">
-                  Discover our collection of {language} books, available with
-                  English and French translations.
-                </p>
-              </div>
-            ))}
+            {LANGUAGES.map((language) => {
+              const languageKey =
+                language.toLowerCase() as keyof typeof LANGUAGE_IMAGES;
+
+              return (
+                <div
+                  key={language}
+                  className="rounded-lg border border-gray-200 p-8 text-center"
+                >
+                  <img
+                    src={LANGUAGE_IMAGES[languageKey]}
+                    alt={`${language} book`}
+                    className="mb-4 w-32 h-32 object-cover rounded-md mx-auto"
+                  />
+                  <h3 className="text-xl font-semibold mb-4 capitalize">
+                    {language}
+                  </h3>
+                  <p className="text-gray-600">
+                    Discover our collection of {language} books, available with
+                    English and French translations.
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
