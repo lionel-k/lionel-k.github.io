@@ -69,14 +69,21 @@ export default function BookPageClient() {
       />
       {/* Hero Section */}
       <section className="relative bg-black py-20 text-white">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="mx-auto max-w-3xl text-left">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
+          <div className="max-w-3xl text-left mb-4 md:mb-0">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
               {book.title}
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               {book.description}
             </p>
+          </div>
+          <div className="flex-shrink-0">
+            <img
+              src={`/books/${language}/${book.slug}.png`}
+              alt={`${book.title} cover`}
+              className="w-full max-w-xs rounded-lg"
+            />
           </div>
         </div>
       </section>

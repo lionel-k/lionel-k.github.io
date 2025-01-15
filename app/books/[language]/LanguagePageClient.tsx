@@ -28,7 +28,6 @@ export default function LanguagePageClient() {
         <BreadcrumbNav
           items={[
             { name: "Home", href: "/" },
-            // { name: "Books by Language", href: "/languages" },
             { name: languageData.name, href: `/books/${language}` },
           ]}
         />
