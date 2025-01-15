@@ -1,5 +1,5 @@
 import { languagesConfig } from "@/lib/languagesConfig";
-import BookPageClient from "./BookPageClient";
+import BookPageClient from "@/app/books/[language]/[slug]/BookPageClient";
 
 export async function generateStaticParams() {
   const params: { language: string; slug: string }[] = [];

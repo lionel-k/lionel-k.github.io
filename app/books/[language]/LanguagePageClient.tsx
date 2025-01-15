@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { FAQ } from "@/components/FAQ";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
 export default function LanguagePageClient() {
   const { language } = useParams();
@@ -23,7 +24,14 @@ export default function LanguagePageClient() {
 
   return (
     <>
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-4">
+        <BreadcrumbNav
+          items={[
+            { name: "Home", href: "/" },
+            // { name: "Books by Language", href: "/languages" },
+            { name: languageData.name, href: `/books/${language}` },
+          ]}
+        />
         {/* Hero Section */}
         <section className="relative bg-black py-20 text-white">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">

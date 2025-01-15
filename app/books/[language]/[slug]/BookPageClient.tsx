@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { FAQ } from "@/components/FAQ";
 import { NewsletterForm } from "@/components/newsletter-form";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
 type Book = {
   title: string;
@@ -43,6 +44,13 @@ export default function BookPageClient() {
 
   return (
     <div className="flex flex-col">
+      <BreadcrumbNav
+        items={[
+          { name: "Home", href: "/" },
+          { name: languageData.name, href: `/books/${language}` },
+          { name: book.title, href: `/books/${language}/${slug}` },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative bg-black py-20 text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
