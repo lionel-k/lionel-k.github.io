@@ -89,6 +89,12 @@ export default function Home() {
                     Discover our collection of {language} books, available with
                     English and French translations.
                   </p>
+                  <Link
+                    href={`/books/${languageKey}`}
+                    className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
+                  >
+                    View Books Collection
+                  </Link>
                 </div>
               );
             })}
