@@ -48,6 +48,11 @@ export default function LanguagePageClient() {
                   key={book.title}
                   className="rounded-lg border border-gray-200 p-8 text-center"
                 >
+                  <img
+                    src={book.cover}
+                    alt={`${book.title} cover`}
+                    className="mb-4 w-full h-48 object-cover rounded-md"
+                  />
                   <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
                   <p className="text-gray-600 mb-4">{book.description}</p>
                   <a
