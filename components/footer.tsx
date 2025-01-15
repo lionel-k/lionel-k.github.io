@@ -25,13 +25,27 @@ export function Footer() {
             </h3>
             <ul className="mt-4 space-y-2">
               <li>
-                <Link href="/en/books" className="text-sm hover:text-[#DAA520]">
-                  English Books
+                <Link
+                  href="/books/kirundi"
+                  className="text-sm hover:text-[#DAA520]"
+                >
+                  Kirundi Books
                 </Link>
               </li>
               <li>
-                <Link href="/fr/books" className="text-sm hover:text-[#DAA520]">
-                  French Books
+                <Link
+                  href="/books/kinyarwanda"
+                  className="text-sm hover:text-[#DAA520]"
+                >
+                  Kinyarwanda Books
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/books/lingala"
+                  className="text-sm hover:text-[#DAA520]"
+                >
+                  Lingala Books
                 </Link>
               </li>
               <li>
