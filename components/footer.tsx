@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
-import { NewsletterForm } from "@/components/newsletter-form";
 
 export function Footer() {
   return (
