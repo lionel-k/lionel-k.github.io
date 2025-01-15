@@ -12,7 +12,7 @@ const FAQ_ITEMS = [
   {
     question: "Who are we?",
     answer:
-      "We are a team of passionate individuals dedicated to sharing African stories with the world.",
+      "We are a team of passionate individuals dedicated to sharing Lingu.Africa with the world.",
   },
   {
     question: "How can you support us?",

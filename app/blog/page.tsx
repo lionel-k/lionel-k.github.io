@@ -3,7 +3,7 @@ import { formatDate } from "@/lib/utils";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata = {
-  title: "Blog | African Stories",
+  title: "Blog | Lingu.Africa",
   description:
     "Explore articles about African literature, language learning, and cultural preservation.",
 };

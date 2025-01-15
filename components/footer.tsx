@@ -11,7 +11,7 @@ export function Footer() {
             <Link href="/" className="flex items-center space-x-2">
               <BookOpen className="h-6 w-6 text-[#DAA520]" />
               <span className="text-xl font-bold text-[#DAA520]">
-                African Stories
+                Lingu.Africa
               </span>
             </Link>
             <p className="mt-4 text-sm text-gray-400">
@@ -57,7 +57,7 @@ export function Footer() {
 
         <div className="mt-8 border-t border-gray-800 pt-8 text-center">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} African Stories. All rights reserved.
+            © {new Date().getFullYear()} Lingu.Africa. All rights reserved.
           </p>
         </div>
       </div>

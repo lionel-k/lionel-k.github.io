@@ -36,7 +36,7 @@ export default function Home() {
         <div className="container max-w-screen-xl mx-auto relative z-10">
           <div className="mx-auto max-w-3xl text-left">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
-              Discover African Stories in Multiple Languages
+              Discover Lingu.Africa in Multiple Languages
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               Explore our collection of bilingual books featuring Kirundi,
