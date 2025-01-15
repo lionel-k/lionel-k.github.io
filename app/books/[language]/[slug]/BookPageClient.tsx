@@ -17,6 +17,22 @@ type Book = {
   faq: { question: string; answer: string }[];
 };
 
+// Define a reusable CTA component
+function PurchaseCTA({ slug }: { slug: string }) {
+  return (
+    <section className="bg-black text-white py-4">
+      <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 text-center">
+        <a
+          href={`https://www.amazon.com/dp/${slug}`}
+          className="inline-block rounded-md bg-[#DAA520] px-5 py-3 text-lg font-semibold text-black shadow-sm hover:bg-[#B8860B]"
+        >
+          Purchase on Amazon
+        </a>
+      </div>
+    </section>
+  );
+}
+
 export default function BookPageClient() {
   const { language, slug } = useParams();
 
@@ -65,6 +81,9 @@ export default function BookPageClient() {
         </div>
       </section>
 
+      {/* CTA Section after Hero */}
+      <PurchaseCTA slug={book.slug} />
+
       {/* Challenges Section */}
       <section className="py-16 bg-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -80,6 +99,9 @@ export default function BookPageClient() {
           </div>
         </div>
       </section>
+
+      {/* CTA Section after Challenges */}
+      <PurchaseCTA slug={book.slug} />
 
       {/* Why Choose Section */}
       <section className="py-16 bg-gray-50">
@@ -113,6 +135,9 @@ export default function BookPageClient() {
         </div>
       </section>
 
+      {/* CTA Section after Testimonials */}
+      <PurchaseCTA slug={book.slug} />
+
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -125,17 +150,7 @@ export default function BookPageClient() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-black text-white py-16">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 text-center">
-          <a
-            href={`https://www.amazon.com/dp/${book.slug}`}
-            className="inline-block rounded-md bg-[#DAA520] px-5 py-3 text-lg font-semibold text-black shadow-sm hover:bg-[#B8860B]"
-          >
-            Purchase on Amazon
-          </a>
-        </div>
-      </section>
+      <PurchaseCTA slug={book.slug} />
 
       {/* Newsletter Section */}
       <section className="bg-black text-white">
