@@ -3,6 +3,7 @@
 import { useParams } from "next/navigation";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { NewsletterForm } from "@/components/newsletter-form";
+import { FAQ } from "@/components/FAQ";
 
 export default function LanguagePageClient() {
   const { language } = useParams();
@@ -17,6 +18,8 @@ export default function LanguagePageClient() {
   if (!languageData) {
     return <div>Language not found</div>;
   }
+
+  const faqItems = languageData.faq;
 
   return (
     <>
@@ -63,6 +66,18 @@ export default function LanguagePageClient() {
                   </a>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+            <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
+              Frequently Asked Questions
+            </h2>
+            <div className="mx-auto max-w-3xl">
+              <FAQ items={faqItems} />
             </div>
           </div>
         </section>

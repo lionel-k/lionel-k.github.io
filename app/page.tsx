@@ -36,13 +36,12 @@ export default function Home() {
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-3xl text-left">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
-              Discover Lingu.Africa in Multiple Languages
+              The Guide to Sharing African Languages
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Explore our collection of bilingual books featuring Kirundi,
-              Kinyarwanda, and Lingala. Perfect for families wanting to connect
-              with African heritage and language.
-            </p>
+            <h2 className="mt-6 text-lg leading-8 text-gray-300">
+              Bilingual Books in Kirundi, Kinyarwanda, and Lingala — Connecting
+              Families to African Heritage
+            </h2>
             <div className="mt-10 flex items-center justify-start gap-x-6">
               <Link
                 href="/en/books"
