@@ -1,5 +1,5 @@
 import { languagesConfig } from "@/lib/languagesConfig";
-import LanguagePageClient from "./LanguagePageClient";
+import LanguagePageClient from "@/app/books/[language]/LanguagePageClient";
 
 export async function generateStaticParams() {
   return Object.keys(languagesConfig).map((language) => ({
