@@ -69,7 +69,8 @@ export function Footer() {
 
         <div className="mt-8 border-t border-gray-800 pt-8 text-center">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Lingu.Africa. All rights reserved.
+            © {new Date().getFullYear()} Lingu.Africa. Proudly supporting
+            families worldwide.
           </p>
         </div>
       </div>
