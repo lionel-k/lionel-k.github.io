@@ -48,13 +48,10 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-[#DAA520]">Newsletter</h3>
+            <h3 className="text-lg font-semibold text-[#DAA520]">Contact</h3>
             <p className="mt-4 text-sm text-gray-400">
-              Subscribe to get updates and receive a free coloring book.
+              Email: hello@lingu.africa
             </p>
-            <div className="mt-4">
-              <NewsletterForm />
-            </div>
           </div>
         </div>
 
