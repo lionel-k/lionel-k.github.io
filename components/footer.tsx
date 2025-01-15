@@ -5,10 +5,13 @@ import { NewsletterForm } from "@/components/newsletter-form";
 export function Footer() {
   return (
     <footer className="border-t bg-black text-white">
-      <div className="container max-w-screen-xl mx-auto py-8 md:py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+      <div className="container max-w-screen-xl mx-auto py-8 md:py-12 px-4 sm:px-6">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 text-center">
           <div>
-            <Link href="/" className="flex items-center space-x-2">
+            <Link
+              href="/"
+              className="flex items-center justify-center space-x-2"
+            >
               <BookOpen className="h-6 w-6 text-[#DAA520]" />
               <span className="text-xl font-bold text-[#DAA520]">
                 Lingu.Africa
