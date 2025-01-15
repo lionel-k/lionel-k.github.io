@@ -49,14 +49,14 @@ export default function LanguagePageClient() {
                   className="rounded-lg border border-gray-200 p-8 text-center"
                 >
                   <img
-                    src={book.cover}
+                    src={`/books/${language}/${book.slug}.png`}
                     alt={`${book.title} cover`}
                     className="mb-4 w-48 h-48 object-cover rounded-md mx-auto"
                   />
                   <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
                   <p className="text-gray-600 mb-4">{book.description}</p>
                   <a
-                    href={book.link}
+                    href={`/books/${language}/${book.slug}`}
                     className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B]"
                   >
                     Read more
