@@ -53,11 +53,6 @@ export function Footer() {
                   Blog
                 </Link>
               </li>
-              <li>
-                <Link href="/en/faq" className="text-sm hover:text-[#DAA520]">
-                  FAQ
-                </Link>
-              </li>
             </ul>
           </div>
 

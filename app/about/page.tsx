@@ -93,17 +93,9 @@ export default function About() {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="bg-black py-16 text-white">
+      <section className="bg-black text-white">
         <div className="container max-w-screen-xl mx-auto">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-[#DAA520]">
-              Get Your Free Coloring Book
-            </h2>
-            <p className="mt-4 text-lg text-gray-300">
-              Subscribe to our newsletter and receive a free printable coloring
-              book featuring African art and culture.
-            </p>
             <NewsletterForm />
           </div>
         </div>
