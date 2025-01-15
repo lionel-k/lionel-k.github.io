@@ -3,8 +3,6 @@
 import { useParams } from "next/navigation";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { NewsletterForm } from "@/components/newsletter-form";
-import { Navbar } from "@/components/navbar";
-import { Footer } from "@/components/footer";
 
 export default function LanguagePageClient() {
   const { language } = useParams();

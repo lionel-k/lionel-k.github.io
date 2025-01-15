@@ -6,9 +6,15 @@ export const languagesConfig = {
       {
         title: "Kirundi Book 1",
         description: "Description of Kirundi Book 1",
+        cover: "/images/books/kirundi/kirundi-book-1.png",
         link: "/books/kirundi/book1",
       },
-      // Add more books as needed
+      {
+        title: "Kirundi Book 2",
+        description: "Description of Kirundi Book 2",
+        cover: "/images/books/kirundi/kirundi-book-2.png",
+        link: "/books/kirundi/book2",
+      },
     ],
   },
   kinyarwanda: {
@@ -18,9 +24,15 @@ export const languagesConfig = {
       {
         title: "Kinyarwanda Book 1",
         description: "Description of Kinyarwanda Book 1",
+        cover: "/images/books/kinyarwanda/kinyarwanda-book-1.png",
         link: "/books/kinyarwanda/book1",
       },
-      // Add more books as needed
+      {
+        title: "Kinyarwanda Book 2",
+        description: "Description of Kinyarwanda Book 2",
+        cover: "/images/books/kinyarwanda/kinyarwanda-book-2.png",
+        link: "/books/kinyarwanda/book2",
+      },
     ],
   },
   lingala: {
@@ -30,9 +42,15 @@ export const languagesConfig = {
       {
         title: "Lingala Book 1",
         description: "Description of Lingala Book 1",
+        cover: "/images/books/lingala/lingala-book-1.png",
         link: "/books/lingala/book1",
       },
-      // Add more books as needed
+      {
+        title: "Lingala Book 2",
+        description: "Description of Lingala Book 2",
+        cover: "/images/books/lingala/lingala-book-2.png",
+        link: "/books/lingala/book2",
+      },
     ],
   },
 };
