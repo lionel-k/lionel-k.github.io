@@ -51,7 +51,7 @@ export default function LanguagePageClient() {
                   <img
                     src={book.cover}
                     alt={`${book.title} cover`}
-                    className="mb-4 w-full h-48 object-cover rounded-md"
+                    className="mb-4 w-48 h-48 object-cover rounded-md mx-auto"
                   />
                   <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
                   <p className="text-gray-600 mb-4">{book.description}</p>
