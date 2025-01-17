@@ -44,11 +44,11 @@ export function Navbar() {
               Home
             </Link>
             <Link
-              href="/languages"
+              href="/books"
               className="text-lg md:text-sm font-medium text-white hover:text-[#DAA520]"
               onClick={() => setIsOpen(false)}
             >
-              Languages
+              Books
             </Link>
             <Link
               href="/about"
