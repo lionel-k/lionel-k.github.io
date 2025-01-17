@@ -4,6 +4,20 @@ import { LANGUAGES } from "@/lib/constants";
 export default function Languages() {
   return (
     <div className="flex flex-col">
+      {/* Hero Section */}
+      <section className="relative bg-black py-20 text-white">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="mx-auto max-w-3xl text-left">
+            <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
+              Our Books Collection
+            </h1>
+            <h2 className="mt-6 text-lg leading-8 text-gray-300">
+              Discover our bilingual books in a variety of African languages.
+            </h2>
+          </div>
+        </div>
+      </section>
+
       {/* Languages Section */}
       <section className="py-16 bg-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
