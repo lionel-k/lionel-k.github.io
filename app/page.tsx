@@ -144,14 +144,18 @@ export default function Home() {
                   {language.name}
                 </h3>
                 <p className="text-gray-600">{language.discoverBooks}</p>
-                <Link
-                  href={language.comingSoon ? "" : `/books/${language.slug}`}
-                  className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
-                >
-                  {language.comingSoon
-                    ? "Coming Soon"
-                    : "View Books Collection"}
-                </Link>
+                {language.comingSoon ? (
+                  <span className="mt-4 inline-block rounded-md bg-gray-400 px-3.5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm cursor-not-allowed">
+                    Coming Soon
+                  </span>
+                ) : (
+                  <Link
+                    href={`/books/${language.slug}`}
+                    className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
+                  >
+                    View Books Collection
+                  </Link>
+                )}
               </div>
             ))}
           </div>
