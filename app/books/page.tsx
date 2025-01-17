@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { LANGUAGES } from "@/lib/constants";
 
-export default function Languages() {
+export default function Books() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
