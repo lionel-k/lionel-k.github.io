@@ -27,6 +27,12 @@ export function Navbar() {
               Home
             </Link>
             <Link
+              href="/languages"
+              className="text-sm font-medium text-white hover:text-[#DAA520]"
+            >
+              Languages
+            </Link>
+            <Link
               href="/about"
               className="text-sm font-medium text-white hover:text-[#DAA520]"
             >
