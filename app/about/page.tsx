@@ -35,20 +35,6 @@ export default function About() {
               Learn more about our mission to connect people with African
               heritage through bilingual books.
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link
-                href="/en/books"
-                className="rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
-              >
-                Browse Books
-              </Link>
-              <Link
-                href="/blog"
-                className="flex items-center text-sm font-semibold leading-6 text-[#DAA520]"
-              >
-                Read our Blog <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </div>
           </div>
         </div>
       </section>
