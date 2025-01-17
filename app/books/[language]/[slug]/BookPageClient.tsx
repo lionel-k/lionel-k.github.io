@@ -57,6 +57,7 @@ export default function BookPageClient() {
   book.challenges = book.challenges || [];
   book.whyChoose = book.whyChoose || [];
   book.testimonials = book.testimonials || [];
+  book.faq = book.faq || [];
 
   return (
     <div className="flex flex-col">
