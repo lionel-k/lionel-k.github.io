@@ -31,6 +31,20 @@ export const languagesConfig = {
         testimonials: [],
       },
     ],
+    bestSellers: [
+      {
+        title: "Kirundi Book 1",
+        slug: "kirundi-book-1",
+        description: "Description of Kirundi Book 1",
+        cover: "/images/kirundi-book-1.png",
+      },
+      {
+        title: "Kirundi Book 2",
+        slug: "kirundi-book-2",
+        description: "Description of Kirundi Book 2",
+        cover: "/images/kirundi-book-2.png",
+      },
+    ],
     faq: [
       {
         question: "What is the purpose of Kirundi books?",
@@ -57,6 +71,20 @@ export const languagesConfig = {
         challenges: [],
         whyChoose: [],
         testimonials: [],
+      },
+    ],
+    bestSellers: [
+      {
+        title: "Kinyarwanda Book 1",
+        slug: "kinyarwanda-book-1",
+        description: "Description of Kinyarwanda Book 1",
+        cover: "/images/kinyarwanda-book-1.png",
+      },
+      {
+        title: "Kinyarwanda Book 2",
+        slug: "kinyarwanda-book-2",
+        description: "Description of Kinyarwanda Book 2",
+        cover: "/images/kinyarwanda-book-2.png",
       },
     ],
     faq: [
