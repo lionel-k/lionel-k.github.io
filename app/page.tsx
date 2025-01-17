@@ -45,10 +45,10 @@ export default function Home() {
             </h2>
             <div className="mt-10 flex items-center justify-start gap-x-6">
               <Link
-                href="/en/books"
+                href="#languages"
                 className="rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
               >
-                Browse Books
+                Browse Languages
               </Link>
               <Link
                 href="/blog"
@@ -124,7 +124,7 @@ export default function Home() {
       </section>
 
       {/* Languages Section */}
-      <section className="py-16 bg-white">
+      <section id="languages" className="py-16 bg-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
             Available African Languages
