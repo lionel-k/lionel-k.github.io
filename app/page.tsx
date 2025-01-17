@@ -61,47 +61,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Languages Section */}
-      <section className="py-16 bg-white">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-            Available African Languages
-          </h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            {LANGUAGES.map((language) => {
-              const languageKey =
-                language.toLowerCase() as keyof typeof LANGUAGE_IMAGES;
-
-              return (
-                <div
-                  key={language}
-                  className="rounded-lg border border-gray-200 p-8 text-center"
-                >
-                  <img
-                    src={LANGUAGE_IMAGES[languageKey]}
-                    alt={`${language} book`}
-                    className="mb-4 w-32 h-32 object-cover rounded-md mx-auto"
-                  />
-                  <h3 className="text-xl font-semibold mb-4 capitalize">
-                    {language}
-                  </h3>
-                  <p className="text-gray-600">
-                    Discover our collection of {language} books, available with
-                    English and French translations.
-                  </p>
-                  <Link
-                    href={`/books/${languageKey}`}
-                    className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
-                  >
-                    View Books Collection
-                  </Link>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* Best Sellers Section for Kirundi */}
       <section className="py-16 bg-gray-50">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -160,6 +119,47 @@ export default function Home() {
                 </a>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Languages Section */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
+            Available African Languages
+          </h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            {LANGUAGES.map((language) => {
+              const languageKey =
+                language.toLowerCase() as keyof typeof LANGUAGE_IMAGES;
+
+              return (
+                <div
+                  key={language}
+                  className="rounded-lg border border-gray-200 p-8 text-center"
+                >
+                  <img
+                    src={LANGUAGE_IMAGES[languageKey]}
+                    alt={`${language} book`}
+                    className="mb-4 w-32 h-32 object-cover rounded-md mx-auto"
+                  />
+                  <h3 className="text-xl font-semibold mb-4 capitalize">
+                    {language}
+                  </h3>
+                  <p className="text-gray-600">
+                    Discover our collection of {language} books, available with
+                    English and French translations.
+                  </p>
+                  <Link
+                    href={`/books/${languageKey}`}
+                    className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#DAA520]"
+                  >
+                    View Books Collection
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
