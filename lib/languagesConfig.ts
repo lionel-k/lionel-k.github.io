@@ -45,10 +45,10 @@ export const languagesConfig = {
         cover: "/images/kirundi-book-2.png",
       },
       {
-        title: "Kirundi Book 2",
-        slug: "kirundi-book-2",
-        description: "Description of Kirundi Book 2",
-        cover: "/images/kirundi-book-2.png",
+        title: "Kirundi Book 3",
+        slug: "kirundi-book-3",
+        description: "Description of Kirundi Book 3",
+        cover: "/images/kirundi-book-3.png",
       },
     ],
     faq: [
@@ -93,8 +93,8 @@ export const languagesConfig = {
         cover: "/images/kinyarwanda-book-2.png",
       },
       {
-        title: "Kinyarwanda Book 2",
-        slug: "kinyarwanda-book-2",
+        title: "Kinyarwanda Book 3",
+        slug: "kinyarwanda-book-3",
         description: "Description of Kinyarwanda Book 3",
         cover: "/images/kinyarwanda-book-3.png",
       },
