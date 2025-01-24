@@ -112,7 +112,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
                 <p className="text-gray-600 mb-4">{book.description}</p>
                 <a
-                  href={`https://www.amazon.com/dp/${book.slug}`}
+                  href={book.amazonUrl}
                   className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B]"
                 >
                   Purchase on Amazon

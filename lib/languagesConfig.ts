@@ -81,21 +81,26 @@ export const languagesConfig = {
     ],
     bestSellers: [
       {
-        title: "Kinyarwanda Book 1",
+        title: "Action Verbs in Kinyarwanda",
         slug: "kinyarwanda-book-1",
-        description: "Description of Kinyarwanda Book 1",
+        description:
+          "Children learn basic action verbs in Kinyarwanda with this book.",
+        amazonUrl: "https://www.amazon.com/dp/2492960153",
         cover: "/images/kinyarwanda-book-1.png",
       },
       {
-        title: "Kinyarwanda Book 2",
+        title: "Animals in Kinyarwanda",
         slug: "kinyarwanda-book-2",
-        description: "Description of Kinyarwanda Book 2",
+        description:
+          "Children learn basic animals in Kinyarwanda with this book.",
+        amazonUrl: "https://www.amazon.com/dp/2492960145",
         cover: "/images/kinyarwanda-book-2.png",
       },
       {
         title: "Kinyarwanda Book 3",
         slug: "kinyarwanda-book-3",
         description: "Description of Kinyarwanda Book 3",
+        amazonUrl: "#",
         cover: "/images/kinyarwanda-book-3.png",
       },
     ],
