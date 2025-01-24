@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Book } from "lucide-react";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { LANGUAGES } from "@/lib/constants";
 import { FAQ } from "@/components/FAQ";
@@ -68,26 +68,28 @@ export default function Home() {
             Best Sellers in Kirundi
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
-            {languagesConfig.kirundi.bestSellers.map((book) => (
-              <div
-                key={book.slug}
-                className="rounded-lg border p-4 text-center flex flex-col items-center"
-              >
-                <img
-                  src={book.cover}
-                  alt={book.title}
-                  className="mb-4 w-48 h-48 object-cover rounded-md"
-                />
-                <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
-                <p className="text-gray-600 mb-4">{book.description}</p>
-                <a
-                  href={`https://www.amazon.com/dp/${book.slug}`}
-                  className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B]"
+            {languagesConfig.kirundi.books
+              .filter((book) => book.bestSeller)
+              .map((book) => (
+                <div
+                  key={book.slug}
+                  className="rounded-lg border p-4 text-center flex flex-col items-center"
                 >
-                  Purchase on Amazon
-                </a>
-              </div>
-            ))}
+                  <img
+                    src={book.cover}
+                    alt={book.title}
+                    className="mb-4 w-48 h-48 object-cover rounded-md"
+                  />
+                  <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
+                  <p className="text-gray-600 mb-4">{book.description}</p>
+                  <a
+                    href={`https://www.amazon.com/dp/${book.slug}`}
+                    className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B]"
+                  >
+                    Purchase on Amazon
+                  </a>
+                </div>
+              ))}
           </div>
         </div>
       </section>
@@ -99,26 +101,28 @@ export default function Home() {
             Best Sellers in Kinyarwanda
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
-            {languagesConfig.kinyarwanda.bestSellers.map((book) => (
-              <div
-                key={book.slug}
-                className="rounded-lg border p-4 text-center flex flex-col items-center"
-              >
-                <img
-                  src={book.cover}
-                  alt={book.title}
-                  className="mb-4 w-48 h-48 object-cover rounded-md"
-                />
-                <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
-                <p className="text-gray-600 mb-4">{book.description}</p>
-                <a
-                  href={book.amazonUrl}
-                  className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B]"
+            {languagesConfig.kinyarwanda.books
+              .filter((book) => book.bestSeller)
+              .map((book) => (
+                <div
+                  key={book.slug}
+                  className="rounded-lg border p-4 text-center flex flex-col items-center"
                 >
-                  Purchase on Amazon
-                </a>
-              </div>
-            ))}
+                  <img
+                    src={book.cover}
+                    alt={book.title}
+                    className="mb-4 w-48 h-48 object-cover rounded-md"
+                  />
+                  <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
+                  <p className="text-gray-600 mb-4">{book.description}</p>
+                  <a
+                    href={book.amazonUrl}
+                    className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B]"
+                  >
+                    Purchase on Amazon
+                  </a>
+                </div>
+              ))}
           </div>
         </div>
       </section>

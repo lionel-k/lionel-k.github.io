@@ -54,13 +54,13 @@ export default function LanguagePageClient() {
               Featured Books
             </h2>
             <div className="grid gap-8 md:grid-cols-2">
-              {languageData.books.slice(0, 2).map((book) => (
+              {languageData.books.map((book) => (
                 <div
                   key={book.title}
                   className="rounded-lg border border-gray-200 p-8 text-center"
                 >
                   <img
-                    src={`/books/${language}/${book.slug}.png`}
+                    src={book.cover}
                     alt={`${book.title} cover`}
                     className="mb-4 w-48 h-48 object-cover rounded-md mx-auto"
                   />

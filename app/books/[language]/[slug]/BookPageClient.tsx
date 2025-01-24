@@ -82,7 +82,7 @@ export default function BookPageClient() {
           </div>
           <div className="flex-shrink-0">
             <img
-              src={`/books/${language}/${book.slug}.png`}
+              src={book.cover}
               alt={`${book.title} cover`}
               className="w-full max-w-xs rounded-lg"
             />
