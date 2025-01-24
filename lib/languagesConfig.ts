@@ -95,8 +95,8 @@ export const languagesConfig = {
       {
         title: "Kinyarwanda Book 2",
         slug: "kinyarwanda-book-2",
-        description: "Description of Kinyarwanda Book 2",
-        cover: "/images/kinyarwanda-book-2.png",
+        description: "Description of Kinyarwanda Book 3",
+        cover: "/images/kinyarwanda-book-3.png",
       },
     ],
     faq: [
