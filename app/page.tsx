@@ -69,8 +69,9 @@ const FAQ_ITEMS = [
   {
     question: "Do you have books for older kids or advanced learners?",
     answer:
-      "Not yet. Right now, our books are for beginners and younger kids, but we plan to create more advanced books in the future.",
+      "Yes, for Kirundi we offer advanced books like 'The Kirundi Proverb Treasury,' 'The Kirundi Joke Treasury,' and more, which are perfect for teens, adults, and anyone wanting a deeper connection to the language. For other African languages, we’re focusing on beginner-friendly books right now, but we’re adding more advanced titles over time. Stay tuned for updates!",
   },
+
   {
     question: "Can teachers use these books in classrooms?",
     answer:
