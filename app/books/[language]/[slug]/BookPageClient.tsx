@@ -71,7 +71,7 @@ export default function BookPageClient() {
         ]}
       />
       {/* Hero Section */}
-      <section className="relative bg-black py-20 text-white">
+      <section className="relative bg-black py-8 text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
           <div className="max-w-3xl text-left mb-4 md:mb-0">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
