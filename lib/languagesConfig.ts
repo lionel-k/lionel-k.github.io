@@ -7,24 +7,68 @@ export const languagesConfig = {
         title: "My First Picture Book in Kirundi",
         slug: "my-first-picture-book-in-kirundi",
         description:
-          "A bilingual picture book for children aged 2-8, with English and French translations.",
+          "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily.",
         cover: "/images/kirundi/my-first-picture-book-in-kirundi.png",
-        challenges: ["Challenge 1", "Challenge 2", "Challenge 3"],
-        whyChoose: ["Reason 1", "Reason 2", "Reason 3"],
+        challenges: [
+          "Finding engaging materials for teaching Kirundi to children.",
+          "Limited resources available for diaspora families.",
+          "Difficulty for non-native Kirundi speakers to teach the language.",
+        ],
+        whyChoose: [
+          "Bilingual format in Kirundi, English, and French to support learning for parents and children.",
+          "30 vibrant, colorful pages to capture and hold young readers' attention.",
+          "Perfect for parents who want to teach Kirundi but don’t speak it fluently.",
+        ],
         amazonUrl: "https://www.amazon.com/dp/2492960021",
         bestSeller: true,
         testimonials: [
           "Excellent book for the first words in the three languages. Content on Kirundi is hard to find, even more so prepared for children.",
-          "Great book! Highly recommend for anyone learning kirundi! Wonderful from 0 to 99 years old! Thanks for writing this book!",
+          "Great book! Highly recommend for anyone learning Kirundi! Wonderful from 0 to 99 years old! Thanks for writing this book!",
           "Very good book with great pictures. Love it.",
         ],
         faq: [
           {
-            question: "What is the purpose of Kirundi books?",
-            answer: "To preserve and promote the Kirundi language and culture.",
+            question: "What age group is this book for?",
+            answer:
+              "This book is designed for children aged 2-8. It’s perfect for early learners and parents teaching Kirundi to their kids.",
+          },
+          {
+            question: "What languages are included in the book?",
+            answer:
+              "The book is written in Kirundi, English, and French, making it easy for both native and non-native Kirundi speakers to use.",
+          },
+          {
+            question: "How does this book help my child learn Kirundi?",
+            answer:
+              "It features everyday words with large, colorful pictures to make learning fun and engaging. The bilingual format helps children and parents compare Kirundi words with their English or French equivalents.",
+          },
+          {
+            question: "Do I need to speak Kirundi to use this book?",
+            answer:
+              "No, you don’t! The English and French translations allow parents who don’t speak Kirundi fluently to teach their children the language.",
+          },
+          {
+            question: "How many pages does the book have?",
+            answer:
+              "The book has 30 colorful pages filled with engaging illustrations and simple words to help your child learn Kirundi.",
+          },
+          {
+            question: "Why is this book important?",
+            answer:
+              "It helps children connect to their roots and preserve their heritage. Learning Kirundi through fun and interactive methods builds pride in their identity.",
           },
         ],
+        additionalInfo: {
+          callToAction:
+            "Are you a parent in the diaspora looking for fun and engaging ways to teach your child Kirundi? This book was made for you! Order your copy today and start introducing your child to their ancestral language.",
+          highlights: [
+            "Words in Kirundi, English, and French for easy comparison.",
+            "Perfect for both native and non-native Kirundi speakers.",
+            "Designed to preserve and promote Kirundi language and culture for the next generation.",
+          ],
+        },
       },
+
       {
         title: "Kirundi Book 2",
         slug: "kirundi-book-2",
