@@ -23,12 +23,6 @@ const FAQ_ITEMS = [
   },
 ];
 
-const LANGUAGE_IMAGES = {
-  kirundi: "/images/kirundi.png",
-  kinyarwanda: "/images/kinyarwanda.png",
-  lingala: "/images/lingala.png",
-};
-
 export default function Home() {
   return (
     <div className="flex flex-col">
