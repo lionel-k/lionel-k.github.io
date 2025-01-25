@@ -9,17 +9,77 @@ const FAQ_ITEMS = [
   {
     question: "What languages are available?",
     answer:
-      "We offer books in Kirundi, Kinyarwanda, and Lingala, paired with either English or French translations.",
+      "We offer books in Kirundi, Kinyarwanda, Lingala, and more, paired with either English or French translations. We're continuously working to expand our collection to include more African languages.",
   },
   {
     question: "Are the books suitable for children?",
     answer:
-      "Yes! Our books are designed for readers of all ages, with a focus on family-friendly content that helps preserve African heritage.",
+      "Yes! Our books are designed for children aged 2-10, but they are also perfect for parents and caregivers who want to teach or learn alongside their kids.",
   },
   {
     question: "How do bilingual books work?",
     answer:
-      "Each book features text in both an African language and either English or French, allowing readers to learn and compare both languages side by side.",
+      "Each book features text in both an African language and either English or French, side by side. This makes it easy for children and adults to learn and compare both languages while enjoying fun illustrations.",
+  },
+  {
+    question: "Do I need to know the African language to use these books?",
+    answer:
+      "No, you don’t! The bilingual format is designed to help both parents and children learn together, even if you're not fluent in the language.",
+  },
+  {
+    question: "What kinds of books do you offer?",
+    answer:
+      "Our collection includes 'First 100 Words,' action verbs, animals, fruits and vegetables, and coloring books. They are perfect for building vocabulary and making learning fun.",
+  },
+  {
+    question: "Can these books help my child connect with their heritage?",
+    answer:
+      "Absolutely. Our books are designed to celebrate African cultures and languages, helping children understand and connect with their roots through language and storytelling.",
+  },
+  {
+    question: "Do you ship worldwide?",
+    answer:
+      "Since our books are sold through Amazon, they are available for purchase worldwide. Delivery options depend on Amazon’s shipping services in your region.",
+  },
+  {
+    question: "Are these books only for African diaspora families?",
+    answer:
+      "No, they are for anyone who wants to learn an African language or introduce it to their family. Whether you're part of the diaspora or simply passionate about African cultures, our books are for you.",
+  },
+  {
+    question: "How are the translations verified for accuracy?",
+    answer:
+      "All translations are carefully proofread and verified by native speakers to ensure accuracy and cultural authenticity in every book.",
+  },
+  {
+    question: "What’s next for Lingu.africa?",
+    answer:
+      "We’re working to add more languages and expand our collection of books to include even more topics. Follow us for updates on new releases and projects!",
+  },
+  {
+    question: "How can I give feedback or suggest a language to add?",
+    answer:
+      "We’d love to hear from you! You can contact us through our website or social media channels to share your suggestions or feedback.",
+  },
+  {
+    question: "Can I see a preview before buying?",
+    answer:
+      "Yes! On Amazon, most of our books have a 'Look Inside' feature where you can preview a few pages to see how the bilingual format works.",
+  },
+  {
+    question: "Do you have books for advanced learners or older children?",
+    answer:
+      "Right now, our focus is on beginner-friendly materials for younger children, but we’re planning to expand into more advanced books in the future.",
+  },
+  {
+    question: "Can these books be used in schools or educational programs?",
+    answer:
+      "Yes, many teachers and educators use our books in classrooms to introduce African languages. They’re also great for after-school programs and community learning initiatives.",
+  },
+  {
+    question: "Are the illustrations culturally relevant?",
+    answer:
+      "Yes, all illustrations are designed to reflect African culture, showcasing traditional clothing, settings, and themes to create a meaningful connection to the language and heritage.",
   },
 ];
 
