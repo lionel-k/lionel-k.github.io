@@ -35,22 +35,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/books/kinyarwanda"
-                  className="text-sm hover:text-[#DAA520]"
-                >
-                  Kinyarwanda Books
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/books/lingala"
-                  className="text-sm hover:text-[#DAA520]"
-                >
-                  Lingala Books
-                </Link>
-              </li>
-              <li>
                 <Link href="/blog" className="text-sm hover:text-[#DAA520]">
                   Blog
                 </Link>
