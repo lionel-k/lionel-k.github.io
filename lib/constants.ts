@@ -15,16 +15,6 @@ export const LANGUAGES = [
       "Discover our collection of Kirundi books, available with English and French translations.",
   },
   {
-    name: "Kinyarwanda",
-    slug: "kinyarwanda",
-    coverImage: "/bgs/kinyarwanda-bg.png",
-    amazonUrl: "#",
-    comingSoon: false,
-    discoverBooks:
-      "Discover our collection of Kinyarwanda books, available with English and French translations.",
-  },
-  // Other languages with 'coming soon'
-  {
     name: "Amharic",
     slug: "amharic",
     coverImage: "/bgs/amharic-bg.png",
@@ -86,6 +76,15 @@ export const LANGUAGES = [
     comingSoon: true,
     discoverBooks:
       "Help children start learning Kikuyu with basic word books designed for kids.",
+  },
+  {
+    name: "Kinyarwanda",
+    slug: "kinyarwanda",
+    coverImage: "/bgs/kinyarwanda-bg.png",
+    amazonUrl: "#",
+    comingSoon: true,
+    discoverBooks:
+      "Discover our collection of Kinyarwanda books, available with English and French translations.",
   },
   {
     name: "Lingala",
