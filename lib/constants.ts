@@ -21,7 +21,7 @@ export const LANGUAGES = [
     amazonUrl: "#",
     comingSoon: true,
     discoverBooks:
-      "Discover our collection of Amharic books, available with English or French translations.",
+      "Explore our collection of Amharic books with English and French translations.",
   },
   {
     name: "Bambara",
