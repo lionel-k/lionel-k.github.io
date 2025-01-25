@@ -21,7 +21,7 @@ type Book = {
 // Define a reusable CTA component
 function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
   return (
-    <section className="bg-black text-white py-4">
+    <section className="text-white py-4">
       <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 text-center">
         <a
           href={amazonUrl}
@@ -89,10 +89,10 @@ export default function BookPageClient() {
             />
           </div>
         </div>
+        <PurchaseCTA amazonUrl={book.amazonUrl} />
       </section>
 
       {/* CTA Section after Hero */}
-      <PurchaseCTA amazonUrl={book.amazonUrl} />
 
       {/* Challenges Section */}
       <section className="py-16 bg-white">
@@ -102,7 +102,10 @@ export default function BookPageClient() {
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             {book.challenges.map((challenge, index) => (
-              <div key={index} className="rounded-lg border p-4 text-center">
+              <div
+                key={index}
+                className="rounded-lg border p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
                 {challenge}
               </div>
             ))}
@@ -121,7 +124,10 @@ export default function BookPageClient() {
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             {book.whyChoose.map((reason, index) => (
-              <div key={index} className="rounded-lg border p-4 text-center">
+              <div
+                key={index}
+                className="rounded-lg border p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
                 {reason}
               </div>
             ))}
@@ -137,7 +143,10 @@ export default function BookPageClient() {
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             {book.testimonials.map((testimonial, index) => (
-              <div key={index} className="rounded-lg border p-4 text-center">
+              <div
+                key={index}
+                className="rounded-lg border p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+              >
                 {testimonial}
               </div>
             ))}
