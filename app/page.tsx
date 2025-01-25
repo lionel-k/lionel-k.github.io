@@ -94,39 +94,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Best Sellers Section for Kinyarwanda */}
-      <section className="py-16 bg-white">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-            Best Sellers in Kinyarwanda
-          </h2>
-          <div className="grid gap-8 md:grid-cols-3">
-            {languagesConfig.kinyarwanda.books
-              .filter((book) => book.bestSeller)
-              .map((book) => (
-                <div
-                  key={book.slug}
-                  className="rounded-lg border p-4 text-center flex flex-col items-center"
-                >
-                  <img
-                    src={book.cover}
-                    alt={book.title}
-                    className="mb-4 w-48 h-48 object-cover rounded-md"
-                  />
-                  <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
-                  <p className="text-gray-600 mb-4">{book.description}</p>
-                  <a
-                    href={book.amazonUrl}
-                    className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B]"
-                  >
-                    Purchase on Amazon
-                  </a>
-                </div>
-              ))}
-          </div>
-        </div>
-      </section>
-
       {/* Languages Section */}
       <section id="languages" className="py-16 bg-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
