@@ -31,11 +31,11 @@ export default function Home() {
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-3xl text-left">
             <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
-              The Guide to Sharing African Languages
+              Bilingual African Language Books for Diaspora Families
             </h1>
             <h2 className="mt-6 text-lg leading-8 text-gray-300">
-              Bilingual Books in Kirundi, Kinyarwanda, and Lingala — Connecting
-              Families to African Heritage
+              Teach Your Kids Kirundi, Kinyarwanda, Lingala, and More — Connect
+              to African Heritage
             </h2>
             <div className="mt-10 flex items-center justify-start gap-x-6">
               <Link
