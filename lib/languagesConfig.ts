@@ -17,7 +17,7 @@ export const languagesConfig = {
         whyChoose: [
           "Bilingual format in Kirundi, English, and French to support learning for parents and children.",
           "30 vibrant, colorful pages to capture and hold young readers' attention.",
-          "Perfect for parents who want to teach Kirundi but don’t speak it fluently.",
+          "Perfect for parents who want to teach Kirundi but don't speak it fluently.",
         ],
         amazonUrl: "https://www.amazon.com/dp/2492960021",
         bestSeller: true,
@@ -30,7 +30,7 @@ export const languagesConfig = {
           {
             question: "What age group is this book for?",
             answer:
-              "This book is designed for children aged 2-8. It’s perfect for early learners and parents teaching Kirundi to their kids.",
+              "This book is designed for children aged 2-8. It's perfect for early learners and parents teaching Kirundi to their kids.",
           },
           {
             question: "What languages are included in the book?",
@@ -45,7 +45,7 @@ export const languagesConfig = {
           {
             question: "Do I need to speak Kirundi to use this book?",
             answer:
-              "No, you don’t! The English and French translations allow parents who don’t speak Kirundi fluently to teach their children the language.",
+              "No, you don't! The English and French translations allow parents who don't speak Kirundi fluently to teach their children the language.",
           },
           {
             question: "How many pages does the book have?",
@@ -58,17 +58,7 @@ export const languagesConfig = {
               "It helps children connect to their roots and preserve their heritage. Learning Kirundi through fun and interactive methods builds pride in their identity.",
           },
         ],
-        additionalInfo: {
-          callToAction:
-            "Are you a parent in the diaspora looking for fun and engaging ways to teach your child Kirundi? This book was made for you! Order your copy today and start introducing your child to their ancestral language.",
-          highlights: [
-            "Words in Kirundi, English, and French for easy comparison.",
-            "Perfect for both native and non-native Kirundi speakers.",
-            "Designed to preserve and promote Kirundi language and culture for the next generation.",
-          ],
-        },
       },
-
       {
         title: "Kirundi Book 2",
         slug: "kirundi-book-2",
@@ -90,12 +80,12 @@ export const languagesConfig = {
       {
         question: "Who can use these Kirundi books?",
         answer:
-          "Anyone! They are perfect for parents, children, and even adults who want to learn or improve their Kirundi skills. Whether you’re fluent or just starting, these books are for you.",
+          "Anyone! They are perfect for parents, children, and even adults who want to learn or improve their Kirundi skills. Whether you're fluent or just starting, these books are for you.",
       },
       {
         question: "What types of Kirundi books do you offer?",
         answer:
-          "We offer a variety of books, including 'The Kirundi Proverb Treasury,' 'Kirundi Word Search,' 'Traditional Kirundi Songs,' and bilingual children’s books like 'First 100 Words.' There’s something for everyone—kids, teens, and adults.",
+          "We offer a variety of books, including 'The Kirundi Proverb Treasury,' 'Kirundi Word Search,' 'Traditional Kirundi Songs,' and bilingual children's books like 'First 100 Words.' There's something for everyone—kids, teens, and adults.",
       },
       {
         question: "Are the books bilingual?",
@@ -111,7 +101,7 @@ export const languagesConfig = {
         question:
           "What makes Kirundi books different from other language books?",
         answer:
-          "Kirundi books celebrate the unique traditions and culture of Burundi. They include proverbs, songs, and jokes that are rooted in the country’s rich history, making them more than just language tools—they’re a cultural experience.",
+          "Kirundi books celebrate the unique traditions and culture of Burundi. They include proverbs, songs, and jokes that are rooted in the country's rich history, making them more than just language tools—they're a cultural experience.",
       },
       {
         question: "Are there books for advanced learners in Kirundi?",
