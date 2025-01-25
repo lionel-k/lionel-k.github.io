@@ -111,7 +111,7 @@ export default function BookPageClient() {
       </section>
 
       {/* CTA Section after Challenges */}
-      <PurchaseCTA slug={book.slug} />
+      <PurchaseCTA amazonUrl={book.amazonUrl} />
 
       {/* Why Choose Section */}
       <section className="py-16 bg-gray-50">
@@ -146,7 +146,7 @@ export default function BookPageClient() {
       </section>
 
       {/* CTA Section after Testimonials */}
-      <PurchaseCTA slug={book.slug} />
+      <PurchaseCTA amazonUrl={book.amazonUrl} />
 
       {/* FAQ Section */}
       <section className="py-16 bg-gray-50">
@@ -160,7 +160,7 @@ export default function BookPageClient() {
         </div>
       </section>
 
-      <PurchaseCTA slug={book.slug} />
+      <PurchaseCTA amazonUrl={book.amazonUrl} />
 
       {/* Newsletter Section */}
       <section className="bg-black text-white">
