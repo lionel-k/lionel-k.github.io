@@ -9,6 +9,7 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 type Book = {
   title: string;
   slug: string;
+  amazonUrl: string;
   description: string;
   cover: string;
   challenges: string[];
@@ -18,12 +19,12 @@ type Book = {
 };
 
 // Define a reusable CTA component
-function PurchaseCTA({ slug }: { slug: string }) {
+function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
   return (
     <section className="bg-black text-white py-4">
       <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 text-center">
         <a
-          href={`https://www.amazon.com/dp/${slug}`}
+          href={amazonUrl}
           className="inline-block rounded-md bg-[#DAA520] px-5 py-3 text-lg font-semibold text-black shadow-sm hover:bg-[#B8860B]"
         >
           Purchase on Amazon
@@ -91,7 +92,7 @@ export default function BookPageClient() {
       </section>
 
       {/* CTA Section after Hero */}
-      <PurchaseCTA slug={book.slug} />
+      <PurchaseCTA amazonUrl={book.amazonUrl} />
 
       {/* Challenges Section */}
       <section className="py-16 bg-white">
