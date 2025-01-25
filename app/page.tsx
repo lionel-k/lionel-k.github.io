@@ -7,79 +7,79 @@ import { languagesConfig } from "@/lib/languagesConfig";
 
 const FAQ_ITEMS = [
   {
-    question: "What languages are available?",
+    question: "What languages do your books include?",
     answer:
-      "We offer books in Kirundi, Kinyarwanda, Lingala, and more, paired with either English or French translations. We're continuously working to expand our collection to include more African languages.",
+      "We have books in Kirundi, Kinyarwanda, Lingala, and more. Each book is paired with English or French translations. We are adding more African languages all the time!",
   },
   {
-    question: "Are the books suitable for children?",
+    question: "Are your books good for children?",
     answer:
-      "Yes! Our books are designed for children aged 2-10, but they are also perfect for parents and caregivers who want to teach or learn alongside their kids.",
+      "Yes! Our books are made for kids aged 2-10. They are also great for parents or caregivers who want to learn together with their kids.",
   },
   {
     question: "How do bilingual books work?",
     answer:
-      "Each book features text in both an African language and either English or French, side by side. This makes it easy for children and adults to learn and compare both languages while enjoying fun illustrations.",
+      "Each page has the same text in an African language and either English or French. This way, kids and parents can read and learn both languages side by side.",
   },
   {
-    question: "Do I need to know the African language to use these books?",
+    question: "Do I need to know the African language to use the books?",
     answer:
-      "No, you don’t! The bilingual format is designed to help both parents and children learn together, even if you're not fluent in the language.",
+      "No! You don’t have to know the language. The books are made for parents and kids to learn together, even if you are not fluent.",
   },
   {
-    question: "What kinds of books do you offer?",
+    question: "What types of books do you sell?",
     answer:
-      "Our collection includes 'First 100 Words,' action verbs, animals, fruits and vegetables, and coloring books. They are perfect for building vocabulary and making learning fun.",
+      "We have books like ‘First 100 Words,’ books on action verbs, animals, fruits and vegetables, and even coloring books. They help kids learn new words in a fun way.",
   },
   {
     question: "Can these books help my child connect with their heritage?",
     answer:
-      "Absolutely. Our books are designed to celebrate African cultures and languages, helping children understand and connect with their roots through language and storytelling.",
+      "Yes! These books are all about celebrating African languages and cultures. They help kids learn about their roots and feel proud of their heritage.",
   },
   {
-    question: "Do you ship worldwide?",
+    question: "Can I buy your books anywhere in the world?",
     answer:
-      "Since our books are sold through Amazon, they are available for purchase worldwide. Delivery options depend on Amazon’s shipping services in your region.",
+      "Yes, our books are sold on Amazon, so you can buy them worldwide. Amazon will handle delivery based on your location.",
   },
   {
     question: "Are these books only for African diaspora families?",
     answer:
-      "No, they are for anyone who wants to learn an African language or introduce it to their family. Whether you're part of the diaspora or simply passionate about African cultures, our books are for you.",
+      "No! These books are for anyone who wants to learn an African language or teach it to their family. If you love African culture, these books are for you.",
   },
   {
-    question: "How are the translations verified for accuracy?",
+    question: "Are the translations correct?",
     answer:
-      "All translations are carefully proofread and verified by native speakers to ensure accuracy and cultural authenticity in every book.",
+      "Yes, all translations are carefully checked by native speakers to make sure they are accurate and reflect the language properly.",
   },
   {
     question: "What’s next for Lingu.africa?",
     answer:
-      "We’re working to add more languages and expand our collection of books to include even more topics. Follow us for updates on new releases and projects!",
+      "We are working on adding more African languages and creating new books on different topics. Follow us for updates on what’s coming next!",
   },
   {
-    question: "How can I give feedback or suggest a language to add?",
+    question: "How can I share ideas or suggest a language to add?",
     answer:
-      "We’d love to hear from you! You can contact us through our website or social media channels to share your suggestions or feedback.",
+      "We would love to hear from you! You can reach us through our website or social media to share your ideas or feedback.",
   },
   {
-    question: "Can I see a preview before buying?",
+    question: "Can I see what the books look like before buying?",
     answer:
-      "Yes! On Amazon, most of our books have a 'Look Inside' feature where you can preview a few pages to see how the bilingual format works.",
+      "Yes! Many of our books on Amazon have a ‘Look Inside’ option, so you can preview a few pages before you buy.",
   },
   {
-    question: "Do you have books for advanced learners or older children?",
+    question: "Do you have books for older kids or advanced learners?",
     answer:
-      "Right now, our focus is on beginner-friendly materials for younger children, but we’re planning to expand into more advanced books in the future.",
+      "Not yet. Right now, our books are for beginners and younger kids, but we plan to create more advanced books in the future.",
   },
   {
-    question: "Can these books be used in schools or educational programs?",
+    question: "Can teachers use these books in classrooms?",
     answer:
-      "Yes, many teachers and educators use our books in classrooms to introduce African languages. They’re also great for after-school programs and community learning initiatives.",
+      "Yes, many teachers use our books to teach African languages in schools, after-school programs, and community learning spaces.",
   },
   {
-    question: "Are the illustrations culturally relevant?",
+    question: "Are the pictures in the books relatable for diaspora kids?",
     answer:
-      "Our illustrations focus on children who resemble kids in the African diaspora, with skin tones, hair types, and facial features that reflect their identity. This helps children see themselves in the books and feel connected to their heritage. While the focus is on representation, the cultural setting and context remain inclusive and relatable for all families.",
+      "Yes! Our pictures show children who look like kids in the African diaspora. The faces, hair, and skin tones help children feel seen and proud of their identity.",
   },
 ];
 
