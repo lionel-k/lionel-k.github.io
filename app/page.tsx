@@ -79,7 +79,7 @@ const FAQ_ITEMS = [
   {
     question: "Are the illustrations culturally relevant?",
     answer:
-      "Yes, all illustrations are designed to reflect African culture, showcasing traditional clothing, settings, and themes to create a meaningful connection to the language and heritage.",
+      "Our illustrations focus on children who resemble kids in the African diaspora, with skin tones, hair types, and facial features that reflect their identity. This helps children see themselves in the books and feel connected to their heritage. While the focus is on representation, the cultural setting and context remain inclusive and relatable for all families.",
   },
 ];
 
