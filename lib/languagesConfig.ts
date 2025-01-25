@@ -4,18 +4,19 @@ export const languagesConfig = {
     image: "/images/kirundi.png",
     books: [
       {
-        title: "Kirundi Book 1",
-        slug: "kirundi-book-1",
-        description: "Description of Kirundi Book 1",
-        cover: "/images/kirundi/kirundi-book-1.png",
+        title: "My First Picture Book in Kirundi",
+        slug: "my-first-picture-book-in-kirundi",
+        description:
+          "A bilingual picture book for children aged 2-8, with English and French translations.",
+        cover: "/images/kirundi/my-first-picture-book-in-kirundi.png",
         challenges: ["Challenge 1", "Challenge 2", "Challenge 3"],
         whyChoose: ["Reason 1", "Reason 2", "Reason 3"],
-        amazonUrl: "#",
+        amazonUrl: "https://www.amazon.com/dp/2492960021",
         bestSeller: true,
         testimonials: [
-          "This book is amazing! - Parent A",
-          "My kids love it! - Parent B",
-          "Highly recommended! - Parent C",
+          "Excellent book for the first words in the three languages. Content on Kirundi is hard to find, even more so prepared for children.",
+          "Great book! Highly recommend for anyone learning kirundi! Wonderful from 0 to 99 years old! Thanks for writing this book!",
+          "Very good book with great pictures. Love it.",
         ],
         faq: [
           {
@@ -93,64 +94,6 @@ export const languagesConfig = {
         question: "Do you plan to add more Kirundi books?",
         answer:
           "Yes, we are constantly working on new Kirundi books to expand our collection. Follow us to stay updated on the latest releases!",
-      },
-    ],
-  },
-  kinyarwanda: {
-    name: "Kinyarwanda",
-    image: "/images/kinyarwanda/kinyarwanda.png",
-    books: [
-      {
-        title: "Action Verbs in Kinyarwanda",
-        slug: "kinyarwanda-book-1",
-        cover: "/images/kinyarwanda/action-verbs-in-kinyarwanda.png",
-        description:
-          "Children learn basic action verbs in Kinyarwanda with this book.",
-        challenges: [],
-        whyChoose: [],
-        testimonials: [],
-        amazonUrl: "https://www.amazon.com/dp/2492960153",
-        bestSeller: true,
-      },
-      {
-        title: "Animals in Kinyarwanda",
-        slug: "kinyarwanda-book-2",
-        cover: "/images/kinyarwanda/animals-in-kinyarwanda.png",
-        description:
-          "Children learn basic animals in Kinyarwanda with this book.",
-        challenges: [],
-        whyChoose: [],
-        testimonials: [],
-        amazonUrl: "https://www.amazon.com/dp/2492960145",
-        bestSeller: true,
-      },
-      {
-        title: "Kinyarwanda Book 1",
-        slug: "kinyarwanda-book-1",
-        description: "Description of Kinyarwanda Book 1",
-        cover: "/images/kinyarwanda/kinyarwanda-book-1.png",
-        challenges: [],
-        whyChoose: [],
-        testimonials: [],
-        amazonUrl: "#",
-        bestSeller: true,
-      },
-      {
-        title: "Kinyarwanda Book 2",
-        slug: "kinyarwanda-book-2",
-        description: "Description of Kinyarwanda Book 2",
-        cover: "/images/kinyarwanda/kinyarwanda-book-2.png",
-        challenges: [],
-        whyChoose: [],
-        testimonials: [],
-        amazonUrl: "#",
-        bestSeller: false,
-      },
-    ],
-    faq: [
-      {
-        question: "What is the purpose of Kinyarwanda books?",
-        answer: "To preserve and promote the Kinyarwanda language and culture.",
       },
     ],
   },
