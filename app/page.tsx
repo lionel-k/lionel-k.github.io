@@ -135,7 +135,7 @@ export default function Home() {
                   key={book.slug}
                   className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
                   <img
                     src={book.cover}
                     alt={book.title}
