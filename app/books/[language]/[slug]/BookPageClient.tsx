@@ -30,11 +30,11 @@ function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
           href={amazonUrl}
           className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-gray-900 transition-all duration-300 hover:scale-105"
         >
-          Get Your Copy Now
+          Get Your Paperback Now
           <ArrowRight className="ml-2 h-5 w-5" />
         </a>
         <p className="mt-4 text-sm text-white opacity-90">
-          30-Day Money Back Guarantee • Instant Digital Access
+          Amazon's 30-Day Return Policy • Premium Quality Paperback
         </p>
       </div>
     </section>
