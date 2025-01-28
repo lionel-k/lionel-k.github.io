@@ -147,7 +147,7 @@ export default function Home() {
                   <p className="text-gray-600 mb-6">{book.description}</p>
                   <Link
                     href={book.amazonUrl}
-                    className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                    className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"
                   >
                     View on Amazon
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -219,11 +219,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mx-auto max-w-4xl">
-            <FAQ
-              items={FAQ_ITEMS}
-              className="bg-white rounded-2xl shadow-xl p-8"
-              itemClassName="border-b border-[#DAA520]/20 last:border-0 py-6"
-            />
+            <FAQ items={FAQ_ITEMS} />
           </div>
         </div>
       </section>
