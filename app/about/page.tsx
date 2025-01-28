@@ -39,31 +39,54 @@ export default function About() {
         </div>
       </section>
 
-      {/* About the Brand Section */}
-      <section className="py-16 bg-white">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-            About the Brand
-          </h2>
-          <p className="text-center text-lg text-gray-600">
-            Our brand is dedicated to preserving and promoting African heritage
-            through bilingual books. We believe in the power of stories to
-            connect people across cultures and generations.
-          </p>
-        </div>
-      </section>
-
       {/* Our Story Section */}
       <section className="py-16 bg-gray-100">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-            Our Story
+            My Story
           </h2>
           <p className="text-center text-lg text-gray-600">
-            Founded by a passionate storyteller, our project began as a way to
-            share the rich tapestry of African narratives with the world. Our
-            founder's journey is one of discovery, connection, and a deep love
-            for the diverse cultures of Africa.
+            Hi, I'm Lionel, and I'm from Burundi. When I was a kid, I didn't
+            think much about my language or culture. Everyone around me spoke
+            Kirundi, and it was just a normal part of life. But when I moved to
+            France for school, I realized how much my language and roots meant
+            to me. One day, I met a Burundian girl who had grown up abroad. She
+            told me she didn't speak Kirundi very well and felt out of place
+            when she was with other Burundians. She was kind, but you could see
+            it hurt her. That stayed with me. Years later, I became a dad. I
+            wanted my daughter to grow up proud of her roots and her language.
+            But when I looked for books in Kirundi to teach her, I couldn't find
+            any. That's when I decided to write my own. This journey started
+            with a simple goal: to help kids like my daughter connect to their
+            heritage. But now, it's grown into something bigger. I want to help
+            families across the African diaspora pass on their languages and
+            keep their culture alive.
+          </p>
+        </div>
+      </section>
+
+      {/* About the Brand Section */}
+      <section className="py-16 bg-white">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
+            About Lingu.Africa
+          </h2>
+          <p className="text-center text-lg text-gray-600">
+            Lingu.africa is a place for families who want to keep their African
+            languages alive. We create bilingual picture books that celebrate
+            African languages and culture. These books help kids learn their
+            mother tongue while growing up in a new world. Our mission is
+            simple: keep their African languages alive. We create bilingual
+            picture books that celebrate African languages and culture. These
+            books help kids learn their mother tongue while growing up in a new
+            world. Our mission is simple: to make sure African kids, no matter
+            where they live, grow up proud of their roots. Language is more than
+            just words. It's stories, songs, and traditions. It's a connection
+            to home. Whether you speak Kirundi, Swahili, Yoruba, or any other
+            African language, our books are here to help. They're for parents,
+            grandparents, and families who want to give their kids the gift of
+            language and identity. Let's make sure the next generation never
+            loses their roots. One word, one story, one book at a time.
           </p>
         </div>
       </section>
