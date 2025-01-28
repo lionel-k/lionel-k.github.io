@@ -59,17 +59,6 @@ export const languagesConfig = {
           },
         ],
       },
-      {
-        title: "Kirundi Book 2",
-        slug: "kirundi-book-2",
-        description: "Description of Kirundi Book 2",
-        cover: "/images/kirundi/kirundi-book-2.png",
-        challenges: [],
-        whyChoose: [],
-        testimonials: [],
-        amazonUrl: "#",
-        bestSeller: false,
-      },
     ],
     faq: [
       {
