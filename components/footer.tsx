@@ -1,27 +1,27 @@
 import Link from "next/link";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Instagram, Twitter } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-black text-white">
-      <div className="container max-w-screen-xl mx-auto py-8 md:py-12 px-4 sm:px-6">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 text-center">
-          <div>
-            <Link
-              href="/"
-              className="flex items-center justify-center space-x-2"
-            >
+    <footer className="bg-black text-white">
+      <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+        {/* Top Section: Three columns */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {/* Brand + About */}
+          <div className="text-center md:text-left">
+            <Link href="/" className="inline-flex items-center space-x-2">
               <BookOpen className="h-6 w-6 text-[#DAA520]" />
-              <span className="text-xl font-bold text-[#DAA520]">
+              <span className="text-xl font-bold bg-gradient-to-r from-[#DAA520] to-[#B8860B] bg-clip-text text-transparent">
                 Lingu.Africa
               </span>
             </Link>
-            <p className="mt-4 text-sm text-gray-400">
+            <p className="mt-4 text-sm text-gray-300">
               Discover the beauty of African languages through bilingual books.
             </p>
           </div>
 
-          <div>
+          {/* Quick Links */}
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-[#DAA520]">
               Quick Links
             </h3>
@@ -29,14 +29,18 @@ export function Footer() {
               <li>
                 <Link
                   href="/books/kirundi"
-                  className="text-sm hover:text-[#DAA520]"
+                  className="text-sm text-gray-300 hover:text-[#DAA520]"
                 >
                   Kirundi Books
                 </Link>
               </li>
+              {/* Uncomment or add more links as needed */}
               {false && (
                 <li>
-                  <Link href="/blog" className="text-sm hover:text-[#DAA520]">
+                  <Link
+                    href="/blog"
+                    className="text-sm text-gray-300 hover:text-[#DAA520]"
+                  >
                     Blog
                   </Link>
                 </li>
@@ -44,15 +48,36 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          {/* Contact & Social */}
+          <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-[#DAA520]">Contact</h3>
-            <p className="mt-4 text-sm text-gray-400">
-              Email: hello@lingu.africa
+            <p className="mt-4 text-sm text-gray-300">
+              Email: <a href="mailto:hello@lingu.africa">hello@lingu.africa</a>
             </p>
+            {/* Social Icons */}
+            <div className="flex justify-center md:justify-start space-x-6 mt-4">
+              <Link
+                href="https://www.instagram.com/ndakunda.ikirundi/"
+                target="_blank"
+                aria-label="Instagram"
+                className="transition-transform hover:scale-110"
+              >
+                <Instagram className="h-5 w-5 text-[#DAA520] hover:text-[#B8860B]" />
+              </Link>
+              <Link
+                href="https://x.com/lionelkubwimana"
+                target="_blank"
+                aria-label="Twitter"
+                className="transition-transform hover:scale-110"
+              >
+                <Twitter className="h-5 w-5 text-[#DAA520] hover:text-[#B8860B]" />
+              </Link>
+            </div>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-gray-800 pt-8 text-center">
+        {/* Bottom Bar */}
+        <div className="mt-10 border-t border-[#DAA520]/20 pt-6 text-center">
           <p className="text-sm text-gray-400">
             © {new Date().getFullYear()} Lingu.Africa. Proudly supporting
             families worldwide.
