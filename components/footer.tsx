@@ -1,9 +1,10 @@
 import Link from "next/link";
-import { BookOpen, Instagram, Twitter } from "lucide-react";
+import { BookOpen } from "lucide-react";
+import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-black text-white py-12">
       <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
         {/* Top Section: Three columns */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
@@ -62,7 +63,7 @@ export function Footer() {
                 aria-label="Instagram"
                 className="transition-transform hover:scale-110"
               >
-                <Instagram className="h-5 w-5 text-[#DAA520] hover:text-[#B8860B]" />
+                <FaInstagram className="h-5 w-5 text-[#DAA520] hover:text-[#B8860B]" />
               </Link>
               <Link
                 href="https://x.com/lionelkubwimana"
@@ -70,7 +71,7 @@ export function Footer() {
                 aria-label="Twitter"
                 className="transition-transform hover:scale-110"
               >
-                <Twitter className="h-5 w-5 text-[#DAA520] hover:text-[#B8860B]" />
+                <FaTwitter className="h-5 w-5 text-[#DAA520] hover:text-[#B8860B]" />
               </Link>
             </div>
           </div>
