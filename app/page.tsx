@@ -165,12 +165,14 @@ export default function Home() {
               >
                 <img
                   src={language.coverImage}
-                  alt={`${language.name} book`}
-                  className="mb-4 w-32 h-32 object-cover rounded-md mx-auto"
+                  alt={`${language.name} book collection books`}
+                  className="mb-4 w-full h-32 object-cover rounded-md mx-auto"
                 />
-                <h3 className="text-xl font-semibold mb-4 capitalize">
-                  {language.name}
-                </h3>
+                {false && (
+                  <h3 className="text-xl font-semibold mb-4 capitalize">
+                    {language.name}
+                  </h3>
+                )}
                 <p className="text-gray-600">{language.discoverBooks}</p>
                 {language.comingSoon ? (
                   <span className="mt-4 inline-block rounded-md bg-gray-400 px-3.5 py-2.5 text-sm font-semibold text-gray-700 shadow-sm cursor-not-allowed">
