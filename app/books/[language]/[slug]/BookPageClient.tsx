@@ -5,6 +5,7 @@ import { languagesConfig } from "@/lib/languagesConfig";
 import { FAQ } from "@/components/FAQ";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import { ArrowRight } from "lucide-react";
 
 type Book = {
   title: string;
@@ -18,22 +19,27 @@ type Book = {
   faq: { question: string; answer: string }[];
 };
 
-// Define a reusable CTA component
 function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
   return (
-    <section className="text-white py-4">
+    <section className="relative py-8 bg-gradient-to-r from-[#DAA520] to-[#B8860B]">
       <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 text-center">
+        <h3 className="text-2xl font-bold text-white mb-6">
+          Start Your Child's Bilingual Journey Today!
+        </h3>
         <a
           href={amazonUrl}
-          className="inline-block rounded-md bg-[#DAA520] px-5 py-3 text-lg font-semibold text-black shadow-sm hover:bg-[#B8860B]"
+          className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-gray-900 transition-all duration-300 hover:scale-105"
         >
-          Purchase on Amazon
+          Get Your Copy Now
+          <ArrowRight className="ml-2 h-5 w-5" />
         </a>
+        <p className="mt-4 text-sm text-white opacity-90">
+          30-Day Money Back Guarantee • Instant Digital Access
+        </p>
       </div>
     </section>
   );
 }
-
 export default function BookPageClient() {
   const { language, slug } = useParams();
 
@@ -89,24 +95,46 @@ export default function BookPageClient() {
             />
           </div>
         </div>
-        <PurchaseCTA amazonUrl={book.amazonUrl} />
       </section>
 
-      {/* CTA Section after Hero */}
+      <PurchaseCTA amazonUrl={book.amazonUrl} />
 
       {/* Challenges Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-            Challenges this Book Solves
+          <h2 className="text-center text-4xl font-bold text-gray-900 mb-16">
+            Challenges This Book Solves
           </h2>
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
             {book.challenges.map((challenge, index) => (
               <div
                 key={index}
-                className="rounded-lg border p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
               >
-                {challenge}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl" />
+                <div className="relative">
+                  <div className="w-16 h-16 mb-6 rounded-xl bg-[#DAA520] flex items-center justify-center">
+                    <svg
+                      className="w-8 h-8 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    {challenge.split(":")[0]}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {challenge.split(":")[1] || challenge}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -117,18 +145,30 @@ export default function BookPageClient() {
       <PurchaseCTA amazonUrl={book.amazonUrl} />
 
       {/* Why Choose Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-            Why Choose this Book?
-          </h2>
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900">
+              Why Parents Love Our Book
+            </h2>
+          </div>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {book.whyChoose.map((reason, index) => (
               <div
                 key={index}
-                className="rounded-lg border p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-gray-50 rounded-xl p-6 text-center hover:bg-white hover:shadow-lg transition-all duration-300"
               >
-                {reason}
+                <div className="w-12 h-12 mb-4 bg-[#DAA520] rounded-lg mx-auto flex items-center justify-center">
+                  <span className="text-white font-bold text-xl">
+                    {index + 1}
+                  </span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {reason.split(":")[0]}
+                </h3>
+                <p className="text-gray-600 text-sm">
+                  {reason.split(":")[1] || reason}
+                </p>
               </div>
             ))}
           </div>
@@ -136,18 +176,25 @@ export default function BookPageClient() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-900 text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-            What Parents Are Saying
+          <h2 className="text-center text-4xl font-bold mb-16">
+            Hear From Happy Parents
           </h2>
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {book.testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="rounded-lg border p-6 text-center shadow-lg hover:shadow-xl transition-shadow duration-300"
+                className="bg-white/10 rounded-xl p-8 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
               >
-                {testimonial}
+                <div className="flex items-center mb-4">
+                  <div className="ml-4">
+                    <p className="font-semibold">{testimonial.split("-")[0]}</p>
+                    <p className="text-sm text-gray-300">
+                      {testimonial.split("-")[1]}
+                    </p>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
