@@ -34,11 +34,13 @@ export function Footer() {
                   Kirundi Books
                 </Link>
               </li>
-              <li>
-                <Link href="/blog" className="text-sm hover:text-[#DAA520]">
-                  Blog
-                </Link>
-              </li>
+              {false && (
+                <li>
+                  <Link href="/blog" className="text-sm hover:text-[#DAA520]">
+                    Blog
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
 

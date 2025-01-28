@@ -105,12 +105,14 @@ export default function Home() {
               >
                 Browse Languages
               </Link>
-              <Link
-                href="/blog"
-                className="flex items-center text-sm font-semibold leading-6 text-[#DAA520]"
-              >
-                Read our Blog <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+              {false && (
+                <Link
+                  href="/blog"
+                  className="flex items-center text-sm font-semibold leading-6 text-[#DAA520]"
+                >
+                  Read our Blog <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              )}
             </div>
           </div>
         </div>
