@@ -44,11 +44,12 @@ export default function LanguagePageClient() {
               Learn & Celebrate {languageData.name}
             </div>
             <h1 className="text-5xl font-bold sm:text-7xl bg-gradient-to-r from-[#DAA520] to-[#B8860B] bg-clip-text text-transparent leading-[1.3]">
-              {languageData.name} Bilingual Books
+              {languageData.name} Books
             </h1>
             <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
-              Discover our collection of {languageData.name} books paired with
-              English or French translations—perfect for families worldwide!
+              Discover our collection of bilingual {languageData.name} books
+              paired with English or French translations—perfect for families
+              worldwide!
             </p>
           </div>
         </div>
@@ -100,7 +101,7 @@ export default function LanguagePageClient() {
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              {languageData.name} FAQ
+              Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
               Common questions about our {languageData.name} books
