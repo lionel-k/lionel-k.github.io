@@ -145,13 +145,13 @@ export default function Home() {
                     {book.title}
                   </h3>
                   <p className="text-gray-600 mb-6">{book.description}</p>
-                  <a
+                  <Link
                     href={book.amazonUrl}
-                    className="inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-white bg-gray-900 rounded-lg hover:bg-[#DAA520] transition-all"
+                    className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
                   >
                     View on Amazon
                     <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
+                  </Link>
                 </div>
               ))}
           </div>
