@@ -162,7 +162,7 @@ export default function About() {
       <section className="bg-black text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <div className="mx-auto max-w-4xl text-center bg-[url('/newsletter-pattern.svg')] bg-contain bg-no-repeat bg-center py-8">
-            <div className="bg-[#DAA520]/10 backdrop-blur-sm rounded-3xl p-12">
+            <div className="bg-black backdrop-blur-sm rounded-3xl p-12">
               <h3 className="text-3xl font-bold text-white mb-4">
                 Stay Updated
               </h3>
