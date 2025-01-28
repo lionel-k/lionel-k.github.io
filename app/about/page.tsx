@@ -70,23 +70,36 @@ export default function About() {
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
             My Story
           </h2>
-          <p className="text-center text-lg text-gray-600">
-            Hi, I'm Lionel, and I'm from Burundi. When I was a kid, I didn't
-            think much about my language or culture. Everyone around me spoke
-            Kirundi, and it was just a normal part of life. But when I moved to
-            France for school, I realized how much my language and roots meant
-            to me. One day, I met a Burundian girl who had grown up abroad. She
-            told me she didn't speak Kirundi very well and felt out of place
-            when she was with other Burundians. She was kind, but you could see
-            it hurt her. That stayed with me. Years later, I became a dad. I
-            wanted my daughter to grow up proud of her roots and her language.
-            But when I looked for books in Kirundi to teach her, I couldn't find
-            any. That's when I decided to write my own. This journey started
-            with a simple goal: to help kids like my daughter connect to their
-            heritage. But now, it's grown into something bigger. I want to help
-            families across the African diaspora pass on their languages and
-            keep their culture alive.
-          </p>
+          <div className="max-w-3xl mx-auto space-y-6 text-gray-600">
+            <p className="text-lg leading-relaxed">
+              Hi, I'm Lionel, and I'm from Burundi. When I was a kid, I didn't
+              think much about my language or culture. Everyone around me spoke
+              Kirundi, and it was just a normal part of life. But when I moved
+              to France for school, I realized how much my language and roots
+              meant to me.
+            </p>
+
+            <p className="text-lg leading-relaxed">
+              One day, I met a Burundian girl who had grown up abroad. She told
+              me she didn't speak Kirundi very well and felt out of place when
+              she was with other Burundians. She was kind, but you could see it
+              hurt her. That stayed with me.
+            </p>
+
+            <p className="text-lg leading-relaxed">
+              Years later, I became a dad. I wanted my daughter to grow up proud
+              of her roots and her language. But when I looked for books in
+              Kirundi to teach her, I couldn't find any. That's when I decided
+              to write my own.
+            </p>
+
+            <p className="text-lg leading-relaxed">
+              This journey started with a simple goal: to help kids like my
+              daughter connect to their heritage. But now, it's grown into
+              something bigger. I want to help families across the African
+              diaspora pass on their languages and keep their culture alive.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -96,23 +109,33 @@ export default function About() {
           <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
             About Lingu.Africa
           </h2>
-          <p className="text-center text-lg text-gray-600">
-            Lingu.africa is a place for families who want to keep their African
-            languages alive. We create bilingual picture books that celebrate
-            African languages and culture. These books help kids learn their
-            mother tongue while growing up in a new world. Our mission is
-            simple: keep their African languages alive. We create bilingual
-            picture books that celebrate African languages and culture. These
-            books help kids learn their mother tongue while growing up in a new
-            world. Our mission is simple: to make sure African kids, no matter
-            where they live, grow up proud of their roots. Language is more than
-            just words. It's stories, songs, and traditions. It's a connection
-            to home. Whether you speak Kirundi, Swahili, Yoruba, or any other
-            African language, our books are here to help. They're for parents,
-            grandparents, and families who want to give their kids the gift of
-            language and identity. Let's make sure the next generation never
-            loses their roots. One word, one story, one book at a time.
-          </p>
+          <div className="max-w-3xl mx-auto space-y-6 text-gray-600">
+            <p className="text-lg leading-relaxed">
+              Lingu.africa is a place for families who want to keep their
+              African languages alive. We create bilingual picture books that
+              celebrate African languages and culture. These books help kids
+              learn their mother tongue while growing up in a new world.
+            </p>
+
+            <p className="text-lg leading-relaxed">
+              Our mission is simple: to make sure African kids, no matter where
+              they live, grow up proud of their roots. Language is more than
+              just words. It's stories, songs, and traditions. It's a connection
+              to home.
+            </p>
+
+            <p className="text-lg leading-relaxed">
+              Whether you speak Kirundi, Swahili, Yoruba, or any other African
+              language, our books are here to help. They're for parents,
+              grandparents, and families who want to give their kids the gift of
+              language and identity.
+            </p>
+
+            <p className="text-lg leading-relaxed font-medium text-[#DAA520]">
+              Let's make sure the next generation never loses their roots. One
+              word, one story, one book at a time.
+            </p>
+          </div>
         </div>
       </section>
 
