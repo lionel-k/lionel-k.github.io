@@ -225,10 +225,10 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] py-20 text-white">
+      <section className="bg-black text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <div className="mx-auto max-w-4xl text-center bg-[url('/newsletter-pattern.svg')] bg-contain bg-no-repeat bg-center py-16">
-            <div className="bg-[#DAA520]/10 backdrop-blur-sm rounded-3xl p-12">
+          <div className="mx-auto max-w-4xl text-center bg-[url('/newsletter-pattern.svg')] bg-contain bg-no-repeat bg-center py-8">
+            <div className="bg-black backdrop-blur-sm rounded-3xl p-12">
               <h3 className="text-3xl font-bold text-white mb-4">
                 Join Our Cultural Community
               </h3>
