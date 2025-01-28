@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { FAQ } from "@/components/FAQ";
 
@@ -49,9 +47,9 @@ const FAQ_ITEMS = [
 export default function About() {
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
+      {/* Hero Section (Dark Gradient) */}
       <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-28 text-white overflow-hidden">
-        {/* Pattern Overlay (optional) */}
+        {/* Optional pattern overlay with low opacity */}
         <div className="absolute inset-0 opacity-10 pattern-cross pattern-[#DAA520] pattern-size-6 pointer-events-none" />
 
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
@@ -63,88 +61,90 @@ export default function About() {
               About Us
             </h1>
             <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
-              Learn more about our mission to connect people with African
-              heritage through bilingual books.
+              Discover how our bilingual African children's books bring families
+              closer to their culture and heritage.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Our Story Section */}
-      <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white text-gray-900">
+      {/* My Story Section (Light Gradient) */}
+      <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-[#F5F2EC] text-gray-900">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-4xl font-bold mb-4">My Story</h2>
           <p className="text-center text-xl text-gray-600 mb-12">
-            A personal journey that sparked a bigger mission
+            A personal journey that started it all
           </p>
-          <div className="max-w-3xl mx-auto space-y-6 text-gray-700 leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-6 leading-relaxed text-gray-700">
             <p>
-              Hi, I'm Lionel, and I'm from Burundi. When I was a kid, I didn't
-              think much about my language or culture. Everyone around me spoke
-              Kirundi, and it was just a normal part of life. But when I moved
-              to France for school, I realized how much my language and roots
-              meant to me.
+              Hello! My name is Lionel, and I’m from Burundi in East Africa.
+              When I was little, everyone around me spoke Kirundi, our local
+              African language. I didn’t think much about it back then. But when
+              I moved to France for school, I realized how special my culture
+              and mother tongue really were. They reminded me of my African
+              roots and my family traditions.
             </p>
             <p>
-              One day, I met a Burundian girl who had grown up abroad. She told
-              me she didn't speak Kirundi very well and felt out of place when
-              she was with other Burundians. She was kind, but you could see it
-              hurt her. That stayed with me.
+              One day, I met a girl who was also from Burundi, but she grew up
+              in another country. She felt shy because she didn’t speak Kirundi
+              very well. It made me sad because I knew lots of children from the
+              African diaspora felt the same way. I wanted to help them feel
+              proud of their heritage.
             </p>
             <p>
-              Years later, I became a dad. I wanted my daughter to grow up proud
-              of her roots and her language. But when I looked for books in
-              Kirundi to teach her, I couldn't find any. That's when I decided
-              to write my own.
+              Later on, when I became a dad, I really wanted my daughter to grow
+              up celebrating our African culture and language. But it was hard
+              to find bilingual children’s books in Kirundi or other African
+              languages like Kinyarwanda, Lingala, Swahili, or Yoruba. That’s
+              when I started making books myself, so kids everywhere can learn
+              their mother tongue and connect to their African heritage, no
+              matter where they live.
             </p>
             <p>
-              This journey started with a simple goal: to help kids like my
-              daughter connect to their heritage. But now, it's grown into
-              something bigger. I want to help families across the African
-              diaspora pass on their languages and keep their culture alive.
+              Now, I create African children’s books for families all over the
+              world. I hope these bilingual stories bring smiles, new words, and
+              a stronger bond to everyone’s cultural identity!
             </p>
           </div>
         </div>
       </section>
 
-      {/* About the Brand Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-[#FAF8F5] text-gray-900">
+      {/* About Lingu.Africa (Light Gradient) */}
+      <section className="py-20 bg-gradient-to-b from-[#F5F2EC] to-[#FAF8F5] text-gray-900">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-4xl font-bold mb-4">
             About Lingu.Africa
           </h2>
           <p className="text-center text-xl text-gray-600 mb-12">
-            Where language and culture intertwine
+            Keeping African languages alive for the next generation
           </p>
-          <div className="max-w-3xl mx-auto space-y-6 text-gray-700 leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-6 leading-relaxed text-gray-700">
             <p>
-              Lingu.africa is a place for families who want to keep their
-              African languages alive. We create bilingual picture books that
-              celebrate African languages and culture. These books help kids
-              learn their mother tongue while growing up in a new world.
+              Lingu.Africa is a special place where we make bilingual books in
+              African languages like Kirundi, Kinyarwanda, Lingala, Swahili,
+              Yoruba, and more. We believe language is more than words—it’s
+              about stories, songs, and heritage. Our mission is to help kids,
+              especially those in the African diaspora, learn their mother
+              tongue in a fun way and feel proud of their roots.
             </p>
             <p>
-              Our mission is simple: to make sure African kids, no matter where
-              they live, grow up proud of their roots. Language is more than
-              just words. It's stories, songs, and traditions. It's a connection
-              to home.
+              By reading our books, families can share African culture together
+              and make new memories. We want every child to feel connected to
+              their history and traditions. Whether you live in Africa or on the
+              other side of the world, our bilingual children’s books will spark
+              curiosity and build a strong bridge to your cultural identity.
             </p>
-            <p>
-              Whether you speak Kirundi, Swahili, Yoruba, or any other African
-              language, our books are here to help. They're for parents,
-              grandparents, and families who want to give their kids the gift of
-              language and identity.
-            </p>
-            <p className="text-lg leading-relaxed font-medium text-[#DAA520]">
-              Let's make sure the next generation never loses their roots. One
-              word, one story, one book at a time.
+            <p className="text-lg font-medium text-[#DAA520]">
+              Join us as we celebrate African heritage, empower kids to speak
+              their mother tongue, and keep our rich traditions alive for
+              generations to come.
             </p>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white text-gray-900">
+      {/* FAQ Section (Light Gradient) */}
+      <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-[#F5F2EC] text-gray-900">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-4xl font-bold mb-4">
             Frequently Asked Questions
@@ -158,17 +158,17 @@ export default function About() {
         </div>
       </section>
 
-      {/* Newsletter Section */}
+      {/* Newsletter Section (Dark Gradient) */}
       <section className="bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] py-20 text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <div className="mx-auto max-w-4xl text-center bg-[url('/newsletter-pattern.svg')] bg-contain bg-no-repeat bg-center py-16">
             <div className="bg-[#DAA520]/10 backdrop-blur-sm rounded-3xl p-12">
               <h3 className="text-3xl font-bold text-white mb-4">
-                Stay Connected
+                Stay Updated
               </h3>
               <p className="text-xl text-gray-300 mb-8">
-                Get the latest updates on new book releases and exclusive
-                resources
+                Get our latest news on bilingual African children’s books,
+                language tips, and special offers.
               </p>
               <NewsletterForm />
             </div>
