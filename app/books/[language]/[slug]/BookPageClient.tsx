@@ -122,10 +122,10 @@ export default function BookPageClient() {
               return (
                 <div
                   key={index}
-                  className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
+                  className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center"
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
-                  <div className="relative">
+                  <div className="relative flex flex-col items-center">
                     <div className="w-16 h-16 mb-6 rounded-xl bg-[#DAA520] flex items-center justify-center">
                       <svg
                         className="w-8 h-8 text-white"
@@ -141,10 +141,10 @@ export default function BookPageClient() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
                       {title || challenge}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed text-center">
                       {desc || ""}
                     </p>
                   </div>
