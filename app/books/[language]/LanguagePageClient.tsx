@@ -36,14 +36,14 @@ export default function LanguagePageClient() {
       />
 
       {/* Hero Section - mirrored from Home Page */}
-      <section className="relative bg-black py-28 text-white overflow-hidden">
+      <section className="relative bg-black py-28 text-white">
         <div className="absolute inset-0 opacity-10 pattern-cross pattern-[#DAA520] pattern-size-6 pointer-events-none" />
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-8 inline-block bg-[#DAA520]/20 px-6 py-2 rounded-full text-[#DAA520] text-sm font-semibold">
               Learn & Celebrate {languageData.name}
             </div>
-            <h1 className="text-5xl font-bold tracking-tight sm:text-7xl bg-gradient-to-r from-[#DAA520] to-[#B8860B] bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold sm:text-7xl bg-gradient-to-r from-[#DAA520] to-[#B8860B] bg-clip-text text-transparent leading-[1.3]">
               {languageData.name} Bilingual Books
             </h1>
             <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
