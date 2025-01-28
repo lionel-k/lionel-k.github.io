@@ -10,13 +10,13 @@ export const languagesConfig = {
           "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily.",
         cover: "/images/kirundi/my-first-picture-book-in-kirundi.png",
         challenges: [
-          "Finding engaging materials for teaching Kirundi to children.",
-          "Limited resources available for diaspora families.",
-          "Difficulty for non-native Kirundi speakers to teach the language.",
+          "No Fun Kirundi Books for Kids!: Burundian parents struggle to find colorful, modern books that make learning our language exciting.",
+          "Losing Culture Abroad?: Diaspora families lack Kirundi resources to teach kids about Burundian heritage.",
+          "Teaching Kirundi Without Fluency!: Most books need fluent parents - ours helps you learn together.",
         ],
         whyChoose: [
-          "Learn 3 Languages Together!: Kirundi, English and French words side-by-side - perfect bilingual kids book",
-          "Bright Pictures Kids Love!: 30 colorful pages with fun stories - best language learning book for children",
+          "Learn 3 Languages Together!: Kirundi, English and French words side-by-side - perfect bilingual kids book.",
+          "Bright Pictures Kids Love!: 30 colorful pages with fun stories - best language learning book for children.",
           "Teach Kirundi Easily!: Perfect kids language book for parents who want to learn Kirundi together - no fluent speaking needed!",
         ],
         amazonUrl: "https://www.amazon.com/dp/2492960021",
