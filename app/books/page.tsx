@@ -34,7 +34,7 @@ export default function Books() {
               Available African Languages
             </h2>
             <p className="text-xl text-gray-600">
-              Celebrating linguistic diversity across the continent
+              Discover the amazing languages of Africa!
             </p>
           </div>
 
