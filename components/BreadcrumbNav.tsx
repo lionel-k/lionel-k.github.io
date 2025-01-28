@@ -6,9 +6,9 @@ export function BreadcrumbNav({
   items: { name: string; href: string }[];
 }) {
   return (
-    <nav className="bg-black text-sm text-[#DAA520] p-4 flex items-center space-x-2 px-4">
+    <nav className="bg-black text-sm text-[#DAA520] p-4 flex items-center space-x-2 overflow-x-auto">
       {items.map((item, index) => (
-        <span key={index}>
+        <span key={index} className="whitespace-nowrap">
           <Link href={item.href} className="hover:underline">
             {item.name}
           </Link>
