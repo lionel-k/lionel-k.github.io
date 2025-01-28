@@ -24,12 +24,12 @@ const FAQ_ITEMS = [
   {
     question: "Do I need to know the African language to use the books?",
     answer:
-      "No! You don’t have to know the language. The books are made for parents and kids to learn together, even if you are not fluent.",
+      "No! You don't have to know the language. The books are made for parents and kids to learn together, even if you are not fluent.",
   },
   {
     question: "What types of books do you sell?",
     answer:
-      "We have books like ‘First 100 Words,’ books on action verbs, animals, fruits and vegetables, and even coloring books. They help kids learn new words in a fun way.",
+      "We have books like ‘First 100 Words,' books on action verbs, animals, fruits and vegetables, and even coloring books. They help kids learn new words in a fun way.",
   },
   {
     question: "Can these books help my child connect with their heritage?",
@@ -52,9 +52,9 @@ const FAQ_ITEMS = [
       "Yes, all translations are carefully checked by native speakers to make sure they are accurate and reflect the language properly.",
   },
   {
-    question: "What’s next for Lingu.africa?",
+    question: "What's next for Lingu.africa?",
     answer:
-      "We are working on adding more African languages and creating new books on different topics. Follow us for updates on what’s coming next!",
+      "We are working on adding more African languages and creating new books on different topics. Follow us for updates on what's coming next!",
   },
   {
     question: "How can I share ideas or suggest a language to add?",
@@ -64,12 +64,12 @@ const FAQ_ITEMS = [
   {
     question: "Can I see what the books look like before buying?",
     answer:
-      "Yes! Many of our books on Amazon have a ‘Look Inside’ option, so you can preview a few pages before you buy.",
+      "Yes! Many of our books on Amazon have a ‘Look Inside' option, so you can preview a few pages before you buy.",
   },
   {
     question: "Do you have books for older kids or advanced learners?",
     answer:
-      "Yes, for Kirundi we offer advanced books like 'The Kirundi Proverb Treasury,' 'The Kirundi Joke Treasury,' and more, which are perfect for teens, adults, and anyone wanting a deeper connection to the language. For other African languages, we’re focusing on beginner-friendly books right now, but we’re adding more advanced titles over time. Stay tuned for updates!",
+      "Yes, for Kirundi we offer advanced books like 'The Kirundi Proverb Treasury,' 'The Kirundi Joke Treasury,' and more, which are perfect for teens, adults, and anyone wanting a deeper connection to the language. For other African languages, we're focusing on beginner-friendly books right now, but we're adding more advanced titles over time. Stay tuned for updates!",
   },
 
   {
