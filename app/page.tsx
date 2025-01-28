@@ -29,7 +29,7 @@ const FAQ_ITEMS = [
   {
     question: "What types of books do you sell?",
     answer:
-      "We have books like ‘First 100 Words,' books on action verbs, animals, fruits and vegetables, and even coloring books. They help kids learn new words in a fun way.",
+      "We have books like 'First 100 Words,' books on action verbs, animals, fruits and vegetables, and even coloring books. They help kids learn new words in a fun way.",
   },
   {
     question: "Can these books help my child connect with their heritage?",
@@ -64,7 +64,7 @@ const FAQ_ITEMS = [
   {
     question: "Can I see what the books look like before buying?",
     answer:
-      "Yes! Many of our books on Amazon have a ‘Look Inside' option, so you can preview a few pages before you buy.",
+      "Yes! Many of our books on Amazon have a 'Look Inside' option, so you can preview a few pages before you buy.",
   },
   {
     question: "Do you have books for older kids or advanced learners?",
