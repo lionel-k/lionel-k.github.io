@@ -48,16 +48,11 @@ export default function Books() {
                 <div className="absolute inset-0 pointer-events-none opacity-5 bg-[url('/african-pattern.svg')]" />
 
                 <div className="relative">
-                  <img
-                    src={language.coverImage}
-                    alt={`${language.name} cover`}
-                    className="mb-6 w-full h-48 object-cover rounded-xl"
-                  />
                   <h3 className="text-2xl font-bold mb-4">{language.name}</h3>
 
                   {language.comingSoon ? (
                     <div className="mt-6">
-                      <span className="inline-block px-4 py-2 mt-8 bg-[#DAA520] text-black rounded-full text-sm font-medium">
+                      <span className="inline-block px-4 py-2 mt-4 bg-[#DAA520] text-black rounded-full text-sm font-medium">
                         Coming Soon
                       </span>
                     </div>
