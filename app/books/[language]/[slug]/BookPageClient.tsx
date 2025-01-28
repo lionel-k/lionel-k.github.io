@@ -82,7 +82,7 @@ export default function BookPageClient() {
       />
 
       {/* Hero Section - Dark Gradient from Home Page */}
-      <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-16 text-white overflow-hidden">
+      <section className="relative bg-black py-16 text-white overflow-hidden">
         {/* Optional gold pattern overlay if you want it:
             <div className="absolute inset-0 opacity-10 pattern-cross pattern-[#DAA520] pattern-size-6 pointer-events-none" />
         */}
