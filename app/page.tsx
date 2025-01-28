@@ -187,7 +187,7 @@ export default function Home() {
                   </h3>
                   {language.comingSoon ? (
                     <div className="mt-6">
-                      <span className="inline-block px-4 py-2 bg-[#DAA520]/20 text-[#DAA520] rounded-full text-sm font-medium">
+                      <span className="inline-block mt-8 px-4 py-2 bg-[#DAA520]/20 text-[#DAA520] rounded-full text-sm font-medium">
                         Coming Soon
                       </span>
                     </div>
