@@ -15,9 +15,9 @@ export const languagesConfig = {
           "Difficulty for non-native Kirundi speakers to teach the language.",
         ],
         whyChoose: [
-          "Bilingual format in Kirundi, English, and French to support learning for parents and children.",
-          "30 vibrant, colorful pages to capture and hold young readers' attention.",
-          "Perfect for parents who want to teach Kirundi but don't speak it fluently.",
+          "Learn 3 Languages Together!: Kirundi, English and French words side-by-side - perfect bilingual kids book",
+          "Bright Pictures Kids Love!: 30 colorful pages with fun stories - best language learning book for children",
+          "Teach Kirundi Easily!: Perfect kids language book for parents who want to learn Kirundi together - no fluent speaking needed!",
         ],
         amazonUrl: "https://www.amazon.com/dp/2492960021",
         bestSeller: true,
