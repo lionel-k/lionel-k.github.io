@@ -19,6 +19,31 @@ const FAQ_ITEMS = [
     answer:
       "You can support us by purchasing our books, sharing our content, and subscribing to our newsletter.",
   },
+  {
+    question: "What inspired the creation of Lingu.Africa?",
+    answer:
+      "Lingu.Africa was inspired by a desire to help children connect with their African heritage through language and culture.",
+  },
+  {
+    question: "Who is behind Lingu.Africa?",
+    answer:
+      "Lingu.Africa was founded by Lionel, who is passionate about preserving African languages and culture.",
+  },
+  {
+    question: "How can I support Lingu.Africa's mission?",
+    answer:
+      "You can support us by purchasing our books, sharing our content, and subscribing to our newsletter.",
+  },
+  {
+    question: "What makes Lingu.Africa's books unique?",
+    answer:
+      "Our books are bilingual, celebrating African languages and culture, and are designed to help children learn their mother tongue.",
+  },
+  {
+    question: "Can I contribute to Lingu.Africa's mission?",
+    answer:
+      "Yes, we welcome contributions and ideas. Please reach out to us through our website or social media.",
+  },
 ];
 
 export default function About() {
