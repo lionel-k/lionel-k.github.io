@@ -1,10 +1,12 @@
 "use client";
 
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { FAQ } from "@/components/FAQ";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import { ArrowRight } from "lucide-react";
 
 export default function LanguagePageClient() {
   const { language } = useParams();
@@ -23,82 +25,110 @@ export default function LanguagePageClient() {
   const faqItems = languageData.faq;
 
   return (
-    <>
-      <div className="flex flex-col">
-        <BreadcrumbNav
-          items={[
-            { name: "Home", href: "/" },
-            { name: "Books", href: "/books" },
-            { name: languageData.name, href: `/books/${language}` },
-          ]}
-        />
-        {/* Hero Section */}
-        <section className="relative bg-black py-20 text-white">
-          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
-            <div className="mx-auto max-w-3xl text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-[#DAA520] sm:text-6xl">
-                {languageData.name} Books
-              </h1>
-              <p className="mt-6 text-lg leading-8 text-gray-300">
-                Discover our collection of {languageData.name} books, available
-                with English and French translations.
-              </p>
-            </div>
-          </div>
-        </section>
+    <div className="flex flex-col">
+      {/* Breadcrumbs at the top */}
+      <BreadcrumbNav
+        items={[
+          { name: "Home", href: "/" },
+          { name: "Books", href: "/books" },
+          { name: languageData.name, href: `/books/${language}` },
+        ]}
+      />
 
-        {/* Books Section */}
-        <section className="py-16 bg-white">
-          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-            <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-              Featured Books
+      {/* Hero Section - mirrored from Home Page */}
+      <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-28 text-white overflow-hidden">
+        <div className="absolute inset-0 opacity-10 pattern-cross pattern-[#DAA520] pattern-size-6 pointer-events-none" />
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="mx-auto max-w-4xl text-center">
+            <div className="mb-8 inline-block bg-[#DAA520]/20 px-6 py-2 rounded-full text-[#DAA520] text-sm font-semibold">
+              Learn & Celebrate {languageData.name}
+            </div>
+            <h1 className="text-5xl font-bold tracking-tight sm:text-7xl bg-gradient-to-r from-[#DAA520] to-[#B8860B] bg-clip-text text-transparent">
+              {languageData.name} Bilingual Books
+            </h1>
+            <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
+              Discover our collection of {languageData.name} books paired with
+              English or French translations—perfect for families worldwide!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Books Section - with light gradient background */}
+      <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Featured {languageData.name} Books
             </h2>
-            <div className="grid gap-8 md:grid-cols-2">
-              {languageData.books.map((book) => (
-                <div
-                  key={book.title}
-                  className="rounded-lg border border-gray-200 p-8 text-center"
+            <p className="text-xl text-gray-600">
+              Bilingual {languageData.name} &amp; English or French
+            </p>
+          </div>
+          <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+            {languageData.books.map((book) => (
+              <div
+                key={book.title}
+                className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
+              >
+                {/* Subtle gold overlay */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
+                <img
+                  src={book.cover}
+                  alt={`${book.title} cover`}
+                  className="mb-6 w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
+                />
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  {book.title}
+                </h3>
+                <p className="text-gray-600 mb-6">{book.description}</p>
+                <Link
+                  href={`/books/${language}/${book.slug}`}
+                  className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"
                 >
-                  <img
-                    src={book.cover}
-                    alt={`${book.title} cover`}
-                    className="mb-4 w-48 h-48 object-cover rounded-md mx-auto"
-                  />
-                  <h3 className="text-xl font-semibold mb-4">{book.title}</h3>
-                  <p className="text-gray-600 mb-4">{book.description}</p>
-                  <a
-                    href={`/books/${language}/${book.slug}`}
-                    className="mt-4 inline-block rounded-md bg-[#DAA520] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-[#B8860B]"
-                  >
-                    Read more
-                  </a>
-                </div>
-              ))}
-            </div>
+                  Read More
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-            <h2 className="text-center text-3xl font-bold tracking-tight mb-12">
-              Frequently Asked Questions
+      {/* FAQ Section - also mirrors Home Page style */}
+      <section className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              {languageData.name} FAQ
             </h2>
-            <div className="mx-auto max-w-3xl">
-              <FAQ items={faqItems} />
-            </div>
+            <p className="text-xl text-gray-600">
+              Common questions about our {languageData.name} books
+            </p>
           </div>
-        </section>
+          <div className="mx-auto max-w-4xl">
+            <FAQ items={faqItems} />
+          </div>
+        </div>
+      </section>
 
-        {/* Newsletter Section */}
-        <section className="bg-black text-white">
-          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-            <div className="mx-auto max-w-2xl text-center">
+      {/* Newsletter Section - dark gradient, consistent with Home Page */}
+      <section className="bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] py-20 text-white">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <div className="mx-auto max-w-4xl text-center bg-[url('/newsletter-pattern.svg')] bg-contain bg-no-repeat bg-center py-16">
+            <div className="bg-[#DAA520]/10 backdrop-blur-sm rounded-3xl p-12">
+              <h3 className="text-3xl font-bold text-white mb-4">
+                Stay Connected
+              </h3>
+              <p className="text-xl text-gray-300 mb-8">
+                Sign up for updates on new {languageData.name} books, language
+                tips, and more
+              </p>
               <NewsletterForm />
             </div>
           </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+    </div>
   );
 }
