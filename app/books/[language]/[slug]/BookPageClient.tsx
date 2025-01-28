@@ -31,7 +31,7 @@ function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
           href={amazonUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-full bg-black px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-gray-900 transition-all duration-300 hover:scale-105"
+          className="inline-flex items-center justify-center rounded-full bg-gray-800 px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-gray-700 transition-all duration-300 hover:scale-105"
         >
           Get Your Paperback Now
           <ArrowRight className="ml-2 h-5 w-5" />
