@@ -8,7 +8,7 @@ export const languagesConfig = {
         slug: "my-first-picture-book-in-kirundi",
         description: {
           short:
-            "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily.",
+            "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily. Great for toddlers and preschoolers.",
           long: "This picture book is for kids aged 2-8 and uses Kirundi, English, and French. It has nice pictures that make learning easy and exciting. Great for families who want to learn Kirundi together, even if they don't speak it well. Helps kids connect with their culture while learning new words.",
         },
         challenges: [
