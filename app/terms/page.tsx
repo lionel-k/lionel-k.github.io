@@ -90,15 +90,6 @@ export default function Terms() {
               and you in relation to your use of this Website, and supersede all
               prior agreements and understandings.
             </p>
-            <h2 className="text-3xl font-bold mb-4">
-              Governing Law & Jurisdiction
-            </h2>
-            <p>
-              These Terms will be governed by and interpreted in accordance with
-              the laws of the State of [Your State], and you submit to the
-              non-exclusive jurisdiction of the state and federal courts located
-              in [Your State] for the resolution of any disputes.
-            </p>
           </div>
         </div>
       </section>
