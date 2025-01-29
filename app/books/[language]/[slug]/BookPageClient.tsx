@@ -13,7 +13,6 @@ type Book = {
   slug: string;
   amazonUrl: string;
   description: string;
-  cover: string;
   challenges: string[];
   whyChoose: string[];
   testimonials: string[];
