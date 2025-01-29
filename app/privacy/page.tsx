@@ -13,7 +13,7 @@ export default function Privacy() {
               Your privacy is important to us. Please read our policy carefully.
             </p>
             <p className="mt-4 text-sm text-gray-400">
-              Last Updated: October 5, 2023
+              Last Updated: January 29, 2025
             </p>
           </div>
         </div>

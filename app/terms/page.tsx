@@ -14,7 +14,7 @@ export default function Terms() {
               website.
             </p>
             <p className="mt-4 text-sm text-gray-400">
-              Last Updated: October 5, 2023
+              Last Updated: January 29, 2025
             </p>
           </div>
         </div>
