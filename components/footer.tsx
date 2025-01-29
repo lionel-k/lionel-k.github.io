@@ -80,8 +80,14 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-10 border-t border-[#DAA520]/20 pt-6 text-center">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Lingu.Africa. Proudly supporting
-            families worldwide.
+            © {new Date().getFullYear()} Lingu.Africa
+            <Link href="/terms" className="ml-2 hover:text-[#DAA520]">
+              Terms and Conditions
+            </Link>
+            <span className="mx-2"></span>
+            <Link href="/privacy" className="hover:text-[#DAA520]">
+              Privacy Policy
+            </Link>
           </p>
         </div>
       </div>
