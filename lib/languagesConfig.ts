@@ -67,13 +67,13 @@ export const languagesConfig = {
         slug: "gatore-and-her-parents-visit-burundi",
         description: {
           short:
-            "A bilingual story about Gatore's journey to Burundi, exploring heritage and local traditions. Ideal for diaspora families teaching Kirundi.",
-          long: "A heartwarming bilingual story (Kirundi & English) about young Gatore traveling to her family's home country of Burundi. Initially hesitant to try local food or new experiences, she soon discovers how amazing it is to connect with her heritage, taste traditional dishes, and bond with cousins and grandparents. Perfect for diaspora families wanting children to learn Kirundi through fun adventures!",
+            "A fun story about Gatore's trip to Burundi, learning about family and traditions. Great for families teaching Kirundi.",
+          long: "Join Gatore on a fun trip to Burundi! At first, she's unsure about trying new foods or activities, but soon she finds out how cool it is to learn about her family's traditions, taste yummy dishes, and play with her cousins and grandparents. Perfect for families who want their kids to learn Kirundi through exciting adventures!",
         },
         challenges: [
-          "Reluctance to try new foods: Many diaspora kids miss out on local cuisine. This story encourages adventurous eating.",
-          "Connecting with heritage: Families living abroad often struggle to teach children about their homeland's culture and language.",
           "Limited Kirundi resources: Bilingual texts help parents who may not be fluent teach kids Kirundi with ease.",
+          "Connecting with heritage: Families living abroad often struggle to teach children about their homeland's culture and language.",
+          "Reluctance to try new foods: Many diaspora kids miss out on local cuisine. This story encourages adventurous eating.",
         ],
         whyChoose: [
           "Inspires Cultural Curiosity: Gatore's fun journey encourages kids to embrace their roots and new experiences.",
