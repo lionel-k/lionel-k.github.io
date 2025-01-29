@@ -83,8 +83,9 @@ export const languagesConfig = {
         amazonUrl: "https://www.amazon.com/dp/2492960080",
         bestSeller: true,
         testimonials: [
+          "This delightful book follows a girl and her family on her first family visit to Burundi, where she explores the local culture and apprehensively tries the food. The vivid descriptions and heartwarming narrative make it an engaging read that inspires curiosity and appreciation for diverse experiences.",
+          "Lovely book, with a bonus as activity book.",
           "This story helped my child see how fun it is to visit family back home—and now she's open to trying local food!",
-          "We loved reading about Gatore's adventures in Burundi! A great way to learn Kirundi and feel closer to our roots.",
         ],
         faq: [
           {
@@ -106,6 +107,22 @@ export const languagesConfig = {
             question: "Does it include cultural references beyond food?",
             answer:
               "Yes! Gatore meets extended family and explores local traditions, helping kids understand everyday Burundian life.",
+          },
+          {
+            question:
+              "Is this story helpful for African diaspora children wanting to connect with Burundi?",
+            answer:
+              "Yes. By sharing local customs, language, and daily life, the book helps African diaspora kids build pride in their heritage.",
+          },
+          {
+            question: "How does this book encourage trying new foods?",
+            answer:
+              "Gatore overcomes her fear of unfamiliar dishes, showing readers how fun and rewarding it is to explore local cuisine.",
+          },
+          {
+            question: "Why is bilingual reading beneficial for children?",
+            answer:
+              "Bilingual books can enhance language skills, cultural awareness, and cognitive development, making learning more engaging and memorable.",
           },
         ],
       },
