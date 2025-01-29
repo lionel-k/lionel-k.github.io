@@ -110,7 +110,7 @@ export default function BookPageClient() {
       {/* CTA Section - Gold Gradient */}
       <PurchaseCTA amazonUrl={book.amazonUrl} />
 
-      {/* Peek Inside the Book Section */}
+      {/* Look Inside the Book Section */}
       <section className="py-20 bg-gradient-to-b from-[#F5F2EC] to-[#FAF8F5]">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-4xl font-bold text-gray-900 mb-16">
