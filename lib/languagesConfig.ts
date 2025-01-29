@@ -78,7 +78,7 @@ export const languagesConfig = {
         whyChoose: [
           "Inspires Cultural Curiosity: Gatore's fun journey encourages kids to embrace their roots and new experiences.",
           "Bilingual Learning: Kirundi & English side-by-side, making it easy for parents and children to learn together.",
-          "Relatable Characters: Gatore's concerns and excitement resonate with diaspora families, fostering a sense of belonging.",
+          "Characters You Can Relate To: Gatore's worries and excitement are just like what kids in other countries feel, making them feel like they belong.",
         ],
         amazonUrl: "https://www.amazon.com/dp/2492960080",
         bestSeller: true,
