@@ -61,7 +61,6 @@ export const languagesConfig = {
           },
         ],
       },
-
       {
         title: "Gatore and Her Parents Visit Burundi",
         slug: "gatore-and-her-parents-visit-burundi",
@@ -123,6 +122,59 @@ export const languagesConfig = {
             question: "Why is bilingual reading beneficial for children?",
             answer:
               "Bilingual books can enhance language skills, cultural awareness, and cognitive development, making learning more engaging and memorable.",
+          },
+        ],
+      },
+      {
+        title: "The Kirundi Proverb Treasury",
+        slug: "the-kirundi-proverb-treasury",
+        description: {
+          short:
+            "Over 900 Kirundi sayings, each with English translations, showing the rich wisdom of Burundi.",
+          long: "This special book has more than 900 Kirundi proverbs. Each proverb has an English and French translation, so it's easy to learn. You'll discover lots of old sayings that people in Burundi have shared for many years. It's perfect for kids or grown-ups who want to remember or learn Kirundi wisdom, connect with family roots, or just enjoy clever sayings!",
+        },
+        challenges: [
+          "Keeping Kirundi wisdom alive: Families often lose old sayings if they don't write them down.",
+          "Connecting kids to their ancestry: Many children don't learn the special words or proverbs of their grandparents.",
+          "Learning Kirundi in a fun way: Big books can be boring, but simple explanations make it easy to read and understand.",
+        ],
+        whyChoose: [
+          "Huge Collection of Proverbs: Over 900 Kirundi proverbs for you to explore!",
+          "Easy Translations: Each proverb comes with English and French, so everyone can learn.",
+          "Great for Families: Perfect for teaching kids about their heritage or just sharing good life lessons.",
+        ],
+        amazonUrl: "https://www.amazon.com/dp/B0CLGQF9QW",
+        bestSeller: true,
+        testimonials: [
+          "My family loves reading these wise sayings together. Now my kids know more about our culture!",
+          "A fantastic book with tons of Kirundi proverbs. Great for school projects or just for fun!",
+          "Helps me connect with my grandparents’ stories. I learned so many new things about Burundi!",
+        ],
+        faq: [
+          {
+            question: "How is this book set up?",
+            answer:
+              "Each Kirundi proverb has an English and French translation. You can read them side by side and learn easily.",
+          },
+          {
+            question: "Can kids understand these proverbs?",
+            answer:
+              "Yes! Many proverbs are explained in simple words. Parents and kids can talk about what each saying means.",
+          },
+          {
+            question: "Is it only for Kirundi speakers?",
+            answer:
+              "Not at all! Even if you don't speak Kirundi, the English and French translations help you learn these wise phrases.",
+          },
+          {
+            question: "Why are proverbs important?",
+            answer:
+              "Proverbs teach us lessons about life, family, and our culture. They help us remember our roots and share old traditions.",
+          },
+          {
+            question: "Is it good for schools or libraries?",
+            answer:
+              "Yes! It's a great resource for teaching African culture, language studies, or just exploring clever sayings.",
           },
         ],
       },
