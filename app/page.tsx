@@ -144,7 +144,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
                     {book.title}
                   </h3>
-                  <p className="text-gray-600 mb-6">{book.description}</p>
+                  <p className="text-gray-600 mb-6">{book.description.short}</p>
                   <Link
                     href={book.amazonUrl}
                     className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"

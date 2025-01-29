@@ -6,8 +6,11 @@ export const languagesConfig = {
       {
         title: "My First Picture Book in Kirundi",
         slug: "my-first-picture-book-in-kirundi",
-        description:
-          "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily.",
+        description: {
+          short:
+            "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily.",
+          long: "This picture book is for kids aged 2-8 and uses Kirundi, English, and French. It has nice pictures that make learning easy and exciting. Great for families who want to learn Kirundi together, even if they don't speak it well. Helps kids connect with their culture while learning new words.",
+        },
         challenges: [
           "No Fun Kirundi Books for Kids!: Burundian parents struggle to find colorful, modern books that make learning our language exciting.",
           "Losing Culture Abroad?: Diaspora families lack Kirundi resources to teach kids about Burundian heritage.",
@@ -62,8 +65,11 @@ export const languagesConfig = {
       {
         title: "Gatore and Her Parents Visit Burundi",
         slug: "gatore-and-her-parents-visit-burundi",
-        description:
-          "A heartwarming bilingual story (Kirundi & English) about young Gatore traveling to her family's home country of Burundi. Initially hesitant to try local food or new experiences, she soon discovers how amazing it is to connect with her heritage, taste traditional dishes, and bond with cousins and grandparents. Perfect for diaspora families wanting children to learn Kirundi through fun adventures!",
+        description: {
+          short:
+            "A bilingual story about Gatore's journey to Burundi, exploring heritage and local traditions. Ideal for diaspora families teaching Kirundi.",
+          long: "A heartwarming bilingual story (Kirundi & English) about young Gatore traveling to her family's home country of Burundi. Initially hesitant to try local food or new experiences, she soon discovers how amazing it is to connect with her heritage, taste traditional dishes, and bond with cousins and grandparents. Perfect for diaspora families wanting children to learn Kirundi through fun adventures!",
+        },
         challenges: [
           "Reluctance to try new foods: Many diaspora kids miss out on local cuisine. This story encourages adventurous eating.",
           "Connecting with heritage: Families living abroad often struggle to teach children about their homeland's culture and language.",

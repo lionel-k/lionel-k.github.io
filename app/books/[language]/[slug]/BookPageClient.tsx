@@ -12,7 +12,10 @@ type Book = {
   title: string;
   slug: string;
   amazonUrl: string;
-  description: string;
+  description: {
+    short: string;
+    long: string;
+  };
   challenges: string[];
   whyChoose: string[];
   testimonials: string[];
@@ -92,7 +95,7 @@ export default function BookPageClient() {
                 {book.title}
               </h1>
               <p className="mt-6 text-lg leading-8 text-gray-300">
-                {book.description}
+                {book.description.long}
               </p>
             </div>
             <div className="flex-shrink-0">
