@@ -98,7 +98,7 @@ export default function BookPageClient() {
             </div>
             <div className="flex-shrink-0">
               <img
-                src={book.cover}
+                src={`/images/${language}/${slug}/cover.png`}
                 alt={`${book.title} cover`}
                 className="w-full max-w-xs rounded-xl shadow-md"
               />
@@ -114,7 +114,7 @@ export default function BookPageClient() {
       <section className="py-20 bg-gradient-to-b from-[#F5F2EC] to-[#FAF8F5]">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-4xl font-bold text-gray-900 mb-16">
-            Peek Inside the Book
+            Look Inside the Book
           </h2>
           <div className="grid gap-8 md:grid-cols-3">
             {[1, 2, 3].map((page) => (
@@ -124,7 +124,7 @@ export default function BookPageClient() {
               >
                 <img
                   src={`/images/${language}/${slug}/${page}.png`}
-                  alt={`Interior page ${page}`}
+                  alt={`Interior page ${page} of ${book.title}`}
                   className="w-full h-auto"
                 />
               </div>

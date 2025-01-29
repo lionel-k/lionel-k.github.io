@@ -8,7 +8,6 @@ export const languagesConfig = {
         slug: "my-first-picture-book-in-kirundi",
         description:
           "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily.",
-        cover: "/images/kirundi/my-first-picture-book-in-kirundi/cover.png",
         challenges: [
           "No Fun Kirundi Books for Kids!: Burundian parents struggle to find colorful, modern books that make learning our language exciting.",
           "Losing Culture Abroad?: Diaspora families lack Kirundi resources to teach kids about Burundian heritage.",

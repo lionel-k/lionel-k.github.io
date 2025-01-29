@@ -137,8 +137,8 @@ export default function Home() {
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
                   <img
-                    src={book.cover}
-                    alt={book.title}
+                    src={`/images/kirundi/${book.slug}/cover.png`}
+                    alt={`${book.title} cover`}
                     className="mb-6 w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
                   />
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
