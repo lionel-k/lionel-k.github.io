@@ -130,7 +130,7 @@ export const languagesConfig = {
         slug: "the-kirundi-proverb-treasury",
         description: {
           short:
-            "Over 900 Kirundi sayings, each with English translations and explanations, showing the rich wisdom of Burundi.",
+            "Over 900 Kirundi sayings, each with English translations and explanations. These sayings show the rich wisdom of Burundi and are fun to learn.",
           long: "This special book has more than 900 Kirundi proverbs. Each proverb has an English equivalent and an explanation, so it's easy to learn. You'll discover lots of old sayings that people in Burundi have shared for many years. It's perfect for kids or grown-ups who want to remember or learn Kirundi wisdom, connect with family roots, or just enjoy clever sayings!",
         },
         challenges: [
