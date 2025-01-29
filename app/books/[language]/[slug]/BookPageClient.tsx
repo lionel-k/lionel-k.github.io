@@ -110,6 +110,31 @@ export default function BookPageClient() {
       {/* CTA Section - Gold Gradient */}
       <PurchaseCTA amazonUrl={book.amazonUrl} />
 
+      {/* Peek Inside the Book Section */}
+      <section className="py-20 bg-gradient-to-b from-[#F5F2EC] to-[#FAF8F5]">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <h2 className="text-center text-4xl font-bold text-gray-900 mb-16">
+            Peek Inside the Book
+          </h2>
+          <div className="grid gap-8 md:grid-cols-3">
+            {[1, 2, 3].map((page) => (
+              <div
+                key={page}
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
+              >
+                <img
+                  src={`/images/${language}/${slug}/${page}.png`}
+                  alt={`Interior page ${page}`}
+                  className="w-full h-auto"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <PurchaseCTA amazonUrl={book.amazonUrl} />
+
       {/* Challenges Section - Light Gradient */}
       <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
