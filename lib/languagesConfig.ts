@@ -130,8 +130,8 @@ export const languagesConfig = {
         slug: "the-kirundi-proverb-treasury",
         description: {
           short:
-            "Over 900 Kirundi sayings, each with English translations, showing the rich wisdom of Burundi.",
-          long: "This special book has more than 900 Kirundi proverbs. Each proverb has an English and French translation, so it's easy to learn. You'll discover lots of old sayings that people in Burundi have shared for many years. It's perfect for kids or grown-ups who want to remember or learn Kirundi wisdom, connect with family roots, or just enjoy clever sayings!",
+            "Over 900 Kirundi sayings, each with English translations and explanations, showing the rich wisdom of Burundi.",
+          long: "This special book has more than 900 Kirundi proverbs. Each proverb has an English equivalent and an explanation, so it's easy to learn. You'll discover lots of old sayings that people in Burundi have shared for many years. It's perfect for kids or grown-ups who want to remember or learn Kirundi wisdom, connect with family roots, or just enjoy clever sayings!",
         },
         challenges: [
           "Keeping Kirundi wisdom alive: Families often lose old sayings if they don't write them down.",
@@ -140,7 +140,7 @@ export const languagesConfig = {
         ],
         whyChoose: [
           "Huge Collection of Proverbs: Over 900 Kirundi proverbs for you to explore!",
-          "Easy Translations: Each proverb comes with English and French, so everyone can learn.",
+          "Easy Translations and Explanations: Each proverb comes with an English equivalent and an explanation, so everyone can learn.",
           "Great for Families: Perfect for teaching kids about their heritage or just sharing good life lessons.",
         ],
         amazonUrl: "https://www.amazon.com/dp/B0CLGQF9QW",
@@ -154,7 +154,7 @@ export const languagesConfig = {
           {
             question: "How is this book set up?",
             answer:
-              "Each Kirundi proverb has an English and French translation. You can read them side by side and learn easily.",
+              "Each Kirundi proverb has an English equivalent and an explanation. You can read them side by side and learn easily.",
           },
           {
             question: "Can kids understand these proverbs?",
@@ -164,7 +164,7 @@ export const languagesConfig = {
           {
             question: "Is it only for Kirundi speakers?",
             answer:
-              "Not at all! Even if you don't speak Kirundi, the English and French translations help you learn these wise phrases.",
+              "Not at all! Even if you don't speak Kirundi, the English translations and explanations help you learn these wise phrases.",
           },
           {
             question: "Why are proverbs important?",
@@ -175,6 +175,11 @@ export const languagesConfig = {
             question: "Is it good for schools or libraries?",
             answer:
               "Yes! It's a great resource for teaching African culture, language studies, or just exploring clever sayings.",
+          },
+          {
+            question: "What formats is the book available in?",
+            answer:
+              "The book is available in ebook, paperback, and hardcover formats.",
           },
         ],
       },
