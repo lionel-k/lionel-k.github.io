@@ -58,6 +58,51 @@ export const languagesConfig = {
           },
         ],
       },
+
+      {
+        title: "Gatore and Her Parents Visit Burundi",
+        slug: "gatore-and-her-parents-visit-burundi",
+        description:
+          "A heartwarming bilingual story (Kirundi & English) about young Gatore traveling to her family's home country of Burundi. Initially hesitant to try local food or new experiences, she soon discovers how amazing it is to connect with her heritage, taste traditional dishes, and bond with cousins and grandparents. Perfect for diaspora families wanting children to learn Kirundi through fun adventures!",
+        challenges: [
+          "Reluctance to try new foods: Many diaspora kids miss out on local cuisine. This story encourages adventurous eating.",
+          "Connecting with heritage: Families living abroad often struggle to teach children about their homeland's culture and language.",
+          "Limited Kirundi resources: Bilingual texts help parents who may not be fluent teach kids Kirundi with ease.",
+        ],
+        whyChoose: [
+          "Inspires Cultural Curiosity: Gatore's fun journey encourages kids to embrace their roots and new experiences.",
+          "Bilingual Learning: Kirundi & English side-by-side, making it easy for parents and children to learn together.",
+          "Relatable Characters: Gatore's concerns and excitement resonate with diaspora families, fostering a sense of belonging.",
+        ],
+        amazonUrl: "https://www.amazon.com/dp/2492960080",
+        bestSeller: true,
+        testimonials: [
+          "This story helped my child see how fun it is to visit family back home—and now she's open to trying local food!",
+          "We loved reading about Gatore's adventures in Burundi! A great way to learn Kirundi and feel closer to our roots.",
+        ],
+        faq: [
+          {
+            question: "What languages are included?",
+            answer:
+              "The story includes Kirundi and English on each page, letting kids and parents learn side by side.",
+          },
+          {
+            question: "Is this book suitable for kids who don't speak Kirundi?",
+            answer:
+              "Absolutely! The English translation helps non-fluent families learn and teach Kirundi without stress.",
+          },
+          {
+            question: "What age group is this book for?",
+            answer:
+              "It's aimed at children aged 3-9, but older readers can still enjoy Gatore's story and learn Kirundi basics.",
+          },
+          {
+            question: "Does it include cultural references beyond food?",
+            answer:
+              "Yes! Gatore meets extended family and explores local traditions, helping kids understand everyday Burundian life.",
+          },
+        ],
+      },
     ],
     faq: [
       {
