@@ -146,9 +146,9 @@ export const languagesConfig = {
         amazonUrl: "https://www.amazon.com/dp/B0CLGQF9QW",
         bestSeller: true,
         testimonials: [
+          "I am a Burundian trying to learn more about my culture, and these proverbs help me connect with my roots. I enjoy this book and all its wisdom.",
+          "A book suitable for older readers to teach proverbs to children in Kirundi.",
           "My family loves reading these wise sayings together. Now my kids know more about our culture!",
-          "A fantastic book with tons of Kirundi proverbs. Great for school projects or just for fun!",
-          "Helps me connect with my grandparents’ stories. I learned so many new things about Burundi!",
         ],
         faq: [
           {
