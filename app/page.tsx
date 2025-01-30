@@ -177,6 +177,7 @@ export default function Home() {
                       {book.description.short}
                     </p>
                     <Link
+                      target="_blank"
                       href={book.amazonUrl}
                       className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"
                     >
