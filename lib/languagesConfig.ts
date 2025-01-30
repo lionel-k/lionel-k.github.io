@@ -195,6 +195,9 @@ export const languagesConfig = {
       {
         title: "Animals in Kirundi",
         slug: "animals-in-kirundi",
+        age: "0-6",
+        pages: "28",
+        price: "11.99",
         description: {
           short:
             "A Kirundi-English-French picture book all about animals, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
@@ -240,7 +243,7 @@ export const languagesConfig = {
           {
             question: "How many pages are there?",
             answer:
-              "It has 30 colorful pages. Each page features an animal with Kirundi and its translations.",
+              "It has 28 colorful pages. Each page features an animal with Kirundi and its translations.",
           },
           {
             question: "Why focus on animals?",

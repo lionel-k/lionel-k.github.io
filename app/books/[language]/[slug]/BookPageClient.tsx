@@ -20,6 +20,9 @@ type Book = {
   whyChoose: string[];
   testimonials: string[];
   faq: { question: string; answer: string }[];
+  age: string;
+  pages: string;
+  price: string;
 };
 
 function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
@@ -94,6 +97,18 @@ export default function BookPageClient() {
               <p className="mt-6 text-lg leading-8 text-gray-300">
                 {book.description.long}
               </p>
+              {/* Chips for Age, Pages, and Price */}
+              <div className="mt-4 flex space-x-4">
+                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                  {book.age} years
+                </span>
+                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                  {book.pages} pages
+                </span>
+                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                  ${book.price}
+                </span>
+              </div>
             </div>
             <div className="flex-shrink-0">
               <img
