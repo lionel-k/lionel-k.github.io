@@ -207,13 +207,15 @@ export const languagesConfig = {
           "Trilingual Approach: Kirundi, English, and French together help both kids and parents learn side by side.",
           "Perfect for Ages 0-6: Short words, big images, and friendly design keep little ones excited about new languages.",
         ],
-        // Replace the URL with your actual Amazon link if you have one
         amazonUrl: "https://www.amazon.com/dp/YOUR_BOOK_ASIN_HERE",
         bestSeller: false,
         testimonials: [
           "My toddler now knows animal names in Kirundi! It's so helpful for our diaspora family.",
           "A bright, cheerful book. Perfect for teaching kids about animals and Kirundi culture.",
           "Even though I'm not fluent in Kirundi, I can still help my child learn with the English and French words.",
+          "This book is a fantastic resource for introducing Kirundi to young children. The pictures are engaging and the trilingual format is very helpful.",
+          "Our family loves this book! It's a great way to bond while learning Kirundi together.",
+          "The illustrations are beautiful and my kids are excited to learn new words. Highly recommend for any family wanting to teach Kirundi.",
         ],
         faq: [
           {
