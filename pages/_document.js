@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        {/* Google Analytics */}
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-ZPGXJS23ZM"
