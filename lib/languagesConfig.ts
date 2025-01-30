@@ -459,6 +459,72 @@ export const languagesConfig = {
           },
         ],
       },
+      {
+        title: "The Adventure of Shaka in Burundi",
+        slug: "the-adventure-of-shaka-in-burundi",
+        age: "1-6",
+        pages: "36",
+        price: "21.99",
+        description: {
+          short:
+            "A Kirundi-English story for children aged 1-6, following Shaka's first exciting visit to Burundi!",
+          long: `
+      Shaka arrives in Burundi for the very first time, ready to explore and learn
+      about his family's homeland. Follow him and his cousin Muco as they visit
+      Ruvubu National Park, push a stuck safari car, and encounter hippos up close!
+      This bilingual book (Kirundi and English) is perfect for young
+      readers who want to connect with Burundian culture and discover a fun
+      adventure along the way.
+    `.trim(),
+        },
+        challenges: [
+          "Lack of simple Kirundi stories for young kids: Diaspora families struggle to keep the language alive.",
+          "Encouraging cultural curiosity: Children born abroad need engaging tales to spark interest in their heritage.",
+          "Making learning fun: Action-packed storytelling and vibrant illustrations help kids enjoy Kirundi, English, and French.",
+        ],
+        whyChoose: [
+          "Bilingual Format: Kirundi and English side-by-side, ideal for families at any fluency level.",
+          "Action & Adventure: Shaka's trip to Ruvubu National Park keeps kids hooked while teaching new vocabulary.",
+          "Burundian Heritage: Helps diaspora children discover the sights, sounds, and excitement of Burundi.",
+        ],
+        amazonUrl: "https://www.amazon.com/dp/2492960188", // Replace with the actual link
+        bestSeller: false,
+        testimonials: [
+          "An enchanting journey through Burundi! This book beautifully blends adventure, culture, and family bonds, while teaching valuable lessons about gratitude and embracing new experiences. A delightful read for all ages!",
+          "My kids loved Shaka's adventure. They learned Kirundi words and asked lots of questions!",
+          "Perfect for families who want to learn about Burundian culture with fun stories.",
+          "This book made our daughter excited to visit Burundi one day.",
+          "A colorful story that shows how fun it is to explore a parent's homeland.",
+          "Great for all ages! This book mixes adventure, culture, and family. It teaches about being thankful and trying new things.",
+        ],
+        faq: [
+          {
+            question: "Is this book only for Kirundi speakers?",
+            answer:
+              "No. It's written in Kirundi, English, and French, so even non-fluent parents can follow along.",
+          },
+          {
+            question: "What age group is best for this story?",
+            answer:
+              "Children aged 1-6 will love the colorful pages and simple adventures, but older kids can enjoy it too.",
+          },
+          {
+            question: "How long is the story?",
+            answer:
+              "The book has 36 pages, each with bright illustrations and short paragraphs to keep kids engaged.",
+          },
+          {
+            question: "Does it teach anything beyond language?",
+            answer:
+              "Yes. It covers themes like friendship, adapting to new places, and exploring nature in Burundi.",
+          },
+          {
+            question: "Is this good for diaspora families?",
+            answer:
+              "Absolutely! It's created for children living abroad who want a fun way to connect with their Burundian roots.",
+          },
+        ],
+      },
     ],
     faq: [
       {
