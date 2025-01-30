@@ -7,7 +7,6 @@ export default function GoogleAnalyticsWrapper({ children }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    // If gtag is defined, log a pageview:
     if (typeof window.gtag !== "undefined" && pathname) {
       window.gtag("config", "G-ZPGXJS23ZM", {
         page_path: pathname,
