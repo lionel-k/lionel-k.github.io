@@ -535,17 +535,16 @@ export const languagesConfig = {
           short:
             "A fun Kirundi-English story where Gatore proudly shares donuts at her school's Global Day—perfect for kids ages 4-10!",
           long: `
-      Can a simple school day turn into a cultural celebration?
-      In this bilingual story (Kirundi and English), Gatore shows her classmates
-      the beauty of Burundian heritage by making delicious donuts and wearing a
-      vibrant traditional dress. As she explores her heritage in front of her friends,
-      Gatore learns how to take pride in her roots—one tasty donut at a time!
+      Can a school day become a fun cultural celebration?
+      In this bilingual story (Kirundi and English), Gatore shares her Burundian culture
+      by making yummy donuts and wearing a colorful imvutano, a traditional dress.
+      As she shows her heritage to her friends, Gatore learns to be proud of her roots—one tasty donut at a time!
     `.trim(),
         },
         challenges: [
           "Passing on cultural identity: Diaspora families need engaging ways to keep kids connected to Burundi.",
           "Limited Kirundi-English materials: Many parents struggle to find fun, bilingual resources for teaching Kirundi.",
-          "Learning that’s truly fun: Bright illustrations and a simple story spark kids’ curiosity about language and culture.",
+          "Learning that's truly fun: Bright illustrations and a simple story spark kids' curiosity about language and culture.",
         ],
         whyChoose: [
           "Burundian Culture on Display: Kids discover how to make donuts (ibitumbura) and see beautiful traditional clothing.",
@@ -555,21 +554,23 @@ export const languagesConfig = {
         amazonUrl: "https://www.amazon.com/dp/YOUR_BOOK_ASIN_HERE", // Replace with the actual link
         bestSeller: false,
         testimonials: [
-          "My daughter loved learning Kirundi words while Gatore shared donuts in her bright outfit. Such a cute story!",
-          "This book is wonderful. It made me and my kids proud of our Burundian background—and the donuts are so fun!",
-          "Even though I’m not fluent in Kirundi, we read it in English while picking up Kirundi words together.",
-          "The illustrations are beautiful and the story captures the joy of sharing your culture at school.",
+          "My daughter loved learning Kirundi words with Gatore's fun story and bright outfit!",
+          "This book is wonderful. It made us proud of our Burundian roots—and the donuts are so fun!",
+          "Even though I'm not fluent in Kirundi, we read it in English and learn Kirundi words together.",
+          "The illustrations are beautiful and show the joy of sharing your culture at school.",
+          "Gatore's story is super fun! The colorful pictures make learning Kirundi exciting.",
+          "This book is awesome! It made me feel proud of my Burundian roots and the donuts look yummy!",
         ],
         faq: [
           {
             question: "What age group is this book for?",
             answer:
-              "It’s best for kids aged 4–10, though younger children can still enjoy the pictures and short text.",
+              "It's best for kids aged 4–10, though younger children can still enjoy the pictures and short text.",
           },
           {
             question: "Do I need to speak Kirundi to read it?",
             answer:
-              "No. Each page shows Kirundi and English, so you can learn alongside your child even if you’re not fluent.",
+              "No. Each page shows Kirundi and English, so you can learn alongside your child even if you're not fluent.",
           },
           {
             question: "How many pages are in the book?",
