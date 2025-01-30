@@ -202,6 +202,70 @@ export const languagesConfig = {
         ],
       },
       {
+        title: "Fruits & Vegetables in Kirundi",
+        slug: "fruits-and-vegetables-in-kirundi",
+        age: "0-6",
+        pages: "36",
+        price: "11.99",
+        description: {
+          short:
+            "A Kirundi-English-French picture book all about fruits and vegetables, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
+          long: `
+      Are you a parent living in the diaspora looking for an exciting way to teach Kirundi?
+      This book shows fruits and vegetables in Kirundi, English, and French.
+      With 36 bright and colorful pages, it's easy for little ones to learn new words and connect with their Kirundi roots.
+      Even if you're not a native speaker, you can still read along and help your child enjoy learning.
+    `.trim(),
+        },
+        challenges: [
+          "Hard to find Kirundi books: Many families abroad struggle to find simple, colorful resources for teaching fruits and veggies.",
+          "Keeping kids engaged: Bright pictures and short words help children have fun while learning new vocabulary.",
+          "Parents not fluent in Kirundi: This trilingual format (Kirundi-English-French) makes teaching Kirundi much easier.",
+        ],
+        whyChoose: [
+          "Focus on Fruits & Veggies: Kids learn essential words for food, making Kirundi practice more interesting.",
+          "Trilingual Approach: Kirundi, English, and French together let parents and kids learn no matter their fluency.",
+          "Ideal for Ages 0-6: Big pictures, simple words, and fun layouts capture toddlers' and preschoolers' attention.",
+        ],
+        amazonUrl: "https://www.amazon.com/dp/2492960064",
+        bestSeller: false,
+        testimonials: [
+          "Book suitable for very young children to learn about fruits. My 2 and 4-year-old daughters use it easily with the pictures.",
+          "A perfect book for teaching my toddler basic Kirundi vocabulary—he's already recognizing new words.",
+          "The illustrations are amazing. It's such a cool way to bring Kirundi, English, and French into our home.",
+          "My favorite part is how simple it is for me (not fluent in Kirundi) to read with my kids.",
+          "Our family loves learning the names of fruits and veggies in Kirundi. Really helpful for diaspora families.",
+          "It's an excellent resource for grandparents too—they can share our heritage in a fun, child-friendly way.",
+        ],
+        faq: [
+          {
+            question: "What age group is this book for?",
+            answer:
+              "It's best for children aged 0-6, but older kids just starting Kirundi can still enjoy it.",
+          },
+          {
+            question: "Do I need to speak Kirundi to use this book?",
+            answer:
+              "No! Each page has Kirundi, English, and French, so you can learn with your child, even if you're not fluent.",
+          },
+          {
+            question: "How many pages does it have?",
+            answer:
+              "There are 36 colorful pages, each showing different fruits and veggies with clear translations.",
+          },
+          {
+            question: "Why focus on fruits and vegetables?",
+            answer:
+              "Kids love learning about food they see every day. It's a fun way to expand Kirundi vocabulary.",
+          },
+          {
+            question: "Is this book helpful for diaspora families?",
+            answer:
+              "Yes! It's designed for parents abroad who want an easy, enjoyable way to connect kids with Kirundi language and culture.",
+          },
+        ],
+      },
+      {
         title: "Animals in Kirundi",
         slug: "animals-in-kirundi",
         age: "0-6",
@@ -263,70 +327,6 @@ export const languagesConfig = {
             question: "Is this book good for diaspora families?",
             answer:
               "Yes. If you're raising kids abroad, this book helps them learn Kirundi animal words and stay connected to their roots.",
-          },
-        ],
-      },
-      {
-        title: "Fruits & Vegetables in Kirundi",
-        slug: "fruits-and-vegetables-in-kirundi",
-        age: "0-6",
-        pages: "36",
-        price: "11.99",
-        description: {
-          short:
-            "A Kirundi-English-French picture book all about fruits and vegetables, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
-          long: `
-      Are you a parent living in the diaspora looking for an exciting way to teach Kirundi?
-      This book shows fruits and vegetables in Kirundi, English, and French.
-      With 36 bright and colorful pages, it's easy for little ones to learn new words and connect with their Kirundi roots.
-      Even if you're not a native speaker, you can still read along and help your child enjoy learning.
-    `.trim(),
-        },
-        challenges: [
-          "Hard to find Kirundi books: Many families abroad struggle to find simple, colorful resources for teaching fruits and veggies.",
-          "Keeping kids engaged: Bright pictures and short words help children have fun while learning new vocabulary.",
-          "Parents not fluent in Kirundi: This trilingual format (Kirundi-English-French) makes teaching Kirundi much easier.",
-        ],
-        whyChoose: [
-          "Focus on Fruits & Veggies: Kids learn essential words for food, making Kirundi practice more interesting.",
-          "Trilingual Approach: Kirundi, English, and French together let parents and kids learn no matter their fluency.",
-          "Ideal for Ages 0-6: Big pictures, simple words, and fun layouts capture toddlers' and preschoolers' attention.",
-        ],
-        amazonUrl: "https://www.amazon.com/dp/2492960064",
-        bestSeller: false,
-        testimonials: [
-          "Book suitable for very young children to learn about fruits. My 2 and 4-year-old daughters use it easily with the pictures.",
-          "A perfect book for teaching my toddler basic Kirundi vocabulary—he's already recognizing new words.",
-          "The illustrations are amazing. It's such a cool way to bring Kirundi, English, and French into our home.",
-          "My favorite part is how simple it is for me (not fluent in Kirundi) to read with my kids.",
-          "Our family loves learning the names of fruits and veggies in Kirundi. Really helpful for diaspora families.",
-          "It's an excellent resource for grandparents too—they can share our heritage in a fun, child-friendly way.",
-        ],
-        faq: [
-          {
-            question: "What age group is this book for?",
-            answer:
-              "It's best for children aged 0-6, but older kids just starting Kirundi can still enjoy it.",
-          },
-          {
-            question: "Do I need to speak Kirundi to use this book?",
-            answer:
-              "No! Each page has Kirundi, English, and French, so you can learn with your child, even if you're not fluent.",
-          },
-          {
-            question: "How many pages does it have?",
-            answer:
-              "There are 36 colorful pages, each showing different fruits and veggies with clear translations.",
-          },
-          {
-            question: "Why focus on fruits and vegetables?",
-            answer:
-              "Kids love learning about food they see every day. It's a fun way to expand Kirundi vocabulary.",
-          },
-          {
-            question: "Is this book helpful for diaspora families?",
-            answer:
-              "Yes! It's designed for parents abroad who want an easy, enjoyable way to connect kids with Kirundi language and culture.",
           },
         ],
       },
