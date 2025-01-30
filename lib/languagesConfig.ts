@@ -198,7 +198,7 @@ export const languagesConfig = {
     `.trim(),
         },
         challenges: [
-          "Hard to find Kirundi animal books: Many diaspora families struggle to find simple resources for learning animal names.",
+          "Hard to find Kirundi books: Many diaspora families struggle to find simple resources for learning animal names.",
           "Keeping kids engaged: Bright pictures and easy words help children stay interested in new vocabulary.",
           "Parents not fluent in Kirundi: Trilingual format (Kirundi-English-French) makes teaching Kirundi animals simple.",
         ],
@@ -213,7 +213,7 @@ export const languagesConfig = {
         testimonials: [
           "My toddler now knows animal names in Kirundi! It's so helpful for our diaspora family.",
           "A bright, cheerful book. Perfect for teaching kids about animals and Kirundi culture.",
-          "Even though I’m not fluent in Kirundi, I can still help my child learn with the English and French words.",
+          "Even though I'm not fluent in Kirundi, I can still help my child learn with the English and French words.",
         ],
         faq: [
           {
