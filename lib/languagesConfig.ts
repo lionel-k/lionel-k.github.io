@@ -334,7 +334,7 @@ export const languagesConfig = {
         title: "Action Verbs in Kirundi",
         slug: "action-verbs-in-kirundi",
         age: "0-6",
-        pages: "30",
+        pages: "28",
         price: "11.99",
         description: {
           short:
@@ -342,8 +342,8 @@ export const languagesConfig = {
           long: `
       Are you a parent living in the diaspora who wants an easy way to teach Kirundi?
       This book shows common action verbs in Kirundi, English, and French.
-      With 30 bright pages, kids can see fun pictures and learn important verbs
-      that help them speak Kirundi every day. Even if you’re not fluent, you and
+      With 28 bright pages, kids can see fun pictures and learn important verbs
+      that help them speak Kirundi every day. Even if you're not fluent, you and
       your child can explore new words together and connect with your heritage.
     `.trim(),
         },
@@ -357,12 +357,12 @@ export const languagesConfig = {
           "Trilingual Format: Kirundi, English, and French on the same page—great for families at any fluency level.",
           "Ideal for Ages 0-6: Fun illustrations, simple sentences, and easy vocabulary keep little ones engaged.",
         ],
-        amazonUrl: "https://www.amazon.com/dp/YOUR_BOOK_ASIN_HERE", // Replace with actual link
+        amazonUrl: "https://www.amazon.com/dp/2492960072",
         bestSeller: false,
         testimonials: [
-          "A fun way to teach our kids Kirundi verbs! We learn together even though I'm not fully fluent.",
+          "Book suitable for very young children to learn Kirundi. Additionally, the images help capture the words easily.",
           "My children love the colorful pages, and they're already using new Kirundi verbs at home.",
-          "A must-have for diaspora families. The trilingual pages help both kids and parents pick up phrases quickly.",
+          "A must have for diaspora families. The trilingual pages help both kids and parents pick up phrases quickly.",
           "We enjoy reading a few verbs each night—it's amazing how fast our toddler is learning Kirundi!",
           "Very helpful if you want your kids to recognize everyday actions in Kirundi. Great illustrations, too!",
           "This book gave us new ways to connect with our Burundian roots, one verb at a time.",
@@ -381,7 +381,7 @@ export const languagesConfig = {
           {
             question: "How many pages are there?",
             answer:
-              "It has 30 bright, colorful pages, each featuring a different action verb with clear translations.",
+              "It has 28 bright, colorful pages, each featuring a different action verb with clear translations.",
           },
           {
             question: "Why focus on action verbs?",
