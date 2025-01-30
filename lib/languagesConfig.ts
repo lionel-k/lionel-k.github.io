@@ -551,7 +551,7 @@ export const languagesConfig = {
           "Bilingual Format: Kirundi and English side by side, so even non-fluent parents can follow along.",
           "Empowering Story: Inspires children to celebrate their heritage and share it confidently with friends.",
         ],
-        amazonUrl: "https://www.amazon.com/dp/YOUR_BOOK_ASIN_HERE", // Replace with the actual link
+        amazonUrl: "https://www.amazon.com/dp/B0D8WL5Q12",
         bestSeller: false,
         testimonials: [
           "My daughter loved learning Kirundi words with Gatore's fun story and bright outfit!",
@@ -565,7 +565,7 @@ export const languagesConfig = {
           {
             question: "What age group is this book for?",
             answer:
-              "It's best for kids aged 4–10, though younger children can still enjoy the pictures and short text.",
+              "It's best for kids aged 4-10, though younger children can still enjoy the pictures and short text.",
           },
           {
             question: "Do I need to speak Kirundi to read it?",
