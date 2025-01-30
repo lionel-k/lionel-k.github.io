@@ -27,6 +27,9 @@ export const languagesConfig = {
           "Excellent book for the first words in the three languages. Content on Kirundi is hard to find, even more so prepared for children.",
           "Great book! Highly recommend for anyone learning Kirundi! Wonderful from 0 to 99 years old! Thanks for writing this book!",
           "Very good book with great pictures. Love it.",
+          "A fantastic resource for introducing Kirundi to young learners. The trilingual format is very helpful.",
+          "My child loves the colorful illustrations and is excited to learn new words in Kirundi.",
+          "This book is a wonderful way to connect with our cultural roots while learning a new language.",
         ],
         faq: [
           {
