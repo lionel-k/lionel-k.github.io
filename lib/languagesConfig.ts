@@ -183,57 +183,63 @@ export const languagesConfig = {
           },
         ],
       },
-
       {
         title: "Animals in Kirundi",
         slug: "animals-in-kirundi",
         description: {
           short:
-            "A fun Kirundi-English-French picture book for kids aged 0-6. Helps diaspora families teach Kirundi with 30 colorful pages.",
-          long: "Are you a parent living in the diaspora who wants an easy way to teach Kirundi? This picture book shows animals in Kirundi, English, and French, so parents who don't speak Kirundi well can still help their kids learn. With 30 colorful pages, kids will stay interested while picking up new words. Even if you're not a native speaker, this book is a simple, fun way to share your heritage.",
+            "A Kirundi-English-French picture book all about animals, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
+          long: `
+      Do you want to teach your child Kirundi words for animals?
+      This book helps kids learn the names of animals in Kirundi, English, and French.
+      It's filled with colorful pictures that make learning easy and exciting.
+      Whether you live in Burundi or abroad, this trilingual animal book is perfect
+      for young learners who want to explore Kirundi while having fun.
+    `.trim(),
         },
         challenges: [
-          "Hard to find engaging Kirundi materials: Many diaspora families can't get modern, colorful books to teach kids.",
-          "Parents may not be fluent: This trilingual format helps you learn together without feeling lost.",
-          "Keeping children's attention: The big, bright images make language learning fun and interactive.",
+          "Hard to find Kirundi animal books: Many diaspora families struggle to find simple resources for learning animal names.",
+          "Keeping kids engaged: Bright pictures and easy words help children stay interested in new vocabulary.",
+          "Parents not fluent in Kirundi: Trilingual format (Kirundi-English-French) makes teaching Kirundi animals simple.",
         ],
         whyChoose: [
-          "Trilingual Learning: Kirundi, English, and French on the same page helps everyone learn together.",
-          "Colorful & Kid-Friendly: 30 pages with bright illustrations keep kids interested in new vocabulary.",
-          "Perfect for Ages 1-6: Simple words, pictures, and short sentences for toddlers, preschoolers, and early readers.",
+          "Focus on Animals: Kids love learning about animals, making Kirundi vocabulary more fun and memorable.",
+          "Trilingual Approach: Kirundi, English, and French together help both kids and parents learn side by side.",
+          "Perfect for Ages 0-6: Short words, big images, and friendly design keep little ones excited about new languages.",
         ],
-        amazonUrl: "https://www.amazon.com/dp/2492960048",
+        // Replace the URL with your actual Amazon link if you have one
+        amazonUrl: "https://www.amazon.com/dp/YOUR_BOOK_ASIN_HERE",
         bestSeller: false,
         testimonials: [
-          "My child loves seeing the pictures of animals and hearing the words in Kirundi, English, and French!",
-          "A wonderful way to share our African heritage with little ones in the diaspora.",
-          "This book makes it easy for me, as a non-fluent Kirundi speaker, to still teach my kids our family's language.",
+          "My toddler now knows animal names in Kirundi! It's so helpful for our diaspora family.",
+          "A bright, cheerful book. Perfect for teaching kids about animals and Kirundi culture.",
+          "Even though I’m not fluent in Kirundi, I can still help my child learn with the English and French words.",
         ],
         faq: [
           {
             question: "What age group is this book for?",
             answer:
-              "It's designed for children aged 0 to 6, but older kids who are new to Kirundi can still enjoy it.",
+              "It's best for kids aged 0-6, but older kids can still have fun learning Kirundi animal words.",
           },
           {
             question: "Do I need to speak Kirundi to use this book?",
             answer:
-              "No! The English and French text make it easy for parents who aren't fluent in Kirundi to teach their kids.",
+              "No! Every page shows Kirundi, English, and French, so you can learn along with your child.",
           },
           {
-            question: "How many pages are in this book?",
+            question: "How many pages are there?",
             answer:
-              "It has 30 colorful pages full of fun animal pictures and easy words to learn.",
+              "It has 30 colorful pages. Each page features an animal with Kirundi and its translations.",
           },
           {
-            question: "Why is this book helpful for diaspora families?",
+            question: "Why focus on animals?",
             answer:
-              "It lets kids learn Kirundi while having fun looking at bright pictures, so they stay connected to their culture.",
+              "Animals are fun and familiar to kids. Learning their names in Kirundi makes language practice easy and exciting.",
           },
           {
-            question: "Is it only about animals?",
+            question: "Is this book good for diaspora families?",
             answer:
-              "Yes, it focuses on animals, but that's a great place to start when learning a new language!",
+              "Yes. If you're raising kids abroad, this book helps them learn Kirundi animal words and stay connected to their roots.",
           },
         ],
       },
