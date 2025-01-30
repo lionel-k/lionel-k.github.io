@@ -467,7 +467,7 @@ export const languagesConfig = {
         price: "21.99",
         description: {
           short:
-            "A Kirundi-English story for children aged 1-6, following Shaka's first exciting visit to Burundi!",
+            "A Kirundi-English story for children aged 3-10, following Shaka's first exciting visit to Burundi!",
           long: `
       Shaka arrives in Burundi for the very first time, ready to explore and learn
       about his family's homeland. Follow him and his cousin Muco as they visit
@@ -522,6 +522,69 @@ export const languagesConfig = {
             question: "Is this good for diaspora families?",
             answer:
               "Absolutely! It's created for children living abroad who want a fun way to connect with their Burundian roots.",
+          },
+        ],
+      },
+      {
+        title: "Gatore and the Burundian Donuts",
+        slug: "gatore-and-the-burundian-donuts",
+        age: "4-10",
+        pages: "26",
+        price: "10.99",
+        description: {
+          short:
+            "A fun Kirundi-English story where Gatore proudly shares donuts at her school's Global Day—perfect for kids ages 4-10!",
+          long: `
+      Can a simple school day turn into a cultural celebration?
+      In this bilingual story (Kirundi and English), Gatore shows her classmates
+      the beauty of Burundian heritage by making delicious donuts and wearing a
+      vibrant traditional dress. As she explores her heritage in front of her friends,
+      Gatore learns how to take pride in her roots—one tasty donut at a time!
+    `.trim(),
+        },
+        challenges: [
+          "Passing on cultural identity: Diaspora families need engaging ways to keep kids connected to Burundi.",
+          "Limited Kirundi-English materials: Many parents struggle to find fun, bilingual resources for teaching Kirundi.",
+          "Learning that’s truly fun: Bright illustrations and a simple story spark kids’ curiosity about language and culture.",
+        ],
+        whyChoose: [
+          "Burundian Culture on Display: Kids discover how to make donuts (ibitumbura) and see beautiful traditional clothing.",
+          "Bilingual Format: Kirundi and English side by side, so even non-fluent parents can follow along.",
+          "Empowering Story: Inspires children to celebrate their heritage and share it confidently with friends.",
+        ],
+        amazonUrl: "https://www.amazon.com/dp/YOUR_BOOK_ASIN_HERE", // Replace with the actual link
+        bestSeller: false,
+        testimonials: [
+          "My daughter loved learning Kirundi words while Gatore shared donuts in her bright outfit. Such a cute story!",
+          "This book is wonderful. It made me and my kids proud of our Burundian background—and the donuts are so fun!",
+          "Even though I’m not fluent in Kirundi, we read it in English while picking up Kirundi words together.",
+          "The illustrations are beautiful and the story captures the joy of sharing your culture at school.",
+        ],
+        faq: [
+          {
+            question: "What age group is this book for?",
+            answer:
+              "It’s best for kids aged 4–10, though younger children can still enjoy the pictures and short text.",
+          },
+          {
+            question: "Do I need to speak Kirundi to read it?",
+            answer:
+              "No. Each page shows Kirundi and English, so you can learn alongside your child even if you’re not fluent.",
+          },
+          {
+            question: "How many pages are in the book?",
+            answer:
+              "It has 26 pages filled with colorful illustrations and easy-to-follow text.",
+          },
+          {
+            question: "Does this book focus on more than language?",
+            answer:
+              "Yes. It highlights Burundian donuts, traditional dress, and celebrating heritage—great for diaspora families.",
+          },
+          {
+            question: "How does it help kids embrace cultural diversity?",
+            answer:
+              "By showing Gatore proudly sharing her Burundian heritage at school, children learn to appreciate differences.",
           },
         ],
       },
