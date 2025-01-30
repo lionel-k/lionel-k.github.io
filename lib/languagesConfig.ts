@@ -395,6 +395,71 @@ export const languagesConfig = {
           },
         ],
       },
+      {
+        title: "The Magic of the Friendship Tree",
+        slug: "stories-for-children",
+        age: "3-7",
+        pages: "25",
+        price: "21.99",
+        description: {
+          short:
+            "A Kirundi-English story about friendship, inclusivity, and caring for the environment—perfect for kids ages 3-7!",
+          long: `
+      Do you have a child learning Kirundi as a second language?
+      This charming picture book follows a lively group of kids—Keza, Karorero, Karire, Ntwari, Mutoni, and Muhizi—as they plant a tree
+      and discover the power of friendship, inclusivity, and environmental care.
+      With its bright illustrations and simple writing, this bilingual book (Kirundi, English)
+      is a fun way to build both language skills and cultural heritage!
+    `.trim(),
+        },
+        challenges: [
+          "Limited Kirundi resources: Hard to find simple stories that engage kids in both languages.",
+          "Teaching cultural values abroad: Diaspora families want to share Burundian heritage and life lessons.",
+          "Keeping young readers interested: Short sentences and lively illustrations capture children's attention.",
+        ],
+        whyChoose: [
+          "Lively Story & Important Themes: Teaches inclusivity, friendship, and environmental care in a kid-friendly way.",
+          "Bilingual Format: Kirundi and English side-by-side—perfect for families of any fluency level.",
+          "Fun Characters: Kids love following the adventures of Keza, Karorero, and friends as they grow their tree.",
+        ],
+        amazonUrl: "https://www.amazon.com/dp/2494614759",
+        bestSeller: false,
+        testimonials: [
+          "My children love the colorful pages and can't stop talking about planting their own 'friendship tree'!",
+          "A wonderful way to introduce environmental care and Kirundi at the same time. Highly recommended!",
+          "We read a few pages each night. It's great for teaching my daughter new Kirundi words and about kindness.",
+          "I'm not fluent in Kirundi, but the French and English text makes it easy to follow along with my kids.",
+          "Lovely story with bright illustrations. Perfect for diaspora families wanting to keep Kirundi alive at home.",
+          "This book is a great way to introduce Kirundi to children. The story is engaging and the illustrations are bright and colorful.",
+        ],
+        faq: [
+          {
+            question: "Is this book only for kids learning Kirundi?",
+            answer:
+              "No! It's great for all children ages 3-7, especially those who love stories about friendship and caring for the earth.",
+          },
+          {
+            question: "Do I need to speak Kirundi to read this book?",
+            answer:
+              "Not at all. Each page is written in Kirundi and English, so even non-fluent parents can join in.",
+          },
+          {
+            question: "How many pages are there?",
+            answer:
+              "The book has 25 vibrant pages filled with cheerful illustrations and simple text.",
+          },
+          {
+            question: "Does the story have a strong message?",
+            answer:
+              "Yes. It highlights kindness, teamwork, and environmental awareness—perfect for building positive values in kids.",
+          },
+          {
+            question: "Is it helpful for diaspora families?",
+            answer:
+              "Absolutely. This series was created for families raising children outside Burundi who want to keep Kirundi language and culture alive.",
+          },
+        ],
+      },
     ],
     faq: [
       {

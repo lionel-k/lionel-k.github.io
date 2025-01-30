@@ -218,10 +218,12 @@ export default function BookPageClient() {
                       {index + 1}
                     </span>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2 text-center">
                     {title || reason}
                   </h3>
-                  <p className="text-gray-600 text-sm">{desc || ""}</p>
+                  <p className="text-gray-600 text-sm text-center">
+                    {desc || ""}
+                  </p>
                 </div>
               );
             })}
