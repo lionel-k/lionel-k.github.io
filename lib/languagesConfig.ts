@@ -6,6 +6,9 @@ export const languagesConfig = {
       {
         title: "My First Picture Book in Kirundi",
         slug: "my-first-picture-book-in-kirundi",
+        age: "2-8",
+        pages: "28",
+        price: "11.99",
         description: {
           short:
             "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily. Great for toddlers and preschoolers.",
@@ -67,6 +70,9 @@ export const languagesConfig = {
       {
         title: "Gatore and Her Parents Visit Burundi",
         slug: "gatore-and-her-parents-visit-burundi",
+        age: "3-9",
+        pages: "28",
+        price: "20.99",
         description: {
           short:
             "A fun story about Gatore's trip to Burundi, learning about family and traditions. Great for families teaching Kirundi.",
@@ -134,6 +140,9 @@ export const languagesConfig = {
       {
         title: "The Kirundi Proverb Treasury",
         slug: "the-kirundi-proverb-treasury",
+        age: "10+",
+        pages: "193",
+        price: "19.99",
         description: {
           short:
             "Over 900 Kirundi sayings, each with English translations and explanations. These sayings show the rich wisdom of Burundi and are fun to learn.",
