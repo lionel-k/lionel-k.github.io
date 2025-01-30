@@ -267,14 +267,14 @@ export const languagesConfig = {
         ],
       },
       {
-        title: "Fruits and Vegetables in Kirundi",
+        title: "Fruits & Vegetables in Kirundi",
         slug: "fruits-and-vegetables-in-kirundi",
         age: "0-6",
         pages: "36",
         price: "11.99",
         description: {
           short:
-            "A Kirundi-English-French picture book about fruits and veggies. Perfect for kids ages 0-6 who want to learn Kirundi in a fun way!",
+            "A Kirundi-English-French picture book all about fruits and vegetables, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
           long: `
       Are you a parent living in the diaspora looking for an exciting way to teach Kirundi?
       This book shows fruits and vegetables in Kirundi, English, and French.
@@ -295,12 +295,12 @@ export const languagesConfig = {
         amazonUrl: "https://www.amazon.com/dp/2492960064",
         bestSeller: false,
         testimonials: [
-          "My child loves pointing at the colorful fruit pictures while we read the Kirundi words together!",
-          "A perfect book for teaching my toddler basic Kirundi vocabulary—he’s already recognizing new words.",
-          "The illustrations are amazing. It’s such a cool way to bring Kirundi, English, and French into our home.",
+          "Book suitable for very young children to learn about fruits. My 2 and 4-year-old daughters use it easily with the pictures.",
+          "A perfect book for teaching my toddler basic Kirundi vocabulary—he's already recognizing new words.",
+          "The illustrations are amazing. It's such a cool way to bring Kirundi, English, and French into our home.",
           "My favorite part is how simple it is for me (not fluent in Kirundi) to read with my kids.",
           "Our family loves learning the names of fruits and veggies in Kirundi. Really helpful for diaspora families.",
-          "It’s an excellent resource for grandparents too—they can share our heritage in a fun, child-friendly way.",
+          "It's an excellent resource for grandparents too—they can share our heritage in a fun, child-friendly way.",
         ],
         faq: [
           {
