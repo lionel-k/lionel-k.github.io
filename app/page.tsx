@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { ArrowRight, Book } from "lucide-react";
 import { NewsletterForm } from "@/components/newsletter-form";
