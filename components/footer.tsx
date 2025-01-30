@@ -89,6 +89,14 @@ export function Footer() {
               Privacy Policy
             </Link>
           </p>
+          {false && (
+            <a
+              href="javascript:openAxeptioCookies()"
+              className="text-sm text-gray-400"
+            >
+              Update your cookies settings
+            </a>
+          )}
         </div>
       </div>
     </footer>
