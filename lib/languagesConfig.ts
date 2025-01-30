@@ -139,7 +139,7 @@ export const languagesConfig = {
           "Fun Kirundi Learning: Big books can be dull, but simple explanations make it easy and fun.",
         ],
         whyChoose: [
-          "Huge Collection of Proverbs: Over 900 Kirundi proverbs for you to explore!",
+          "Huge Collection of Proverbs: Over 900 Kirundi proverbs showcasing Burundi's rich cultural heritage.",
           "Easy Translations and Explanations: Each proverb comes with an English equivalent and an explanation, so everyone can learn.",
           "Great for Families: Perfect for teaching kids about their heritage or just sharing good life lessons.",
         ],
