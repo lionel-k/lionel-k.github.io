@@ -134,9 +134,9 @@ export const languagesConfig = {
           long: "This special book has more than 900 Kirundi proverbs. Each proverb has an English equivalent and an explanation, so it's easy to learn. You'll discover lots of old sayings that people in Burundi have shared for many years. It's perfect for kids or grown-ups who want to remember or learn Kirundi wisdom, connect with family roots, or just enjoy clever sayings!",
         },
         challenges: [
-          "Keeping Kirundi wisdom alive: Families often lose old sayings if they don't write them down.",
-          "Connecting kids to their ancestry: Many children don't learn the special words or proverbs of their grandparents.",
-          "Learning Kirundi in a fun way: Big books can be boring, but simple explanations make it easy to read and understand.",
+          "Preserving Kirundi Wisdom: Families may lose old sayings if they're not written down.",
+          "Connecting Kids to Ancestry: Many children miss out on learning their grandparents' special words.",
+          "Fun Kirundi Learning: Big books can be dull, but simple explanations make it easy and fun.",
         ],
         whyChoose: [
           "Huge Collection of Proverbs: Over 900 Kirundi proverbs for you to explore!",
