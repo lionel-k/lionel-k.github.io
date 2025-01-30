@@ -88,6 +88,9 @@ export const languagesConfig = {
           "This delightful book follows a girl and her family on her first family visit to Burundi, where she explores the local culture and apprehensively tries the food. The vivid descriptions and heartwarming narrative make it an engaging read that inspires curiosity and appreciation for diverse experiences.",
           "Lovely book, with a bonus as activity book.",
           "This story helped my child see how fun it is to visit family back home—and now she's open to trying local food!",
+          "My daughter loved Gatore's adventure! She learned so much about Burundi and can't wait to visit one day.",
+          "The book is super fun and colorful! It made learning about Burundi's culture exciting and easy for my son.",
+          "Gatore's story is awesome! My kids now want to try new foods and learn more about their heritage.",
         ],
         faq: [
           {
