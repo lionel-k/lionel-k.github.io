@@ -155,6 +155,9 @@ export const languagesConfig = {
           "I am a Burundian trying to learn more about my culture, and these proverbs help me connect with my roots. I enjoy this book and all its wisdom.",
           "A book suitable for older readers to teach proverbs to children in Kirundi.",
           "My family loves reading these wise sayings together. Now my kids know more about our culture!",
+          "This book is like a treasure chest of cool sayings! I learned so much about Burundi.",
+          "The proverbs are fun and easy to understand. I like sharing them with my friends.",
+          "Reading this book makes me feel closer to my grandparents. It's like hearing their stories.",
         ],
         faq: [
           {
