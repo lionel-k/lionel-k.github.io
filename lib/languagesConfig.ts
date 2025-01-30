@@ -405,11 +405,10 @@ export const languagesConfig = {
           short:
             "A Kirundi-English story about friendship, inclusivity, and caring for the environment—perfect for kids ages 3-7!",
           long: `
-      Do you have a child learning Kirundi as a second language?
-      This charming picture book follows a lively group of kids—Keza, Karorero, Karire, Ntwari, Mutoni, and Muhizi—as they plant a tree
-      and discover the power of friendship, inclusivity, and environmental care.
-      With its bright illustrations and simple writing, this bilingual book (Kirundi, English)
-      is a fun way to build both language skills and cultural heritage!
+      Is your child learning Kirundi?
+      This fun book is about kids planting a tree. They learn about friendship, being kind, and caring for nature.
+      The book has bright pictures and simple words. It's in Kirundi and English.
+      It's a great way to learn new words and connect with Kirundi culture!
     `.trim(),
         },
         challenges: [
