@@ -530,7 +530,7 @@ export const languagesConfig = {
         slug: "gatore-and-the-burundian-donuts",
         age: "4-10",
         pages: "26",
-        price: "10.99",
+        price: "19.99",
         description: {
           short:
             "A fun Kirundi-English story where Gatore proudly shares donuts at her school's Global Day—perfect for kids ages 4-10!",
