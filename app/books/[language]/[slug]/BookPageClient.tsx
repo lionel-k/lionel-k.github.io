@@ -122,7 +122,7 @@ export default function BookPageClient() {
             {[1, 2, 3].map((page) => (
               <div
                 key={page}
-                className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center"
+                className="bg-white rounded-xl shadow-lg overflow-hidden"
               >
                 <img
                   src={`/images/${language}/${slug}/${page}.png`}
