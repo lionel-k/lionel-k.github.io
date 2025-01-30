@@ -122,7 +122,7 @@ export default function BookPageClient() {
             {[1, 2, 3].map((page) => (
               <div
                 key={page}
-                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center"
               >
                 <img
                   src={`/images/${language}/${slug}/${page}.png`}
@@ -199,7 +199,7 @@ export default function BookPageClient() {
               return (
                 <div
                   key={index}
-                  className="bg-gray-50 rounded-xl p-6 text-center hover:bg-white hover:shadow-lg transition-all duration-300"
+                  className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col items-center"
                 >
                   <div className="w-12 h-12 mb-4 bg-[#DAA520] rounded-lg mx-auto flex items-center justify-center">
                     <span className="text-white font-bold text-xl">
