@@ -478,16 +478,16 @@ export const languagesConfig = {
     `.trim(),
         },
         challenges: [
-          "Lack of simple Kirundi stories for young kids: Diaspora families struggle to keep the language alive.",
-          "Encouraging cultural curiosity: Children born abroad need engaging tales to spark interest in their heritage.",
-          "Making learning fun: Action-packed storytelling and vibrant illustrations help kids enjoy Kirundi, English, and French.",
+          "Few easy Kirundi stories: Families abroad find it hard to keep Kirundi language alive.",
+          "Spark cultural interest: Kids need fun stories to learn about their heritage.",
+          "Make learning exciting: Fun stories and bright pictures help kids enjoy Kirundi and English.",
         ],
         whyChoose: [
           "Bilingual Format: Kirundi and English side-by-side, ideal for families at any fluency level.",
           "Action & Adventure: Shaka's trip to Ruvubu National Park keeps kids hooked while teaching new vocabulary.",
           "Burundian Heritage: Helps diaspora children discover the sights, sounds, and excitement of Burundi.",
         ],
-        amazonUrl: "https://www.amazon.com/dp/2492960188", // Replace with the actual link
+        amazonUrl: "https://www.amazon.com/dp/2492960188",
         bestSeller: false,
         testimonials: [
           "An enchanting journey through Burundi! This book beautifully blends adventure, culture, and family bonds, while teaching valuable lessons about gratitude and embracing new experiences. A delightful read for all ages!",
@@ -501,7 +501,7 @@ export const languagesConfig = {
           {
             question: "Is this book only for Kirundi speakers?",
             answer:
-              "No. It's written in Kirundi, English, and French, so even non-fluent parents can follow along.",
+              "No. It's written in Kirundi and English, so even non-fluent parents can follow along.",
           },
           {
             question: "What age group is best for this story?",
