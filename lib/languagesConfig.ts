@@ -543,8 +543,8 @@ export const languagesConfig = {
         },
         challenges: [
           "Passing on cultural identity: Diaspora families need engaging ways to keep kids connected to Burundi.",
-          "Limited Kirundi-English materials: Many parents struggle to find fun, bilingual resources for teaching Kirundi.",
-          "Learning that's truly fun: Bright illustrations and a simple story spark kids' curiosity about language and culture.",
+          "Limited Kirundi materials: Many parents struggle to find fun, bilingual resources for teaching Kirundi.",
+          "Keeping kids interested: Fun pictures and a simple story make learning new words exciting.",
         ],
         whyChoose: [
           "Burundian Culture on Display: Kids discover how to make donuts (ibitumbura) and see beautiful traditional clothing.",
