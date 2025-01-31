@@ -201,6 +201,200 @@ export const kirundiConfigs = {
       ],
     },
     {
+      title: "The Adventure of Shaka in Burundi",
+      slug: "the-adventure-of-shaka-in-burundi",
+      age: "1-6",
+      pages: "36",
+      price: "21.99",
+      description: {
+        short:
+          "A Kirundi-English story for children aged 3-10, following Shaka's first exciting visit to Burundi!",
+        long: `
+      Shaka arrives in Burundi for the very first time, ready to explore and learn
+      about his family's homeland. Follow him and his cousin Muco as they visit
+      Ruvubu National Park, push a stuck safari car, and encounter hippos up close!
+      This bilingual book (Kirundi and English) is perfect for young
+      readers who want to connect with Burundian culture and discover a fun
+      adventure along the way.
+    `.trim(),
+      },
+      challenges: [
+        "Few easy Kirundi stories: Families abroad find it hard to keep Kirundi language alive.",
+        "Spark cultural interest: Kids need fun stories to learn about their heritage.",
+        "Make learning exciting: Fun stories and bright pictures help kids enjoy Kirundi and English.",
+      ],
+      whyChoose: [
+        "Bilingual Format: Kirundi and English side-by-side, ideal for families at any fluency level.",
+        "Action & Adventure: Shaka's trip to Ruvubu National Park keeps kids hooked while teaching new vocabulary.",
+        "Burundian Heritage: Helps diaspora children discover the sights, sounds, and excitement of Burundi.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/2492960188",
+      bestSeller: false,
+      testimonials: [
+        "An enchanting journey through Burundi! This book beautifully blends adventure, culture, and family bonds, while teaching valuable lessons about gratitude and embracing new experiences. A delightful read for all ages!",
+        "My kids loved Shaka's adventure. They learned Kirundi words and asked lots of questions!",
+        "Perfect for families who want to learn about Burundian culture with fun stories.",
+        "This book made our daughter excited to visit Burundi one day.",
+        "A colorful story that shows how fun it is to explore a parent's homeland.",
+        "Great for all ages! This book mixes adventure, culture, and family. It teaches about being thankful and trying new things.",
+      ],
+      faq: [
+        {
+          question: "Is this book only for Kirundi speakers?",
+          answer:
+            "No. It's written in Kirundi and English, so even non-fluent parents can follow along.",
+        },
+        {
+          question: "What age group is best for this story?",
+          answer:
+            "Children aged 1-6 will love the colorful pages and simple adventures, but older kids can enjoy it too.",
+        },
+        {
+          question: "How long is the story?",
+          answer:
+            "The book has 36 pages, each with bright illustrations and short paragraphs to keep kids engaged.",
+        },
+        {
+          question: "Does it teach anything beyond language?",
+          answer:
+            "Yes. It covers themes like friendship, adapting to new places, and exploring nature in Burundi.",
+        },
+        {
+          question: "Is this good for diaspora families?",
+          answer:
+            "Absolutely! It's created for children living abroad who want a fun way to connect with their Burundian roots.",
+        },
+      ],
+    },
+    {
+      title: "Gatore and the Burundian Donuts",
+      slug: "gatore-and-the-burundian-donuts",
+      age: "4-10",
+      pages: "26",
+      price: "19.99",
+      description: {
+        short:
+          "A fun Kirundi-English story where Gatore proudly shares donuts at her school's Global Day—perfect for kids ages 4-10!",
+        long: `
+      Can a school day become a fun cultural celebration?
+      In this bilingual story (Kirundi and English), Gatore shares her Burundian culture
+      by making yummy donuts and wearing a colorful imvutano, a traditional dress.
+      As she shows her heritage to her friends, Gatore learns to be proud of her roots—one tasty donut at a time!
+    `.trim(),
+      },
+      challenges: [
+        "Passing on cultural identity: Diaspora families need engaging ways to keep kids connected to Burundi.",
+        "Limited Kirundi materials: Many parents struggle to find fun, bilingual resources for teaching Kirundi.",
+        "Keeping kids interested: Fun pictures and a simple story make learning new words exciting.",
+      ],
+      whyChoose: [
+        "Burundian Culture on Display: Kids discover how to make donuts (ibitumbura) and see beautiful traditional clothing.",
+        "Bilingual Format: Kirundi and English side by side, so even non-fluent parents can follow along.",
+        "Empowering Story: Inspires children to celebrate their heritage and share it confidently with friends.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/B0D8WL5Q12",
+      bestSeller: false,
+      testimonials: [
+        "My daughter loved learning Kirundi words with Gatore's fun story and bright outfit!",
+        "This book is wonderful. It made us proud of our Burundian roots—and the donuts are so fun!",
+        "Even though I'm not fluent in Kirundi, we read it in English and learn Kirundi words together.",
+        "The illustrations are beautiful and show the joy of sharing your culture at school.",
+        "Gatore's story is super fun! The colorful pictures make learning Kirundi exciting.",
+        "This book is awesome! It made me feel proud of my Burundian roots and the donuts look yummy!",
+      ],
+      faq: [
+        {
+          question: "What age group is this book for?",
+          answer:
+            "It's best for kids aged 4-10, though younger children can still enjoy the pictures and short text.",
+        },
+        {
+          question: "Do I need to speak Kirundi to read it?",
+          answer:
+            "No. Each page shows Kirundi and English, so you can learn alongside your child even if you're not fluent.",
+        },
+        {
+          question: "How many pages are in the book?",
+          answer:
+            "It has 26 pages filled with colorful illustrations and easy-to-follow text.",
+        },
+        {
+          question: "Does this book focus on more than language?",
+          answer:
+            "Yes. It highlights Burundian donuts, traditional dress, and celebrating heritage—great for diaspora families.",
+        },
+        {
+          question: "How does it help kids embrace cultural diversity?",
+          answer:
+            "By showing Gatore proudly sharing her Burundian heritage at school, children learn to appreciate differences.",
+        },
+      ],
+    },
+    {
+      title: "The Magic of the Friendship Tree",
+      slug: "stories-for-children",
+      age: "3-7",
+      pages: "25",
+      price: "21.99",
+      description: {
+        short:
+          "A Kirundi-English story about friendship, inclusivity, and caring for the environment—perfect for kids ages 3-7!",
+        long: `
+      Is your child learning Kirundi?
+      This fun book is about kids planting a tree. They learn about friendship, being kind, and caring for nature.
+      The book has bright pictures and simple words. It's in Kirundi and English.
+      It's a great way to learn new words and connect with Kirundi culture!
+    `.trim(),
+      },
+      challenges: [
+        "Limited Kirundi resources: Hard to find simple stories that engage kids in both languages.",
+        "Teaching cultural values abroad: Diaspora families want to share Burundian heritage and life lessons.",
+        "Keeping young readers interested: Short sentences and lively illustrations capture children's attention.",
+      ],
+      whyChoose: [
+        "Lively Story & Important Themes: Teaches inclusivity, friendship, and environmental care in a kid-friendly way.",
+        "Bilingual Format: Kirundi and English side-by-side—perfect for families of any fluency level.",
+        "Fun Characters: Kids love following the adventures of Keza, Karorero, and friends as they grow their tree.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/2494614759",
+      bestSeller: false,
+      testimonials: [
+        "My children love the colorful pages and can't stop talking about planting their own 'friendship tree'!",
+        "A wonderful way to introduce environmental care and Kirundi at the same time. Highly recommended!",
+        "We read a few pages each night. It's great for teaching my daughter new Kirundi words and about kindness.",
+        "I'm not fluent in Kirundi, but the French and English text makes it easy to follow along with my kids.",
+        "Lovely story with bright illustrations. Perfect for diaspora families wanting to keep Kirundi alive at home.",
+        "This book is a great way to introduce Kirundi to children. The story is engaging and the illustrations are bright and colorful.",
+      ],
+      faq: [
+        {
+          question: "Is this book only for kids learning Kirundi?",
+          answer:
+            "No! It's great for all children ages 3-7, especially those who love stories about friendship and caring for the earth.",
+        },
+        {
+          question: "Do I need to speak Kirundi to read this book?",
+          answer:
+            "Not at all. Each page is written in Kirundi and English, so even non-fluent parents can join in.",
+        },
+        {
+          question: "How many pages are there?",
+          answer:
+            "The book has 25 vibrant pages filled with cheerful illustrations and simple text.",
+        },
+        {
+          question: "Does the story have a strong message?",
+          answer:
+            "Yes. It highlights kindness, teamwork, and environmental awareness—perfect for building positive values in kids.",
+        },
+        {
+          question: "Is it helpful for diaspora families?",
+          answer:
+            "Absolutely. This series was created for families raising children outside Burundi who want to keep Kirundi language and culture alive.",
+        },
+      ],
+    },
+    {
       title: "Fruits & Vegetables in Kirundi",
       slug: "fruits-and-vegetables-in-kirundi",
       age: "0-6",
@@ -395,196 +589,65 @@ export const kirundiConfigs = {
       ],
     },
     {
-      title: "The Magic of the Friendship Tree",
-      slug: "stories-for-children",
-      age: "3-7",
-      pages: "25",
-      price: "21.99",
+      title: "Letters in Kirundi",
+      slug: "letters-in-kirundi",
+      age: "0-6",
+      pages: "27",
+      price: "11.99",
       description: {
         short:
-          "A Kirundi-English story about friendship, inclusivity, and caring for the environment—perfect for kids ages 3-7!",
+          "A trilingual (Kirundi-English-French) picture book teaching letters to kids aged 0-6. Great for families wanting to introduce Kirundi in a fun way!",
         long: `
-      Is your child learning Kirundi?
-      This fun book is about kids planting a tree. They learn about friendship, being kind, and caring for nature.
-      The book has bright pictures and simple words. It's in Kirundi and English.
-      It's a great way to learn new words and connect with Kirundi culture!
+      Are you a parent living in the diaspora who needs fun and engaging ways
+      to teach Kirundi to your child? This colorful book helps little ones
+      learn their letters in Kirundi, English, and French. Each page includes
+      bright illustrations so kids can better remember the words. Whether
+      you're fluent in Kirundi or not, this book makes it easy for families
+      to pass on their heritage and language.
     `.trim(),
       },
       challenges: [
-        "Limited Kirundi resources: Hard to find simple stories that engage kids in both languages.",
-        "Teaching cultural values abroad: Diaspora families want to share Burundian heritage and life lessons.",
-        "Keeping young readers interested: Short sentences and lively illustrations capture children's attention.",
+        "Teaching basic letters in Kirundi: Many diaspora families struggle to find beginner-friendly Kirundi resources.",
+        "Keeping children engaged: Colorful illustrations and simple text help kids stay excited about learning.",
+        "Language barrier for parents: Trilingual format (Kirundi-English-French) lets non-fluent parents teach Kirundi confidently.",
       ],
       whyChoose: [
-        "Lively Story & Important Themes: Teaches inclusivity, friendship, and environmental care in a kid-friendly way.",
-        "Bilingual Format: Kirundi and English side-by-side—perfect for families of any fluency level.",
-        "Fun Characters: Kids love following the adventures of Keza, Karorero, and friends as they grow their tree.",
+        "Focus on Letters: Perfect for young learners just starting with Kirundi, English, and French alphabets.",
+        "Bright & Kid-Friendly: 27 pages of bold images and simple explanations to hold children’s attention.",
+        "Easy for Parents: Even if you're not a native speaker, you can read along and learn with your child.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2494614759",
+      amazonUrl: "https://www.amazon.com/dp/249296003X",
       bestSeller: false,
       testimonials: [
-        "My children love the colorful pages and can't stop talking about planting their own 'friendship tree'!",
-        "A wonderful way to introduce environmental care and Kirundi at the same time. Highly recommended!",
-        "We read a few pages each night. It's great for teaching my daughter new Kirundi words and about kindness.",
-        "I'm not fluent in Kirundi, but the French and English text makes it easy to follow along with my kids.",
-        "Lovely story with bright illustrations. Perfect for diaspora families wanting to keep Kirundi alive at home.",
-        "This book is a great way to introduce Kirundi to children. The story is engaging and the illustrations are bright and colorful.",
+        "A fantastic way to introduce the Kirundi alphabet alongside English and French—my children love it!",
+        "Perfect for my kids aged 3 and 5. They find the letters fun and enjoy the bright pictures.",
+        "Great resource for diaspora families. We read it every day, and our Kirundi vocab is growing!",
       ],
       faq: [
         {
-          question: "Is this book only for kids learning Kirundi?",
+          question: "Who is this book for?",
           answer:
-            "No! It's great for all children ages 3-7, especially those who love stories about friendship and caring for the earth.",
+            "It’s best for children ages 0-6, but older kids can still enjoy learning Kirundi letters, too.",
         },
         {
-          question: "Do I need to speak Kirundi to read this book?",
+          question: "Does it require me to speak Kirundi?",
           answer:
-            "Not at all. Each page is written in Kirundi and English, so even non-fluent parents can join in.",
+            "No. Each page is written in Kirundi, English, and French, so parents can follow along without fluency.",
         },
         {
           question: "How many pages are there?",
           answer:
-            "The book has 25 vibrant pages filled with cheerful illustrations and simple text.",
+            "It includes 27 colorful pages, each focusing on letters and easy-to-understand words.",
         },
         {
-          question: "Does the story have a strong message?",
+          question: "Is this suitable for beginners?",
           answer:
-            "Yes. It highlights kindness, teamwork, and environmental awareness—perfect for building positive values in kids.",
+            "Yes! It's designed for families just starting out with Kirundi, making it fun and approachable.",
         },
         {
-          question: "Is it helpful for diaspora families?",
+          question: "Can this help my child connect with their roots?",
           answer:
-            "Absolutely. This series was created for families raising children outside Burundi who want to keep Kirundi language and culture alive.",
-        },
-      ],
-    },
-    {
-      title: "The Adventure of Shaka in Burundi",
-      slug: "the-adventure-of-shaka-in-burundi",
-      age: "1-6",
-      pages: "36",
-      price: "21.99",
-      description: {
-        short:
-          "A Kirundi-English story for children aged 3-10, following Shaka's first exciting visit to Burundi!",
-        long: `
-      Shaka arrives in Burundi for the very first time, ready to explore and learn
-      about his family's homeland. Follow him and his cousin Muco as they visit
-      Ruvubu National Park, push a stuck safari car, and encounter hippos up close!
-      This bilingual book (Kirundi and English) is perfect for young
-      readers who want to connect with Burundian culture and discover a fun
-      adventure along the way.
-    `.trim(),
-      },
-      challenges: [
-        "Few easy Kirundi stories: Families abroad find it hard to keep Kirundi language alive.",
-        "Spark cultural interest: Kids need fun stories to learn about their heritage.",
-        "Make learning exciting: Fun stories and bright pictures help kids enjoy Kirundi and English.",
-      ],
-      whyChoose: [
-        "Bilingual Format: Kirundi and English side-by-side, ideal for families at any fluency level.",
-        "Action & Adventure: Shaka's trip to Ruvubu National Park keeps kids hooked while teaching new vocabulary.",
-        "Burundian Heritage: Helps diaspora children discover the sights, sounds, and excitement of Burundi.",
-      ],
-      amazonUrl: "https://www.amazon.com/dp/2492960188",
-      bestSeller: false,
-      testimonials: [
-        "An enchanting journey through Burundi! This book beautifully blends adventure, culture, and family bonds, while teaching valuable lessons about gratitude and embracing new experiences. A delightful read for all ages!",
-        "My kids loved Shaka's adventure. They learned Kirundi words and asked lots of questions!",
-        "Perfect for families who want to learn about Burundian culture with fun stories.",
-        "This book made our daughter excited to visit Burundi one day.",
-        "A colorful story that shows how fun it is to explore a parent's homeland.",
-        "Great for all ages! This book mixes adventure, culture, and family. It teaches about being thankful and trying new things.",
-      ],
-      faq: [
-        {
-          question: "Is this book only for Kirundi speakers?",
-          answer:
-            "No. It's written in Kirundi and English, so even non-fluent parents can follow along.",
-        },
-        {
-          question: "What age group is best for this story?",
-          answer:
-            "Children aged 1-6 will love the colorful pages and simple adventures, but older kids can enjoy it too.",
-        },
-        {
-          question: "How long is the story?",
-          answer:
-            "The book has 36 pages, each with bright illustrations and short paragraphs to keep kids engaged.",
-        },
-        {
-          question: "Does it teach anything beyond language?",
-          answer:
-            "Yes. It covers themes like friendship, adapting to new places, and exploring nature in Burundi.",
-        },
-        {
-          question: "Is this good for diaspora families?",
-          answer:
-            "Absolutely! It's created for children living abroad who want a fun way to connect with their Burundian roots.",
-        },
-      ],
-    },
-    {
-      title: "Gatore and the Burundian Donuts",
-      slug: "gatore-and-the-burundian-donuts",
-      age: "4-10",
-      pages: "26",
-      price: "19.99",
-      description: {
-        short:
-          "A fun Kirundi-English story where Gatore proudly shares donuts at her school's Global Day—perfect for kids ages 4-10!",
-        long: `
-      Can a school day become a fun cultural celebration?
-      In this bilingual story (Kirundi and English), Gatore shares her Burundian culture
-      by making yummy donuts and wearing a colorful imvutano, a traditional dress.
-      As she shows her heritage to her friends, Gatore learns to be proud of her roots—one tasty donut at a time!
-    `.trim(),
-      },
-      challenges: [
-        "Passing on cultural identity: Diaspora families need engaging ways to keep kids connected to Burundi.",
-        "Limited Kirundi materials: Many parents struggle to find fun, bilingual resources for teaching Kirundi.",
-        "Keeping kids interested: Fun pictures and a simple story make learning new words exciting.",
-      ],
-      whyChoose: [
-        "Burundian Culture on Display: Kids discover how to make donuts (ibitumbura) and see beautiful traditional clothing.",
-        "Bilingual Format: Kirundi and English side by side, so even non-fluent parents can follow along.",
-        "Empowering Story: Inspires children to celebrate their heritage and share it confidently with friends.",
-      ],
-      amazonUrl: "https://www.amazon.com/dp/B0D8WL5Q12",
-      bestSeller: false,
-      testimonials: [
-        "My daughter loved learning Kirundi words with Gatore's fun story and bright outfit!",
-        "This book is wonderful. It made us proud of our Burundian roots—and the donuts are so fun!",
-        "Even though I'm not fluent in Kirundi, we read it in English and learn Kirundi words together.",
-        "The illustrations are beautiful and show the joy of sharing your culture at school.",
-        "Gatore's story is super fun! The colorful pictures make learning Kirundi exciting.",
-        "This book is awesome! It made me feel proud of my Burundian roots and the donuts look yummy!",
-      ],
-      faq: [
-        {
-          question: "What age group is this book for?",
-          answer:
-            "It's best for kids aged 4-10, though younger children can still enjoy the pictures and short text.",
-        },
-        {
-          question: "Do I need to speak Kirundi to read it?",
-          answer:
-            "No. Each page shows Kirundi and English, so you can learn alongside your child even if you're not fluent.",
-        },
-        {
-          question: "How many pages are in the book?",
-          answer:
-            "It has 26 pages filled with colorful illustrations and easy-to-follow text.",
-        },
-        {
-          question: "Does this book focus on more than language?",
-          answer:
-            "Yes. It highlights Burundian donuts, traditional dress, and celebrating heritage—great for diaspora families.",
-        },
-        {
-          question: "How does it help kids embrace cultural diversity?",
-          answer:
-            "By showing Gatore proudly sharing her Burundian heritage at school, children learn to appreciate differences.",
+            "Absolutely. Learning Kirundi letters and vocabulary helps kids stay close to Burundian culture.",
         },
       ],
     },
