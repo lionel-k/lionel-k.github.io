@@ -221,77 +221,61 @@ export const FAQ_ITEMS = [
   {
     question: "What languages do your books include?",
     answer:
-      "We have books in Kirundi, Kinyarwanda, Lingala, and more. Each book is paired with English or French translations. We are adding more African languages all the time!",
+      "Our books feature African languages like Kirundi, Kinyarwanda, and Lingala, paired with English or French translations.",
   },
   {
-    question: "Are your books good for children?",
+    question: "Do I need to speak the African language to use these books?",
     answer:
-      "Yes! Our books are made for kids aged 2-10. They are also great for parents or caregivers who want to learn together with their kids.",
+      "No! Each book includes translations in English or French, so you and your child can learn together, even if you're not fluent.",
   },
   {
-    question: "How do bilingual books work?",
+    question: "How will these books help my child?",
     answer:
-      "Each page has the same text in an African language and either English or French. This way, kids and parents can read and learn both languages side by side.",
+      "Our books help children connect to their cultural roots, build pride in their heritage, and learn new languages in a fun and interactive way.",
   },
   {
-    question: "Do I need to know the African language to use the books?",
+    question: "Are these books suitable for kids of all ages?",
     answer:
-      "No! You don't have to know the language. The books are made for parents and kids to learn together, even if you are not fluent.",
+      "Most of our books are designed for children aged 2-10, but some advanced books cater to teens and adults as well.",
   },
   {
-    question: "What types of books do you sell?",
+    question: "Who writes these books?",
     answer:
-      "We have books like 'First 100 Words,' books on action verbs, animals, fruits and vegetables, and even coloring books. They help kids learn new words in a fun way.",
+      "The books are authored by Lionel Kubwimana, a Burundian parent and language advocate. Each translation is verified by native language experts to ensure accuracy.",
   },
   {
-    question: "Can these books help my child connect with their heritage?",
+    question: "What if I don’t like the book? Can I return it?",
     answer:
-      "Yes! These books are all about celebrating African languages and cultures. They help kids learn about their roots and feel proud of their heritage.",
+      "Amazon handles delivery and returns. Check their policy to see how to return the book if needed.",
   },
   {
-    question: "Can I buy your books anywhere in the world?",
+    question: "How long will it take to see progress in learning?",
     answer:
-      "Yes, our books are sold on Amazon, so you can buy them worldwide. Amazon will handle delivery based on your location.",
+      "You’ll notice improvement as your child engages with the books regularly. Kids often start recognizing words and connecting with the language after a few weeks.",
   },
   {
-    question: "Are these books only for African diaspora families?",
+    question: "How long does delivery take?",
     answer:
-      "No! These books are for anyone who wants to learn an African language or teach it to their family. If you love African culture, these books are for you.",
-  },
-  {
-    question: "Are the translations correct?",
-    answer:
-      "Yes, all translations are carefully checked by native speakers to make sure they are accurate and reflect the language properly.",
-  },
-  {
-    question: "What's next for Lingu.africa?",
-    answer:
-      "We are working on adding more African languages and creating new books on different topics. Follow us for updates on what's coming next!",
-  },
-  {
-    question: "How can I share ideas or suggest a language to add?",
-    answer:
-      "We would love to hear from you! You can reach us through our website or social media to share your ideas or feedback.",
+      "Delivery times depend on your location. Amazon will provide estimated delivery times at checkout.",
   },
   {
     question: "Can I see what the books look like before buying?",
     answer:
-      "Yes! Many of our books on Amazon have a 'Look Inside' option, so you can preview a few pages before you buy.",
+      "Yes! Many of our books on Amazon have a 'Look Inside' option, so you can preview a few pages before purchasing.",
   },
   {
-    question: "Do you have books for older kids or advanced learners?",
+    question: "Are the translations accurate?",
     answer:
-      "Yes, for Kirundi we offer advanced books like 'The Kirundi Proverb Treasury,' 'The Kirundi Joke Treasury,' and more, which are perfect for teens, adults, and anyone wanting a deeper connection to the language. For other African languages, we're focusing on beginner-friendly books right now, but we're adding more advanced titles over time. Stay tuned for updates!",
-  },
-
-  {
-    question: "Can teachers use these books in classrooms?",
-    answer:
-      "Yes, many teachers use our books to teach African languages in schools, after-school programs, and community learning spaces.",
+      "Yes, all translations are verified by native speakers to ensure accuracy and authenticity.",
   },
   {
-    question: "Are the pictures in the books relatable for diaspora kids?",
+    question: "Can I use these books to teach in classrooms?",
     answer:
-      "Yes! Our pictures show children who look like kids in the African diaspora. The faces, hair, and skin tones help children feel seen and proud of their identity.",
+      "Yes, our books are perfect for teaching African languages in schools, after-school programs, or community learning spaces.",
+  },
+  {
+    question: "Are these books only for diaspora families?",
+    answer:
+      "No, anyone who wants to learn an African language or connect with Burundian culture can enjoy these books.",
   },
 ];
