@@ -77,16 +77,16 @@ export default function About() {
           </p>
           <div className="max-w-3xl mx-auto space-y-6 leading-relaxed text-gray-700">
             <p>
-              Hello! My name is Lionel, and I’m from Burundi in East Africa.
+              Hello! My name is Lionel, and I'm from Burundi in East Africa.
               When I was little, everyone around me spoke Kirundi, our local
-              African language. I didn’t think much about it back then. But when
+              African language. I didn't think much about it back then. But when
               I moved to France for school, I realized how special my culture
               and mother tongue really were. They reminded me of my African
               roots and my family traditions.
             </p>
             <p>
               One day, I met a girl who was also from Burundi, but she grew up
-              in another country. She felt shy because she didn’t speak Kirundi
+              in another country. She felt shy because she didn't speak Kirundi
               very well. It made me sad because I knew lots of children from the
               African diaspora felt the same way. I wanted to help them feel
               proud of their heritage.
@@ -94,16 +94,16 @@ export default function About() {
             <p>
               Later on, when I became a dad, I really wanted my daughter to grow
               up celebrating our African culture and language. But it was hard
-              to find bilingual children’s books in Kirundi or other African
-              languages like Kinyarwanda, Lingala, Swahili, or Yoruba. That’s
+              to find bilingual children's books in Kirundi or other African
+              languages like Kinyarwanda, Lingala, Swahili, or Yoruba. That's
               when I started making books myself, so kids everywhere can learn
               their mother tongue and connect to their African heritage, no
               matter where they live.
             </p>
             <p>
-              Now, I create African children’s books for families all over the
+              Now, I create African children's books for families all over the
               world. I hope these bilingual stories bring smiles, new words, and
-              a stronger bond to everyone’s cultural identity!
+              a stronger bond to everyone's cultural identity!
             </p>
           </div>
         </div>
@@ -122,7 +122,7 @@ export default function About() {
             <p>
               Lingu.Africa is a special place where we make bilingual books in
               African languages like Kirundi, Kinyarwanda, Lingala, Swahili,
-              Yoruba, and more. We believe language is more than words—it’s
+              Yoruba, and more. We believe language is more than words—it's
               about stories, songs, and heritage. Our mission is to help kids,
               especially those in the African diaspora, learn their mother
               tongue in a fun way and feel proud of their roots.
@@ -131,7 +131,7 @@ export default function About() {
               By reading our books, families can share African culture together
               and make new memories. We want every child to feel connected to
               their history and traditions. Whether you live in Africa or on the
-              other side of the world, our bilingual children’s books will spark
+              other side of the world, our bilingual children's books will spark
               curiosity and build a strong bridge to your cultural identity.
             </p>
             <p className="text-lg font-medium text-[#DAA520]">
@@ -167,7 +167,7 @@ export default function About() {
                 Stay Updated
               </h3>
               <p className="text-xl text-gray-300 mb-8">
-                Get our latest news on bilingual African children’s books,
+                Get our latest news on bilingual African children's books,
                 language tips, and special offers.
               </p>
               <NewsletterForm />

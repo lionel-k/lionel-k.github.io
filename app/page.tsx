@@ -10,11 +10,11 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Lingu.Africa - Bilingual African Language Books",
   description:
-    "Explore our collection of bilingual books in African languages like Kirundi, Kinyarwanda, and Lingala. Perfect for families worldwide.",
+    "Explore our collection of bilingual books in various African languages. Perfect for families worldwide.",
   openGraph: {
     title: "Lingu.Africa - Bilingual African Language Books",
     description:
-      "Explore our collection of bilingual books in African languages like Kirundi, Kinyarwanda, and Lingala. Perfect for families worldwide.",
+      "Explore our collection of bilingual books in various African languages. Perfect for families worldwide.",
     url: "https://www.lingu.africa/",
     siteName: "Lingu.Africa",
     images: [
@@ -24,7 +24,6 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    // optional
     locale: "en_US",
     type: "website",
   },
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lingu.Africa - Bilingual African Language Books",
     description:
-      "Explore our collection of bilingual books in African languages like Kirundi, Kinyarwanda, and Lingala. Perfect for families worldwide.",
+      "Explore our collection of bilingual books in various African languages. Perfect for families worldwide.",
     images: ["https://www.lingu.africa/og-image.jpg"],
     creator: "@linguafrica",
   },
@@ -53,9 +52,9 @@ export default function Home() {
                 African Language Books That Connect Generations
               </h1>
               <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
-                Beautiful bilingual books helping diaspora families teach
-                Kirundi, Kinyarwanda, and Lingala to children - no language
-                experience needed!
+                Beautiful bilingual books designed to help families teach
+                African languages to children, regardless of prior language
+                experience!
               </p>
               <div className="mt-12 flex items-center justify-center gap-x-6">
                 <Link
