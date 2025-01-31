@@ -720,7 +720,7 @@ export const kirundiConfigs = {
       ],
     },
     {
-      title: "Kirundi - English Bilingual Coloring Book for Kids Ages 3-6",
+      title: "Coloring Book in Kirundi",
       slug: "coloring-book-in-kirundi",
       age: "3-6",
       pages: "57",
