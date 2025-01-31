@@ -1,9 +1,0 @@
-# Allow all web crawlers to access all content
-User-agent: *
-Disallow:
-
-# Disallow access to specific directories
-Disallow: /images/
-
-# Specify the location of the sitemap
-Sitemap: https://www.lingu.africa/sitemap.xml
