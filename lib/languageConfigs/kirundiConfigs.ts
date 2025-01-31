@@ -1121,60 +1121,56 @@ export const kirundiConfigs = {
   ],
   faq: [
     {
-      question: "What is the purpose of Kirundi books?",
+      question:
+        "How can I teach Kirundi to my kids if I don't speak it fluently?",
       answer:
-        "To preserve and promote the Kirundi language and culture. These books help families in the diaspora teach Kirundi to their children and stay connected to their roots.",
-    },
-    {
-      question: "Who can use these Kirundi books?",
-      answer:
-        "Anyone! They are perfect for parents, children, and even adults who want to learn or improve their Kirundi skills. Whether you're fluent or just starting, these books are for you.",
-    },
-    {
-      question: "What types of Kirundi books do you offer?",
-      answer:
-        "We offer a variety of books, including 'The Kirundi Proverb Treasury,' 'Kirundi Word Search,' 'Traditional Kirundi Songs,' and bilingual children's books like 'First 100 Words.' There's something for everyone—kids, teens, and adults.",
-    },
-    {
-      question: "Are the books bilingual?",
-      answer:
-        "Yes, most of our Kirundi books are bilingual. They include both Kirundi and English (or French) to make learning easier for readers of all ages.",
-    },
-    {
-      question: "Can these books help my child learn Kirundi?",
-      answer:
-        "Yes, the books are designed to introduce Kirundi in a simple, fun way. They include basic vocabulary, cultural stories, and activities to keep kids engaged while learning the language.",
-    },
-    {
-      question: "What makes Kirundi books different from other language books?",
-      answer:
-        "Kirundi books celebrate the unique traditions and culture of Burundi. They include proverbs, songs, and jokes that are rooted in the country's rich history, making them more than just language tools—they're a cultural experience.",
-    },
-    {
-      question: "Are there books for advanced learners in Kirundi?",
-      answer:
-        "Yes, we have advanced books like 'The Kirundi Proverb Treasury' and 'Kirundi Word Search' for teens and adults. These books dive deeper into the language and culture for those who want to go beyond the basics.",
+        "You don't need to be fluent! Our books include translations in English or French, so you and your kids can learn together. Each book is designed to make the process simple, with pictures and easy words to guide you every step of the way.",
     },
     {
       question: "Why is it important to teach Kirundi to children?",
       answer:
-        "Teaching Kirundi helps children stay connected to their heritage, understand their roots, and take pride in their identity. It also keeps the language alive for future generations.",
+        "Teaching Kirundi helps children connect to their roots, feel proud of their identity, and stay in touch with their heritage. It's also a great way to preserve the language for future generations while building family connections.",
     },
     {
-      question: "Can schools use Kirundi books?",
+      question: "What types of Kirundi books are available?",
       answer:
-        "Yes, our Kirundi books are great for schools and community programs. Teachers can use them to introduce the language and culture of Burundi in classrooms or language learning groups.",
+        "We offer bilingual and trilingual books for all ages, including 'First 100 Words,' storybooks, activity books like 'Kirundi Word Search,' and cultural collections like 'The Kirundi Proverb Treasury.' These books make learning fun and engaging for kids and adults alike.",
     },
     {
       question:
-        "Are the illustrations in Kirundi books relatable for kids in the diaspora?",
+        "Can these books help if my child is just starting to learn Kirundi?",
       answer:
-        "Yes, the illustrations include children who look like kids in the African diaspora, helping them feel represented and connected to the language and stories.",
+        "Yes! Our books are perfect for beginners. They introduce Kirundi words and phrases in small, easy steps, using colorful illustrations and relatable topics to make learning enjoyable and less overwhelming.",
     },
     {
-      question: "Do you plan to add more Kirundi books?",
+      question: "Are the books suitable for parents who live in the diaspora?",
       answer:
-        "Yes, we are constantly working on new Kirundi books to expand our collection. Follow us to stay updated on the latest releases!",
+        "Absolutely! These books are designed with diaspora families in mind. They make it easy to teach Kirundi even if you're far from home, helping your children stay connected to their heritage and culture.",
+    },
+    {
+      question: "Can I return a book if I'm not satisfied?",
+      answer:
+        "Yes, all purchases are handled through Amazon, which has a straightforward return policy. If you're not happy with your book, you can easily return it and get your money back.",
+    },
+    {
+      question: "How long does it take to see progress in learning Kirundi?",
+      answer:
+        "With regular use, many parents notice progress in just a few weeks. Kids start by recognizing simple words and phrases, and as they engage with the books, their understanding and confidence grow naturally.",
+    },
+    {
+      question: "Are the books helpful for schools and teachers?",
+      answer:
+        "Yes! Our books are great tools for classrooms and community programs. Teachers can use them to introduce Kirundi and Burundian culture to students in an easy and engaging way.",
+    },
+    {
+      question: "How do the books help make learning Kirundi fun?",
+      answer:
+        "The books use bright illustrations, simple layouts, and cultural stories to keep kids interested. Activities like word searches and proverbs make learning interactive, helping children enjoy the process while building language skills.",
+    },
+    {
+      question: "What if I have ideas or need help teaching Kirundi?",
+      answer:
+        "We're here to support you! Reach out to us through our website or social media with any questions or ideas. We're always happy to help families on their Kirundi learning journey.",
     },
   ],
 };
