@@ -1,7 +1,7 @@
 import { NewsletterForm } from "@/components/newsletter-form";
 import { FAQ } from "@/components/FAQ";
 
-export const FAQ_ITEMS = [
+const FAQ_ITEMS = [
   {
     question: "What is the purpose of Lingu.Africa?",
     answer:
@@ -23,7 +23,7 @@ export const FAQ_ITEMS = [
       "Each book is created in collaboration with native language experts to ensure translations are accurate and culturally authentic. The books are carefully designed with bright illustrations and easy-to-follow layouts for a fun learning experience.",
   },
   {
-    question: "Can I return a book if I don’t like it?",
+    question: "Can I return a book if I don't like it?",
     answer:
       "Yes! All purchases are managed through Amazon, which has a simple return policy. If you're not satisfied, you can return your book and receive a refund by following Amazon's steps.",
   },
