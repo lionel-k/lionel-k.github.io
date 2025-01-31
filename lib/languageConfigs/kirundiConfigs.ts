@@ -622,6 +622,9 @@ export const kirundiConfigs = {
         "A fantastic way to introduce the Kirundi alphabet alongside English and French—my children love it!",
         "Perfect for my kids aged 3 and 5. They find the letters fun and enjoy the bright pictures.",
         "Great resource for diaspora families. We read it every day, and our Kirundi vocab is growing!",
+        "This book is fun! My kids can't wait to learn more letters.",
+        "The pictures are really cool, and it's easy to learn Kirundi.",
+        "My kids love reading this book. They learn new words every day!",
       ],
       faq: [
         {
