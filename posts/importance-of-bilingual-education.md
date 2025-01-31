@@ -1,7 +1,7 @@
 ---
 title: "The Importance of Bilingual Education for African Children"
 date: "2024-03-20"
-author: "Dr. Sarah Johnson"
+author: "Lionel Kubwimana"
 excerpt: "Discover how bilingual education can help preserve cultural heritage while preparing children for a global future."
 category: "Education"
 ---
