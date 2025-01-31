@@ -261,7 +261,7 @@ export const FAQ_ITEMS = [
   {
     question: "Can I see what the books look like before buying?",
     answer:
-      "Yes! Many of our books on Amazon include a 'Look Inside' feature. This lets you preview a few pages so you can see the colorful illustrations and how the text is laid out in Kirundi, English, and French before you decide to buy.",
+      "Yes! Many of our books have a 'Look Inside' feature on both Amazon and our website. This allows you to preview a few pages, including colorful illustrations and text laid out in Kirundi, English, and French. You can see exactly what the books look like before making your decision, giving you confidence in your purchase.",
   },
   {
     question: "Are the translations accurate?",
