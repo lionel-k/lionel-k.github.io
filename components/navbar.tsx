@@ -57,15 +57,6 @@ export function Navbar() {
             >
               About
             </Link>
-            {false && (
-              <Link
-                href="/blog"
-                className="text-lg md:text-sm font-medium text-white hover:text-[#DAA520]"
-                onClick={() => setIsOpen(false)}
-              >
-                Blog
-              </Link>
-            )}
           </nav>
         </div>
       </div>
