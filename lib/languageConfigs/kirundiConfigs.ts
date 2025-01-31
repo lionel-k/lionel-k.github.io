@@ -754,9 +754,9 @@ export const kirundiConfigs = {
         "My daughter loves learning Kirundi, English, and French while she colors. So fun and educational!",
         "The pictures are simple but adorable—my son enjoys coloring them and pointing out the new words.",
         "Great for diaspora families who want to keep Kirundi alive alongside English and French. We do it daily!",
-        "Coloring makes language learning feel like playtime—my kids don’t even realize they’re studying!",
+        "Coloring makes language learning feel like playtime—my kids don't even realize they're studying!",
         "As a non fluent parent, the three language setup helps me follow along and learn with my child!",
-        "A wonderful, creative approach to language. My kids can’t wait to show off their coloring and new vocab.",
+        "A wonderful, creative approach to language. My kids can't wait to show off their coloring and new vocab.",
       ],
       faq: [
         {
@@ -783,6 +783,69 @@ export const kirundiConfigs = {
           question: "How does coloring help language learning?",
           answer:
             "Coloring keeps kids engaged. They absorb new Kirundi, English, and French words while enjoying a fun activity.",
+        },
+      ],
+    },
+    {
+      title: "The Kirundi Joke Treasury",
+      slug: "the-kirundi-joke-treasury",
+      age: "12+",
+      pages: "53",
+      price: "18.00",
+      description: {
+        short:
+          "Enjoy over 100 Kirundi-English jokes that bring laughter from Burundi straight into your home!",
+        long: `
+      Discover the joy of Kirundi humor with over 100 bilingual jokes! This book is perfect for language learners,
+      diaspora families, and anyone who loves to laugh. Dive into Burundian culture and enjoy jokes that bring
+      people together across languages. A fun and easy way to explore Kirundi!
+    `.trim(),
+      },
+      challenges: [
+        "Limited Kirundi Comedy Books: Many diaspora families can't find playful ways to enjoy or learn Kirundi.",
+        "Bridging Language Gaps: Most joke books are in English only, leaving Kirundi speakers without relevant content.",
+        "Connecting Diaspora to Heritage: Families abroad want to experience authentic Burundian culture.",
+      ],
+      whyChoose: [
+        "Over 100 Kirundi Jokes: Each joke is presented in Kirundi and English, making humor universal.",
+        "Bilingual Touch: Great for fans of Kirundi and English looking for a cultural twist on jokes.",
+        "Cultural Insights: Discover daily life in Burundi through witty, clean jokes that reflect local traditions.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/B0CNYLT1L9",
+      bestSeller: false,
+      testimonials: [
+        "I never knew Kirundi jokes could be so fun! My teens can't stop giggling at these hilarious one-liners.",
+        "This book helps me connect to my Burundian roots in a light, joyful way. Highly recommend for diaspora families!",
+        "A great tool for learning Kirundi—my language class loves translating and laughing together!",
+        "The jokes are short, clean, and simple. Perfect for beginners in Kirundi or anyone craving a good laugh.",
+        "My grandparents grew up in Burundi. Reading these jokes together has sparked so many fond memories!",
+        "I love how each joke is bilingual. It's a cool way to share laughs across different languages.",
+      ],
+      faq: [
+        {
+          question: "Is this book suitable for kids?",
+          answer:
+            "Yes! The jokes are clean and easy to understand. Teens and older kids can also practice Kirundi or English.",
+        },
+        {
+          question: "Do I need to speak Kirundi to enjoy the jokes?",
+          answer:
+            "No! Each joke is shown in Kirundi and English, so everyone can laugh together and learn new words.",
+        },
+        {
+          question: "How many jokes are in here?",
+          answer:
+            "There are over 100 jokes, offering plenty of fun and a neat glimpse into Burundian humor.",
+        },
+        {
+          question: "Can this book help me learn Kirundi?",
+          answer:
+            "Absolutely. Reading jokes is a fun way to pick up new vocabulary and see everyday phrases in action.",
+        },
+        {
+          question: "Are the jokes really from Burundi?",
+          answer:
+            "Yes! They reflect Burundian life, culture, and humor—collected by an author passionate about Kirundi heritage.",
         },
       ],
     },
