@@ -849,6 +849,73 @@ export const kirundiConfigs = {
         },
       ],
     },
+    {
+      title: "Melodies of Burundi",
+      slug: "melodies-of-burundi",
+      age: "6+",
+      pages: "40",
+      price: "25",
+      description: {
+        short:
+          "Explore Kirundi children's songs with English translations and chords. Ideal for families and music enthusiasts.",
+        long: `
+      Explore the vibrant world of Burundian music!
+      "Melodies of Burundi" offers 11 traditional Kirundi children's songs,
+      complete with English translations, easy chord progressions,
+      and lead sheets for guitar or piano. Written by Lionel Kubwimana—a native of Burundi
+      who understands how important it is to connect with cultural roots—this collection
+      is an exciting way for families, music teachers, and anyone curious about African music
+      to learn and play authentic East African tunes in a fun, simple format.
+    `.trim(),
+      },
+      challenges: [
+        "Few Kirundi Music Resources: Many diaspora families struggle to find authentic Burundian songs for kids.",
+        "Connecting Culture & Music: Parents want an easy way to share African heritage through simple, kid-friendly tunes.",
+        "Beginner-Friendly Instruments: Guitar and piano learners need accessible chords and lead sheets without complicated tablature.",
+      ],
+      whyChoose: [
+        "Authentic Kirundi Songs: Enjoy 11 traditional children's melodies direct from Burundi.",
+        "Easy-to-Use Lead Sheets: Great for beginners on piano or guitar—no advanced skills required.",
+        "Perfect for Culture & Language: Combines Kirundi lyrics, English translations, and simple chords to help families learn together.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/B0CTMBCW35", // Replace with actual link
+      bestSeller: false,
+      testimonials: [
+        "My kids love singing these Kirundi songs—they dance around the house with big smiles!",
+        "As a beginner on the guitar, I found the chords easy to follow. Such a fun way to learn about Burundi!",
+        "This songbook helps me pass on our Burundian heritage to my kids. They enjoy every tune!",
+        "A brilliant mix of language and music. Even my piano students ask for these catchy melodies!",
+        "I've never seen a Kirundi music collection so well-made. The English translations are super helpful!",
+        "Makes learning African rhythms a breeze. We've been singing these songs every night before bed!",
+      ],
+      faq: [
+        {
+          question: "Who is this book for?",
+          answer:
+            "Anyone interested in African music, especially families wanting to teach Kirundi culture through fun songs.",
+        },
+        {
+          question: "Do I need to know music to use this book?",
+          answer:
+            "Not really. The chords and lead sheets are beginner-friendly—perfect for new guitar or piano players.",
+        },
+        {
+          question: "Is it good for schools or music classes?",
+          answer:
+            "Yes! Teachers can introduce authentic East African tunes, and students can practice reading simple music sheets.",
+        },
+        {
+          question: "How many songs are included?",
+          answer:
+            "There are 11 classic children's songs, each with Kirundi lyrics and English translations.",
+        },
+        {
+          question: "Can I learn basic Kirundi from these songs?",
+          answer:
+            "Yes! Singing along helps you pick up Kirundi words, and the English translations make learning easier.",
+        },
+      ],
+    },
   ],
   faq: [
     {
