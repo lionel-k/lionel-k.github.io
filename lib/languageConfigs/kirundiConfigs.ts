@@ -613,7 +613,7 @@ export const kirundiConfigs = {
       ],
       whyChoose: [
         "Focus on Letters: Perfect for young learners just starting with Kirundi, English, and French alphabets.",
-        "Bright & Kid-Friendly: 27 pages of bold images and simple explanations to hold children’s attention.",
+        "Bright & Kid-Friendly: 27 pages of bold images and simple explanations to hold children's attention.",
         "Easy for Parents: Even if you're not a native speaker, you can read along and learn with your child.",
       ],
       amazonUrl: "https://www.amazon.com/dp/249296003X",
@@ -630,7 +630,7 @@ export const kirundiConfigs = {
         {
           question: "Who is this book for?",
           answer:
-            "It’s best for children ages 0-6, but older kids can still enjoy learning Kirundi letters, too.",
+            "It's best for children ages 0-6, but older kids can still enjoy learning Kirundi letters, too.",
         },
         {
           question: "Does it require me to speak Kirundi?",
