@@ -19,8 +19,8 @@ export default function Books() {
               Our Books Collection
             </h1>
             <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
-              Explore bilingual books for Kirundi, Kinyarwanda, Lingala, and
-              more—no experience needed!
+              Explore our diverse collection of bilingual books—no prior
+              experience required!
             </p>
           </div>
         </div>
