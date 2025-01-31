@@ -719,6 +719,72 @@ export const kirundiConfigs = {
         },
       ],
     },
+    {
+      title: "Kirundi - English Bilingual Coloring Book for Kids Ages 3-6",
+      slug: "coloring-book-in-kirundi",
+      age: "3-6",
+      pages: "57",
+      price: "12.99",
+      description: {
+        short:
+          "A fun Kirundi-English coloring book for children aged 3-6. Learn Kirundi words while coloring animals, shapes, fruits, and more!",
+        long: `
+      Begin raising bilingual children in a fun and easy way!
+      This Kirundi-English coloring book is perfect for kids ages 3-6.
+      Each page has one easy-to-color picture with both Kirundi and English words.
+      From animals and shapes to fruits and clothes, your child will explore basic vocabulary
+      while improving creativity and motor skills. Ideal for diaspora families or anyone
+      wanting an exciting path to Kirundi language learning.
+    `.trim(),
+      },
+      challenges: [
+        "Limited Kirundi-English resources: Parents struggle to find coloring books that teach Kirundi vocabulary.",
+        "Keeping kids engaged: Bright illustrations and simple outlines make learning enjoyable for curious minds.",
+        "Parents not fluent in Kirundi: Bilingual format (Kirundi-English) makes it easy for everyone to follow along.",
+      ],
+      whyChoose: [
+        "Fun & Educational: Combines coloring and language learning—perfect for kids who love hands-on activities.",
+        "Boost Vocabulary: Teaches everyday Kirundi words for animals, shapes, fruits, and more.",
+        "Ideal for Diaspora Families: Helps children stay connected to their heritage even if parents aren't fully fluent.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/B0C2RYF8M2",
+      bestSeller: false,
+      testimonials: [
+        "My daughter loves learning new Kirundi words while coloring. It's fun and easy for both of us!",
+        "The pictures are super cute, and it really helped our family bond over language practice.",
+        "Great for diaspora families who want a simple way to keep Kirundi alive. My kids are hooked!",
+        "A creative approach to learning Kirundi. We color a few pages each night—my child can't get enough!",
+        "I'm not fluent in Kirundi, but the English translations make it totally doable. Highly recommend!",
+        "The coloring pages are adorable, and my kids are always excited to learn new words in Kirundi.",
+      ],
+      faq: [
+        {
+          question: "What age group is this coloring book for?",
+          answer:
+            "It's best for children ages 3-6, but older beginners can still have fun exploring Kirundi words.",
+        },
+        {
+          question: "Does my child need to speak Kirundi to enjoy it?",
+          answer:
+            "No. Each page includes Kirundi and English words, so anyone can follow along, even if they're not fluent.",
+        },
+        {
+          question: "How many pages does the book have?",
+          answer:
+            "The book has 57 pages with single-sided illustrations for easy coloring and tearing out favorites.",
+        },
+        {
+          question: "Why is this book great for diaspora families?",
+          answer:
+            "It helps kids stay connected to Burundian culture and learn Kirundi, even if parents live abroad or aren't fluent.",
+        },
+        {
+          question: "How does coloring help language learning?",
+          answer:
+            "Coloring keeps kids engaged. They have fun while picking up new Kirundi words, making lessons memorable.",
+        },
+      ],
+    },
   ],
   faq: [
     {
