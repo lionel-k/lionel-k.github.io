@@ -61,10 +61,9 @@ export default function About() {
               About Us
             </h1>
             <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
-              Welcome to Lingu.Africa! We make fun bilingual books in African
-              languages. Our books help kids learn their mother tongue and feel
-              proud of their culture. Join us to celebrate African stories and
-              keep our languages alive!
+              Discover Lingu.Africa, where we create bilingual children's books
+              to celebrate African languages and culture, helping kids worldwide
+              connect with their heritage.
             </p>
           </div>
         </div>
