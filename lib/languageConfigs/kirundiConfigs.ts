@@ -792,7 +792,7 @@ export const kirundiConfigs = {
       price: "12.99",
       description: {
         short:
-          "A trilingual (Kirundi, English, French) coloring book for kids aged 3-6. Learn new words while coloring animals, shapes, fruits, and more!",
+          "A trilingual coloring book for kids aged 3-6. Learn new words while coloring animals, shapes, fruits, and more!",
         long: `
       Begin raising trilingual children in a fun and easy way!
       This Kirundi-English-French coloring book is perfect for kids ages 3-6.
