@@ -796,15 +796,15 @@ export const kirundiConfigs = {
         short:
           "Enjoy over 100 Kirundi-English jokes that bring laughter from Burundi straight into your home!",
         long: `
-      Discover the joy of Kirundi humor with over 100 bilingual jokes! This book is perfect for language learners,
-      diaspora families, and anyone who loves to laugh. Dive into Burundian culture and enjoy jokes that bring
-      people together across languages. A fun and easy way to explore Kirundi!
-    `.trim(),
+      Discover the fun of Kirundi jokes with over 100 bilingual jokes! This book is great for kids, families, and anyone who loves to laugh. Enjoy jokes that bring people together and learn about Burundian culture in a fun way!
+
+      Made with help from funny people in Burundi, this book shows the happy and lively spirit of Kirundi culture.
+        `.trim(),
       },
       challenges: [
         "Limited Kirundi Comedy Books: Many diaspora families can't find playful ways to enjoy or learn Kirundi.",
         "Bridging Language Gaps: Most joke books are in English only, leaving Kirundi speakers without relevant content.",
-        "Connecting Diaspora to Heritage: Families abroad want to experience authentic Burundian culture.",
+        "Linking Diaspora to Heritage: Families abroad want to experience authentic Burundian culture.",
       ],
       whyChoose: [
         "Over 100 Kirundi Jokes: Each joke is presented in Kirundi and English, making humor universal.",
