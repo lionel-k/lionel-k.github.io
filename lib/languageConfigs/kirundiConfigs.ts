@@ -984,6 +984,76 @@ export const kirundiConfigs = {
         },
       ],
     },
+    {
+      title: "Kirundi Word Search",
+      slug: "kirundi-word-search",
+      age: "12+",
+      pages: "150",
+      price: "8.99",
+      description: {
+        short:
+          "A word search book with 100 puzzles and 2,000 words—ideal for teens, adults, and seniors to learn Kirundi while having fun!",
+        long: `
+      Are you ready to challenge your mind and expand your Kirundi vocabulary?
+      This puzzle book offers 100 exciting word searches featuring 2,000 essential Kirundi words.
+      Ideal for families, language enthusiasts, or anyone wanting an engaging way to improve
+      Kirundi skills, each puzzle is designed to be both fun and educational. It provides a cultural connection for diaspora families
+      and anyone curious about this rich language.
+    `.trim(),
+      },
+      challenges: [
+        "Lack of Fun Kirundi Puzzles: Traditional language methods can be boring. This word search book adds excitement to learning.",
+        "Building Strong Vocabulary: Many learners struggle to find comprehensive Kirundi vocab lists in one place.",
+        "Engaging All Ages: Teens, adults, and seniors want a puzzle that's accessible, fun, and culturally enriching.",
+      ],
+      whyChoose: [
+        "2,000 Kirundi Words: Explore a broad range of vocabulary while enjoying 100 themed puzzles.",
+        "Beginner-Friendly Format: Large print, easy-to-follow puzzles, and answers included for quick reference.",
+        "Diaspora Connection: Great for families abroad seeking a deeper bond with their Burundian roots.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/B0D3CSLQ41",
+      bestSeller: false,
+      testimonials: [
+        "This puzzle book keeps me busy for hours—I'm learning Kirundi so much faster!",
+        "My grandparents love solving puzzles and teaching me new words. A great bonding experience for our family.",
+        "Finally, a fun way to practice Kirundi! The large print is perfect for my mom, too.",
+        "I use it in my after school club—kids and seniors enjoy it together. Truly universal!",
+        "We take it on road trips and everyone competes to finish a puzzle first. So much fun!",
+        "Each puzzle theme is well chosen, so I'm learning everyday Kirundi words that are super helpful.",
+      ],
+      faq: [
+        {
+          question: "Is this book only for fluent Kirundi speakers?",
+          answer:
+            "No. Beginners can learn new words through each puzzle, and answers are at the back for easy checking.",
+        },
+        {
+          question: "How many puzzles are included?",
+          answer:
+            "It has 100 different word search puzzles, covering 2,000 Kirundi words in total.",
+        },
+        {
+          question: "Is it suitable for older adults?",
+          answer:
+            "Yes! The large print format is gentle on the eyes, making it perfect for seniors and teens alike.",
+        },
+        {
+          question: "Does it include solutions?",
+          answer:
+            "Yes, all solutions are at the back of the book, so you can check your progress or learn new words easily.",
+        },
+        {
+          question: "Can my teen use this to improve Kirundi?",
+          answer:
+            "Absolutely! It's designed for teens and adults to expand their vocabulary and have fun at the same time.",
+        },
+        {
+          question: "Is it helpful for diaspora families?",
+          answer:
+            "Yes. It's a great way to keep Kirundi language alive and share cultural roots, even if you live far from Burundi.",
+        },
+      ],
+    },
   ],
   faq: [
     {
