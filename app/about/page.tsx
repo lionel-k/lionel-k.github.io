@@ -1,46 +1,56 @@
 import { NewsletterForm } from "@/components/newsletter-form";
 import { FAQ } from "@/components/FAQ";
 
-const FAQ_ITEMS = [
+export const FAQ_ITEMS = [
   {
-    question: "What is the purpose of this site?",
+    question: "What is the purpose of Lingu.Africa?",
     answer:
-      "Our mission is to preserve and promote African heritage through bilingual books.",
+      "Our mission is to preserve African languages and culture by creating bilingual and trilingual books that help families connect to their roots while making learning fun and accessible for all ages.",
   },
   {
-    question: "Who are we?",
+    question: "Who is Lionel Kubwimana?",
     answer:
-      "We are a team of passionate individuals dedicated to sharing Lingu.Africa with the world.",
+      "Lionel Kubwimana, the founder of Lingu.Africa, is a Burundian author dedicated to preserving African heritage. As a father and member of the African diaspora, he creates books to help families reconnect with their cultural roots.",
   },
   {
-    question: "How can you support us?",
+    question: "Who are these books for?",
     answer:
-      "You can support us by purchasing our books, sharing our content, and subscribing to our newsletter.",
+      "Our books are perfect for families in the African diaspora, language learners, and anyone curious about African culture. They are ideal for kids aged 2-10 but also include advanced titles for teens and adults.",
   },
   {
-    question: "What inspired the creation of Lingu.Africa?",
+    question: "How are the books created, and are the translations accurate?",
     answer:
-      "Lingu.Africa was inspired by a desire to help children connect with their African heritage through language and culture.",
+      "Each book is created in collaboration with native language experts to ensure translations are accurate and culturally authentic. The books are carefully designed with bright illustrations and easy-to-follow layouts for a fun learning experience.",
   },
   {
-    question: "Who is behind Lingu.Africa?",
+    question: "Can I return a book if I don’t like it?",
     answer:
-      "Lingu.Africa was founded by Lionel, who is passionate about preserving African languages and culture.",
+      "Yes! All purchases are managed through Amazon, which has a simple return policy. If you're not satisfied, you can return your book and receive a refund by following Amazon's steps.",
   },
   {
-    question: "How can I support Lingu.Africa's mission?",
+    question: "How do these books help with learning and cultural connection?",
     answer:
-      "You can support us by purchasing our books, sharing our content, and subscribing to our newsletter.",
+      "Our books use bilingual or trilingual text alongside colorful illustrations to make learning easy and fun. They help families build language skills together while fostering pride in their heritage and cultural roots.",
   },
   {
-    question: "What makes Lingu.Africa's books unique?",
+    question: "Can I see what the books look like before buying?",
     answer:
-      "Our books are bilingual, celebrating African languages and culture, and are designed to help children learn their mother tongue.",
+      "Yes! Many of our books have a 'Look Inside' feature on Amazon, where you can preview a few pages. Our website also includes sample images for you to explore before purchasing.",
   },
   {
-    question: "Can I contribute to Lingu.Africa's mission?",
+    question: "How long does delivery take?",
     answer:
-      "Yes, we welcome contributions and ideas. Please reach out to us through our website or social media.",
+      "Delivery times depend on your location. Amazon provides an estimated delivery date during checkout, and you can track your package to know when it will arrive.",
+  },
+  {
+    question: "Do you offer books for advanced learners?",
+    answer:
+      "Yes, we offer advanced titles like 'The Kirundi Joke Treasury' and 'The Kirundi Proverb Treasury,' perfect for teens, adults, and anyone wanting to deepen their understanding of Kirundi. More advanced books for other languages are coming soon!",
+  },
+  {
+    question: "Can teachers use these books in classrooms?",
+    answer:
+      "Absolutely! Our books are great for teaching African languages and culture in schools, community programs, and after-school activities. They are easy to use and engaging for students of all ages.",
   },
 ];
 
