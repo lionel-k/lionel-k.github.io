@@ -992,7 +992,7 @@ export const kirundiConfigs = {
       price: "8.99",
       description: {
         short:
-          "A word search book with 100 puzzles and 2,000 words—ideal for teens, adults, and seniors to learn Kirundi while having fun!",
+          "100 puzzles featuring 2,000 Kirundi words—ideal for teens, adults, and seniors to learn and enjoy Kirundi!",
         long: `
       Are you ready to challenge your mind and expand your Kirundi vocabulary?
       This puzzle book offers 100 exciting word searches featuring 2,000 essential Kirundi words.
@@ -1051,6 +1051,70 @@ export const kirundiConfigs = {
           question: "Is it helpful for diaspora families?",
           answer:
             "Yes. It's a great way to keep Kirundi language alive and share cultural roots, even if you live far from Burundi.",
+        },
+      ],
+    },
+    {
+      title: "Traditional Kirundi Songs",
+      slug: "traditional-kirundi-songs",
+      age: "15+",
+      pages: "84",
+      price: "15.99",
+      description: {
+        short:
+          "20 Kirundi songs from Burundi that celebrate culture and family traditions. Perfect for kids and families!",
+        long: `
+      Discover the heart of Burundi with 20 Kirundi songs! These songs are perfect
+      for learning about weddings, independence celebrations, and everyday life in Burundi.
+      Each song has simple explanations to help you understand the music's meaning.
+      This collection is great for families to enjoy together and learn about Burundian culture.
+    `.trim(),
+      },
+      challenges: [
+        "Few Kirundi music resources: Many diaspora families struggle to find authentic Burundian songs in one place.",
+        "Preserving cultural roots: Easy way to share traditional tunes with family.",
+        "Lack of accessible explanations: People need clear, beginner-friendly info about each song's meaning and history.",
+      ],
+      whyChoose: [
+        "20 Curated Songs: Each melody highlights a key aspect of Burundian life, from weddings to independence.",
+        "Beginner-Friendly Explanations: Offers simple details on every tune, so everyone can enjoy without confusion.",
+        "Bridge Generations: Families can sing together, teaching kids about Burundian culture while having fun.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/B0D8TRV1R1",
+      bestSeller: false,
+      testimonials: [
+        "My grandparents and I bonded over these Kirundi songs—brought back so many joyful memories!",
+        "A fantastic resource for diaspora families. My children finally understand the traditions behind each melody.",
+        "I love the simple explanations. Even though I'm new to Kirundi, I can appreciate the cultural stories behind every song.",
+        "Perfect for teaching kids about our Burundian heritage. Singing these tunes brightens our weekends!",
+        "It's amazing how these songs speak of love, unity, and respect. Exactly what our family needed.",
+        "A treasure for anyone wanting to connect with Burundian roots. We sing them during special family gatherings!",
+      ],
+      faq: [
+        {
+          question: "Are these songs suitable for kids?",
+          answer:
+            "Yes, they're family-friendly melodies that people of all ages can enjoy. Simple explanations help kids follow along.",
+        },
+        {
+          question: "Do I need a musical background?",
+          answer:
+            "Not at all! Each song comes with easy notes about its meaning, so you can dive into the culture without being a musician.",
+        },
+        {
+          question: "How many songs are there?",
+          answer:
+            "There are 20 traditional tunes, carefully selected to highlight the spirit and values of Burundian life.",
+        },
+        {
+          question: "Is this good for people outside Burundi?",
+          answer:
+            "Definitely! It's perfect for diaspora families or anyone curious about Burundian traditions and Kirundi music.",
+        },
+        {
+          question: "Will these songs teach me about Burundian history?",
+          answer:
+            "Yes. The songs cover important events like weddings and independence celebrations, giving you cultural insights.",
         },
       ],
     },

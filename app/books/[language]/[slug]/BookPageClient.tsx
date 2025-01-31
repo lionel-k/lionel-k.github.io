@@ -202,7 +202,7 @@ export default function BookPageClient() {
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900">
-              Why Parents Love Our Book
+              Why Readers Love Our Book
             </h2>
           </div>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -235,7 +235,7 @@ export default function BookPageClient() {
       <section className="py-20 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <h2 className="text-center text-4xl font-bold mb-16">
-            Hear From Happy Parents
+            Hear From Happy Readers
           </h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {book.testimonials.map((testimonial, index) => {
