@@ -15,6 +15,36 @@ export const LANGUAGES = [
       "Discover our collection of Kirundi books, available with English and French translations.",
   },
   {
+    name: "Kinyarwanda",
+    slug: "kinyarwanda",
+    coverImage: "/bgs/kinyarwanda-bg.png",
+    amazonUrl: "#",
+    comingSoon: true,
+    discoverBooks:
+      "Discover our collection of Kinyarwanda books, available with English and French translations.",
+  },
+  {
+    name: "Lingala",
+    slug: "lingala",
+    coverImage: "/bgs/lingala-bg.png",
+    amazonUrl: "#",
+    comingSoon: true,
+    discoverBooks:
+      "Teach kids basic Lingala words with easy-to-understand books.",
+  },
+];
+
+export const OTHER_LANGUAGES = [
+  {
+    name: "Kirundi",
+    slug: "kirundi",
+    coverImage: "/bgs/kirundi-bg.png",
+    amazonUrl: "#",
+    comingSoon: false,
+    discoverBooks:
+      "Discover our collection of Kirundi books, available with English and French translations.",
+  },
+  {
     name: "Amharic",
     slug: "amharic",
     coverImage: "/bgs/amharic-bg.png",

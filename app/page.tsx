@@ -123,10 +123,11 @@ export default function Home() {
                 Explore Our African Languages
               </h2>
               <p className="text-xl text-gray-300">
-                Celebrating linguistic diversity across the continent
+                Celebrating linguistic diversity across the continent. More
+                African languages coming soon!
               </p>
             </div>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {LANGUAGES.map((language) => (
                 <div
                   key={language.slug}

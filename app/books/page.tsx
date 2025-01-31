@@ -34,11 +34,12 @@ export default function Books() {
               Available African Languages
             </h2>
             <p className="text-xl text-gray-600">
-              Discover the amazing languages of Africa!
+              Discover the amazing languages of Africa! More languages coming
+              soon!
             </p>
           </div>
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {LANGUAGES.map((language) => (
               <div
                 key={language.slug}
