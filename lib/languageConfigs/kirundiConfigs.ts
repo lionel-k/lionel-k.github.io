@@ -589,6 +589,71 @@ export const kirundiConfigs = {
       ],
     },
     {
+      title: "Colors in Kirundi",
+      slug: "colors-in-kirundi",
+      age: "1-6",
+      pages: "24",
+      price: "11.99",
+      description: {
+        short:
+          "A trilingual picture book (Kirundi, English, and French) for kids aged 1-6, helping them learn colors in a fun, colorful way!",
+        long: `
+      Are you a diaspora parent wanting a simple way to teach Kirundi?
+      This picture book shows everyday colors in Kirundi, English, and French.
+      With 24 bright pages and large illustrations, even non-fluent parents can guide their little ones.
+      It's perfect for ages 1-6, turning learning about colors into a fun adventure!
+      Get ready to expand your child's vocabulary and keep their heritage alive.
+    `.trim(),
+      },
+      challenges: [
+        "Limited Kirundi color resources: Families find it tough to get kid-friendly books teaching colors in Kirundi.",
+        "Keeping kids engaged: Bright, simple illustrations plus trilingual text keeps their interest and encourages learning.",
+        "Parents not fluent in Kirundi: Having English and French side by side helps non-native speakers teach children easily.",
+      ],
+      whyChoose: [
+        "Focus on Colors: Kids build everyday vocabulary while having fun with big, bold pictures.",
+        "Trilingual Format: Kirundi, English, and French let families learn together, no matter their fluency level.",
+        "Perfect for Diaspora: Designed for parents abroad who want a simple, joyful way to share Kirundi heritage.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/B0CXM1YXZ5",
+      bestSeller: false,
+      testimonials: [
+        "My daughter loves pointing at the bright pictures and repeating the Kirundi color words!",
+        "Perfect for our bilingual home. Our kids pick up French too while exploring Kirundi.",
+        "A simple but powerful book that helps connect us to Burundian culture—my toddlers are hooked!",
+        "It's great even if you don't speak Kirundi well. The English and French labels guide you along.",
+        "I'm so glad we finally have a Kirundi book focusing on colors. The kids ask for it every day!",
+        "The pictures are big and bold—perfect for young children. We learn new words together as a family.",
+      ],
+      faq: [
+        {
+          question: "Is this book only for Kirundi speakers?",
+          answer:
+            "Not at all! It's trilingual. The English and French translations help you teach Kirundi even if you're not fluent.",
+        },
+        {
+          question: "What age group does it target?",
+          answer:
+            "It's best for children aged 0-6, but older kids can still have fun reviewing colors in multiple languages.",
+        },
+        {
+          question: "How many pages are included?",
+          answer:
+            "There are 24 colorful pages, each featuring a different color with easy translations in Kirundi, English, and French.",
+        },
+        {
+          question: "Can it help kids learn French too?",
+          answer:
+            "Yes. With Kirundi, English, and French side by side, families can explore multiple languages at once.",
+        },
+        {
+          question: "Why is it good for diaspora families?",
+          answer:
+            "It keeps Kirundi heritage alive while letting parents easily compare words in English or French.",
+        },
+      ],
+    },
+    {
       title: "Letters in Kirundi",
       slug: "letters-in-kirundi",
       age: "0-6",
