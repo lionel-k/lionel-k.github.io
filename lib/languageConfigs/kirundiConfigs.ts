@@ -26,12 +26,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/2492960021",
       bestSeller: true,
       testimonials: [
-        "Excellent book for the first words in the three languages. Content on Kirundi is hard to find, even more so prepared for children.",
-        "Great book! Highly recommend for anyone learning Kirundi! Wonderful from 0 to 99 years old! Thanks for writing this book!",
-        "Very good book with great pictures. Love it.",
-        "A fantastic resource for introducing Kirundi to young learners. The trilingual format is very helpful.",
-        "My child loves the colorful illustrations and is excited to learn new words in Kirundi.",
-        "This book is a wonderful way to connect with our cultural roots while learning a new language.",
+        "Excellent book for the first words in the three languages. Content on Kirundi is hard to find, even more so prepared for children. - J.D.",
+        "Great book! Highly recommend for anyone learning Kirundi! Wonderful from 0 to 99 years old! Thanks for writing this book! - A.B.",
+        "Very good book with great pictures. Love it. - C.E.",
+        "A fantastic resource for introducing Kirundi to young learners. The trilingual format is very helpful. - M.F.",
+        "My child loves the colorful illustrations and is excited to learn new words in Kirundi. - L.G.",
+        "This book is a wonderful way to connect with our cultural roots while learning a new language. - S.H.",
       ],
       faq: [
         {
@@ -90,12 +90,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/2492960080",
       bestSeller: true,
       testimonials: [
-        "This delightful book follows a girl and her family on her first family visit to Burundi, where she explores the local culture and apprehensively tries the food. The vivid descriptions and heartwarming narrative make it an engaging read that inspires curiosity and appreciation for diverse experiences.",
-        "Lovely book, with a bonus as activity book.",
-        "This story helped my child see how fun it is to visit family back home—and now she's open to trying local food!",
-        "My daughter loved Gatore's adventure! She learned so much about Burundi and can't wait to visit one day.",
-        "The book is super fun and colorful! It made learning about Burundi's culture exciting and easy for my son.",
-        "Gatore's story is awesome! My kids now want to try new foods and learn more about their heritage.",
+        "This delightful book follows a girl and her family on her first family visit to Burundi, where she explores the local culture and apprehensively tries the food. The vivid descriptions and heartwarming narrative make it an engaging read that inspires curiosity and appreciation for diverse experiences. - A.B.",
+        "Lovely book, with a bonus as activity book. - C.E.",
+        "This story helped my child see how fun it is to visit family back home—and now she's open to trying local food! - L.G.",
+        "My daughter loved Gatore's adventure! She learned so much about Burundi and can't wait to visit one day. - S.H.",
+        "The book is super fun and colorful! It made learning about Burundi's culture exciting and easy for my son. - M.F.",
+        "Gatore's story is awesome! My kids now want to try new foods and learn more about their heritage. - J.D.",
       ],
       faq: [
         {
@@ -160,12 +160,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/B0CLGQF9QW",
       bestSeller: true,
       testimonials: [
-        "I am a Burundian trying to learn more about my culture, and these proverbs help me connect with my roots. I enjoy this book and all its wisdom.",
-        "A book suitable for older readers to teach proverbs to children in Kirundi.",
-        "My family loves reading these wise sayings together. Now my kids know more about our culture!",
-        "This book is like a treasure chest of cool sayings! I learned so much about Burundi.",
-        "The proverbs are fun and easy to understand. I like sharing them with my friends.",
-        "Reading this book makes me feel closer to my grandparents. It's like hearing their stories.",
+        "I am a Burundian trying to learn more about my culture, and these proverbs help me connect with my roots. I enjoy this book and all its wisdom. - A.B.",
+        "A book suitable for older readers to teach proverbs to children in Kirundi. - C.E.",
+        "My family loves reading these wise sayings together. Now my kids know more about our culture! - L.G.",
+        "This book is like a treasure chest of cool sayings! I learned so much about Burundi. - M.F.",
+        "The proverbs are fun and easy to understand. I like sharing them with my friends. - S.H.",
+        "Reading this book makes me feel closer to my grandparents. It's like hearing their stories. - J.D.",
       ],
       faq: [
         {
@@ -231,12 +231,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/2492960188",
       bestSeller: false,
       testimonials: [
-        "An enchanting journey through Burundi! This book beautifully blends adventure, culture, and family bonds, while teaching valuable lessons about gratitude and embracing new experiences. A delightful read for all ages!",
-        "My kids loved Shaka's adventure. They learned Kirundi words and asked lots of questions!",
-        "Perfect for families who want to learn about Burundian culture with fun stories.",
-        "This book made our daughter excited to visit Burundi one day.",
-        "A colorful story that shows how fun it is to explore a parent's homeland.",
-        "Great for all ages! This book mixes adventure, culture, and family. It teaches about being thankful and trying new things.",
+        "An enchanting journey through Burundi! This book beautifully blends adventure, culture, and family bonds, while teaching valuable lessons about gratitude and embracing new experiences. A delightful read for all ages! - A.B.",
+        "My kids loved Shaka's adventure. They learned Kirundi words and asked lots of questions! - C.E.",
+        "Perfect for families who want to learn about Burundian culture with fun stories. - L.G.",
+        "This book made our daughter excited to visit Burundi one day. - S.H.",
+        "A colorful story that shows how fun it is to explore a parent's homeland. - M.F.",
+        "Great for all ages! This book mixes adventure, culture, and family. It teaches about being thankful and trying new things. - J.D.",
       ],
       faq: [
         {
@@ -295,12 +295,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/B0D8WL5Q12",
       bestSeller: false,
       testimonials: [
-        "My daughter loved learning Kirundi words with Gatore's fun story and bright outfit!",
-        "This book is wonderful. It made us proud of our Burundian roots—and the donuts are so fun!",
-        "Even though I'm not fluent in Kirundi, we read it in English and learn Kirundi words together.",
-        "The illustrations are beautiful and show the joy of sharing your culture at school.",
-        "Gatore's story is super fun! The colorful pictures make learning Kirundi exciting.",
-        "This book is awesome! It made me feel proud of my Burundian roots and the donuts look yummy!",
+        "My daughter loved learning Kirundi words with Gatore's fun story and bright outfit! - C.E.",
+        "This book is wonderful. It made us proud of our Burundian roots—and the donuts are so fun! - L.G.",
+        "Even though I'm not fluent in Kirundi, we read it in English and learn Kirundi words together. - S.H.",
+        "The illustrations are beautiful and show the joy of sharing your culture at school. - M.F.",
+        "Gatore's story is super fun! The colorful pictures make learning Kirundi exciting. - J.D.",
+        "This book is awesome! It made me feel proud of my Burundian roots and the donuts look yummy! - A.B.",
       ],
       faq: [
         {
@@ -359,12 +359,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/2494614759",
       bestSeller: false,
       testimonials: [
-        "My children love the colorful pages and can't stop talking about planting their own 'friendship tree'!",
-        "A wonderful way to introduce environmental care and Kirundi at the same time. Highly recommended!",
-        "We read a few pages each night. It's great for teaching my daughter new Kirundi words and about kindness.",
-        "I'm not fluent in Kirundi, but the French and English text makes it easy to follow along with my kids.",
-        "Lovely story with bright illustrations. Perfect for diaspora families wanting to keep Kirundi alive at home.",
-        "This book is a great way to introduce Kirundi to children. The story is engaging and the illustrations are bright and colorful.",
+        "My children love the colorful pages and can't stop talking about planting their own 'friendship tree'! - C.E.",
+        "A wonderful way to introduce environmental care and Kirundi at the same time. Highly recommended! - L.G.",
+        "We read a few pages each night. It's great for teaching my daughter new Kirundi words and about kindness. - S.H.",
+        "I'm not fluent in Kirundi, but the French and English text makes it easy to follow along with my kids. - M.F.",
+        "Lovely story with bright illustrations. Perfect for diaspora families wanting to keep Kirundi alive at home. - J.D.",
+        "This book is a great way to introduce Kirundi to children. The story is engaging and the illustrations are bright and colorful. - A.B.",
       ],
       faq: [
         {
@@ -423,12 +423,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/2492960064",
       bestSeller: false,
       testimonials: [
-        "Book suitable for very young children to learn about fruits. My 2 and 4-year-old daughters use it easily with the pictures.",
-        "A perfect book for teaching my toddler basic Kirundi vocabulary—he's already recognizing new words.",
-        "The illustrations are amazing. It's such a cool way to bring Kirundi, English, and French into our home.",
-        "My favorite part is how simple it is for me (not fluent in Kirundi) to read with my kids.",
-        "Our family loves learning the names of fruits and veggies in Kirundi. Really helpful for diaspora families.",
-        "It's an excellent resource for grandparents too—they can share our heritage in a fun, child-friendly way.",
+        "Book suitable for very young children to learn about fruits. My 2 and 4-year-old daughters use it easily with the pictures. - C.E.",
+        "A perfect book for teaching my toddler basic Kirundi vocabulary—he's already recognizing new words. - L.G.",
+        "The illustrations are amazing. It's such a cool way to bring Kirundi, English, and French into our home. - S.H.",
+        "My favorite part is how simple it is for me (not fluent in Kirundi) to read with my kids. - M.F.",
+        "Our family loves learning the names of fruits and veggies in Kirundi. Really helpful for diaspora families. - J.D.",
+        "It's an excellent resource for grandparents too—they can share our heritage in a fun, child-friendly way. - A.B.",
       ],
       faq: [
         {
@@ -488,12 +488,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/2492960048",
       bestSeller: false,
       testimonials: [
-        "My toddler now knows animal names in Kirundi! It's so helpful for our diaspora family.",
-        "A bright, cheerful book. Perfect for teaching kids about animals and Kirundi culture.",
-        "Even though I'm not fluent in Kirundi, I can still help my child learn with the English and French words.",
-        "This book is a fantastic resource for introducing Kirundi to young children. The pictures are engaging and the trilingual format is very helpful.",
-        "Our family loves this book! It's a great way to bond while learning Kirundi together.",
-        "The illustrations are beautiful and my kids are excited to learn new words. Highly recommend for any family wanting to teach Kirundi.",
+        "My toddler now knows animal names in Kirundi! It's so helpful for our diaspora family. - C.E.",
+        "A bright, cheerful book. Perfect for teaching kids about animals and Kirundi culture. - L.G.",
+        "Even though I'm not fluent in Kirundi, I can still help my child learn with the English and French words. - S.H.",
+        "This book is a fantastic resource for introducing Kirundi to young children. The pictures are engaging and the trilingual format is very helpful. - M.F.",
+        "Our family loves this book! It's a great way to bond while learning Kirundi together. - J.D.",
+        "The illustrations are beautiful and my kids are excited to learn new words. Highly recommend for any family wanting to teach Kirundi. - A.B.",
       ],
       faq: [
         {
@@ -553,12 +553,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/2492960072",
       bestSeller: false,
       testimonials: [
-        "Book suitable for very young children to learn Kirundi. Additionally, the images help capture the words easily.",
-        "My children love the colorful pages, and they're already using new Kirundi verbs at home.",
-        "A must have for diaspora families. The trilingual pages help both kids and parents pick up phrases quickly.",
-        "We enjoy reading a few verbs each night—it's amazing how fast our toddler is learning Kirundi!",
-        "Very helpful if you want your kids to recognize everyday actions in Kirundi. Great illustrations, too!",
-        "This book gave us new ways to connect with our Burundian roots, one verb at a time.",
+        "Book suitable for very young children to learn Kirundi. Additionally, the images help capture the words easily. - C.E.",
+        "My children love the colorful pages, and they're already using new Kirundi verbs at home. - L.G.",
+        "A must have for diaspora families. The trilingual pages help both kids and parents pick up phrases quickly. - S.H.",
+        "We enjoy reading a few verbs each night—it's amazing how fast our toddler is learning Kirundi! - M.F.",
+        "Very helpful if you want your kids to recognize everyday actions in Kirundi. Great illustrations, too! - J.D.",
+        "This book gave us new ways to connect with our Burundian roots, one verb at a time. - A.B.",
       ],
       faq: [
         {
@@ -618,12 +618,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/B0CXM1YXZ5",
       bestSeller: false,
       testimonials: [
-        "My daughter loves pointing at the bright pictures and repeating the Kirundi color words!",
-        "Perfect for our bilingual home. Our kids pick up French too while exploring Kirundi.",
-        "A simple but powerful book that helps connect us to Burundian culture—my toddlers are hooked!",
-        "It's great even if you don't speak Kirundi well. The English and French labels guide you along.",
-        "I'm so glad we finally have a Kirundi book focusing on colors. The kids ask for it every day!",
-        "The pictures are big and bold—perfect for young children. We learn new words together as a family.",
+        "My daughter loves pointing at the bright pictures and repeating the Kirundi color words! - C.E.",
+        "Perfect for our bilingual home. Our kids pick up French too while exploring Kirundi. - L.G.",
+        "A simple but powerful book that helps connect us to Burundian culture—my toddlers are hooked! - S.H.",
+        "It's great even if you don't speak Kirundi well. The English and French labels guide you along. - M.F.",
+        "I'm so glad we finally have a Kirundi book focusing on colors. The kids ask for it every day! - J.D.",
+        "The pictures are big and bold—perfect for young children. We learn new words together as a family. - A.B.",
       ],
       faq: [
         {
@@ -684,12 +684,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/249296003X",
       bestSeller: false,
       testimonials: [
-        "A fantastic way to introduce the Kirundi alphabet alongside English and French—my children love it!",
-        "Perfect for my kids aged 3 and 5. They find the letters fun and enjoy the bright pictures.",
-        "Great resource for diaspora families. We read it every day, and our Kirundi vocab is growing!",
-        "This book is fun! My kids can't wait to learn more letters.",
-        "The pictures are really cool, and it's easy to learn Kirundi.",
-        "My kids love reading this book. They learn new words every day!",
+        "A fantastic way to introduce the Kirundi alphabet alongside English and French—my children love it! - C.E.",
+        "Perfect for my kids aged 3 and 5. They find the letters fun and enjoy the bright pictures. - L.G.",
+        "Great resource for diaspora families. We read it every day, and our Kirundi vocab is growing! - S.H.",
+        "This book is fun! My kids can't wait to learn more letters. - M.F.",
+        "The pictures are really cool, and it's easy to learn Kirundi. - J.D.",
+        "My kids love reading this book. They learn new words every day! - A.B.",
       ],
       faq: [
         {
@@ -749,12 +749,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/2492960056",
       bestSeller: false,
       testimonials: [
-        "This book is a fun way to learn counting in Kirundi! My 4 year old loves seeing numbers in Kirundi, English, and French.",
-        "Perfect for parents who want to teach Kirundi but aren't fluent. It helps us share our culture easily.",
-        "The pictures are super fun, and my kids love learning Kirundi numbers with them.",
-        "My child enjoys counting in Kirundi and showing off to friends. It's a great way to learn new words!",
-        "The colorful pages make learning Kirundi numbers exciting. My kids can't wait to read it every day!",
-        "This book makes learning Kirundi numbers easy and fun. It's perfect for kids who love languages!",
+        "This book is a fun way to learn counting in Kirundi! My 4 year old loves seeing numbers in Kirundi, English, and French. - C.E.",
+        "Perfect for parents who want to teach Kirundi but aren't fluent. It helps us share our culture easily. - L.G.",
+        "The pictures are super fun, and my kids love learning Kirundi numbers with them. - S.H.",
+        "My child enjoys counting in Kirundi and showing off to friends. It's a great way to learn new words! - M.F.",
+        "The colorful pages make learning Kirundi numbers exciting. My kids can't wait to read it every day! - J.D.",
+        "This book makes learning Kirundi numbers easy and fun. It's perfect for kids who love languages! - A.B.",
       ],
       faq: [
         {
@@ -816,12 +816,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/B0C2RYF8M2",
       bestSeller: false,
       testimonials: [
-        "My daughter loves learning Kirundi, English, and French while she colors. So fun and educational!",
-        "The pictures are simple but adorable—my son enjoys coloring them and pointing out the new words.",
-        "Great for diaspora families who want to keep Kirundi alive alongside English and French. We do it daily!",
-        "Coloring makes language learning feel like playtime—my kids don't even realize they're studying!",
-        "As a non fluent parent, the three language setup helps me follow along and learn with my child!",
-        "A wonderful, creative approach to language. My kids can't wait to show off their coloring and new vocab.",
+        "My daughter loves learning Kirundi, English, and French while she colors. So fun and educational! - C.E.",
+        "The pictures are simple but adorable—my son enjoys coloring them and pointing out the new words. - L.G.",
+        "Great for diaspora families who want to keep Kirundi alive alongside English and French. We do it daily! - S.H.",
+        "Coloring makes language learning feel like playtime—my kids don't even realize they're studying! - M.F.",
+        "As a non fluent parent, the three language setup helps me follow along and learn with my child! - J.D.",
+        "A wonderful, creative approach to language. My kids can't wait to show off their coloring and new vocab. - A.B.",
       ],
       faq: [
         {
@@ -879,12 +879,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/B0CNYLT1L9",
       bestSeller: false,
       testimonials: [
-        "I never knew Kirundi jokes could be so fun! My teens can't stop giggling at these hilarious one-liners.",
-        "This book helps me connect to my Burundian roots in a light, joyful way. Highly recommend for diaspora families!",
-        "A great tool for learning Kirundi—my language class loves translating and laughing together!",
-        "The jokes are short, clean, and simple. Perfect for beginners in Kirundi or anyone craving a good laugh.",
-        "My grandparents grew up in Burundi. Reading these jokes together has sparked so many fond memories!",
-        "I love how each joke is bilingual. It's a cool way to share laughs across different languages.",
+        "I never knew Kirundi jokes could be so fun! My teens can't stop giggling at these hilarious one-liners. - C.E.",
+        "This book helps me connect to my Burundian roots in a light, joyful way. Highly recommend for diaspora families! - L.G.",
+        "A great tool for learning Kirundi—my language class loves translating and laughing together! - S.H.",
+        "The jokes are short, clean, and simple. Perfect for beginners in Kirundi or anyone craving a good laugh. - M.F.",
+        "My grandparents grew up in Burundi. Reading these jokes together has sparked so many fond memories! - J.D.",
+        "I love how each joke is bilingual. It's a cool way to share laughs across different languages. - A.B.",
       ],
       faq: [
         {
@@ -944,12 +944,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/B0CTMBCW35", // Replace with actual link
       bestSeller: false,
       testimonials: [
-        "My kids love singing these Kirundi songs—they dance around the house with big smiles!",
-        "As a beginner on the guitar, I found the chords easy to follow. Such a fun way to learn about Burundi!",
-        "This songbook helps me pass on our Burundian heritage to my kids. They enjoy every tune!",
-        "A brilliant mix of language and music. Even my piano students ask for these catchy melodies!",
-        "I've never seen a Kirundi music collection so well-made. The English translations are super helpful!",
-        "Makes learning African rhythms a breeze. We've been singing these songs every night before bed!",
+        "My kids love singing these Kirundi songs—they dance around the house with big smiles! - C.E.",
+        "As a beginner on the guitar, I found the chords easy to follow. Such a fun way to learn about Burundi! - L.G.",
+        "This songbook helps me pass on our Burundian heritage to my kids. They enjoy every tune! - S.H.",
+        "A brilliant mix of language and music. Even my piano students ask for these catchy melodies! - M.F.",
+        "I've never seen a Kirundi music collection so well-made. The English translations are super helpful! - J.D.",
+        "Makes learning African rhythms a breeze. We've been singing these songs every night before bed! - A.B.",
       ],
       faq: [
         {
@@ -1014,12 +1014,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/B0D3CSLQ41",
       bestSeller: false,
       testimonials: [
-        "This puzzle book keeps me busy for hours—I'm learning Kirundi so much faster!",
-        "My grandparents love solving puzzles and teaching me new words. A great bonding experience for our family.",
-        "Finally, a fun way to practice Kirundi! The large print is perfect for my mom, too.",
-        "I use it in my after school club—kids and seniors enjoy it together. Truly universal!",
-        "We take it on road trips and everyone competes to finish a puzzle first. So much fun!",
-        "Each puzzle theme is well chosen, so I'm learning everyday Kirundi words that are super helpful.",
+        "This puzzle book keeps me busy for hours—I'm learning Kirundi so much faster! - C.E.",
+        "My grandparents love solving puzzles and teaching me new words. A great bonding experience for our family. - L.G.",
+        "Finally, a fun way to practice Kirundi! The large print is perfect for my mom, too. - S.H.",
+        "I use it in my after school club—kids and seniors enjoy it together. Truly universal! - M.F.",
+        "We take it on road trips and everyone competes to finish a puzzle first. So much fun! - J.D.",
+        "Each puzzle theme is well chosen, so I'm learning everyday Kirundi words that are super helpful. - A.B.",
       ],
       faq: [
         {
@@ -1083,12 +1083,12 @@ export const kirundiConfigs = {
       amazonUrl: "https://www.amazon.com/dp/B0D8TRV1R1",
       bestSeller: false,
       testimonials: [
-        "My grandparents and I bonded over these Kirundi songs—brought back so many joyful memories!",
-        "A fantastic resource for diaspora families. My children finally understand the traditions behind each melody.",
-        "I love the simple explanations. Even though I'm new to Kirundi, I can appreciate the cultural stories behind every song.",
-        "Perfect for teaching kids about our Burundian heritage. Singing these tunes brightens our weekends!",
-        "It's amazing how these songs speak of love, unity, and respect. Exactly what our family needed.",
-        "A treasure for anyone wanting to connect with Burundian roots. We sing them during special family gatherings!",
+        "My grandparents and I bonded over these Kirundi songs—brought back so many joyful memories! - C.E.",
+        "A fantastic resource for diaspora families. My children finally understand the traditions behind each melody. - L.G.",
+        "I love the simple explanations. Even though I'm new to Kirundi, I can appreciate the cultural stories behind every song. - S.H.",
+        "Perfect for teaching kids about our Burundian heritage. Singing these tunes brightens our weekends! - M.F.",
+        "It's amazing how these songs speak of love, unity, and respect. Exactly what our family needed. - J.D.",
+        "A treasure for anyone wanting to connect with Burundian roots. We sing them during special family gatherings! - A.B.",
       ],
       faq: [
         {
