@@ -654,6 +654,71 @@ export const kirundiConfigs = {
         },
       ],
     },
+    {
+      title: "I Can Count in Kirundi",
+      slug: "i-can-count-in-kirundi",
+      age: "0-6",
+      pages: "26",
+      price: "10.99",
+      description: {
+        short:
+          "A fun counting book in Kirundi, English, and French for kids aged 0-6. It's great for learning numbers and connecting with Kirundi culture!",
+        long: `
+      Are you a parent in the diaspora looking for a fun way to teach Kirundi?
+      This picture book helps kids learn numbers in Kirundi, English, and French.
+      It's easy and fun, with 26 colorful pages that keep children interested.
+      Perfect for boosting confidence and learning new words, even if you're not
+      a native Kirundi speaker. Great for kids who love learning languages!
+    `.trim(),
+      },
+      challenges: [
+        "Few Kirundi counting books: Families struggle to find engaging resources for teaching numbers in Kirundi.",
+        "Keeping kids engaged: Bright images and simple words help children stay interested as they learn to count.",
+        "Parents not fluent in Kirundi: The trilingual format lets families compare Kirundi, English, and French side-by-side.",
+      ],
+      whyChoose: [
+        "Numbers Made Easy: Helps children learn to count in Kirundi with the support of English and French translations.",
+        "Fun Illustrations: Each page shows colorful images so kids can visualize and remember numbers more effectively.",
+        "Perfect for Ages 0-6: Simple wording, big pictures, and an engaging design keep younger learners excited.",
+      ],
+      amazonUrl: "https://www.amazon.com/dp/2492960056",
+      bestSeller: false,
+      testimonials: [
+        "This book is a fun way to learn counting in Kirundi! My 4 year old loves seeing numbers in Kirundi, English, and French.",
+        "Perfect for parents who want to teach Kirundi but aren't fluent. It helps us share our culture easily.",
+        "The pictures are super fun, and my kids love learning Kirundi numbers with them.",
+        "My child enjoys counting in Kirundi and showing off to friends. It's a great way to learn new words!",
+        "The colorful pages make learning Kirundi numbers exciting. My kids can't wait to read it every day!",
+        "This book makes learning Kirundi numbers easy and fun. It's perfect for kids who love languages!",
+      ],
+      faq: [
+        {
+          question: "Which age group is this book best for?",
+          answer:
+            "It's designed for children aged 0–6, but older beginners can still find it helpful for basic counting in Kirundi.",
+        },
+        {
+          question: "Do I need to speak Kirundi to use this book?",
+          answer:
+            "No. Each number is presented in Kirundi, English, and French, so you can learn side-by-side with your child.",
+        },
+        {
+          question: "How many pages are there?",
+          answer:
+            "It contains 26 colorful pages, each focusing on numbers and simple vocabulary for easy learning.",
+        },
+        {
+          question: "Is it suitable for families living outside Burundi?",
+          answer:
+            "Yes! It's specifically created for diaspora families who want a fun, straightforward way to teach Kirundi from afar.",
+        },
+        {
+          question: "Does it help with more than counting?",
+          answer:
+            "Yes. Children also learn Kirundi vocabulary, plus English and French support for parents who aren't fluent in Kirundi.",
+        },
+      ],
+    },
   ],
   faq: [
     {
