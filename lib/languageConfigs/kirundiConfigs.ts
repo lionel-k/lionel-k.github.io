@@ -609,7 +609,7 @@ export const kirundiConfigs = {
       challenges: [
         "Teaching basic letters in Kirundi: Many diaspora families struggle to find beginner-friendly Kirundi resources.",
         "Keeping children engaged: Colorful illustrations and simple text help kids stay excited about learning.",
-        "Language barrier for parents: Trilingual format (Kirundi-English-French) lets non-fluent parents teach Kirundi confidently.",
+        "Language barrier for parents: Trilingual format lets non-fluent parents teach Kirundi confidently.",
       ],
       whyChoose: [
         "Focus on Letters: Perfect for young learners just starting with Kirundi, English, and French alphabets.",
