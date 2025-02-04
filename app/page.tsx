@@ -177,7 +177,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Real Amazon Reviews Section */}
         <section className="py-20 bg-[#FAF8F5] text-gray-900">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
