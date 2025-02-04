@@ -35,6 +35,16 @@ export const kirundiConfigs = {
       ],
       faq: [
         {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
+        {
           question: "What age group is this book for?",
           answer:
             "This book is designed for children aged 2-8. It's perfect for early learners and parents teaching Kirundi to their kids.",
@@ -98,6 +108,16 @@ export const kirundiConfigs = {
         "Gatore's story is awesome! My kids now want to try new foods and learn more about their heritage. - J.D.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "What languages are included?",
           answer:
@@ -168,6 +188,16 @@ export const kirundiConfigs = {
         "Reading this book makes me feel closer to my grandparents. It's like hearing their stories. - J.D.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "How is this book set up?",
           answer:
@@ -240,6 +270,16 @@ export const kirundiConfigs = {
       ],
       faq: [
         {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
+        {
           question: "Is this book only for Kirundi speakers?",
           answer:
             "No. It's written in Kirundi and English, so even non-fluent parents can follow along.",
@@ -303,6 +343,16 @@ export const kirundiConfigs = {
         "This book is awesome! It made me feel proud of my Burundian roots and the donuts look yummy! - A.B.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "What age group is this book for?",
           answer:
@@ -368,6 +418,16 @@ export const kirundiConfigs = {
       ],
       faq: [
         {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
+        {
           question: "Is this book only for kids learning Kirundi?",
           answer:
             "No! It's great for all children ages 3-7, especially those who love stories about friendship and caring for the earth.",
@@ -431,6 +491,16 @@ export const kirundiConfigs = {
         "It's an excellent resource for grandparents too—they can share our heritage in a fun, child-friendly way. - A.B.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "What age group is this book for?",
           answer:
@@ -497,6 +567,16 @@ export const kirundiConfigs = {
       ],
       faq: [
         {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
+        {
           question: "What age group is this book for?",
           answer:
             "It's best for kids aged 0-6, but older kids can still have fun learning Kirundi animal words.",
@@ -562,6 +642,16 @@ export const kirundiConfigs = {
       ],
       faq: [
         {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
+        {
           question: "What age group is this book for?",
           answer:
             "It's meant for kids aged 0-6, but older beginners can also have fun learning basic Kirundi verbs.",
@@ -626,6 +716,16 @@ export const kirundiConfigs = {
         "The pictures are big and bold—perfect for young children. We learn new words together as a family. - A.B.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "Is this book only for Kirundi speakers?",
           answer:
@@ -693,6 +793,16 @@ export const kirundiConfigs = {
       ],
       faq: [
         {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
+        {
           question: "Who is this book for?",
           answer:
             "It's best for children ages 0-6, but older kids can still enjoy learning Kirundi letters, too.",
@@ -757,6 +867,16 @@ export const kirundiConfigs = {
         "This book makes learning Kirundi numbers easy and fun. It's perfect for kids who love languages! - A.B.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "Which age group is this book best for?",
           answer:
@@ -825,6 +945,16 @@ export const kirundiConfigs = {
       ],
       faq: [
         {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
+        {
           question: "Is this coloring book only for Kirundi speakers?",
           answer:
             "No. Each page presents words in Kirundi, English, and French, so anyone can follow along.",
@@ -887,6 +1017,16 @@ export const kirundiConfigs = {
         "I love how each joke is bilingual. It's a cool way to share laughs across different languages. - A.B.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "Is this book suitable for kids?",
           answer:
@@ -952,6 +1092,16 @@ export const kirundiConfigs = {
         "Makes learning African rhythms a breeze. We've been singing these songs every night before bed! - A.B.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "Who is this book for?",
           answer:
@@ -1023,6 +1173,16 @@ export const kirundiConfigs = {
       ],
       faq: [
         {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
+        {
           question: "Is this book only for fluent Kirundi speakers?",
           answer:
             "No. Beginners can learn new words through each puzzle, and answers are at the back for easy checking.",
@@ -1091,6 +1251,16 @@ export const kirundiConfigs = {
         "A treasure for anyone wanting to connect with Burundian roots. We sing them during special family gatherings! - A.B.",
       ],
       faq: [
+        {
+          question: "What if I don't like the book? Can I return it?",
+          answer:
+            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        },
         {
           question: "Are these songs suitable for kids?",
           answer:
