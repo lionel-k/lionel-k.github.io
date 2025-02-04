@@ -177,6 +177,48 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Real Amazon Reviews Section */}
+        <section className="py-20 bg-[#FAF8F5] text-gray-900">
+          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-4">Real Amazon Reviews</h2>
+              <p className="text-xl text-gray-600">
+                Browse snapshots of what readers are sharing on Amazon!
+              </p>
+            </div>
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Review Image Card 1 */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+                <img
+                  src="/images/reviews/1.png"
+                  alt="Amazon review screenshot 1"
+                  className="w-full h-auto rounded-lg object-contain"
+                />
+              </div>
+
+              {/* Review Image Card 2 */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+                <img
+                  src="/images/reviews/2.png"
+                  alt="Amazon review screenshot 2"
+                  className="w-full h-auto rounded-lg object-contain"
+                />
+              </div>
+
+              {/* Review Image Card 3 */}
+              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
+                <img
+                  src="/images/reviews/3.png"
+                  alt="Amazon review screenshot 3"
+                  className="w-full h-auto rounded-lg object-contain"
+                />
+              </div>
+
+              {/* Duplicate or remove cards as necessary for more images */}
+            </div>
+          </div>
+        </section>
+
         {/* Newsletter Section */}
         <section className="bg-black text-white">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
