@@ -85,7 +85,6 @@ export default function BookPageClient() {
           { name: book.title, href: `/books/${language}/${slug}` },
         ]}
       />
-
       {/* Hero Section - Dark Gradient from Home Page */}
       <section className="relative bg-black py-16 text-white overflow-hidden">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
@@ -120,10 +119,8 @@ export default function BookPageClient() {
           </div>
         </div>
       </section>
-
       {/* CTA Section - Gold Gradient */}
       <PurchaseCTA amazonUrl={book.amazonUrl} />
-
       {/* Look Inside the Book Section */}
       <section className="py-20 bg-gradient-to-b from-[#F5F2EC] to-[#FAF8F5]">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -146,9 +143,7 @@ export default function BookPageClient() {
           </div>
         </div>
       </section>
-
       <PurchaseCTA amazonUrl={book.amazonUrl} />
-
       {/* Challenges Section - Light Gradient */}
       <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -193,10 +188,8 @@ export default function BookPageClient() {
           </div>
         </div>
       </section>
-
       {/* CTA Section - Gold Gradient */}
       <PurchaseCTA amazonUrl={book.amazonUrl} />
-
       {/* Why Choose Section - White to Light Gradient */}
       <section className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -230,37 +223,37 @@ export default function BookPageClient() {
           </div>
         </div>
       </section>
-
       {/* Testimonials Section - Dark Gradient */}
-      <section className="py-20 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] text-white">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-center text-4xl font-bold mb-16">
-            Hear From Happy Readers
-          </h2>
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {book.testimonials.map((testimonial, index) => {
-              const [name, detail] = testimonial.split("-");
-              return (
-                <div
-                  key={index}
-                  className="bg-white/10 rounded-xl p-8 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
-                >
-                  <div className="flex items-center mb-4">
-                    <div className="ml-4">
-                      <p className="font-semibold">{name}</p>
-                      <p className="text-sm text-gray-300">{detail || ""}</p>
+      {false && (
+        <section className="py-20 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] text-white">
+          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+            <h2 className="text-center text-4xl font-bold mb-16">
+              Hear From Happy Readers
+            </h2>
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+              {book.testimonials.map((testimonial, index) => {
+                const [name, detail] = testimonial.split("-");
+                return (
+                  <div
+                    key={index}
+                    className="bg-white/10 rounded-xl p-8 backdrop-blur-sm hover:bg-white/20 transition-all duration-300"
+                  >
+                    <div className="flex items-center mb-4">
+                      <div className="ml-4">
+                        <p className="font-semibold">{name}</p>
+                        <p className="text-sm text-gray-300">{detail || ""}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       {/* CTA Section - Gold Gradient */}
       <PurchaseCTA amazonUrl={book.amazonUrl} />
-
       {/* FAQ Section - Light Gradient */}
       <section className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -272,10 +265,8 @@ export default function BookPageClient() {
           </div>
         </div>
       </section>
-
       {/* Final CTA Section */}
       <PurchaseCTA amazonUrl={book.amazonUrl} />
-
       {/* Newsletter Section - Dark (Black) */}
       <section className="bg-black text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
