@@ -1153,6 +1153,11 @@ export const kirundiConfigs = {
         "Yes, all purchases are handled through Amazon, which has a straightforward return policy. If you're not happy with your book, you can easily return it and get your money back.",
     },
     {
+      question: "How long does delivery take?",
+      answer:
+        "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+    },
+    {
       question: "How long does it take to see progress in learning Kirundi?",
       answer:
         "With regular use, many parents notice progress in just a few weeks. Kids start by recognizing simple words and phrases, and as they engage with the books, their understanding and confidence grow naturally.",

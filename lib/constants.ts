@@ -249,14 +249,14 @@ export const FAQ_ITEMS = [
       "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
   },
   {
-    question: "How long will it take to see progress in learning?",
-    answer:
-      "It depends on how often your child uses the books, but many parents notice progress in just a few weeks. Kids start by recognizing simple words, and with regular use, they'll learn more and more over time. These books are designed to make learning enjoyable, so progress feels natural and fun.",
-  },
-  {
     question: "How long does delivery take?",
     answer:
       "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+  },
+  {
+    question: "How long will it take to see progress in learning?",
+    answer:
+      "It depends on how often your child uses the books, but many parents notice progress in just a few weeks. Kids start by recognizing simple words, and with regular use, they'll learn more and more over time. These books are designed to make learning enjoyable, so progress feels natural and fun.",
   },
   {
     question: "Can I see what the books look like before buying?",
