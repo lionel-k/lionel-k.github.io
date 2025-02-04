@@ -181,7 +181,7 @@ export default function Home() {
         <section className="py-20 bg-[#FAF8F5] text-gray-900">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">Real Amazon Reviews</h2>
+              <h2 className="text-4xl font-bold mb-4">Amazon Reviews</h2>
               <p className="text-xl text-gray-600">
                 Browse snapshots of what readers are sharing on Amazon!
               </p>
