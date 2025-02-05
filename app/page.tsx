@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Lingu.Africa",
     images: [
       {
-        url: "https://www.lingu.africa/og-image.jpg",
+        url: "https://www.lingu.africa/logo.png",
         width: 1200,
         height: 630,
       },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: "Lingu.Africa - Bilingual African Language Books",
     description:
       "Explore our collection of bilingual books in various African languages. Perfect for families worldwide.",
-    images: ["https://www.lingu.africa/og-image.jpg"],
+    images: ["https://www.lingu.africa/logo.png"],
     creator: "@linguafrica",
   },
 };
