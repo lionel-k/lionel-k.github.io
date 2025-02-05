@@ -58,7 +58,7 @@ export function Footer() {
             {/* Social Icons */}
             <div className="flex justify-center md:justify-start space-x-6 mt-4">
               <Link
-                href="https://www.instagram.com/ndakunda.ikirundi/"
+                href="https://www.instagram.com/lingu.africa/"
                 target="_blank"
                 aria-label="Instagram"
                 className="transition-transform hover:scale-110"
