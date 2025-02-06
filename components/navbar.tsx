@@ -1,11 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { BookOpen, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const isActive = (href: string) => pathname === href;
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-black text-white">
@@ -35,25 +38,32 @@ export function Navbar() {
               : "hidden"
           } md:flex md:space-x-4 md:relative md:bg-transparent md:flex-row md:items-center md:justify-end`}
         >
-          <nav className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-4">
+          <nav className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-4 text-lg md:text-sm">
             <Link
               href="/"
-              className="text-lg md:text-sm font-medium text-white hover:text-[#DAA520]"
               onClick={() => setIsOpen(false)}
+              className={`font-medium hover:text-[#DAA520] transition-colors
+                ${isActive("/") ? "text-[#DAA520] font-bold" : "text-white"}`}
             >
               Home
             </Link>
             <Link
               href="/books"
-              className="text-lg md:text-sm font-medium text-white hover:text-[#DAA520]"
               onClick={() => setIsOpen(false)}
+              className={`font-medium hover:text-[#DAA520] transition-colors
+                ${
+                  isActive("/books") ? "text-[#DAA520] font-bold" : "text-white"
+                }`}
             >
               Books
             </Link>
             <Link
               href="/about"
-              className="text-lg md:text-sm font-medium text-white hover:text-[#DAA520]"
               onClick={() => setIsOpen(false)}
+              className={`font-medium hover:text-[#DAA520] transition-colors
+                ${
+                  isActive("/about") ? "text-[#DAA520] font-bold" : "text-white"
+                }`}
             >
               About
             </Link>
