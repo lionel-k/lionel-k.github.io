@@ -46,7 +46,7 @@ export default function Books() {
                 className="relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all border border-gray-100"
               >
                 {/* Optional subtle overlay/pattern if you want some texture */}
-                <div className="absolute inset-0 pointer-events-none opacity-5 bg-[url('/african-pattern.svg')]" />
+                <div className="absolute inset-0 pointer-events-none opacity-5" />
 
                 <div className="relative">
                   <h3 className="text-2xl font-bold mb-4">{language.name}</h3>

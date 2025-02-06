@@ -133,7 +133,7 @@ export default function Home() {
                   key={language.slug}
                   className="relative bg-gradient-to-b from-[#1A1A1A] to-[#0A0A0A] rounded-2xl p-8 border border-[#DAA520]/20 hover:border-[#DAA520]/40 transition-all"
                 >
-                  <div className="absolute inset-0 bg-[url('/african-pattern.svg')] opacity-10" />
+                  <div className="absolute inset-0 opacity-10" />
                   <div className="relative">
                     <h3 className="text-2xl font-bold text-white mb-4">
                       {language.name}
