@@ -9,132 +9,123 @@ export const kinyarwandaConfigs = {
       price: "11.99",
       description: {
         short:
-          "A Kinyarwanda-English-French picture book focusing on action verbs. Perfect for kids aged 0-6 learning Kinyarwanda in a fun way!",
+          "A Kinyarwanda-English-French picture book that teaches action verbs in a simple, fun way to kids aged 0-6—perfect for diaspora families!",
         long: `
-      Are you a parent living in the diaspora who wants an easy way to teach Kinyarwanda?
-      This book shows common action verbs in Kinyarwanda, English, and French.
-      With 28 bright pages, kids can see fun pictures and learn important verbs
-      that help them speak Kinyarwanda every day. Even if you're not fluent, you and
-      your child can explore new words together and connect with your heritage.
-    `.trim(),
+Are you a parent living outside Rwanda who wants an easy and playful resource to teach Kinyarwanda?
+This book features everyday action verbs in Kinyarwanda, English, and French, making it simple for both kids and parents to learn.
+Enjoy 28 bright pages filled with friendly pictures that help children pick up verbs they can use at home or in daily routines.
+Even if you're not fully fluent, you'll discover new words together and strengthen your family's connection to Rwandan heritage.
+        `.trim(),
       },
       challenges: [
-        "Hard to find Kinyarwanda resources: Many parents abroad struggle to find interesting materials for teaching action words.",
-        "Keeping kids excited: Bright pictures and short phrases make it easy for young learners to stay focused.",
-        "Not fluent in Kinyarwanda: The trilingual format (Kinyarwanda-English-French) helps families learn and practice together.",
+        "Limited Kinyarwanda Books: Many diaspora parents struggle to find lively, kid-friendly materials for teaching verbs.",
+        "Capturing Kids' Attention: Bright images and short phrases help children stay focused and interested in new words.",
+        "Parents Not Fluent in Kinyarwanda: The triple-language format guides families step by step, even if parents are beginners.",
       ],
       whyChoose: [
-        "Focus on Action Verbs: Helps kids express themselves in Kinyarwanda with words they can use daily.",
-        "Trilingual Format: Kinyarwanda, English, and French on the same page—great for families at any fluency level.",
-        "Ideal for Ages 0-6: Fun illustrations, simple sentences, and easy vocabulary keep little ones engaged.",
+        "Teaches Everyday Verbs: Children learn action words they can use in real life, boosting confidence in Kinyarwanda.",
+        "Kinyarwanda, English, and French: A triple-language approach makes learning accessible to families at any skill level.",
+        "Ideal for Ages 0-6: Simple sentences, colorful pages, and engaging design keep little ones excited to learn.",
       ],
       amazonUrl: "https://www.amazon.com/dp/2492960153",
       bestSeller: true,
       testimonials: [
-        "Book suitable for very young children to learn Kinyarwanda. Additionally, the images help capture the words easily. - C.E.",
-        "My children love the colorful pages, and they're already using new Kinyarwanda verbs at home. - L.G.",
-        "A must have for diaspora families. The trilingual pages help both kids and parents pick up phrases quickly. - S.H.",
-        "We enjoy reading a few verbs each night—it's amazing how fast our toddler is learning Kinyarwanda! - M.F.",
-        "Very helpful if you want your kids to recognize everyday actions in Kinyarwanda. Great illustrations, too! - J.D.",
-        "This book gave us new ways to connect with our Burundian roots, one verb at a time. - A.B.",
+        "Good for small kids learning Kinyarwanda. The pictures are helpful in remembering new words. - C.E.",
+        "My kids love these bright pages and are already using new verbs at home. - L.G.",
+        "Perfect for diaspora families. The three languages on each page help both children and parents pick up phrases fast. - S.H.",
+        "We read a few verbs each night—amazing how quickly our toddler catches on. - M.F.",
+        "Great if you want your kids to talk about everyday tasks in Kinyarwanda. Illustrations are wonderful! - J.D.",
+        "This book gave us fun ways to connect with our roots, one verb at a time. - A.B.",
       ],
       faq: [
         {
           question: "What if I don't like the book? Can I return it?",
           answer:
-            "Yes, you can return the book. All purchases are handled through Amazon, which has a clear return policy. If you're not happy with your purchase, just follow their simple steps to return the book and get your money back.",
+            "Yes. Amazon handles delivery and returns, so if you're unhappy with your book, just follow their steps for a refund.",
         },
         {
           question: "How long does delivery take?",
           answer:
-            "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+            "It depends on your location. Amazon gives an estimated arrival date at checkout, and you can track your package anytime.",
         },
         {
           question: "What age group is this book for?",
           answer:
-            "It's meant for kids aged 0-6, but older beginners can also have fun learning basic Kinyarwanda verbs.",
+            "It's meant for little ones aged 0-6, but older beginners can also enjoy and benefit from these action verbs.",
         },
         {
           question: "Do I need to speak Kinyarwanda to use this book?",
           answer:
-            "No! Each page shows Kinyarwanda, English, and French, so even non-fluent parents can teach their kids.",
+            "No. Each page presents Kinyarwanda, English, and French, so non-fluent parents can still guide their kids.",
         },
         {
           question: "How many pages are there?",
           answer:
-            "It has 28 bright, colorful pages, each featuring a different action verb with clear translations.",
+            "It includes 28 bright, kid-friendly pages, each highlighting a specific verb with clear translations.",
         },
         {
           question: "Why focus on action verbs?",
           answer:
-            "Action verbs help kids talk about everyday things they do, making Kinyarwanda feel practical and fun.",
+            "Action verbs help kids describe daily activities, making Kinyarwanda feel useful and fun to practice.",
         },
         {
-          question: "Is this book good for diaspora families?",
+          question: "Is this book good for families abroad?",
           answer:
-            "Absolutely. It's designed for families abroad who want a simple, engaging way to keep Kinyarwanda alive at home.",
+            "Absolutely! It's designed for parents outside Rwanda who want an easy, engaging way to maintain Kinyarwanda at home.",
         },
       ],
     },
   ],
   faq: [
     {
-      question:
-        "How can I teach Kinyarwanda to my kids if I don't speak it fluently?",
+      question: "How can I teach Kinyarwanda if I'm not fluent myself?",
       answer:
-        "You don't need to be fluent! Our books include translations in English or French, so you and your kids can learn together. Each book is designed to make the process simple, with pictures and easy words to guide you every step of the way.",
+        "You don't need to be fluent! Our books pair Kinyarwanda with English or French, so parents and children can learn side by side. The pages are set up to walk you through words and images easily.",
     },
     {
-      question: "Why is it important to teach Kinyarwanda to children?",
+      question: "Why should kids learn Kinyarwanda?",
       answer:
-        "Teaching Kinyarwanda helps children connect to their roots, feel proud of their identity, and stay in touch with their heritage. It's also a great way to preserve the language for future generations while building family connections.",
+        "Learning Kinyarwanda helps children stay connected to Rwandan culture, feel proud of their roots, and pass on the language to future generations. It also supports family bonding through shared learning.",
     },
     {
-      question: "What types of Kinyarwanda books are available?",
+      question: "What types of Kinyarwanda books are offered?",
       answer:
-        "We offer bilingual and trilingual books for all ages, including 'First 100 Words,' storybooks, activity books like 'Kinyarwanda Word Search,' and cultural collections like 'The Kinyarwanda Proverb Treasury.' These books make learning fun and engaging for kids and adults alike.",
+        "We have bilingual and trilingual books for different ages, such as ‘First 100 Words,' storybooks, word puzzles, and cultural collections like ‘The Kinyarwanda Proverb Treasury.' They make learning fun for both kids and adults.",
     },
     {
-      question:
-        "Can these books help if my child is just starting to learn Kinyarwanda?",
+      question: "Can these books help if my child is just starting out?",
       answer:
-        "Yes! Our books are perfect for beginners. They introduce Kinyarwanda words and phrases in small, easy steps, using colorful illustrations and relatable topics to make learning enjoyable and less overwhelming.",
+        "Yes! They're made for beginners, breaking down new words into small, easy steps. Bright images and familiar themes help children learn without feeling overwhelmed.",
     },
     {
-      question: "Are the books suitable for parents who live in the diaspora?",
+      question: "Are they suitable for families who live abroad?",
       answer:
-        "Absolutely! These books are designed with diaspora families in mind. They make it easy to teach Kinyarwanda even if you're far from home, helping your children stay connected to their heritage and culture.",
+        "Absolutely. The books cater to diaspora families who want a convenient way to keep Kinyarwanda alive, even far from home. They're designed to be easy for everyone to use.",
     },
     {
-      question: "Can I return a book if I'm not satisfied?",
+      question: "Can I return the book if I don't like it?",
       answer:
-        "Yes, all purchases are handled through Amazon, which has a straightforward return policy. If you're not happy with your book, you can easily return it and get your money back.",
+        "Yes. Since all sales go through Amazon, you can use their standard return policy. If the book isn't what you expected, just follow Amazon's instructions for a refund.",
     },
     {
-      question: "How long does delivery take?",
+      question: "How long does shipping usually take?",
       answer:
-        "Delivery times vary depending on where you live. Amazon provides an estimated delivery date during checkout, and they usually ship quickly. You can also track your package to see when it will arrive at your door.",
+        "Amazon will estimate delivery times when you order. They typically ship quickly, and you can track your package to see when it's scheduled to arrive.",
     },
     {
-      question:
-        "How long does it take to see progress in learning Kinyarwanda?",
+      question: "How soon will I see progress in learning Kinyarwanda?",
       answer:
-        "With regular use, many parents notice progress in just a few weeks. Kids start by recognizing simple words and phrases, and as they engage with the books, their understanding and confidence grow naturally.",
+        "Many parents notice improvement after just a few weeks of regular reading. Kids start picking up simple words first, then move on to longer phrases with consistent practice.",
     },
     {
-      question: "Are the books helpful for schools and teachers?",
+      question: "Are these books useful for teachers?",
       answer:
-        "Yes! Our books are great tools for classrooms and community programs. Teachers can use them to introduce Kinyarwanda and Burundian culture to students in an easy and engaging way.",
+        "Yes! Teachers can introduce Kinyarwanda in classrooms or after-school clubs. The bright pictures and everyday vocabulary keep lessons interesting.",
     },
     {
-      question: "How do the books help make learning Kinyarwanda fun?",
+      question: "What if I want more help or have ideas for new books?",
       answer:
-        "The books use bright illustrations, simple layouts, and cultural stories to keep kids interested. Activities like word searches and proverbs make learning interactive, helping children enjoy the process while building language skills.",
-    },
-    {
-      question: "What if I have ideas or need help teaching Kinyarwanda?",
-      answer:
-        "We're here to support you! Reach out to us through our website or social media with any questions or ideas. We're always happy to help families on their Kinyarwanda learning journey.",
+        "Feel free to reach out! We love hearing suggestions or questions. Contact us via our website or social media, and we'll do our best to support your Kinyarwanda learning journey.",
     },
   ],
 };
