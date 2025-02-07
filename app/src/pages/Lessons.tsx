@@ -23,8 +23,8 @@ const Lessons = () => {
   const menuItems = [
     { icon: Home, label: "Home", path: "/lessons" },
     { icon: Trophy, label: "Leaderboard", path: "/leaderboard" },
-    { icon: User, label: "Profile", path: "/profile" },
     { icon: AlertCircle, label: "Mistakes", path: "/mistakes" },
+    { icon: User, label: "Profile", path: "/profile" },
   ];
 
   return (
