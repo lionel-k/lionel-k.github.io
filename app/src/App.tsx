@@ -28,7 +28,7 @@ function App() {
               }
             />
             <Route
-              path="/lessons"
+              path="/"
               element={
                 <PrivateRoute>
                   <Lessons />
