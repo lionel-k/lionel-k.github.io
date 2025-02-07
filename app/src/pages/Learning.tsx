@@ -10,7 +10,20 @@ const Learning = () => {
   const navigate = useNavigate();
   const { completeExercise, completeLesson } = useProgress();
   const [activeAudio, setActiveAudio] = useState<HTMLAudioElement | null>(null);
-  const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
+  const [currentExerciseIndex, setCurrentExerciseIndex] = useState(() => {
+    // Initialize from localStorage or default to 0
+    const saved = localStorage.getItem(`lesson_${lessonId}_exercise`);
+    return saved ? parseInt(saved) : 0;
+  });
+
+  // Save current exercise index whenever it changes
+  useEffect(() => {
+    localStorage.setItem(
+      `lesson_${lessonId}_exercise`,
+      currentExerciseIndex.toString()
+    );
+  }, [currentExerciseIndex, lessonId]);
+
   const [userAnswer, setUserAnswer] = useState("");
   const [selectedChips, setSelectedChips] = useState<string[]>([]);
   const [showFeedback, setShowFeedback] = useState(false);
