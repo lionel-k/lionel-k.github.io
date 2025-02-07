@@ -4,10 +4,6 @@ import {
   Lock,
   CheckCircle,
   BookOpen,
-  Home,
-  Trophy,
-  User,
-  AlertCircle,
   Flame,
   GraduationCap,
 } from "lucide-react";
@@ -16,7 +12,6 @@ import BottomNavbar from "../components/BottomNavbar";
 
 const Lessons = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const { progress } = useProgress();
 
   const isLessonCompleted = (level: number) =>
