@@ -1,0 +1,14 @@
+{
+  "users": [
+    { "id": 1, "name": "Sarah Johnson", "points": 2500, "streak": 15 },
+    { "id": 2, "name": "Michael Chen", "points": 2350, "streak": 12 },
+    { "id": 3, "name": "Emma Davis", "points": 2200, "streak": 10 },
+    { "id": 4, "name": "Alex Thompson", "points": 2100, "streak": 8 },
+    { "id": 5, "name": "Maria Garcia", "points": 2000, "streak": 7 },
+    { "id": 6, "name": "James Wilson", "points": 1950, "streak": 6 },
+    { "id": 7, "name": "Lisa Anderson", "points": 1900, "streak": 5 },
+    { "id": 8, "name": "David Kim", "points": 1850, "streak": 4 },
+    { "id": 9, "name": "Sophie Martin", "points": 1800, "streak": 3 },
+    { "id": 10, "name": "John Smith", "points": 1750, "streak": 2 }
+  ]
+}

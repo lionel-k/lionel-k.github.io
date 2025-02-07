@@ -1,18 +1,14 @@
 import { Crown, Medal, Trophy } from "lucide-react";
+import leaderboardData from "../data/leaderboard.json";
+import BottomNavbar from "../components/BottomNavbar";
 
-// Mock data for the leaderboard
-const leaderboardData = [
-  { id: 1, name: "Sarah Johnson", points: 2500, streak: 15 },
-  { id: 2, name: "Michael Chen", points: 2350, streak: 12 },
-  { id: 3, name: "Emma Davis", points: 2200, streak: 10 },
-  { id: 4, name: "Alex Thompson", points: 2100, streak: 8 },
-  { id: 5, name: "Maria Garcia", points: 2000, streak: 7 },
-  { id: 6, name: "James Wilson", points: 1950, streak: 6 },
-  { id: 7, name: "Lisa Anderson", points: 1900, streak: 5 },
-  { id: 8, name: "David Kim", points: 1850, streak: 4 },
-  { id: 9, name: "Sophie Martin", points: 1800, streak: 3 },
-  { id: 10, name: "John Smith", points: 1750, streak: 2 },
-];
+const getInitials = (name: string) => {
+  return name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase();
+};
 
 const Leaderboard = () => {
   const getRankIcon = (position: number) => {
@@ -63,19 +59,17 @@ const Leaderboard = () => {
           <div className="grid grid-cols-3 gap-4 p-6 bg-gradient-to-b from-gray-50 to-white">
             {/* Second Place */}
             <div className="flex flex-col items-center justify-end order-1">
-              <div className="w-16 h-16 rounded-full mb-3 overflow-hidden border-2 border-gray-200">
-                <img
-                  src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${leaderboardData[1].name}`}
-                  alt="Avatar"
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-16 h-16 rounded-full mb-3 flex items-center justify-center bg-gray-100 border-2 border-gray-200">
+                <span className="text-xl font-semibold text-gray-600">
+                  {getInitials(leaderboardData.users[1].name)}
+                </span>
               </div>
               <div className="text-center">
                 <p className="font-semibold text-gray-900 mb-1">
-                  {leaderboardData[1].name}
+                  {leaderboardData.users[1].name}
                 </p>
                 <p className="text-gray-500 text-sm">
-                  {leaderboardData[1].points} pts
+                  {leaderboardData.users[1].points} pts
                 </p>
               </div>
               <div className="h-20 bg-gray-200 mt-3 w-full rounded-t-lg" />
@@ -83,19 +77,17 @@ const Leaderboard = () => {
 
             {/* First Place */}
             <div className="flex flex-col items-center justify-end order-0">
-              <div className="w-20 h-20 rounded-full mb-3 overflow-hidden border-4 border-yellow-400">
-                <img
-                  src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${leaderboardData[0].name}`}
-                  alt="Avatar"
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-20 h-20 rounded-full mb-3 flex items-center justify-center bg-yellow-50 border-4 border-yellow-400">
+                <span className="text-2xl font-bold text-yellow-600">
+                  {getInitials(leaderboardData.users[0].name)}
+                </span>
               </div>
               <div className="text-center">
                 <p className="font-bold text-gray-900 mb-1">
-                  {leaderboardData[0].name}
+                  {leaderboardData.users[0].name}
                 </p>
                 <p className="text-gray-500 text-sm">
-                  {leaderboardData[0].points} pts
+                  {leaderboardData.users[0].points} pts
                 </p>
               </div>
               <div className="h-28 bg-yellow-400 mt-3 w-full rounded-t-lg" />
@@ -103,19 +95,17 @@ const Leaderboard = () => {
 
             {/* Third Place */}
             <div className="flex flex-col items-center justify-end order-2">
-              <div className="w-16 h-16 rounded-full mb-3 overflow-hidden border-2 border-amber-200">
-                <img
-                  src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${leaderboardData[2].name}`}
-                  alt="Avatar"
-                  className="w-full h-full object-cover"
-                />
+              <div className="w-16 h-16 rounded-full mb-3 flex items-center justify-center bg-amber-50 border-2 border-amber-200">
+                <span className="text-xl font-semibold text-amber-600">
+                  {getInitials(leaderboardData.users[2].name)}
+                </span>
               </div>
               <div className="text-center">
                 <p className="font-semibold text-gray-900 mb-1">
-                  {leaderboardData[2].name}
+                  {leaderboardData.users[2].name}
                 </p>
                 <p className="text-gray-500 text-sm">
-                  {leaderboardData[2].points} pts
+                  {leaderboardData.users[2].points} pts
                 </p>
               </div>
               <div className="h-16 bg-amber-200 mt-3 w-full rounded-t-lg" />
@@ -124,18 +114,16 @@ const Leaderboard = () => {
 
           {/* Rest of Leaderboard */}
           <div className="divide-y divide-gray-100">
-            {leaderboardData.slice(3).map((user, index) => (
+            {leaderboardData.users.slice(3).map((user, index) => (
               <div
                 key={user.id}
                 className="flex items-center gap-4 p-4 hover:bg-gray-50 transition-colors"
               >
                 {getRankIcon(index + 4)}
-                <div className="flex-shrink-0">
-                  <img
-                    src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${user.name}`}
-                    alt="Avatar"
-                    className="w-10 h-10 rounded-full"
-                  />
+                <div className="w-10 h-10 rounded-full flex items-center justify-center bg-gray-100">
+                  <span className="text-sm font-semibold text-gray-600">
+                    {getInitials(user.name)}
+                  </span>
                 </div>
                 <div className="flex-grow">
                   <p className="font-semibold text-gray-900">{user.name}</p>
@@ -152,6 +140,8 @@ const Leaderboard = () => {
           </div>
         </div>
       </div>
+
+      <BottomNavbar />
     </div>
   );
 };
