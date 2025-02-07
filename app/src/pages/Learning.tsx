@@ -19,7 +19,8 @@ const Learning = () => {
   const [selectedPairs, setSelectedPairs] = useState<string[]>([]);
   const [matchedPairs, setMatchedPairs] = useState<Set<string>>(new Set());
   const [exerciseCompleted, setExerciseCompleted] = useState(false);
-  const currentLesson: Lesson = lessons[Number(lessonId) - 1];
+
+  const currentLesson = (lessons as Lesson[])[Number(lessonId) - 1];
   const currentExercise: Exercise | undefined =
     currentLesson?.exercises[currentExerciseIndex];
 
@@ -407,14 +408,14 @@ const Learning = () => {
                   onClick={handleAnswer}
                   disabled={
                     exerciseCompleted ||
-                    // For “word-chips,” must have chosen at least one chip:
+                    // For "word-chips," must have chosen at least one chip:
                     (currentExercise.type === "word-chips" &&
                       selectedChips.length === 0) ||
-                    // For “matching-pairs,” must have matched all pairs:
+                    // For "matching-pairs," must have matched all pairs:
                     (currentExercise.type === "matching-pairs" &&
                       matchedPairs.size !==
                         (currentExercise.pairs?.length || 0) * 2) ||
-                    // For MC or text‐type, need a non‐empty userAnswer:
+                    // For MC or text-type, need a non-empty userAnswer:
                     ((currentExercise.type === "multiple-choice" ||
                       currentExercise.type === "audio-choice" ||
                       currentExercise.type === "fill-blank") &&
