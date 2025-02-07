@@ -258,21 +258,27 @@ const Learning = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation and Progress Bar */}
-      <div className="bg-white shadow-sm">
+      <div className="bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white shadow-lg">
         <div className="max-w-3xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between mb-2">
-            <button
-              onClick={handleBackToLessons}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-            >
-              <X className="w-6 h-6 text-gray-600" />
-            </button>
-          </div>
-          <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden">
-            <div
-              className="absolute left-0 top-0 h-full bg-green-500 transition-all duration-300"
-              style={{ width: `${progressPercentage}%` }}
-            />
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              <button
+                onClick={handleBackToLessons}
+                className="p-2 hover:bg-white/10 rounded-lg transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <span className="text-sm font-medium">
+                Exercise {currentExerciseIndex + 1} of{" "}
+                {currentLesson.exercises.length}
+              </span>
+            </div>
+            <div className="w-32 h-2 bg-white/20 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-gradient-to-r from-[#DAA520] to-[#B8860B] transition-all duration-300"
+                style={{ width: `${progressPercentage}%` }}
+              />
+            </div>
           </div>
         </div>
       </div>
