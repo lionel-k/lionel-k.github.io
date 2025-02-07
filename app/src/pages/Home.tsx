@@ -15,14 +15,14 @@ const Home = () => {
   const features = [
     {
       icon: GraduationCap,
-      title: "Interactive Lessons",
+      title: "Interactive Learning",
       description:
-        "Learn through engaging exercises with audio, text, and visual content",
+        "Master African languages through engaging exercises with audio, text, and visual content",
     },
     {
       icon: Globe,
-      title: "Cultural Context",
-      description: "Understand Burundian culture while learning the language",
+      title: "Cultural Immersion",
+      description: "Understand African cultures while learning their languages",
     },
     {
       icon: Users,
@@ -34,7 +34,7 @@ const Home = () => {
       icon: Star,
       title: "Expert Content",
       description:
-        "Lessons created by native Burundian speakers and language experts",
+        "Lessons created by native speakers and language experts from across Africa",
     },
   ];
 
@@ -115,20 +115,29 @@ const Home = () => {
       <div className="bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           <div className="text-center">
+            <div className="mb-4">
+              <span className="inline-flex items-center rounded-full bg-[#DAA520]/10 px-4 py-1 text-sm font-medium text-[#DAA520]">
+                Now Available: Learn Kirundi
+              </span>
+            </div>
             <h1 className="text-4xl sm:text-6xl font-bold mb-6">
-              Learn Kirundi with{" "}
-              <span className="text-[#DAA520]">Confidence</span>
+              Your Gateway to{" "}
+              <span className="text-[#DAA520]">African Languages</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              The first Kirundi learning app made by Burundians for Burundians.
-              Master your language and culture through interactive lessons.
+            <p className="text-xl text-gray-300 mb-4 max-w-2xl mx-auto">
+              Start your journey into African languages and cultures. Currently
+              featuring Kirundi, with more languages coming soon.
+            </p>
+            <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+              Begin with Kirundi, the heart of Burundian culture, taught by
+              native speakers.
             </p>
             <div className="flex justify-center space-x-4">
               <button
                 onClick={() => navigate("/register")}
                 className="px-8 py-4 bg-[#DAA520] text-white rounded-lg hover:bg-[#B8860B] transition-colors flex items-center"
               >
-                Start Learning <ArrowRight className="ml-2 w-5 h-5" />
+                Start Learning Kirundi <ArrowRight className="ml-2 w-5 h-5" />
               </button>
               <button
                 onClick={() => navigate("/lessons")}
@@ -149,8 +158,9 @@ const Home = () => {
               Why Choose Lingu Africa?
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Our platform offers a unique approach to learning Kirundi,
-              combining modern technology with authentic cultural experiences.
+              Our platform offers a unique approach to learning African
+              languages, combining modern technology with authentic cultural
+              experiences.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -183,8 +193,8 @@ const Home = () => {
               Choose Your Learning Path
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Start with our free lesson or unlock the full potential with our
-              premium plans.
+              Start with our free Kirundi lesson or unlock the full potential
+              with our premium plans. More African languages coming soon!
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -247,7 +257,8 @@ const Home = () => {
                 <span className="ml-2 text-xl font-bold">Lingu Africa</span>
               </div>
               <p className="text-gray-400">
-                Learn Kirundi the modern way. Made with ❤️ in Burundi.
+                Your journey into African languages starts here. Currently
+                featuring Kirundi, with more languages on the way.
               </p>
             </div>
             <div>
