@@ -16,7 +16,8 @@ export interface Exercise {
   type:
     | "multiple-choice"
     | "word-chips"
-    | "matching-pairs"
+    | "audio-text-matching"
+    | "text-matching"
     | "image-choice"
     | "text-input"
     | "fill-blank"
@@ -28,7 +29,12 @@ export interface Exercise {
   audioUrl?: string;
   imageUrl?: string;
   imageOptions?: Array<{ url: string; label: string }>;
-  pairs?: Array<{ audio: string; text: string }>;
+  pairs?: Array<{
+    audio?: string;
+    text?: string;
+    text1?: string;
+    text2?: string;
+  }>;
 }
 
 export interface UserProgress {

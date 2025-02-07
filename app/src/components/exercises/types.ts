@@ -14,10 +14,17 @@ export interface WordChipsProps extends BaseExerciseProps {
   wordChips: string[];
 }
 
-export interface MatchingPairsProps extends BaseExerciseProps {
+export interface AudioTextMatchingProps extends BaseExerciseProps {
   pairs: Array<{
     audio: string;
     text: string;
+  }>;
+}
+
+export interface TextMatchingProps extends BaseExerciseProps {
+  pairs: Array<{
+    text1: string;
+    text2: string;
   }>;
 }
 

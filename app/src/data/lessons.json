@@ -41,7 +41,7 @@
       },
       {
         "id": 3,
-        "type": "matching-pairs",
+        "type": "audio-text-matching",
         "question": "Match the audio with the correct meaning",
         "correctAnswer": "all-matched",
         "pairs": [
@@ -93,6 +93,30 @@
           {
             "url": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=300&h=300&fit=crop",
             "label": "morning"
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "type": "text-matching",
+        "question": "Match the Kirundi phrases with their English translations",
+        "correctAnswer": "all-matched",
+        "pairs": [
+          {
+            "text1": "Amahoro",
+            "text2": "Hello"
+          },
+          {
+            "text1": "Mwaramutse",
+            "text2": "Good morning"
+          },
+          {
+            "text1": "Mwiriwe",
+            "text2": "Good evening"
+          },
+          {
+            "text1": "Urakoze",
+            "text2": "Thank you"
           }
         ]
       }

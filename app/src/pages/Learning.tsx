@@ -5,7 +5,8 @@ import { Exercise, LearningSession } from "../types";
 import {
   MultipleChoice,
   WordChips,
-  MatchingPairs,
+  AudioTextMatching,
+  TextMatching,
   ImageChoice,
   TextInput,
   AudioChoice,
@@ -136,10 +137,12 @@ const Learning = ({
         return (
           <WordChips {...commonProps} wordChips={currentExercise.wordChips!} />
         );
-      case "matching-pairs":
+      case "audio-text-matching":
         return (
-          <MatchingPairs {...commonProps} pairs={currentExercise.pairs!} />
+          <AudioTextMatching {...commonProps} pairs={currentExercise.pairs!} />
         );
+      case "text-matching":
+        return <TextMatching {...commonProps} pairs={currentExercise.pairs!} />;
       case "image-choice":
         return (
           <ImageChoice
