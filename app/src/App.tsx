@@ -8,6 +8,7 @@ import { AuthProvider } from "./context/AuthContext";
 import { ProgressProvider } from "./context/ProgressContext";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Onboarding from "./pages/Onboarding";
 import Lessons from "./pages/Lessons";
 import LessonLearning from "./pages/LessonLearning";
 import LevelComplete from "./pages/LevelComplete";
@@ -25,6 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/onboarding" element={<Onboarding />} />
             <Route
               path="/lessons"
               element={

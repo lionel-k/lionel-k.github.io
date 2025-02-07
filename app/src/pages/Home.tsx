@@ -101,10 +101,10 @@ const Home = () => {
                 Login
               </button>
               <button
-                onClick={() => navigate("/register")}
+                onClick={() => navigate("/onboarding")}
                 className="px-4 py-2 bg-[#DAA520] text-white rounded-lg hover:bg-[#B8860B] transition-colors"
               >
-                Register
+                Get Started
               </button>
             </div>
           </div>
@@ -134,7 +134,7 @@ const Home = () => {
             </p>
             <div className="flex justify-center">
               <button
-                onClick={() => navigate("/register")}
+                onClick={() => navigate("/onboarding")}
                 className="px-8 py-4 bg-[#DAA520] text-white rounded-lg hover:bg-[#B8860B] transition-colors flex items-center text-lg font-medium"
               >
                 Start Learning for Free <ArrowRight className="ml-2 w-5 h-5" />
@@ -225,7 +225,7 @@ const Home = () => {
                     ))}
                   </ul>
                   <button
-                    onClick={() => navigate("/register")}
+                    onClick={() => navigate("/onboarding")}
                     className={`w-full py-3 rounded-lg font-semibold transition-colors ${
                       plan.highlighted
                         ? "bg-[#DAA520] text-white hover:bg-[#B8860B]"
