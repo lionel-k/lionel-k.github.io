@@ -82,7 +82,7 @@ const Lessons = () => {
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <span className="text-sm font-medium text-gray-500">
-                      Lesson {lesson.id}
+                      {lesson.name}
                     </span>
                     <h3 className="text-xl font-bold text-gray-900 mt-1">
                       {lesson.word}

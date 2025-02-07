@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "name": "Greetings & Love",
     "word": "Ndagukunda",
     "translation": "I love you",
     "example": "Ndagukunda cane",
@@ -18,6 +19,7 @@
   },
   {
     "id": 2,
+    "name": "Basic Greetings",
     "word": "Amahoro",
     "translation": "Peace/Hello",
     "example": "Amahoro, umeze gute?",
@@ -98,6 +100,7 @@
   },
   {
     "id": 3,
+    "name": "Expressing Feelings",
     "word": "Ndagukunda",
     "translation": "I love you",
     "example": "Ndagukunda cane",
