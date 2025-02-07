@@ -24,27 +24,24 @@ jobs:
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
-            // List all open PRs
-            const { data: pullRequests } = await github.pulls.list({
+            const { data: pullRequests } = await github.rest.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open'
             });
 
             for (const pr of pullRequests) {
-              // Only Dependabot PRs
               if (pr.user.login === 'dependabot[bot]') {
-                // Ensure the PR targets main
                 if (pr.base.ref === 'main') {
+                  // Optionally re-fetch the pull to ensure mergeable_state is up to date
+                  const { data: fullPr } = await github.rest.pulls.get({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    pull_number: pr.number
+                  });
 
-                  // (Optionally) fetch fresh info for mergeable_state
-                  // mergeable_state may not always be updated in the
-                  // PR list response. Usually you'd re-fetch via:
-                  //    await github.pulls.get({ owner, repo, pull_number: pr.number })
-
-                  if (pr.mergeable_state === 'clean') {
-                    // Check if all checks passed
-                    const { data: checks } = await github.checks.listForRef({
+                  if (fullPr.mergeable_state === 'clean') {
+                    const { data: checks } = await github.rest.checks.listForRef({
                       owner: context.repo.owner,
                       repo: context.repo.repo,
                       ref: pr.head.sha
@@ -52,7 +49,7 @@ jobs:
 
                     // If all checks are successful, merge
                     if (checks.check_runs.every(check => check.conclusion === 'success')) {
-                      await github.pulls.merge({
+                      await github.rest.pulls.merge({
                         owner: context.repo.owner,
                         repo: context.repo.repo,
                         pull_number: pr.number,
