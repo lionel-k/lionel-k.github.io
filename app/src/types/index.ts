@@ -19,7 +19,8 @@ export interface Exercise {
     | "matching-pairs"
     | "image-choice"
     | "text-input"
-    | "fill-blank";
+    | "fill-blank"
+    | "audio-choice";
   question: string;
   correctAnswer: string;
   options?: string[];

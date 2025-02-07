@@ -8,6 +8,7 @@ import {
   MatchingPairs,
   ImageChoice,
   TextInput,
+  AudioChoice,
 } from "../components/exercises";
 
 interface LearningProps {
@@ -126,6 +127,10 @@ const Learning = ({
       case "multiple-choice":
         return (
           <MultipleChoice {...commonProps} options={currentExercise.options!} />
+        );
+      case "audio-choice":
+        return (
+          <AudioChoice {...commonProps} options={currentExercise.options!} />
         );
       case "word-chips":
         return (
