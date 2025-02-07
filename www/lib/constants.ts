@@ -9,22 +9,16 @@ export const LANGUAGES = [
     name: "Kirundi",
     slug: "kirundi",
     comingSoon: false,
-    discoverBooks:
-      "Discover our collection of Kirundi books, available with English and French translations.",
   },
   {
     name: "Kinyarwanda",
     slug: "kinyarwanda",
     comingSoon: true,
-    discoverBooks:
-      "Discover our collection of Kinyarwanda books, available with English and French translations.",
   },
   {
     name: "Lingala",
     slug: "lingala",
     comingSoon: true,
-    discoverBooks:
-      "Teach kids basic Lingala words with easy-to-understand books.",
   },
 ];
 
@@ -33,141 +27,101 @@ export const OTHER_LANGUAGES = [
     name: "Kirundi",
     slug: "kirundi",
     comingSoon: false,
-    discoverBooks:
-      "Discover our collection of Kirundi books, available with English and French translations.",
   },
   {
     name: "Amharic",
     slug: "amharic",
     comingSoon: true,
-    discoverBooks:
-      "Explore our collection of Amharic books with English and French translations.",
   },
   {
     name: "Bambara",
     slug: "bambara",
     comingSoon: true,
-    discoverBooks:
-      "Introduce children to Bambara with simple and easy-to-understand learning books.",
   },
   {
     name: "Ewe",
     slug: "ewe",
     comingSoon: true,
-    discoverBooks:
-      "Teach kids Ewe with beginner-friendly books focused on basic vocabulary.",
   },
   {
     name: "Haitian Creole",
     slug: "haitian-creole",
     comingSoon: true,
-    discoverBooks:
-      "Help children learn Haitian Creole with fun and easy-to-follow books.",
   },
   {
     name: "Hausa",
     slug: "hausa",
     comingSoon: true,
-    discoverBooks:
-      "Introduce kids to Hausa with simple learning books for early vocabulary building.",
   },
   {
     name: "Igbo",
     slug: "igbo",
     comingSoon: true,
-    discoverBooks:
-      "Make learning Igbo easy for kids with beginner-friendly vocabulary books.",
   },
   {
     name: "Kikuyu",
     slug: "kikuyu",
     comingSoon: true,
-    discoverBooks:
-      "Help children start learning Kikuyu with basic word books designed for kids.",
   },
   {
     name: "Kinyarwanda",
     slug: "kinyarwanda",
     comingSoon: true,
-    discoverBooks:
-      "Discover our collection of Kinyarwanda books, available with English and French translations.",
   },
   {
     name: "Lingala",
     slug: "lingala",
     comingSoon: true,
-    discoverBooks:
-      "Teach kids basic Lingala words with easy-to-understand books.",
   },
   {
     name: "Luganda",
     slug: "luganda",
     comingSoon: true,
-    discoverBooks:
-      "Introduce kids to Luganda with simple and fun learning books.",
   },
   {
     name: "Malagasy",
     slug: "malagasy",
     comingSoon: true,
-    discoverBooks:
-      "Help children learn basic Malagasy words with beginner-friendly books.",
   },
   {
     name: "Oromo",
     slug: "oromo",
     comingSoon: true,
-    discoverBooks:
-      "Teach kids Oromo with simple books focused on essential vocabulary.",
   },
   {
     name: "Shona",
     slug: "shona",
     comingSoon: true,
-    discoverBooks:
-      "Introduce children to Shona with easy-to-follow vocabulary books.",
   },
   {
     name: "Somali",
     slug: "somali",
     comingSoon: true,
-    discoverBooks:
-      "Make learning Somali fun and easy for kids with beginner-friendly books.",
   },
   {
     name: "Swahili",
     slug: "swahili",
     comingSoon: true,
-    discoverBooks:
-      "Help kids learn Swahili with simple and engaging learning books.",
   },
   {
     name: "Twi",
     slug: "twi",
     comingSoon: true,
-    discoverBooks:
-      "Introduce children to Twi with beginner-friendly vocabulary books.",
   },
   {
     name: "Wolof",
     slug: "wolof",
     comingSoon: true,
-    discoverBooks:
-      "Teach kids Wolof with simple books focused on essential words.",
   },
   {
     name: "Yoruba",
     slug: "yoruba",
     comingSoon: true,
-    discoverBooks:
-      "Help children learn Yoruba with easy-to-understand word books.",
   },
   {
     name: "Zulu",
     slug: "zulu",
     comingSoon: true,
-    discoverBooks:
-      "Make learning Zulu simple for kids with beginner vocabulary books.",
   },
 ];
 
