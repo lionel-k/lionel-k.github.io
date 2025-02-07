@@ -49,11 +49,13 @@ export const MatchingPairs = ({
         );
 
         if (isMatch) {
-          const newMatched = new Set([...matchedPairs, first, second]);
-          setMatchedPairs(newMatched);
-          if (newMatched.size === pairs.length * 2) {
-            onAnswer("all-matched");
-          }
+          setMatchedPairs((prevMatched) => {
+            const newMatched = new Set([...prevMatched, first, second]);
+            if (newMatched.size === pairs.length * 2) {
+              setTimeout(() => onAnswer("all-matched"), 0);
+            }
+            return newMatched;
+          });
           return [];
         }
 
