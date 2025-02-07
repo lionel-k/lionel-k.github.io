@@ -167,7 +167,7 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
           <FillBlank
             {...commonProps}
             sentence={currentExercise.sentence}
-            englishText={currentExercise.englishText}
+            sourceText={currentExercise.sourceText}
             type="fill-blank-text"
           />
         );

@@ -25,7 +25,7 @@ export interface Exercise {
   audioUrl?: string;
   imageUrl?: string;
   sentence?: string;
-  englishText?: string;
+  sourceText?: string;
   imageOptions?: Array<{ url: string; label: string }>;
   pairs?: Array<
     | {

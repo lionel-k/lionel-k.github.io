@@ -5,7 +5,7 @@ import { EXERCISE_TITLES } from "../../config/exercises";
 
 interface FillBlankProps extends BaseExerciseProps {
   sentence?: string;
-  englishText?: string;
+  sourceText?: string;
   type: "fill-blank-audio" | "fill-blank-text";
 }
 
@@ -14,7 +14,7 @@ export const FillBlank = ({
   isCompleted,
   onAnswer,
   sentence = "",
-  englishText,
+  sourceText,
   type,
 }: FillBlankProps) => {
   const [answer, setAnswer] = useState("");
@@ -55,10 +55,10 @@ export const FillBlank = ({
         {EXERCISE_TITLES[type]}
       </h3>
 
-      {/* English Text or Audio Controls */}
+      {/* Source Text or Audio Controls */}
       {type === "fill-blank-text" ? (
         <div className="bg-white rounded-xl shadow-lg p-6">
-          <p className="text-xl text-center text-gray-700">{englishText}</p>
+          <p className="text-xl text-center text-gray-700">{sourceText}</p>
         </div>
       ) : (
         <div className="flex justify-center gap-4">
