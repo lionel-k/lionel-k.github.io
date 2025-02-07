@@ -221,11 +221,9 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
           {/* Word Section */}
           {lesson.name && (
             <div className="bg-white rounded-2xl shadow-lg p-8 mb-6">
-              {lesson.name && (
-                <p className="text-xl text-gray-600 text-center mb-6">
-                  {lesson.name}
-                </p>
-              )}
+              <p className="text-xl text-gray-600 text-center mb-6">
+                {lesson.name}
+              </p>
             </div>
           )}
 
