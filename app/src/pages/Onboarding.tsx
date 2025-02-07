@@ -5,7 +5,6 @@ import {
   GraduationCap,
   Clock,
   BookOpen,
-  User,
   ArrowRight,
   ArrowLeft,
 } from "lucide-react";
