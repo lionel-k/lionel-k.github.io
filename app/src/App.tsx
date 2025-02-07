@@ -24,7 +24,7 @@ function App() {
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route
-              path="/"
+              path="/lessons"
               element={
                 <PrivateRoute>
                   <Lessons />
