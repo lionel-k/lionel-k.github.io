@@ -104,7 +104,7 @@ const Login = () => {
           <div className="text-center text-sm text-gray-600">
             Don't have an account?{" "}
             <button
-              onClick={() => navigate("/register")}
+              onClick={() => navigate("/onboarding")}
               className="font-medium text-[#DAA520] hover:text-[#B8860B] transition-colors"
             >
               Register now

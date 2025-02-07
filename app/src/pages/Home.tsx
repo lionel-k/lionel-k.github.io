@@ -6,7 +6,6 @@ import {
   Star,
   CheckCircle,
   ArrowRight,
-  Sparkles,
 } from "lucide-react";
 
 const Home = () => {
