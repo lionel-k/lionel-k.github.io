@@ -20,6 +20,11 @@ export const FillBlank = ({
   const [answer, setAnswer] = useState("");
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
+  // Reset input when exercise changes (either sentence or type changes)
+  useEffect(() => {
+    setAnswer("");
+  }, [sentence, type]);
+
   useEffect(() => {
     if (type === "fill-blank-audio" && audioUrl) {
       const newAudio = new Audio(audioUrl);
@@ -74,6 +79,7 @@ export const FillBlank = ({
           <div className="relative">
             <div className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gray-300" />
             <input
+              key={`${type}-${sentence}`}
               type="text"
               value={answer}
               onChange={(e) => handleChange(e.target.value)}
