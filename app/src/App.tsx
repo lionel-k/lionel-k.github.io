@@ -8,11 +8,12 @@ import { AuthProvider } from "./context/AuthContext";
 import { ProgressProvider } from "./context/ProgressContext";
 import Login from "./pages/Login";
 import Lessons from "./pages/Lessons";
-import Learning from "./pages/Learning";
+import LessonLearning from "./pages/LessonLearning";
 import LevelComplete from "./pages/LevelComplete";
 import Leaderboard from "./pages/Leaderboard";
 import Profile from "./pages/Profile";
 import Mistakes from "./pages/Mistakes";
+import MistakesPractice from "./pages/MistakesPractice";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
               path="/lesson/:lessonId"
               element={
                 <PrivateRoute>
-                  <Learning />
+                  <LessonLearning />
                 </PrivateRoute>
               }
             />
@@ -59,6 +60,14 @@ function App() {
               element={
                 <PrivateRoute>
                   <Mistakes />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/practice/mistakes"
+              element={
+                <PrivateRoute>
+                  <MistakesPractice />
                 </PrivateRoute>
               }
             />

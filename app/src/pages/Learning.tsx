@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { useProgress } from "../context/ProgressContext";
+import { useNavigate } from "react-router-dom";
 import { ChevronRight, Volume2, X, CheckCircle, XCircle } from "lucide-react";
-import lessons from "../data/lessons.json";
-import { Lesson, Exercise } from "../types";
+import { Exercise, LearningSession } from "../types";
 import {
   MultipleChoice,
   WordChips,
@@ -12,59 +10,58 @@ import {
   TextInput,
 } from "../components/exercises";
 
+interface LearningProps {
+  session: LearningSession;
+  onExit?: () => void;
+  backPath?: string;
+}
+
 interface CurrentProgress {
-  lessonId: string;
+  sessionId: string | number;
   exerciseIndex: number;
 }
 
-const Learning = () => {
-  const { lessonId } = useParams();
+const Learning = ({
+  session,
+  onExit,
+  backPath = "/lessons",
+}: LearningProps) => {
   const navigate = useNavigate();
-  const { completeExercise, completeLesson } = useProgress();
+
+  if (!session) {
+    return null;
+  }
+
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(() => {
-    const saved = localStorage.getItem("currentProgress");
-    if (saved) {
-      const progress: CurrentProgress = JSON.parse(saved);
-      if (progress.lessonId === lessonId) {
-        return progress.exerciseIndex;
+    try {
+      const saved = localStorage.getItem(`progress_${session.id}`);
+      if (saved) {
+        const progress: CurrentProgress = JSON.parse(saved);
+        if (progress.sessionId === session.id) {
+          return progress.exerciseIndex;
+        }
       }
+    } catch (error) {
+      console.error("Error reading progress from localStorage:", error);
     }
     return 0;
   });
 
   useEffect(() => {
     const progress: CurrentProgress = {
-      lessonId: lessonId!,
+      sessionId: session.id,
       exerciseIndex: currentExerciseIndex,
     };
-    localStorage.setItem("currentProgress", JSON.stringify(progress));
-  }, [currentExerciseIndex, lessonId]);
-
-  useEffect(() => {
-    const saved = localStorage.getItem("currentProgress");
-    if (saved) {
-      const progress: CurrentProgress = JSON.parse(saved);
-      if (progress.lessonId !== lessonId && progress.exerciseIndex > 0) {
-        const confirmed = window.confirm(
-          "You have progress in another lesson. Are you sure you want to switch? Your progress will be lost."
-        );
-        if (!confirmed) {
-          navigate(`/lesson/${progress.lessonId}`);
-          return;
-        }
-        setCurrentExerciseIndex(0);
-      }
-    }
-  }, [lessonId, navigate]);
+    localStorage.setItem(`progress_${session.id}`, JSON.stringify(progress));
+  }, [currentExerciseIndex, session.id]);
 
   const [userAnswer, setUserAnswer] = useState("");
   const [showFeedback, setShowFeedback] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [exerciseCompleted, setExerciseCompleted] = useState(false);
 
-  const currentLesson = (lessons as Lesson[])[Number(lessonId) - 1];
   const currentExercise: Exercise | undefined =
-    currentLesson?.exercises[currentExerciseIndex];
+    session.exercises[currentExerciseIndex];
 
   const handleAnswer = (answer: string) => {
     setUserAnswer(answer);
@@ -78,9 +75,9 @@ const Learning = () => {
     setIsCorrect(correct);
     setShowFeedback(true);
 
-    if (correct) {
+    if (correct && currentExercise && session.onExerciseComplete) {
       setExerciseCompleted(true);
-      completeExercise(currentExercise.id.toString());
+      session.onExerciseComplete(currentExercise.id.toString());
     }
   };
 
@@ -89,31 +86,30 @@ const Learning = () => {
     setUserAnswer("");
     setExerciseCompleted(false);
 
-    if (currentExerciseIndex < currentLesson.exercises.length - 1) {
+    if (currentExerciseIndex < session.exercises.length - 1) {
       setCurrentExerciseIndex((prev) => prev + 1);
     } else {
-      completeLesson(Number(lessonId));
-      localStorage.removeItem("currentProgress");
-      navigate(`/lesson/${lessonId}/complete`);
+      localStorage.removeItem(`progress_${session.id}`);
+      session.onComplete?.();
     }
   };
 
-  const handleBackToLessons = () => {
+  const handleBack = () => {
     const confirmed = window.confirm(
-      "Are you sure you want to leave? Your progress in this lesson will be lost."
+      "Are you sure you want to leave? Your progress will be lost."
     );
     if (confirmed) {
-      localStorage.removeItem("currentProgress");
-      navigate("/lessons");
+      localStorage.removeItem(`progress_${session.id}`);
+      if (onExit) {
+        onExit();
+      } else {
+        navigate(backPath);
+      }
     }
   };
 
   const progressPercentage =
-    ((currentExerciseIndex + 1) / currentLesson.exercises.length) * 100;
-
-  if (!currentLesson) {
-    return <div>Level not found</div>;
-  }
+    ((currentExerciseIndex + 1) / session.exercises.length) * 100;
 
   const renderExercise = () => {
     if (!currentExercise) return null;
@@ -128,7 +124,6 @@ const Learning = () => {
 
     switch (currentExercise.type) {
       case "multiple-choice":
-      case "audio-choice":
         return (
           <MultipleChoice {...commonProps} options={currentExercise.options!} />
         );
@@ -147,8 +142,11 @@ const Learning = () => {
             imageOptions={currentExercise.imageOptions!}
           />
         );
-      default:
+      case "fill-blank":
+      case "text-input":
         return <TextInput {...commonProps} />;
+      default:
+        return null;
     }
   };
 
@@ -160,14 +158,14 @@ const Learning = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <button
-                onClick={handleBackToLessons}
+                onClick={handleBack}
                 className="p-2 hover:bg-white/10 rounded-lg transition-colors"
               >
                 <X className="w-6 h-6" />
               </button>
               <span className="text-sm font-medium">
                 Exercise {currentExerciseIndex + 1} of{" "}
-                {currentLesson.exercises.length}
+                {session.exercises.length}
               </span>
             </div>
             <div className="w-32 h-2 bg-white/20 rounded-full overflow-hidden">
@@ -183,32 +181,42 @@ const Learning = () => {
       <div className="py-8">
         <div className="max-w-3xl mx-auto px-4">
           {/* Word Section */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 mb-6">
-            <div className="flex items-center justify-center gap-4 mb-4">
-              <h2 className="text-4xl font-bold text-gray-900">
-                {currentLesson.word}
-              </h2>
-              {currentLesson.audioUrl && (
-                <button
-                  onClick={() => new Audio(currentLesson.audioUrl).play()}
-                  className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors"
-                >
-                  <Volume2 className="w-6 h-6 text-blue-600" />
-                </button>
+          {(session.word || session.translation || session.example) && (
+            <div className="bg-white rounded-2xl shadow-lg p-8 mb-6">
+              <div className="flex items-center justify-center gap-4 mb-4">
+                {session.word && (
+                  <h2 className="text-4xl font-bold text-gray-900">
+                    {session.word}
+                  </h2>
+                )}
+                {session.audioUrl && (
+                  <button
+                    onClick={() => new Audio(session.audioUrl!).play()}
+                    className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors"
+                  >
+                    <Volume2 className="w-6 h-6 text-blue-600" />
+                  </button>
+                )}
+              </div>
+              {session.translation && (
+                <p className="text-xl text-gray-600 text-center mb-6">
+                  {session.translation}
+                </p>
+              )}
+              {session.example && (
+                <div className="bg-blue-50 rounded-lg p-4">
+                  <p className="text-lg text-blue-900 mb-2">
+                    {session.example}
+                  </p>
+                  {session.exampleTranslation && (
+                    <p className="text-gray-600">
+                      {session.exampleTranslation}
+                    </p>
+                  )}
+                </div>
               )}
             </div>
-            <p className="text-xl text-gray-600 text-center mb-6">
-              {currentLesson.translation}
-            </p>
-            <div className="bg-blue-50 rounded-lg p-4">
-              <p className="text-lg text-blue-900 mb-2">
-                {currentLesson.example}
-              </p>
-              <p className="text-gray-600">
-                {currentLesson.exampleTranslation}
-              </p>
-            </div>
-          </div>
+          )}
 
           {/* Exercise Section */}
           {currentExercise && (

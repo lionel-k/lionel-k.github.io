@@ -10,23 +10,24 @@ export interface Lesson {
 
 export interface Exercise {
   id: number;
+  lessonId: number;
+  lessonName: string;
+  date?: string;
   type:
     | "multiple-choice"
-    | "fill-blank"
-    | "audio-choice"
     | "word-chips"
+    | "matching-pairs"
     | "image-choice"
-    | "matching-pairs";
+    | "text-input"
+    | "fill-blank";
   question: string;
   correctAnswer: string;
   options?: string[];
-  audioUrl?: string;
   wordChips?: string[];
-  imageOptions?: { url: string; label: string }[];
-  pairs?: Array<{
-    audio: string;
-    text: string;
-  }>;
+  audioUrl?: string;
+  imageUrl?: string;
+  imageOptions?: Array<{ url: string; label: string }>;
+  pairs?: Array<{ audio: string; text: string }>;
 }
 
 export interface UserProgress {
@@ -35,4 +36,18 @@ export interface UserProgress {
   exercises: {
     [key: string]: boolean;
   };
+}
+
+export interface LearningSession {
+  id: string | number;
+  title: string;
+  subtitle?: string;
+  word?: string;
+  translation?: string;
+  example?: string;
+  exampleTranslation?: string;
+  audioUrl?: string;
+  exercises: Exercise[];
+  onComplete?: () => void;
+  onExerciseComplete?: (exerciseId: string) => void;
 }
