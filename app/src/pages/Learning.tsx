@@ -19,14 +19,6 @@ const Learning = () => {
   const [selectedPairs, setSelectedPairs] = useState<string[]>([]);
   const [matchedPairs, setMatchedPairs] = useState<Set<string>>(new Set());
   const [exerciseCompleted, setExerciseCompleted] = useState(false);
-
-  // const levelLessons = lessons;
-
-  // .filter(
-  //   (lesson) => lesson.id === Number(lessonId)
-  // );
-
-  // const currentLesson: Lesson = levelLessons[currentLessonIndex];
   const currentLesson: Lesson = lessons[Number(lessonId) - 1];
   const currentExercise: Exercise | undefined =
     currentLesson?.exercises[currentExerciseIndex];
