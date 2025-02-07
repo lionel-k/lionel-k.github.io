@@ -5,24 +5,28 @@ import { EXERCISE_TITLES } from "../../config/exercises";
 
 interface FillBlankProps extends BaseExerciseProps {
   sentence?: string;
+  englishText?: string;
+  type: "fill-blank-audio" | "fill-blank-text";
 }
 
 export const FillBlank = ({
   audioUrl,
   isCompleted,
   onAnswer,
-  sentence = "A _____ sajtot eszik.",
+  sentence = "",
+  englishText,
+  type,
 }: FillBlankProps) => {
   const [answer, setAnswer] = useState("");
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    if (audioUrl) {
+    if (type === "fill-blank-audio" && audioUrl) {
       const newAudio = new Audio(audioUrl);
       setAudio(newAudio);
       newAudio.play();
     }
-  }, [audioUrl]);
+  }, [audioUrl, type]);
 
   const handleChange = (value: string) => {
     if (isCompleted) return;
@@ -41,19 +45,27 @@ export const FillBlank = ({
 
   return (
     <div className="space-y-8">
+      {/* Title */}
       <h3 className="text-2xl font-semibold text-gray-900">
-        {EXERCISE_TITLES["fill-blank"]}
+        {EXERCISE_TITLES[type]}
       </h3>
 
-      <div className="flex justify-center gap-4">
-        <button
-          onClick={playAudio}
-          disabled={isCompleted || !audioUrl}
-          className="p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
-        >
-          <Volume2 className="w-8 h-8 text-blue-500" />
-        </button>
-      </div>
+      {/* English Text or Audio Controls */}
+      {type === "fill-blank-text" ? (
+        <div className="bg-white rounded-xl shadow-lg p-6">
+          <p className="text-xl text-center text-gray-700">{englishText}</p>
+        </div>
+      ) : (
+        <div className="flex justify-center gap-4">
+          <button
+            onClick={playAudio}
+            disabled={isCompleted || !audioUrl}
+            className="p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+          >
+            <Volume2 className="w-8 h-8 text-blue-500" />
+          </button>
+        </div>
+      )}
 
       {/* Input Field */}
       <div className="bg-white rounded-xl shadow-lg p-6">

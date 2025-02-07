@@ -4,11 +4,18 @@
     "name": "Greetings & Love",
     "exercises": [
       {
-        "id": 2,
-        "type": "fill-blank",
+        "id": 1,
+        "type": "fill-blank-audio",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
         "correctAnswer": "Amahoro",
         "sentence": "_____ meza."
+      },
+      {
+        "id": 2,
+        "type": "fill-blank-text",
+        "correctAnswer": "Amahoro",
+        "sentence": "_____ meza.",
+        "englishText": "The tourist speaks English."
       }
     ]
   },
@@ -24,7 +31,7 @@
       },
       {
         "id": 2,
-        "type": "fill-blank",
+        "type": "fill-blank-audio",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
         "correctAnswer": "Amahoro",
         "sentence": "_____ meza."

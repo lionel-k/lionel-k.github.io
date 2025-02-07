@@ -154,9 +154,22 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
             imageOptions={currentExercise.imageOptions!}
           />
         );
-      case "fill-blank":
+      case "fill-blank-audio":
         return (
-          <FillBlank {...commonProps} sentence={currentExercise.sentence} />
+          <FillBlank
+            {...commonProps}
+            sentence={currentExercise.sentence}
+            type="fill-blank-audio"
+          />
+        );
+      case "fill-blank-text":
+        return (
+          <FillBlank
+            {...commonProps}
+            sentence={currentExercise.sentence}
+            englishText={currentExercise.englishText}
+            type="fill-blank-text"
+          />
         );
       case "text-input":
         return <TextInput {...commonProps} />;

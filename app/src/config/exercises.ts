@@ -4,7 +4,8 @@ type ExerciseType = Exercise["type"];
 
 export const EXERCISE_TITLES: Record<ExerciseType, string> = {
   "audio-text-matching": "Tap to match the pairs",
-  "fill-blank": "Type the missing word",
+  "fill-blank-audio": "Type the missing word",
+  "fill-blank-text": "Complete the translation",
   "multiple-choice": "Select the correct translation",
   "word-chips": "Construct the sentence using the word chips",
   "text-matching": "Match the phrases with their English translations",

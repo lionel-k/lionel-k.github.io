@@ -16,7 +16,8 @@ export interface Exercise {
     | "text-matching"
     | "image-choice"
     | "text-input"
-    | "fill-blank"
+    | "fill-blank-audio"
+    | "fill-blank-text"
     | "audio-choice";
   correctAnswer: string;
   options?: string[];
@@ -24,6 +25,7 @@ export interface Exercise {
   audioUrl?: string;
   imageUrl?: string;
   sentence?: string;
+  englishText?: string;
   imageOptions?: Array<{ url: string; label: string }>;
   pairs?: Array<
     | {
