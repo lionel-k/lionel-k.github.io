@@ -28,6 +28,14 @@ function App() {
               }
             />
             <Route
+              path="/lessons"
+              element={
+                <PrivateRoute>
+                  <Lessons />
+                </PrivateRoute>
+              }
+            />
+            <Route
               path="/lesson/:lessonId"
               element={
                 <PrivateRoute>
@@ -40,6 +48,30 @@ function App() {
               element={
                 <PrivateRoute>
                   <LevelComplete />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/leaderboard"
+              element={
+                <PrivateRoute>
+                  <Lessons />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/mistakes"
+              element={
+                <PrivateRoute>
+                  <Lessons />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="/profile"
+              element={
+                <PrivateRoute>
+                  <Lessons />
                 </PrivateRoute>
               }
             />
