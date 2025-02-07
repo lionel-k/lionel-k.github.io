@@ -1,18 +1,24 @@
 {
   "id": "mistakes",
-  "word": "Practice Mistakes",
-  "translation": "Review and improve",
   "exercises": [
     {
       "id": 1,
       "lessonId": 1,
       "lessonName": "Greetings",
       "date": "2024-03-15T10:30:00Z",
-      "type": "word-chips",
-      "question": "Translate 'Good morning' to Kirundi",
-      "correctAnswer": "Mwaramutse neza",
-      "wordChips": ["Mwaramutse", "neza", "mwese", "kare"],
-      "audioUrl": "/audio/good-morning.mp3"
+      "type": "audio-text-matching",
+      "question": "Match the audio with the correct meaning",
+      "correctAnswer": "all-matched",
+      "pairs": [
+        {
+          "audio": "/audio/morning.mp3",
+          "text": "Mwaramutse"
+        },
+        {
+          "audio": "/audio/evening.mp3",
+          "text": "Kare"
+        }
+      ]
     },
     {
       "id": 2,
