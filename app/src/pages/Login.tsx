@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
-import { Globe2 } from "lucide-react";
+import { GraduationCap } from "lucide-react";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -11,22 +11,22 @@ const Login = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    login(email, password);
+    login();
     navigate("/lessons");
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 to-blue-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-8">
         <div className="flex flex-col items-center mb-8">
-          <div className="bg-blue-100 p-3 rounded-full mb-4">
-            <Globe2 className="w-8 h-8 text-blue-600" />
+          <div className="bg-[#DAA520]/10 p-3 rounded-full mb-4">
+            <GraduationCap className="w-8 h-8 text-[#DAA520]" />
           </div>
           <h1 className="text-3xl font-bold text-gray-900 text-center">
-            Lingu.Africa
+            Lingu Africa
           </h1>
           <p className="text-gray-600 mt-2 text-center">
-            Commencez votre parcours d'apprentissage
+            Start your learning journey
           </p>
         </div>
 
@@ -43,8 +43,7 @@ const Login = () => {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              // required
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#DAA520] focus:border-[#DAA520] transition-colors"
             />
           </div>
 
@@ -53,24 +52,59 @@ const Login = () => {
               htmlFor="password"
               className="block text-sm font-medium text-gray-700"
             >
-              Mot de passe
+              Password
             </label>
             <input
               type="password"
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              // required
+              className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-[#DAA520] focus:border-[#DAA520] transition-colors"
             />
+          </div>
+
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <input
+                id="remember-me"
+                name="remember-me"
+                type="checkbox"
+                className="h-4 w-4 text-[#DAA520] focus:ring-[#DAA520] border-gray-300 rounded"
+              />
+              <label
+                htmlFor="remember-me"
+                className="ml-2 block text-sm text-gray-700"
+              >
+                Remember me
+              </label>
+            </div>
+
+            <div className="text-sm">
+              <a
+                href="#"
+                className="font-medium text-[#DAA520] hover:text-[#B8860B]"
+              >
+                Forgot your password?
+              </a>
+            </div>
           </div>
 
           <button
             type="submit"
-            className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+            className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-[#DAA520] hover:bg-[#B8860B] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#DAA520] transition-colors"
           >
-            Se Connecter
+            Sign in
           </button>
+
+          <div className="text-center text-sm text-gray-600">
+            Don't have an account?{" "}
+            <button
+              onClick={() => navigate("/register")}
+              className="font-medium text-[#DAA520] hover:text-[#B8860B] transition-colors"
+            >
+              Register now
+            </button>
+          </div>
         </form>
       </div>
     </div>
