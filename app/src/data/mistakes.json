@@ -1,37 +1,46 @@
 {
-  "mistakes": [
+  "id": "mistakes",
+  "word": "Practice Mistakes",
+  "translation": "Review and improve",
+  "exercises": [
     {
       "id": 1,
       "lessonId": 1,
-      "exerciseId": 2,
+      "date": "2024-03-15T10:30:00Z",
       "type": "word-chips",
       "question": "Translate 'Good morning' to Kirundi",
       "correctAnswer": "Mwaramutse neza",
-      "userAnswer": "neza Mwaramutse",
-      "date": "2024-03-15T10:30:00Z",
+      "wordChips": ["Mwaramutse", "neza", "mwese", "kare"],
       "audioUrl": "/audio/good-morning.mp3",
-      "wordChips": ["Mwaramutse", "neza", "mwese", "kare"]
+      "context": {
+        "lesson": "Greetings",
+        "originalAnswer": "neza Mwaramutse"
+      }
     },
     {
       "id": 2,
       "lessonId": 2,
-      "exerciseId": 1,
+      "date": "2024-03-16T14:20:00Z",
       "type": "multiple-choice",
       "question": "What does 'Amakuru' mean?",
       "correctAnswer": "How are you?",
-      "userAnswer": "Good morning",
-      "date": "2024-03-16T14:20:00Z",
-      "options": ["How are you?", "Good morning", "Good evening", "Goodbye"]
+      "options": ["How are you?", "Good morning", "Good evening", "Goodbye"],
+      "context": {
+        "lesson": "Basic Phrases",
+        "originalAnswer": "Good morning"
+      }
     },
     {
       "id": 3,
       "lessonId": 3,
-      "exerciseId": 4,
+      "date": "2024-03-17T09:15:00Z",
       "type": "fill-blank",
       "question": "Complete the sentence: '___ ni mwiza' (The day is good)",
       "correctAnswer": "Umunsi",
-      "userAnswer": "Umusi",
-      "date": "2024-03-17T09:15:00Z"
+      "context": {
+        "lesson": "Common Phrases",
+        "originalAnswer": "Umusi"
+      }
     }
   ]
 }
