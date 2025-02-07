@@ -41,12 +41,10 @@ export const FillBlank = ({
 
   return (
     <div className="space-y-8">
-      {/* Title */}
       <h3 className="text-2xl font-semibold text-gray-900">
         {EXERCISE_TITLES["fill-blank"]}
       </h3>
 
-      {/* Audio Controls */}
       <div className="flex justify-center gap-4">
         <button
           onClick={playAudio}
