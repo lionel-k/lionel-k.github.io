@@ -27,7 +27,9 @@ const Lessons = () => {
                   ? "bg-gray-100"
                   : "bg-white cursor-pointer"
               }`}
-              onClick={() => navigate(`/lesson/${lesson.id}`)}
+              onClick={() =>
+                !isLessonLocked(lesson.id) && navigate(`/lesson/${lesson.id}`)
+              }
             >
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
