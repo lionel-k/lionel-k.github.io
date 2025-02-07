@@ -9,6 +9,7 @@ import {
   ImageChoice,
   TextInput,
   AudioChoice,
+  FillBlank,
 } from "../components/exercises";
 import {
   LearningHeader,
@@ -154,6 +155,9 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
           />
         );
       case "fill-blank":
+        return (
+          <FillBlank {...commonProps} sentence={currentExercise.sentence} />
+        );
       case "text-input":
         return <TextInput {...commonProps} />;
       default:

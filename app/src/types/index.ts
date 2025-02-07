@@ -23,6 +23,7 @@ export interface Exercise {
   wordChips?: string[];
   audioUrl?: string;
   imageUrl?: string;
+  sentence?: string;
   imageOptions?: Array<{ url: string; label: string }>;
   pairs?: Array<
     | {

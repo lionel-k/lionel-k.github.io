@@ -5,4 +5,5 @@ export * from "./TextMatching";
 export * from "./ImageChoice";
 export * from "./TextInput";
 export * from "./AudioChoice";
+export * from "./FillBlank";
 export * from "./types";
