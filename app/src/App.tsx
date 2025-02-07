@@ -11,6 +11,7 @@ import Lessons from "./pages/Lessons";
 import Learning from "./pages/Learning";
 import LevelComplete from "./pages/LevelComplete";
 import Leaderboard from "./pages/Leaderboard";
+import Profile from "./pages/Profile";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
@@ -72,7 +73,7 @@ function App() {
               path="/profile"
               element={
                 <PrivateRoute>
-                  <Lessons />
+                  <Profile />
                 </PrivateRoute>
               }
             />
