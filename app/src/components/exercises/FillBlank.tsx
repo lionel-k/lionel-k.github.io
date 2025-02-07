@@ -48,7 +48,7 @@ export const FillBlank = ({
           onChange={(e) => handleChange(e.target.value)}
           disabled={isCompleted}
           className="w-40 p-3 border-2 border-gray-200 rounded-lg focus:border-[#DAA520] focus:ring-2 focus:ring-[#DAA520]/20 outline-none disabled:opacity-50 disabled:cursor-not-allowed"
-          placeholder="Type the missing word..."
+          placeholder=""
         />
         <span className="text-lg">{after}</span>
       </div>
