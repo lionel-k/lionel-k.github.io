@@ -20,7 +20,12 @@ const Login = () => {
       <div className="bg-white rounded-2xl shadow-xl w-full max-w-md p-8">
         <div className="flex flex-col items-center mb-8">
           <div className="bg-[#DAA520]/10 p-3 rounded-full mb-4">
-            <GraduationCap className="w-8 h-8 text-[#DAA520]" />
+            <button
+              onClick={() => navigate("/")}
+              className="focus:outline-none"
+            >
+              <GraduationCap className="w-8 h-8 text-[#DAA520]" />
+            </button>
           </div>
           <h1 className="text-3xl font-bold text-gray-900 text-center">
             Lingu Africa
