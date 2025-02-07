@@ -11,7 +11,13 @@ export interface Lesson {
 
 export interface Exercise {
   id: number;
-  type: 'multiple-choice' | 'fill-blank' | 'audio-choice' | 'word-chips' | 'image-choice' | 'matching-pairs';
+  type:
+    | "multiple-choice"
+    | "fill-blank"
+    | "audio-choice"
+    | "word-chips"
+    | "image-choice"
+    | "matching-pairs";
   question: string;
   correctAnswer: string;
   options?: string[];
@@ -25,8 +31,8 @@ export interface Exercise {
 }
 
 export interface UserProgress {
-  completedLevels: number[];
-  currentLevel: number;
+  completedLessons: number[];
+  currentLesson: number;
   exercises: {
     [key: string]: boolean;
   };

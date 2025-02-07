@@ -8,8 +8,8 @@ const Lessons = () => {
   const { progress } = useProgress();
 
   const isLessonCompleted = (level: number) =>
-    progress.completedLevels.includes(level);
-  const isLessonLocked = (level: number) => level > progress.currentLevel;
+    progress.completedLessons.includes(level);
+  const isLessonLocked = (level: number) => level > progress.currentLesson;
 
   return (
     <div className="min-h-screen bg-gray-50">

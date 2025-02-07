@@ -13,8 +13,8 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [progress, setProgress] = useState<UserProgress>({
-    completedLevels: [],
-    currentLevel: 1,
+    completedLessons: [],
+    currentLesson: 1,
     exercises: {},
   });
 
@@ -29,8 +29,8 @@ export const ProgressProvider: React.FC<{ children: React.ReactNode }> = ({
     setProgress((prev) => {
       const newProgress = {
         ...prev,
-        completedLevels: [...new Set([...prev.completedLevels, lessonId])],
-        currentLevel: lessonId + 1,
+        completedLessons: [...new Set([...prev.completedLessons, lessonId])],
+        currentLesson: lessonId + 1,
       };
       localStorage.setItem("progress", JSON.stringify(newProgress));
       return newProgress;
