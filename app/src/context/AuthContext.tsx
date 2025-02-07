@@ -2,33 +2,26 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 
 interface AuthContextType {
   isAuthenticated: boolean;
-  login: (email: string, password: string) => void;
+  login: () => void;
   logout: () => void;
 }
 
-const AuthContext = createContext<AuthContextType | null>(null);
+const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+export function AuthProvider({ children }: { children: React.ReactNode }) {
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    // Initialize auth state from localStorage
+    return localStorage.getItem("auth") === "true";
+  });
 
-  useEffect(() => {
-    const auth = localStorage.getItem("auth");
-    if (auth) {
-      setIsAuthenticated(true);
-    }
-  }, []);
-
-  const login = (email: string, password: string) => {
-    // Fake authentication
-    localStorage.setItem("auth", "true");
+  const login = () => {
     setIsAuthenticated(true);
+    localStorage.setItem("auth", "true");
   };
 
   const logout = () => {
-    localStorage.removeItem("auth");
     setIsAuthenticated(false);
+    localStorage.removeItem("auth");
   };
 
   return (
@@ -36,12 +29,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
       {children}
     </AuthContext.Provider>
   );
-};
+}
 
-export const useAuth = () => {
+export function useAuth() {
   const context = useContext(AuthContext);
-  if (!context) {
+  if (context === undefined) {
     throw new Error("useAuth must be used within an AuthProvider");
   }
   return context;
-};
+}
