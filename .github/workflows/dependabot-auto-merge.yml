@@ -1,5 +1,8 @@
 name: Dependabot auto-merge
-on: pull_request
+on:
+  pull_request:
+  schedule:
+    - cron: "0/5 * * * *" # Runs every 5 minutes
 
 permissions:
   contents: write
@@ -8,31 +11,33 @@ permissions:
 jobs:
   dependabot:
     runs-on: ubuntu-latest
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'lionel-k/lingu_africa'
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@d7267f607e9d3fb96fc2fbe83e0af444713e90b7
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-
-      - name: Wait for CI checks to pass
+      - name: List open Dependabot PRs
         uses: actions/github-script@v6
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
-            const { data: checks } = await github.checks.listForRef({
+            const { data: pullRequests } = await github.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              ref: context.payload.pull_request.head.sha
+              state: 'open'
             });
-            if (checks.check_runs.some(check => check.conclusion !== 'success')) {
-              throw new Error('Not all checks are successful');
-            }
 
-      - name: Enable auto-merge for Dependabot PRs
-        if: github.event.pull_request.user.login == 'dependabot[bot]' && github.event.pull_request.mergeable_state == 'clean'
-        run: gh pr merge --auto --merge "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+            for (const pr of pullRequests) {
+              if (pr.user.login === 'dependabot[bot]' && pr.mergeable_state === 'clean') {
+                const { data: checks } = await github.checks.listForRef({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  ref: pr.head.sha
+                });
+
+                if (checks.check_runs.every(check => check.conclusion === 'success')) {
+                  await github.pulls.merge({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    pull_number: pr.number,
+                    merge_method: 'merge'
+                  });
+                }
+              }
+            }
