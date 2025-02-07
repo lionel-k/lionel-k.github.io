@@ -10,6 +10,7 @@ import Login from "./pages/Login";
 import Lessons from "./pages/Lessons";
 import Learning from "./pages/Learning";
 import LevelComplete from "./pages/LevelComplete";
+import Leaderboard from "./pages/Leaderboard";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
               }
             />
             <Route
-              path="/"
+              path="/lessons"
               element={
                 <PrivateRoute>
                   <Lessons />
@@ -55,7 +56,7 @@ function App() {
               path="/leaderboard"
               element={
                 <PrivateRoute>
-                  <Lessons />
+                  <Leaderboard />
                 </PrivateRoute>
               }
             />
