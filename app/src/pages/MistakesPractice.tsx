@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { LearningLesson } from "../types";
+import { Exercise, LearningLesson } from "../types";
 import mistakesData from "../data/mistakes.json";
 import Learning from "./Learning";
 
@@ -10,7 +10,7 @@ const MistakesPractice = () => {
     id: "mistakes",
     title: "Practice Mistakes",
     subtitle: "Review and improve your learning",
-    exercises: mistakesData.exercises,
+    exercises: mistakesData.exercises as Exercise[],
     onComplete: () => {
       navigate("/mistakes");
     },
