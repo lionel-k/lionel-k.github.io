@@ -132,18 +132,12 @@ const Home = () => {
               Begin with Kirundi, the heart of Burundian culture, taught by
               native speakers.
             </p>
-            <div className="flex justify-center space-x-4">
+            <div className="flex justify-center">
               <button
                 onClick={() => navigate("/register")}
-                className="px-8 py-4 bg-[#DAA520] text-white rounded-lg hover:bg-[#B8860B] transition-colors flex items-center"
+                className="px-8 py-4 bg-[#DAA520] text-white rounded-lg hover:bg-[#B8860B] transition-colors flex items-center text-lg font-medium"
               >
-                Start Learning Kirundi <ArrowRight className="ml-2 w-5 h-5" />
-              </button>
-              <button
-                onClick={() => navigate("/lessons")}
-                className="px-8 py-4 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-colors"
-              >
-                Try Free Lesson
+                Start Learning for Free <ArrowRight className="ml-2 w-5 h-5" />
               </button>
             </div>
           </div>
