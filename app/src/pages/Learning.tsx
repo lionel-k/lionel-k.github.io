@@ -10,7 +10,6 @@ const Learning = () => {
   const navigate = useNavigate();
   const { completeExercise, completeLesson } = useProgress();
   const [activeAudio, setActiveAudio] = useState<HTMLAudioElement | null>(null);
-  const [currentLessonIndex, setCurrentLessonIndex] = useState(0);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState("");
   const [selectedChips, setSelectedChips] = useState<string[]>([]);
@@ -21,13 +20,14 @@ const Learning = () => {
   const [matchedPairs, setMatchedPairs] = useState<Set<string>>(new Set());
   const [exerciseCompleted, setExerciseCompleted] = useState(false);
 
-  const levelLessons = lessons;
+  // const levelLessons = lessons;
 
   // .filter(
   //   (lesson) => lesson.id === Number(lessonId)
   // );
 
-  const currentLesson: Lesson = levelLessons[currentLessonIndex];
+  // const currentLesson: Lesson = levelLessons[currentLessonIndex];
+  const currentLesson: Lesson = lessons[Number(lessonId) - 1];
   const currentExercise: Exercise | undefined =
     currentLesson?.exercises[currentExerciseIndex];
 
@@ -184,9 +184,6 @@ const Learning = () => {
 
     if (currentExerciseIndex < currentLesson.exercises.length - 1) {
       setCurrentExerciseIndex((prev) => prev + 1);
-    } else if (currentLessonIndex < levelLessons.length - 1) {
-      setCurrentLessonIndex((prev) => prev + 1);
-      setCurrentExerciseIndex(0);
     } else {
       completeLesson(Number(lessonId));
       navigate(`/lesson/${lessonId}/complete`);

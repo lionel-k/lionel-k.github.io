@@ -1,6 +1,5 @@
 export interface Lesson {
   id: number;
-  level: number;
   word: string;
   translation: string;
   example: string;
