@@ -1,6 +1,31 @@
 [
   {
     "id": 1,
+    "word": "Ndagukunda",
+    "translation": "I love you",
+    "example": "Ndagukunda cane",
+    "exampleTranslation": "I love you very much",
+    "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
+    "exercises": [
+      {
+        "id": 5,
+        "type": "multiple-choice",
+        "question": "What does 'Ndagukunda' mean?",
+        "correctAnswer": "I love you",
+        "options": ["I love you", "I miss you", "I like you", "I need you"]
+      },
+      {
+        "id": 6,
+        "type": "audio-choice",
+        "question": "Listen to the word and select its meaning",
+        "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
+        "correctAnswer": "I love you",
+        "options": ["I love you", "I hate you", "I like you", "I need you"]
+      }
+    ]
+  },
+  {
+    "id": 2,
     "word": "Amahoro",
     "translation": "Peace/Hello",
     "example": "Amahoro, umeze gute?",
@@ -80,7 +105,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "word": "Ndagukunda",
     "translation": "I love you",
     "example": "Ndagukunda cane",
