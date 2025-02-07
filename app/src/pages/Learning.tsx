@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { ChevronRight, Volume2, X, CheckCircle, XCircle } from "lucide-react";
+import { ChevronRight, X, CheckCircle, XCircle } from "lucide-react";
 import { Exercise, LearningLesson } from "../types";
 import {
   MultipleChoice,
@@ -219,35 +219,12 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
       <div className="py-8">
         <div className="max-w-3xl mx-auto px-4">
           {/* Word Section */}
-          {(lesson.word || lesson.translation || lesson.example) && (
+          {lesson.name && (
             <div className="bg-white rounded-2xl shadow-lg p-8 mb-6">
-              <div className="flex items-center justify-center gap-4 mb-4">
-                {lesson.word && (
-                  <h2 className="text-4xl font-bold text-gray-900">
-                    {lesson.word}
-                  </h2>
-                )}
-                {lesson.audioUrl && (
-                  <button
-                    onClick={() => new Audio(lesson.audioUrl!).play()}
-                    className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors"
-                  >
-                    <Volume2 className="w-6 h-6 text-blue-600" />
-                  </button>
-                )}
-              </div>
-              {lesson.translation && (
+              {lesson.name && (
                 <p className="text-xl text-gray-600 text-center mb-6">
-                  {lesson.translation}
+                  {lesson.name}
                 </p>
-              )}
-              {lesson.example && (
-                <div className="bg-blue-50 rounded-lg p-4">
-                  <p className="text-lg text-blue-900 mb-2">{lesson.example}</p>
-                  {lesson.exampleTranslation && (
-                    <p className="text-gray-600">{lesson.exampleTranslation}</p>
-                  )}
-                </div>
               )}
             </div>
           )}

@@ -8,8 +8,7 @@ const MistakesPractice = () => {
 
   const learningLesson: LearningLesson = {
     id: "mistakes",
-    title: "Practice Mistakes",
-    subtitle: "Review and improve your learning",
+    name: "Practice Mistakes",
     exercises: mistakesData.exercises as Exercise[],
     onComplete: () => {
       navigate("/mistakes");

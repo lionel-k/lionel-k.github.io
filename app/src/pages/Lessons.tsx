@@ -81,11 +81,8 @@ const Lessons = () => {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <span className="text-sm font-medium text-gray-500">
-                      {lesson.name}
-                    </span>
                     <h3 className="text-xl font-bold text-gray-900 mt-1">
-                      {lesson.word}
+                      {lesson.name}
                     </h3>
                   </div>
                   <div
@@ -115,8 +112,6 @@ const Lessons = () => {
                     )}
                   </div>
                 </div>
-
-                <p className="text-gray-600 mb-4">{lesson.translation}</p>
 
                 <div className="flex items-center text-sm text-gray-500">
                   <span>{lesson.exercises.length} exercises</span>

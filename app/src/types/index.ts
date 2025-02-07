@@ -1,10 +1,6 @@
 export interface Lesson {
   id: number;
-  word: string;
-  translation: string;
-  example: string;
-  exampleTranslation: string;
-  audioUrl?: string;
+  name: string;
   exercises: Exercise[];
 }
 
@@ -51,13 +47,7 @@ export interface UserProgress {
 
 export interface LearningLesson {
   id: string | number;
-  title: string;
-  subtitle?: string;
-  word?: string;
-  translation?: string;
-  example?: string;
-  exampleTranslation?: string;
-  audioUrl?: string;
+  name: string;
   exercises: Exercise[];
   onComplete?: () => void;
   onExerciseComplete?: (exerciseId: string) => void;

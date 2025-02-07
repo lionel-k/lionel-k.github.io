@@ -17,13 +17,7 @@ const LessonLearning = () => {
 
   const learningLesson: LearningLesson = {
     id: currentLesson.id,
-    title: "Learn Kirundi",
-    subtitle: "Master the language through interactive lessons",
-    word: currentLesson.word,
-    translation: currentLesson.translation,
-    example: currentLesson.example,
-    exampleTranslation: currentLesson.exampleTranslation,
-    audioUrl: currentLesson.audioUrl,
+    name: currentLesson.name,
     exercises: currentLesson.exercises,
     onComplete: () => {
       completeLesson(Number(lessonId));
