@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useProgress } from "../context/ProgressContext";
 import lessons from "../data/lessons.json";
-import { Lesson, LearningSession } from "../types";
+import { Lesson, LearningLesson } from "../types";
 import Learning from "./Learning";
 
 const LessonLearning = () => {
@@ -15,7 +15,7 @@ const LessonLearning = () => {
     return <div>Level not found</div>;
   }
 
-  const session: LearningSession = {
+  const learningLesson: LearningLesson = {
     id: currentLesson.id,
     title: "Learn Kirundi",
     subtitle: "Master the language through interactive lessons",
@@ -34,7 +34,7 @@ const LessonLearning = () => {
     },
   };
 
-  return <Learning session={session} />;
+  return <Learning lesson={learningLesson} />;
 };
 
 export default LessonLearning;

@@ -49,7 +49,7 @@ export interface UserProgress {
   };
 }
 
-export interface LearningSession {
+export interface LearningLesson {
   id: string | number;
   title: string;
   subtitle?: string;

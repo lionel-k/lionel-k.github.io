@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight, Volume2, X, CheckCircle, XCircle } from "lucide-react";
-import { Exercise, LearningSession } from "../types";
+import { Exercise, LearningLesson } from "../types";
 import {
   MultipleChoice,
   WordChips,
@@ -23,33 +23,29 @@ import {
 } from "../components/ui/alert-dialog";
 
 interface LearningProps {
-  session: LearningSession;
+  lesson: LearningLesson;
   onExit?: () => void;
   backPath?: string;
 }
 
 interface CurrentProgress {
-  sessionId: string | number;
+  lessonId: string | number;
   exerciseIndex: number;
 }
 
-const Learning = ({
-  session,
-  onExit,
-  backPath = "/lessons",
-}: LearningProps) => {
+const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
   const navigate = useNavigate();
 
-  if (!session) {
+  if (!lesson) {
     return null;
   }
 
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(() => {
     try {
-      const saved = localStorage.getItem(`progress_${session.id}`);
+      const saved = localStorage.getItem(`progress_${lesson.id}`);
       if (saved) {
         const progress: CurrentProgress = JSON.parse(saved);
-        if (progress.sessionId === session.id) {
+        if (progress.lessonId === lesson.id) {
           return progress.exerciseIndex;
         }
       }
@@ -61,11 +57,11 @@ const Learning = ({
 
   useEffect(() => {
     const progress: CurrentProgress = {
-      sessionId: session.id,
+      lessonId: lesson.id,
       exerciseIndex: currentExerciseIndex,
     };
-    localStorage.setItem(`progress_${session.id}`, JSON.stringify(progress));
-  }, [currentExerciseIndex, session.id]);
+    localStorage.setItem(`progress_${lesson.id}`, JSON.stringify(progress));
+  }, [currentExerciseIndex, lesson.id]);
 
   const [userAnswer, setUserAnswer] = useState("");
   const [showFeedback, setShowFeedback] = useState(false);
@@ -74,7 +70,7 @@ const Learning = ({
   const [isExitDialogOpen, setIsExitDialogOpen] = useState(false);
 
   const currentExercise: Exercise | undefined =
-    session.exercises[currentExerciseIndex];
+    lesson.exercises[currentExerciseIndex];
 
   const handleAnswer = (answer: string) => {
     setUserAnswer(answer);
@@ -88,9 +84,9 @@ const Learning = ({
     setIsCorrect(correct);
     setShowFeedback(true);
 
-    if (correct && currentExercise && session.onExerciseComplete) {
+    if (correct && currentExercise && lesson.onExerciseComplete) {
       setExerciseCompleted(true);
-      session.onExerciseComplete(currentExercise.id.toString());
+      lesson.onExerciseComplete(currentExercise.id.toString());
     }
   };
 
@@ -99,11 +95,11 @@ const Learning = ({
     setUserAnswer("");
     setExerciseCompleted(false);
 
-    if (currentExerciseIndex < session.exercises.length - 1) {
+    if (currentExerciseIndex < lesson.exercises.length - 1) {
       setCurrentExerciseIndex((prev) => prev + 1);
     } else {
-      localStorage.removeItem(`progress_${session.id}`);
-      session.onComplete?.();
+      localStorage.removeItem(`progress_${lesson.id}`);
+      lesson.onComplete?.();
     }
   };
 
@@ -112,7 +108,7 @@ const Learning = ({
   };
 
   const handleExitConfirm = () => {
-    localStorage.removeItem(`progress_${session.id}`);
+    localStorage.removeItem(`progress_${lesson.id}`);
     if (onExit) {
       onExit();
     } else {
@@ -121,7 +117,7 @@ const Learning = ({
   };
 
   const progressPercentage =
-    ((currentExerciseIndex + 1) / session.exercises.length) * 100;
+    ((currentExerciseIndex + 1) / lesson.exercises.length) * 100;
 
   const renderExercise = () => {
     if (!currentExercise) return null;
@@ -207,8 +203,7 @@ const Learning = ({
                 <X className="w-6 h-6" />
               </button>
               <span className="text-sm font-medium">
-                Exercise {currentExerciseIndex + 1} of{" "}
-                {session.exercises.length}
+                Exercise {currentExerciseIndex + 1} of {lesson.exercises.length}
               </span>
             </div>
             <div className="w-32 h-2 bg-white/20 rounded-full overflow-hidden">
@@ -224,37 +219,33 @@ const Learning = ({
       <div className="py-8">
         <div className="max-w-3xl mx-auto px-4">
           {/* Word Section */}
-          {(session.word || session.translation || session.example) && (
+          {(lesson.word || lesson.translation || lesson.example) && (
             <div className="bg-white rounded-2xl shadow-lg p-8 mb-6">
               <div className="flex items-center justify-center gap-4 mb-4">
-                {session.word && (
+                {lesson.word && (
                   <h2 className="text-4xl font-bold text-gray-900">
-                    {session.word}
+                    {lesson.word}
                   </h2>
                 )}
-                {session.audioUrl && (
+                {lesson.audioUrl && (
                   <button
-                    onClick={() => new Audio(session.audioUrl!).play()}
+                    onClick={() => new Audio(lesson.audioUrl!).play()}
                     className="p-2 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors"
                   >
                     <Volume2 className="w-6 h-6 text-blue-600" />
                   </button>
                 )}
               </div>
-              {session.translation && (
+              {lesson.translation && (
                 <p className="text-xl text-gray-600 text-center mb-6">
-                  {session.translation}
+                  {lesson.translation}
                 </p>
               )}
-              {session.example && (
+              {lesson.example && (
                 <div className="bg-blue-50 rounded-lg p-4">
-                  <p className="text-lg text-blue-900 mb-2">
-                    {session.example}
-                  </p>
-                  {session.exampleTranslation && (
-                    <p className="text-gray-600">
-                      {session.exampleTranslation}
-                    </p>
+                  <p className="text-lg text-blue-900 mb-2">{lesson.example}</p>
+                  {lesson.exampleTranslation && (
+                    <p className="text-gray-600">{lesson.exampleTranslation}</p>
                   )}
                 </div>
               )}

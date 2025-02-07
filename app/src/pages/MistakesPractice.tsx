@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom";
-import { LearningSession } from "../types";
+import { LearningLesson } from "../types";
 import mistakesData from "../data/mistakes.json";
 import Learning from "./Learning";
 
 const MistakesPractice = () => {
   const navigate = useNavigate();
 
-  const session: LearningSession = {
+  const learningLesson: LearningLesson = {
     id: "mistakes",
     title: "Practice Mistakes",
     subtitle: "Review and improve your learning",
@@ -16,7 +16,7 @@ const MistakesPractice = () => {
     },
   };
 
-  return <Learning session={session} backPath="/mistakes" />;
+  return <Learning lesson={learningLesson} backPath="/mistakes" />;
 };
 
 export default MistakesPractice;
