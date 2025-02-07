@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 import {
   GraduationCap,
   Clock,
@@ -20,6 +21,7 @@ interface OnboardingData {
 
 const Onboarding = () => {
   const navigate = useNavigate();
+  const { login } = useAuth();
   const [step, setStep] = useState(1);
   const [data, setData] = useState<OnboardingData>({
     language: "kirundi",
@@ -32,9 +34,9 @@ const Onboarding = () => {
 
   const handleNext = () => {
     if (step === 4) {
-      // Handle registration
-      // TODO: Implement actual registration logic
-      navigate("/lessons");
+      // Handle registration and automatic login
+      login(); // Log the user in
+      navigate("/lessons"); // Redirect to lessons page
       return;
     }
     setStep(step + 1);
