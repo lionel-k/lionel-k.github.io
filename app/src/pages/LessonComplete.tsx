@@ -1,8 +1,7 @@
-import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Trophy } from "lucide-react";
 
-const LevelComplete = () => {
+const LessonComplete = () => {
   const navigate = useNavigate();
   const { levelId } = useParams();
 
@@ -40,4 +39,4 @@ const LevelComplete = () => {
   );
 };
 
-export default LevelComplete;
+export default LessonComplete;

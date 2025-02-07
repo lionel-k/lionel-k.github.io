@@ -11,7 +11,7 @@ import Login from "./pages/Login";
 import Onboarding from "./pages/Onboarding";
 import Lessons from "./pages/Lessons";
 import LessonLearning from "./pages/LessonLearning";
-import LevelComplete from "./pages/LevelComplete";
+import LessonComplete from "./pages/LessonComplete";
 import Leaderboard from "./pages/Leaderboard";
 import Profile from "./pages/Profile";
 import Mistakes from "./pages/Mistakes";
@@ -47,7 +47,7 @@ function App() {
               path="/lesson/:lessonId/complete"
               element={
                 <PrivateRoute>
-                  <LevelComplete />
+                  <LessonComplete />
                 </PrivateRoute>
               }
             />
