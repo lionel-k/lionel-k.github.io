@@ -1,6 +1,5 @@
 export const kirundiConfigs = {
   name: "Kirundi",
-  image: "/images/kirundi.png",
   books: [
     {
       title: "My First Picture Book in Kirundi",
