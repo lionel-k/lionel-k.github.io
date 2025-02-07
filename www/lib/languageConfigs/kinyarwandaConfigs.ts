@@ -3,7 +3,7 @@ export const kinyarwandaConfigs = {
   books: [
     {
       title: "Action Verbs in Kinyarwanda",
-      slug: "action-verbs-in-Kinyarwanda",
+      slug: "action-verbs-in-kinyarwanda",
       age: "0-6",
       pages: "28",
       price: "11.99",

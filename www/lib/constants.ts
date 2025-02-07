@@ -19,7 +19,7 @@ export const LANGUAGES = [
     slug: "kinyarwanda",
     coverImage: "/bgs/kinyarwanda-bg.png",
     amazonUrl: "#",
-    comingSoon: true,
+    comingSoon: false,
     discoverBooks:
       "Discover our collection of Kinyarwanda books, available with English and French translations.",
   },
