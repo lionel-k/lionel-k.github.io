@@ -4,6 +4,13 @@ import { useProgress } from "../context/ProgressContext";
 import { ChevronRight, Volume2, X, CheckCircle, XCircle } from "lucide-react";
 import lessons from "../data/lessons.json";
 import { Lesson, Exercise } from "../types";
+import {
+  MultipleChoice,
+  WordChips,
+  MatchingPairs,
+  ImageChoice,
+  TextInput,
+} from "../components/exercises";
 
 interface CurrentProgress {
   lessonId: string;
@@ -14,7 +21,6 @@ const Learning = () => {
   const { lessonId } = useParams();
   const navigate = useNavigate();
   const { completeExercise, completeLesson } = useProgress();
-  const [activeAudio, setActiveAudio] = useState<HTMLAudioElement | null>(null);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(() => {
     const saved = localStorage.getItem("currentProgress");
     if (saved) {
@@ -52,139 +58,23 @@ const Learning = () => {
   }, [lessonId, navigate]);
 
   const [userAnswer, setUserAnswer] = useState("");
-  const [selectedChips, setSelectedChips] = useState<string[]>([]);
   const [showFeedback, setShowFeedback] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
-  const [selectedPairs, setSelectedPairs] = useState<string[]>([]);
-  const [matchedPairs, setMatchedPairs] = useState<Set<string>>(new Set());
   const [exerciseCompleted, setExerciseCompleted] = useState(false);
 
   const currentLesson = (lessons as Lesson[])[Number(lessonId) - 1];
   const currentExercise: Exercise | undefined =
     currentLesson?.exercises[currentExerciseIndex];
 
-  useEffect(() => {
-    if (
-      (currentExercise?.type === "audio-choice" ||
-        currentExercise?.type === "word-chips" ||
-        currentExercise?.type === "image-choice") &&
-      currentExercise.audioUrl
-    ) {
-      setAudio(new Audio(currentExercise.audioUrl));
-    } else {
-      setAudio(null);
-    }
-
-    setSelectedPairs([]);
-    setMatchedPairs(new Set());
-    setExerciseCompleted(false);
-    setShowFeedback(false);
-    setUserAnswer("");
-    setSelectedChips([]);
-    setIsCorrect(false);
-
-    return () => {
-      if (audio) {
-        audio.pause();
-        audio.currentTime = 0;
-      }
-    };
-  }, [currentExercise]);
-
-  const playAudio = (audioUrl: string) => {
-    if (!exerciseCompleted) {
-      if (activeAudio) {
-        activeAudio.pause();
-        activeAudio.currentTime = 0;
-      }
-
-      const newAudio = new Audio(audioUrl);
-      newAudio.play();
-      setActiveAudio(newAudio);
-    }
-  };
-
-  const handleChipClick = (chip: string) => {
-    if (activeAudio) {
-      activeAudio.pause();
-      activeAudio.currentTime = 0;
-      setActiveAudio(null);
-    }
-
-    if (exerciseCompleted) return;
+  const handleAnswer = (answer: string) => {
+    setUserAnswer(answer);
     setShowFeedback(false);
     setIsCorrect(false);
-
-    if (!selectedChips.includes(chip)) {
-      setSelectedChips([...selectedChips, chip]);
-    }
   };
 
-  const handleRemoveChip = (index: number) => {
-    if (exerciseCompleted) return;
-    setShowFeedback(false);
-    setIsCorrect(false);
-    setSelectedChips(selectedChips.filter((_, i) => i !== index));
-  };
-
-  const handlePairClick = (value: string) => {
-    if (exerciseCompleted || matchedPairs.has(value)) return;
-
-    if (activeAudio) {
-      activeAudio.pause();
-      activeAudio.currentTime = 0;
-      setActiveAudio(null);
-    }
-
-    const audioPair = currentExercise?.pairs?.find(
-      (pair) => pair.audio === value
-    );
-    if (audioPair) {
-      playAudio(audioPair.audio);
-    }
-
-    setSelectedPairs((prev) => {
-      const newSelected = [...prev, value];
-
-      if (newSelected.length === 2) {
-        const [first, second] = newSelected;
-        const pairs = currentExercise?.pairs || [];
-
-        const isMatch = pairs.some(
-          (pair) =>
-            (pair.audio === first && pair.text === second) ||
-            (pair.audio === second && pair.text === first)
-        );
-
-        if (isMatch) {
-          setMatchedPairs(
-            (oldMatched) => new Set([...oldMatched, first, second])
-          );
-          return [];
-        }
-
-        setTimeout(() => setSelectedPairs([]), 1000);
-        return newSelected;
-      }
-
-      return newSelected;
-    });
-  };
-
-  const handleAnswer = () => {
-    let correct = false;
-    if (currentExercise?.type === "matching-pairs") {
-      correct = matchedPairs.size === (currentExercise.pairs?.length || 0) * 2;
-    } else if (currentExercise?.type === "word-chips") {
-      correct =
-        selectedChips.join(" ").toLowerCase() ===
-        currentExercise.correctAnswer.toLowerCase();
-    } else {
-      correct =
-        userAnswer.toLowerCase() ===
-        currentExercise.correctAnswer.toLowerCase();
-    }
+  const checkAnswer = () => {
+    const correct =
+      userAnswer.toLowerCase() === currentExercise?.correctAnswer.toLowerCase();
     setIsCorrect(correct);
     setShowFeedback(true);
 
@@ -197,9 +87,6 @@ const Learning = () => {
   const handleNext = () => {
     setShowFeedback(false);
     setUserAnswer("");
-    setSelectedChips([]);
-    setSelectedPairs([]);
-    setMatchedPairs(new Set());
     setExerciseCompleted(false);
 
     if (currentExerciseIndex < currentLesson.exercises.length - 1) {
@@ -209,13 +96,6 @@ const Learning = () => {
       localStorage.removeItem("currentProgress");
       navigate(`/lesson/${lessonId}/complete`);
     }
-  };
-
-  const handleImageSelect = (label: string) => {
-    if (exerciseCompleted) return;
-    setUserAnswer(label);
-    setShowFeedback(false);
-    setIsCorrect(false);
   };
 
   const handleBackToLessons = () => {
@@ -234,6 +114,43 @@ const Learning = () => {
   if (!currentLesson) {
     return <div>Level not found</div>;
   }
+
+  const renderExercise = () => {
+    if (!currentExercise) return null;
+
+    const commonProps = {
+      question: currentExercise.question,
+      correctAnswer: currentExercise.correctAnswer,
+      audioUrl: currentExercise.audioUrl,
+      isCompleted: exerciseCompleted,
+      onAnswer: handleAnswer,
+    };
+
+    switch (currentExercise.type) {
+      case "multiple-choice":
+      case "audio-choice":
+        return (
+          <MultipleChoice {...commonProps} options={currentExercise.options!} />
+        );
+      case "word-chips":
+        return (
+          <WordChips {...commonProps} wordChips={currentExercise.wordChips!} />
+        );
+      case "matching-pairs":
+        return (
+          <MatchingPairs {...commonProps} pairs={currentExercise.pairs!} />
+        );
+      case "image-choice":
+        return (
+          <ImageChoice
+            {...commonProps}
+            imageOptions={currentExercise.imageOptions!}
+          />
+        );
+      default:
+        return <TextInput {...commonProps} />;
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -296,195 +213,12 @@ const Learning = () => {
           {/* Exercise Section */}
           {currentExercise && (
             <div className="bg-white rounded-2xl shadow-lg p-8 space-y-6">
-              <div className="flex items-center justify-between">
-                <h3 className="text-xl font-semibold text-gray-900">
-                  {currentExercise.question}
-                </h3>
-                {(currentExercise.type === "audio-choice" ||
-                  currentExercise.type === "word-chips" ||
-                  currentExercise.type === "image-choice") &&
-                  currentExercise.audioUrl && (
-                    <button
-                      onClick={() => playAudio(currentExercise.audioUrl!)}
-                      disabled={exerciseCompleted}
-                      className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      <Volume2 className="w-6 h-6 text-blue-600" />
-                    </button>
-                  )}
-              </div>
-
-              {currentExercise.type === "matching-pairs" ? (
-                <div
-                  className={`grid grid-cols-2 gap-4 ${
-                    exerciseCompleted ? "pointer-events-none opacity-75" : ""
-                  }`}
-                >
-                  <div className="space-y-3">
-                    {currentExercise.pairs?.map((pair, index) => (
-                      <button
-                        key={`audio-${index}`}
-                        onClick={() => {
-                          playAudio(pair.audio);
-                          handlePairClick(pair.audio);
-                        }}
-                        disabled={exerciseCompleted}
-                        className={`w-full p-4 rounded-lg border-2 transition-colors flex items-center justify-center gap-2 ${
-                          matchedPairs.has(pair.audio)
-                            ? "bg-green-50 border-green-500"
-                            : selectedPairs.includes(pair.audio)
-                            ? "border-blue-500 bg-blue-50"
-                            : "border-gray-200 hover:border-blue-200"
-                        }`}
-                      >
-                        <Volume2 className="w-6 h-6" />
-                        <div className="h-1 bg-blue-400 w-20 rounded-full" />
-                      </button>
-                    ))}
-                  </div>
-                  <div className="space-y-3">
-                    {currentExercise.pairs?.map((pair, index) => (
-                      <button
-                        key={`text-${index}`}
-                        onClick={() => handlePairClick(pair.text)}
-                        disabled={exerciseCompleted}
-                        className={`w-full p-4 rounded-lg border-2 transition-colors ${
-                          matchedPairs.has(pair.text)
-                            ? "bg-green-50 border-green-500"
-                            : selectedPairs.includes(pair.text)
-                            ? "border-blue-500 bg-blue-50"
-                            : "border-gray-200 hover:border-blue-200"
-                        }`}
-                      >
-                        {pair.text}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              ) : currentExercise.type === "image-choice" ? (
-                <div
-                  className={`grid grid-cols-2 gap-4 ${
-                    exerciseCompleted ? "pointer-events-none opacity-75" : ""
-                  }`}
-                >
-                  {currentExercise.imageOptions?.map((option, index) => (
-                    <button
-                      key={index}
-                      onClick={() => handleImageSelect(option.label)}
-                      disabled={exerciseCompleted}
-                      className={`relative aspect-square rounded-xl overflow-hidden transition-all ${
-                        userAnswer === option.label
-                          ? "ring-4 ring-blue-500 scale-95"
-                          : "hover:scale-95"
-                      }`}
-                    >
-                      <img
-                        src={option.url}
-                        alt={option.label}
-                        className="w-full h-full object-cover"
-                      />
-                      {userAnswer === option.label && (
-                        <div className="absolute inset-0 bg-blue-500 bg-opacity-20" />
-                      )}
-                    </button>
-                  ))}
-                </div>
-              ) : currentExercise.type === "word-chips" ? (
-                <div
-                  className={`space-y-4 ${
-                    exerciseCompleted ? "pointer-events-none opacity-75" : ""
-                  }`}
-                >
-                  {/* Selected chips */}
-                  <div className="min-h-[60px] p-4 border-2 border-dashed border-gray-300 rounded-lg flex flex-wrap gap-2">
-                    {selectedChips.map((chip, index) => (
-                      <div
-                        key={index}
-                        className="px-4 py-2 bg-blue-100 text-blue-800 rounded-full flex items-center gap-2"
-                      >
-                        {chip}
-                        <button
-                          onClick={() => handleRemoveChip(index)}
-                          disabled={exerciseCompleted}
-                          className="p-1 hover:bg-blue-200 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
-                        >
-                          <X className="w-4 h-4" />
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                  {/* Available chips */}
-                  <div className="flex flex-wrap gap-2">
-                    {currentExercise.wordChips
-                      ?.filter((chip) => !selectedChips.includes(chip))
-                      .map((chip, index) => (
-                        <button
-                          key={index}
-                          onClick={() => handleChipClick(chip)}
-                          disabled={exerciseCompleted}
-                          className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-                        >
-                          {chip}
-                        </button>
-                      ))}
-                  </div>
-                </div>
-              ) : currentExercise.type === "multiple-choice" ||
-                currentExercise.type === "audio-choice" ? (
-                <div
-                  className={`space-y-3 ${
-                    exerciseCompleted ? "pointer-events-none opacity-75" : ""
-                  }`}
-                >
-                  {currentExercise.options?.map((option, index) => (
-                    <button
-                      key={index}
-                      onClick={() => {
-                        setUserAnswer(option);
-                        setShowFeedback(false);
-                        setIsCorrect(false);
-                      }}
-                      disabled={exerciseCompleted}
-                      className={`w-full p-4 text-left rounded-lg border-2 transition-colors ${
-                        userAnswer === option
-                          ? "border-blue-500 bg-blue-50"
-                          : "border-gray-200 hover:border-blue-200"
-                      } disabled:opacity-50 disabled:cursor-not-allowed`}
-                    >
-                      {option}
-                    </button>
-                  ))}
-                </div>
-              ) : (
-                <input
-                  type="text"
-                  value={userAnswer}
-                  onChange={(e) => {
-                    setUserAnswer(e.target.value);
-                    setShowFeedback(false);
-                    setIsCorrect(false);
-                  }}
-                  disabled={exerciseCompleted}
-                  className="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none disabled:opacity-50 disabled:cursor-not-allowed"
-                  placeholder="Type your answer..."
-                />
-              )}
+              {renderExercise()}
 
               {!showFeedback ? (
                 <button
-                  onClick={handleAnswer}
-                  disabled={
-                    exerciseCompleted ||
-                    (currentExercise.type === "word-chips" &&
-                      selectedChips.length === 0) ||
-                    (currentExercise.type === "matching-pairs" &&
-                      matchedPairs.size !==
-                        (currentExercise.pairs?.length || 0) * 2) ||
-                    ((currentExercise.type === "multiple-choice" ||
-                      currentExercise.type === "audio-choice" ||
-                      currentExercise.type === "fill-blank") &&
-                      !userAnswer)
-                  }
+                  onClick={checkAnswer}
+                  disabled={!userAnswer || exerciseCompleted}
                   className="w-full py-3 px-6 bg-[#DAA520] text-white rounded-lg font-semibold hover:bg-[#B8860B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   Check Answer
