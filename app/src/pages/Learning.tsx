@@ -218,7 +218,7 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
 
       <div className="py-8">
         <div className="max-w-3xl mx-auto px-4">
-          {/* Word Section */}
+          {/* Lesson Name Section */}
           {lesson.name && (
             <div className="bg-white rounded-2xl shadow-lg p-8 mb-6">
               <p className="text-xl text-gray-600 text-center mb-6">
