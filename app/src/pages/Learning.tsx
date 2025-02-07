@@ -148,11 +148,15 @@ const Learning = ({
           <WordChips {...commonProps} wordChips={currentExercise.wordChips!} />
         );
       case "audio-text-matching":
-        return (
-          <AudioTextMatching {...commonProps} pairs={currentExercise.pairs!} />
+        const audioPairs = currentExercise.pairs?.filter(
+          (p): p is { audio: string; text: string } => "audio" in p
         );
+        return <AudioTextMatching {...commonProps} pairs={audioPairs!} />;
       case "text-matching":
-        return <TextMatching {...commonProps} pairs={currentExercise.pairs!} />;
+        const textPairs = currentExercise.pairs?.filter(
+          (p): p is { text1: string; text2: string } => "text1" in p
+        );
+        return <TextMatching {...commonProps} pairs={textPairs!} />;
       case "image-choice":
         return (
           <ImageChoice

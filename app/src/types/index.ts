@@ -29,12 +29,16 @@ export interface Exercise {
   audioUrl?: string;
   imageUrl?: string;
   imageOptions?: Array<{ url: string; label: string }>;
-  pairs?: Array<{
-    audio?: string;
-    text?: string;
-    text1?: string;
-    text2?: string;
-  }>;
+  pairs?: Array<
+    | {
+        audio: string;
+        text: string;
+      }
+    | {
+        text1: string;
+        text2: string;
+      }
+  >;
 }
 
 export interface UserProgress {
