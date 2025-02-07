@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-/.next
+.next/
 # dependencies
 /www/node_modules
 /app/node_modules
@@ -8,13 +8,18 @@
 
 # testing
 /coverage
+/www/coverage
+/app/coverage
 
 # next.js
 /www/.next/
+/app/.next/
 /www/out/
+/app/out/
 
 # production
 /www/build
+/app/build
 
 # misc
 .DS_Store
@@ -27,9 +32,13 @@ yarn-error.log*
 
 # local env files
 .env*.local
+/www/.env*.local
+/app/.env*.local
 
 # vercel
 .vercel
+/www/.vercel
+/app/.vercel
 
 # typescript
 *.tsbuildinfo
