@@ -6,41 +6,32 @@
     {
       "id": 1,
       "lessonId": 1,
+      "lessonName": "Greetings",
       "date": "2024-03-15T10:30:00Z",
       "type": "word-chips",
       "question": "Translate 'Good morning' to Kirundi",
       "correctAnswer": "Mwaramutse neza",
       "wordChips": ["Mwaramutse", "neza", "mwese", "kare"],
-      "audioUrl": "/audio/good-morning.mp3",
-      "context": {
-        "lesson": "Greetings",
-        "originalAnswer": "neza Mwaramutse"
-      }
+      "audioUrl": "/audio/good-morning.mp3"
     },
     {
       "id": 2,
       "lessonId": 2,
+      "lessonName": "Basic Phrases",
       "date": "2024-03-16T14:20:00Z",
       "type": "multiple-choice",
       "question": "What does 'Amakuru' mean?",
       "correctAnswer": "How are you?",
-      "options": ["How are you?", "Good morning", "Good evening", "Goodbye"],
-      "context": {
-        "lesson": "Basic Phrases",
-        "originalAnswer": "Good morning"
-      }
+      "options": ["How are you?", "Good morning", "Good evening", "Goodbye"]
     },
     {
       "id": 3,
       "lessonId": 3,
+      "lessonName": "Common Phrases",
       "date": "2024-03-17T09:15:00Z",
       "type": "fill-blank",
       "question": "Complete the sentence: '___ ni mwiza' (The day is good)",
-      "correctAnswer": "Umunsi",
-      "context": {
-        "lesson": "Common Phrases",
-        "originalAnswer": "Umusi"
-      }
+      "correctAnswer": "Umunsi"
     }
   ]
 }

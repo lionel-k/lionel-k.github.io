@@ -95,17 +95,14 @@ const Mistakes = () => {
                     <div className="flex-1">
                       <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
                         <BookOpen className="w-4 h-4" />
-                        <span>{mistake.context.lesson}</span>
+                        <span>{mistake.lessonName}</span>
                         <span className="mx-2">•</span>
                         <Clock className="w-4 h-4" />
                         <span>{formatDate(mistake.date)}</span>
                       </div>
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                      <h3 className="text-lg font-semibold text-gray-900">
                         {mistake.question}
                       </h3>
-                      <p className="text-sm text-gray-500">
-                        Your answer: {mistake.context.originalAnswer}
-                      </p>
                     </div>
                   </div>
                 </div>
