@@ -1,22 +1,30 @@
 name: Dependabot auto-merge
+
 on:
-  pull_request:
+  # This triggers when a PR (targeting main) is opened, reopened, or updated
+  pull_request_target:
+    branches:
+      - main
+    types: [opened, reopened, synchronize]
+
+  # Scheduled sweep every 5 minutes for any existing open PRs
   schedule:
-    - cron: "0/5 * * * *" # Runs every 5 minutes
+    - cron: "0/5 * * * *"
 
 permissions:
-  contents: write
+  contents: write # Needed to merge the PR
   pull-requests: write
 
 jobs:
   dependabot:
     runs-on: ubuntu-latest
     steps:
-      - name: List open Dependabot PRs
+      - name: Merge successful Dependabot PRs
         uses: actions/github-script@v6
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
+            // List all open PRs
             const { data: pullRequests } = await github.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -24,20 +32,35 @@ jobs:
             });
 
             for (const pr of pullRequests) {
-              if (pr.user.login === 'dependabot[bot]' && pr.mergeable_state === 'clean') {
-                const { data: checks } = await github.checks.listForRef({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  ref: pr.head.sha
-                });
+              // Only Dependabot PRs
+              if (pr.user.login === 'dependabot[bot]') {
+                // Ensure the PR targets main
+                if (pr.base.ref === 'main') {
 
-                if (checks.check_runs.every(check => check.conclusion === 'success')) {
-                  await github.pulls.merge({
-                    owner: context.repo.owner,
-                    repo: context.repo.repo,
-                    pull_number: pr.number,
-                    merge_method: 'merge'
-                  });
+                  // (Optionally) fetch fresh info for mergeable_state
+                  // mergeable_state may not always be updated in the
+                  // PR list response. Usually you'd re-fetch via:
+                  //    await github.pulls.get({ owner, repo, pull_number: pr.number })
+
+                  if (pr.mergeable_state === 'clean') {
+                    // Check if all checks passed
+                    const { data: checks } = await github.checks.listForRef({
+                      owner: context.repo.owner,
+                      repo: context.repo.repo,
+                      ref: pr.head.sha
+                    });
+
+                    // If all checks are successful, merge
+                    if (checks.check_runs.every(check => check.conclusion === 'success')) {
+                      await github.pulls.merge({
+                        owner: context.repo.owner,
+                        repo: context.repo.repo,
+                        pull_number: pr.number,
+                        merge_method: 'merge'
+                      });
+                      console.log(`Merged Dependabot PR #${pr.number}`);
+                    }
+                  }
                 }
               }
             }
