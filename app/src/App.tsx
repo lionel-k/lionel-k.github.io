@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { ProgressProvider } from "./context/ProgressContext";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Lessons from "./pages/Lessons";
 import LessonLearning from "./pages/LessonLearning";
@@ -22,6 +23,7 @@ function App() {
       <ProgressProvider>
         <Router>
           <Routes>
+            <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route
               path="/lessons"
