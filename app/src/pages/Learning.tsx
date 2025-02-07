@@ -267,10 +267,6 @@ const Learning = () => {
             >
               <X className="w-6 h-6 text-gray-600" />
             </button>
-            <div className="text-rose-500 font-medium flex items-center gap-2">
-              <span className="text-2xl">❤️</span>
-              <span>5</span>
-            </div>
           </div>
           <div className="relative h-2 bg-gray-200 rounded-full overflow-hidden">
             <div
