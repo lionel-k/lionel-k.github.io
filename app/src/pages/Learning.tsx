@@ -169,7 +169,7 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       <AlertDialog open={isExitDialogOpen} onOpenChange={setIsExitDialogOpen}>
         <AlertDialogContent className="bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white border-none">
           <AlertDialogHeader>
@@ -191,10 +191,11 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
           </AlertDialogFooter>
         </AlertDialogContent>
       </AlertDialog>
-      {/* Navigation and Progress Bar */}
-      <div className="sticky top-0 z-50 bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white shadow-lg">
-        <div className="max-w-3xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
+
+      {/* Header with Navigation and Progress Bar */}
+      <div className="sticky top-0 z-50 bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white">
+        <div className="max-w-4xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-4">
               <button
                 onClick={handleBack}
@@ -202,31 +203,28 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
               >
                 <X className="w-6 h-6" />
               </button>
-              <span className="text-sm font-medium">
-                Exercise {currentExerciseIndex + 1} of {lesson.exercises.length}
-              </span>
+              <div>
+                <h1 className="text-lg font-semibold">{lesson.name}</h1>
+                <p className="text-sm text-gray-400">
+                  Exercise {currentExerciseIndex + 1} of{" "}
+                  {lesson.exercises.length}
+                </p>
+              </div>
             </div>
-            <div className="w-32 h-2 bg-white/20 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-gradient-to-r from-[#DAA520] to-[#B8860B] transition-all duration-300"
-                style={{ width: `${progressPercentage}%` }}
-              />
-            </div>
+          </div>
+          {/* Progress Bar */}
+          <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-[#DAA520] to-[#B8860B] transition-all duration-300"
+              style={{ width: `${progressPercentage}%` }}
+            />
           </div>
         </div>
       </div>
 
-      <div className="py-8">
-        <div className="max-w-3xl mx-auto px-4">
-          {/* Lesson Name Section */}
-          {lesson.name && (
-            <div className="bg-white rounded-2xl shadow-lg p-8 mb-6">
-              <p className="text-xl text-gray-600 text-center mb-6">
-                {lesson.name}
-              </p>
-            </div>
-          )}
-
+      {/* Main Content */}
+      <div className="flex-1 py-6">
+        <div className="max-w-4xl mx-auto px-4">
           {/* Exercise Section */}
           {currentExercise && (
             <div className="bg-white rounded-2xl shadow-lg p-8 space-y-6">
