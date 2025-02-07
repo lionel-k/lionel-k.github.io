@@ -6,9 +6,9 @@ import lessons from "../data/lessons.json";
 import { Lesson, Exercise } from "../types";
 
 const Learning = () => {
-  const { levelId } = useParams();
+  const { lessonId } = useParams();
   const navigate = useNavigate();
-  const { progress, completeExercise, completeLevel } = useProgress();
+  const { progress, completeExercise, completeLesson } = useProgress();
   const [activeAudio, setActiveAudio] = useState<HTMLAudioElement | null>(null);
   const [currentLessonIndex, setCurrentLessonIndex] = useState(0);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
@@ -21,8 +21,8 @@ const Learning = () => {
   const [matchedPairs, setMatchedPairs] = useState<Set<string>>(new Set());
   const [exerciseCompleted, setExerciseCompleted] = useState(false);
 
-  const levelLessons = lessons.lessons.filter(
-    (lesson) => lesson.level === Number(levelId)
+  const levelLessons = lessons.filter(
+    (lesson) => lesson.id === Number(lessonId)
   );
 
   const currentLesson: Lesson = levelLessons[currentLessonIndex];
@@ -186,8 +186,8 @@ const Learning = () => {
       setCurrentLessonIndex((prev) => prev + 1);
       setCurrentExerciseIndex(0);
     } else {
-      completeLevel(Number(levelId));
-      navigate(`/level/${levelId}/complete`);
+      completeLesson(Number(lessonId));
+      navigate(`/lesson/${lessonId}/complete`);
     }
   };
 

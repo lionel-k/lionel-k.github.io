@@ -28,7 +28,7 @@ function App() {
               }
             />
             <Route
-              path="/level/:levelId"
+              path="/lesson/:lessonId"
               element={
                 <PrivateRoute>
                   <Learning />
@@ -36,7 +36,7 @@ function App() {
               }
             />
             <Route
-              path="/level/:levelId/complete"
+              path="/lesson/:lessonId/complete"
               element={
                 <PrivateRoute>
                   <LevelComplete />
