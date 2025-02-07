@@ -258,7 +258,7 @@ const Learning = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation and Progress Bar */}
-      <div className="bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white shadow-lg">
+      <div className="sticky top-0 z-50 bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white shadow-lg">
         <div className="max-w-3xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
