@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useProgress } from "../context/ProgressContext";
 import { ChevronRight, Volume2, X } from "lucide-react";
@@ -8,7 +8,7 @@ import { Lesson, Exercise } from "../types";
 const Learning = () => {
   const { lessonId } = useParams();
   const navigate = useNavigate();
-  const { progress, completeExercise, completeLesson } = useProgress();
+  const { completeExercise, completeLesson } = useProgress();
   const [activeAudio, setActiveAudio] = useState<HTMLAudioElement | null>(null);
   const [currentLessonIndex, setCurrentLessonIndex] = useState(0);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(0);
@@ -21,9 +21,11 @@ const Learning = () => {
   const [matchedPairs, setMatchedPairs] = useState<Set<string>>(new Set());
   const [exerciseCompleted, setExerciseCompleted] = useState(false);
 
-  const levelLessons = lessons.filter(
-    (lesson) => lesson.id === Number(lessonId)
-  );
+  const levelLessons = lessons;
+
+  // .filter(
+  //   (lesson) => lesson.id === Number(lessonId)
+  // );
 
   const currentLesson: Lesson = levelLessons[currentLessonIndex];
   const currentExercise: Exercise | undefined =
