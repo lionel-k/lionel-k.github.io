@@ -4,6 +4,8 @@ updates:
     directory: "/www"
     schedule:
       interval: "weekly"
-    commit-message:
-      prefix: "deps"
     open-pull-requests-limit: 10
+  - package-ecosystem: "npm"
+    directory: "/app"
+    schedule:
+      interval: "weekly"
