@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { ChevronRight, X, CheckCircle, XCircle } from "lucide-react";
 import { Exercise, LearningLesson } from "../types";
 import {
   MultipleChoice,
@@ -12,15 +11,10 @@ import {
   AudioChoice,
 } from "../components/exercises";
 import {
-  AlertDialog,
-  AlertDialogAction,
-  AlertDialogCancel,
-  AlertDialogContent,
-  AlertDialogDescription,
-  AlertDialogFooter,
-  AlertDialogHeader,
-  AlertDialogTitle,
-} from "../components/ui/alert-dialog";
+  LearningHeader,
+  LearningExitDialog,
+  LearningFeedback,
+} from "../components/learning";
 
 interface LearningProps {
   lesson: LearningLesson;
@@ -170,57 +164,19 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      <AlertDialog open={isExitDialogOpen} onOpenChange={setIsExitDialogOpen}>
-        <AlertDialogContent className="bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white border-none">
-          <AlertDialogHeader>
-            <AlertDialogTitle>Are you sure you want to leave?</AlertDialogTitle>
-            <AlertDialogDescription className="text-gray-300">
-              Your progress will be lost if you leave now.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel className="bg-gray-700 text-white hover:bg-gray-600">
-              Stay
-            </AlertDialogCancel>
-            <AlertDialogAction
-              onClick={handleExitConfirm}
-              className="bg-[#DAA520] text-white hover:bg-[#B8860B]"
-            >
-              Leave
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
+      <LearningExitDialog
+        isOpen={isExitDialogOpen}
+        onOpenChange={setIsExitDialogOpen}
+        onConfirm={handleExitConfirm}
+      />
 
-      {/* Header with Navigation and Progress Bar */}
-      <div className="sticky top-0 z-50 bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white">
-        <div className="max-w-4xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-4">
-              <button
-                onClick={handleBack}
-                className="p-2 hover:bg-white/10 rounded-lg transition-colors"
-              >
-                <X className="w-6 h-6" />
-              </button>
-              <div>
-                <h1 className="text-lg font-semibold">{lesson.name}</h1>
-                <p className="text-sm text-gray-400">
-                  Exercise {currentExerciseIndex + 1} of{" "}
-                  {lesson.exercises.length}
-                </p>
-              </div>
-            </div>
-          </div>
-          {/* Progress Bar */}
-          <div className="h-1.5 bg-white/10 rounded-full overflow-hidden">
-            <div
-              className="h-full bg-gradient-to-r from-[#DAA520] to-[#B8860B] transition-all duration-300"
-              style={{ width: `${progressPercentage}%` }}
-            />
-          </div>
-        </div>
-      </div>
+      <LearningHeader
+        name={lesson.name}
+        currentExercise={currentExerciseIndex + 1}
+        totalExercises={lesson.exercises.length}
+        progress={progressPercentage}
+        onBack={handleBack}
+      />
 
       {/* Main Content */}
       <div className="flex-1 py-6">
@@ -239,35 +195,7 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
                   Check Answer
                 </button>
               ) : (
-                <div className="space-y-4">
-                  <div
-                    className={`p-4 rounded-lg flex items-center gap-3 ${
-                      isCorrect
-                        ? "bg-green-100 text-green-800"
-                        : "bg-red-100 text-red-800"
-                    }`}
-                  >
-                    {isCorrect ? (
-                      <>
-                        <CheckCircle className="w-6 h-6 flex-shrink-0" />
-                        <p className="font-medium">Correct! Well done!</p>
-                      </>
-                    ) : (
-                      <>
-                        <XCircle className="w-6 h-6 flex-shrink-0" />
-                        <p className="font-medium">Incorrect. Try again!</p>
-                      </>
-                    )}
-                  </div>
-                  {isCorrect && (
-                    <button
-                      onClick={handleNext}
-                      className="w-full py-3 px-6 bg-[#DAA520] text-white rounded-lg font-semibold hover:bg-[#B8860B] transition-colors flex items-center justify-center"
-                    >
-                      Continue <ChevronRight className="ml-2 w-5 h-5" />
-                    </button>
-                  )}
-                </div>
+                <LearningFeedback isCorrect={isCorrect} onNext={handleNext} />
               )}
             </div>
           )}
