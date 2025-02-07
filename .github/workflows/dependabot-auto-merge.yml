@@ -15,6 +15,21 @@ jobs:
         uses: dependabot/fetch-metadata@d7267f607e9d3fb96fc2fbe83e0af444713e90b7
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Wait for CI checks to pass
+        uses: actions/github-script@v6
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          script: |
+            const { data: checks } = await github.checks.listForRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: context.payload.pull_request.head.sha
+            });
+            if (checks.check_runs.some(check => check.conclusion !== 'success')) {
+              throw new Error('Not all checks are successful');
+            }
+
       - name: Enable auto-merge for Dependabot PRs
         if: github.event.pull_request.user.login == 'dependabot[bot]' && github.event.pull_request.mergeable_state == 'clean'
         run: gh pr merge --auto --merge "$PR_URL"
