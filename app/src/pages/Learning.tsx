@@ -1,28 +1,61 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { useProgress } from "../context/ProgressContext";
 import { ChevronRight, Volume2, X } from "lucide-react";
 import lessons from "../data/lessons.json";
 import { Lesson, Exercise } from "../types";
 
+interface CurrentProgress {
+  lessonId: string;
+  exerciseIndex: number;
+}
+
 const Learning = () => {
   const { lessonId } = useParams();
   const navigate = useNavigate();
+  const location = useLocation();
   const { completeExercise, completeLesson } = useProgress();
   const [activeAudio, setActiveAudio] = useState<HTMLAudioElement | null>(null);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(() => {
-    // Initialize from localStorage or default to 0
-    const saved = localStorage.getItem(`lesson_${lessonId}_exercise`);
-    return saved ? parseInt(saved) : 0;
+    const saved = localStorage.getItem("currentProgress");
+    if (saved) {
+      const progress: CurrentProgress = JSON.parse(saved);
+      // Only use saved progress if we're on the same lesson
+      if (progress.lessonId === lessonId) {
+        return progress.exerciseIndex;
+      }
+    }
+    return 0;
   });
 
-  // Save current exercise index whenever it changes
+  // Save current progress whenever it changes
   useEffect(() => {
-    localStorage.setItem(
-      `lesson_${lessonId}_exercise`,
-      currentExerciseIndex.toString()
-    );
+    const progress: CurrentProgress = {
+      lessonId: lessonId!,
+      exerciseIndex: currentExerciseIndex,
+    };
+    localStorage.setItem("currentProgress", JSON.stringify(progress));
   }, [currentExerciseIndex, lessonId]);
+
+  // Handle lesson switching
+  useEffect(() => {
+    const saved = localStorage.getItem("currentProgress");
+    if (saved) {
+      const progress: CurrentProgress = JSON.parse(saved);
+      if (progress.lessonId !== lessonId && progress.exerciseIndex > 0) {
+        const confirmed = window.confirm(
+          "You have progress in another lesson. Are you sure you want to switch? Your progress will be lost."
+        );
+        if (!confirmed) {
+          // Go back to the previous lesson/exercise
+          navigate(`/lesson/${progress.lessonId}`);
+          return;
+        }
+        // If confirmed, reset progress for new lesson
+        setCurrentExerciseIndex(0);
+      }
+    }
+  }, [lessonId, navigate]);
 
   const [userAnswer, setUserAnswer] = useState("");
   const [selectedChips, setSelectedChips] = useState<string[]>([]);
@@ -192,6 +225,8 @@ const Learning = () => {
       setCurrentExerciseIndex((prev) => prev + 1);
     } else {
       completeLesson(Number(lessonId));
+      // Clear progress when lesson is completed
+      localStorage.removeItem("currentProgress");
       navigate(`/lesson/${lessonId}/complete`);
     }
   };
