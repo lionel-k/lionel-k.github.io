@@ -11,6 +11,16 @@ import {
   TextInput,
   AudioChoice,
 } from "../components/exercises";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "../components/ui/alert-dialog";
 
 interface LearningProps {
   session: LearningSession;
@@ -61,6 +71,7 @@ const Learning = ({
   const [showFeedback, setShowFeedback] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
   const [exerciseCompleted, setExerciseCompleted] = useState(false);
+  const [isExitDialogOpen, setIsExitDialogOpen] = useState(false);
 
   const currentExercise: Exercise | undefined =
     session.exercises[currentExerciseIndex];
@@ -97,16 +108,15 @@ const Learning = ({
   };
 
   const handleBack = () => {
-    const confirmed = window.confirm(
-      "Are you sure you want to leave? Your progress will be lost."
-    );
-    if (confirmed) {
-      localStorage.removeItem(`progress_${session.id}`);
-      if (onExit) {
-        onExit();
-      } else {
-        navigate(backPath);
-      }
+    setIsExitDialogOpen(true);
+  };
+
+  const handleExitConfirm = () => {
+    localStorage.removeItem(`progress_${session.id}`);
+    if (onExit) {
+      onExit();
+    } else {
+      navigate(backPath);
     }
   };
 
@@ -160,6 +170,27 @@ const Learning = ({
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <AlertDialog open={isExitDialogOpen} onOpenChange={setIsExitDialogOpen}>
+        <AlertDialogContent className="bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white border-none">
+          <AlertDialogHeader>
+            <AlertDialogTitle>Are you sure you want to leave?</AlertDialogTitle>
+            <AlertDialogDescription className="text-gray-300">
+              Your progress will be lost if you leave now.
+            </AlertDialogDescription>
+          </AlertDialogHeader>
+          <AlertDialogFooter>
+            <AlertDialogCancel className="bg-gray-700 text-white hover:bg-gray-600">
+              Stay
+            </AlertDialogCancel>
+            <AlertDialogAction
+              onClick={handleExitConfirm}
+              className="bg-[#DAA520] text-white hover:bg-[#B8860B]"
+            >
+              Leave
+            </AlertDialogAction>
+          </AlertDialogFooter>
+        </AlertDialogContent>
+      </AlertDialog>
       {/* Navigation and Progress Bar */}
       <div className="sticky top-0 z-50 bg-gradient-to-r from-[#0A0A0A] to-[#1A1A1A] text-white shadow-lg">
         <div className="max-w-3xl mx-auto px-4 py-4">
