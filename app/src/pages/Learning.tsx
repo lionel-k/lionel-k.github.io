@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useProgress } from "../context/ProgressContext";
 import { ChevronRight, Volume2, X } from "lucide-react";
 import lessons from "../data/lessons.json";
@@ -13,7 +13,6 @@ interface CurrentProgress {
 const Learning = () => {
   const { lessonId } = useParams();
   const navigate = useNavigate();
-  const location = useLocation();
   const { completeExercise, completeLesson } = useProgress();
   const [activeAudio, setActiveAudio] = useState<HTMLAudioElement | null>(null);
   const [currentExerciseIndex, setCurrentExerciseIndex] = useState(() => {
