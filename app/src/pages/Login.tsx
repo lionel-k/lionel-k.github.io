@@ -22,8 +22,10 @@ const Login = () => {
           <div className="bg-blue-100 p-3 rounded-full mb-4">
             <Globe2 className="w-8 h-8 text-blue-600" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-900">Lingu.Africa</h1>
-          <p className="text-gray-600 mt-2">
+          <h1 className="text-3xl font-bold text-gray-900 text-center">
+            Lingu.Africa
+          </h1>
+          <p className="text-gray-600 mt-2 text-center">
             Commencez votre parcours d'apprentissage
           </p>
         </div>
@@ -42,7 +44,7 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              required
+              // required
             />
           </div>
 
@@ -59,7 +61,7 @@ const Login = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              required
+              // required
             />
           </div>
 
