@@ -1,144 +1,140 @@
-{
-  "lessons": [
-    {
-      "id": 1,
-      "level": 1,
-      "word": "Amahoro",
-      "translation": "Peace/Hello",
-      "example": "Amahoro, umeze gute?",
-      "exampleTranslation": "Hello, how are you?",
-      "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
-      "exercises": [
-        {
-          "id": 1,
-          "type": "multiple-choice",
-          "question": "What does 'Amahoro' mean?",
-          "correctAnswer": "Peace/Hello",
-          "options": ["Peace/Hello", "Goodbye", "Thank you", "Good morning"]
-        },
-        {
-          "id": 2,
-          "type": "fill-blank",
-          "question": "Complete the greeting: '___, umeze gute?'",
-          "correctAnswer": "Amahoro"
-        },
-        {
-          "id": 3,
-          "type": "matching-pairs",
-          "question": "Match the audio with the correct meaning",
-          "correctAnswer": "all-matched",
-          "pairs": [
-            {
-              "audio": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
-              "text": "Hello"
-            },
-            {
-              "audio": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
-              "text": "Peace"
-            },
-            {
-              "audio": "https://assets.mixkit.co/active_storage/sfx/2871/2871-preview.mp3",
-              "text": "Greeting"
-            },
-            {
-              "audio": "https://assets.mixkit.co/active_storage/sfx/2872/2872-preview.mp3",
-              "text": "Welcome"
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "type": "word-chips",
-          "question": "Construct the sentence using the word chips",
-          "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
-          "correctAnswer": "Amahoro umeze gute",
-          "wordChips": ["gute", "Amahoro", "umeze"]
-        },
-        {
-          "id": 8,
-          "type": "image-choice",
-          "question": "Listen and select the correct image",
-          "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
-          "correctAnswer": "greeting",
-          "imageOptions": [
-            {
-              "url": "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=300&h=300&fit=crop",
-              "label": "greeting"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1530043195743-d5e79ee4b16c?w=300&h=300&fit=crop",
-              "label": "goodbye"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&h=300&fit=crop",
-              "label": "thank you"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=300&h=300&fit=crop",
-              "label": "morning"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "level": 1,
-      "word": "Ndagukunda",
-      "translation": "I love you",
-      "example": "Ndagukunda cane",
-      "exampleTranslation": "I love you very much",
-      "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
-      "exercises": [
-        {
-          "id": 5,
-          "type": "multiple-choice",
-          "question": "What does 'Ndagukunda' mean?",
-          "correctAnswer": "I love you",
-          "options": ["I love you", "I miss you", "I like you", "I need you"]
-        },
-        {
-          "id": 6,
-          "type": "audio-choice",
-          "question": "Listen to the word and select its meaning",
-          "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
-          "correctAnswer": "I love you",
-          "options": ["I love you", "I hate you", "I like you", "I need you"]
-        },
-        {
-          "id": 7,
-          "type": "word-chips",
-          "question": "Construct the sentence using the word chips",
-          "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
-          "correctAnswer": "Ndagukunda cane",
-          "wordChips": ["cane", "Ndagukunda"]
-        },
-        {
-          "id": 9,
-          "type": "image-choice",
-          "question": "Listen and select the correct image",
-          "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
-          "correctAnswer": "love",
-          "imageOptions": [
-            {
-              "url": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300&h=300&fit=crop",
-              "label": "love"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&h=300&fit=crop",
-              "label": "thank"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1530043195743-d5e79ee4b16c?w=300&h=300&fit=crop",
-              "label": "goodbye"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=300&h=300&fit=crop",
-              "label": "morning"
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "word": "Amahoro",
+    "translation": "Peace/Hello",
+    "example": "Amahoro, umeze gute?",
+    "exampleTranslation": "Hello, how are you?",
+    "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
+    "exercises": [
+      {
+        "id": 1,
+        "type": "multiple-choice",
+        "question": "What does 'Amahoro' mean?",
+        "correctAnswer": "Peace/Hello",
+        "options": ["Peace/Hello", "Goodbye", "Thank you", "Good morning"]
+      },
+      {
+        "id": 2,
+        "type": "fill-blank",
+        "question": "Complete the greeting: '___, umeze gute?'",
+        "correctAnswer": "Amahoro"
+      },
+      {
+        "id": 3,
+        "type": "matching-pairs",
+        "question": "Match the audio with the correct meaning",
+        "correctAnswer": "all-matched",
+        "pairs": [
+          {
+            "audio": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
+            "text": "Hello"
+          },
+          {
+            "audio": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
+            "text": "Peace"
+          },
+          {
+            "audio": "https://assets.mixkit.co/active_storage/sfx/2871/2871-preview.mp3",
+            "text": "Greeting"
+          },
+          {
+            "audio": "https://assets.mixkit.co/active_storage/sfx/2872/2872-preview.mp3",
+            "text": "Welcome"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "type": "word-chips",
+        "question": "Construct the sentence using the word chips",
+        "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
+        "correctAnswer": "Amahoro umeze gute",
+        "wordChips": ["gute", "Amahoro", "umeze"]
+      },
+      {
+        "id": 8,
+        "type": "image-choice",
+        "question": "Listen and select the correct image",
+        "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
+        "correctAnswer": "greeting",
+        "imageOptions": [
+          {
+            "url": "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=300&h=300&fit=crop",
+            "label": "greeting"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1530043195743-d5e79ee4b16c?w=300&h=300&fit=crop",
+            "label": "goodbye"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&h=300&fit=crop",
+            "label": "thank you"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=300&h=300&fit=crop",
+            "label": "morning"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "word": "Ndagukunda",
+    "translation": "I love you",
+    "example": "Ndagukunda cane",
+    "exampleTranslation": "I love you very much",
+    "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
+    "exercises": [
+      {
+        "id": 5,
+        "type": "multiple-choice",
+        "question": "What does 'Ndagukunda' mean?",
+        "correctAnswer": "I love you",
+        "options": ["I love you", "I miss you", "I like you", "I need you"]
+      },
+      {
+        "id": 6,
+        "type": "audio-choice",
+        "question": "Listen to the word and select its meaning",
+        "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
+        "correctAnswer": "I love you",
+        "options": ["I love you", "I hate you", "I like you", "I need you"]
+      },
+      {
+        "id": 7,
+        "type": "word-chips",
+        "question": "Construct the sentence using the word chips",
+        "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
+        "correctAnswer": "Ndagukunda cane",
+        "wordChips": ["cane", "Ndagukunda"]
+      },
+      {
+        "id": 9,
+        "type": "image-choice",
+        "question": "Listen and select the correct image",
+        "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
+        "correctAnswer": "love",
+        "imageOptions": [
+          {
+            "url": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300&h=300&fit=crop",
+            "label": "love"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&h=300&fit=crop",
+            "label": "thank"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1530043195743-d5e79ee4b16c?w=300&h=300&fit=crop",
+            "label": "goodbye"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=300&h=300&fit=crop",
+            "label": "morning"
+          }
+        ]
+      }
+    ]
+  }
+]

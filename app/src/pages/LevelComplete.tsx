@@ -1,6 +1,6 @@
-import React from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import { Trophy } from 'lucide-react';
+import React from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { Trophy } from "lucide-react";
 
 const LevelComplete = () => {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ const LevelComplete = () => {
 
         <div className="space-y-4">
           <button
-            onClick={() => navigate('/')}
+            onClick={() => navigate("/")}
             className="w-full py-3 px-6 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
             Continue to Next Level
