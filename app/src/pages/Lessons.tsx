@@ -1,18 +1,34 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useProgress } from "../context/ProgressContext";
-import { Lock, CheckCircle, BookOpen } from "lucide-react";
+import {
+  Lock,
+  CheckCircle,
+  BookOpen,
+  Home,
+  Trophy,
+  User,
+  AlertCircle,
+} from "lucide-react";
 import lessons from "../data/lessons.json";
 
 const Lessons = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { progress } = useProgress();
 
   const isLessonCompleted = (level: number) =>
     progress.completedLessons.includes(level);
   const isLessonLocked = (level: number) => level > progress.currentLesson;
 
+  const menuItems = [
+    { icon: Home, label: "Home", path: "/lessons" },
+    { icon: Trophy, label: "Leaderboard", path: "/leaderboard" },
+    { icon: User, label: "Profile", path: "/profile" },
+    { icon: AlertCircle, label: "Mistakes", path: "/mistakes" },
+  ];
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 pb-20">
       <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8">
         <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">
           Leçons
@@ -65,6 +81,32 @@ const Lessons = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Bottom Navigation */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="flex justify-around items-center h-16">
+            {menuItems.map((item) => {
+              const Icon = item.icon;
+              const isActive = location.pathname === item.path;
+              return (
+                <button
+                  key={item.path}
+                  onClick={() => navigate(item.path)}
+                  className={`flex flex-col items-center justify-center space-y-1 w-16 ${
+                    isActive
+                      ? "text-[#DAA520]"
+                      : "text-gray-500 hover:text-[#DAA520]"
+                  }`}
+                >
+                  <Icon className="w-6 h-6" />
+                  <span className="text-xs font-medium">{item.label}</span>
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>
