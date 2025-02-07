@@ -18,7 +18,6 @@ export interface Exercise {
     | "text-input"
     | "fill-blank"
     | "audio-choice";
-  question: string;
   correctAnswer: string;
   options?: string[];
   wordChips?: string[];

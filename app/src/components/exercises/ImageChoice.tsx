@@ -3,7 +3,6 @@ import { Volume2 } from "lucide-react";
 import { ImageChoiceProps } from "./types";
 
 export const ImageChoice = ({
-  question,
   imageOptions,
   audioUrl,
   isCompleted,
@@ -20,7 +19,9 @@ export const ImageChoice = ({
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-gray-900">{question}</h3>
+        <h3 className="text-xl font-semibold text-gray-900">
+          Listen and select the correct image
+        </h3>
         {audioUrl && (
           <button
             onClick={() => new Audio(audioUrl).play()}

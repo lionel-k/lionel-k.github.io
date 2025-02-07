@@ -2,7 +2,6 @@ import { useState } from "react";
 import { TextMatchingProps } from "./types";
 
 export const TextMatching = ({
-  question,
   pairs,
   isCompleted,
   onAnswer,
@@ -45,7 +44,9 @@ export const TextMatching = ({
 
   return (
     <div className="space-y-6">
-      <h3 className="text-xl font-semibold text-gray-900">{question}</h3>
+      <h3 className="text-xl font-semibold text-gray-900">
+        Match the phrases with their English translations
+      </h3>
 
       <div
         className={`grid grid-cols-2 gap-4 ${

@@ -6,7 +6,6 @@
       {
         "id": 3,
         "type": "audio-text-matching",
-        "question": "Match the audio with the correct meaning",
         "correctAnswer": "all-matched",
         "pairs": [
           {
@@ -36,20 +35,17 @@
       {
         "id": 1,
         "type": "multiple-choice",
-        "question": "What does 'Amahoro' mean?",
         "correctAnswer": "Peace/Hello",
         "options": ["Peace/Hello", "Goodbye", "Thank you", "Good morning"]
       },
       {
         "id": 2,
         "type": "fill-blank",
-        "question": "Complete the greeting: '___, umeze gute?'",
         "correctAnswer": "Amahoro"
       },
       {
         "id": 3,
         "type": "audio-text-matching",
-        "question": "Match the audio with the correct meaning",
         "correctAnswer": "all-matched",
         "pairs": [
           {
@@ -73,7 +69,6 @@
       {
         "id": 4,
         "type": "word-chips",
-        "question": "Construct the sentence using the word chips",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
         "correctAnswer": "Amahoro umeze gute",
         "wordChips": ["gute", "Amahoro", "umeze"]
@@ -81,7 +76,6 @@
       {
         "id": 8,
         "type": "image-choice",
-        "question": "Listen and select the correct image",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3",
         "correctAnswer": "greeting",
         "imageOptions": [
@@ -106,7 +100,6 @@
       {
         "id": 10,
         "type": "text-matching",
-        "question": "Match the Kirundi phrases with their English translations",
         "correctAnswer": "all-matched",
         "pairs": [
           {
@@ -136,14 +129,12 @@
       {
         "id": 5,
         "type": "multiple-choice",
-        "question": "What does 'Ndagukunda' mean?",
         "correctAnswer": "I love you",
         "options": ["I love you", "I miss you", "I like you", "I need you"]
       },
       {
         "id": 6,
         "type": "audio-choice",
-        "question": "Listen to the word and select its meaning",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
         "correctAnswer": "I love you",
         "options": ["I love you", "I hate you", "I like you", "I need you"]
@@ -151,7 +142,6 @@
       {
         "id": 7,
         "type": "word-chips",
-        "question": "Construct the sentence using the word chips",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
         "correctAnswer": "Ndagukunda cane",
         "wordChips": ["cane", "Ndagukunda"]
@@ -159,7 +149,6 @@
       {
         "id": 9,
         "type": "image-choice",
-        "question": "Listen and select the correct image",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
         "correctAnswer": "love",
         "imageOptions": [

@@ -101,7 +101,9 @@ const Mistakes = () => {
                         <span>{formatDate(mistake.date)}</span>
                       </div>
                       <h3 className="text-lg font-semibold text-gray-900">
-                        {mistake.question}
+                        {mistake.type === "audio-text-matching"
+                          ? "Match the audio with the correct meaning"
+                          : "Select the correct translation"}
                       </h3>
                     </div>
                   </div>

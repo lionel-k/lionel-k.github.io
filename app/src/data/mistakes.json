@@ -7,7 +7,6 @@
       "lessonName": "Greetings",
       "date": "2024-03-15T10:30:00Z",
       "type": "audio-text-matching",
-      "question": "Match the audio with the correct meaning",
       "correctAnswer": "all-matched",
       "pairs": [
         {
@@ -26,7 +25,6 @@
       "lessonName": "Basic Phrases",
       "date": "2024-03-16T14:20:00Z",
       "type": "multiple-choice",
-      "question": "What does 'Amakuru' mean?",
       "correctAnswer": "How are you?",
       "options": ["How are you?", "Good morning", "Good evening", "Goodbye"]
     },
@@ -36,7 +34,6 @@
       "lessonName": "Common Phrases",
       "date": "2024-03-17T09:15:00Z",
       "type": "fill-blank",
-      "question": "Complete the sentence: '___ ni mwiza' (The day is good)",
       "correctAnswer": "Umunsi"
     }
   ]

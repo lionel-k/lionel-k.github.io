@@ -3,7 +3,6 @@ import { Volume2 } from "lucide-react";
 import { AudioTextMatchingProps } from "./types";
 
 export const AudioTextMatching = ({
-  question,
   pairs,
   isCompleted,
   onAnswer,
@@ -69,7 +68,9 @@ export const AudioTextMatching = ({
 
   return (
     <div className="space-y-6">
-      <h3 className="text-xl font-semibold text-gray-900">{question}</h3>
+      <h3 className="text-xl font-semibold text-gray-900">
+        Match the audio with the correct meaning
+      </h3>
 
       <div
         className={`grid grid-cols-2 gap-4 ${

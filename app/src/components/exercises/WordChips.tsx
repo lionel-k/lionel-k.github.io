@@ -3,7 +3,6 @@ import { Volume2, X } from "lucide-react";
 import { WordChipsProps } from "./types";
 
 export const WordChips = ({
-  question,
   wordChips,
   audioUrl,
   isCompleted,
@@ -30,7 +29,9 @@ export const WordChips = ({
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-gray-900">{question}</h3>
+        <h3 className="text-xl font-semibold text-gray-900">
+          Construct the sentence using the word chips
+        </h3>
         {audioUrl && (
           <button
             onClick={() => new Audio(audioUrl).play()}

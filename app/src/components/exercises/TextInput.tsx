@@ -3,7 +3,6 @@ import { Volume2 } from "lucide-react";
 import { BaseExerciseProps } from "./types";
 
 export const TextInput = ({
-  question,
   audioUrl,
   isCompleted,
   onAnswer,
@@ -19,7 +18,9 @@ export const TextInput = ({
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-gray-900">{question}</h3>
+        <h3 className="text-xl font-semibold text-gray-900">
+          Complete the sentence
+        </h3>
         {audioUrl && (
           <button
             onClick={() => new Audio(audioUrl).play()}

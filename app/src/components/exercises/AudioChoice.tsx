@@ -3,7 +3,6 @@ import { Volume2 } from "lucide-react";
 import { MultipleChoiceProps } from "./types";
 
 export const AudioChoice = ({
-  question,
   options,
   audioUrl,
   isCompleted,
@@ -26,7 +25,9 @@ export const AudioChoice = ({
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-gray-900">{question}</h3>
+        <h3 className="text-xl font-semibold text-gray-900">
+          Listen and select the correct meaning
+        </h3>
         <button
           onClick={playAudio}
           disabled={isCompleted}

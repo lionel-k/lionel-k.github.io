@@ -1,5 +1,4 @@
 export interface BaseExerciseProps {
-  question: string;
   correctAnswer: string;
   audioUrl?: string;
   isCompleted: boolean;
