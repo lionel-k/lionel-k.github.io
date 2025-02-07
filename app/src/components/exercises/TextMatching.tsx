@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { TextMatchingProps } from "./types";
+import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const TextMatching = ({
   pairs,
@@ -45,7 +46,7 @@ export const TextMatching = ({
   return (
     <div className="space-y-6">
       <h3 className="text-xl font-semibold text-gray-900">
-        Match the phrases with their English translations
+        {EXERCISE_TITLES["text-matching"]}
       </h3>
 
       <div

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Volume2 } from "lucide-react";
 import { AudioTextMatchingProps } from "./types";
+import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const AudioTextMatching = ({
   pairs,
@@ -69,7 +70,7 @@ export const AudioTextMatching = ({
   return (
     <div className="space-y-6">
       <h3 className="text-xl font-semibold text-gray-900">
-        Match the audio with the correct meaning
+        {EXERCISE_TITLES["audio-text-matching"]}
       </h3>
 
       <div

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Volume2 } from "lucide-react";
 import { MultipleChoiceProps } from "./types";
+import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const AudioChoice = ({
   options,
@@ -26,7 +27,7 @@ export const AudioChoice = ({
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-semibold text-gray-900">
-          Listen and select the correct meaning
+          {EXERCISE_TITLES["audio-choice"]}
         </h3>
         <button
           onClick={playAudio}

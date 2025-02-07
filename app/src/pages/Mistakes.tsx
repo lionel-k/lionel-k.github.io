@@ -9,13 +9,16 @@ import {
   Play,
 } from "lucide-react";
 import mistakesData from "../data/mistakes.json";
+import { EXERCISE_TITLES } from "../config/exercises";
 import BottomNavbar from "../components/BottomNavbar";
+import { Exercise } from "../types";
 
 const Mistakes = () => {
   const navigate = useNavigate();
-  const [mistakes] = useState(mistakesData.exercises);
+  const [mistakes] = useState<Exercise[]>(mistakesData.exercises as Exercise[]);
 
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString: string | undefined) => {
+    if (!dateString) return "";
     return new Date(dateString).toLocaleDateString("en-US", {
       month: "short",
       day: "numeric",
@@ -101,9 +104,7 @@ const Mistakes = () => {
                         <span>{formatDate(mistake.date)}</span>
                       </div>
                       <h3 className="text-lg font-semibold text-gray-900">
-                        {mistake.type === "audio-text-matching"
-                          ? "Match the audio with the correct meaning"
-                          : "Select the correct translation"}
+                        {EXERCISE_TITLES[mistake.type]}
                       </h3>
                     </div>
                   </div>

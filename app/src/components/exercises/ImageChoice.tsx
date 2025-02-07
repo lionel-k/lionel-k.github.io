@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Volume2 } from "lucide-react";
 import { ImageChoiceProps } from "./types";
+import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const ImageChoice = ({
   imageOptions,
@@ -20,7 +21,7 @@ export const ImageChoice = ({
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-semibold text-gray-900">
-          Listen and select the correct image
+          {EXERCISE_TITLES["image-choice"]}
         </h3>
         {audioUrl && (
           <button

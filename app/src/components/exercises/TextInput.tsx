@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Volume2 } from "lucide-react";
 import { BaseExerciseProps } from "./types";
+import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const TextInput = ({
   audioUrl,
@@ -19,7 +20,7 @@ export const TextInput = ({
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-semibold text-gray-900">
-          Complete the sentence
+          {EXERCISE_TITLES["text-input"]}
         </h3>
         {audioUrl && (
           <button

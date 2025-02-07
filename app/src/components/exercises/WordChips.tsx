@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Volume2, X } from "lucide-react";
 import { WordChipsProps } from "./types";
+import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const WordChips = ({
   wordChips,
@@ -30,7 +31,7 @@ export const WordChips = ({
     <div className="space-y-6">
       <div className="flex items-center justify-between">
         <h3 className="text-xl font-semibold text-gray-900">
-          Construct the sentence using the word chips
+          {EXERCISE_TITLES["word-chips"]}
         </h3>
         {audioUrl && (
           <button
