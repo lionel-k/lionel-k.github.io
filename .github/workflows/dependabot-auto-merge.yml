@@ -1,29 +1,31 @@
 name: Dependabot auto-merge
 
 on:
-  # This triggers when a PR (targeting main) is opened, reopened, or updated
+  # Trigger on pull requests that target 'main'
   pull_request_target:
-    branches:
-      - main
+    branches: [main]
     types: [opened, reopened, synchronize]
 
-  # Scheduled sweep every 5 minutes for any existing open PRs
+  # Scheduled sweep every 5 minutes
   schedule:
     - cron: "0/5 * * * *"
 
+# Make sure we have permission to read checks & merge PRs
 permissions:
-  contents: write # Needed to merge the PR
+  contents: write
   pull-requests: write
+  checks: read
 
 jobs:
-  dependabot:
+  auto-merge-dependabot:
     runs-on: ubuntu-latest
     steps:
-      - name: Merge successful Dependabot PRs
+      - name: Merge Dependabot PRs
         uses: actions/github-script@v6
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
+            // Fetch all open PRs in the repo
             const { data: pullRequests } = await github.rest.pulls.list({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -31,32 +33,38 @@ jobs:
             });
 
             for (const pr of pullRequests) {
-              if (pr.user.login === 'dependabot[bot]') {
-                if (pr.base.ref === 'main') {
-                  // Optionally re-fetch the pull to ensure mergeable_state is up to date
-                  const { data: fullPr } = await github.rest.pulls.get({
+              // Only handle Dependabot PRs that target 'main'
+              if (pr.user.login === 'dependabot[bot]' && pr.base.ref === 'main') {
+
+                // Re-fetch the PR for an up-to-date mergeable_state
+                const { data: fullPr } = await github.rest.pulls.get({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  pull_number: pr.number
+                });
+
+                // If GitHub says the PR is clean/mergeable
+                if (fullPr.mergeable_state === 'clean') {
+                  // Check if all checks have concluded successfully
+                  const { data: checks } = await github.rest.checks.listForRef({
                     owner: context.repo.owner,
                     repo: context.repo.repo,
-                    pull_number: pr.number
+                    ref: fullPr.head.sha
                   });
 
-                  if (fullPr.mergeable_state === 'clean') {
-                    const { data: checks } = await github.rest.checks.listForRef({
+                  const allPassed = checks.check_runs.every(
+                    (run) => run.conclusion === 'success'
+                  );
+
+                  if (allPassed) {
+                    // Merge the PR
+                    await github.rest.pulls.merge({
                       owner: context.repo.owner,
                       repo: context.repo.repo,
-                      ref: pr.head.sha
+                      pull_number: pr.number,
+                      merge_method: 'merge'
                     });
-
-                    // If all checks are successful, merge
-                    if (checks.check_runs.every(check => check.conclusion === 'success')) {
-                      await github.rest.pulls.merge({
-                        owner: context.repo.owner,
-                        repo: context.repo.repo,
-                        pull_number: pr.number,
-                        merge_method: 'merge'
-                      });
-                      console.log(`Merged Dependabot PR #${pr.number}`);
-                    }
+                    console.log(`✅ Merged Dependabot PR #${pr.number}`);
                   }
                 }
               }
