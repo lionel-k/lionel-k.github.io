@@ -12,5 +12,4 @@ export const EXERCISE_TITLES: Record<ExerciseType, string> = {
   "word-chips-construct": "Translate to Kirundi",
   "multiple-choice": "Select the correct translation",
   "image-choice": "Listen and select the correct image",
-  "text-input": "Type what you hear",
 };

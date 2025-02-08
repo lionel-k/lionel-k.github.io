@@ -178,8 +178,6 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
             type="fill-blank-text"
           />
         );
-      case "text-input":
-        return <TextInput {...commonProps} />;
       default:
         return null;
     }

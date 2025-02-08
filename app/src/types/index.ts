@@ -17,7 +17,6 @@ export interface Exercise {
     | "audio-text-matching"
     | "text-matching"
     | "image-choice"
-    | "text-input"
     | "fill-blank-audio"
     | "fill-blank-text";
   correctAnswer: string;
