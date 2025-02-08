@@ -25,8 +25,10 @@ export const MultipleChoice = ({
       </div>
 
       <div className="flex items-center justify-center mb-8">
-        <div className="px-6 py-3 bg-white rounded-xl shadow-sm">
-          <span className="text-2xl font-medium">{sourceText}</span>
+        <div className="px-8 py-4 bg-white rounded-xl shadow-md border-2 border-gray-100 hover:shadow-lg transition-shadow">
+          <span className="text-3xl font-semibold text-gray-900">
+            {sourceText}
+          </span>
         </div>
       </div>
 

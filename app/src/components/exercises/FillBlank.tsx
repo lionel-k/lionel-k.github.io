@@ -46,9 +46,11 @@ export const FillBlank = ({
       </div>
 
       {type === "fill-blank-text" && sourceText && (
-        <div className="flex items-center justify-center gap-3 mb-8">
-          <div className="px-6 py-3 bg-white rounded-xl shadow-sm">
-            <span className="text-2xl font-medium">{sourceText}</span>
+        <div className="flex items-center justify-center mb-8">
+          <div className="px-8 py-4 bg-white rounded-xl shadow-md border-2 border-gray-100 hover:shadow-lg transition-shadow">
+            <span className="text-3xl font-semibold text-gray-900">
+              {sourceText}
+            </span>
           </div>
         </div>
       )}
@@ -56,7 +58,7 @@ export const FillBlank = ({
       {type === "fill-blank-audio" && (
         <div className="flex items-center justify-center gap-3 mb-8">
           <div
-            className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm cursor-pointer"
+            className="flex items-center gap-4 px-8 py-4 bg-white rounded-xl shadow-md border-2 border-gray-100 hover:shadow-lg transition-shadow cursor-pointer"
             onClick={() => audioUrl && new Audio(audioUrl).play()}
           >
             <div className="p-2 rounded-lg bg-blue-500">
