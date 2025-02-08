@@ -1,12 +1,10 @@
 import { useState } from "react";
-import { Volume2 } from "lucide-react";
 import { MultipleChoiceProps } from "./types";
 import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const MultipleChoice = ({
   options,
   sourceText,
-  audioUrl,
   isCompleted,
   onAnswer,
 }: MultipleChoiceProps) => {
@@ -15,6 +13,7 @@ export const MultipleChoice = ({
   const handleSelect = (option: string) => {
     if (isCompleted) return;
     setSelectedAnswer(option);
+    onAnswer(option);
   };
 
   return (
@@ -23,22 +22,11 @@ export const MultipleChoice = ({
         <h3 className="text-xl font-semibold text-gray-900">
           {EXERCISE_TITLES["multiple-choice"]}
         </h3>
-        {audioUrl && (
-          <button
-            onClick={() => new Audio(audioUrl).play()}
-            disabled={isCompleted}
-            className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <Volume2 className="w-6 h-6 text-blue-600" />
-          </button>
-        )}
       </div>
 
-      <div className="flex flex-col items-center justify-center mb-8">
-        <div className="inline-block px-8 py-4 bg-white rounded-xl shadow-sm border-2 border-gray-100">
-          <span className="text-2xl font-medium text-gray-900">
-            {sourceText}
-          </span>
+      <div className="flex items-center justify-center mb-8">
+        <div className="px-6 py-3 bg-white rounded-xl shadow-sm">
+          <span className="text-2xl font-medium">{sourceText}</span>
         </div>
       </div>
 
@@ -50,15 +38,12 @@ export const MultipleChoice = ({
         {options.map((option, index) => (
           <button
             key={index}
-            onClick={() => {
-              handleSelect(option);
-              onAnswer(option);
-            }}
+            onClick={() => handleSelect(option)}
             disabled={isCompleted}
             className={`w-full p-4 text-left rounded-lg border-2 transition-colors ${
               selectedAnswer === option
-                ? "border-[#DAA520] bg-[#DAA520]/10"
-                : "border-gray-200 hover:border-[#DAA520]"
+                ? "border-[#DAA520] bg-[#DAA520]/5"
+                : "border-gray-200 hover:border-gray-300"
             } disabled:opacity-50 disabled:cursor-not-allowed`}
           >
             {option}

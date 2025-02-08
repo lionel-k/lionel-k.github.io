@@ -45,9 +45,11 @@ export const TextMatching = ({
 
   return (
     <div className="space-y-6">
-      <h3 className="text-xl font-semibold text-gray-900">
-        {EXERCISE_TITLES["text-matching"]}
-      </h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-xl font-semibold text-gray-900">
+          {EXERCISE_TITLES["text-matching"]}
+        </h3>
+      </div>
 
       <div
         className={`grid grid-cols-2 gap-4 ${
@@ -61,10 +63,10 @@ export const TextMatching = ({
               onClick={() => handlePairClick(pair.text1)}
               className={`w-full p-4 rounded-lg border-2 transition-colors ${
                 matchedPairs.has(pair.text1)
-                  ? "bg-green-50 border-green-500"
+                  ? "border-green-500 bg-green-50"
                   : selectedPairs.includes(pair.text1)
-                  ? "border-[#DAA520] bg-[#DAA520]/10"
-                  : "border-gray-200 hover:border-[#DAA520]"
+                  ? "border-[#DAA520] bg-[#DAA520]/5"
+                  : "border-gray-200 hover:border-gray-300"
               }`}
             >
               {pair.text1}
@@ -78,10 +80,10 @@ export const TextMatching = ({
               onClick={() => handlePairClick(pair.text2)}
               className={`w-full p-4 rounded-lg border-2 transition-colors ${
                 matchedPairs.has(pair.text2)
-                  ? "bg-green-50 border-green-500"
+                  ? "border-green-500 bg-green-50"
                   : selectedPairs.includes(pair.text2)
-                  ? "border-[#DAA520] bg-[#DAA520]/10"
-                  : "border-gray-200 hover:border-[#DAA520]"
+                  ? "border-[#DAA520] bg-[#DAA520]/5"
+                  : "border-gray-200 hover:border-gray-300"
               }`}
             >
               {pair.text2}

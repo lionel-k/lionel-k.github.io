@@ -21,22 +21,17 @@ export const WordChips = ({
   textToTranslate,
 }: ExtendedWordChipsProps) => {
   const [selectedChips, setSelectedChips] = useState<string[]>([]);
-  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
-  // Reset selected chips when exercise changes
   useEffect(() => {
     setSelectedChips([]);
   }, [wordChips, type]);
 
-  // Initialize and play audio when component mounts
   useEffect(() => {
     if (
       audioUrl &&
       (type === "word-chips-transcribe" || type === "word-chips-translate")
     ) {
-      const newAudio = new Audio(audioUrl);
-      setAudio(newAudio);
-      newAudio.play();
+      new Audio(audioUrl).play();
     }
   }, [audioUrl, type]);
 
@@ -56,92 +51,83 @@ export const WordChips = ({
     onAnswer(newChips.join(" "));
   };
 
-  const playAudio = () => {
-    if (audio) {
-      audio.currentTime = 0;
-      audio.play();
-    }
-  };
-
   return (
-    <div className="h-full flex flex-col">
-      <h3 className="text-xl font-semibold text-gray-900 mb-4">
-        {EXERCISE_TITLES[type]}
-      </h3>
-
-      {/* Audio Controls or Text for Translation */}
-      <div className="flex flex-col items-center mb-4">
-        {(type === "word-chips-translate" || type === "word-chips-construct") &&
-          textToTranslate && (
-            <div className="bg-white rounded-xl shadow-sm p-4 w-full">
-              <p className="text-lg text-center text-gray-700">
-                {textToTranslate}
-              </p>
-            </div>
-          )}
-        {audioUrl &&
-          (type === "word-chips-transcribe" ||
-            type === "word-chips-translate") && (
-            <button
-              onClick={playAudio}
-              disabled={isCompleted || !audioUrl}
-              className="p-4 rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
-            >
-              <Volume2 className="w-6 h-6 text-blue-500" />
-            </button>
-          )}
+    <div className="space-y-6">
+      <div className="flex items-center justify-between">
+        <h3 className="text-xl font-semibold text-gray-900">
+          {EXERCISE_TITLES[type]}
+        </h3>
       </div>
 
+      {/* Source Text or Audio Section */}
+      {(type === "word-chips-transcribe" || type === "word-chips-translate") &&
+        audioUrl && (
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div
+              className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm cursor-pointer"
+              onClick={() => audioUrl && new Audio(audioUrl).play()}
+            >
+              <div className="p-2 rounded-lg bg-blue-500">
+                <Volume2 className="w-6 h-6 text-white" />
+              </div>
+              {textToTranslate && (
+                <span className="text-2xl font-medium">{textToTranslate}</span>
+              )}
+            </div>
+          </div>
+        )}
+
+      {/* Text to Translate for Construct Type */}
+      {type === "word-chips-construct" && textToTranslate && (
+        <div className="flex items-center justify-center mb-8">
+          <div className="px-6 py-3 bg-white rounded-xl shadow-sm">
+            <span className="text-2xl font-medium">{textToTranslate}</span>
+          </div>
+        </div>
+      )}
+
+      {/* Selected chips */}
+      <div className="min-h-[60px] p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-200">
+        <div className="flex flex-wrap gap-2">
+          {selectedChips.map((chip, index) => (
+            <div
+              key={`selected-${index}`}
+              className="flex items-center gap-2 px-3 py-2 bg-white rounded-lg border border-gray-200 shadow-sm"
+            >
+              <span>{chip}</span>
+              {!isCompleted && (
+                <button
+                  onClick={() => handleRemoveChip(index)}
+                  className="p-0.5 hover:bg-gray-100 rounded"
+                >
+                  <X className="w-4 h-4 text-gray-500" />
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Available chips */}
       <div
-        className={`flex-1 flex flex-col ${
+        className={`flex flex-wrap gap-2 ${
           isCompleted ? "pointer-events-none opacity-75" : ""
         }`}
       >
-        {/* Selected chips area with lines */}
-        <div className="flex-1 space-y-2 min-h-[160px]">
-          {[0, 1, 2, 3].map((lineIndex) => (
-            <div
-              key={lineIndex}
-              className="h-10 border-b border-gray-200 flex items-center gap-2 overflow-x-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
-            >
-              {selectedChips
-                .slice(lineIndex * 3, (lineIndex + 1) * 3)
-                .map((chip, index) => (
-                  <div
-                    key={index}
-                    className="px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-gray-900 flex items-center gap-2 shadow-sm flex-shrink-0"
-                  >
-                    {chip}
-                    <button
-                      onClick={() => handleRemoveChip(lineIndex * 3 + index)}
-                      disabled={isCompleted}
-                      className="p-0.5 hover:bg-gray-100 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      <X className="w-4 h-4" />
-                    </button>
-                  </div>
-                ))}
-            </div>
-          ))}
-        </div>
-
-        {/* Available chips */}
-        <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-2 mt-4">
-          {wordChips.map((chip, index) => (
-            <button
-              key={index}
-              onClick={() => handleChipClick(chip)}
-              disabled={isCompleted || selectedChips.includes(chip)}
-              className={`px-3 py-1.5 bg-white border border-gray-200 rounded-lg text-gray-900 shadow-sm transition-all w-full sm:w-auto ${
-                selectedChips.includes(chip)
-                  ? "opacity-0 cursor-default pointer-events-none"
-                  : "hover:bg-gray-50 active:bg-gray-100"
-              } disabled:opacity-50 disabled:cursor-not-allowed`}
-            >
-              {chip}
-            </button>
-          ))}
-        </div>
+        {wordChips.map((chip, index) => (
+          <button
+            key={`available-${index}`}
+            onClick={() => handleChipClick(chip)}
+            disabled={isCompleted || selectedChips.includes(chip)}
+            className={`px-4 py-2 rounded-lg border-2 transition-colors ${
+              selectedChips.includes(chip)
+                ? "opacity-50 cursor-not-allowed border-gray-200 bg-gray-50"
+                : "border-gray-200 hover:border-gray-300 bg-white"
+            }`}
+          >
+            {chip}
+          </button>
+        ))}
       </div>
     </div>
   );

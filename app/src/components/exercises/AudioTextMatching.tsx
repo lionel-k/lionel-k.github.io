@@ -69,9 +69,11 @@ export const AudioTextMatching = ({
 
   return (
     <div className="space-y-6">
-      <h3 className="text-xl font-semibold text-gray-900">
-        {EXERCISE_TITLES["audio-text-matching"]}
-      </h3>
+      <div className="flex items-center justify-between">
+        <h3 className="text-xl font-semibold text-gray-900">
+          {EXERCISE_TITLES["audio-text-matching"]}
+        </h3>
+      </div>
 
       <div
         className={`grid grid-cols-2 gap-4 ${
@@ -82,20 +84,18 @@ export const AudioTextMatching = ({
           {pairs.map((pair, index) => (
             <button
               key={`audio-${index}`}
-              onClick={() => {
-                playAudio(pair.audio);
-                handlePairClick(pair.audio);
-              }}
-              className={`w-full p-4 rounded-lg border-2 transition-colors flex items-center justify-center gap-2 ${
+              onClick={() => handlePairClick(pair.audio)}
+              className={`w-full p-4 rounded-lg border-2 transition-colors flex items-center justify-center ${
                 matchedPairs.has(pair.audio)
-                  ? "bg-green-50 border-green-500"
+                  ? "border-green-500 bg-green-50"
                   : selectedPairs.includes(pair.audio)
-                  ? "border-[#DAA520] bg-[#DAA520]/10"
-                  : "border-gray-200 hover:border-[#DAA520]"
+                  ? "border-[#DAA520] bg-[#DAA520]/5"
+                  : "border-gray-200 hover:border-gray-300"
               }`}
             >
-              <Volume2 className="w-6 h-6" />
-              <div className="h-1 bg-[#DAA520] w-20 rounded-full" />
+              <div className="p-2 rounded-lg bg-blue-500">
+                <Volume2 className="w-6 h-6 text-white" />
+              </div>
             </button>
           ))}
         </div>
@@ -106,10 +106,10 @@ export const AudioTextMatching = ({
               onClick={() => handlePairClick(pair.text)}
               className={`w-full p-4 rounded-lg border-2 transition-colors ${
                 matchedPairs.has(pair.text)
-                  ? "bg-green-50 border-green-500"
+                  ? "border-green-500 bg-green-50"
                   : selectedPairs.includes(pair.text)
-                  ? "border-[#DAA520] bg-[#DAA520]/10"
-                  : "border-gray-200 hover:border-[#DAA520]"
+                  ? "border-[#DAA520] bg-[#DAA520]/5"
+                  : "border-gray-200 hover:border-gray-300"
               }`}
             >
               {pair.text}

@@ -5,7 +5,8 @@ export interface BaseExerciseProps {
   onAnswer: (answer: string) => void;
 }
 
-export interface MultipleChoiceProps extends BaseExerciseProps {
+export interface MultipleChoiceProps
+  extends Omit<BaseExerciseProps, "audioUrl"> {
   options: string[];
   sourceText: string;
 }
