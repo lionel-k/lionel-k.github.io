@@ -155,20 +155,20 @@
     "name": "Expressing Feelings",
     "exercises": [
       {
-        "id": 5,
+        "id": 1,
         "type": "multiple-choice",
         "correctAnswer": "I love you",
         "options": ["I love you", "I miss you", "I like you", "I need you"]
       },
       {
-        "id": 7,
-        "type": "word-chips",
+        "id": 2,
+        "type": "word-chips-translate",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
         "correctAnswer": "Ndagukunda cane",
         "wordChips": ["cane", "Ndagukunda"]
       },
       {
-        "id": 9,
+        "id": 3,
         "type": "image-choice",
         "sourceText": "urukundo",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
