@@ -35,17 +35,6 @@ export function Footer() {
                   Kirundi Books
                 </Link>
               </li>
-              {/* Uncomment or add more links as needed */}
-              {false && (
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-sm text-gray-300 hover:text-[#DAA520]"
-                  >
-                    Blog
-                  </Link>
-                </li>
-              )}
             </ul>
           </div>
 
