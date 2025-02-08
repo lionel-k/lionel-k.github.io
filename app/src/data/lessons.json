@@ -5,10 +5,10 @@
     "exercises": [
       {
         "id": 1,
-        "type": "word-chips-transcribe",
-        "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
-        "correctAnswer": "Ndagukunda cane",
-        "wordChips": ["cane", "Ndagukunda", "Amahoro", "umeze", "gute"]
+        "type": "multiple-choice",
+        "sourceText": "I love you",
+        "correctAnswer": "Ndagukunda",
+        "options": ["Ndagukunda", "Ndakumbuye", "Ndagushaka", "Ndakeneye"]
       }
     ]
   },
@@ -19,8 +19,9 @@
       {
         "id": 1,
         "type": "multiple-choice",
-        "correctAnswer": "Peace/Hello",
-        "options": ["Peace/Hello", "Goodbye", "Thank you", "Good morning"]
+        "sourceText": "Peace/Hello",
+        "correctAnswer": "Amahoro",
+        "options": ["Amahoro", "Murabeho", "Urakoze", "Mwaramutse"]
       },
       {
         "id": 2,

@@ -5,6 +5,7 @@ import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const MultipleChoice = ({
   options,
+  sourceText,
   audioUrl,
   isCompleted,
   onAnswer,
@@ -31,6 +32,12 @@ export const MultipleChoice = ({
             <Volume2 className="w-6 h-6 text-blue-600" />
           </button>
         )}
+      </div>
+
+      <div className="mb-6">
+        <div className="inline-block px-6 py-3 bg-gray-100 rounded-lg">
+          <span className="text-lg">{sourceText}</span>
+        </div>
       </div>
 
       <div

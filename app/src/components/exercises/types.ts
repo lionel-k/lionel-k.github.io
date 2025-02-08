@@ -7,6 +7,7 @@ export interface BaseExerciseProps {
 
 export interface MultipleChoiceProps extends BaseExerciseProps {
   options: string[];
+  sourceText: string;
 }
 
 export interface WordChipsProps extends BaseExerciseProps {

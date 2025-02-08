@@ -118,6 +118,7 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
     if (!currentExercise) return null;
 
     const commonProps = {
+      sourceText: currentExercise.sourceText,
       correctAnswer: currentExercise.correctAnswer,
       audioUrl: currentExercise.audioUrl,
       isCompleted: exerciseCompleted,
