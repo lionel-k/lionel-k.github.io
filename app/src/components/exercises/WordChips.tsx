@@ -93,49 +93,44 @@ export const WordChips = ({
       </div>
 
       <div
-        className={`space-y-4 ${
+        className={`space-y-6 ${
           isCompleted ? "pointer-events-none opacity-75" : ""
         }`}
       >
         {/* Selected chips area with lines */}
-        <div className="space-y-3">
+        <div className="space-y-4">
           {[0, 1, 2, 3].map((lineIndex) => (
             <div
               key={lineIndex}
-              className="min-h-[48px] border-b border-gray-200 flex flex-wrap items-center gap-2"
+              className="h-12 border-b border-gray-200 flex items-center gap-2"
             >
-              {selectedChips
-                .slice(lineIndex * 3, lineIndex * 3 + 3)
-                .map((chip, index) => (
-                  <div
-                    key={index}
-                    className="px-4 py-2 bg-[#DAA520]/10 text-[#DAA520] rounded-full flex items-center gap-2 shrink-0"
+              {selectedChips[lineIndex] && (
+                <div className="px-4 py-2 bg-white border border-gray-200 rounded-xl text-gray-900 flex items-center gap-2 shadow-sm">
+                  {selectedChips[lineIndex]}
+                  <button
+                    onClick={() => handleRemoveChip(lineIndex)}
+                    disabled={isCompleted}
+                    className="p-1 hover:bg-gray-100 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {chip}
-                    <button
-                      onClick={() => handleRemoveChip(lineIndex * 3 + index)}
-                      disabled={isCompleted}
-                      className="p-1 hover:bg-[#DAA520]/20 rounded-full disabled:opacity-50 disabled:cursor-not-allowed"
-                    >
-                      <X className="w-4 h-4" />
-                    </button>
-                  </div>
-                ))}
+                    <X className="w-4 h-4" />
+                  </button>
+                </div>
+              )}
             </div>
           ))}
         </div>
 
         {/* Available chips */}
-        <div className="flex flex-wrap gap-2 pt-4">
+        <div className="flex flex-wrap items-center justify-center gap-2 pt-4">
           {wordChips.map((chip, index) => (
             <button
               key={index}
               onClick={() => handleChipClick(chip)}
               disabled={isCompleted || selectedChips.includes(chip)}
-              className={`px-4 py-2 rounded-full transition-all shrink-0 ${
+              className={`px-4 py-2 bg-white border border-gray-200 rounded-xl text-gray-900 shadow-sm transition-all ${
                 selectedChips.includes(chip)
                   ? "opacity-0 cursor-default pointer-events-none"
-                  : "bg-gray-100 hover:bg-gray-200 text-gray-800"
+                  : "hover:bg-gray-50 active:bg-gray-100"
               } disabled:opacity-50 disabled:cursor-not-allowed`}
             >
               {chip}
