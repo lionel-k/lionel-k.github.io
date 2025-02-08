@@ -4,29 +4,11 @@
     "name": "Greetings & Love",
     "exercises": [
       {
-        "id": 1,
-        "type": "image-choice",
-        "sourceText": "urukundo",
+        "id": 6,
+        "type": "audio-choice",
         "audioUrl": "https://assets.mixkit.co/active_storage/sfx/2870/2870-preview.mp3",
-        "correctAnswer": "love",
-        "imageOptions": [
-          {
-            "url": "https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=300&h=300&fit=crop",
-            "label": "lamp"
-          },
-          {
-            "url": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&h=300&fit=crop",
-            "label": "car"
-          },
-          {
-            "url": "https://images.unsplash.com/photo-1530043195743-d5e79ee4b16c?w=300&h=300&fit=crop",
-            "label": "man"
-          },
-          {
-            "url": "https://images.unsplash.com/photo-1484863137850-59afcfe05386?w=300&h=300&fit=crop",
-            "label": "love"
-          }
-        ]
+        "correctAnswer": "I love you",
+        "options": ["I love you", "I hate you", "I like you", "I need you"]
       }
     ]
   },
