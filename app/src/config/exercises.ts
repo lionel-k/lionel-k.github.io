@@ -13,5 +13,4 @@ export const EXERCISE_TITLES: Record<ExerciseType, string> = {
   "multiple-choice": "Select the correct translation",
   "image-choice": "Listen and select the correct image",
   "text-input": "Type what you hear",
-  "audio-choice": "Listen and select the correct meaning",
 };

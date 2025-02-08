@@ -19,8 +19,7 @@ export interface Exercise {
     | "image-choice"
     | "text-input"
     | "fill-blank-audio"
-    | "fill-blank-text"
-    | "audio-choice";
+    | "fill-blank-text";
   correctAnswer: string;
   options?: string[];
   wordChips?: string[];

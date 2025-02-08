@@ -8,7 +8,6 @@ import {
   TextMatching,
   ImageChoice,
   TextInput,
-  AudioChoice,
   FillBlank,
 } from "../components/exercises";
 import {
@@ -128,14 +127,6 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
       case "multiple-choice":
         return (
           <MultipleChoice
-            {...commonProps}
-            options={currentExercise.options!}
-            sourceText={currentExercise.sourceText!}
-          />
-        );
-      case "audio-choice":
-        return (
-          <AudioChoice
             {...commonProps}
             options={currentExercise.options!}
             sourceText={currentExercise.sourceText!}

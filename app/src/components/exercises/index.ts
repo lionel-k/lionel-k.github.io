@@ -1,9 +1,8 @@
-export * from "./MultipleChoice";
-export * from "./WordChips";
-export * from "./AudioTextMatching";
-export * from "./TextMatching";
-export * from "./ImageChoice";
-export * from "./TextInput";
-export * from "./AudioChoice";
-export * from "./FillBlank";
+export { MultipleChoice } from "./MultipleChoice";
+export { WordChips } from "./WordChips";
+export { AudioTextMatching } from "./AudioTextMatching";
+export { TextMatching } from "./TextMatching";
+export { ImageChoice } from "./ImageChoice";
+export { TextInput } from "./TextInput";
+export { FillBlank } from "./FillBlank";
 export * from "./types";
