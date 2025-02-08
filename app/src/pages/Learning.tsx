@@ -139,7 +139,7 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
             {...commonProps}
             type={currentExercise.type}
             wordChips={currentExercise.wordChips!}
-            textToTranslate={currentExercise.textToTranslate}
+            sourceText={currentExercise.sourceText}
           />
         );
       case "audio-text-matching":

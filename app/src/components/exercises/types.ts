@@ -13,6 +13,11 @@ export interface MultipleChoiceProps
 
 export interface WordChipsProps extends BaseExerciseProps {
   wordChips: string[];
+  type:
+    | "word-chips-transcribe"
+    | "word-chips-translate"
+    | "word-chips-construct";
+  sourceText?: string;
 }
 
 export interface AudioTextMatchingProps extends BaseExerciseProps {

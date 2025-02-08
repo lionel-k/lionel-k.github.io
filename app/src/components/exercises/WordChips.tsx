@@ -1,16 +1,7 @@
 import { useState, useEffect } from "react";
 import { Volume2, X } from "lucide-react";
-import { BaseExerciseProps } from "./types";
+import { WordChipsProps } from "./types";
 import { EXERCISE_TITLES } from "../../config/exercises";
-
-interface ExtendedWordChipsProps extends BaseExerciseProps {
-  wordChips: string[];
-  type:
-    | "word-chips-transcribe"
-    | "word-chips-translate"
-    | "word-chips-construct";
-  textToTranslate?: string;
-}
 
 export const WordChips = ({
   wordChips,
@@ -18,8 +9,8 @@ export const WordChips = ({
   isCompleted,
   onAnswer,
   type = "word-chips-transcribe",
-  textToTranslate,
-}: ExtendedWordChipsProps) => {
+  sourceText,
+}: WordChipsProps) => {
   const [selectedChips, setSelectedChips] = useState<string[]>([]);
 
   useEffect(() => {
@@ -70,18 +61,18 @@ export const WordChips = ({
               <div className="p-2 rounded-lg bg-blue-500">
                 <Volume2 className="w-6 h-6 text-white" />
               </div>
-              {textToTranslate && (
-                <span className="text-2xl font-medium">{textToTranslate}</span>
+              {sourceText && (
+                <span className="text-2xl font-medium">{sourceText}</span>
               )}
             </div>
           </div>
         )}
 
-      {/* Text to Translate for Construct Type */}
-      {type === "word-chips-construct" && textToTranslate && (
+      {/* Source Text for Construct Type */}
+      {type === "word-chips-construct" && sourceText && (
         <div className="flex items-center justify-center mb-8">
           <div className="px-6 py-3 bg-white rounded-xl shadow-sm">
-            <span className="text-2xl font-medium">{textToTranslate}</span>
+            <span className="text-2xl font-medium">{sourceText}</span>
           </div>
         </div>
       )}
