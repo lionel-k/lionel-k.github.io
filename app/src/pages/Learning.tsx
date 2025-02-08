@@ -118,7 +118,6 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
     if (!currentExercise) return null;
 
     const commonProps = {
-      sourceText: currentExercise.sourceText,
       correctAnswer: currentExercise.correctAnswer,
       audioUrl: currentExercise.audioUrl,
       isCompleted: exerciseCompleted,
@@ -128,11 +127,19 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
     switch (currentExercise.type) {
       case "multiple-choice":
         return (
-          <MultipleChoice {...commonProps} options={currentExercise.options!} />
+          <MultipleChoice
+            {...commonProps}
+            options={currentExercise.options!}
+            sourceText={currentExercise.sourceText!}
+          />
         );
       case "audio-choice":
         return (
-          <AudioChoice {...commonProps} options={currentExercise.options!} />
+          <AudioChoice
+            {...commonProps}
+            options={currentExercise.options!}
+            sourceText={currentExercise.sourceText!}
+          />
         );
       case "word-chips-transcribe":
       case "word-chips-translate":
