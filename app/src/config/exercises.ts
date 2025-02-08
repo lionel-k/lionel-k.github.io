@@ -8,6 +8,7 @@ export const EXERCISE_TITLES: Record<ExerciseType, string> = {
   "fill-blank-text": "Complete the translation",
   "word-chips-transcribe": "Construct what you hear",
   "word-chips-translate": "Translate what you hear",
+  "word-chips-construct": "Translate to Kirundi",
   "multiple-choice": "Select the correct translation",
   "text-matching": "Match the phrases with their English translations",
   "image-choice": "Listen and select the correct image",

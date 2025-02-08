@@ -5,7 +5,10 @@ import { EXERCISE_TITLES } from "../../config/exercises";
 
 interface ExtendedWordChipsProps extends BaseExerciseProps {
   wordChips: string[];
-  type: "word-chips-transcribe" | "word-chips-translate";
+  type:
+    | "word-chips-transcribe"
+    | "word-chips-translate"
+    | "word-chips-construct";
   textToTranslate?: string;
 }
 
@@ -27,12 +30,15 @@ export const WordChips = ({
 
   // Initialize and play audio when component mounts
   useEffect(() => {
-    if (audioUrl) {
+    if (
+      audioUrl &&
+      (type === "word-chips-transcribe" || type === "word-chips-translate")
+    ) {
       const newAudio = new Audio(audioUrl);
       setAudio(newAudio);
       newAudio.play();
     }
-  }, [audioUrl]);
+  }, [audioUrl, type]);
 
   const handleChipClick = (chip: string) => {
     if (isCompleted) return;
@@ -63,24 +69,27 @@ export const WordChips = ({
         {EXERCISE_TITLES[type]}
       </h3>
 
-      {/* Audio Controls with Text for Translation */}
+      {/* Audio Controls or Text for Translation */}
       <div className="flex flex-col items-center gap-4">
-        {type === "word-chips-translate" && textToTranslate && (
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <p className="text-xl text-center text-gray-700">
-              {textToTranslate}
-            </p>
-          </div>
-        )}
-        {audioUrl && (
-          <button
-            onClick={playAudio}
-            disabled={isCompleted || !audioUrl}
-            className="p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
-          >
-            <Volume2 className="w-8 h-8 text-blue-500" />
-          </button>
-        )}
+        {(type === "word-chips-translate" || type === "word-chips-construct") &&
+          textToTranslate && (
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <p className="text-xl text-center text-gray-700">
+                {textToTranslate}
+              </p>
+            </div>
+          )}
+        {audioUrl &&
+          (type === "word-chips-transcribe" ||
+            type === "word-chips-translate") && (
+            <button
+              onClick={playAudio}
+              disabled={isCompleted || !audioUrl}
+              className="p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+            >
+              <Volume2 className="w-8 h-8 text-blue-500" />
+            </button>
+          )}
       </div>
 
       <div

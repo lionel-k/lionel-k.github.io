@@ -13,6 +13,7 @@ export interface Exercise {
     | "multiple-choice"
     | "word-chips-transcribe"
     | "word-chips-translate"
+    | "word-chips-construct"
     | "audio-text-matching"
     | "text-matching"
     | "image-choice"

@@ -135,6 +135,7 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
         );
       case "word-chips-transcribe":
       case "word-chips-translate":
+      case "word-chips-construct":
         return (
           <WordChips
             {...commonProps}

@@ -17,6 +17,13 @@
         "correctAnswer": "I love you very much",
         "textToTranslate": "Ndagukunda cane",
         "wordChips": ["I", "love", "you", "very", "much"]
+      },
+      {
+        "id": 3,
+        "type": "word-chips-construct",
+        "correctAnswer": "Amahoro umeze gute",
+        "textToTranslate": "Hello, how are you",
+        "wordChips": ["Amahoro", "umeze", "gute", "cane", "Ndagukunda"]
       }
     ]
   },
