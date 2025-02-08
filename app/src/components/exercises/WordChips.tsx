@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Volume2, X } from "lucide-react";
 import { WordChipsProps } from "./types";
 import { EXERCISE_TITLES } from "../../config/exercises";
@@ -10,6 +10,16 @@ export const WordChips = ({
   onAnswer,
 }: WordChipsProps) => {
   const [selectedChips, setSelectedChips] = useState<string[]>([]);
+  const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
+
+  // Initialize and play audio when component mounts
+  useEffect(() => {
+    if (audioUrl) {
+      const newAudio = new Audio(audioUrl);
+      setAudio(newAudio);
+      newAudio.play();
+    }
+  }, [audioUrl]);
 
   const handleChipClick = (chip: string) => {
     if (isCompleted) return;
@@ -27,21 +37,28 @@ export const WordChips = ({
     onAnswer(newChips.join(" "));
   };
 
+  const playAudio = () => {
+    if (audio) {
+      audio.currentTime = 0;
+      audio.play();
+    }
+  };
+
   return (
-    <div className="space-y-6">
-      <div className="flex items-center justify-between">
-        <h3 className="text-xl font-semibold text-gray-900">
-          {EXERCISE_TITLES["word-chips"]}
-        </h3>
-        {audioUrl && (
-          <button
-            onClick={() => new Audio(audioUrl).play()}
-            disabled={isCompleted}
-            className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <Volume2 className="w-6 h-6 text-blue-600" />
-          </button>
-        )}
+    <div className="space-y-8">
+      <h3 className="text-2xl font-semibold text-gray-900">
+        {EXERCISE_TITLES["word-chips"]}
+      </h3>
+
+      {/* Audio Controls */}
+      <div className="flex justify-center gap-4">
+        <button
+          onClick={playAudio}
+          disabled={isCompleted || !audioUrl}
+          className="p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+        >
+          <Volume2 className="w-8 h-8 text-blue-500" />
+        </button>
       </div>
 
       <div
