@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MultipleChoiceProps } from "./types";
 import { EXERCISE_TITLES } from "../../config/exercises";
+import { SourceText } from "./SourceText";
 
 export const MultipleChoice = ({
   options,
@@ -24,13 +25,7 @@ export const MultipleChoice = ({
         </h3>
       </div>
 
-      <div className="flex items-center justify-center mb-8">
-        <div className="px-8 py-4 bg-white rounded-xl shadow-md border-2 border-gray-100 hover:shadow-lg transition-shadow">
-          <span className="text-3xl font-semibold text-gray-900">
-            {sourceText}
-          </span>
-        </div>
-      </div>
+      <SourceText text={sourceText} />
 
       <div
         className={`space-y-3 ${

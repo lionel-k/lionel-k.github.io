@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Volume2 } from "lucide-react";
 import { BaseExerciseProps } from "./types";
 import { EXERCISE_TITLES } from "../../config/exercises";
+import { SourceText } from "./SourceText";
 
 interface FillBlankProps extends BaseExerciseProps {
   sentence?: string;
@@ -23,12 +23,6 @@ export const FillBlank = ({
     setAnswer("");
   }, [sentence, type]);
 
-  useEffect(() => {
-    if (type === "fill-blank-audio" && audioUrl) {
-      new Audio(audioUrl).play();
-    }
-  }, [audioUrl, type]);
-
   const handleChange = (value: string) => {
     if (isCompleted) return;
     setAnswer(value);
@@ -45,28 +39,11 @@ export const FillBlank = ({
         </h3>
       </div>
 
-      {type === "fill-blank-text" && sourceText && (
-        <div className="flex items-center justify-center mb-8">
-          <div className="px-8 py-4 bg-white rounded-xl shadow-md border-2 border-gray-100 hover:shadow-lg transition-shadow">
-            <span className="text-3xl font-semibold text-gray-900">
-              {sourceText}
-            </span>
-          </div>
-        </div>
-      )}
-
-      {type === "fill-blank-audio" && (
-        <div className="flex items-center justify-center gap-3 mb-8">
-          <div
-            className="flex items-center gap-4 px-8 py-4 bg-white rounded-xl shadow-md border-2 border-gray-100 hover:shadow-lg transition-shadow cursor-pointer"
-            onClick={() => audioUrl && new Audio(audioUrl).play()}
-          >
-            <div className="p-2 rounded-lg bg-blue-500">
-              <Volume2 className="w-6 h-6 text-white" />
-            </div>
-          </div>
-        </div>
-      )}
+      <SourceText
+        text={type === "fill-blank-text" ? sourceText : undefined}
+        audioUrl={type === "fill-blank-audio" ? audioUrl : undefined}
+        showAudio={type === "fill-blank-audio"}
+      />
 
       <div className="flex items-center justify-center gap-2 text-lg">
         <span>{before}</span>

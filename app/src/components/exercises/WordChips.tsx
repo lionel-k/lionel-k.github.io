@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { Volume2, X } from "lucide-react";
+import { X } from "lucide-react";
 import { WordChipsProps } from "./types";
 import { EXERCISE_TITLES } from "../../config/exercises";
+import { SourceText } from "./SourceText";
 
 export const WordChips = ({
   wordChips,
@@ -16,15 +17,6 @@ export const WordChips = ({
   useEffect(() => {
     setSelectedChips([]);
   }, [wordChips, type]);
-
-  useEffect(() => {
-    if (
-      audioUrl &&
-      (type === "word-chips-transcribe" || type === "word-chips-translate")
-    ) {
-      new Audio(audioUrl).play();
-    }
-  }, [audioUrl, type]);
 
   const handleChipClick = (chip: string) => {
     if (isCompleted) return;
@@ -42,6 +34,9 @@ export const WordChips = ({
     onAnswer(newChips.join(" "));
   };
 
+  const showAudio =
+    type === "word-chips-transcribe" || type === "word-chips-translate";
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -50,36 +45,7 @@ export const WordChips = ({
         </h3>
       </div>
 
-      {/* Source Text or Audio Section */}
-      {(type === "word-chips-transcribe" || type === "word-chips-translate") &&
-        audioUrl && (
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div
-              className="flex items-center gap-4 px-8 py-4 bg-white rounded-xl shadow-md border-2 border-gray-100 hover:shadow-lg transition-shadow cursor-pointer"
-              onClick={() => audioUrl && new Audio(audioUrl).play()}
-            >
-              <div className="p-2 rounded-lg bg-blue-500">
-                <Volume2 className="w-6 h-6 text-white" />
-              </div>
-              {sourceText && (
-                <span className="text-3xl font-semibold text-gray-900">
-                  {sourceText}
-                </span>
-              )}
-            </div>
-          </div>
-        )}
-
-      {/* Source Text for Construct Type */}
-      {type === "word-chips-construct" && sourceText && (
-        <div className="flex items-center justify-center mb-8">
-          <div className="px-8 py-4 bg-white rounded-xl shadow-md border-2 border-gray-100 hover:shadow-lg transition-shadow">
-            <span className="text-3xl font-semibold text-gray-900">
-              {sourceText}
-            </span>
-          </div>
-        </div>
-      )}
+      <SourceText text={sourceText} audioUrl={audioUrl} showAudio={showAudio} />
 
       {/* Selected chips */}
       <div className="min-h-[60px] p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-200">
