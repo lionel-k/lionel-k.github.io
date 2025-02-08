@@ -20,6 +20,11 @@ export const WordChips = ({
   const [selectedChips, setSelectedChips] = useState<string[]>([]);
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
+  // Reset selected chips when exercise changes
+  useEffect(() => {
+    setSelectedChips([]);
+  }, [wordChips, type]);
+
   // Initialize and play audio when component mounts
   useEffect(() => {
     if (audioUrl) {
