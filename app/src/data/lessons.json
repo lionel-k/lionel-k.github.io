@@ -5,10 +5,26 @@
     "exercises": [
       {
         "id": 1,
-        "type": "multiple-choice",
-        "sourceText": "I love you",
-        "correctAnswer": "Ndagukunda",
-        "options": ["Ndagukunda", "Ndakumbuye", "Ndagushaka", "Ndakeneye"]
+        "type": "text-matching",
+        "correctAnswer": "all-matched",
+        "pairs": [
+          {
+            "text1": "Amahoro",
+            "text2": "Hello"
+          },
+          {
+            "text1": "Mwaramutse",
+            "text2": "Good morning"
+          },
+          {
+            "text1": "Mwiriwe",
+            "text2": "Good evening"
+          },
+          {
+            "text1": "Urakoze",
+            "text2": "Thank you"
+          }
+        ]
       }
     ]
   },
