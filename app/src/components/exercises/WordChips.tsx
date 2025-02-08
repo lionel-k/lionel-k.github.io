@@ -117,18 +117,20 @@ export const WordChips = ({
         </div>
         {/* Available chips */}
         <div className="flex flex-wrap gap-2">
-          {wordChips
-            .filter((chip) => !selectedChips.includes(chip))
-            .map((chip, index) => (
-              <button
-                key={index}
-                onClick={() => handleChipClick(chip)}
-                disabled={isCompleted}
-                className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {chip}
-              </button>
-            ))}
+          {wordChips.map((chip, index) => (
+            <button
+              key={index}
+              onClick={() => handleChipClick(chip)}
+              disabled={isCompleted || selectedChips.includes(chip)}
+              className={`px-4 py-2 rounded-full transition-all ${
+                selectedChips.includes(chip)
+                  ? "opacity-0 cursor-default pointer-events-none"
+                  : "bg-gray-100 hover:bg-gray-200 text-gray-800"
+              } disabled:opacity-50 disabled:cursor-not-allowed`}
+            >
+              {chip}
+            </button>
+          ))}
         </div>
       </div>
     </div>
