@@ -167,6 +167,7 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
           <ImageChoice
             {...commonProps}
             imageOptions={currentExercise.imageOptions!}
+            sourceText={currentExercise.sourceText!}
           />
         );
       case "fill-blank-audio":

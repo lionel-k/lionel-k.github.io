@@ -33,4 +33,5 @@ export interface ImageChoiceProps extends BaseExerciseProps {
     url: string;
     label: string;
   }>;
+  sourceText: string;
 }

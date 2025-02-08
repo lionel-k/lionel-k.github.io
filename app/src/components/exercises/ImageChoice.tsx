@@ -1,15 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Volume2 } from "lucide-react";
 import { ImageChoiceProps } from "./types";
 import { EXERCISE_TITLES } from "../../config/exercises";
 
 export const ImageChoice = ({
   imageOptions,
+  sourceText,
   audioUrl,
   isCompleted,
   onAnswer,
 }: ImageChoiceProps) => {
   const [selectedImage, setSelectedImage] = useState("");
+
+  useEffect(() => {
+    if (audioUrl) {
+      new Audio(audioUrl).play();
+    }
+  }, [audioUrl]);
 
   const handleImageSelect = (label: string) => {
     if (isCompleted) return;
@@ -23,15 +30,18 @@ export const ImageChoice = ({
         <h3 className="text-xl font-semibold text-gray-900">
           {EXERCISE_TITLES["image-choice"]}
         </h3>
-        {audioUrl && (
-          <button
-            onClick={() => new Audio(audioUrl).play()}
-            disabled={isCompleted}
-            className="p-3 rounded-full bg-blue-100 hover:bg-blue-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            <Volume2 className="w-6 h-6 text-blue-600" />
-          </button>
-        )}
+      </div>
+
+      <div className="flex items-center justify-center gap-3 mb-8">
+        <div
+          className="flex items-center gap-3 px-6 py-3 bg-white rounded-xl shadow-sm"
+          onClick={() => audioUrl && new Audio(audioUrl).play()}
+        >
+          <div className="p-2 rounded-lg bg-blue-500">
+            <Volume2 className="w-6 h-6 text-white cursor-pointer" />
+          </div>
+          <span className="text-2xl font-medium">{sourceText}</span>
+        </div>
       </div>
 
       <div
@@ -44,20 +54,20 @@ export const ImageChoice = ({
             key={index}
             onClick={() => handleImageSelect(option.label)}
             disabled={isCompleted}
-            className={`relative aspect-square rounded-xl overflow-hidden transition-all ${
+            className={`flex flex-col items-center p-4 rounded-2xl border-2 transition-all ${
               selectedImage === option.label
-                ? "ring-4 ring-[#DAA520] scale-95"
-                : "hover:scale-95"
+                ? "border-[#DAA520] bg-[#DAA520]/5"
+                : "border-gray-200 hover:border-gray-300"
             }`}
           >
-            <img
-              src={option.url}
-              alt={option.label}
-              className="w-full h-full object-cover"
-            />
-            {selectedImage === option.label && (
-              <div className="absolute inset-0 bg-[#DAA520] bg-opacity-20" />
-            )}
+            <div className="relative w-full aspect-square mb-2">
+              <img
+                src={option.url}
+                alt={option.label}
+                className="w-full h-full object-contain"
+              />
+            </div>
+            <span className="text-lg text-gray-700">{option.label}</span>
           </button>
         ))}
       </div>
