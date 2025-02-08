@@ -7,7 +7,6 @@ import {
   AudioTextMatching,
   TextMatching,
   ImageChoice,
-  TextInput,
   FillBlank,
 } from "../components/exercises";
 import {
