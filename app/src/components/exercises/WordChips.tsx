@@ -1,14 +1,22 @@
 import { useState, useEffect } from "react";
 import { Volume2, X } from "lucide-react";
-import { WordChipsProps } from "./types";
+import { BaseExerciseProps } from "./types";
 import { EXERCISE_TITLES } from "../../config/exercises";
+
+interface ExtendedWordChipsProps extends BaseExerciseProps {
+  wordChips: string[];
+  type: "word-chips-transcribe" | "word-chips-translate";
+  textToTranslate?: string;
+}
 
 export const WordChips = ({
   wordChips,
   audioUrl,
   isCompleted,
   onAnswer,
-}: WordChipsProps) => {
+  type = "word-chips-transcribe",
+  textToTranslate,
+}: ExtendedWordChipsProps) => {
   const [selectedChips, setSelectedChips] = useState<string[]>([]);
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
 
@@ -47,18 +55,27 @@ export const WordChips = ({
   return (
     <div className="space-y-8">
       <h3 className="text-2xl font-semibold text-gray-900">
-        {EXERCISE_TITLES["word-chips"]}
+        {EXERCISE_TITLES[type]}
       </h3>
 
-      {/* Audio Controls */}
-      <div className="flex justify-center gap-4">
-        <button
-          onClick={playAudio}
-          disabled={isCompleted || !audioUrl}
-          className="p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
-        >
-          <Volume2 className="w-8 h-8 text-blue-500" />
-        </button>
+      {/* Audio Controls with Text for Translation */}
+      <div className="flex flex-col items-center gap-4">
+        {type === "word-chips-translate" && textToTranslate && (
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <p className="text-xl text-center text-gray-700">
+              {textToTranslate}
+            </p>
+          </div>
+        )}
+        {audioUrl && (
+          <button
+            onClick={playAudio}
+            disabled={isCompleted || !audioUrl}
+            className="p-6 rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center"
+          >
+            <Volume2 className="w-8 h-8 text-blue-500" />
+          </button>
+        )}
       </div>
 
       <div

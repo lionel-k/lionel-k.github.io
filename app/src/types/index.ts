@@ -11,7 +11,8 @@ export interface Exercise {
   date?: string;
   type:
     | "multiple-choice"
-    | "word-chips"
+    | "word-chips-transcribe"
+    | "word-chips-translate"
     | "audio-text-matching"
     | "text-matching"
     | "image-choice"
@@ -26,6 +27,7 @@ export interface Exercise {
   imageUrl?: string;
   sentence?: string;
   sourceText?: string;
+  textToTranslate?: string;
   imageOptions?: Array<{ url: string; label: string }>;
   pairs?: Array<
     | {

@@ -133,9 +133,15 @@ const Learning = ({ lesson, onExit, backPath = "/lessons" }: LearningProps) => {
         return (
           <AudioChoice {...commonProps} options={currentExercise.options!} />
         );
-      case "word-chips":
+      case "word-chips-transcribe":
+      case "word-chips-translate":
         return (
-          <WordChips {...commonProps} wordChips={currentExercise.wordChips!} />
+          <WordChips
+            {...commonProps}
+            type={currentExercise.type}
+            wordChips={currentExercise.wordChips!}
+            textToTranslate={currentExercise.textToTranslate}
+          />
         );
       case "audio-text-matching":
         const audioPairs = currentExercise.pairs?.filter(
