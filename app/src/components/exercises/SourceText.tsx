@@ -1,4 +1,5 @@
 import { Volume2 } from "lucide-react";
+import { useEffect } from "react";
 
 interface SourceTextProps {
   text?: string;
@@ -12,6 +13,12 @@ export const SourceText = ({
   showAudio = false,
 }: SourceTextProps) => {
   if (!text && !showAudio) return null;
+
+  useEffect(() => {
+    if (audioUrl && showAudio) {
+      new Audio(audioUrl).play();
+    }
+  }, [audioUrl, showAudio]);
 
   const handleAudioClick = () => {
     if (audioUrl) {
