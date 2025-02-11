@@ -11,7 +11,7 @@ export const LANGUAGES = [
   {
     name: "Kinyarwanda",
     slug: "kinyarwanda",
-    comingSoon: true,
+    comingSoon: false,
   },
   {
     name: "Lingala",
