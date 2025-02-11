@@ -1,8 +1,9 @@
 import "./globals.css";
 import GoogleAnalyticsWrapper from "./GoogleAnalyticsWrapper";
+import { Inter } from "next/font/google";
+import { Providers } from "./providers";
 
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full">
+    <html lang="en" className="h-full" suppressHydrationWarning>
       <head>
         {/* Insert GA script tags directly in <head> here */}
         <script
@@ -93,11 +94,13 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} flex min-h-full flex-col`}>
-        <GoogleAnalyticsWrapper>
-          <Navbar />
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </GoogleAnalyticsWrapper>
+        <Providers>
+          <GoogleAnalyticsWrapper>
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </GoogleAnalyticsWrapper>
+        </Providers>
       </body>
     </html>
   );
