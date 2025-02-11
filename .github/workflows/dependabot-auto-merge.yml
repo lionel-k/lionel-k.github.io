@@ -6,9 +6,9 @@ on:
     branches: [main]
     types: [opened, reopened, synchronize]
 
-  # Scheduled sweep every 5 minutes
+  # Scheduled sweep every day at 7:00 AM
   schedule:
-    - cron: "0/5 * * * *"
+    - cron: "0 7 * * *"
 
 # Make sure we have permission to read checks & merge PRs
 permissions:
