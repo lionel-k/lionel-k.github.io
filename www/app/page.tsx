@@ -186,7 +186,6 @@ export default function Home() {
               </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Review Image Card 1 */}
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
                 <img
                   src="/images/reviews/1.png"
@@ -195,7 +194,6 @@ export default function Home() {
                 />
               </div>
 
-              {/* Review Image Card 2 */}
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
                 <img
                   src="/images/reviews/2.png"
@@ -204,7 +202,6 @@ export default function Home() {
                 />
               </div>
 
-              {/* Review Image Card 3 */}
               <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
                 <img
                   src="/images/reviews/3.png"
@@ -212,8 +209,6 @@ export default function Home() {
                   className="w-full h-auto rounded-lg object-contain"
                 />
               </div>
-
-              {/* Duplicate or remove cards as necessary for more images */}
             </div>
           </div>
         </section>
