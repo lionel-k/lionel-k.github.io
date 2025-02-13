@@ -704,7 +704,7 @@ export const kirundiConfigs = {
         "Trilingual Format: Kirundi, English, and French let families learn together, no matter their fluency level.",
         "Perfect for Diaspora: Designed for parents abroad who want a simple, joyful way to share Kirundi heritage.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/B0CXM1YXZ5",
+      amazonUrl: "https://mybook.to/colors-kirundi",
       bestSeller: false,
       testimonials: [
         "My daughter loves pointing at the bright pictures and repeating the Kirundi color words! - C.E.",
