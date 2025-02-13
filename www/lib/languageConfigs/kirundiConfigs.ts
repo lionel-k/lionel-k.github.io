@@ -1058,7 +1058,7 @@ export const kirundiConfigs = {
       slug: "melodies-of-burundi",
       age: "6+",
       pages: "40",
-      price: "25",
+      price: "25.00",
       description: {
         short:
           "Explore Kirundi children's songs with English translations and chords. Ideal for families and music enthusiasts.",
@@ -1160,7 +1160,7 @@ export const kirundiConfigs = {
         "Beginner-Friendly Format: Large print, easy-to-follow puzzles, and answers included for quick reference.",
         "Diaspora Connection: Great for families abroad seeking a deeper bond with their Burundian roots.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/B0D3CSLQ41",
+      amazonUrl: "https://mybook.to/kirundi-word-search",
       bestSeller: false,
       testimonials: [
         "This puzzle book keeps me busy for hours—I'm learning Kirundi so much faster! - C.E.",
