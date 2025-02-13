@@ -96,7 +96,7 @@ export const kirundiConfigs = {
         "Bilingual Learning: Kirundi & English side-by-side, making it easy for parents and children to learn together.",
         "Characters You Can Relate To: Gatore's worries and excitement are just like what kids in other countries feel, making them feel like they belong.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960080",
+      amazonUrl: "https://mybook.to/gatore-visit-burundi",
       bestSeller: true,
       testimonials: [
         "This delightful book follows a girl and her family on her first family visit to Burundi, where she explores the local culture and apprehensively tries the food. The vivid descriptions and heartwarming narrative make it an engaging read that inspires curiosity and appreciation for diverse experiences. - A.B.",
