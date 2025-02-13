@@ -11,10 +11,10 @@ export type LanguageConfig = {
 export const languagesConfig: Record<string, LanguageConfig> = {
   kirundi: {
     ...kirundiConfigs,
-    description: `Explore beautiful bilingual Kirundi books that connect children with Burundian culture. Each book features side-by-side Kirundi and English or French text, making language learning natural and fun.`,
+    description: `Discover Burundian culture through bilingual Kirundi books. Read side-by-side in Kirundi and English/French. Perfect for kids learning their heritage.`,
   },
   kinyarwanda: {
     ...kinyarwandaConfigs,
-    description: `Immerse your children in Rwandan culture with our bilingual Kinyarwanda books. Perfect for families wanting to teach Kinyarwanda alongside English or French in an engaging way.`,
+    description: `Learn Kinyarwanda with bilingual picture books. Experience Rwandan culture through stories in Kinyarwanda and English/French. Made for families.`,
   },
 };
