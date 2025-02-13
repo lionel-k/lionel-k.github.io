@@ -35,6 +35,14 @@ export function Footer() {
                   Kirundi Books
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/books/kinyarwanda"
+                  className="text-sm text-gray-300 hover:text-[#DAA520]"
+                >
+                  Kinyarwanda Books
+                </Link>
+              </li>
             </ul>
           </div>
 
