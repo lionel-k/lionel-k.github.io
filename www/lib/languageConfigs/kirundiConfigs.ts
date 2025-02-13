@@ -1005,7 +1005,7 @@ export const kirundiConfigs = {
         "Bilingual Touch: Great for fans of Kirundi and English looking for a cultural twist on jokes.",
         "Cultural Insights: Discover daily life in Burundi through witty, clean jokes that reflect local traditions.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/B0CNYLT1L9",
+      amazonUrl: "https://mybook.to/kirundi-jokes",
       bestSeller: false,
       testimonials: [
         "I never knew Kirundi jokes could be so fun! My teens can't stop giggling at these hilarious one-liners. - C.E.",
