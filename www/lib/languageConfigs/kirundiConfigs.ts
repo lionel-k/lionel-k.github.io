@@ -932,7 +932,7 @@ export const kirundiConfigs = {
         "Boost Vocabulary: Explore everyday concepts—animals, shapes, fruits, vegetables—through coloring and simple text.",
         "Perfect for Ages 3-6: Kid-friendly outlines, single-sided pages, and easy words keep children excited to learn.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/B0C2RYF8M2",
+      amazonUrl: "https://mybook.to/coloring-book-kirundi",
       bestSeller: false,
       testimonials: [
         "My daughter loves learning Kirundi, English, and French while she colors. So fun and educational! - C.E.",
