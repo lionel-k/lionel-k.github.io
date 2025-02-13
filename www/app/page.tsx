@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description:
       "Explore our collection of bilingual books in various African languages. Perfect for families worldwide.",
     images: ["https://www.lingu.africa/logo.png"],
-    creator: "@linguafrica",
+    creator: "@lionel.kubwimana",
   },
 };
 
