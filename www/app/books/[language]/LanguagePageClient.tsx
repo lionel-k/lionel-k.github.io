@@ -1,17 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { FAQ } from "@/components/FAQ";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { ArrowRight } from "lucide-react";
 
-export default function LanguagePageClient() {
-  const { language } = useParams();
+type Props = {
+  language: string;
+};
 
-  if (!language || typeof language !== "string") {
+export default function LanguagePageClient({ language }: Props) {
+  if (!language) {
     return <div>Loading...</div>;
   }
 
@@ -23,6 +24,7 @@ export default function LanguagePageClient() {
   }
 
   const faqItems = languageData.faq;
+  const pageDescription = `Discover our collection of bilingual ${languageData.name} books paired with English or French translations—perfect for families worldwide!`;
 
   return (
     <div className="flex flex-col">
@@ -47,9 +49,7 @@ export default function LanguagePageClient() {
               {languageData.name} Books
             </h1>
             <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
-              Discover our collection of bilingual {languageData.name} books
-              paired with English or French translations—perfect for families
-              worldwide!
+              {pageDescription}
             </p>
           </div>
         </div>
