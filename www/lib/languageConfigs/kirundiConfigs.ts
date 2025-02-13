@@ -257,7 +257,7 @@ export const kirundiConfigs = {
         "Action & Adventure: Shaka's trip to Ruvubu National Park keeps kids hooked while teaching new vocabulary.",
         "Burundian Heritage: Helps diaspora children discover the sights, sounds, and excitement of Burundi.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960188",
+      amazonUrl: "https://mybook.to/shaka-in-burundi",
       bestSeller: false,
       testimonials: [
         "An enchanting journey through Burundi! This book beautifully blends adventure, culture, and family bonds, while teaching valuable lessons about gratitude and embracing new experiences. A delightful read for all ages! - A.B.",
