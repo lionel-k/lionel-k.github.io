@@ -1287,6 +1287,81 @@ export const kirundiConfigs = {
         },
       ],
     },
+    {
+      title: "300+ Riddles in Kirundi",
+      slug: "riddles-in-kirundi",
+      age: "10+",
+      pages: "70",
+      price: "22.99",
+      description: {
+        short:
+          "Over 300 Kirundi riddles offering cultural insights and family-friendly fun. Great for anyone wanting a deeper connection to Burundi.",
+        long: `
+Have you ever wondered about the secrets buried within the riddles of a culture that's rich in history?
+In this book, you'll explore 300+ Kirundi riddles that blend clever wit with meaningful life lessons.
+Dive into Burundi's traditions, discover fun challenges for the whole family, and connect with the
+humor and heritage that make these riddles a special part of Burundian identity. Perfect for educators,
+language learners, and all who love a good brain teaser!
+    `.trim(),
+      },
+      challenges: [
+        "Limited exposure to Kirundi riddles: Many diaspora families and learners rarely see the playful, wise side of Kirundi culture.",
+        "Needing deeper cultural insights: Riddles provide a window into everyday life and values, but they can be tough to find in English.",
+        "Keeping traditions alive: These riddles encourage storytelling and bonding, ensuring younger generations stay connected to their roots.",
+      ],
+      whyChoose: [
+        "Over 300 Riddles: A broad range of clever Kirundi riddles for all ages to enjoy and learn from.",
+        "Cultural Context: Each riddle hints at the customs, beliefs, and daily life of Burundi, deepening your understanding.",
+        "For Teens and Adults: Designed for anyone 10+, these riddles are challenging, funny, and perfect for group activities or solo fun.",
+      ],
+      amazonUrl: "https://mybook.to/riddles-in-kirundi",
+      bestSeller: false,
+      testimonials: [
+        "I had no idea Kirundi riddles could be so entertaining—my teenagers love them! - C.M.",
+        "A must-read for anyone curious about Burundian oral traditions. Enlightening and fun. - H.J.",
+        "Excellent for cultural enthusiasts. We use these riddles at family gatherings and everyone has a blast! - S.N.",
+        "It's surprising how a single riddle can reveal so much about heritage and daily life in Burundi. - P.K.",
+        "I'm learning Kirundi, and these riddles challenge me to think in a new way. Fascinating content! - L.R.",
+        "Reading these riddles feels like I'm back home. They spark memories and discussions with my kids. - T.B.",
+      ],
+      faq: [
+        {
+          question: "What if I don't enjoy the riddles? Can I return the book?",
+          answer:
+            "Yes! Your purchase is handled by Amazon, which allows returns if you're not satisfied with your order.",
+        },
+        {
+          question: "How quickly will the book arrive?",
+          answer:
+            "Shipping times depend on your location. Amazon provides an estimated arrival date at checkout, and you can track your shipment.",
+        },
+        {
+          question: "Are these riddles suitable for kids too?",
+          answer:
+            "Yes, they're generally family-friendly, though we recommend ages 10+ for a better understanding of the language and context.",
+        },
+        {
+          question: "Do I need to speak Kirundi?",
+          answer:
+            "Not necessarily. While some riddles are more fun in Kirundi, we provide clear explanations so everyone can follow along.",
+        },
+        {
+          question: "How many pages are included?",
+          answer:
+            "You'll find 120 pages packed with riddles, cultural notes, and insights about Burundian life.",
+        },
+        {
+          question: "Is this helpful for diaspora families?",
+          answer:
+            "Absolutely. It's a fun way to preserve and share Kirundi heritage. Families can bond over riddles, stories, and cultural discussions.",
+        },
+        {
+          question: "Do these riddles provide any historical background?",
+          answer:
+            "Yes. Many reflect daily life and traditions in Burundi, offering bits of historical and cultural context you might not find elsewhere.",
+        },
+      ],
+    },
   ],
   faq: [
     {
