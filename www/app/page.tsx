@@ -52,9 +52,8 @@ export default function Home() {
                 Teach Your Children Their African Language
               </h1>
               <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
-                Beautiful bilingual books designed to help families teach
-                African languages to children, regardless of prior language
-                experience!
+                Beautifully bilingual books that make learning fun and natural,
+                no prior language experience needed!
               </p>
               <div className="mt-12 flex items-center justify-center gap-x-6">
                 <Link
