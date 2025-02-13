@@ -176,7 +176,7 @@ export const kirundiConfigs = {
         "Easy Translations and Explanations: Each proverb comes with an English equivalent and an explanation, so everyone can learn.",
         "Great for Families: Perfect for teaching kids about their heritage or just sharing good life lessons.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/B0CLGQF9QW",
+      amazonUrl: "https://mybook.to/kirundi-proverbs",
       bestSeller: true,
       testimonials: [
         "I am a Burundian trying to learn more about my culture, and these proverbs help me connect with my roots. I enjoy this book and all its wisdom. - A.B.",
