@@ -405,7 +405,7 @@ export const kirundiConfigs = {
         "Bilingual Format: Kirundi and English side-by-side—perfect for families of any fluency level.",
         "Fun Characters: Kids love following the adventures of Keza, Karorero, and friends as they grow their tree.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2494614759",
+      amazonUrl: "https://mybook.to/magic-tree-kirundi",
       bestSeller: false,
       testimonials: [
         "My children love the colorful pages and can't stop talking about planting their own 'friendship tree'! - C.E.",
