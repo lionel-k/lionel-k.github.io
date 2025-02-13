@@ -331,7 +331,7 @@ export const kirundiConfigs = {
         "Bilingual Format: Kirundi and English side by side, so even non-fluent parents can follow along.",
         "Empowering Story: Inspires children to celebrate their heritage and share it confidently with friends.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/B0D8WL5Q12",
+      amazonUrl: "https://mybook.to/gatore-donuts",
       bestSeller: false,
       testimonials: [
         "My daughter loved learning Kirundi words with Gatore's fun story and bright outfit! - C.E.",
