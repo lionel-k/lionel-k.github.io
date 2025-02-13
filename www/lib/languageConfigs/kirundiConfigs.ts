@@ -855,7 +855,7 @@ export const kirundiConfigs = {
         "Fun Illustrations: Each page shows colorful images so kids can visualize and remember numbers more effectively.",
         "Perfect for Ages 0-6: Simple wording, big pictures, and an engaging design keep younger learners excited.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960056",
+      amazonUrl: "https://mybook.to/i-can-count-in-kirundi",
       bestSeller: false,
       testimonials: [
         "This book is a fun way to learn counting in Kirundi! My 4 year old loves seeing numbers in Kirundi, English, and French. - C.E.",
