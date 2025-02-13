@@ -22,7 +22,7 @@ export const kirundiConfigs = {
         "Bright Pictures Kids Love!: 30 colorful pages with fun stories - best language learning book for children.",
         "Teach Kirundi Easily!: Perfect kids language book for parents who want to learn Kirundi together - no fluent speaking needed!",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960021",
+      amazonUrl: "https://mybook.to/first-book-in-kirundi",
       bestSeller: true,
       testimonials: [
         "Excellent book for the first words in the three languages. Content on Kirundi is hard to find, even more so prepared for children. - J.D.",
