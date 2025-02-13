@@ -1239,7 +1239,7 @@ export const kirundiConfigs = {
         "Beginner-Friendly Explanations: Offers simple details on every tune, so everyone can enjoy without confusion.",
         "Bridge Generations: Families can sing together, teaching kids about Burundian culture while having fun.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/B0D8TRV1R1",
+      amazonUrl: "https://mybook.to/OBYrzk",
       bestSeller: false,
       testimonials: [
         "My grandparents and I bonded over these Kirundi songs—brought back so many joyful memories! - C.E.",
