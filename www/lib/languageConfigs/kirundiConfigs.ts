@@ -1295,7 +1295,7 @@ export const kirundiConfigs = {
       price: "22.99",
       description: {
         short:
-          "Over 300 Kirundi riddles offering cultural insights and family-friendly fun. Great for anyone wanting a deeper connection to Burundi.",
+          "300+ Kirundi riddles for cultural insights and family fun. Perfect for deepening your connection to Burundi.",
         long: `
 Have you ever wondered about the secrets buried within the riddles of a culture that's rich in history?
 In this book, you'll explore 300+ Kirundi riddles that blend clever wit with meaningful life lessons.
