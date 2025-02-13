@@ -26,15 +26,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const pageTitle = `${languageData.name} Books - Bilingual African Language Books`;
-  const pageDescription = `Discover our collection of bilingual ${languageData.name} books paired with English or French translations—perfect for families worldwide!`;
   const languageImageUrl = `https://www.lingu.africa/images/${language}/${language}.png`;
 
   return {
     title: pageTitle,
-    description: pageDescription,
+    description: languageData.description,
     openGraph: {
       title: pageTitle,
-      description: pageDescription,
+      description: languageData.description,
       url: `https://www.lingu.africa/books/${language}`,
       siteName: "Lingu.Africa",
       images: [
@@ -51,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: pageTitle,
-      description: pageDescription,
+      description: languageData.description,
       images: [languageImageUrl],
       creator: "@lionel.kubwimana",
     },
