@@ -554,7 +554,7 @@ export const kirundiConfigs = {
         "Trilingual Approach: Kirundi, English, and French together help both kids and parents learn side by side.",
         "Perfect for Ages 0-6: Short words, big images, and friendly design keep little ones excited about new languages.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960048",
+      amazonUrl: "https://mybook.to/animals-in-kirundi",
       bestSeller: false,
       testimonials: [
         "My toddler now knows animal names in Kirundi! It's so helpful for our diaspora family. - C.E.",
