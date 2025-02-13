@@ -27,7 +27,7 @@ Even if you're not fully fluent, you'll discover new words together and strength
         "Kinyarwanda, English, and French: A triple-language approach makes learning accessible to families at any skill level.",
         "Ideal for Ages 0-6: Simple sentences, colorful pages, and engaging design keep little ones excited to learn.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960153",
+      amazonUrl: "https://mybook.to/action-verbs-in-rwanda",
       bestSeller: true,
       testimonials: [
         "Good for small kids learning Kinyarwanda. The pictures are helpful in remembering new words. - C.E.",
@@ -101,7 +101,7 @@ Give them a world of words and animals to discover, bonding over language in a r
         "Trilingual Layout: Kinyarwanda, English, and French on each page—perfect for families, no matter their language level.",
         "Ideal for Ages 0-6: Simple sentences and colorful illustrations capture little ones' attention, making learning fun.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960145",
+      amazonUrl: "https://mybook.to/animals-in-kinyarwanda",
       bestSeller: false,
       testimonials: [
         "My daughter loves pointing at the animals and learning what they're called in Kinyarwanda! - K.M.",
