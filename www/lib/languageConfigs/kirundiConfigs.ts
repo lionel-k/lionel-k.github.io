@@ -629,7 +629,7 @@ export const kirundiConfigs = {
         "Trilingual Format: Kirundi, English, and French on the same page—great for families at any fluency level.",
         "Ideal for Ages 0-6: Fun illustrations, simple sentences, and easy vocabulary keep little ones engaged.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960072",
+      amazonUrl: "https://mybook.to/action-verbs-kirundi",
       bestSeller: false,
       testimonials: [
         "Book suitable for very young children to learn Kirundi. Additionally, the images help capture the words easily. - C.E.",
