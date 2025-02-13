@@ -40,12 +40,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const bookUrl = `https://www.lingu.africa/books/${language}/${slug}`;
   const coverImageUrl = `https://www.lingu.africa/images/${language}/${slug}/cover.png`;
 
+  // Create an optimized meta description
+  const metaDescription =
+    book.description.short.length <= 160
+      ? book.description.short
+      : `${book.description.short.slice(0, 157)}...`;
+
   return {
     title: bookTitle,
-    description: book.description.long,
+    description: metaDescription,
     openGraph: {
       title: bookTitle,
-      description: book.description.long,
+      description: metaDescription,
       url: bookUrl,
       siteName: "Lingu.Africa",
       images: [
@@ -62,7 +68,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: bookTitle,
-      description: book.description.long,
+      description: metaDescription,
       images: [coverImageUrl],
       creator: "@lionel.kubwimana",
     },
