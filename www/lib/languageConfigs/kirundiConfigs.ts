@@ -479,7 +479,7 @@ export const kirundiConfigs = {
         "Trilingual Approach: Kirundi, English, and French together let parents and kids learn no matter their fluency.",
         "Ideal for Ages 0-6: Big pictures, simple words, and fun layouts capture toddlers' and preschoolers' attention.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/2492960064",
+      amazonUrl: "https://mybook.to/fruits-veggies-kirundi",
       bestSeller: false,
       testimonials: [
         "Book suitable for very young children to learn about fruits. My 2 and 4-year-old daughters use it easily with the pictures. - C.E.",
