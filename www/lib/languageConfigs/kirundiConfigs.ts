@@ -1080,7 +1080,7 @@ export const kirundiConfigs = {
         "Easy-to-Use Lead Sheets: Great for beginners on piano or guitar—no advanced skills required.",
         "Perfect for Culture & Language: Combines Kirundi lyrics, English translations, and simple chords to help families learn together.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/B0CTMBCW35", // Replace with actual link
+      amazonUrl: "https://mybook.to/melodies-burundi",
       bestSeller: false,
       testimonials: [
         "My kids love singing these Kirundi songs—they dance around the house with big smiles! - C.E.",
