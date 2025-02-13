@@ -49,7 +49,7 @@ export default function Home() {
                 Preserving African Heritage Through Language
               </div>
               <h1 className="text-5xl font-bold tracking-tight text-white sm:text-7xl bg-gradient-to-r from-[#DAA520] to-[#B8860B] bg-clip-text text-transparent">
-                African Language Books That Connect Generations
+                Teach Your Children Their African Language
               </h1>
               <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
                 Beautiful bilingual books designed to help families teach
