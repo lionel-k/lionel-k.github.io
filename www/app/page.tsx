@@ -186,29 +186,18 @@ export default function Home() {
               </p>
             </div>
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
-                <img
-                  src="/images/reviews/1.png"
-                  alt="Amazon review screenshot 1"
-                  className="w-full h-auto rounded-lg object-contain"
-                />
-              </div>
-
-              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
-                <img
-                  src="/images/reviews/2.png"
-                  alt="Amazon review screenshot 2"
-                  className="w-full h-auto rounded-lg object-contain"
-                />
-              </div>
-
-              <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col">
-                <img
-                  src="/images/reviews/3.png"
-                  alt="Amazon review screenshot 3"
-                  className="w-full h-auto rounded-lg object-contain"
-                />
-              </div>
+              {[1, 2, 3, 4, 5].map((reviewNumber) => (
+                <div
+                  key={reviewNumber}
+                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col"
+                >
+                  <img
+                    src={`/images/reviews/${reviewNumber}.png`}
+                    alt={`Amazon review screenshot ${reviewNumber}`}
+                    className="w-full h-auto rounded-lg object-contain"
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </section>
