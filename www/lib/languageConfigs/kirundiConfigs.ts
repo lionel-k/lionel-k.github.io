@@ -780,7 +780,7 @@ export const kirundiConfigs = {
         "Bright & Kid-Friendly: 27 pages of bold images and simple explanations to hold children's attention.",
         "Easy for Parents: Even if you're not a native speaker, you can read along and learn with your child.",
       ],
-      amazonUrl: "https://www.amazon.com/dp/249296003X",
+      amazonUrl: "https://mybook.to/letters-in-kirundi",
       bestSeller: false,
       testimonials: [
         "A fantastic way to introduce the Kirundi alphabet alongside English and French—my children love it! - C.E.",
