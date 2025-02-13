@@ -49,15 +49,13 @@ function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
   );
 }
 
-export default function BookPageClient() {
-  const { language, slug } = useParams();
+type Props = {
+  language: string;
+  slug: string;
+};
 
-  if (
-    !language ||
-    !slug ||
-    typeof language !== "string" ||
-    typeof slug !== "string"
-  ) {
+export default function BookPageClient({ language, slug }: Props) {
+  if (!language || !slug) {
     return <div>Loading...</div>;
   }
 
