@@ -181,7 +181,9 @@ export default function BlogPostClient({ post }: Props) {
             {/* Conclusion */}
             <div className="mt-12 rounded-lg bg-gray-800 p-6">
               <h2 className="text-lg font-semibold text-white">Conclusion</h2>
-              <p className="mt-4 text-gray-300">{post.conclusion}</p>
+              <p className="mt-4 text-gray-300 whitespace-pre-line">
+                {post.conclusion}
+              </p>
             </div>
 
             {/* CTA */}

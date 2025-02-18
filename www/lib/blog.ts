@@ -42,6 +42,12 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     // Generate table of contents from raw MDX content
     const tableOfContents = generateTableOfContents(mdxContent);
 
+    // Extract conclusion from the content
+    const conclusionMatch = mdxContent.match(
+      /## Conclusion\s+([\s\S]+?)(?=\n##|$)/
+    );
+    const conclusion = conclusionMatch ? conclusionMatch[1].trim() : "";
+
     // Convert MDX content to HTML
     const processedContent = await remark().use(html).process(mdxContent);
     const contentHtml = processedContent.toString();
@@ -51,6 +57,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       slug,
       content: contentHtml,
       tableOfContents,
+      conclusion,
     } as BlogPost;
   } catch (error) {
     console.error(`Error getting blog post ${slug}:`, error);
