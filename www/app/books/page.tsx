@@ -1,13 +1,20 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { LANGUAGES } from "@/lib/constants";
+import { Metadata } from "next";
+import { pagesMetadata, sharedMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = {
+  ...sharedMetadata,
+  ...pagesMetadata.books,
+};
 
 export default function Books() {
   return (
     <div className="flex flex-col">
       {/* Hero Section (Dark) */}
       <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-28 text-white overflow-hidden">
-        {/* Optionally reduce pattern opacity or remove it if you want less “darkness” */}
+        {/* Optionally reduce pattern opacity or remove it if you want less "darkness" */}
         <div className="absolute inset-0 opacity-5 pattern-cross pattern-[#DAA520] pattern-size-6 pointer-events-none" />
 
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">

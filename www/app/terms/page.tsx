@@ -1,4 +1,11 @@
 import Link from "next/link";
+import { Metadata } from "next";
+import { pagesMetadata, sharedMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = {
+  ...sharedMetadata,
+  ...pagesMetadata.terms,
+};
 
 export default function Terms() {
   return (
