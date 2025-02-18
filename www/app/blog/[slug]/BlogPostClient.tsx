@@ -16,6 +16,19 @@ export default function BlogPostClient({ post }: Props) {
 
   return (
     <article className="min-h-screen">
+      {/* Breadcrumb - Now positioned right after navbar */}
+      <div className="border-b bg-gray-50">
+        <div className="container mx-auto px-4">
+          <BreadcrumbNav
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Blog", href: "/blog" },
+              { name: post.title, href: `/blog/${post.slug}` },
+            ]}
+          />
+        </div>
+      </div>
+
       {/* Hero section with cover image */}
       <div className="relative h-[60vh] min-h-[400px] w-full">
         <Image
@@ -105,15 +118,6 @@ export default function BlogPostClient({ post }: Props) {
 
           {/* Main Content */}
           <div className="flex-1">
-            {/* Breadcrumb */}
-            <BreadcrumbNav
-              items={[
-                { name: "Home", href: "/" },
-                { name: "Blog", href: "/blog" },
-                { name: post.title, href: `/blog/${post.slug}` },
-              ]}
-            />
-
             {/* Meta information */}
             <div className="mt-8 flex items-center justify-between border-b border-gray-200 pb-8">
               <div className="flex items-center">
