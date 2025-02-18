@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useParams } from "next/navigation";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { FAQ } from "@/components/FAQ";
 import { NewsletterForm } from "@/components/newsletter-form";
