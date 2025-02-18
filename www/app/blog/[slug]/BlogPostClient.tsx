@@ -126,17 +126,9 @@ export default function BlogPostClient({ post }: Props) {
             {/* Meta information */}
             <div className="flex items-center justify-between border-b border-gray-200 pb-8">
               <div className="flex items-center">
-                <div className="relative h-12 w-12 flex-shrink-0">
-                  <Image
-                    src={post.author.avatar}
-                    alt={post.author.name}
-                    fill
-                    className="rounded-full object-cover"
-                  />
-                </div>
                 <div className="ml-3">
                   <p className="text-sm font-medium text-gray-300">
-                    {post.author.name}
+                    {post.author}
                   </p>
                   <div className="flex space-x-1 text-sm text-gray-400">
                     <time dateTime={post.date}>
