@@ -1,12 +1,8 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogPostClient from "./BlogPostClient";
-import {
-  getBlogPost,
-  generateTableOfContents,
-  getAllBlogPosts,
-} from "@/lib/blog";
-import { MDXRemote } from "next-mdx-remote/rsc";
+import { getBlogPost, getAllBlogPosts } from "@/lib/blog";
+import { BlogPost } from "@/lib/types/blog";
 
 // This would typically come from your API or content management system
 const SAMPLE_POST: BlogPost = {
@@ -80,7 +76,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const post = await getBlogPost(params.slug);
+  const { slug } = params;
+  const post = await getBlogPost(slug);
 
   if (!post) {
     return {
@@ -116,20 +113,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const post = await getBlogPost(params.slug);
+  const { slug } = params;
+  const post = await getBlogPost(slug);
 
   if (!post) {
     notFound();
   }
 
-  // Generate table of contents from the content
-  const tableOfContents = generateTableOfContents(post.content);
-
-  // Add table of contents to the post
-  const postWithToc = {
-    ...post,
-    tableOfContents,
-  };
-
-  return <BlogPostClient post={postWithToc} />;
+  return <BlogPostClient post={post} />;
 }

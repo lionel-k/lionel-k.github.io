@@ -1,7 +1,9 @@
-import { BlogPost, BlogPostMetadata } from "./types/blog";
+import { BlogPost, BlogPostMetadata, TableOfContents } from "./types/blog";
 import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
+import { remark } from "remark";
+import html from "remark-html";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
 
@@ -37,10 +39,18 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     const content = await fs.readFile(filePath, "utf8");
     const { data, content: mdxContent } = matter(content);
 
+    // Generate table of contents from raw MDX content
+    const tableOfContents = generateTableOfContents(mdxContent);
+
+    // Convert MDX content to HTML
+    const processedContent = await remark().use(html).process(mdxContent);
+    const contentHtml = processedContent.toString();
+
     return {
       ...data,
       slug,
-      content: mdxContent,
+      content: contentHtml,
+      tableOfContents,
     } as BlogPost;
   } catch (error) {
     console.error(`Error getting blog post ${slug}:`, error);
@@ -48,14 +58,21 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   }
 }
 
-export function generateTableOfContents(content: string) {
-  const headings = content.match(/^##\s+(.+)$/gm) || [];
-  return headings.map((heading) => {
-    const text = heading.replace(/^##\s+/, "").trim();
-    return {
+export function generateTableOfContents(content: string): TableOfContents[] {
+  // Match both ## and ### headings
+  const headingRegex = /^(#{2,3})\s+(.+)$/gm;
+  const headings: TableOfContents[] = [];
+  let match;
+
+  while ((match = headingRegex.exec(content)) !== null) {
+    const level = match[1].length; // Count the number of # symbols
+    const text = match[2].trim();
+    headings.push({
       id: text.toLowerCase().replace(/[^\w]+/g, "-"),
       text,
-      level: 2,
-    };
-  });
+      level,
+    });
+  }
+
+  return headings;
 }

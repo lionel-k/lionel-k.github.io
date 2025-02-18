@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogPost } from "@/lib/types/blog";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
-import { MDXRemote } from "next-mdx-remote/rsc";
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
@@ -167,7 +166,7 @@ export default function BlogPostClient({ post }: Props) {
 
             {/* Content */}
             <div className="prose prose-lg mt-8 max-w-none">
-              <MDXRemote source={post.content} />
+              <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
 
             {/* Conclusion */}
