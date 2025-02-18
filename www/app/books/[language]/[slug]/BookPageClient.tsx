@@ -266,6 +266,46 @@ export default function BookPageClient({ language, slug }: Props) {
       </section>
       {/* Final CTA Section */}
       <PurchaseCTA amazonUrl={book.amazonUrl} />
+      {/* More Books Section */}
+      <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              More {languageData.name} Books
+            </h2>
+            <p className="text-xl text-gray-600">
+              Explore our other {languageData.name} books
+            </p>
+          </div>
+          <div className="grid gap-8 md:grid-cols-3">
+            {languageData.books
+              .filter((b) => b.slug !== slug)
+              .slice(0, 3)
+              .map((relatedBook) => (
+                <div
+                  key={relatedBook.slug}
+                  className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
+                >
+                  <OptimizedImage
+                    src={`/images/${language}/${relatedBook.slug}/cover.png`}
+                    alt={`${relatedBook.title} cover`}
+                    className="mb-6 w-full h-48 object-contain transform group-hover:scale-105 transition-transform"
+                  />
+                  <h3 className="text-xl text-center font-bold text-gray-900 mb-3">
+                    {relatedBook.title}
+                  </h3>
+                  <Link
+                    href={`/books/${language}/${relatedBook.slug}`}
+                    className="mt-4 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                  >
+                    Learn More
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </div>
+              ))}
+          </div>
+        </div>
+      </section>
       {/* Newsletter Section - Dark (Black) */}
       <section className="bg-black text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">

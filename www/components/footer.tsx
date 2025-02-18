@@ -6,8 +6,8 @@ export function Footer() {
   return (
     <footer className="bg-black text-white py-12">
       <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-        {/* Top Section: Three columns */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        {/* Top Section: Four columns */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Brand + About */}
           <div className="text-center md:text-left">
             <Link href="/" className="inline-flex items-center space-x-2">
@@ -21,11 +21,9 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* Books by Language */}
           <div className="text-center md:text-left">
-            <h3 className="text-lg font-semibold text-[#DAA520]">
-              Quick Links
-            </h3>
+            <h3 className="text-lg font-semibold text-[#DAA520]">Our Books</h3>
             <ul className="mt-4 space-y-2">
               <li>
                 <Link
@@ -43,6 +41,45 @@ export function Footer() {
                   Kinyarwanda Books
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/books"
+                  className="text-sm text-gray-300 hover:text-[#DAA520]"
+                >
+                  View All Books
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div className="text-center md:text-left">
+            <h3 className="text-lg font-semibold text-[#DAA520]">Company</h3>
+            <ul className="mt-4 space-y-2">
+              <li>
+                <Link
+                  href="/about"
+                  className="text-sm text-gray-300 hover:text-[#DAA520]"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#languages"
+                  className="text-sm text-gray-300 hover:text-[#DAA520]"
+                >
+                  Languages
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/#faq"
+                  className="text-sm text-gray-300 hover:text-[#DAA520]"
+                >
+                  FAQ
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -57,6 +94,7 @@ export function Footer() {
               <Link
                 href="https://www.instagram.com/lingu.africa/"
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Instagram"
                 className="transition-transform hover:scale-110"
               >
@@ -65,6 +103,7 @@ export function Footer() {
               <Link
                 href="https://x.com/lionelkubwimana"
                 target="_blank"
+                rel="noopener noreferrer"
                 aria-label="Twitter"
                 className="transition-transform hover:scale-110"
               >
@@ -78,22 +117,15 @@ export function Footer() {
         <div className="mt-10 border-t border-[#DAA520]/20 pt-6 text-center">
           <p className="text-sm text-gray-400">
             © {new Date().getFullYear()} Lingu.Africa
-            <Link href="/terms" className="ml-2 hover:text-[#DAA520]">
-              Terms and Conditions
+            <span className="mx-2">•</span>
+            <Link href="/terms" className="hover:text-[#DAA520]">
+              Terms
             </Link>
-            <span className="mx-2"></span>
+            <span className="mx-2">•</span>
             <Link href="/privacy" className="hover:text-[#DAA520]">
-              Privacy Policy
+              Privacy
             </Link>
           </p>
-          {false && (
-            <a
-              href="javascript:openAxeptioCookies()"
-              className="text-sm text-gray-400"
-            >
-              Update your cookies settings
-            </a>
-          )}
         </div>
       </div>
     </footer>

@@ -161,7 +161,10 @@ export default function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]">
+        <section
+          id="faq"
+          className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]"
+        >
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
@@ -177,7 +180,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-20 bg-[#FAF8F5] text-gray-900">
+        <section id="reviews" className="py-20 bg-[#FAF8F5] text-gray-900">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">Amazon Reviews</h2>
