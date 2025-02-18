@@ -12,19 +12,25 @@ export type MetadataConfig = {
   openGraph?: {
     title?: string;
     description?: string;
-    images?: string;
+    images?: any;
     url?: string;
   };
   twitter?: {
     title?: string;
     description?: string;
-    images?: string;
+    images?: any;
     card?: "summary" | "summary_large_image";
   };
 };
 
-// Shared social media image
-const defaultOgImage = "/logo.png";
+// Shared social media image configuration
+const defaultOgImage = {
+  url: "/logo.png",
+  width: 1200,
+  height: 1200,
+  alt: "Lingu.Africa - Bilingual African Language Books",
+  type: "image/png",
+};
 
 export const sharedMetadata = {
   metadataBase: new URL("https://lingu.africa"),
@@ -42,14 +48,14 @@ export const sharedMetadata = {
     type: "website",
     locale: "en_US",
     siteName: SITE_NAME,
-    images: defaultOgImage,
+    images: [defaultOgImage],
   },
   // Default Twitter metadata
   twitter: {
     card: "summary_large_image",
     site: "@LinguAfrica",
     creator: "@LionelKubwimana",
-    images: defaultOgImage,
+    images: [defaultOgImage],
   },
 };
 
@@ -80,12 +86,14 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       description:
         "Read our terms and conditions to understand the rules and regulations for using Lingu.Africa's website and services.",
       url: "/terms",
+      images: [defaultOgImage],
     },
     twitter: {
       card: "summary",
       title: "Terms and Conditions | Lingu.Africa",
       description:
         "Read our terms and conditions to understand the rules and regulations for using Lingu.Africa's website and services.",
+      images: [defaultOgImage],
     },
   },
   privacy: {
@@ -105,12 +113,14 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       description:
         "Learn how Lingu.Africa protects and handles your personal information in accordance with our privacy policy.",
       url: "/privacy",
+      images: [defaultOgImage],
     },
     twitter: {
       card: "summary",
       title: "Privacy Policy | Lingu.Africa",
       description:
         "Learn how Lingu.Africa protects and handles your personal information in accordance with our privacy policy.",
+      images: [defaultOgImage],
     },
   },
   about: {
@@ -123,14 +133,14 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       description:
         "Learn about Lingu.Africa's mission to preserve African languages and culture through bilingual children's books.",
       url: "/about",
-      images: "/images/about-og.jpg",
+      images: [defaultOgImage],
     },
     twitter: {
       card: "summary_large_image",
       title: "About Us | Lingu.Africa",
       description:
         "Learn about Lingu.Africa's mission to preserve African languages and culture through bilingual children's books.",
-      images: "/images/about-og.jpg",
+      images: [defaultOgImage],
     },
   },
   books: {
@@ -152,7 +162,7 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
         getAvailableLanguageNames().join(" and ") +
         ".",
       url: "/books",
-      images: "/images/books-og.jpg",
+      images: [defaultOgImage],
     },
     twitter: {
       card: "summary_large_image",
@@ -161,7 +171,7 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
         "Explore our collection of bilingual African language books. Find stories in " +
         getAvailableLanguageNames().join(" and ") +
         ".",
-      images: "/images/books-og.jpg",
+      images: [defaultOgImage],
     },
   },
 };
