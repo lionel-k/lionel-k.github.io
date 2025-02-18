@@ -1,7 +1,11 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogPostClient from "./BlogPostClient";
-import { getBlogPost, generateTableOfContents } from "@/lib/blog";
+import {
+  getBlogPost,
+  generateTableOfContents,
+  getAllBlogPosts,
+} from "@/lib/blog";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 // This would typically come from your API or content management system
@@ -65,6 +69,14 @@ interface Props {
   params: {
     slug: string;
   };
+}
+
+// This function tells Next.js which paths to pre-render
+export async function generateStaticParams() {
+  const posts = await getAllBlogPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
