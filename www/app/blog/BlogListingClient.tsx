@@ -4,67 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogPostMetadata } from "@/lib/types/blog";
 
-interface BlogCardProps {
-  post: BlogPostMetadata;
-}
-
-function BlogCard({ post }: BlogCardProps) {
-  return (
-    <Link
-      href={`/blog/${post.slug}`}
-      className="group flex flex-col overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-[1.02]"
-    >
-      <div className="relative h-48 w-full overflow-hidden">
-        <Image
-          src={post.coverImage}
-          alt={post.title}
-          fill
-          className="object-cover transition-transform group-hover:scale-105"
-        />
-      </div>
-      <div className="flex flex-1 flex-col justify-between bg-white p-6">
-        <div className="flex-1">
-          <p className="text-sm font-medium text-indigo-600">{post.category}</p>
-          <div className="mt-2">
-            <h3 className="text-xl font-semibold text-gray-900">
-              {post.title}
-            </h3>
-            <p className="mt-3 text-base text-gray-500 line-clamp-3">
-              {post.description}
-            </p>
-          </div>
-        </div>
-        <div className="mt-6 flex items-center">
-          <div className="relative h-10 w-10 flex-shrink-0">
-            <Image
-              src={post.author.avatar}
-              alt={post.author.name}
-              fill
-              className="rounded-full object-cover"
-            />
-          </div>
-          <div className="ml-3">
-            <p className="text-sm font-medium text-gray-900">
-              {post.author.name}
-            </p>
-            <div className="flex space-x-1 text-sm text-gray-500">
-              <time dateTime={post.date}>
-                {new Date(post.date).toLocaleDateString("en-US", {
-                  month: "long",
-                  day: "numeric",
-                  year: "numeric",
-                })}
-              </time>
-              <span aria-hidden="true">&middot;</span>
-              <span>{post.readingTime}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Link>
-  );
-}
-
 interface BlogListingClientProps {
   posts: BlogPostMetadata[];
 }
@@ -81,7 +20,46 @@ export default function BlogListingClient({ posts }: BlogListingClientProps) {
   return (
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
-        <BlogCard key={post.slug} post={post} />
+        <Link
+          key={post.slug}
+          href={`/blog/${post.slug}`}
+          className="group flex flex-col overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-[1.02]"
+        >
+          <div className="relative h-48 w-full overflow-hidden">
+            <Image
+              src={post.coverImage}
+              alt={post.title}
+              fill
+              className="object-cover transition-transform group-hover:scale-105"
+            />
+          </div>
+          <div className="flex flex-1 flex-col justify-between bg-white p-6">
+            <div className="flex-1">
+              <p className="text-sm font-medium text-primary">
+                {post.category}
+              </p>
+              <h3 className="mt-2 text-xl font-semibold text-gray-900">
+                {post.title}
+              </h3>
+              <p className="mt-3 text-base text-gray-500 line-clamp-3">
+                {post.description}
+              </p>
+            </div>
+            <div className="mt-6">
+              <div className="flex items-center text-sm text-gray-500">
+                <time dateTime={post.date}>
+                  {new Date(post.date).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}
+                </time>
+                <span className="mx-2">•</span>
+                <span>{post.readingTime}</span>
+              </div>
+            </div>
+          </div>
+        </Link>
       ))}
     </div>
   );

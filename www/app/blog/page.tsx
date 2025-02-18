@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/blog";
-import BlogListingClient from "./BlogListingClient";
+import BlogListingClient from "@/app/blog/BlogListingClient";
 
 export const metadata: Metadata = {
   title: "Blog - Lingu Africa",
