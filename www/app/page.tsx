@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Book } from "lucide-react";
 import { NewsletterForm } from "@/components/newsletter-form";
-import { LANGUAGES, FAQ_ITEMS } from "@/lib/constants";
+import { LANGUAGES, FAQ_ITEMS, SITE_URL } from "@/lib/constants";
 import { FAQ } from "@/components/FAQ";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { OptimizedImage } from "@/components/OptimizedImage";
@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     title: "Lingu.Africa - Bilingual African Language Books",
     description:
       "Explore our collection of bilingual books in various African languages. Perfect for families worldwide.",
-    url: "https://www.lingu.africa/",
+    url: SITE_URL,
     siteName: "Lingu.Africa",
     images: [
       {
-        url: "https://www.lingu.africa/logo.png",
+        url: `${SITE_URL}/logo.png`,
         width: 1200,
         height: 630,
       },
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "Lingu.Africa - Bilingual African Language Books",
     description:
       "Explore our collection of bilingual books in various African languages. Perfect for families worldwide.",
-    images: ["https://www.lingu.africa/logo.png"],
+    images: [`${SITE_URL}/logo.png`],
     creator: "@lionel.kubwimana",
   },
 };

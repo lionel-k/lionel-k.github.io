@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { languagesConfig } from "@/lib/languagesConfig";
 import LanguagePageClient from "./LanguagePageClient";
+import { SITE_URL } from "@/lib/constants";
 
 type Props = {
   params: Promise<{
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const pageTitle = `${languageData.name} Books - Bilingual African Language Books`;
-  const languageImageUrl = `https://www.lingu.africa/images/${language}/${language}.png`;
+  const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
 
   return {
     title: pageTitle,
@@ -34,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: pageTitle,
       description: languageData.description,
-      url: `https://www.lingu.africa/books/${language}`,
+      url: `${SITE_URL}/books/${language}`,
       siteName: "Lingu.Africa",
       images: [
         {

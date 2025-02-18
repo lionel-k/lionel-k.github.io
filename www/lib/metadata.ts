@@ -1,7 +1,4 @@
-import { LANGUAGES, SITE_NAME, SITE_DESCRIPTION } from "./constants";
-
-// Define canonical URL
-export const CANONICAL_URL = "https://lingu.africa";
+import { LANGUAGES, SITE_NAME, SITE_URL } from "./constants";
 
 // Get all available language names for keywords
 const getAvailableLanguageNames = () => {
@@ -32,7 +29,7 @@ export type MetadataConfig = {
 
 // Shared social media image configuration
 const defaultOgImage = {
-  url: `${CANONICAL_URL}/logo.png`,
+  url: `${SITE_URL}/logo.png`,
   width: 1200,
   height: 1200,
   alt: "Lingu.Africa - Bilingual African Language Books",
@@ -42,11 +39,11 @@ const defaultOgImage = {
 // Helper function to ensure canonical URLs are properly formatted
 const getCanonicalUrl = (path: string) => {
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
-  return `${CANONICAL_URL}${cleanPath}`;
+  return `${SITE_URL}${cleanPath}`;
 };
 
 export const sharedMetadata = {
-  metadataBase: new URL(CANONICAL_URL),
+  metadataBase: new URL(SITE_URL),
   applicationName: SITE_NAME,
   authors: [{ name: "Lionel Kubwimana" }],
   creator: "Lionel Kubwimana",

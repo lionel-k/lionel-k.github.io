@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { languagesConfig } from "@/lib/languagesConfig";
 import BookPageClient from "./BookPageClient";
+import { SITE_URL } from "@/lib/constants";
 
 type Props = {
   params: Promise<{
@@ -37,8 +38,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const bookTitle = `${book.title} - ${languageData.name} Book`;
-  const bookUrl = `https://www.lingu.africa/books/${language}/${slug}`;
-  const coverImageUrl = `https://www.lingu.africa/images/${language}/${slug}/cover.png`;
+  const bookUrl = `${SITE_URL}/books/${language}/${slug}`;
+  const coverImageUrl = `${SITE_URL}/images/${language}/${slug}/cover.png`;
 
   // Create an optimized meta description
   const metaDescription =
