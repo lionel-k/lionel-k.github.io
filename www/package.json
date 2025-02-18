@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next-sitemap",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap",
@@ -22,7 +22,6 @@
     "date-fns": "^4.1.0",
     "eslint": "9.20.0",
     "eslint-config-next": "15.1.6",
-    "globby": "^14.1.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.475.0",
     "next": "15.1.6",
