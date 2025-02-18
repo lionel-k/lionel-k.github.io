@@ -39,6 +39,12 @@ const defaultOgImage = {
   type: "image/png",
 };
 
+// Helper function to ensure canonical URLs are properly formatted
+const getCanonicalUrl = (path: string) => {
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  return `${CANONICAL_URL}${cleanPath}`;
+};
+
 export const sharedMetadata = {
   metadataBase: new URL(CANONICAL_URL),
   applicationName: SITE_NAME,
@@ -88,15 +94,15 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       "regulations",
       ...baseKeywords,
     ],
-    canonical: `${CANONICAL_URL}/terms`,
+    canonical: getCanonicalUrl("/terms"),
     alternates: {
-      canonical: `${CANONICAL_URL}/terms`,
+      canonical: getCanonicalUrl("/terms"),
     },
     openGraph: {
       title: "Terms and Conditions | Lingu.Africa",
       description:
         "Read our terms and conditions to understand the rules and regulations for using Lingu.Africa's website and services.",
-      url: `${CANONICAL_URL}/terms`,
+      url: getCanonicalUrl("/terms"),
       images: [defaultOgImage],
     },
     twitter: {
@@ -119,15 +125,15 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       "security",
       ...baseKeywords,
     ],
-    canonical: `${CANONICAL_URL}/privacy`,
+    canonical: getCanonicalUrl("/privacy"),
     alternates: {
-      canonical: `${CANONICAL_URL}/privacy`,
+      canonical: getCanonicalUrl("/privacy"),
     },
     openGraph: {
       title: "Privacy Policy | Lingu.Africa",
       description:
         "Learn how Lingu.Africa protects and handles your personal information in accordance with our privacy policy.",
-      url: `${CANONICAL_URL}/privacy`,
+      url: getCanonicalUrl("/privacy"),
       images: [defaultOgImage],
     },
     twitter: {
@@ -143,15 +149,15 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
     description:
       "Learn about Lingu.Africa's mission to preserve African languages and culture through bilingual children's books.",
     keywords: ["about", "mission", "Lionel Kubwimana", ...baseKeywords],
-    canonical: `${CANONICAL_URL}/about`,
+    canonical: getCanonicalUrl("/about"),
     alternates: {
-      canonical: `${CANONICAL_URL}/about`,
+      canonical: getCanonicalUrl("/about"),
     },
     openGraph: {
       title: "About Us | Lingu.Africa",
       description:
         "Learn about Lingu.Africa's mission to preserve African languages and culture through bilingual children's books.",
-      url: `${CANONICAL_URL}/about`,
+      url: getCanonicalUrl("/about"),
       images: [defaultOgImage],
     },
     twitter: {
@@ -174,9 +180,9 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       ...baseKeywords,
       ...getAvailableLanguageNames(),
     ],
-    canonical: `${CANONICAL_URL}/books`,
+    canonical: getCanonicalUrl("/books"),
     alternates: {
-      canonical: `${CANONICAL_URL}/books`,
+      canonical: getCanonicalUrl("/books"),
     },
     openGraph: {
       title: "African Language Books | Lingu.Africa",
@@ -184,7 +190,7 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
         "Explore our collection of bilingual African language books. Find stories in " +
         getAvailableLanguageNames().join(" and ") +
         ".",
-      url: `${CANONICAL_URL}/books`,
+      url: getCanonicalUrl("/books"),
       images: [defaultOgImage],
     },
     twitter: {
