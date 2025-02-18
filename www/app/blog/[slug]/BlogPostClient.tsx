@@ -166,7 +166,7 @@ export default function BlogPostClient({ post }: Props) {
             </div>
 
             {/* Content */}
-            <div className="prose prose-lg mt-8 max-w-none text-gray-300">
+            <div className="prose prose-lg prose-indigo mt-8 max-w-none">
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
 
