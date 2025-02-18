@@ -1,6 +1,9 @@
-export const SITE_NAME = "Lingu.Africa";
-export const SITE_DESCRIPTION =
-  "Discover bilingual African children's books that celebrate culture and heritage. Learn African languages through engaging stories.";
+import { LANGUAGES, SITE_NAME, SITE_DESCRIPTION } from "./constants";
+
+// Get all available language names for keywords
+const getAvailableLanguageNames = () => {
+  return LANGUAGES.filter((lang) => !lang.comingSoon).map((lang) => lang.name);
+};
 
 export type MetadataConfig = {
   title: string;
@@ -21,6 +24,15 @@ export const sharedMetadata = {
   },
 };
 
+// Base keywords that are common across pages
+const baseKeywords = [
+  "African languages",
+  "bilingual books",
+  "Lingu.Africa",
+  "children's books",
+  "cultural heritage",
+];
+
 export const pagesMetadata: Record<string, MetadataConfig> = {
   terms: {
     title: "Terms and Conditions | Lingu.Africa",
@@ -32,9 +44,7 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       "legal",
       "rules",
       "regulations",
-      "Lingu.Africa",
-      "African books",
-      "bilingual books",
+      ...baseKeywords,
     ],
   },
   privacy: {
@@ -46,36 +56,27 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       "policy",
       "data protection",
       "personal information",
-      "Lingu.Africa",
       "security",
+      ...baseKeywords,
     ],
   },
   about: {
     title: "About Us | Lingu.Africa",
     description:
       "Learn about Lingu.Africa's mission to preserve African languages and culture through bilingual children's books.",
-    keywords: [
-      "about",
-      "mission",
-      "African languages",
-      "bilingual books",
-      "cultural heritage",
-      "Lingu.Africa",
-      "Lionel Kubwimana",
-    ],
+    keywords: ["about", "mission", "Lionel Kubwimana", ...baseKeywords],
   },
   books: {
     title: "Our Books | Lingu.Africa",
     description:
-      "Explore our collection of bilingual African language books. Find stories in Kirundi, Kinyarwanda, and more.",
+      "Explore our collection of bilingual African language books. Find stories in " +
+      getAvailableLanguageNames().join(" and ") +
+      ".",
     keywords: [
       "books",
-      "bilingual",
-      "African languages",
-      "children's books",
-      "Kirundi",
-      "Kinyarwanda",
       "stories",
+      ...baseKeywords,
+      ...getAvailableLanguageNames(),
     ],
   },
 };
