@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || "https://lingu.africa",
+  siteUrl: process.env.SITE_URL || "https://www.lingu.africa",
   generateRobotsTxt: true,
   generateIndexSitemap: true,
   changefreq: "daily",

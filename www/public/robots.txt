@@ -4,7 +4,7 @@ Allow: /
 Disallow: /api/*
 
 # Host
-Host: https://lingu.africa
+Host: https://www.lingu.africa
 
 # Sitemaps
-Sitemap: https://lingu.africa/sitemap.xml
+Sitemap: https://www.lingu.africa/sitemap.xml
