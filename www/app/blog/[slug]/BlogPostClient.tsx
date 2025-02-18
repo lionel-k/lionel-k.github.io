@@ -27,33 +27,14 @@ export default function BlogPostClient({ post }: Props) {
         />
       </div>
 
-      {/* Hero Section */}
-      <div className="relative h-[50vh] min-h-[350px] w-full">
-        <Image
-          src={post.coverImage}
-          alt={post.title}
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
-          <div className="max-w-4xl mx-auto px-6 text-center text-white">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-              {post.title}
-            </h1>
-            <p className="text-lg opacity-90 mt-2">{post.description}</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="max-w-5xl mx-auto px-6 py-12">
-        {/* Table of Contents (Mobile) */}
-        <div className="lg:hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        {/* Mobile Table of Contents */}
+        <div className="lg:hidden mb-8">
           <button
             onClick={() => setIsTableOfContentsOpen(!isTableOfContentsOpen)}
             className="w-full flex items-center justify-between px-4 py-3 bg-white text-gray-900 rounded-lg shadow-sm border"
           >
-            <span className="text-lg font-medium">Table of Contents</span>
+            <span className="text-base font-medium">Table of Contents</span>
             <ChevronDown
               className={`w-5 h-5 transition-transform duration-200 ${
                 isTableOfContentsOpen ? "rotate-180" : ""
@@ -65,10 +46,13 @@ export default function BlogPostClient({ post }: Props) {
               <nav>
                 <ul className="space-y-3">
                   {post.tableOfContents.map((item) => (
-                    <li key={item.id} className="ml-4">
+                    <li
+                      key={item.id}
+                      style={{ marginLeft: `${(item.level - 2) * 1}rem` }}
+                    >
                       <a
                         href={`#${item.id}`}
-                        className="text-gray-600 hover:text-primary"
+                        className="text-gray-600 hover:text-gray-900 transition-colors"
                       >
                         {item.text}
                       </a>
@@ -80,20 +64,24 @@ export default function BlogPostClient({ post }: Props) {
           )}
         </div>
 
-        <div className="flex flex-col lg:flex-row gap-8 mt-8">
-          {/* Table of Contents (Desktop) */}
-          <aside className="hidden lg:block w-72">
-            <div className="sticky top-24 bg-white p-4 rounded-lg shadow-sm border">
-              <h2 className="text-xl font-semibold text-gray-900">
-                Table of Contents
+        <div className="flex flex-col lg:flex-row gap-12">
+          {/* Desktop Table of Contents */}
+          <aside className="hidden lg:block w-64 flex-shrink-0">
+            <div className="sticky top-8">
+              <h2 className="text-sm font-medium text-[#7C3AED] uppercase tracking-wide mb-4">
+                TABLE OF CONTENTS
               </h2>
-              <nav className="mt-4">
-                <ul className="space-y-2">
+              <nav>
+                <ul className="space-y-3">
                   {post.tableOfContents.map((item) => (
-                    <li key={item.id} className="ml-4">
+                    <li
+                      key={item.id}
+                      style={{ marginLeft: `${(item.level - 2) * 1}rem` }}
+                      className="text-[15px]"
+                    >
                       <a
                         href={`#${item.id}`}
-                        className="text-gray-600 hover:text-primary"
+                        className="text-gray-600 hover:text-gray-900 transition-colors"
                       >
                         {item.text}
                       </a>
@@ -106,43 +94,44 @@ export default function BlogPostClient({ post }: Props) {
 
           {/* Main Content */}
           <main className="flex-1 max-w-3xl">
-            {/* Meta Info */}
-            <div className="flex items-center justify-between pb-6 border-b">
-              <div>
-                <p className="text-sm text-gray-900">By {post.author}</p>
-                <p className="text-sm text-gray-600">
+            {/* Header */}
+            <header className="mb-8">
+              <h1 className="text-[40px] leading-[48px] font-bold text-gray-900 mb-4">
+                {post.title}
+              </h1>
+              <div className="flex items-center gap-4 text-sm text-gray-600">
+                <p>By {post.author}</p>
+                <span>•</span>
+                <time dateTime={post.date}>
                   {new Date(post.date).toLocaleDateString("en-US", {
                     month: "short",
                     day: "numeric",
                     year: "numeric",
-                  })}{" "}
-                  • {post.readingTime}
-                </p>
+                  })}
+                </time>
+                <span>•</span>
+                <p>{post.readingTime}</p>
               </div>
-              <span className="px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full">
-                {post.category}
-              </span>
+            </header>
+
+            {/* Cover Image */}
+            <div className="relative aspect-[16/9] w-full mb-8 rounded-lg overflow-hidden">
+              <Image
+                src={post.coverImage}
+                alt={post.title}
+                fill
+                priority
+                className="object-cover"
+              />
             </div>
 
-            {/* Key Highlights */}
-            <section className="mt-8 bg-white p-6 rounded-lg shadow-sm border">
-              <h2 className="text-xl font-semibold text-gray-900">
-                Key Highlights
-              </h2>
-              <ul className="mt-4 list-disc list-inside text-gray-700">
-                {post.highlights.map((highlight, index) => (
-                  <li key={index}>{highlight}</li>
-                ))}
-              </ul>
-            </section>
-
             {/* Content */}
-            <section className="prose prose-lg mt-8 prose-headings:text-gray-900 prose-p:text-gray-700">
+            <div className="prose prose-lg max-w-none">
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
-            </section>
+            </div>
 
             {/* CTA */}
-            <div className="mt-12 text-center">
+            <div className="mt-12">
               <Link
                 href={post.cta.link}
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 text-base font-medium text-black bg-[#F5A524] rounded-lg hover:bg-[#F5A524]/90 transition-colors"
