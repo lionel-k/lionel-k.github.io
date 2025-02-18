@@ -2,6 +2,7 @@ import "./globals.css";
 import GoogleAnalyticsWrapper from "./GoogleAnalyticsWrapper";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/react";
 
 import type { Metadata } from "next";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
@@ -101,6 +102,7 @@ export default function RootLayout({
             <Footer />
           </GoogleAnalyticsWrapper>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
