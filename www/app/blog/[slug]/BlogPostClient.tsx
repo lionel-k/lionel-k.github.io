@@ -17,7 +17,7 @@ export default function BlogPostClient({ post }: Props) {
   return (
     <article className="min-h-screen">
       {/* Breadcrumb - Now positioned right after navbar */}
-      <div className="bg-black">
+      <div className="bg-gray-50">
         <BreadcrumbNav
           items={[
             { name: "Home", href: "/" },
@@ -36,7 +36,7 @@ export default function BlogPostClient({ post }: Props) {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4">
             <div className="text-center text-white">
@@ -54,7 +54,7 @@ export default function BlogPostClient({ post }: Props) {
         <div className="lg:hidden">
           <button
             onClick={() => setIsTableOfContentsOpen(!isTableOfContentsOpen)}
-            className="w-full flex items-center justify-between px-4 py-3 bg-black text-white rounded-lg"
+            className="w-full flex items-center justify-between px-4 py-3 bg-white text-black rounded-lg shadow-md"
             aria-expanded={isTableOfContentsOpen}
             aria-controls="mobile-toc"
           >
@@ -98,7 +98,7 @@ export default function BlogPostClient({ post }: Props) {
           {/* Desktop Table of Contents - Left Sidebar */}
           <div className="hidden lg:block w-64 flex-shrink-0">
             <div className="sticky top-24">
-              <h2 className="text-lg font-semibold text-white mb-4">
+              <h2 className="text-lg font-semibold text-gray-800 mb-4">
                 Table of Contents
               </h2>
               <nav>
@@ -110,7 +110,7 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       <a
                         href={`#${item.id}`}
-                        className="block text-gray-300 hover:text-white"
+                        className="block text-gray-600 hover:text-gray-900"
                       >
                         {item.text}
                       </a>
@@ -127,10 +127,10 @@ export default function BlogPostClient({ post }: Props) {
             <div className="flex items-center justify-between border-b border-gray-200 pb-8">
               <div className="flex items-center">
                 <div className="ml-3">
-                  <p className="text-sm font-medium text-gray-300">
+                  <p className="text-sm font-medium text-gray-800">
                     {post.author}
                   </p>
-                  <div className="flex space-x-1 text-sm text-gray-400">
+                  <div className="flex space-x-1 text-sm text-gray-500">
                     <time dateTime={post.date}>
                       {new Date(post.date).toLocaleDateString("en-US", {
                         month: "long",
@@ -144,22 +144,22 @@ export default function BlogPostClient({ post }: Props) {
                 </div>
               </div>
               <div>
-                <span className="inline-flex items-center rounded-full bg-indigo-200 px-3 py-0.5 text-sm font-medium text-indigo-900">
+                <span className="inline-flex items-center rounded-full bg-indigo-100 px-3 py-0.5 text-sm font-medium text-indigo-900">
                   {post.category}
                 </span>
               </div>
             </div>
 
             {/* Key Highlights */}
-            <div className="mt-8 rounded-lg bg-gray-800 p-6">
-              <h2 className="text-lg font-semibold text-white">
+            <div className="mt-8 rounded-lg bg-white p-6 shadow-md">
+              <h2 className="text-lg font-semibold text-gray-800">
                 Key Highlights
               </h2>
               <ul className="mt-4 space-y-2">
                 {post.highlights.map((highlight, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="mr-2 text-indigo-400">•</span>
-                    <span className="text-gray-300">{highlight}</span>
+                    <span className="mr-2 text-indigo-500">•</span>
+                    <span className="text-gray-700">{highlight}</span>
                   </li>
                 ))}
               </ul>
@@ -171,9 +171,11 @@ export default function BlogPostClient({ post }: Props) {
             </div>
 
             {/* Conclusion */}
-            <div className="mt-12 rounded-lg bg-gray-800 p-6">
-              <h2 className="text-lg font-semibold text-white">Conclusion</h2>
-              <p className="mt-4 text-gray-300 whitespace-pre-line">
+            <div className="mt-12 rounded-lg bg-white p-6 shadow-md">
+              <h2 className="text-lg font-semibold text-gray-800">
+                Conclusion
+              </h2>
+              <p className="mt-4 text-gray-700 whitespace-pre-line">
                 {post.conclusion}
               </p>
             </div>
@@ -182,7 +184,7 @@ export default function BlogPostClient({ post }: Props) {
             <div className="mt-12 text-center">
               <Link
                 href={post.cta.link}
-                className="inline-flex items-center justify-center rounded-md bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                className="inline-flex items-center justify-center rounded-md bg-indigo-500 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
               >
                 {post.cta.text}
               </Link>
@@ -193,7 +195,7 @@ export default function BlogPostClient({ post }: Props) {
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center rounded-full bg-gray-700 px-3 py-0.5 text-sm font-medium text-gray-300"
+                  className="inline-flex items-center rounded-full bg-gray-200 px-3 py-0.5 text-sm font-medium text-gray-700"
                 >
                   {tag}
                 </span>
