@@ -112,6 +112,7 @@ export default function BlogPostClient({ post }: Props) {
                 <span>•</span>
                 <p>{post.readingTime}</p>
               </div>
+              <p className="mt-4 text-xl text-gray-600">{post.description}</p>
             </header>
 
             {/* Cover Image */}
@@ -126,8 +127,14 @@ export default function BlogPostClient({ post }: Props) {
             </div>
 
             {/* Content */}
-            <div className="prose prose-lg max-w-none">
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div className="prose prose-lg max-w-none prose-h1:text-3xl prose-h1:font-bold prose-h1:mt-0 [&>h1]:!mt-0 [&>h1]:!text-3xl [&>h1]:!font-bold [&>h1]:!mb-4 [&>h1]:!leading-9">
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: post.content
+                    .replace(/<h1/g, "<h2")
+                    .replace(/<\/h1>/g, "</h2>"),
+                }}
+              />
             </div>
 
             {/* CTA */}

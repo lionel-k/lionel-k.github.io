@@ -4,7 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
-import { visit } from "unist-util-visit";
+import { visit, SKIP } from "unist-util-visit";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
 
@@ -82,7 +82,15 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     const processedContent = await remark()
       .use(html, { sanitize: false })
       .use(() => (tree) => {
-        visit(tree, "heading", (node: any) => {
+        let foundFirstH1 = false;
+        visit(tree, "heading", (node: any, index: number, parent: any) => {
+          // Remove the first h1 heading
+          if (node.depth === 1 && !foundFirstH1) {
+            parent.children.splice(index, 1);
+            foundFirstH1 = true;
+            return [SKIP, index];
+          }
+          // Add IDs to remaining headings
           const textNode = node.children.find(
             (child: any) => child.type === "text"
           );
