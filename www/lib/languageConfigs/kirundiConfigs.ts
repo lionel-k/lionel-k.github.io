@@ -237,7 +237,7 @@ export const kirundiConfigs = {
       price: "21.99",
       description: {
         short:
-          "A Kirundi-English story for children aged 3-10, following Shaka's first exciting visit to Burundi!",
+          "Join Shaka's first visit to Burundi! A bilingual story with hippos and safari cars that makes learning Kirundi fun.",
         long: `
       Shaka arrives in Burundi for the very first time, ready to explore and learn
       about his family's homeland. Follow him and his cousin Muco as they visit
