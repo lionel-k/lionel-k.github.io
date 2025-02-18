@@ -17,15 +17,27 @@ export async function getAllBlogPosts(): Promise<BlogPostMetadata[]> {
         .map(async (file) => {
           const content = await fs.readFile(path.join(BLOG_DIR, file), "utf8");
           const { data } = matter(content);
+          // Extract date and slug from filename (YYYY-MM-DD-slug.mdx)
+          const [year, month, day, ...slugParts] = file
+            .replace(/\.mdx$/, "")
+            .split("-");
+          const date = `${year}-${month}-${day}`;
+          const slug = slugParts.join("-");
           return {
             ...data,
-            slug: file.replace(/\.mdx$/, ""),
+            slug,
+            date,
           } as BlogPostMetadata;
         })
     );
 
+    // Filter out future-dated posts
+    const filteredPosts = posts.filter((post) => {
+      return new Date(post.date) <= new Date();
+    });
+
     // Sort posts by date in descending order
-    return posts.sort((a, b) => {
+    return filteredPosts.sort((a, b) => {
       return new Date(b.date).getTime() - new Date(a.date).getTime();
     });
   } catch (error) {
@@ -36,9 +48,26 @@ export async function getAllBlogPosts(): Promise<BlogPostMetadata[]> {
 
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   try {
-    const filePath = path.join(BLOG_DIR, `${slug}.mdx`);
+    // Find the file that matches the pattern: YYYY-MM-DD-{slug}.mdx
+    const files = await fs.readdir(BLOG_DIR);
+    const blogFile = files.find((file) => {
+      const [year, month, day, ...slugParts] = file
+        .replace(/\.mdx$/, "")
+        .split("-");
+      return slugParts.join("-") === slug;
+    });
+
+    if (!blogFile) {
+      return null;
+    }
+
+    const filePath = path.join(BLOG_DIR, blogFile);
     const content = await fs.readFile(filePath, "utf8");
     const { data, content: mdxContent } = matter(content);
+
+    // Extract date from filename
+    const [year, month, day] = blogFile.replace(/\.mdx$/, "").split("-");
+    const date = `${year}-${month}-${day}`;
 
     // Generate table of contents from raw MDX content
     const tableOfContents = generateTableOfContents(mdxContent);
@@ -69,6 +98,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     return {
       ...data,
       slug,
+      date,
       content: contentHtml,
       tableOfContents,
       conclusion,
