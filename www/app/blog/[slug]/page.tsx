@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import BlogPostClient from "./BlogPostClient";
+import BlogPostClient from "@/app/blog/[slug]/BlogPostClient";
 import { getBlogPost, getAllBlogPosts } from "@/lib/blog";
 import { BlogPost } from "@/lib/types/blog";
 
@@ -65,6 +65,7 @@ interface Props {
   params: {
     slug: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
 // This function tells Next.js which paths to pre-render
@@ -85,6 +86,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const authorName =
+    typeof post.author === "string" ? post.author : post.author.name;
+
   return {
     title: `${post.title} - Lingu Africa Blog`,
     description: post.description,
@@ -93,7 +97,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       type: "article",
       publishedTime: post.date,
-      authors: [post.author.name],
+      authors: [authorName],
       images: [
         {
           url: post.coverImage,

@@ -11,13 +11,19 @@ export interface TableOfContents {
   level: number;
 }
 
+export interface Author {
+  name: string;
+  avatar: string;
+  bio: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
   description: string;
   category: BlogCategory;
   coverImage: string;
-  author: string;
+  author: string | Author;
   date: string;
   tableOfContents: TableOfContents[];
   highlights: string[];
