@@ -109,7 +109,12 @@ export default function BlogPostClient({ post }: Props) {
               <div>
                 <p className="text-sm text-gray-600">By {post.author}</p>
                 <p className="text-sm text-gray-500">
-                  {post.date} • {post.readingTime}
+                  {new Date(post.date).toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "numeric",
+                    year: "numeric",
+                  })}{" "}
+                  • {post.readingTime}
                 </p>
               </div>
               <span className="px-3 py-1 bg-indigo-100 text-indigo-800 text-sm font-medium rounded-full">
