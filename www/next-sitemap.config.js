@@ -46,6 +46,36 @@ module.exports = {
       },
     ];
   },
+  additionalPaths: async (config) => {
+    // Return additional paths for both canonical and non-canonical
+    const paths = ["/terms", "/privacy", "/about", "/books", "/"];
+    return paths.flatMap((path) => [
+      {
+        loc: `${CANONICAL_URL}${path}`,
+        changefreq: "daily",
+        priority: path === "/" ? 1.0 : 0.8,
+        lastmod: new Date().toISOString(),
+        alternateRefs: [
+          {
+            href: `${WWW_URL}${path}`,
+            rel: "alternate",
+          },
+        ],
+      },
+      {
+        loc: `${WWW_URL}${path}`,
+        changefreq: "daily",
+        priority: path === "/" ? 1.0 : 0.8,
+        lastmod: new Date().toISOString(),
+        alternateRefs: [
+          {
+            href: `${CANONICAL_URL}${path}`,
+            rel: "canonical",
+          },
+        ],
+      },
+    ]);
+  },
   robotsTxtOptions: {
     policies: [
       {
