@@ -68,7 +68,7 @@ export default function BlogPostClient({ post }: Props) {
           {/* Desktop Table of Contents */}
           <aside className="hidden lg:block w-64 flex-shrink-0">
             <div className="sticky top-8">
-              <h2 className="text-sm font-medium text-[#7C3AED] uppercase tracking-wide mb-4">
+              <h2 className="text-sm font-medium text-[#DAA520] uppercase tracking-wide mb-4">
                 TABLE OF CONTENTS
               </h2>
               <nav>
@@ -81,7 +81,7 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       <a
                         href={`#${item.id}`}
-                        className="text-gray-600 hover:text-gray-900 transition-colors"
+                        className="text-gray-600 hover:text-[#DAA520] transition-colors"
                       >
                         {item.text}
                       </a>

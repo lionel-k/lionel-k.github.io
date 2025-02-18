@@ -44,11 +44,11 @@ export default function BlogListingClient({ posts }: BlogListingClientProps) {
               <span>•</span>
               <span>{post.readingTime}</span>
               <span>•</span>
-              <span className="text-[#7C3AED] font-medium">
+              <span className="text-[#DAA520] font-medium">
                 {post.category}
               </span>
             </div>
-            <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#7C3AED] transition-colors">
+            <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#DAA520] transition-colors">
               {post.title}
             </h2>
             <p className="text-gray-600 line-clamp-2">{post.description}</p>
