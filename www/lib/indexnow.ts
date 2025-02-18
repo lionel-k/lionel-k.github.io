@@ -1,4 +1,4 @@
-import { CANONICAL_URL } from "./metadata";
+import { SITE_URL } from "./constants";
 
 const INDEXNOW_KEY = "qpk5z8xwjkfzteupur93gf912pdwejjz";
 const INDEXNOW_ENDPOINTS = [
@@ -17,13 +17,13 @@ export async function notifyIndexNow(urls: string[]) {
   // Ensure all URLs are absolute
   const absoluteUrls = urls.map((url) => {
     if (url.startsWith("http")) return url;
-    return `${CANONICAL_URL}${url.startsWith("/") ? url : `/${url}`}`;
+    return `${SITE_URL}${url.startsWith("/") ? url : `/${url}`}`;
   });
 
   const payload: IndexNowPayload = {
-    host: new URL(CANONICAL_URL).host,
+    host: new URL(SITE_URL).host,
     key: INDEXNOW_KEY,
-    keyLocation: `${CANONICAL_URL}/${INDEXNOW_KEY}.txt`,
+    keyLocation: `${SITE_URL}/${INDEXNOW_KEY}.txt`,
     urlList: absoluteUrls,
   };
 
