@@ -4,6 +4,7 @@ import { NewsletterForm } from "@/components/newsletter-form";
 import { LANGUAGES, FAQ_ITEMS } from "@/lib/constants";
 import { FAQ } from "@/components/FAQ";
 import { languagesConfig } from "@/lib/languagesConfig";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 import { Metadata } from "next";
 
@@ -89,7 +90,7 @@ export default function Home() {
                     className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
-                    <img
+                    <OptimizedImage
                       src={`/images/kirundi/${book.slug}/cover.png`}
                       alt={`${book.title} cover`}
                       className="mb-6 w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
@@ -190,7 +191,7 @@ export default function Home() {
                   key={reviewNumber}
                   className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow flex flex-col"
                 >
-                  <img
+                  <OptimizedImage
                     src={`/images/reviews/${reviewNumber}.png`}
                     alt={`Amazon review screenshot ${reviewNumber}`}
                     className="w-full h-auto rounded-lg object-contain"
@@ -204,17 +205,16 @@ export default function Home() {
         {/* Newsletter Section */}
         <section className="bg-black text-white">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-            <div className="mx-auto max-w-4xl text-center bg-contain bg-no-repeat bg-center py-8">
-              <div className="bg-black backdrop-blur-sm rounded-3xl p-12">
-                <h3 className="text-3xl font-bold text-white mb-4">
-                  Join Our Cultural Community
-                </h3>
-                <p className="text-xl text-gray-300 mb-8">
-                  Get updates on new languages, exclusive discounts, and free
-                  learning resources for African diaspora families
-                </p>
-                <NewsletterForm />
-              </div>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-white mb-4">
+                Subscribe to Our Newsletter
+              </h2>
+              <p className="text-xl text-gray-300">
+                Get the latest updates and promotions straight to your inbox!
+              </p>
+            </div>
+            <div className="mx-auto max-w-4xl">
+              <NewsletterForm />
             </div>
           </div>
         </section>

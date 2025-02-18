@@ -7,6 +7,7 @@ import { FAQ } from "@/components/FAQ";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { ArrowRight } from "lucide-react";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 type Book = {
   title: string;
@@ -108,7 +109,7 @@ export default function BookPageClient({ language, slug }: Props) {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <img
+              <OptimizedImage
                 src={`/images/${language}/${slug}/cover.png`}
                 alt={`${book.title} cover`}
                 className="w-full max-w-xs rounded-xl shadow-md"
@@ -131,7 +132,7 @@ export default function BookPageClient({ language, slug }: Props) {
                 key={page}
                 className="bg-white rounded-xl shadow-lg overflow-hidden"
               >
-                <img
+                <OptimizedImage
                   src={`/images/${language}/${slug}/${page}.png`}
                   alt={`Interior page ${page} of ${book.title}`}
                   className="w-full h-auto"
