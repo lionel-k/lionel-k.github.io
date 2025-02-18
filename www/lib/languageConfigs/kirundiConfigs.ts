@@ -988,7 +988,7 @@ export const kirundiConfigs = {
       price: "18.00",
       description: {
         short:
-          "Enjoy over 100 Kirundi-English jokes that bring laughter from Burundi straight into your home!",
+          "100+ bilingual jokes in Kirundi and English. Learn language through laughter while exploring Burundian culture!",
         long: `
       Discover the fun of Kirundi jokes with over 100 bilingual jokes! This book is great for kids, families, and anyone who loves to laugh. Enjoy jokes that bring people together and learn about Burundian culture in a fun way!
 
