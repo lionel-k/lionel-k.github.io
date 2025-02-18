@@ -298,7 +298,7 @@ export default function BookPageClient({ language, slug }: Props) {
                     href={`/books/${language}/${relatedBook.slug}`}
                     className="mt-4 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
                   >
-                    Learn More
+                    Read More
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </div>
