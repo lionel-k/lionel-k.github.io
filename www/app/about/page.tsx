@@ -1,5 +1,12 @@
 import { NewsletterForm } from "@/components/newsletter-form";
 import { FAQ } from "@/components/FAQ";
+import { Metadata } from "next";
+import { pagesMetadata, sharedMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = {
+  ...sharedMetadata,
+  ...pagesMetadata.about,
+};
 
 const FAQ_ITEMS = [
   {
