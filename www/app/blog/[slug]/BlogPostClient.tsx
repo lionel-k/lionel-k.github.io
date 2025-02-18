@@ -51,22 +51,29 @@ export default function BlogPostClient({ post }: Props) {
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Mobile Table of Contents Dropdown */}
-        <div className="lg:hidden mb-8">
+        <div className="lg:hidden">
           <button
             onClick={() => setIsTableOfContentsOpen(!isTableOfContentsOpen)}
-            className="w-full flex items-center justify-between px-4 py-2 bg-white border rounded-lg shadow-sm"
+            className="w-full flex items-center justify-between px-4 py-3 bg-black text-white rounded-lg"
+            aria-expanded={isTableOfContentsOpen}
+            aria-controls="mobile-toc"
           >
-            <span className="text-lg font-medium">Table of Contents</span>
+            <span className="text-base font-medium">Table of Contents</span>
             <ChevronDown
-              className={`w-5 h-5 transition-transform ${
-                isTableOfContentsOpen ? "transform rotate-180" : ""
+              className={`w-5 h-5 transition-transform duration-200 ${
+                isTableOfContentsOpen ? "rotate-180" : ""
               }`}
             />
           </button>
-          {isTableOfContentsOpen && (
-            <div className="mt-2 p-4 bg-white border rounded-lg shadow-sm">
+          <div
+            id="mobile-toc"
+            className={`mt-2 overflow-hidden transition-all duration-200 ease-in-out ${
+              isTableOfContentsOpen ? "max-h-96" : "max-h-0"
+            }`}
+          >
+            <div className="p-4 bg-white border rounded-lg shadow-sm">
               <nav>
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   {post.tableOfContents.map((item) => (
                     <li
                       key={item.id}
@@ -74,7 +81,7 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       <a
                         href={`#${item.id}`}
-                        className="text-gray-600 hover:text-gray-900 hover:underline"
+                        className="block text-gray-600 hover:text-gray-900"
                         onClick={() => setIsTableOfContentsOpen(false)}
                       >
                         {item.text}
@@ -84,10 +91,10 @@ export default function BlogPostClient({ post }: Props) {
                 </ul>
               </nav>
             </div>
-          )}
+          </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row lg:gap-12">
+        <div className="flex flex-col lg:flex-row lg:gap-12 mt-8">
           {/* Desktop Table of Contents - Left Sidebar */}
           <div className="hidden lg:block w-64 flex-shrink-0">
             <div className="sticky top-24">
@@ -95,7 +102,7 @@ export default function BlogPostClient({ post }: Props) {
                 Table of Contents
               </h2>
               <nav>
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   {post.tableOfContents.map((item) => (
                     <li
                       key={item.id}
@@ -103,7 +110,7 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       <a
                         href={`#${item.id}`}
-                        className="text-gray-600 hover:text-gray-900 hover:underline"
+                        className="block text-gray-600 hover:text-gray-900"
                       >
                         {item.text}
                       </a>
