@@ -1,6 +1,10 @@
 # *
 User-agent: *
 Allow: /
+Disallow: /404
+Disallow: /500
+Disallow: /_*
+Disallow: /api/*
 
 # Host
 Host: https://lingu.africa
