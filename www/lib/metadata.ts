@@ -1,5 +1,8 @@
 import { LANGUAGES, SITE_NAME, SITE_DESCRIPTION } from "./constants";
 
+// Define canonical URL
+export const CANONICAL_URL = "https://lingu.africa";
+
 // Get all available language names for keywords
 const getAvailableLanguageNames = () => {
   return LANGUAGES.filter((lang) => !lang.comingSoon).map((lang) => lang.name);
@@ -9,6 +12,10 @@ export type MetadataConfig = {
   title: string;
   description: string;
   keywords: string[];
+  canonical?: string;
+  alternates?: {
+    canonical?: string;
+  };
   openGraph?: {
     title?: string;
     description?: string;
@@ -25,7 +32,7 @@ export type MetadataConfig = {
 
 // Shared social media image configuration
 const defaultOgImage = {
-  url: "/logo.png",
+  url: `${CANONICAL_URL}/logo.png`,
   width: 1200,
   height: 1200,
   alt: "Lingu.Africa - Bilingual African Language Books",
@@ -33,7 +40,7 @@ const defaultOgImage = {
 };
 
 export const sharedMetadata = {
-  metadataBase: new URL("https://lingu.africa"),
+  metadataBase: new URL(CANONICAL_URL),
   applicationName: SITE_NAME,
   authors: [{ name: "Lionel Kubwimana" }],
   creator: "Lionel Kubwimana",
@@ -81,11 +88,15 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       "regulations",
       ...baseKeywords,
     ],
+    canonical: `${CANONICAL_URL}/terms`,
+    alternates: {
+      canonical: `${CANONICAL_URL}/terms`,
+    },
     openGraph: {
       title: "Terms and Conditions | Lingu.Africa",
       description:
         "Read our terms and conditions to understand the rules and regulations for using Lingu.Africa's website and services.",
-      url: "/terms",
+      url: `${CANONICAL_URL}/terms`,
       images: [defaultOgImage],
     },
     twitter: {
@@ -108,11 +119,15 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       "security",
       ...baseKeywords,
     ],
+    canonical: `${CANONICAL_URL}/privacy`,
+    alternates: {
+      canonical: `${CANONICAL_URL}/privacy`,
+    },
     openGraph: {
       title: "Privacy Policy | Lingu.Africa",
       description:
         "Learn how Lingu.Africa protects and handles your personal information in accordance with our privacy policy.",
-      url: "/privacy",
+      url: `${CANONICAL_URL}/privacy`,
       images: [defaultOgImage],
     },
     twitter: {
@@ -128,11 +143,15 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
     description:
       "Learn about Lingu.Africa's mission to preserve African languages and culture through bilingual children's books.",
     keywords: ["about", "mission", "Lionel Kubwimana", ...baseKeywords],
+    canonical: `${CANONICAL_URL}/about`,
+    alternates: {
+      canonical: `${CANONICAL_URL}/about`,
+    },
     openGraph: {
       title: "About Us | Lingu.Africa",
       description:
         "Learn about Lingu.Africa's mission to preserve African languages and culture through bilingual children's books.",
-      url: "/about",
+      url: `${CANONICAL_URL}/about`,
       images: [defaultOgImage],
     },
     twitter: {
@@ -155,13 +174,17 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       ...baseKeywords,
       ...getAvailableLanguageNames(),
     ],
+    canonical: `${CANONICAL_URL}/books`,
+    alternates: {
+      canonical: `${CANONICAL_URL}/books`,
+    },
     openGraph: {
       title: "African Language Books | Lingu.Africa",
       description:
         "Explore our collection of bilingual African language books. Find stories in " +
         getAvailableLanguageNames().join(" and ") +
         ".",
-      url: "/books",
+      url: `${CANONICAL_URL}/books`,
       images: [defaultOgImage],
     },
     twitter: {
