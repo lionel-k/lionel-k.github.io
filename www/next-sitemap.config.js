@@ -30,6 +30,10 @@ module.exports = {
             href: `${WWW_URL}${path}`,
             rel: "alternate",
           },
+          {
+            href: `${CANONICAL_URL}${path}`,
+            rel: "canonical",
+          },
         ],
       },
       {
@@ -40,6 +44,10 @@ module.exports = {
         alternateRefs: [
           {
             href: `${CANONICAL_URL}${path}`,
+            rel: "alternate",
+          },
+          {
+            href: `${WWW_URL}${path}`,
             rel: "canonical",
           },
         ],
@@ -47,8 +55,37 @@ module.exports = {
     ];
   },
   additionalPaths: async (config) => {
-    // Return additional paths for both canonical and non-canonical
-    const paths = ["/terms", "/privacy", "/about", "/books", "/"];
+    const { globby } = await import("globby");
+
+    // Find all book and language paths
+    const bookPaths = await globby(
+      [
+        "app/books/**/page.tsx",
+        "app/books/**/route.ts",
+        "!app/api/**/*",
+        "!app/_*/**/*",
+      ],
+      {
+        cwd: "www",
+      }
+    );
+
+    // Convert file paths to URL paths
+    const paths = bookPaths
+      .map((page) => {
+        return (
+          "/" +
+          page
+            .replace("app/", "")
+            .replace("/page.tsx", "")
+            .replace("/route.ts", "")
+            .replace(/\/\[.*?\]/g, "/*") // Replace dynamic segments with *
+            .replace(/^index$/, "")
+        ); // Replace index with empty string for root
+      })
+      .filter(Boolean);
+
+    // Return both versions for each path
     return paths.flatMap((path) => [
       {
         loc: `${CANONICAL_URL}${path}`,
@@ -60,6 +97,10 @@ module.exports = {
             href: `${WWW_URL}${path}`,
             rel: "alternate",
           },
+          {
+            href: `${CANONICAL_URL}${path}`,
+            rel: "canonical",
+          },
         ],
       },
       {
@@ -70,6 +111,10 @@ module.exports = {
         alternateRefs: [
           {
             href: `${CANONICAL_URL}${path}`,
+            rel: "alternate",
+          },
+          {
+            href: `${WWW_URL}${path}`,
             rel: "canonical",
           },
         ],
