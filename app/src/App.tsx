@@ -17,6 +17,7 @@ import Profile from "./pages/Profile";
 import Mistakes from "./pages/Mistakes";
 import MistakesPractice from "./pages/MistakesPractice";
 import PrivateRoute from "./components/PrivateRoute";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -86,6 +87,7 @@ function App() {
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Router>
+        <Analytics />
       </ProgressProvider>
     </AuthProvider>
   );
