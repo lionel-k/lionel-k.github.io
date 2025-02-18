@@ -296,6 +296,7 @@ export default function BookPageClient({ language, slug }: Props) {
                   </h3>
                   <Link
                     href={`/books/${language}/${relatedBook.slug}`}
+                    rel="follow"
                     className="mt-4 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
                   >
                     Read More
