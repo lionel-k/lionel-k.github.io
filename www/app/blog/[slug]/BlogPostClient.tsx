@@ -141,16 +141,6 @@ export default function BlogPostClient({ post }: Props) {
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </section>
 
-            {/* Conclusion */}
-            <section className="mt-12 bg-white p-6 rounded-lg shadow-sm border">
-              <h2 className="text-xl font-semibold text-gray-900">
-                Conclusion
-              </h2>
-              <p className="mt-4 text-gray-700 whitespace-pre-line">
-                {post.conclusion}
-              </p>
-            </section>
-
             {/* CTA */}
             <div className="mt-12 text-center">
               <Link
