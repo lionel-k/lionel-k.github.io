@@ -20,46 +20,40 @@ export default function BlogListingClient({ posts }: BlogListingClientProps) {
   return (
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       {posts.map((post) => (
-        <Link
+        <article
           key={post.slug}
-          href={`/blog/${post.slug}`}
-          className="group flex flex-col overflow-hidden rounded-lg shadow-lg transition-transform hover:scale-[1.02]"
+          className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col"
         >
-          <div className="relative h-48 w-full overflow-hidden">
-            <Image
-              src={post.coverImage}
-              alt={post.title}
-              fill
-              className="object-cover transition-transform group-hover:scale-105"
-            />
-          </div>
-          <div className="flex flex-1 flex-col justify-between bg-white p-6">
-            <div className="flex-1">
-              <p className="text-sm font-medium text-primary">
+          <Link href={`/blog/${post.slug}`}>
+            <div className="relative aspect-[4/3] w-full mb-6 overflow-hidden rounded-xl">
+              <Image
+                src={post.coverImage}
+                alt={post.title}
+                fill
+                className="object-cover transform group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div className="flex items-center gap-2 text-sm text-gray-600 mb-3">
+              <time dateTime={post.date}>
+                {new Date(post.date).toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                  year: "numeric",
+                })}
+              </time>
+              <span>•</span>
+              <span>{post.readingTime}</span>
+              <span>•</span>
+              <span className="text-[#7C3AED] font-medium">
                 {post.category}
-              </p>
-              <h3 className="mt-2 text-xl font-semibold text-gray-900">
-                {post.title}
-              </h3>
-              <p className="mt-3 text-base text-gray-500 line-clamp-3">
-                {post.description}
-              </p>
+              </span>
             </div>
-            <div className="mt-6">
-              <div className="flex items-center text-sm text-gray-500">
-                <time dateTime={post.date}>
-                  {new Date(post.date).toLocaleDateString("en-US", {
-                    month: "short",
-                    day: "numeric",
-                    year: "numeric",
-                  })}
-                </time>
-                <span className="mx-2">•</span>
-                <span>{post.readingTime}</span>
-              </div>
-            </div>
-          </div>
-        </Link>
+            <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-[#7C3AED] transition-colors">
+              {post.title}
+            </h2>
+            <p className="text-gray-600 line-clamp-2">{post.description}</p>
+          </Link>
+        </article>
       ))}
     </div>
   );
