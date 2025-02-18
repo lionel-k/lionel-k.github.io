@@ -17,16 +17,14 @@ export default function BlogPostClient({ post }: Props) {
   return (
     <article className="min-h-screen">
       {/* Breadcrumb - Now positioned right after navbar */}
-      <div className="border-b bg-gray-50">
-        <div className="container mx-auto px-4">
-          <BreadcrumbNav
-            items={[
-              { name: "Home", href: "/" },
-              { name: "Blog", href: "/blog" },
-              { name: post.title, href: `/blog/${post.slug}` },
-            ]}
-          />
-        </div>
+      <div className="bg-black">
+        <BreadcrumbNav
+          items={[
+            { name: "Home", href: "/" },
+            { name: "Blog", href: "/blog" },
+            { name: post.title, href: `/blog/${post.slug}` },
+          ]}
+        />
       </div>
 
       {/* Hero section with cover image */}
@@ -40,8 +38,8 @@ export default function BlogPostClient({ post }: Props) {
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="container px-4 mx-auto">
-            <div className="max-w-3xl mx-auto text-center text-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="text-center text-white">
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
                 {post.title}
               </h1>
@@ -51,7 +49,7 @@ export default function BlogPostClient({ post }: Props) {
         </div>
       </div>
 
-      <div className="container px-4 mx-auto py-12">
+      <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Mobile Table of Contents Dropdown */}
         <div className="lg:hidden mb-8">
           <button
@@ -117,9 +115,9 @@ export default function BlogPostClient({ post }: Props) {
           </div>
 
           {/* Main Content */}
-          <div className="flex-1">
+          <div className="flex-1 max-w-3xl">
             {/* Meta information */}
-            <div className="mt-8 flex items-center justify-between border-b border-gray-200 pb-8">
+            <div className="flex items-center justify-between border-b border-gray-200 pb-8">
               <div className="flex items-center">
                 <div className="relative h-12 w-12 flex-shrink-0">
                   <Image
