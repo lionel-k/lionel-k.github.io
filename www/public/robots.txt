@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.lingu.africa
+Host: https://lingu.africa
 
 # Sitemaps
-Sitemap: https://www.lingu.africa/sitemap.xml
+Sitemap: https://lingu.africa/sitemap.xml
