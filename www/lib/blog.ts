@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import { visit } from "unist-util-visit";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
 
@@ -48,8 +49,21 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     );
     const conclusion = conclusionMatch ? conclusionMatch[1].trim() : "";
 
-    // Convert MDX content to HTML
-    const processedContent = await remark().use(html).process(mdxContent);
+    // Convert MDX content to HTML with heading IDs
+    const processedContent = await remark()
+      .use(html, { sanitize: false })
+      .use(() => (tree) => {
+        visit(tree, "heading", (node: any) => {
+          const textNode = node.children.find(
+            (child: any) => child.type === "text"
+          );
+          if (textNode) {
+            const id = textNode.value.toLowerCase().replace(/[^\w]+/g, "-");
+            node.data = { hProperties: { id } };
+          }
+        });
+      })
+      .process(mdxContent);
     const contentHtml = processedContent.toString();
 
     return {
