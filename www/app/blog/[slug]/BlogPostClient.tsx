@@ -98,7 +98,7 @@ export default function BlogPostClient({ post }: Props) {
           {/* Desktop Table of Contents - Left Sidebar */}
           <div className="hidden lg:block w-64 flex-shrink-0">
             <div className="sticky top-24">
-              <h2 className="text-lg font-semibold text-gray-900 mb-4">
+              <h2 className="text-lg font-semibold text-white mb-4">
                 Table of Contents
               </h2>
               <nav>
@@ -110,7 +110,7 @@ export default function BlogPostClient({ post }: Props) {
                     >
                       <a
                         href={`#${item.id}`}
-                        className="block text-gray-600 hover:text-gray-900"
+                        className="block text-gray-300 hover:text-white"
                       >
                         {item.text}
                       </a>
@@ -135,10 +135,10 @@ export default function BlogPostClient({ post }: Props) {
                   />
                 </div>
                 <div className="ml-3">
-                  <p className="text-sm font-medium text-gray-900">
+                  <p className="text-sm font-medium text-gray-300">
                     {post.author.name}
                   </p>
-                  <div className="flex space-x-1 text-sm text-gray-500">
+                  <div className="flex space-x-1 text-sm text-gray-400">
                     <time dateTime={post.date}>
                       {new Date(post.date).toLocaleDateString("en-US", {
                         month: "long",
@@ -152,38 +152,36 @@ export default function BlogPostClient({ post }: Props) {
                 </div>
               </div>
               <div>
-                <span className="inline-flex items-center rounded-full bg-indigo-100 px-3 py-0.5 text-sm font-medium text-indigo-800">
+                <span className="inline-flex items-center rounded-full bg-indigo-200 px-3 py-0.5 text-sm font-medium text-indigo-900">
                   {post.category}
                 </span>
               </div>
             </div>
 
             {/* Key Highlights */}
-            <div className="mt-8 rounded-lg bg-gray-50 p-6">
-              <h2 className="text-lg font-semibold text-gray-900">
+            <div className="mt-8 rounded-lg bg-gray-800 p-6">
+              <h2 className="text-lg font-semibold text-white">
                 Key Highlights
               </h2>
               <ul className="mt-4 space-y-2">
                 {post.highlights.map((highlight, index) => (
                   <li key={index} className="flex items-start">
-                    <span className="mr-2 text-indigo-600">•</span>
-                    <span className="text-gray-700">{highlight}</span>
+                    <span className="mr-2 text-indigo-400">•</span>
+                    <span className="text-gray-300">{highlight}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Content */}
-            <div className="prose prose-lg mt-8 max-w-none">
+            <div className="prose prose-lg mt-8 max-w-none text-gray-300">
               <div dangerouslySetInnerHTML={{ __html: post.content }} />
             </div>
 
             {/* Conclusion */}
-            <div className="mt-12 rounded-lg bg-gray-50 p-6">
-              <h2 className="text-lg font-semibold text-gray-900">
-                Conclusion
-              </h2>
-              <p className="mt-4 text-gray-700">{post.conclusion}</p>
+            <div className="mt-12 rounded-lg bg-gray-800 p-6">
+              <h2 className="text-lg font-semibold text-white">Conclusion</h2>
+              <p className="mt-4 text-gray-300">{post.conclusion}</p>
             </div>
 
             {/* CTA */}
@@ -201,7 +199,7 @@ export default function BlogPostClient({ post }: Props) {
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="inline-flex items-center rounded-full bg-gray-100 px-3 py-0.5 text-sm font-medium text-gray-800"
+                  className="inline-flex items-center rounded-full bg-gray-700 px-3 py-0.5 text-sm font-medium text-gray-300"
                 >
                   {tag}
                 </span>
