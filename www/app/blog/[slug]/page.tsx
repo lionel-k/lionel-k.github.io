@@ -77,52 +77,67 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
-  const post = await getBlogPost(slug);
+  try {
+    const resolvedParams = await Promise.resolve(params);
+    const post = await getBlogPost(resolvedParams.slug);
 
-  if (!post) {
+    if (!post) {
+      return {
+        title: "Post Not Found - Lingu Africa",
+      };
+    }
+
+    const authorName =
+      typeof post.author === "string" ? post.author : post.author.name;
+
     return {
-      title: "Post Not Found - Lingu Africa",
+      title: `${post.title} - Lingu Africa Blog`,
+      description: post.description,
+      metadataBase: new URL(
+        process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"
+      ),
+      openGraph: {
+        title: post.title,
+        description: post.description,
+        type: "article",
+        publishedTime: post.date,
+        authors: [authorName],
+        images: [
+          {
+            url: post.coverImage,
+            width: 1200,
+            height: 630,
+            alt: post.title,
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: post.title,
+        description: post.description,
+        images: [post.coverImage],
+      },
+    };
+  } catch (error) {
+    console.error("Error generating metadata:", error);
+    return {
+      title: "Error - Lingu Africa",
     };
   }
-
-  const authorName =
-    typeof post.author === "string" ? post.author : post.author.name;
-
-  return {
-    title: `${post.title} - Lingu Africa Blog`,
-    description: post.description,
-    openGraph: {
-      title: post.title,
-      description: post.description,
-      type: "article",
-      publishedTime: post.date,
-      authors: [authorName],
-      images: [
-        {
-          url: post.coverImage,
-          width: 1200,
-          height: 630,
-          alt: post.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.description,
-      images: [post.coverImage],
-    },
-  };
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const { slug } = params;
-  const post = await getBlogPost(slug);
+  try {
+    const resolvedParams = await Promise.resolve(params);
+    const post = await getBlogPost(resolvedParams.slug);
 
-  if (!post) {
+    if (!post) {
+      notFound();
+    }
+
+    return <BlogPostClient post={post} />;
+  } catch (error) {
+    console.error("Error loading blog post:", error);
     notFound();
   }
-
-  return <BlogPostClient post={post} />;
 }
