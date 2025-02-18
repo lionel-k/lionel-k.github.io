@@ -13,11 +13,19 @@ export type MetadataConfig = {
   alternates?: {
     canonical?: string;
   };
-  openGraph?: {
-    title?: string;
-    description?: string;
-    images?: any;
-    url?: string;
+  openGraph: {
+    title: string;
+    description: string;
+    url: string;
+    type: string;
+    siteName: string;
+    images: Array<{
+      url: string;
+      width: number;
+      height: number;
+      alt: string;
+      type: string;
+    }>;
   };
   twitter?: {
     title?: string;
@@ -100,6 +108,8 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       description:
         "Read our terms and conditions to understand the rules and regulations for using Lingu.Africa's website and services.",
       url: getCanonicalUrl("/terms"),
+      type: "website",
+      siteName: SITE_NAME,
       images: [defaultOgImage],
     },
     twitter: {
@@ -131,6 +141,8 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       description:
         "Learn how Lingu.Africa protects and handles your personal information in accordance with our privacy policy.",
       url: getCanonicalUrl("/privacy"),
+      type: "website",
+      siteName: SITE_NAME,
       images: [defaultOgImage],
     },
     twitter: {
@@ -155,6 +167,8 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       description:
         "Learn about Lingu.Africa's mission to preserve African languages and culture through bilingual children's books.",
       url: getCanonicalUrl("/about"),
+      type: "website",
+      siteName: SITE_NAME,
       images: [defaultOgImage],
     },
     twitter: {
@@ -188,6 +202,8 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
         getAvailableLanguageNames().join(" and ") +
         ".",
       url: getCanonicalUrl("/books"),
+      type: "website",
+      siteName: SITE_NAME,
       images: [defaultOgImage],
     },
     twitter: {
