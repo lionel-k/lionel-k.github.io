@@ -177,19 +177,18 @@ export default function About() {
       </section>
 
       {/* Newsletter Section (Dark Gradient) */}
-      <section className="bg-black text-white">
+      <section className="bg-black text-white py-20">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <div className="mx-auto max-w-4xl text-center bg-contain bg-no-repeat bg-center py-8">
-            <div className="bg-black backdrop-blur-sm rounded-3xl p-12">
-              <h3 className="text-3xl font-bold text-white mb-4">
-                Stay Updated
-              </h3>
-              <p className="text-xl text-gray-300 mb-8">
-                Get our latest news on bilingual African children's books,
-                language tips, and special offers.
-              </p>
-              <NewsletterForm />
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Subscribe to Our Newsletter
+            </h2>
+            <p className="text-xl text-gray-300">
+              Get the latest updates and promotions straight to your inbox!
+            </p>
+          </div>
+          <div className="mx-auto max-w-4xl">
+            <NewsletterForm />
           </div>
         </div>
       </section>

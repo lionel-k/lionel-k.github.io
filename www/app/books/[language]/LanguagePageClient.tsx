@@ -116,19 +116,20 @@ export default function LanguagePageClient({ language }: Props) {
       </section>
 
       {/* Newsletter Section - dark gradient, consistent with Home Page */}
-      <section className="bg-black text-white">
+      <section className="bg-black text-white py-20">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <div className="mx-auto max-w-4xl text-center bg-contain bg-no-repeat bg-center py-16">
-            <div className="bg-black backdrop-blur-sm rounded-3xl p-8">
-              <h3 className="text-3xl font-bold text-white mb-4">
-                Stay Connected
-              </h3>
-              <p className="text-xl text-gray-300 mb-8">
-                Sign up for updates on new {languageData.name} books, language
-                tips, and more
-              </p>
-              <NewsletterForm />
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Stay Updated on {languageData.name} Books
+            </h2>
+            <p className="text-xl text-gray-300">
+              Subscribe to receive updates about new {languageData.name} books,
+              language learning tips, and get a free bilingual coloring book in{" "}
+              {languageData.name}!
+            </p>
+          </div>
+          <div className="mx-auto max-w-4xl">
+            <NewsletterForm />
           </div>
         </div>
       </section>

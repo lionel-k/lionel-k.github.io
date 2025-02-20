@@ -206,14 +206,15 @@ export default function Home() {
         </section>
 
         {/* Newsletter Section */}
-        <section className="bg-black text-white">
+        <section className="bg-black text-white py-20">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-white mb-4">
-                Subscribe to Our Newsletter
+                Get Your Free Coloring Book
               </h2>
               <p className="text-xl text-gray-300">
-                Get the latest updates and promotions straight to your inbox!
+                Subscribe to our newsletter and receive a free bilingual
+                coloring book, available in an African language of your choice.
               </p>
             </div>
             <div className="mx-auto max-w-4xl">
