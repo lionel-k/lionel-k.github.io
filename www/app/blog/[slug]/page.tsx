@@ -65,7 +65,7 @@ interface Props {
   params: {
     slug: string;
   };
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 // This function tells Next.js which paths to pre-render
