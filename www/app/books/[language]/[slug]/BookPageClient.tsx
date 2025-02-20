@@ -311,10 +311,12 @@ export default function BookPageClient({ language, slug }: Props) {
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">
-              Subscribe to Our Newsletter
+              Love {book.title}?
             </h2>
             <p className="text-xl text-gray-300">
-              Get the latest updates and promotions straight to your inbox!
+              Subscribe to our newsletter for more {languageData.name} books
+              like this one, exclusive reading guides, and a free bilingual
+              coloring book!
             </p>
           </div>
           <div className="mx-auto max-w-4xl">
