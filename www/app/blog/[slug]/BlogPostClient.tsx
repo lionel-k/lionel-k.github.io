@@ -100,7 +100,12 @@ export default function BlogPostClient({ post }: Props) {
                 {post.title}
               </h1>
               <div className="flex items-center gap-4 text-sm text-gray-600">
-                <p>By {post.author}</p>
+                <p>
+                  By{" "}
+                  {typeof post.author === "string"
+                    ? post.author
+                    : post.author.name}
+                </p>
                 <span>•</span>
                 <time dateTime={post.date}>
                   {new Date(post.date).toLocaleDateString("en-US", {

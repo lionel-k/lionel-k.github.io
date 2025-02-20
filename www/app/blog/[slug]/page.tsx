@@ -61,24 +61,22 @@ const SAMPLE_POST: BlogPost = {
     "Remember that language learning is a journey, not a destination. By implementing these strategies consistently, you'll be well on your way to achieving fluency in your target language.",
 };
 
-interface Props {
-  params: {
-    slug: string;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
+type PageParams = { slug: string };
 
-// This function tells Next.js which paths to pre-render
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<PageParams[]> {
   const posts = await getAllBlogPosts();
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<PageParams>;
+}): Promise<Metadata> {
   try {
-    const resolvedParams = await Promise.resolve(params);
+    const resolvedParams = await params;
     const post = await getBlogPost(resolvedParams.slug);
 
     if (!post) {
@@ -126,9 +124,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-export default async function BlogPostPage({ params }: Props) {
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<PageParams>;
+}) {
   try {
-    const resolvedParams = await Promise.resolve(params);
+    const resolvedParams = await params;
     const post = await getBlogPost(resolvedParams.slug);
 
     if (!post) {
