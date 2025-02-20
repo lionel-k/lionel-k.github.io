@@ -307,9 +307,17 @@ export default function BookPageClient({ language, slug }: Props) {
         </div>
       </section>
       {/* Newsletter Section - Dark (Black) */}
-      <section className="bg-black text-white">
+      <section className="bg-black text-white py-20">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <div className="mx-auto max-w-2xl text-center py-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-white mb-4">
+              Subscribe to Our Newsletter
+            </h2>
+            <p className="text-xl text-gray-300">
+              Get the latest updates and promotions straight to your inbox!
+            </p>
+          </div>
+          <div className="mx-auto max-w-4xl">
             <NewsletterForm />
           </div>
         </div>
