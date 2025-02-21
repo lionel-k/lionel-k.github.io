@@ -2,6 +2,75 @@ export const kinyarwandaConfigs = {
   name: "Kinyarwanda",
   books: [
     {
+      title: "My First Picture Book in Kinyarwanda",
+      slug: "my-first-picture-book-in-kinyarwanda",
+      age: "0-6",
+      pages: "30",
+      price: "11.99",
+      description: {
+        short:
+          "A picture book designed to introduce young children to their first words in Kinyarwanda with bright and engaging illustrations.",
+        long: `
+Are you a parent living in the diaspora and searching for an easy way to teach your child Kinyarwanda?
+This book is the perfect first step in helping little ones discover the beauty of the language. With 30 colorful pages, your child will learn essential words in Kinyarwanda, English, and French.
+Each page features a clear image and a simple word, making learning fun and effortless for toddlers and young children.
+Even if you don’t speak Kinyarwanda fluently, you can still share this learning journey with your child through this accessible and engaging picture book.
+    `.trim(),
+      },
+      challenges: [
+        "Hard to find quality Kinyarwanda books: Many parents in the diaspora struggle to access simple, engaging learning materials.",
+        "Keeping young children engaged: Bright illustrations and simple words make learning easy and enjoyable for little ones.",
+        "Parents not fluent in Kinyarwanda: The trilingual format (Kinyarwanda-English-French) allows parents to learn alongside their children.",
+      ],
+      whyChoose: [
+        "Perfect First Words Book: Introduces essential everyday vocabulary to help young children build a strong language foundation.",
+        "Trilingual Format: Kinyarwanda, English, and French on each page—ideal for families who want to reinforce multiple languages.",
+        "Designed for Ages 0-6: Simple text, large images, and vibrant colors keep young learners engaged and excited.",
+      ],
+      amazonUrl: "https://mybook.to/first-book-kinyarwanda",
+      bestSeller: false,
+      testimonials: [
+        "A wonderful book for my toddler! The images are bright and engaging, and we love learning Kinyarwanda together. - N.T.",
+        "So happy to finally find a book that helps teach my kids Kinyarwanda while keeping them entertained. - A.K.",
+        "The trilingual layout makes it easy for me to follow along, even though I’m not fluent in Kinyarwanda. - J.M.",
+        "My child recognizes and repeats the words in Kinyarwanda every day. Highly recommended for parents in the diaspora! - L.S.",
+        "A great book for teaching vocabulary in a fun way. My kids love it! - R.D.",
+        "I appreciate that this book makes learning Kinyarwanda accessible for families outside Rwanda. - M.O.",
+      ],
+      faq: [
+        {
+          question: "Can I return the book if I don't like it?",
+          answer:
+            "Yes. All purchases are handled by Amazon, which offers a straightforward return policy. If you're not satisfied, you can request a refund through their platform.",
+        },
+        {
+          question: "How long does shipping usually take?",
+          answer:
+            "Shipping times depend on your location. Amazon provides estimated delivery dates at checkout, and tracking is available for your order.",
+        },
+        {
+          question: "Is this book only for children aged 0-6?",
+          answer:
+            "The book is designed for young learners, but older children or beginners can also benefit from its simple vocabulary and engaging visuals.",
+        },
+        {
+          question: "Do I need to speak Kinyarwanda fluently to use this book?",
+          answer:
+            "Not at all! Each page includes Kinyarwanda, English, and French, making it easy for parents to guide their children even if they are not fluent.",
+        },
+        {
+          question: "What makes this book different from other language books?",
+          answer:
+            "It uses bright visuals and a trilingual approach to make learning both fun and accessible, helping children recognize words in multiple languages at once.",
+        },
+        {
+          question: "Is this book useful for parents living outside Rwanda?",
+          answer:
+            "Absolutely! This book is specifically designed for diaspora families, making it easy to introduce children to Kinyarwanda while reinforcing their cultural roots.",
+        },
+      ],
+    },
+    {
       title: "Action Verbs in Kinyarwanda",
       slug: "action-verbs-in-kinyarwanda",
       age: "0-6",
