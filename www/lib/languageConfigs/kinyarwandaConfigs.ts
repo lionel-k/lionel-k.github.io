@@ -2,6 +2,75 @@ export const kinyarwandaConfigs = {
   name: "Kinyarwanda",
   books: [
     {
+      title: "Animals in Kinyarwanda",
+      slug: "animals-in-kinyarwanda",
+      age: "0-6",
+      pages: "28",
+      price: "11.99",
+      description: {
+        short:
+          "A Kinyarwanda-English-French picture book all about animals. Great for kids aged 0-6—perfect for families who want a fun way to learn Kinyarwanda!",
+        long: `
+Are you a parent living outside Rwanda, wishing you had a simple way to teach your child Kinyarwanda?
+This animal-themed picture book introduces 30 colorful pages of creatures and words, set in Kinyarwanda, English, and French.
+It's easy to follow, even if you're not fluent. Let your child explore bright illustrations and fun vocabulary that connect them to their cultural roots.
+Give them a world of words and animals to discover, bonding over language in a relaxed, playful way.
+    `.trim(),
+      },
+      challenges: [
+        "Hard to find animal books in Kinyarwanda: Many diaspora parents lack kid-friendly materials for teaching the names of creatures.",
+        "Engagement for young learners: Bright images and simple text keep kids focused on learning new words.",
+        "Non-fluent parents: The triple-language format (Kinyarwanda-English-French) helps everyone learn together, step by step.",
+      ],
+      whyChoose: [
+        "Shows everyday animals: Kids learn the names of real creatures they recognize in daily life or storybooks.",
+        "Trilingual Layout: Kinyarwanda, English, and French on each page—perfect for families, no matter their language level.",
+        "Ideal for Ages 0-6: Simple sentences and colorful illustrations capture little ones' attention, making learning fun.",
+      ],
+      amazonUrl: "https://mybook.to/animals-in-kinyarwanda",
+      bestSeller: false,
+      testimonials: [
+        "My daughter loves pointing at the animals and learning what they're called in Kinyarwanda! - K.M.",
+        "Great for diaspora families who want an easy way to teach kids about Rwandan culture and language. - A.T.",
+        "The pictures are bright and fun, and my son repeats the words every night. - F.N.",
+        "I like the three languages side by side—it helps me learn too, even though I'm not fluent in Kinyarwanda. - M.O.",
+        "Seeing animals in Kinyarwanda, English, and French keeps the whole family engaged. - S.B.",
+        "This book truly bridged the gap for us. We're all picking up new vocabulary fast! - L.R.",
+      ],
+      faq: [
+        {
+          question: "Can I return the book if I don't like it?",
+          answer:
+            "Yes. All orders go through Amazon, which has a straightforward return policy. Simply follow their steps for a refund.",
+        },
+        {
+          question: "How long does shipping usually take?",
+          answer:
+            "It depends on your location. Amazon will give you an estimated delivery date at checkout, and you can track your package online.",
+        },
+        {
+          question: "Is it only for kids aged 0-6?",
+          answer:
+            "While it's best for little ones, older children or beginner learners can also enjoy practicing new words and exploring the fun pictures.",
+        },
+        {
+          question: "Do I have to speak Kinyarwanda?",
+          answer:
+            "Not at all! Each page provides Kinyarwanda, English, and French text, so parents can guide their children, even if they're not fluent.",
+        },
+        {
+          question: "What makes this book unique?",
+          answer:
+            "It focuses on animals and uses a triple-language approach to keep learning playful and relevant. The bright visuals help kids make real connections with each new word.",
+        },
+        {
+          question: "Is this a good choice for parents living outside Rwanda?",
+          answer:
+            "Absolutely! It's designed with diaspora families in mind, helping children stay connected to Rwandan culture and language, no matter where they live.",
+        },
+      ],
+    },
+    {
       title: "My First Picture Book in Kinyarwanda",
       slug: "my-first-picture-book-in-kinyarwanda",
       age: "0-6",
@@ -141,75 +210,6 @@ Even if you're not fully fluent, you'll discover new words together and strength
           question: "Is this book good for families abroad?",
           answer:
             "Absolutely! It's designed for parents outside Rwanda who want an easy, engaging way to maintain Kinyarwanda at home.",
-        },
-      ],
-    },
-    {
-      title: "Animals in Kinyarwanda",
-      slug: "animals-in-kinyarwanda",
-      age: "0-6",
-      pages: "28",
-      price: "11.99",
-      description: {
-        short:
-          "A Kinyarwanda-English-French picture book all about animals. Great for kids aged 0-6—perfect for families who want a fun way to learn Kinyarwanda!",
-        long: `
-Are you a parent living outside Rwanda, wishing you had a simple way to teach your child Kinyarwanda?
-This animal-themed picture book introduces 30 colorful pages of creatures and words, set in Kinyarwanda, English, and French.
-It's easy to follow, even if you're not fluent. Let your child explore bright illustrations and fun vocabulary that connect them to their cultural roots.
-Give them a world of words and animals to discover, bonding over language in a relaxed, playful way.
-    `.trim(),
-      },
-      challenges: [
-        "Hard to find animal books in Kinyarwanda: Many diaspora parents lack kid-friendly materials for teaching the names of creatures.",
-        "Engagement for young learners: Bright images and simple text keep kids focused on learning new words.",
-        "Non-fluent parents: The triple-language format (Kinyarwanda-English-French) helps everyone learn together, step by step.",
-      ],
-      whyChoose: [
-        "Shows everyday animals: Kids learn the names of real creatures they recognize in daily life or storybooks.",
-        "Trilingual Layout: Kinyarwanda, English, and French on each page—perfect for families, no matter their language level.",
-        "Ideal for Ages 0-6: Simple sentences and colorful illustrations capture little ones' attention, making learning fun.",
-      ],
-      amazonUrl: "https://mybook.to/animals-in-kinyarwanda",
-      bestSeller: false,
-      testimonials: [
-        "My daughter loves pointing at the animals and learning what they're called in Kinyarwanda! - K.M.",
-        "Great for diaspora families who want an easy way to teach kids about Rwandan culture and language. - A.T.",
-        "The pictures are bright and fun, and my son repeats the words every night. - F.N.",
-        "I like the three languages side by side—it helps me learn too, even though I'm not fluent in Kinyarwanda. - M.O.",
-        "Seeing animals in Kinyarwanda, English, and French keeps the whole family engaged. - S.B.",
-        "This book truly bridged the gap for us. We're all picking up new vocabulary fast! - L.R.",
-      ],
-      faq: [
-        {
-          question: "Can I return the book if I don't like it?",
-          answer:
-            "Yes. All orders go through Amazon, which has a straightforward return policy. Simply follow their steps for a refund.",
-        },
-        {
-          question: "How long does shipping usually take?",
-          answer:
-            "It depends on your location. Amazon will give you an estimated delivery date at checkout, and you can track your package online.",
-        },
-        {
-          question: "Is it only for kids aged 0-6?",
-          answer:
-            "While it's best for little ones, older children or beginner learners can also enjoy practicing new words and exploring the fun pictures.",
-        },
-        {
-          question: "Do I have to speak Kinyarwanda?",
-          answer:
-            "Not at all! Each page provides Kinyarwanda, English, and French text, so parents can guide their children, even if they're not fluent.",
-        },
-        {
-          question: "What makes this book unique?",
-          answer:
-            "It focuses on animals and uses a triple-language approach to keep learning playful and relevant. The bright visuals help kids make real connections with each new word.",
-        },
-        {
-          question: "Is this a good choice for parents living outside Rwanda?",
-          answer:
-            "Absolutely! It's designed with diaspora families in mind, helping children stay connected to Rwandan culture and language, no matter where they live.",
         },
       ],
     },
