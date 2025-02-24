@@ -15,7 +15,7 @@ export default function BlogPostClient({ post }: Props) {
   const [isTableOfContentsOpen, setIsTableOfContentsOpen] = useState(false);
 
   return (
-    <article className="min-h-screen bg-white">
+    <article className="min-h-screen bg-white scroll-pt-16">
       {/* Breadcrumb */}
       <div className="bg-gray-50 border-b">
         <BreadcrumbNav
@@ -120,6 +120,17 @@ export default function BlogPostClient({ post }: Props) {
               <p className="mt-4 text-xl text-gray-600">{post.description}</p>
             </header>
 
+            {/* Cover Image */}
+            <div className="relative aspect-[16/9] w-full mb-8 rounded-lg overflow-hidden">
+              <Image
+                src={post.coverImage}
+                alt={post.title}
+                fill
+                priority
+                className="object-cover"
+              />
+            </div>
+
             {/* Highlights */}
             {post.highlights && post.highlights.length > 0 && (
               <div className="mb-8">
@@ -162,17 +173,6 @@ export default function BlogPostClient({ post }: Props) {
                 </div>
               </div>
             )}
-
-            {/* Cover Image */}
-            <div className="relative aspect-[16/9] w-full mb-8 rounded-lg overflow-hidden">
-              <Image
-                src={post.coverImage}
-                alt={post.title}
-                fill
-                priority
-                className="object-cover"
-              />
-            </div>
 
             {/* Content */}
             <div className="prose prose-lg max-w-none prose-h1:text-3xl prose-h1:font-bold prose-h1:mt-0 [&>h1]:!mt-0 [&>h1]:!text-3xl [&>h1]:!font-bold [&>h1]:!mb-4 [&>h1]:!leading-9">
