@@ -87,6 +87,40 @@ const baseKeywords = [
 ];
 
 export const pagesMetadata: Record<string, MetadataConfig> = {
+  blog: {
+    title: "Blog | Lingu.Africa",
+    description:
+      "Discover expert insights and practical tips on language learning and cultural diversity. Learn strategies to master new languages and embrace cultures.",
+    keywords: [
+      "blog",
+      "language learning",
+      "cultural diversity",
+      "education",
+      "African languages",
+      "bilingual learning",
+      ...baseKeywords,
+    ],
+    canonical: getCanonicalUrl("/blog"),
+    alternates: {
+      canonical: getCanonicalUrl("/blog"),
+    },
+    openGraph: {
+      title: "Blog | Lingu.Africa",
+      description:
+        "Discover expert insights and practical tips on language learning and cultural diversity. Learn strategies to master new languages and embrace cultures.",
+      url: getCanonicalUrl("/blog"),
+      type: "website",
+      siteName: SITE_NAME,
+      images: [defaultOgImage],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Blog | Lingu.Africa",
+      description:
+        "Discover expert insights and practical tips on language learning and cultural diversity. Learn strategies to master new languages and embrace cultures.",
+      images: [defaultOgImage],
+    },
+  },
   terms: {
     title: "Terms and Conditions | Lingu.Africa",
     description:
