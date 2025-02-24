@@ -98,6 +98,7 @@ export async function generateMetadata({
         title: post.title,
         description: post.description,
         type: "article",
+        url: `${process.env.NEXT_PUBLIC_APP_URL}/blog/${post.slug}`,
         publishedTime: post.date,
         authors: [authorName],
         images: [
