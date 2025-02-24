@@ -71,7 +71,7 @@ export default function BlogPostClient({ post }: Props) {
               <h2 className="text-sm font-medium text-[#DAA520] uppercase tracking-wide mb-4">
                 TABLE OF CONTENTS
               </h2>
-              <nav>
+              <nav className="max-h-[calc(100vh-12rem)] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent hover:scrollbar-thumb-gray-400">
                 <ul className="space-y-3">
                   {post.tableOfContents.map((item) => (
                     <li
