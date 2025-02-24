@@ -89,7 +89,7 @@ export async function generateMetadata({
       typeof post.author === "string" ? post.author : post.author.name;
 
     return {
-      title: `${post.title} - Lingu Africa Blog`,
+      title: `${post.title}`,
       description: post.description,
       metadataBase: new URL(
         process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"
