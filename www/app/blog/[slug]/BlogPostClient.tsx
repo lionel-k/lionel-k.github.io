@@ -130,7 +130,17 @@ export default function BlogPostClient({ post }: Props) {
                   {post.highlights.map((highlight, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-[#DAA520] mr-2">•</span>
-                      <span className="text-gray-700">{highlight}</span>
+                      <span className="text-gray-700">
+                        {highlight
+                          .split("**")
+                          .map((part, i) =>
+                            i % 2 === 1 ? (
+                              <strong key={i}>{part}</strong>
+                            ) : (
+                              <span key={i}>{part}</span>
+                            )
+                          )}
+                      </span>
                     </li>
                   ))}
                 </ul>
