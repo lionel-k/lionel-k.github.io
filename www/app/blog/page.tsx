@@ -5,7 +5,7 @@ import BlogListingClient from "@/app/blog/BlogListingClient";
 export const metadata: Metadata = {
   title: "Blog - Lingu Africa",
   description:
-    "Explore our latest articles about language learning, culture, and education.",
+    "Discover expert insights and practical tips on language learning and cultural diversity. Learn strategies to master new languages and embrace cultures.",
 };
 
 // This function tells Next.js to pre-render the blog listing page
