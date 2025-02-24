@@ -120,6 +120,39 @@ export default function BlogPostClient({ post }: Props) {
               <p className="mt-4 text-xl text-gray-600">{post.description}</p>
             </header>
 
+            {/* Highlights */}
+            {post.highlights && post.highlights.length > 0 && (
+              <div className="mb-8">
+                <h2 className="text-sm font-medium text-[#DAA520] uppercase tracking-wide mb-4">
+                  KEY HIGHLIGHTS
+                </h2>
+                <ul className="space-y-2">
+                  {post.highlights.map((highlight, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="text-[#DAA520] mr-2">•</span>
+                      <span className="text-gray-700">{highlight}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {/* Tags */}
+            {post.tags && post.tags.length > 0 && (
+              <div className="mb-8">
+                <div className="flex flex-wrap gap-2">
+                  {post.tags.map((tag, index) => (
+                    <span
+                      key={index}
+                      className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {/* Cover Image */}
             <div className="relative aspect-[16/9] w-full mb-8 rounded-lg overflow-hidden">
               <Image
