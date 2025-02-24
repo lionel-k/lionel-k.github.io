@@ -21,7 +21,7 @@ export function AmazonLink({ href, className, children }: AmazonLinkProps) {
 
   const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (isInstagram) {
-      // Prevent the normal link from opening inside IG’s WebView
+      // Prevent the normal link from opening inside IG's WebView
       e.preventDefault();
 
       try {
@@ -31,7 +31,7 @@ export function AmazonLink({ href, className, children }: AmazonLinkProps) {
         );
       } catch {
         setBannerMessage(
-          `We couldn’t automatically copy the link. Please copy it manually: ${href}`
+          `We couldn't automatically copy the link. Please copy it manually: ${href}`
         );
       }
 
@@ -42,18 +42,36 @@ export function AmazonLink({ href, className, children }: AmazonLinkProps) {
 
   return (
     <>
-      {/* Friendly Banner */}
+      {/* Notification Banner */}
       {showBanner && (
-        <div className="fixed top-0 left-0 w-full z-50">
-          <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 shadow-md">
-            <div className="flex items-start justify-between">
-              <p className="pr-2">{bannerMessage}</p>
-              <button
-                onClick={() => setShowBanner(false)}
-                className="ml-4 text-yellow-700 hover:text-yellow-900"
-              >
-                <X className="w-5 h-5" />
-              </button>
+        <div className="fixed inset-x-0 top-0 z-50 animate-fade-in">
+          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+            <div className="bg-black text-white rounded-b-lg shadow-xl">
+              <div className="max-w-3xl mx-auto py-4 px-6">
+                <div className="flex items-start justify-between">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0">
+                      <div className="h-10 w-10 rounded-full bg-[#DAA520] flex items-center justify-center">
+                        <ArrowRight className="h-5 w-5 text-black" />
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <p className="text-sm font-medium text-[#DAA520]">
+                        Opening Amazon Link
+                      </p>
+                      <p className="mt-1 text-sm text-gray-300">
+                        {bannerMessage}
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    onClick={() => setShowBanner(false)}
+                    className="ml-4 flex-shrink-0 rounded-full p-1 hover:bg-[#DAA520]/10 transition-colors"
+                  >
+                    <X className="h-5 w-5 text-[#DAA520]" />
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
