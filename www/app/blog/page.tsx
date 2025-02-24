@@ -1,11 +1,37 @@
 import { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/blog";
 import BlogListingClient from "@/app/blog/BlogListingClient";
+import { sharedMetadata } from "@/lib/metadata";
+import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Blog - Lingu Africa",
+  ...sharedMetadata,
+  title: "Blog | Lingu.Africa",
   description:
     "Discover expert insights and practical tips on language learning and cultural diversity. Learn strategies to master new languages and embrace cultures.",
+  keywords: [
+    "blog",
+    "language learning",
+    "cultural diversity",
+    "education",
+    "African languages",
+    "bilingual learning",
+  ],
+  openGraph: {
+    ...sharedMetadata.openGraph,
+    title: "Blog | Lingu.Africa",
+    description:
+      "Discover expert insights and practical tips on language learning and cultural diversity. Learn strategies to master new languages and embrace cultures.",
+    url: `${SITE_URL}/blog`,
+    type: "website",
+    siteName: SITE_NAME,
+  },
+  twitter: {
+    ...sharedMetadata.twitter,
+    title: "Blog | Lingu.Africa",
+    description:
+      "Discover expert insights and practical tips on language learning and cultural diversity. Learn strategies to master new languages and embrace cultures.",
+  },
 };
 
 // This function tells Next.js to pre-render the blog listing page
