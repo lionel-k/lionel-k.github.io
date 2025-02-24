@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowRight } from "lucide-react";
+import { useState, useEffect } from "react";
 
 interface AmazonLinkProps {
   href: string;
@@ -9,10 +10,18 @@ interface AmazonLinkProps {
 }
 
 export function AmazonLink({ href, className, children }: AmazonLinkProps) {
+  const [isInstagram, setIsInstagram] = useState(false);
+
+  useEffect(() => {
+    setIsInstagram(
+      window?.navigator?.userAgent?.includes("Instagram") || false
+    );
+  }, []);
+
   return (
     <a
       href={href}
-      {...(!window?.navigator?.userAgent?.includes("Instagram") && {
+      {...(!isInstagram && {
         target: "_blank",
         rel: "noopener noreferrer",
       })}
