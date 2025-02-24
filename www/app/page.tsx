@@ -5,6 +5,7 @@ import { LANGUAGES, FAQ_ITEMS, SITE_URL } from "@/lib/constants";
 import { FAQ } from "@/components/FAQ";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import { AmazonLink } from "@/components/AmazonLink";
 
 import { Metadata } from "next";
 
@@ -101,13 +102,10 @@ export default function Home() {
                     <p className="text-gray-600 text-center mb-6">
                       {book.description.short}
                     </p>
-                    <Link
+                    <AmazonLink
                       href={book.amazonUrl}
                       className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"
-                    >
-                      View on Amazon
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Link>
+                    />
                   </div>
                 ))}
             </div>

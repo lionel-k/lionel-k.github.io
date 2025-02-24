@@ -7,6 +7,7 @@ import { NewsletterForm } from "@/components/newsletter-form";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { ArrowRight } from "lucide-react";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import { AmazonLink } from "@/components/AmazonLink";
 
 type Book = {
   title: string;
@@ -32,15 +33,13 @@ function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
         <h3 className="text-2xl font-bold mb-6">
           Start Your Child's Bilingual Journey Today!
         </h3>
-        <a
+        <AmazonLink
           href={amazonUrl}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-flex items-center justify-center rounded-full bg-gray-800 px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-gray-700 transition-all duration-300 hover:scale-105"
         >
           Get Your Paperback Now
           <ArrowRight className="ml-2 h-5 w-5" />
-        </a>
+        </AmazonLink>
         <p className="mt-4 text-sm opacity-90">
           Amazon's 30-Day Return Policy • Premium Quality Paperback
         </p>
