@@ -9,26 +9,14 @@ interface AmazonLinkProps {
 }
 
 export function AmazonLink({ href, className, children }: AmazonLinkProps) {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Prevent default behavior for Instagram browser
-    if (window.navigator.userAgent.includes("Instagram")) {
-      e.preventDefault();
-      // Try opening in system browser
-      window.open(href, "_system");
-      // Fallback to regular redirect
-      setTimeout(() => {
-        window.location.href = href;
-      }, 100);
-    }
-  };
-
   return (
     <a
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      {...(!window?.navigator?.userAgent?.includes("Instagram") && {
+        target: "_blank",
+        rel: "noopener noreferrer",
+      })}
       className={className}
-      onClick={handleClick}
     >
       {children || (
         <>
