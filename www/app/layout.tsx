@@ -94,7 +94,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} flex min-h-full flex-col`}>
+      <body
+        className={`${inter.className} flex min-h-full flex-col`}
+        suppressHydrationWarning
+      >
         <Providers>
           <GoogleAnalyticsWrapper>
             <Navbar />
