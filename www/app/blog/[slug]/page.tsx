@@ -61,27 +61,25 @@ const SAMPLE_POST: BlogPost = {
     "Remember that language learning is a journey, not a destination. By implementing these strategies consistently, you'll be well on your way to achieving fluency in your target language.",
 };
 
-type PageParams = { slug: string };
-
-export async function generateStaticParams(): Promise<PageParams[]> {
-  try {
-    const posts = await getAllBlogPosts();
-    return posts.map((post) => ({
-      slug: post.slug,
-    }));
-  } catch (error) {
-    console.error("Error generating static params:", error);
-    return [];
-  }
+interface StaticParams {
+  slug: string;
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: PageParams;
-}): Promise<Metadata> {
+export async function generateStaticParams(): Promise<StaticParams[]> {
+  const posts = await getAllBlogPosts();
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
+}
+
+interface Props {
+  params: Promise<StaticParams>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const resolvedParams = await params;
   try {
-    const post = await getBlogPost(params.slug);
+    const post = await getBlogPost(resolvedParams.slug);
 
     if (!post) {
       return {
@@ -129,9 +127,10 @@ export async function generateMetadata({
   }
 }
 
-export default async function BlogPostPage({ params }: { params: PageParams }) {
+export default async function BlogPostPage({ params }: Props) {
+  const resolvedParams = await params;
   try {
-    const post = await getBlogPost(params.slug);
+    const post = await getBlogPost(resolvedParams.slug);
 
     if (!post) {
       notFound();
