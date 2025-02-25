@@ -13,7 +13,9 @@ export async function getAllBlogPosts(): Promise<BlogPostMetadata[]> {
     const files = await fs.readdir(BLOG_DIR);
     const posts = await Promise.all(
       files
-        .filter((file) => file.endsWith(".mdx"))
+        .filter(
+          (file) => file.endsWith(".mdx") && !file.endsWith(".backup.mdx")
+        )
         .map(async (file) => {
           const content = await fs.readFile(path.join(BLOG_DIR, file), "utf8");
           const { data } = matter(content);
@@ -31,10 +33,10 @@ export async function getAllBlogPosts(): Promise<BlogPostMetadata[]> {
         })
     );
 
-    // Filter out future-dated posts
-    const filteredPosts = posts.filter((post) => {
-      return new Date(post.date) <= new Date();
-    });
+    // Filter out future-dated posts only in production
+    const filteredPosts = posts.filter(
+      (post) => new Date(post.date) <= new Date()
+    );
 
     // Sort posts by date in descending order
     return filteredPosts.sort((a, b) => {
@@ -51,6 +53,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     // Find the file that matches the pattern: YYYY-MM-DD-{slug}.mdx
     const files = await fs.readdir(BLOG_DIR);
     const blogFile = files.find((file) => {
+      if (file.endsWith(".backup.mdx")) return false;
       const [year, month, day, ...slugParts] = file
         .replace(/\.mdx$/, "")
         .split("-");
