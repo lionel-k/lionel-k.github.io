@@ -3,6 +3,7 @@ export type BlogCategory =
   | "Culture"
   | "Education"
   | "Technology"
+  | "Science & Research"
   | "Tips & Tricks";
 
 export interface TableOfContents {
