@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogPostClient from "@/app/blog/[slug]/BlogPostClient";
 import { getBlogPost, getAllBlogPosts } from "@/lib/blog";
-import { SITE_URL } from "@/lib/constants";
 
 interface StaticParams {
   slug: string;
@@ -38,9 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? post.coverImage
       : `${baseUrl}${post.coverImage}`;
 
-    // Ensure the URL is HTTPS as most platforms require it
-    // const secureImageUrl = imageUrl.replace("http:", "https:");
-    const secureImageUrl = `${SITE_URL}/logo.png`;
+    const secureImageUrl = imageUrl.replace("http:", "https:");
 
     // Common metadata for the image
     const imageMetadata = {
