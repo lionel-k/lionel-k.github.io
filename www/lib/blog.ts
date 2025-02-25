@@ -83,6 +83,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     const conclusion = conclusionMatch ? conclusionMatch[1].trim() : "";
 
     // Convert MDX content to HTML with heading IDs
+    const usedIds = new Set<string>();
     const processedContent = await remark()
       .use(html, { sanitize: false })
       .use(() => (tree) => {
@@ -99,8 +100,18 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
             (child: any) => child.type === "text"
           );
           if (textNode) {
-            const id = textNode.value.toLowerCase().replace(/[^\w]+/g, "-");
-            node.data = { hProperties: { id } };
+            let id = textNode.value.toLowerCase().replace(/[^\w]+/g, "-");
+
+            // Handle duplicate IDs
+            let uniqueId = id;
+            let counter = 1;
+            while (usedIds.has(uniqueId)) {
+              uniqueId = `${id}-${counter}`;
+              counter++;
+            }
+            usedIds.add(uniqueId);
+
+            node.data = { hProperties: { id: uniqueId } };
           }
         });
       })
@@ -125,13 +136,25 @@ export function generateTableOfContents(content: string): TableOfContents[] {
   // Match both ## and ### headings
   const headingRegex = /^(#{2,3})\s+(.+)$/gm;
   const headings: TableOfContents[] = [];
+  const usedIds = new Set<string>();
   let match;
 
   while ((match = headingRegex.exec(content)) !== null) {
     const level = match[1].length; // Count the number of # symbols
     const text = match[2].trim();
+    let id = text.toLowerCase().replace(/[^\w]+/g, "-");
+
+    // Handle duplicate IDs by appending a number
+    let uniqueId = id;
+    let counter = 1;
+    while (usedIds.has(uniqueId)) {
+      uniqueId = `${id}-${counter}`;
+      counter++;
+    }
+    usedIds.add(uniqueId);
+
     headings.push({
-      id: text.toLowerCase().replace(/[^\w]+/g, "-"),
+      id: uniqueId,
       text,
       level,
     });
