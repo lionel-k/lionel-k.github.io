@@ -37,11 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? post.coverImage
       : `${baseUrl}${post.coverImage}`;
 
-    const secureImageUrl = imageUrl.replace("http:", "https:");
-
-    // Common metadata for the image
     const imageMetadata = {
-      url: secureImageUrl,
+      url: imageUrl,
       width: 1200,
       height: 630,
       alt: post.title,
