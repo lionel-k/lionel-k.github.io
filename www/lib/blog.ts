@@ -34,9 +34,10 @@ export async function getAllBlogPosts(): Promise<BlogPostMetadata[]> {
     );
 
     // Filter out future-dated posts only in production
-    const filteredPosts = posts.filter(
-      (post) => new Date(post.date) <= new Date()
-    );
+    const filteredPosts =
+      process.env.NODE_ENV === "production"
+        ? posts.filter((post) => new Date(post.date) <= new Date())
+        : posts;
 
     // Sort posts by date in descending order
     return filteredPosts.sort((a, b) => {
