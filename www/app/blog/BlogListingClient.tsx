@@ -44,7 +44,7 @@ export default function BlogListingClient({ posts }: BlogListingClientProps) {
               <span>•</span>
               <span>{post.readingTime}</span>
               <span>•</span>
-              <span className="text-[#DAA520] font-medium">
+              <span className="text-gray-600 text-sm font-medium">
                 {post.category}
               </span>
             </div>
