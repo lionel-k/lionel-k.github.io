@@ -32,22 +32,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const authorName =
       typeof post.author === "string" ? post.author : post.author.name;
 
+    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+    const imageUrl = post.coverImage.startsWith("http")
+      ? post.coverImage
+      : `${baseUrl}${post.coverImage}`;
+
     return {
       title: `${post.title}`,
       description: post.description,
-      metadataBase: new URL(
-        process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000"
-      ),
+      metadataBase: new URL(baseUrl),
       openGraph: {
         title: post.title,
         description: post.description,
         type: "article",
-        url: `${process.env.NEXT_PUBLIC_APP_URL}/blog/${post.slug}`,
+        url: `${baseUrl}/blog/${post.slug}`,
         publishedTime: post.date,
         authors: [authorName],
         images: [
           {
-            url: post.coverImage,
+            url: imageUrl,
             width: 1200,
             height: 630,
             alt: post.title,
@@ -58,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         card: "summary_large_image",
         title: post.title,
         description: post.description,
-        images: [post.coverImage],
+        images: [imageUrl],
       },
     };
   } catch (error) {
