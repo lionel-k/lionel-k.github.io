@@ -37,6 +37,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? post.coverImage
       : `${baseUrl}${post.coverImage}`;
 
+    // Common image metadata for both OpenGraph and Twitter
+    const imageMetadata = {
+      url: imageUrl,
+      width: 1200,
+      height: 600,
+      alt: post.title,
+      type: "image/webp",
+      secureUrl: imageUrl.replace("http:", "https:"),
+    };
+
     return {
       title: `${post.title}`,
       description: post.description,
@@ -48,20 +58,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         url: `${baseUrl}/blog/${post.slug}`,
         publishedTime: post.date,
         authors: [authorName],
-        images: [
-          {
-            url: imageUrl,
-            width: 1200,
-            height: 630,
-            alt: post.title,
-          },
-        ],
+        siteName: "Lingu Africa",
+        locale: "en_US",
+        images: [imageMetadata],
       },
       twitter: {
         card: "summary_large_image",
         title: post.title,
         description: post.description,
-        images: [imageUrl],
+        site: "@linguafrica",
+        creator: "@linguafrica",
+        images: [imageMetadata],
       },
     };
   } catch (error) {
