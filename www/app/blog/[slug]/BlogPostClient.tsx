@@ -15,7 +15,7 @@ export default function BlogPostClient({ post }: Props) {
   const [isTableOfContentsOpen, setIsTableOfContentsOpen] = useState(false);
 
   return (
-    <article className="min-h-screen bg-white scroll-pt-16">
+    <article className="min-h-screen bg-white scroll-pt-8">
       {/* Breadcrumb */}
       <div className="bg-gray-50 border-b">
         <BreadcrumbNav
@@ -175,7 +175,7 @@ export default function BlogPostClient({ post }: Props) {
             )}
 
             {/* Content */}
-            <div className="prose prose-lg max-w-none prose-h1:text-3xl prose-h1:font-bold prose-h1:mt-0 [&>h1]:!mt-0 [&>h1]:!text-3xl [&>h1]:!font-bold [&>h1]:!mb-4 [&>h1]:!leading-9">
+            <div className="prose prose-lg max-w-none prose-h1:text-3xl prose-h1:font-bold prose-h1:mt-0 [&>h1]:!mt-0 [&>h1]:!text-3xl [&>h1]:!font-bold [&>h1]:!mb-4 [&>h1]:!leading-9 [&>h2]:scroll-mt-16 [&>h2]:pt-16 [&>h2]:-mt-16">
               <div
                 dangerouslySetInnerHTML={{
                   __html: post.content
