@@ -41,9 +41,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const imageMetadata = {
       url: imageUrl,
       width: 1200,
-      height: 600,
+      height: 630,
       alt: post.title,
-      type: "image/webp",
       secureUrl: imageUrl.replace("http:", "https:"),
     };
 
