@@ -37,24 +37,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? post.coverImage
       : `${baseUrl}${post.coverImage}`;
 
-    // Common image metadata for both OpenGraph and Twitter
+    // Ensure the URL is HTTPS as most platforms require it
+    const secureImageUrl = imageUrl.replace("http:", "https:");
+
+    // Common metadata for the image
     const imageMetadata = {
-      url: imageUrl,
+      url: secureImageUrl,
       width: 1200,
       height: 630,
       alt: post.title,
-      secureUrl: imageUrl.replace("http:", "https:"),
+      type: "image/webp",
     };
+
+    // Full URL for the article
+    const articleUrl = `${baseUrl}/blog/${post.slug}`;
 
     return {
       title: `${post.title}`,
       description: post.description,
       metadataBase: new URL(baseUrl),
+      authors: [{ name: authorName }],
       openGraph: {
         title: post.title,
         description: post.description,
         type: "article",
-        url: `${baseUrl}/blog/${post.slug}`,
+        url: articleUrl,
         publishedTime: post.date,
         authors: [authorName],
         siteName: "Lingu Africa",
@@ -68,6 +75,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         site: "@linguafrica",
         creator: "@linguafrica",
         images: [imageMetadata],
+      },
+      alternates: {
+        canonical: articleUrl,
+      },
+      robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+        },
       },
     };
   } catch (error) {
