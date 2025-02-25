@@ -64,20 +64,24 @@ const SAMPLE_POST: BlogPost = {
 type PageParams = { slug: string };
 
 export async function generateStaticParams(): Promise<PageParams[]> {
-  const posts = await getAllBlogPosts();
-  return posts.map((post) => ({
-    slug: post.slug,
-  }));
+  try {
+    const posts = await getAllBlogPosts();
+    return posts.map((post) => ({
+      slug: post.slug,
+    }));
+  } catch (error) {
+    console.error("Error generating static params:", error);
+    return [];
+  }
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<PageParams>;
+  params: PageParams;
 }): Promise<Metadata> {
   try {
-    const resolvedParams = await params;
-    const post = await getBlogPost(resolvedParams.slug);
+    const post = await getBlogPost(params.slug);
 
     if (!post) {
       return {
@@ -125,14 +129,9 @@ export async function generateMetadata({
   }
 }
 
-export default async function BlogPostPage({
-  params,
-}: {
-  params: Promise<PageParams>;
-}) {
+export default async function BlogPostPage({ params }: { params: PageParams }) {
   try {
-    const resolvedParams = await params;
-    const post = await getBlogPost(resolvedParams.slug);
+    const post = await getBlogPost(params.slug);
 
     if (!post) {
       notFound();

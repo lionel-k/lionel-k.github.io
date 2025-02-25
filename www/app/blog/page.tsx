@@ -6,12 +6,12 @@ import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   ...sharedMetadata,
-  ...pagesMetadata.blog
+  ...pagesMetadata.blog,
 };
 
 // This function tells Next.js to pre-render the blog listing page
 export const dynamic = "force-static";
-export const revalidate = 3600; // Revalidate every hour
+export const revalidate = false;
 
 export default async function BlogPage() {
   const posts = await getAllBlogPosts();
