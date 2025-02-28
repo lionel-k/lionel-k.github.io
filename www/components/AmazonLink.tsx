@@ -44,31 +44,31 @@ export function AmazonLink({ href, className, children }: AmazonLinkProps) {
     <>
       {/* Notification Banner */}
       {showBanner && (
-        <div className="fixed inset-x-0 top-0 z-50 animate-fade-in">
+        <div className="fixed inset-x-0 top-0 z-[100] animate-fade-in">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-            <div className="bg-black text-white rounded-b-lg shadow-xl">
+            <div className="bg-[#DAA520] text-black rounded-b-lg shadow-xl">
               <div className="max-w-3xl mx-auto py-4 px-6">
                 <div className="flex items-start justify-between">
                   <div className="flex items-center">
                     <div className="flex-shrink-0">
-                      <div className="h-10 w-10 rounded-full bg-[#DAA520] flex items-center justify-center">
-                        <ArrowRight className="h-5 w-5 text-black" />
+                      <div className="h-10 w-10 rounded-full bg-black flex items-center justify-center">
+                        <ArrowRight className="h-5 w-5 text-[#DAA520]" />
                       </div>
                     </div>
                     <div className="ml-4">
-                      <p className="text-sm font-medium text-[#DAA520]">
+                      <p className="text-sm font-medium text-black">
                         Opening Amazon Link
                       </p>
-                      <p className="mt-1 text-sm text-gray-300">
+                      <p className="mt-1 text-sm text-gray-800">
                         {bannerMessage}
                       </p>
                     </div>
                   </div>
                   <button
                     onClick={() => setShowBanner(false)}
-                    className="ml-4 flex-shrink-0 rounded-full p-1 hover:bg-[#DAA520]/10 transition-colors"
+                    className="ml-4 flex-shrink-0 rounded-full p-1 hover:bg-black/10 transition-colors"
                   >
-                    <X className="h-5 w-5 text-[#DAA520]" />
+                    <X className="h-5 w-5 text-black" />
                   </button>
                 </div>
               </div>
