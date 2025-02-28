@@ -91,21 +91,22 @@ export default function Home() {
                     className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
-                    <OptimizedImage
-                      src={`/images/kirundi/${book.slug}/cover.png`}
-                      alt={`${book.title} cover`}
-                      className="mb-6 w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
-                    />
+                    <AmazonLink
+                      href={book.amazonUrl}
+                      className="block mb-6 cursor-pointer"
+                    >
+                      <OptimizedImage
+                        src={`/images/kirundi/${book.slug}/cover.png`}
+                        alt={`${book.title} cover`}
+                        className="w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
+                      />
+                    </AmazonLink>
                     <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">
                       {book.title}
                     </h3>
                     <p className="text-gray-600 text-center mb-6">
                       {book.description.short}
                     </p>
-                    <AmazonLink
-                      href={book.amazonUrl}
-                      className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"
-                    />
                   </div>
                 ))}
             </div>
