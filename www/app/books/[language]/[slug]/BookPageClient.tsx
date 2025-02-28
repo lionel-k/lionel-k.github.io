@@ -284,11 +284,16 @@ export default function BookPageClient({ language, slug }: Props) {
                   key={relatedBook.slug}
                   className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
                 >
-                  <OptimizedImage
-                    src={`/images/${language}/${relatedBook.slug}/cover.png`}
-                    alt={`${relatedBook.title} cover`}
-                    className="mb-6 w-full h-48 object-contain transform group-hover:scale-105 transition-transform"
-                  />
+                  <Link
+                    href={`/books/${language}/${relatedBook.slug}`}
+                    rel="follow"
+                  >
+                    <OptimizedImage
+                      src={`/images/${language}/${relatedBook.slug}/cover.png`}
+                      alt={`${relatedBook.title} cover`}
+                      className="mb-6 w-full h-48 object-contain transform group-hover:scale-105 transition-transform"
+                    />
+                  </Link>
                   <h3 className="text-xl text-center font-bold text-gray-900 mb-3">
                     {relatedBook.title}
                   </h3>
