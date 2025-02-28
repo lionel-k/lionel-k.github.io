@@ -234,7 +234,7 @@ Even if you're not fully fluent, you'll discover new words together and strength
         "Trilingual Format: Kinyarwanda, English, and French translations on each page, helping families learn at any language level.",
         "Perfect for Ages 0-6: Bright visuals, simple words, and interactive learning make it fun for little ones.",
       ],
-      amazonUrl: "https://mybook.to/fruits-vegetables-kinyarwanda",
+      amazonUrl: "https://mybook.to/fruits-veggies-rwanda",
       bestSeller: false,
       testimonials: [
         "My son now recognizes different fruits in Kinyarwanda, and he loves pointing them out! - J.D.",
