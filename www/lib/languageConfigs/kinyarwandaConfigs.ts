@@ -213,6 +213,69 @@ Even if you're not fully fluent, you'll discover new words together and strength
         },
       ],
     },
+    {
+      title: "Fruits and Vegetables in Kinyarwanda",
+      slug: "fruits-and-vegetables-in-kinyarwanda",
+      age: "0-6",
+      pages: "30",
+      price: "11.99",
+      description: {
+        short:
+          "A fun and colorful Kinyarwanda-English-French picture book introducing fruits and vegetables. Perfect for kids aged 0-6 in diaspora families!",
+        long: "Are you a parent living outside Rwanda who wants a fun and simple way to teach your child Kinyarwanda? This picture book introduces fruits and vegetables in Kinyarwanda, English, and French. With 30 bright pages filled with engaging illustrations, children will easily learn and recognize different foods. Even if you're not fluent in Kinyarwanda, you and your child can explore new words together, making language learning an enjoyable part of your daily routine.",
+      },
+      challenges: [
+        "Limited Kinyarwanda books on food: Many diaspora parents struggle to find engaging learning materials about everyday fruits and vegetables.",
+        "Keeping young kids interested: Colorful images and simple words ensure kids stay focused and excited while learning new vocabulary.",
+        "Non-fluent parents: The trilingual format (Kinyarwanda-English-French) allows parents and children to learn together step by step.",
+      ],
+      whyChoose: [
+        "Teaches Everyday Food Words: Kids learn common fruits and vegetables they see daily, making learning more relatable.",
+        "Trilingual Format: Kinyarwanda, English, and French translations on each page, helping families learn at any language level.",
+        "Perfect for Ages 0-6: Bright visuals, simple words, and interactive learning make it fun for little ones.",
+      ],
+      amazonUrl: "https://mybook.to/fruits-vegetables-kinyarwanda",
+      bestSeller: false,
+      testimonials: [
+        "My son now recognizes different fruits in Kinyarwanda, and he loves pointing them out! - J.D.",
+        "A wonderful way to introduce my child to Kinyarwanda. The colorful pages make learning fun. - R.M.",
+        "Having three languages on each page helps me and my daughter learn together! - K.B.",
+        "A must-have for parents raising bilingual kids. This book makes learning new words easy! - P.N.",
+        "I love that this book focuses on everyday foods, making it easy for kids to remember. - L.C.",
+      ],
+      faq: [
+        {
+          question: "Can I return the book if I don't like it?",
+          answer:
+            "Yes, Amazon handles returns. If you're not satisfied, you can follow their steps for a refund.",
+        },
+        {
+          question: "How long does delivery take?",
+          answer:
+            "It depends on your location. Amazon provides an estimated arrival date at checkout, and you can track your package.",
+        },
+        {
+          question: "Is it only for kids aged 0-6?",
+          answer:
+            "It's best for young learners, but older children and beginners can also enjoy learning new food vocabulary.",
+        },
+        {
+          question: "Do I need to speak Kinyarwanda to use this book?",
+          answer:
+            "No! Each page includes Kinyarwanda, English, and French, making it easy for parents to guide their children, even if they're not fluent.",
+        },
+        {
+          question: "What makes this book unique?",
+          answer:
+            "It focuses on common foods, making learning practical and fun. The bright illustrations help kids easily remember the words.",
+        },
+        {
+          question: "Is this a good choice for families living outside Rwanda?",
+          answer:
+            "Absolutely! This book helps diaspora families introduce Kinyarwanda to their children in a simple and engaging way.",
+        },
+      ],
+    },
   ],
   faq: [
     {

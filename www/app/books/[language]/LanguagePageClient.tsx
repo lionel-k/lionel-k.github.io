@@ -74,11 +74,13 @@ export default function LanguagePageClient({ language }: Props) {
               >
                 {/* Subtle gold overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
-                <OptimizedImage
-                  src={`/images/${language}/${book.slug}/cover.png`}
-                  alt={`${book.title} cover`}
-                  className="mb-6 w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
-                />
+                <Link href={`/books/${language}/${book.slug}`}>
+                  <OptimizedImage
+                    src={`/images/${language}/${book.slug}/cover.png`}
+                    alt={`${book.title} cover`}
+                    className="mb-6 w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
+                  />
+                </Link>
                 <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">
                   {book.title}
                 </h3>
