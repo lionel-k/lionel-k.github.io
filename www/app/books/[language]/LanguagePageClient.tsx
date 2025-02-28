@@ -74,26 +74,33 @@ export default function LanguagePageClient({ language }: Props) {
               >
                 {/* Subtle gold overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
-                <Link href={`/books/${language}/${book.slug}`}>
-                  <OptimizedImage
-                    src={`/images/${language}/${book.slug}/cover.png`}
-                    alt={`${book.title} cover`}
-                    className="mb-6 w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
-                  />
-                </Link>
-                <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">
-                  {book.title}
-                </h3>
-                <p className="text-gray-600 text-center mb-6">
-                  {book.description.short}
-                </p>
-                <Link
-                  href={`/books/${language}/${book.slug}`}
-                  className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"
-                >
-                  Read More
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                {(() => {
+                  const bookDetailsUrl = `/books/${language}/${book.slug}`;
+                  return (
+                    <>
+                      <Link href={bookDetailsUrl}>
+                        <OptimizedImage
+                          src={`/images/${language}/${book.slug}/cover.png`}
+                          alt={`${book.title} cover`}
+                          className="mb-6 w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
+                        />
+                      </Link>
+                      <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">
+                        {book.title}
+                      </h3>
+                      <p className="text-gray-600 text-center mb-6">
+                        {book.description.short}
+                      </p>
+                      <Link
+                        href={bookDetailsUrl}
+                        className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"
+                      >
+                        Read More
+                        <ArrowRight className="ml-2 h-5 w-5" />
+                      </Link>
+                    </>
+                  );
+                })()}
               </div>
             ))}
           </div>
