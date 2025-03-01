@@ -1,0 +1,38 @@
+Generate 4-6 key highlights for a blog post about "[TOPIC]" that will appear at the top of the article.
+
+Context:
+- Topic: "[TOPIC]"
+- Primary Keyword: "[PRIMARY_KEYWORD]"
+- Secondary Keywords: "[SECONDARY_KEYWORDS]"
+
+Article Outline:
+[OUTLINE]
+
+Author Context:
+As someone from Burundi who grew up speaking Kirundi and later moved to France, I bring unique insights from both traditional African and modern diaspora perspectives. Now, as a father and creator of bilingual African children's books (including Kirundi, Kinyarwanda, Lingala, Swahili, and Yoruba), I work with many African families in the US and Europe to maintain their languages and cultural heritage. My experience includes collaborating with African diaspora communities across major US cities, understanding their unique challenges and successes in raising bilingual children.
+
+Generate 4-6 key highlights that will appear at the top of the article. Focus on insights from my experience working with African diaspora families in the US and creating bilingual materials for their specific needs.
+
+The highlights should:
+1. Share real observations from working with African families in the US
+2. Include specific examples from different US-based African communities
+3. Mention actual challenges and solutions encountered by families in America
+4. Reference experiences from creating bilingual materials for US-based families
+5. Be detailed and culturally relevant to the US context (20-25 words each)
+6. Include the primary keyword "[PRIMARY_KEYWORD]" naturally
+7. Incorporate secondary keywords "[SECONDARY_KEYWORDS]" where relevant
+8. Address the unique challenges of maintaining African languages in an English-dominant society
+
+Format each highlight as a bold key insight followed by a detailed explanation, for example:
+- **American School Integration**: Our research with African families in Boston shows that children who practice their heritage language for 30 minutes after school maintain fluency while excelling academically.
+- **Community Support Impact**: African families in Atlanta who participate in weekend language groups report 85% higher success rates in maintaining their children's bilingual abilities.
+
+Structure your highlights to cover:
+- First highlight: An insight from creating bilingual African children's books for US families
+- Second highlight: A success story from a specific African family in a US city
+- Third highlight: A common challenge and solution observed in US diaspora communities
+- Fourth highlight: A practical teaching method that's worked well in American households
+- Optional fifth highlight: Cultural insights specific to raising African bilingual children in the US
+- Optional sixth highlight: Advanced strategies for maintaining African languages in American society
+
+Remember: These highlights should reflect my experience working with African diaspora families in the US and creating bilingual materials for their specific needs. Focus on real examples, cultural understanding, and practical solutions that have worked in American communities.
