@@ -1,6 +1,0 @@
-{
-  "rubySingleQuote": true,
-  "printWidth": 120,
-  "trailingComma": "all",
-  "plugins": ["@prettier/plugin-ruby"]
-}
