@@ -83,7 +83,7 @@ Give them a world of words and animals to discover, bonding over language in a r
 Are you a parent living in the diaspora and searching for an easy way to teach your child Kinyarwanda?
 This book is the perfect first step in helping little ones discover the beauty of the language. With 30 colorful pages, your child will learn essential words in Kinyarwanda, English, and French.
 Each page features a clear image and a simple word, making learning fun and effortless for toddlers and young children.
-Even if you don’t speak Kinyarwanda fluently, you can still share this learning journey with your child through this accessible and engaging picture book.
+Even if you don't speak Kinyarwanda fluently, you can still share this learning journey with your child through this accessible and engaging picture book.
     `.trim(),
       },
       challenges: [
@@ -101,7 +101,7 @@ Even if you don’t speak Kinyarwanda fluently, you can still share this learnin
       testimonials: [
         "A wonderful book for my toddler! The images are bright and engaging, and we love learning Kinyarwanda together. - N.T.",
         "So happy to finally find a book that helps teach my kids Kinyarwanda while keeping them entertained. - A.K.",
-        "The trilingual layout makes it easy for me to follow along, even though I’m not fluent in Kinyarwanda. - J.M.",
+        "The trilingual layout makes it easy for me to follow along, even though I'm not fluent in Kinyarwanda. - J.M.",
         "My child recognizes and repeats the words in Kinyarwanda every day. Highly recommended for parents in the diaspora! - L.S.",
         "A great book for teaching vocabulary in a fun way. My kids love it! - R.D.",
         "I appreciate that this book makes learning Kinyarwanda accessible for families outside Rwanda. - M.O.",
@@ -291,7 +291,7 @@ Even if you're not fully fluent, you'll discover new words together and strength
     {
       question: "What types of Kinyarwanda books are offered?",
       answer:
-        "We have bilingual and trilingual books for different ages, such as ‘First 100 Words,' storybooks, word puzzles, and cultural collections like ‘The Kinyarwanda Proverb Treasury.' They make learning fun for both kids and adults.",
+        "We have bilingual and trilingual books for different ages, such as 'First 100 Words,' storybooks, word puzzles, and cultural collections like 'The Kinyarwanda Proverb Treasury.' They make learning fun for both kids and adults.",
     },
     {
       question: "Can these books help if my child is just starting out?",
