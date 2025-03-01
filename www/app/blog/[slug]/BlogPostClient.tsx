@@ -189,7 +189,7 @@ export default function BlogPostClient({ post }: Props) {
             <div className="mt-12 flex justify-center">
               <Link
                 href={post.cta.link}
-                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 text-base font-medium text-black bg-[#F5A524] rounded-lg hover:bg-[#F5A524]/90 transition-colors"
+                className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 text-base font-medium text-center text-black bg-[#F5A524] rounded-lg hover:bg-[#F5A524]/90 transition-colors"
               >
                 {post.cta.text}
                 <ChevronDown className="w-5 h-5 rotate-[-90deg]" />
