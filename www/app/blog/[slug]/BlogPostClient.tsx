@@ -186,7 +186,7 @@ export default function BlogPostClient({ post }: Props) {
             </div>
 
             {/* CTA */}
-            <div className="mt-12">
+            <div className="mt-12 flex justify-center">
               <Link
                 href={post.cta.link}
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 text-base font-medium text-black bg-[#F5A524] rounded-lg hover:bg-[#F5A524]/90 transition-colors"
