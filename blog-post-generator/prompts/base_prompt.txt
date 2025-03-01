@@ -1,0 +1,107 @@
+Write a comprehensive blog post about "[TOPIC]". The post MUST be exactly 3,000 words in total. The post should focus on the primary keyword "[PRIMARY_KEYWORD]" and incorporate the secondary keywords "[SECONDARY_KEYWORDS]" naturally throughout the text.
+
+IMPORTANT WORD COUNT REQUIREMENTS:
+- Total word count: Exactly 3,000 words
+- Each section must meet its specified word count exactly
+- Count and verify the words in each section before proceeding
+- Include the word count at the end of each section in parentheses for verification
+
+Target Audience:
+- African parents in the US diaspora raising bilingual children
+- First and second-generation African immigrant families in the US
+- Parents committed to preserving their African language and cultural heritage while navigating American life
+- Extended family members involved in children's language development
+
+Key Objectives:
+1. Provide practical, actionable advice tailored to the US context
+2. Address specific challenges faced by African families in the US
+3. Share proven teaching methods that work within American daily routines
+4. Offer encouragement and support with real examples from the US African diaspora community
+
+Structure (Must follow exact word counts):
+
+## Introduction
+Write 300-400 words that:
+- Start with a relatable story about an African family in the US
+- Share specific challenges they face in maintaining their African language
+- Explain why teaching African languages matters in the American context
+- Preview the main points to be covered
+(Required: 350 words)
+
+## Understanding the Importance
+Write 500-600 words that cover:
+- Cultural identity preservation in the American melting pot
+- Cognitive benefits of African-English bilingualism
+- Strengthening family connections across continents
+- Research-backed evidence specific to heritage language maintenance in the US
+(Required: 550 words)
+
+## Common Challenges and Solutions
+Write 500-600 words that address:
+- Limited exposure to African languages in US settings
+- Balancing African language learning with American school demands
+- Finding resources and community support in the US
+- Practical solutions tested by African diaspora families
+(Required: 550 words)
+
+## Effective Teaching Methods
+Write 500-600 words covering:
+- Age-appropriate strategies for US-born children
+- Integrating African language learning into American daily routines
+- Using technology and traditional approaches in the US context
+- Creating immersive experiences despite geographical distance
+(Required: 550 words)
+
+## Creating a Language-Rich Environment
+Write 500-600 words about:
+- Setting up a bilingual home in an English-dominant society
+- Accessing and creating African language materials in the US
+- Involving extended family through technology
+- Building connections with local African diaspora communities
+(Required: 550 words)
+
+## Measuring Progress and Celebrating Success
+Write 400-500 words covering:
+- Setting realistic goals for US-based families
+- Tracking methods that work in the American context
+- Celebrating achievements within the diaspora community
+- Progress indicators relevant to heritage language learning
+(Required: 450 words)
+
+## Conclusion
+Write exactly 250 words that:
+- Summarize key points
+- Provide specific next steps for US-based families
+- Share an encouraging message about maintaining African languages in America
+(Required: 250 words)
+
+Formatting Requirements:
+1. Use markdown headers (## for sections)
+2. Format lists with bold items using **text**
+3. Keep paragraphs short and focused
+4. Use clear transitions between sections
+5. Include word count at the end of each section: (Word count: XXX)
+
+Content Guidelines:
+1. Write in a warm, encouraging tone that acknowledges the unique challenges of the US context
+2. Use "you" and "your" to address readers directly
+3. Include specific examples from African families in various US settings
+4. Provide actionable tips that work within American lifestyle
+5. Back claims with research about heritage language maintenance in the US
+6. Reference specific African diaspora communities and their success stories
+7. Address the reality of raising children in an English-dominant society
+8. Include examples from different African languages and cultures
+
+SEO Requirements:
+- Include primary keyword in introduction and key sections
+- Use secondary keywords naturally throughout
+- Create clear, featured-snippet-worthy lists and definitions
+- Use descriptive subheadings that reflect the US African diaspora experience
+
+FINAL VERIFICATION:
+1. Count words in each section
+2. Ensure each section meets its required word count
+3. Verify total word count is exactly 3,000 words
+4. Remove any word count markers before submitting
+
+Remember: The content should be practical, engaging, and specifically valuable to African parents in the US who want to teach their children their heritage languages. Focus on quality information that readers can implement immediately within their American context.

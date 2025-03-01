@@ -1,0 +1,100 @@
+Write a [WORD_COUNT]-word section about [TOPIC], focusing on [SECTION_TITLE].
+
+IMPORTANT WORD COUNT RULES:
+- This section MUST be EXACTLY [WORD_COUNT] words, no more, no less
+- Each paragraph should be 3-4 sentences
+- Use clear, concise language
+- Avoid redundancy and filler words
+- Count every word, including articles and conjunctions
+
+Key Points to Cover:
+[SECTION_POINTS]
+
+Writing Guidelines:
+1. Start with a clear topic sentence
+2. Support each point with specific examples
+3. Use active voice and concise language
+4. Avoid repetition and filler words
+5. End each paragraph with a strong concluding sentence
+6. Maintain focus on the section topic
+7. Include relevant keywords naturally: [PRIMARY_KEYWORD], [SECONDARY_KEYWORDS]
+
+Remember:
+- Stay EXACTLY within the [WORD_COUNT] word limit
+- Focus on quality over quantity
+- Every word must add value
+- No padding or filler content
+- Be specific and direct
+- Use descriptive titles that reflect content (not "Section 1" or "Part 1")
+- Create natural transitions between subsections
+
+Context:
+- Topic: "[TOPIC]"
+- Primary Keyword: "[PRIMARY_KEYWORD]"
+- Secondary Keywords: "[SECONDARY_KEYWORDS]"
+
+Article Outline:
+[OUTLINE]
+
+Section Purpose:
+This section should focus specifically on [SECTION_POINTS] without repeating context or background information covered in other sections. Each subsection must provide new, actionable information.
+
+Section Structure:
+Divide the content into clear, focused subsections. Each subsection should have a descriptive title that reflects its content. For example:
+
+### Understanding the Challenge (150-200 words)
+- Introduce the main concept
+- Share a specific example or case study
+- Provide initial insights
+
+### Practical Solutions (150-200 words)
+- Deep dive into implementation
+- Share detailed steps or strategies
+- Include data or research support
+
+### Real-World Success Stories (150-200 words)
+- Address common challenges
+- Provide advanced techniques
+- Share success metrics
+
+Content Requirements for Each Subsection:
+1. Clear, descriptive title (no numbering)
+2. Opening hook or key insight
+3. Specific example or case study
+4. Actionable advice or steps
+5. Supporting data or research
+6. Natural transition to next subsection
+
+Value Guidelines:
+- Every subsection must provide unique value
+- Avoid repeating information from other subsections
+- Include specific examples and concrete details
+- Share detailed implementation steps
+- Provide metrics or indicators of success
+- Reference tools or resources where relevant
+
+Technical Requirements:
+1. Total section word count must be exactly [WORD_COUNT] words
+2. Each subsection should be 150-200 words
+3. Include the primary keyword "[PRIMARY_KEYWORD]" naturally
+4. Incorporate secondary keywords "[SECONDARY_KEYWORDS]" where relevant
+5. Use markdown formatting with ### for subsection headers
+6. Format lists with bold items using **text**
+
+Writing Style:
+- Focus on depth rather than breadth in each subsection
+- Use specific examples and scenarios
+- Include step-by-step instructions where helpful
+- Provide concrete details and numbers
+- Make complex concepts accessible
+- Create smooth transitions between subsections
+
+Quality Checks:
+- Does each subsection have a clear, descriptive title?
+- Are the examples specific and detailed?
+- Are the solutions actionable and clear?
+- Is the content unique to this section?
+- Do subsections flow logically?
+- Are transitions natural and smooth?
+
+Include the word count at the end of your response in this format: (Word count: XXX)
