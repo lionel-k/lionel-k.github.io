@@ -1,4 +1,5 @@
 require_relative 'utils'
+require_relative 'openai_client'
 
 class ContentProcessor
   def initialize(blog_post)
@@ -69,6 +70,41 @@ class ContentProcessor
   end
 
   def generate_description
-    "Discover effective strategies and insights about #{@blog_post[:primary_keyword]}. Learn about #{@blog_post[:secondary_keywords].split(',').join(', ')} and more in this comprehensive guide."
+    description_template = File.read(File.join(__dir__, '..', 'prompts', 'description_prompt.txt'))
+    description_prompt = replace_placeholders(
+      description_template,
+      {
+        'TOPIC' => @blog_post[:topic],
+        'PRIMARY_KEYWORD' => @blog_post[:primary_keyword],
+        'SECONDARY_KEYWORDS' => @blog_post[:secondary_keywords]
+      }
+    )
+
+    begin
+      description_response = OpenAIClient.generate_content(
+        description_prompt,
+        'You are an expert SEO content writer. Create compelling meta descriptions that drive clicks.',
+        max_tokens: 200
+      )
+      description = OpenAIClient.extract_content(description_response)
+
+      # Validate the description length
+      if description && description.length.between?(155, 160)
+        return description
+      end
+
+      # Fallback description if the generated one is not within length requirements
+      "Learn effective strategies about #{@blog_post[:primary_keyword]}. Discover insights on #{@blog_post[:secondary_keywords].split(',').first(2).join(' and ')} in this comprehensive guide."[0...160]
+    rescue StandardError => e
+      puts "Error generating description: #{e.message}"
+      # Return fallback description in case of any errors
+      "Learn effective strategies about #{@blog_post[:primary_keyword]}. Discover insights on #{@blog_post[:secondary_keywords].split(',').first(2).join(' and ')} in this comprehensive guide."[0...160]
+    end
+  end
+
+  def replace_placeholders(template, replacements)
+    result = template.dup
+    replacements.each { |key, value| result.gsub!("[#{key}]", value.to_s) }
+    result
   end
 end

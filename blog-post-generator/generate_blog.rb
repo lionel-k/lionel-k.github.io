@@ -2,11 +2,11 @@
 
 require 'csv'
 require 'dotenv'
-require 'ruby/openai'
 require_relative 'scripts/prompt_generator'
 require_relative 'scripts/content_processor'
 require_relative 'scripts/utils'
 require_relative 'scripts/image_generator'
+require_relative 'scripts/openai_client'
 require 'base64'
 require 'open-uri'
 require 'net/http'
@@ -51,33 +51,6 @@ blog_post_hash = blog_post.to_h.transform_keys(&:to_sym)
 begin
   puts "Generating blog post: #{blog_post_hash[:topic]}"
 
-  # Initialize OpenAI client
-  def client
-    @client ||= OpenAI::Client.new(access_token: ENV['OPENAI_API_KEY'])
-  end
-
-  def generate_content(client, prompt, system_content)
-    client.chat(
-      parameters: {
-        model: 'gpt-4o',
-        messages: [{ role: 'system', content: system_content }, { role: 'user', content: prompt }],
-        temperature: 0.7,
-        max_tokens: 8000,
-        presence_penalty: 0.1,
-        frequency_penalty: 0.1,
-      },
-    )
-  end
-
-  def extract_content(response)
-    content = response.dig('choices', 0, 'message', 'content')
-    if content.nil? || content.empty?
-      puts 'Error: Failed to generate content from OpenAI.'
-      exit 1
-    end
-    content
-  end
-
   def replace_placeholders(template, replacements)
     result = template.dup
     replacements.each { |key, value| result.gsub!("[#{key}]", value.to_s) }
@@ -107,9 +80,8 @@ begin
   # Step 1: Generate Outline
   puts "\nStep 1: Generating outline..."
   outline_prompt = PromptGenerator.new(File.join(__dir__, 'prompts', 'outline_prompt.txt')).generate(blog_post_hash)
-  outline_response =
-    generate_content(client, outline_prompt, 'You are an expert content outliner. Create a detailed blog post outline.')
-  outline = extract_content(outline_response)
+  outline_response = OpenAIClient.generate_content(outline_prompt, 'You are an expert content outliner. Create a detailed blog post outline.')
+  outline = OpenAIClient.extract_content(outline_response)
   puts '✓ Outline generated'
 
   # Step 2: Generate Highlights
@@ -125,9 +97,8 @@ begin
         'OUTLINE' => outline,
       },
     )
-  highlights_response =
-    generate_content(client, highlights_prompt, 'You are an expert content summarizer. Create engaging highlights.')
-  highlights = extract_content(highlights_response)
+  highlights_response = OpenAIClient.generate_content(highlights_prompt, 'You are an expert content summarizer. Create engaging highlights.')
+  highlights = OpenAIClient.extract_content(highlights_response)
   puts '✓ Highlights generated'
 
   # Step 3: Generate Introduction
@@ -150,9 +121,8 @@ begin
 
   begin
     until validate_word_count(introduction, 250, 'Introduction') || attempts >= max_attempts
-      intro_response =
-        generate_content(client, intro_prompt, 'You are an expert content writer. Write an engaging introduction.')
-      introduction = extract_content(intro_response)
+      intro_response = OpenAIClient.generate_content(intro_prompt, 'You are an expert content writer. Write an engaging introduction.')
+      introduction = OpenAIClient.extract_content(intro_response)
       attempts += 1
     end
 
@@ -263,8 +233,8 @@ begin
               },
             )
           section_response =
-            generate_content(client, section_prompt, 'You are an expert content writer. Write a detailed section.')
-          content = extract_content(section_response)
+            OpenAIClient.generate_content(section_prompt, 'You are an expert content writer. Write a detailed section.')
+          content = OpenAIClient.extract_content(section_response)
           section_content_valid = validate_word_count(content, word_count, title)
           section_content = [content]
           attempts += 1
@@ -291,8 +261,8 @@ begin
                 },
               )
             section_response =
-              generate_content(client, section_prompt, 'You are an expert content writer. Write a detailed subsection.')
-            content = extract_content(section_response)
+              OpenAIClient.generate_content(section_prompt, 'You are an expert content writer. Write a detailed subsection.')
+            content = OpenAIClient.extract_content(section_response)
             subsection_content_valid = validate_word_count(content, sub_word_count, "#{title} - #{sub_title}")
             section_content << "### #{sub_title}\n\n#{content}"
             attempts += 1
@@ -334,8 +304,8 @@ begin
           },
         )
       conclusion_response =
-        generate_content(client, conclusion_prompt, 'You are an expert content writer. Write an impactful conclusion.')
-      conclusion = extract_content(conclusion_response)
+        OpenAIClient.generate_content(conclusion_prompt, 'You are an expert content writer. Write an impactful conclusion.')
+      conclusion = OpenAIClient.extract_content(conclusion_response)
       attempts += 1
     end
   rescue StandardError => e
@@ -369,7 +339,7 @@ begin
   prompt = image_prompt_template.gsub('[TOPIC]', blog_post_hash[:topic])
 
   begin
-    result = ImageGenerator.generate(prompt, openai_client: client)
+    result = ImageGenerator.generate(prompt, openai_client: OpenAIClient)
 
     if result && result[:data]
       # Save the image

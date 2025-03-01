@@ -1,0 +1,19 @@
+Generate an SEO-optimized meta description for a blog post about [TOPIC].
+
+Context:
+- Primary Keyword: [PRIMARY_KEYWORD]
+- Secondary Keywords: [SECONDARY_KEYWORDS]
+
+Requirements:
+1. Must be exactly 155-160 characters long
+2. Include [PRIMARY_KEYWORD] within the first 50-60 characters
+3. Use natural, engaging language that encourages clicks
+4. Include at least one secondary keyword from [SECONDARY_KEYWORDS]
+5. End with a clear value proposition or call-to-action
+6. Avoid clickbait while maintaining reader interest
+7. Use active voice and present tense
+
+Format:
+"Learn/Discover/Explore [PRIMARY_KEYWORD] strategies. Find out how [benefit/insight] with [SECONDARY_KEYWORDS]. [Value proposition/CTA]."
+
+Remember: The description MUST be between 155-160 characters to meet SEO requirements.
