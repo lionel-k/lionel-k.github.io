@@ -107,6 +107,13 @@ export default function Home() {
                     <p className="text-gray-600 text-center mb-6">
                       {book.description.short}
                     </p>
+                    <AmazonLink
+                      href={book.amazonUrl}
+                      className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                    >
+                      View on Amazon
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </AmazonLink>
                   </div>
                 ))}
             </div>
