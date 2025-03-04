@@ -29,14 +29,6 @@ Give them a world of words and animals to discover, bonding over language in a r
       ],
       amazonUrl: "https://mybook.to/animals-in-kinyarwanda",
       bestSeller: false,
-      testimonials: [
-        "My daughter loves pointing at the animals and learning what they're called in Kinyarwanda! - K.M.",
-        "Great for diaspora families who want an easy way to teach kids about Rwandan culture and language. - A.T.",
-        "The pictures are bright and fun, and my son repeats the words every night. - F.N.",
-        "I like the three languages side by side—it helps me learn too, even though I'm not fluent in Kinyarwanda. - M.O.",
-        "Seeing animals in Kinyarwanda, English, and French keeps the whole family engaged. - S.B.",
-        "This book truly bridged the gap for us. We're all picking up new vocabulary fast! - L.R.",
-      ],
       faq: [
         {
           question: "Can I return the book if I don't like it?",
@@ -98,14 +90,6 @@ Even if you don't speak Kinyarwanda fluently, you can still share this learning 
       ],
       amazonUrl: "https://mybook.to/first-book-kinyarwanda",
       bestSeller: false,
-      testimonials: [
-        "A wonderful book for my toddler! The images are bright and engaging, and we love learning Kinyarwanda together. - N.T.",
-        "So happy to finally find a book that helps teach my kids Kinyarwanda while keeping them entertained. - A.K.",
-        "The trilingual layout makes it easy for me to follow along, even though I'm not fluent in Kinyarwanda. - J.M.",
-        "My child recognizes and repeats the words in Kinyarwanda every day. Highly recommended for parents in the diaspora! - L.S.",
-        "A great book for teaching vocabulary in a fun way. My kids love it! - R.D.",
-        "I appreciate that this book makes learning Kinyarwanda accessible for families outside Rwanda. - M.O.",
-      ],
       faq: [
         {
           question: "Can I return the book if I don't like it?",
@@ -166,15 +150,7 @@ Even if you're not fully fluent, you'll discover new words together and strength
         "Ideal for Ages 0-6: Simple sentences, colorful pages, and engaging design keep little ones excited to learn.",
       ],
       amazonUrl: "https://mybook.to/action-verbs-in-rwanda",
-      bestSeller: true,
-      testimonials: [
-        "Good for small kids learning Kinyarwanda. The pictures are helpful in remembering new words. - C.E.",
-        "My kids love these bright pages and are already using new verbs at home. - L.G.",
-        "Perfect for diaspora families. The three languages on each page help both children and parents pick up phrases fast. - S.H.",
-        "We read a few verbs each night—amazing how quickly our toddler catches on. - M.F.",
-        "Great if you want your kids to talk about everyday tasks in Kinyarwanda. Illustrations are wonderful! - J.D.",
-        "This book gave us fun ways to connect with our roots, one verb at a time. - A.B.",
-      ],
+      bestSeller: false,
       faq: [
         {
           question: "What if I don't like the book? Can I return it?",
@@ -236,13 +212,6 @@ Even if you're not fully fluent, you'll discover new words together and strength
       ],
       amazonUrl: "https://mybook.to/fruits-veggies-rwanda",
       bestSeller: false,
-      testimonials: [
-        "My son now recognizes different fruits in Kinyarwanda, and he loves pointing them out! - J.D.",
-        "A wonderful way to introduce my child to Kinyarwanda. The colorful pages make learning fun. - R.M.",
-        "Having three languages on each page helps me and my daughter learn together! - K.B.",
-        "A must-have for parents raising bilingual kids. This book makes learning new words easy! - P.N.",
-        "I love that this book focuses on everyday foods, making it easy for kids to remember. - L.C.",
-      ],
       faq: [
         {
           question: "Can I return the book if I don't like it?",
