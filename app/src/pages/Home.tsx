@@ -18,11 +18,6 @@ const Home = () => {
   const [spotsLeft, setSpotsLeft] = useState(12);
   const [showCountdown, setShowCountdown] = useState(true);
 
-  // Define color variables for consistent use
-  const goldBright = "#DAA520"; // Original gold for dark backgrounds
-  const goldMuted = "#B8860B"; // Darker gold for white backgrounds
-  const goldLight = "#F0E68C"; // Lighter gold for specific accents
-
   const benefits = [
     "Young adults in the diaspora who want to reconnect",
     "Parents who want their kids to learn Kirundi",
