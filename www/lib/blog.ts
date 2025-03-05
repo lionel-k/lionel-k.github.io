@@ -128,18 +128,20 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
 
     // Get adjacent posts information
     const adjacentPosts = {
+      // Previous points to newer posts (higher index since posts are sorted by date desc)
       previous:
-        currentPostIndex > 0
-          ? {
-              slug: allPosts[currentPostIndex - 1].slug,
-              title: allPosts[currentPostIndex - 1].title,
-            }
-          : undefined,
-      next:
         currentPostIndex < allPosts.length - 1
           ? {
               slug: allPosts[currentPostIndex + 1].slug,
               title: allPosts[currentPostIndex + 1].title,
+            }
+          : undefined,
+      // Next points to older posts (lower index)
+      next:
+        currentPostIndex > 0
+          ? {
+              slug: allPosts[currentPostIndex - 1].slug,
+              title: allPosts[currentPostIndex - 1].title,
             }
           : undefined,
     };
