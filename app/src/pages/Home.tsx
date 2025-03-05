@@ -457,8 +457,8 @@ const Home = () => {
       {/* Footer */}
       <footer className="bg-black border-t border-[#DAA520]/20 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+            <div className="max-w-md">
               <div className="flex items-center mb-4">
                 <GraduationCap className="w-8 h-8 text-[#DAA520]" />
                 <span className="ml-2 text-xl font-bold">Lingu Africa</span>
@@ -468,38 +468,27 @@ const Home = () => {
                 featuring Kirundi, with more languages on the way.
               </p>
             </div>
+
             <div>
-              <h4 className="text-lg font-semibold mb-4">Product</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Free Lesson</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>About Us</li>
-                <li>Contact</li>
-                <li>Privacy Policy</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Follow Us</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li className="flex items-center">
-                  <ExternalLink className="w-4 h-4 mr-2 text-[#DAA520]" />
+              <h4 className="text-lg font-semibold mb-4 text-center md:text-right">
+                Follow Us
+              </h4>
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://x.com/lionelkubwimana"
+                  className="text-gray-400 hover:text-[#DAA520] transition-colors flex items-center"
+                >
+                  <ExternalLink className="w-5 h-5 mr-2 text-[#DAA520]" />
                   Twitter
-                </li>
-                <li className="flex items-center">
-                  <ExternalLink className="w-4 h-4 mr-2 text-[#DAA520]" />
-                  Facebook
-                </li>
-                <li className="flex items-center">
-                  <ExternalLink className="w-4 h-4 mr-2 text-[#DAA520]" />
+                </a>
+                <a
+                  href="https://www.instagram.com/lingu.africa"
+                  className="text-gray-400 hover:text-[#DAA520] transition-colors flex items-center"
+                >
+                  <ExternalLink className="w-5 h-5 mr-2 text-[#DAA520]" />
                   Instagram
-                </li>
-              </ul>
+                </a>
+              </div>
             </div>
           </div>
           <div className="border-t border-[#DAA520]/20 mt-12 pt-8 text-center text-gray-400">
