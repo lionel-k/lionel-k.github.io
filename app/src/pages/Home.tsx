@@ -14,7 +14,7 @@ import { useState } from "react";
 const Home = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
-  const [spotsLeft, setSpotsLeft] = useState(16);
+  const [spotsLeft, setSpotsLeft] = useState(12);
   const [showCountdown, setShowCountdown] = useState(true);
 
   const benefits = [
@@ -297,7 +297,7 @@ const Home = () => {
                 <div className="inline-flex items-center bg-[#DAA520]/10 px-4 py-2 rounded-lg">
                   <span className="text-[#DAA520] font-bold mr-2">⏰</span>
                   <span className="text-white font-medium">
-                    Only {spotsLeft} spots left out of 20!
+                    Only {spotsLeft} spots left out of 50!
                   </span>
                 </div>
               </div>
