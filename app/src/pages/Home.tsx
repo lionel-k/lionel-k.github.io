@@ -18,6 +18,11 @@ const Home = () => {
   const [spotsLeft, setSpotsLeft] = useState(12);
   const [showCountdown, setShowCountdown] = useState(true);
 
+  // Define color variables for consistent use
+  const goldBright = "#DAA520"; // Original gold for dark backgrounds
+  const goldMuted = "#B8860B"; // Darker gold for white backgrounds
+  const goldLight = "#F0E68C"; // Lighter gold for specific accents
+
   const benefits = [
     "Young adults in the diaspora who want to reconnect",
     "Parents who want their kids to learn Kirundi",
@@ -235,8 +240,8 @@ const Home = () => {
                 way—this app is perfect for reconnecting with my roots!"
               </p>
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-[#DAA520]/20 flex items-center justify-center">
-                  <Users className="w-5 h-5 text-[#DAA520]" />
+                <div className="w-10 h-10 rounded-full bg-[#B8860B]/10 flex items-center justify-center">
+                  <Users className="w-5 h-5 text-[#B8860B]" />
                 </div>
                 <div className="ml-3">
                   <p className="text-gray-900 font-medium">Sarah K.</p>
@@ -251,8 +256,8 @@ const Home = () => {
                 learning phrases I can actually use when visiting family."
               </p>
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-[#DAA520]/20 flex items-center justify-center">
-                  <Users className="w-5 h-5 text-[#DAA520]" />
+                <div className="w-10 h-10 rounded-full bg-[#B8860B]/10 flex items-center justify-center">
+                  <Users className="w-5 h-5 text-[#B8860B]" />
                 </div>
                 <div className="ml-3">
                   <p className="text-gray-900 font-medium">Jean P.</p>
@@ -267,8 +272,8 @@ const Home = () => {
                 connect with their heritage and communicate with grandparents."
               </p>
               <div className="flex items-center">
-                <div className="w-10 h-10 rounded-full bg-[#DAA520]/20 flex items-center justify-center">
-                  <Users className="w-5 h-5 text-[#DAA520]" />
+                <div className="w-10 h-10 rounded-full bg-[#B8860B]/10 flex items-center justify-center">
+                  <Users className="w-5 h-5 text-[#B8860B]" />
                 </div>
                 <div className="ml-3">
                   <p className="text-gray-900 font-medium">Marie N.</p>
@@ -279,7 +284,7 @@ const Home = () => {
           </div>
 
           <div className="mt-10 text-center">
-            <p className="text-[#DAA520] font-medium text-lg">
+            <p className="text-[#B8860B] font-medium text-lg">
               Join 100+ Burundians learning Kirundi today!
             </p>
           </div>
@@ -299,8 +304,8 @@ const Home = () => {
             </p>
             {showCountdown && (
               <div className="mb-6">
-                <div className="inline-flex items-center bg-[#DAA520]/10 px-4 py-2 rounded-lg">
-                  <span className="text-[#DAA520] font-bold mr-2">⏰</span>
+                <div className="inline-flex items-center bg-[#B8860B]/10 px-4 py-2 rounded-lg">
+                  <span className="text-[#B8860B] font-bold mr-2">⏰</span>
                   <span className="text-gray-900 font-medium">
                     Only {spotsLeft} spots left out of {totalSpots}!
                   </span>
@@ -309,45 +314,45 @@ const Home = () => {
             )}
           </div>
 
-          <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden border border-[#DAA520] shadow-lg">
-            <div className="bg-[#DAA520] text-black text-center py-2 font-bold">
-              EARLY ACCESS - ONLY {spotsLeft} SPOTS AVAILABLE!
+          <div className="max-w-md mx-auto bg-white rounded-xl overflow-hidden border border-[#B8860B] shadow-lg">
+            <div className="bg-[#B8860B] text-white text-center py-2 font-bold">
+              EARLY ACCESS - ONLY {totalSpots} SPOTS AVAILABLE!
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
                 Founding Member Early Access
               </h3>
               <div className="flex items-baseline mb-6">
-                <span className="text-4xl font-bold text-[#DAA520]">€10</span>
+                <span className="text-4xl font-bold text-[#B8860B]">€10</span>
                 <span className="text-gray-600 ml-1">one-time payment</span>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-[#DAA520] mr-2" />
+                  <CheckCircle className="w-5 h-5 text-[#B8860B] mr-2" />
                   <span className="text-gray-700">
                     Full access to all Kirundi lessons
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-[#DAA520] mr-2" />
+                  <CheckCircle className="w-5 h-5 text-[#B8860B] mr-2" />
                   <span className="text-gray-700">
                     Audio pronunciation guides
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-[#DAA520] mr-2" />
+                  <CheckCircle className="w-5 h-5 text-[#B8860B] mr-2" />
                   <span className="text-gray-700">
                     Cultural context for each lesson
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-[#DAA520] mr-2" />
+                  <CheckCircle className="w-5 h-5 text-[#B8860B] mr-2" />
                   <span className="text-gray-700">
                     Progress tracking and achievements
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <CheckCircle className="w-5 h-5 text-[#DAA520] mr-2" />
+                  <CheckCircle className="w-5 h-5 text-[#B8860B] mr-2" />
                   <span className="text-gray-700">
                     Lifetime founding member badge
                   </span>
@@ -355,7 +360,7 @@ const Home = () => {
               </ul>
               <button
                 onClick={() => navigate("/payment")}
-                className="w-full py-3 bg-[#DAA520] text-black rounded-lg hover:bg-[#B8860B] transition-colors font-semibold flex items-center justify-center"
+                className="w-full py-3 bg-[#B8860B] text-white rounded-lg hover:bg-[#8B6914] transition-colors font-semibold flex items-center justify-center"
               >
                 Secure Early Access Now <ArrowRight className="ml-2 w-5 h-5" />
               </button>
@@ -366,7 +371,7 @@ const Home = () => {
           </div>
 
           <div className="mt-8 text-center">
-            <p className="text-[#DAA520] font-medium">
+            <p className="text-[#B8860B] font-medium">
               ⚡ People are requesting early access fast! Don't miss your chance
               to be a founding member.
             </p>
@@ -395,7 +400,7 @@ const Home = () => {
               >
                 <h3 className="text-xl font-medium text-gray-900 mb-3 flex items-center">
                   {faq.question}
-                  <ChevronDown className="w-5 h-5 text-[#DAA520] ml-auto" />
+                  <ChevronDown className="w-5 h-5 text-[#B8860B] ml-auto" />
                 </h3>
                 <p className="text-gray-600">{faq.answer}</p>
               </div>
@@ -408,7 +413,7 @@ const Home = () => {
             </p>
             <a
               href="mailto:hello@lingu.africa"
-              className="px-6 py-3 bg-transparent border border-[#DAA520] text-[#DAA520] rounded-lg hover:bg-[#DAA520]/10 transition-colors font-medium inline-flex items-center"
+              className="px-6 py-3 bg-transparent border border-[#B8860B] text-[#B8860B] rounded-lg hover:bg-[#B8860B]/10 transition-colors font-medium inline-flex items-center"
             >
               <Mail className="w-5 h-5 mr-2" />
               hello@lingu.africa
@@ -461,7 +466,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="max-w-md">
               <div className="flex items-center mb-4">
-                <GraduationCap className="w-8 h-8 text-[#DAA520]" />
+                <GraduationCap className="w-8 h-8 text-[#B8860B]" />
                 <span className="ml-2 text-xl font-bold text-gray-900">
                   Lingu Africa
                 </span>
@@ -479,16 +484,16 @@ const Home = () => {
               <div className="flex items-center gap-4">
                 <a
                   href="https://x.com/lionelkubwimana"
-                  className="text-gray-600 hover:text-[#DAA520] transition-colors flex items-center"
+                  className="text-gray-600 hover:text-[#B8860B] transition-colors flex items-center"
                 >
-                  <ExternalLink className="w-5 h-5 mr-2 text-[#DAA520]" />
+                  <ExternalLink className="w-5 h-5 mr-2 text-[#B8860B]" />
                   Twitter
                 </a>
                 <a
                   href="https://www.instagram.com/lingu.africa"
-                  className="text-gray-600 hover:text-[#DAA520] transition-colors flex items-center"
+                  className="text-gray-600 hover:text-[#B8860B] transition-colors flex items-center"
                 >
-                  <ExternalLink className="w-5 h-5 mr-2 text-[#DAA520]" />
+                  <ExternalLink className="w-5 h-5 mr-2 text-[#B8860B]" />
                   Instagram
                 </a>
               </div>
