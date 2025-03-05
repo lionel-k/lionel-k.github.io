@@ -1,15 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import {
   GraduationCap,
-  Globe,
   Users,
-  Star,
   CheckCircle,
   ArrowRight,
   Mail,
   Clock,
-  MessageCircle,
-  Heart,
   ChevronDown,
   ExternalLink,
 } from "lucide-react";
@@ -18,6 +14,8 @@ import { useState } from "react";
 const Home = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
+  const [spotsLeft, setSpotsLeft] = useState(20);
+  const [showCountdown, setShowCountdown] = useState(true);
 
   const benefits = [
     "Young adults in the diaspora who want to reconnect",
@@ -294,19 +292,29 @@ const Home = () => {
             <p className="text-xl text-gray-300 mb-6">
               Secure your spot as a founding member with exclusive benefits
             </p>
+            {showCountdown && (
+              <div className="mb-6">
+                <div className="inline-flex items-center bg-[#DAA520]/10 px-4 py-2 rounded-lg">
+                  <span className="text-[#DAA520] font-bold mr-2">⏰</span>
+                  <span className="text-white font-medium">
+                    Only {spotsLeft} spots left out of 20!
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="max-w-md mx-auto bg-gradient-to-br from-[#0A0A0A] to-black rounded-xl overflow-hidden border border-[#DAA520]">
             <div className="bg-[#DAA520] text-black text-center py-2 font-bold">
-              Limited Spots Available!
+              EXCLUSIVE OFFER - ONLY 20 SPOTS AVAILABLE!
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-bold text-white mb-2">
-                Founding Member Special
+                Founding Member Access
               </h3>
               <div className="flex items-baseline mb-6">
-                <span className="text-4xl font-bold text-[#DAA520]">€5</span>
-                <span className="text-gray-400 ml-1">/month</span>
+                <span className="text-4xl font-bold text-[#DAA520]">€10</span>
+                <span className="text-gray-400 ml-1">one-time payment</span>
               </div>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center">
@@ -344,12 +352,19 @@ const Home = () => {
                 onClick={() => navigate("/payment")}
                 className="w-full py-3 bg-[#DAA520] text-black rounded-lg hover:bg-[#B8860B] transition-colors font-semibold flex items-center justify-center"
               >
-                Reserve Your Spot <ArrowRight className="ml-2 w-5 h-5" />
+                Reserve Your Spot Now <ArrowRight className="ml-2 w-5 h-5" />
               </button>
               <p className="text-center text-gray-400 text-sm mt-4">
-                30-day money-back guarantee
+                100% satisfaction guarantee
               </p>
             </div>
+          </div>
+
+          <div className="mt-8 text-center">
+            <p className="text-[#DAA520] font-medium">
+              ⚡ People are joining fast! Don't miss your chance to be a
+              founding member.
+            </p>
           </div>
         </div>
       </div>
@@ -386,9 +401,13 @@ const Home = () => {
             <p className="text-gray-400 mb-6">
               Still have questions? We're here to help!
             </p>
-            <button className="px-6 py-3 bg-transparent border border-[#DAA520] text-[#DAA520] rounded-lg hover:bg-[#DAA520]/10 transition-colors font-medium">
-              Contact Us
-            </button>
+            <a
+              href="mailto:hello@lingu.africa"
+              className="px-6 py-3 bg-transparent border border-[#DAA520] text-[#DAA520] rounded-lg hover:bg-[#DAA520]/10 transition-colors font-medium inline-flex items-center"
+            >
+              <Mail className="w-5 h-5 mr-2" />
+              hello@lingu.africa
+            </a>
           </div>
         </div>
       </div>
@@ -480,7 +499,7 @@ const Home = () => {
             </div>
           </div>
           <div className="border-t border-[#DAA520]/20 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Lingu Africa. All rights reserved.</p>
+            <p>&copy; 2025 Lingu Africa. All rights reserved.</p>
           </div>
         </div>
       </footer>
