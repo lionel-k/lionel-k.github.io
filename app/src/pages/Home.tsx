@@ -17,6 +17,16 @@ const Home = () => {
   const [email, setEmail] = useState("");
   const [spotsLeft, setSpotsLeft] = useState(12);
   const [showCountdown, setShowCountdown] = useState(true);
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+  // Define color variables for consistent use
+  const goldBright = "#DAA520"; // Original gold for dark backgrounds
+  const goldMuted = "#B8860B"; // Darker gold for white backgrounds
+  const goldLight = "#F0E68C"; // Lighter gold for specific accents
+
+  const toggleFaq = (index: number) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
 
   const benefits = [
     "Young adults in the diaspora who want to reconnect",
@@ -391,13 +401,33 @@ const Home = () => {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="bg-gray-50 rounded-lg p-6 border border-gray-200"
+                className="bg-gray-50 rounded-lg border border-gray-200 hover:border-[#B8860B]/50 transition-colors"
               >
-                <h3 className="text-xl font-medium text-gray-900 mb-3 flex items-center">
-                  {faq.question}
-                  <ChevronDown className="w-5 h-5 text-[#B8860B] ml-auto" />
-                </h3>
-                <p className="text-gray-600">{faq.answer}</p>
+                <button
+                  className="w-full p-6 text-left focus:outline-none cursor-pointer hover:bg-gray-100/50 transition-colors"
+                  onClick={() => toggleFaq(index)}
+                  aria-expanded={openFaqIndex === index}
+                  type="button"
+                >
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-xl font-medium text-gray-900">
+                      {faq.question}
+                    </h3>
+                    <ChevronDown
+                      className={`w-5 h-5 text-[#B8860B] transition-transform duration-200 ${
+                        openFaqIndex === index ? "transform rotate-180" : ""
+                      }`}
+                    />
+                  </div>
+                </button>
+
+                {openFaqIndex === index && (
+                  <div className="px-6 pb-6 pt-2">
+                    <div className="border-t border-gray-200 pt-4">
+                      <p className="text-gray-600">{faq.answer}</p>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </div>
