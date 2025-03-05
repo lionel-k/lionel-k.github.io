@@ -67,20 +67,22 @@ const Home = () => {
                 Lingu Africa
               </span>
             </div>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => navigate("/login")}
-                className="px-3 py-2 text-white hover:text-[#DAA520] transition-colors font-medium"
-              >
-                Login
-              </button>
-              <button
-                onClick={() => navigate("/onboarding")}
-                className="px-3 sm:px-5 py-2 bg-[#DAA520] text-black rounded-lg hover:bg-[#B8860B] transition-colors font-medium whitespace-nowrap"
-              >
-                Get Started
-              </button>
-            </div>
+            {false && (
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => navigate("/login")}
+                  className="px-3 py-2 text-white hover:text-[#DAA520] transition-colors font-medium"
+                >
+                  Login
+                </button>
+                <button
+                  onClick={() => navigate("/onboarding")}
+                  className="px-3 sm:px-5 py-2 bg-[#DAA520] text-black rounded-lg hover:bg-[#B8860B] transition-colors font-medium whitespace-nowrap"
+                >
+                  Get Started
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </nav>
