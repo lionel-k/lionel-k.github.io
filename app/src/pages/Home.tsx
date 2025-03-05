@@ -205,7 +205,7 @@ const Home = () => {
                       <p className="text-gray-400 text-sm">I'm fine</p>
                     </div>
                   </div>
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-wrap justify-between items-center gap-4 mt-4">
                     <div className="flex items-center">
                       <div className="w-8 h-8 rounded-full bg-[#DAA520]/20 flex items-center justify-center">
                         <Clock className="w-4 h-4 text-[#DAA520]" />
@@ -214,7 +214,7 @@ const Home = () => {
                         10 min/day
                       </span>
                     </div>
-                    <button className="px-3 py-1 bg-[#DAA520] text-black rounded-md text-sm font-medium">
+                    <button className="px-4 py-2 bg-[#DAA520] text-black rounded-md text-sm font-medium">
                       Practice Now
                     </button>
                   </div>
