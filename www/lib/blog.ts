@@ -191,3 +191,15 @@ export function generateTableOfContents(content: string): TableOfContents[] {
 
   return headings;
 }
+
+/**
+ * Get the latest blog posts with optional limit
+ * @param limit Number of posts to return (default: all posts)
+ * @returns Array of blog post metadata
+ */
+export async function getLatestBlogPosts(
+  limit?: number
+): Promise<BlogPostMetadata[]> {
+  const allPosts = await getAllBlogPosts();
+  return limit ? allPosts.slice(0, limit) : allPosts;
+}

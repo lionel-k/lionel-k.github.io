@@ -1,11 +1,12 @@
 import Link from "next/link";
-import { ArrowRight, Book } from "lucide-react";
+import { ArrowRight, Book, ChevronRight } from "lucide-react";
 import { NewsletterForm } from "@/components/newsletter-form";
 import { LANGUAGES, FAQ_ITEMS, SITE_URL } from "@/lib/constants";
 import { FAQ } from "@/components/FAQ";
 import { languagesConfig } from "@/lib/languagesConfig";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { AmazonLink } from "@/components/AmazonLink";
+import { getLatestBlogPosts } from "@/lib/blog";
 
 import { Metadata } from "next";
 
@@ -39,7 +40,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  // Get the latest 3 blog posts
+  const latestPosts = await getLatestBlogPosts(3);
+
   return (
     <>
       <div className="flex flex-col">
@@ -185,6 +189,7 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Reviews Section */}
         <section id="reviews" className="py-20 bg-[#FAF8F5] text-gray-900">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
@@ -206,6 +211,76 @@ export default function Home() {
                   />
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Related Blog Posts Section */}
+        <section className="py-20 bg-white">
+          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+                Related Blog Posts
+              </h2>
+              <p className="text-xl text-gray-600">
+                Discover our latest insights on language learning and cultural
+                diversity
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {latestPosts.map((post) => (
+                <Link
+                  href={`/blog/${post.slug}`}
+                  key={post.slug}
+                  className="group"
+                >
+                  <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
+                    <div className="relative h-48 overflow-hidden">
+                      <OptimizedImage
+                        src={post.coverImage}
+                        alt={post.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="p-6 flex flex-col flex-grow">
+                      <div className="mb-2">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold text-[#DAA520] bg-[#DAA520]/10 rounded-full">
+                          {post.category}
+                        </span>
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-[#DAA520] transition-colors">
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4 flex-grow">
+                        {post.description.length > 120
+                          ? `${post.description.substring(0, 120)}...`
+                          : post.description}
+                      </p>
+                      <div className="flex items-center justify-between mt-auto">
+                        <span className="text-sm text-gray-500">
+                          {new Date(post.date).toLocaleDateString("en-US", {
+                            year: "numeric",
+                            month: "short",
+                            day: "numeric",
+                          })}
+                        </span>
+                        <span className="text-sm text-gray-500">
+                          {post.readingTime}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-12 text-center">
+              <Link
+                href="/blog"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-center text-black bg-[#F5A524] rounded-lg hover:bg-[#F5A524]/90 transition-colors"
+              >
+                View All Blog Posts
+                <ChevronRight className="w-5 h-5" />
+              </Link>
             </div>
           </div>
         </section>
