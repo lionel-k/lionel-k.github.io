@@ -14,7 +14,7 @@ import { useState } from "react";
 const Home = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
-  const [spotsLeft, setSpotsLeft] = useState(20);
+  const [spotsLeft, setSpotsLeft] = useState(16);
   const [showCountdown, setShowCountdown] = useState(true);
 
   const benefits = [
