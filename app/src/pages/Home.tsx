@@ -49,7 +49,9 @@ const Home = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Here you would typically send the email to your backend
-    alert(`Thank you for joining! We'll be in touch at ${email}`);
+    alert(
+      `Thank you for requesting early access! We'll be in touch at ${email}`
+    );
     setEmail("");
   };
 
@@ -103,7 +105,8 @@ const Home = () => {
               </h1>
               <p className="text-xl text-gray-300 mb-6">
                 A fun and easy way to speak Kirundi, even if you've never
-                learned before.
+                learned before. Currently in development - request early access
+                now!
               </p>
 
               <div className="mb-8">
@@ -152,13 +155,13 @@ const Home = () => {
                   type="submit"
                   className="px-6 py-3 bg-[#DAA520] text-black rounded-lg hover:bg-[#B8860B] transition-colors font-medium whitespace-nowrap flex items-center justify-center"
                 >
-                  Join Now <ArrowRight className="ml-2 w-5 h-5" />
+                  Request Early Access <ArrowRight className="ml-2 w-5 h-5" />
                 </button>
               </form>
               <p className="text-gray-400 text-sm">
                 🚀{" "}
                 <span className="font-medium">
-                  Be the first to try it! Sign up for early access.
+                  Be among the first to try it when we launch!
                 </span>
               </p>
             </div>
@@ -287,10 +290,11 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-4">
-              Want to be in the first group?
+              Want Priority Early Access?
             </h2>
             <p className="text-xl text-gray-300 mb-6">
-              Secure your spot as a founding member with exclusive benefits
+              Secure your spot as a founding member and get access before
+              everyone else
             </p>
             {showCountdown && (
               <div className="mb-6">
@@ -306,11 +310,11 @@ const Home = () => {
 
           <div className="max-w-md mx-auto bg-gradient-to-br from-[#0A0A0A] to-black rounded-xl overflow-hidden border border-[#DAA520]">
             <div className="bg-[#DAA520] text-black text-center py-2 font-bold">
-              EXCLUSIVE OFFER - ONLY 20 SPOTS AVAILABLE!
+              EARLY ACCESS - ONLY 10 SPOTS AVAILABLE!
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-bold text-white mb-2">
-                Founding Member Access
+                Founding Member Early Access
               </h3>
               <div className="flex items-baseline mb-6">
                 <span className="text-4xl font-bold text-[#DAA520]">€10</span>
@@ -352,7 +356,7 @@ const Home = () => {
                 onClick={() => navigate("/payment")}
                 className="w-full py-3 bg-[#DAA520] text-black rounded-lg hover:bg-[#B8860B] transition-colors font-semibold flex items-center justify-center"
               >
-                Reserve Your Spot Now <ArrowRight className="ml-2 w-5 h-5" />
+                Secure Early Access Now <ArrowRight className="ml-2 w-5 h-5" />
               </button>
               <p className="text-center text-gray-400 text-sm mt-4">
                 100% satisfaction guarantee
@@ -362,8 +366,8 @@ const Home = () => {
 
           <div className="mt-8 text-center">
             <p className="text-[#DAA520] font-medium">
-              ⚡ People are joining fast! Don't miss your chance to be a
-              founding member.
+              ⚡ People are requesting early access fast! Don't miss your chance
+              to be a founding member.
             </p>
           </div>
         </div>
@@ -420,8 +424,8 @@ const Home = () => {
             <span className="text-[#DAA520]"> Burundian heritage?</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join Lingu Africa today and start speaking Kirundi in just 10
-            minutes a day.
+            Request early access to Lingu Africa today and be the first to start
+            speaking Kirundi.
           </p>
           <form
             onSubmit={handleSubmit}
@@ -441,11 +445,11 @@ const Home = () => {
               type="submit"
               className="px-6 py-3 bg-[#DAA520] text-black rounded-lg hover:bg-[#B8860B] transition-colors font-medium whitespace-nowrap flex items-center justify-center"
             >
-              Get Early Access <ArrowRight className="ml-2 w-5 h-5" />
+              Request Early Access <ArrowRight className="ml-2 w-5 h-5" />
             </button>
           </form>
           <p className="text-gray-400">
-            Limited spots available for founding members!
+            Limited spots available for founding members with priority access!
           </p>
         </div>
       </div>
