@@ -185,6 +185,47 @@ export default function BlogPostClient({ post }: Props) {
               />
             </div>
 
+            {/* Adjacent Posts Navigation */}
+            {post.adjacentPosts && (
+              <nav className="mt-12 mb-8 border-t border-gray-200 pt-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                  {/* Previous Post */}
+                  {post.adjacentPosts.previous && (
+                    <div className="group">
+                      <Link
+                        href={`/blog/${post.adjacentPosts.previous.slug}`}
+                        className="flex flex-col space-y-3"
+                      >
+                        <span className="text-sm text-[#DAA520] font-medium">
+                          Previous Article
+                        </span>
+                        <span className="text-xl font-semibold text-gray-900 group-hover:text-[#DAA520] transition-colors">
+                          {post.adjacentPosts.previous.title}
+                        </span>
+                      </Link>
+                    </div>
+                  )}
+
+                  {/* Next Post */}
+                  {post.adjacentPosts.next && (
+                    <div className="group md:text-right">
+                      <Link
+                        href={`/blog/${post.adjacentPosts.next.slug}`}
+                        className="flex flex-col space-y-3"
+                      >
+                        <span className="text-sm text-[#DAA520] font-medium">
+                          Next Article
+                        </span>
+                        <span className="text-xl font-semibold text-gray-900 group-hover:text-[#DAA520] transition-colors">
+                          {post.adjacentPosts.next.title}
+                        </span>
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </nav>
+            )}
+
             {/* CTA */}
             <div className="mt-12 flex justify-center">
               <Link

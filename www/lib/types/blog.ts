@@ -36,6 +36,16 @@ export interface BlogPost {
   conclusion: string;
   tags: string[];
   readingTime: string;
+  adjacentPosts?: {
+    previous?: {
+      slug: string;
+      title: string;
+    };
+    next?: {
+      slug: string;
+      title: string;
+    };
+  };
 }
 
 export type BlogPostMetadata = Omit<

@@ -51,6 +51,14 @@ export async function getAllBlogPosts(): Promise<BlogPostMetadata[]> {
 
 export async function getBlogPost(slug: string): Promise<BlogPost | null> {
   try {
+    // Get all blog posts first to find adjacent posts
+    const allPosts = await getAllBlogPosts();
+    const currentPostIndex = allPosts.findIndex((post) => post.slug === slug);
+
+    if (currentPostIndex === -1) {
+      return null;
+    }
+
     // Find the file that matches the pattern: YYYY-MM-DD-{slug}.mdx
     const files = await fs.readdir(BLOG_DIR);
     const blogFile = files.find((file) => {
@@ -118,6 +126,24 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       .process(mdxContent);
     const contentHtml = processedContent.toString();
 
+    // Get adjacent posts information
+    const adjacentPosts = {
+      previous:
+        currentPostIndex > 0
+          ? {
+              slug: allPosts[currentPostIndex - 1].slug,
+              title: allPosts[currentPostIndex - 1].title,
+            }
+          : undefined,
+      next:
+        currentPostIndex < allPosts.length - 1
+          ? {
+              slug: allPosts[currentPostIndex + 1].slug,
+              title: allPosts[currentPostIndex + 1].title,
+            }
+          : undefined,
+    };
+
     return {
       ...data,
       slug,
@@ -125,6 +151,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
       content: contentHtml,
       tableOfContents,
       conclusion,
+      adjacentPosts,
     } as BlogPost;
   } catch (error) {
     console.error(`Error getting blog post ${slug}:`, error);
