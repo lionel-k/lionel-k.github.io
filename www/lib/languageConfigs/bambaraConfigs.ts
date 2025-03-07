@@ -9,8 +9,8 @@ export const bambaraConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          '"Discover Bambara First 100 Words for ages 0-6! Engage young minds with vibrant images. Start their language journey now!"',
-        long: '"Want to introduce your child to Bambara in a fun way? This First 100 Words book is perfect! Filled with bright illustrations and simple words, it makes learning engaging and enjoyable. Each page encourages your child to discover new vocabulary, building essential language skills and sparking curiosity. A wonderful start to your child\'s Bambara language journey!"',
+          "Discover Bambara First 100 Words for ages 0-6! Engage young minds with vibrant images. Start their language journey now!",
+        long: "Want to introduce your child to Bambara in a fun way? This First 100 Words book is perfect! Filled with bright illustrations and simple words, it makes learning engaging and enjoyable. Each page encourages your child to discover new vocabulary, building essential language skills and sparking curiosity. A wonderful start to your child's Bambara language journey!",
       },
       challenges: [
         "Hard to Teach New Words: Our book uses pictures to help kids learn Bambara words easily and remember them better.",
@@ -18,9 +18,9 @@ export const bambaraConfigs = {
         "Lack of Learning Tools: Our book provides a handy guide with 100 words, perfect for daily Bambara practice at home.",
       ],
       whyChoose: [
-        '"Fun Learning Time: Kids enjoy learning Bambara with colorful pictures and fun activities that make new words stick."',
-        '"Builds Word Skills: The book helps children learn important Bambara words, making language learning easy and exciting."',
-        '"Boosts Confidence: Kids feel proud as they learn new words in Bambara, helping them speak and understand better."',
+        "Fun Learning Time: Kids enjoy learning Bambara with colorful pictures and fun activities that make new words stick.",
+        "Builds Word Skills: The book helps children learn important Bambara words, making language learning easy and exciting.",
+        "Boosts Confidence: Kids feel proud as they learn new words in Bambara, helping them speak and understand better.",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0C4MRD12K",
       bestSeller: false,
@@ -85,9 +85,9 @@ export const bambaraConfigs = {
         "Lack of Practice Tools: Enjoy interactive activities that help kids practice Bambara while exploring fruits and vegetables.",
       ],
       whyChoose: [
-        '"Bright Pictures Delight: Colorful images make learning fruits and vegetables fun, helping kids remember Bambara words easily."',
-        '"Interactive Activities Engage: Fun puzzles and games keep kids interested, making Bambara and healthy eating habits stick."',
-        '"Boosts Language Skills: Simple sentences help kids learn Bambara naturally, building confidence in speaking and understanding."',
+        "Bright Pictures Delight: Colorful images make learning fruits and vegetables fun, helping kids remember Bambara words easily.",
+        "Interactive Activities Engage: Fun puzzles and games keep kids interested, making Bambara and healthy eating habits stick.",
+        "Boosts Language Skills: Simple sentences help kids learn Bambara naturally, building confidence in speaking and understanding.",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0C51XDHV6",
       bestSeller: false,
@@ -146,14 +146,14 @@ export const bambaraConfigs = {
         long: "This action verbs book helps children learn bambara through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning bambara fun and accessible.",
       },
       challenges: [
-        '"Boring Language Lessons: Our book uses colorful pictures to make learning Bambara action verbs exciting for kids."',
-        '"Lack of Practice Materials: Our book offers fun exercises, helping children use Bambara action verbs in daily life."',
-        '"Struggling with Vocabulary: Our book introduces action verbs in simple ways, making it easy for kids to remember and use them."',
+        "Boring Language Lessons: Our book uses colorful pictures to make learning Bambara action verbs exciting for kids.",
+        "Lack of Practice Materials: Our book offers fun exercises, helping children use Bambara action verbs in daily life.",
+        "Struggling with Vocabulary: Our book introduces action verbs in simple ways, making it easy for kids to remember and use them.",
       ],
       whyChoose: [
-        '"Interactive Games: Kids play fun games that teach action verbs, making Bambara learning exciting and memorable."',
-        '"Colorful Pictures: Bright images help kids see and understand action verbs, making Bambara words easy to remember."',
-        '"Easy Practice: Simple exercises let kids practice verbs daily, building confidence and language skills in Bambara."',
+        "Interactive Games: Kids play fun games that teach action verbs, making Bambara learning exciting and memorable.",
+        "Colorful Pictures: Bright images help kids see and understand action verbs, making Bambara words easy to remember.",
+        "Easy Practice: Simple exercises let kids practice verbs daily, building confidence and language skills in Bambara.",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0C526MTD4",
       bestSeller: false,
@@ -209,8 +209,8 @@ export const bambaraConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          '"Discover Bambara Animals for ages 0-6. Engage your child with vibrant stories and start an adventure today!"',
-        long: '"Want your child to learn Bambara while exploring the animal world? This Animals book offers a delightful journey with vivid illustrations and simple words. Perfect for young learners, it introduces animals in a way that makes learning Bambara fun and memorable. Each page brings new words and exciting discoveries, helping your child build language skills with joy and curiosity."',
+          "Discover Bambara Animals for ages 0-6. Engage your child with vibrant stories and start an adventure today!",
+        long: "Want your child to learn Bambara while exploring the animal world? This Animals book offers a delightful journey with vivid illustrations and simple words. Perfect for young learners, it introduces animals in a way that makes learning Bambara fun and memorable. Each page brings new words and exciting discoveries, helping your child build language skills with joy and curiosity.",
       },
       challenges: [
         "Limited Language Practice: Our book offers fun activities in Bambara, helping kids practice and learn new words easily.",
@@ -218,9 +218,9 @@ export const bambaraConfigs = {
         "Boring Language Lessons: The book turns Bambara learning into an exciting adventure with games and animal stories.",
       ],
       whyChoose: [
-        '"Fun and Colorful Pictures: The book has bright pictures of animals that help kids learn Bambara words easily."',
-        '"Engaging Stories: Kids read fun stories about animals that make learning Bambara exciting and enjoyable."',
-        '"Interactive Activities: The book includes fun games and puzzles that help kids practice Bambara while having fun."',
+        "Fun and Colorful Pictures: The book has bright pictures of animals that help kids learn Bambara words easily.",
+        "Engaging Stories: Kids read fun stories about animals that make learning Bambara exciting and enjoyable.",
+        "Interactive Activities: The book includes fun games and puzzles that help kids practice Bambara while having fun.",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0C51XWHHT",
       bestSeller: false,
@@ -276,8 +276,8 @@ export const bambaraConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          '"Bambara Bilingual Coloring Book for ages 3-6. Discover and color! Perfect start to a fun language journey!"',
-        long: '"Excited to teach your child Bambara? This Bilingual Coloring Book is the perfect choice! Filled with vibrant illustrations, it makes learning new words a joyful adventure. Each page combines fun coloring activities with Bambara vocabulary, helping kids build language skills effortlessly. It\'s a delightful way to introduce your child to a new language and culture!"',
+          "Bambara Bilingual Coloring Book for ages 3-6. Discover and color! Perfect start to a fun language journey!",
+        long: "Excited to teach your child Bambara? This Bilingual Coloring Book is the perfect choice! Filled with vibrant illustrations, it makes learning new words a joyful adventure. Each page combines fun coloring activities with Bambara vocabulary, helping kids build language skills effortlessly. It's a delightful way to introduce your child to a new language and culture!",
       },
       challenges: [
         "Hard to Learn New Languages: Our book uses fun pictures to make learning Bambara easy and enjoyable for kids.",
@@ -285,9 +285,9 @@ export const bambaraConfigs = {
         "Keeping Kids Engaged: The interactive pages in our book keep kids interested in learning Bambara through creative activities.",
       ],
       whyChoose: [
-        '"Fun Learning Time: Kids enjoy learning Bambara with bright pictures and easy activities that make new words stick."',
-        '"Boosts Creativity: Kids color while learning Bambara, making it a fun way to use their imagination and learn new things."',
-        '"Builds Confidence: As kids learn Bambara words, they feel proud of themselves and want to learn even more."',
+        "Fun Learning Time: Kids enjoy learning Bambara with bright pictures and easy activities that make new words stick.",
+        "Boosts Creativity: Kids color while learning Bambara, making it a fun way to use their imagination and learn new things.",
+        "Builds Confidence: As kids learn Bambara words, they feel proud of themselves and want to learn even more.",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0C6BT7Q6V",
       bestSeller: false,
@@ -343,8 +343,8 @@ export const bambaraConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          '"Discover our unique Bambara Animals Coloring Book for ages 4-8. Inspire creativity and learning today!"',
-        long: '"Want to make learning Bambara fun for your child? This Animals Coloring Book is the perfect choice! Filled with delightful animal illustrations, it encourages kids to learn new Bambara words as they color. Each page combines creativity and education, making language learning a joyful experience. Watch your child\'s vocabulary grow while having endless coloring fun!"',
+          "Discover our unique Bambara Animals Coloring Book for ages 4-8. Inspire creativity and learning today!",
+        long: "Want to make learning Bambara fun for your child? This Animals Coloring Book is the perfect choice! Filled with delightful animal illustrations, it encourages kids to learn new Bambara words as they color. Each page combines creativity and education, making language learning a joyful experience. Watch your child's vocabulary grow while having endless coloring fun!",
       },
       challenges: [
         "Hard to Keep Kids Interested: Our book uses fun animal pictures to make learning Bambara exciting for kids.",
@@ -352,9 +352,9 @@ export const bambaraConfigs = {
         "Limited Educational Resources: This book offers a fun way to learn Bambara, combining art and language in one.",
       ],
       whyChoose: [
-        '"Boosts Creativity: Coloring animals helps kids imagine and create, all while learning Bambara words for each animal."',
-        '"Builds Language Skills: Kids learn Bambara by connecting animal names with fun pictures, making language learning exciting."',
-        '"Family Fun Time: Parents and kids can bond over coloring, sharing laughs and learning Bambara together in a fun way."',
+        "Boosts Creativity: Coloring animals helps kids imagine and create, all while learning Bambara words for each animal.",
+        "Builds Language Skills: Kids learn Bambara by connecting animal names with fun pictures, making language learning exciting.",
+        "Family Fun Time: Parents and kids can bond over coloring, sharing laughs and learning Bambara together in a fun way.",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0CN7578H2",
       bestSeller: false,
@@ -411,8 +411,8 @@ export const bambaraConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          '"Discover Bambara with our Fruits And Vegetables Coloring Book for kids aged 4-8. Start the fun learning now!"',
-        long: '"Want a fun way for your child to learn Bambara? This Fruits and Vegetables Coloring Book is perfect! Full of colorful images, it makes learning Bambara words enjoyable for kids. Each page introduces fruits and vegetables, helping your child build language skills naturally. It\'s a wonderful tool for making learning joyful and engaging, sparking curiosity with every color!"',
+          "Discover Bambara with our Fruits And Vegetables Coloring Book for kids aged 4-8. Start the fun learning now!",
+        long: "Want a fun way for your child to learn Bambara? This Fruits and Vegetables Coloring Book is perfect! Full of colorful images, it makes learning Bambara words enjoyable for kids. Each page introduces fruits and vegetables, helping your child build language skills naturally. It's a wonderful tool for making learning joyful and engaging, sparking curiosity with every color!",
       },
       challenges: [
         "Kids Get Bored Quickly: Our book uses fun coloring pages to keep kids interested while they learn Bambara words.",
@@ -420,9 +420,9 @@ export const bambaraConfigs = {
         "Limited Learning Tools: Our book offers a creative way to learn Bambara, making language learning exciting for kids.",
       ],
       whyChoose: [
-        '"Boost Language Skills: Kids learn Bambara while coloring. This makes it fun to remember new words and phrases."',
-        '"Explore Healthy Foods: Children discover fruits and veggies with bright images. It helps them learn about healthy choices."',
-        '"Creative Fun Time: Coloring boosts creativity and focus. Kids enjoy learning as they color, making it a playful experience."',
+        "Boost Language Skills: Kids learn Bambara while coloring. This makes it fun to remember new words and phrases.",
+        "Explore Healthy Foods: Children discover fruits and veggies with bright images. It helps them learn about healthy choices.",
+        "Creative Fun Time: Coloring boosts creativity and focus. Kids enjoy learning as they color, making it a playful experience.",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0CQDSZBQ4",
       bestSeller: false,
