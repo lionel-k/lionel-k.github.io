@@ -15,11 +15,6 @@ export const LANGUAGES = [
     comingSoon: false,
   },
   {
-    name: "Lingala",
-    slug: "lingala",
-    comingSoon: true,
-  },
-  {
     name: "Amharic",
     slug: "amharic",
     comingSoon: false,

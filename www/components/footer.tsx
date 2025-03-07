@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { BookOpen } from "lucide-react";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { LANGUAGES } from "@/lib/constants";
+import { languagesConfig } from "@/lib/languagesConfig";
 
 export function Footer() {
   return (
@@ -25,30 +27,16 @@ export function Footer() {
           <div className="text-center md:text-left">
             <h3 className="text-lg font-semibold text-[#DAA520]">Our Books</h3>
             <ul className="mt-4 space-y-2">
-              <li>
-                <Link
-                  href="/books/kirundi"
-                  className="text-sm text-gray-300 hover:text-[#DAA520]"
-                >
-                  Kirundi Books
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/books/kinyarwanda"
-                  className="text-sm text-gray-300 hover:text-[#DAA520]"
-                >
-                  Kinyarwanda Books
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/books"
-                  className="text-sm text-gray-300 hover:text-[#DAA520]"
-                >
-                  View All Books
-                </Link>
-              </li>
+              {LANGUAGES.map((language) => (
+                <li key={language.slug}>
+                  <Link
+                    href={`/books/${language.slug}`}
+                    className="text-sm text-gray-300 hover:text-[#DAA520]"
+                  >
+                    {language.name} Books
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
