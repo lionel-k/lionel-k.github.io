@@ -29,6 +29,11 @@ export const LANGUAGES = [
     slug: "bambara",
     comingSoon: false,
   },
+  {
+    name: "Cape Verdean Kriolu",
+    slug: "cape-verdean-kriolu",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [

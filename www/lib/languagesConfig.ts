@@ -2,6 +2,7 @@ import { kirundiConfigs } from "./languageConfigs/kirundiConfigs";
 import { kinyarwandaConfigs } from "./languageConfigs/kinyarwandaConfigs";
 import { amharicConfigs } from "./languageConfigs/amharicConfigs";
 import { bambaraConfigs } from "./languageConfigs/bambaraConfigs";
+import { capeVerdeanKrioluConfigs } from "./languageConfigs/capeVerdeanKrioluConfigs";
 
 export type LanguageConfig = {
   name: string;
@@ -26,5 +27,9 @@ export const languagesConfig: Record<string, LanguageConfig> = {
   bambara: {
     ...bambaraConfigs,
     description: `Learn Bambara with bilingual picture books. Experience Malian culture through stories in Bambara and English/French. Made for families.`,
+  },
+  "cape-verdean-kriolu": {
+    ...capeVerdeanKrioluConfigs,
+    description: `Learn Cape Verdean Kriolu with bilingual picture books. Experience Cape Verdean culture through stories in Cape Verdean Kriolu and English/French. Made for families.`,
   },
 };
