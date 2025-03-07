@@ -24,6 +24,11 @@ export const LANGUAGES = [
     slug: "amharic",
     comingSoon: false,
   },
+  {
+    name: "Bambara",
+    slug: "bambara",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [
