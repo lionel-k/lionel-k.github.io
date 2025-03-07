@@ -346,7 +346,7 @@ export const amharicConfigs = {
     {
       question: "How can I get additional help or suggest new books?",
       answer:
-        "We love hearing from our customers! If you need extra help or want to suggest new book ideas, feel free to reach out to us through Amazon's contact options. We're always happy to support your family's learning journey!",
+        "We love hearing from our customers! If you need extra help or want to suggest new book ideas, feel free to reach out to us at hello@lingu.africa. We're always happy to support your family's learning journey!",
     },
   ],
 };
