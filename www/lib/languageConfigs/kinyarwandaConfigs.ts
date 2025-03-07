@@ -6,7 +6,7 @@ export const kinyarwandaConfigs = {
       slug: "animals-in-kinyarwanda",
       age: "0-6",
       pages: "28",
-      price: "11.99",
+      price: "$ 11.99",
       description: {
         short:
           "A Kinyarwanda-English-French picture book all about animals. Great for kids aged 0-6—perfect for families who want a fun way to learn Kinyarwanda!",
@@ -67,7 +67,7 @@ Give them a world of words and animals to discover, bonding over language in a r
       slug: "my-first-picture-book-in-kinyarwanda",
       age: "0-6",
       pages: "30",
-      price: "11.99",
+      price: "$ 11.99",
       description: {
         short:
           "A picture book designed to introduce young children to their first words in Kinyarwanda with bright and engaging illustrations.",
@@ -128,7 +128,7 @@ Even if you don't speak Kinyarwanda fluently, you can still share this learning 
       slug: "action-verbs-in-kinyarwanda",
       age: "0-6",
       pages: "28",
-      price: "11.99",
+      price: "$ 11.99",
       description: {
         short:
           "A Kinyarwanda-English-French picture book that teaches action verbs in a simple, fun way to kids aged 0-6—perfect for diaspora families!",
@@ -194,7 +194,7 @@ Even if you're not fully fluent, you'll discover new words together and strength
       slug: "fruits-and-vegetables-in-kinyarwanda",
       age: "0-6",
       pages: "30",
-      price: "11.99",
+      price: "$ 11.99",
       description: {
         short:
           "A fun and colorful Kinyarwanda-English-French picture book introducing fruits and vegetables. Perfect for kids aged 0-6 in diaspora families!",

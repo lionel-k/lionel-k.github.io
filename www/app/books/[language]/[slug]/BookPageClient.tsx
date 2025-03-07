@@ -102,7 +102,7 @@ export default function BookPageClient({ language, slug }: Props) {
                   {book.pages} pages
                 </span>
                 <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
-                  $ {book.price}
+                  {book.price}
                 </span>
               </div>
             </div>
