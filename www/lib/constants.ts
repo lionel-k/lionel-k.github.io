@@ -19,6 +19,11 @@ export const LANGUAGES = [
     slug: "lingala",
     comingSoon: true,
   },
+  {
+    name: "Amharic",
+    slug: "amharic",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [

@@ -1,5 +1,6 @@
 import { kirundiConfigs } from "./languageConfigs/kirundiConfigs";
 import { kinyarwandaConfigs } from "./languageConfigs/kinyarwandaConfigs";
+import { amharicConfigs } from "./languageConfigs/amharicConfigs";
 
 export type LanguageConfig = {
   name: string;
@@ -16,5 +17,9 @@ export const languagesConfig: Record<string, LanguageConfig> = {
   kinyarwanda: {
     ...kinyarwandaConfigs,
     description: `Learn Kinyarwanda with bilingual picture books. Experience Rwandan culture through stories in Kinyarwanda and English/French. Made for families.`,
+  },
+  amharic: {
+    ...amharicConfigs,
+    description: `Learn Amharic with bilingual picture books. Experience Ethiopian culture through stories in Amharic and English/French. Made for families.`,
   },
 };
