@@ -10,6 +10,9 @@ import { igboConfigs } from "./languageConfigs/igboConfigs";
 import { kikuyuConfigs } from "./languageConfigs/kikuyuConfigs";
 import { krioConfigs } from "./languageConfigs/krioConfigs";
 import { lingalaConfigs } from "./languageConfigs/lingalaConfigs";
+import { lugandaConfigs } from "./languageConfigs/lugandaConfigs";
+import { malagasyConfigs } from "./languageConfigs/malagasyConfigs";
+import { oromoConfigs } from "./languageConfigs/oromoConfigs";
 
 export type LanguageConfig = {
   name: string;
@@ -66,5 +69,17 @@ export const languagesConfig: Record<string, LanguageConfig> = {
   lingala: {
     ...lingalaConfigs,
     description: `Learn Lingala with bilingual picture books. Experience Congolese culture through stories in Lingala and English. Made for families.`,
+  },
+  luganda: {
+    ...lugandaConfigs,
+    description: `Learn Luganda with bilingual picture books. Experience Ugandan culture through stories in Luganda and English. Made for families.`,
+  },
+  malagasy: {
+    ...malagasyConfigs,
+    description: `Learn Malagasy with bilingual picture books. Experience Malagasy culture through stories in Malagasy and English. Made for families.`,
+  },
+  oromo: {
+    ...oromoConfigs,
+    description: `Learn Oromo with bilingual picture books. Experience Ethiopian culture through stories in Oromo and English. Made for families.`,
   },
 };
