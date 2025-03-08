@@ -44,6 +44,11 @@ export const LANGUAGES = [
     slug: "hausa",
     comingSoon: false,
   },
+  {
+    name: "Igbo",
+    slug: "igbo",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [
