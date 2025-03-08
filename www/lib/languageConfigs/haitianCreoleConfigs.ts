@@ -9,8 +9,8 @@ export const haitianCreoleConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          "Learn first 100 words in haitian-creole with this book for ages 0-6.",
-        long: "This first 100 words book helps children learn haitian-creole through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning haitian-creole fun and accessible.",
+          "Learn first 100 words in Haitian Creole with this book for ages 0-6.",
+        long: "This first 100 words book helps children learn Haitian Creole through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning Haitian Creole fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Haitian Creole with colorful pictures and simple words they can see and say.",
@@ -154,8 +154,8 @@ export const haitianCreoleConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn action verbs in haitian-creole with this book for ages 0-6.",
-        long: "This action verbs book helps children learn haitian-creole through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning haitian-creole fun and accessible.",
+          "Learn action verbs in Haitian Creole with this book for ages 0-6.",
+        long: "This action verbs book helps children learn Haitian Creole through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning Haitian Creole fun and accessible.",
       },
       challenges: [
         "Hard to Understand Action Verbs: Our book uses pictures and stories to make learning action verbs easy and fun.",
@@ -225,8 +225,8 @@ export const haitianCreoleConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn animals in haitian-creole with this book for ages 0-6.",
-        long: "This animals book helps children learn haitian-creole through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning haitian-creole fun and accessible.",
+        short: "Learn animals in Haitian Creole with this book for ages 0-6.",
+        long: "This animals book helps children learn Haitian Creole through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning Haitian Creole fun and accessible.",
       },
       challenges: [
         "Learning New Words is Boring: Our book uses animals to teach Haitian Creole words with fun stories and colorful images.",
@@ -359,8 +359,8 @@ export const haitianCreoleConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Learn animals coloring book in haitian-creole with this book for ages 4-8.",
-        long: "This animals coloring book book helps children learn haitian-creole through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning haitian-creole fun and accessible.",
+          "Learn animals coloring book in Haitian Creole with this book for ages 4-8.",
+        long: "This animals coloring book book helps children learn Haitian Creole through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning Haitian Creole fun and accessible.",
       },
       challenges: [
         "Bored with Learning: Our book makes learning Haitian Creole exciting with fun animal pictures to color.",
@@ -427,8 +427,8 @@ export const haitianCreoleConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Learn fruits and vegetables coloring book in haitian-creole with this book for ages 4-8.",
-        long: "This fruits and vegetables coloring book book helps children learn haitian-creole through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning haitian-creole fun and accessible.",
+          "Learn fruits and vegetables coloring book in Haitian Creole with this book for ages 4-8.",
+        long: "This fruits and vegetables coloring book book helps children learn Haitian Creole through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning Haitian Creole fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book teaches Haitian Creole with fun fruit and veggie names, making learning easy.",
