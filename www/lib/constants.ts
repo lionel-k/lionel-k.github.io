@@ -39,6 +39,11 @@ export const LANGUAGES = [
     slug: "haitian-creole",
     comingSoon: false,
   },
+  {
+    name: "Hausa",
+    slug: "hausa",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [
