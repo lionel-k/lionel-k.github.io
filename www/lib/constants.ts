@@ -54,6 +54,16 @@ export const LANGUAGES = [
     slug: "kikuyu",
     comingSoon: false,
   },
+  {
+    name: "Krio",
+    slug: "krio",
+    comingSoon: false,
+  },
+  {
+    name: "Lingala",
+    slug: "lingala",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [
