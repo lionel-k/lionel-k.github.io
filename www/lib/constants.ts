@@ -94,6 +94,21 @@ export const LANGUAGES = [
     slug: "somali",
     comingSoon: false,
   },
+  {
+    name: "Swahili",
+    slug: "swahili",
+    comingSoon: false,
+  },
+  {
+    name: "Tigrinya",
+    slug: "tigrinya",
+    comingSoon: false,
+  },
+  {
+    name: "Twi",
+    slug: "twi",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [
