@@ -8,6 +8,8 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { ArrowRight } from "lucide-react";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
+const BILINGUAL_WITH_FRENCH = ["kirundi", "kinyarwanda"];
+
 type Props = {
   language: string;
 };
@@ -63,7 +65,10 @@ export default function LanguagePageClient({ language }: Props) {
               Featured {languageData.name} Books
             </h2>
             <p className="text-xl text-gray-600">
-              Bilingual {languageData.name} &amp; English or French
+              Bilingual {languageData.name} &amp;{" "}
+              {BILINGUAL_WITH_FRENCH.includes(language.toLowerCase())
+                ? "English or French"
+                : "English"}
             </p>
           </div>
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
