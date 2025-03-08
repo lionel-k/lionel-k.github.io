@@ -49,6 +49,11 @@ export const LANGUAGES = [
     slug: "igbo",
     comingSoon: false,
   },
+  {
+    name: "Kikuyu",
+    slug: "kikuyu",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [

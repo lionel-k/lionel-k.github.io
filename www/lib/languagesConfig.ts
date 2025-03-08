@@ -7,6 +7,7 @@ import { eweConfigs } from "./languageConfigs/eweConfigs";
 import { haitianCreoleConfigs } from "./languageConfigs/haitianCreoleConfigs";
 import { hausaConfigs } from "./languageConfigs/hausaConfigs";
 import { igboConfigs } from "./languageConfigs/igboConfigs";
+import { kikuyuConfigs } from "./languageConfigs/kikuyuConfigs";
 
 export type LanguageConfig = {
   name: string;
@@ -51,5 +52,9 @@ export const languagesConfig: Record<string, LanguageConfig> = {
   igbo: {
     ...igboConfigs,
     description: `Learn Igbo with bilingual picture books. Experience Nigerian culture through stories in Igbo and English. Made for families.`,
+  },
+  kikuyu: {
+    ...kikuyuConfigs,
+    description: `Learn Kikuyu with bilingual picture books. Experience Kenyan culture through stories in Kikuyu and English. Made for families.`,
   },
 };
