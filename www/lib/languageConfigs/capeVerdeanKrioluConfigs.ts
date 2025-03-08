@@ -527,7 +527,7 @@ export const capeVerdeanKrioluConfigs = {
     {
       question: "How can I get additional help or suggest new books?",
       answer:
-        "We love hearing from our customers! If you have questions or ideas for new books, feel free to reach out through our contact page on Amazon. We're here to support your family's language journey every step of the way.",
+        "We love hearing from our customers! If you have questions or ideas for new books, feel free to reach out to our email address: hello@lingu.africa. We're here to support your family's language journey every step of the way.",
     },
   ],
 };
