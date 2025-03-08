@@ -13,6 +13,9 @@ import { lingalaConfigs } from "./languageConfigs/lingalaConfigs";
 import { lugandaConfigs } from "./languageConfigs/lugandaConfigs";
 import { malagasyConfigs } from "./languageConfigs/malagasyConfigs";
 import { oromoConfigs } from "./languageConfigs/oromoConfigs";
+import { pidginConfigs } from "./languageConfigs/pidginConfigs";
+import { shonaConfigs } from "./languageConfigs/shonaConfigs";
+import { somaliConfigs } from "./languageConfigs/somaliConfigs";
 
 export type LanguageConfig = {
   name: string;
@@ -81,5 +84,17 @@ export const languagesConfig: Record<string, LanguageConfig> = {
   oromo: {
     ...oromoConfigs,
     description: `Learn Oromo with bilingual picture books. Experience Ethiopian culture through stories in Oromo and English. Made for families.`,
+  },
+  pidgin: {
+    ...pidginConfigs,
+    description: `Learn Pidgin with bilingual picture books. Experience Nigerian culture through stories in Pidgin and English. Made for families.`,
+  },
+  shona: {
+    ...shonaConfigs,
+    description: `Learn Shona with bilingual picture books. Experience Zimbabwean culture through stories in Shona and English. Made for families.`,
+  },
+  somali: {
+    ...somaliConfigs,
+    description: `Learn Somali with bilingual picture books. Experience Somali culture through stories in Somali and English. Made for families.`,
   },
 };

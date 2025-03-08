@@ -79,6 +79,21 @@ export const LANGUAGES = [
     slug: "oromo",
     comingSoon: false,
   },
+  {
+    name: "Pidgin",
+    slug: "pidgin",
+    comingSoon: false,
+  },
+  {
+    name: "Shona",
+    slug: "shona",
+    comingSoon: false,
+  },
+  {
+    name: "Somali",
+    slug: "somali",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [
