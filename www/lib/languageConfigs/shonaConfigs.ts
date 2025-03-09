@@ -421,7 +421,7 @@ export const shonaConfigs = {
       description: {
         short:
           "Explore Shona fruits and veggies in this fun coloring book for ages 4-8. Ignite creativity and learn today!",
-        long: "Uri kutsvaga nzira inonakidza yekudzidzisa mwana wako Shona? Bhuku reFruits And Vegetables Coloring Book rinoita kuti zvive nyore uye zvinofadza! Nemifananidzo yakajeka uye inonakidza, mwana wako achada kudzidza mazwi matsva. Peji rega rega rakagadzirirwa kuita kuti kudzidza kunakidze, richivaka unyanzvi hwemitauro hunogara hupenyu hwese.",
+        long: "Looking for a fun way to teach your child Shona? This Fruits And Vegetables Coloring Book makes it easy and fun! With bright and fun illustrations, your child will love learning new words. Each page is designed to make learning fun, building language skills that last a lifetime.",
       },
       challenges: [
         "Hard to Learn New Words: This book helps kids learn Shona words with fun fruit and veggie pictures.",
