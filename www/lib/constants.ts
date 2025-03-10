@@ -109,6 +109,31 @@ export const LANGUAGES = [
     slug: "twi",
     comingSoon: false,
   },
+  {
+    name: "Wolof",
+    slug: "wolof",
+    comingSoon: false,
+  },
+  {
+    name: "Xhosa",
+    slug: "xhosa",
+    comingSoon: false,
+  },
+  {
+    name: "Yemba",
+    slug: "yemba",
+    comingSoon: false,
+  },
+  {
+    name: "Yoruba",
+    slug: "yoruba",
+    comingSoon: false,
+  },
+  {
+    name: "Zulu",
+    slug: "zulu",
+    comingSoon: false,
+  },
 ];
 
 export const OTHER_LANGUAGES = [

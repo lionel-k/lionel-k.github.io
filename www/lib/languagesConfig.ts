@@ -19,6 +19,11 @@ import { somaliConfigs } from "./languageConfigs/somaliConfigs";
 import { swahiliConfigs } from "./languageConfigs/swahiliConfigs";
 import { tigrinyaConfigs } from "./languageConfigs/tigrinyaConfigs";
 import { twiConfigs } from "./languageConfigs/twiConfigs";
+import { wolofConfigs } from "./languageConfigs/wolofConfigs";
+import { xhosaConfigs } from "./languageConfigs/xhosaConfigs";
+import { yembaConfigs } from "./languageConfigs/yembaConfigs";
+import { yorubaConfigs } from "./languageConfigs/yorubaConfigs";
+import { zuluConfigs } from "./languageConfigs/zuluConfigs";
 
 export type LanguageConfig = {
   name: string;
@@ -111,5 +116,25 @@ export const languagesConfig: Record<string, LanguageConfig> = {
   twi: {
     ...twiConfigs,
     description: `Learn Twi with bilingual picture books. Experience Ghanaian culture through stories in Twi and English. Made for families.`,
+  },
+  wolof: {
+    ...wolofConfigs,
+    description: `Learn Wolof with bilingual picture books. Experience Senegalese culture through stories in Wolof and English. Made for families.`,
+  },
+  xhosa: {
+    ...xhosaConfigs,
+    description: `Learn Xhosa with bilingual picture books. Experience South African culture through stories in Xhosa and English. Made for families.`,
+  },
+  yemba: {
+    ...yembaConfigs,
+    description: `Learn Yemba with bilingual picture books. Experience Cameroonian culture through stories in Yemba and English. Made for families.`,
+  },
+  yoruba: {
+    ...yorubaConfigs,
+    description: `Learn Yoruba with bilingual picture books. Experience Nigerian culture through stories in Yoruba and English. Made for families.`,
+  },
+  zulu: {
+    ...zuluConfigs,
+    description: `Learn Zulu with bilingual picture books. Experience South African culture through stories in Zulu and English. Made for families.`,
   },
 };
