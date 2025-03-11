@@ -2,14 +2,27 @@
 
 import React, { useState, useEffect } from "react";
 import { ArrowRight, X } from "lucide-react";
+import { MixpanelTracker } from "@/lib/mixpanel";
 
 interface AmazonLinkProps {
   href: string;
   className?: string;
   children?: React.ReactNode;
+  bookTitle?: string;
+  bookLanguage?: string;
+  bookPrice?: string;
+  location?: string;
 }
 
-export function AmazonLink({ href, className, children }: AmazonLinkProps) {
+export function AmazonLink({
+  href,
+  className,
+  children,
+  bookTitle,
+  bookLanguage,
+  bookPrice,
+  location = "unknown",
+}: AmazonLinkProps) {
   const [isInstagram, setIsInstagram] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
   const [bannerMessage, setBannerMessage] = useState("");
@@ -20,6 +33,16 @@ export function AmazonLink({ href, className, children }: AmazonLinkProps) {
   }, []);
 
   const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+    // Track the click in Mixpanel
+    if (bookTitle && bookLanguage) {
+      MixpanelTracker.trackBookClick({
+        title: bookTitle,
+        language: bookLanguage,
+        price: bookPrice,
+        location,
+      });
+    }
+
     if (isInstagram) {
       // Prevent the normal link from opening inside IG's WebView
       e.preventDefault();

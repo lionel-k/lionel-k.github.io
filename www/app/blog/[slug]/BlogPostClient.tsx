@@ -4,8 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { BlogPost } from "@/lib/types/blog";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
+import { MixpanelTracker } from "@/lib/mixpanel";
 
 interface Props {
   post: BlogPost;
@@ -13,6 +14,17 @@ interface Props {
 
 export default function BlogPostClient({ post }: Props) {
   const [isTableOfContentsOpen, setIsTableOfContentsOpen] = useState(false);
+
+  useEffect(() => {
+    // Track blog post view
+    MixpanelTracker.trackBlogView({
+      title: post.title,
+      slug: post.slug,
+      language: "en", // Default to English since language is not in the type
+      category: post.category,
+      readTime: post.readingTime,
+    });
+  }, [post]);
 
   return (
     <article className="min-h-screen bg-white scroll-pt-8">

@@ -26,7 +26,7 @@ type Book = {
   price: string;
 };
 
-function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
+function PurchaseCTA({ book, language }: { book: Book; language: string }) {
   return (
     <section className="relative py-8 bg-gradient-to-r from-[#DAA520] to-[#B8860B] text-white">
       <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 text-center">
@@ -34,8 +34,12 @@ function PurchaseCTA({ amazonUrl }: { amazonUrl: string }) {
           Start Your Child's Bilingual Journey Today!
         </h3>
         <AmazonLink
-          href={amazonUrl}
+          href={book.amazonUrl}
           className="inline-flex items-center justify-center rounded-full bg-gray-800 px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-gray-700 transition-all duration-300 hover:scale-105"
+          bookTitle={book.title}
+          bookLanguage={language}
+          bookPrice={book.price}
+          location="book_page"
         >
           Get Your Paperback Now
           <ArrowRight className="ml-2 h-5 w-5" />
@@ -119,7 +123,7 @@ export default function BookPageClient({ language, slug }: Props) {
         </div>
       </section>
       {/* CTA Section - Gold Gradient */}
-      <PurchaseCTA amazonUrl={book.amazonUrl} />
+      <PurchaseCTA book={book} language={language} />
       {/* Look Inside the Book Section */}
       <section className="py-20 bg-gradient-to-b from-[#F5F2EC] to-[#FAF8F5]">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -142,7 +146,7 @@ export default function BookPageClient({ language, slug }: Props) {
           </div>
         </div>
       </section>
-      <PurchaseCTA amazonUrl={book.amazonUrl} />
+      <PurchaseCTA book={book} language={language} />
       {/* Challenges Section - Light Gradient */}
       <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -188,7 +192,7 @@ export default function BookPageClient({ language, slug }: Props) {
         </div>
       </section>
       {/* CTA Section - Gold Gradient */}
-      <PurchaseCTA amazonUrl={book.amazonUrl} />
+      <PurchaseCTA book={book} language={language} />
       {/* Why Choose Section - White to Light Gradient */}
       <section className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -252,7 +256,7 @@ export default function BookPageClient({ language, slug }: Props) {
       )}
 
       {/* CTA Section - Gold Gradient */}
-      <PurchaseCTA amazonUrl={book.amazonUrl} />
+      <PurchaseCTA book={book} language={language} />
       {/* FAQ Section - Light Gradient */}
       <section className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -265,7 +269,7 @@ export default function BookPageClient({ language, slug }: Props) {
         </div>
       </section>
       {/* Final CTA Section */}
-      <PurchaseCTA amazonUrl={book.amazonUrl} />
+      <PurchaseCTA book={book} language={language} />
       {/* More Books Section */}
       <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">

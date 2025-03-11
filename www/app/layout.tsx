@@ -3,6 +3,7 @@ import GoogleAnalyticsWrapper from "./GoogleAnalyticsWrapper";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import { Analytics } from "@vercel/analytics/react";
+import { MixpanelProvider } from "@/components/MixpanelProvider";
 
 import type { Metadata } from "next";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
@@ -98,14 +99,18 @@ export default function RootLayout({
         className={`${inter.className} flex min-h-full flex-col`}
         suppressHydrationWarning
       >
-        <Providers>
-          <GoogleAnalyticsWrapper>
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </GoogleAnalyticsWrapper>
-        </Providers>
-        <Analytics />
+        <GoogleAnalyticsWrapper>
+          <Providers>
+            <MixpanelProvider>
+              <div className="flex min-h-screen flex-col">
+                <Navbar />
+                <main className="flex-1">{children}</main>
+                <Footer />
+              </div>
+              <Analytics />
+            </MixpanelProvider>
+          </Providers>
+        </GoogleAnalyticsWrapper>
       </body>
     </html>
   );
