@@ -94,6 +94,11 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="1fe4bb5a-e199-4101-a2cd-f643d7c4130b"
+        />
       </head>
       <body
         className={`${inter.className} flex min-h-full flex-col`}
