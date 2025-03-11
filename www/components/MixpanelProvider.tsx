@@ -2,10 +2,15 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { MixpanelTracker } from "../lib/mixpanel";
+import { MixpanelTracker, initMixpanel } from "../lib/mixpanel";
 
 export function MixpanelProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
+
+  useEffect(() => {
+    // Initialize Mixpanel
+    initMixpanel();
+  }, []);
 
   useEffect(() => {
     // Track page view whenever the pathname changes
