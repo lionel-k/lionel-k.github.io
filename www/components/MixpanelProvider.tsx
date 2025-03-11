@@ -8,14 +8,28 @@ export function MixpanelProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
   useEffect(() => {
-    // Initialize Mixpanel
-    initMixpanel();
+    try {
+      console.log("MixpanelProvider: Component mounted");
+      console.log("MixpanelProvider: Current pathname:", pathname);
+      console.log("MixpanelProvider: Initializing Mixpanel");
+      initMixpanel();
+    } catch (error) {
+      console.error("MixpanelProvider: Error in initialization:", error);
+    }
   }, []);
 
   useEffect(() => {
-    // Track page view whenever the pathname changes
-    const language = pathname.split("/")[1] || "en"; // Extract language from URL if present
-    MixpanelTracker.trackPageView(pathname, language);
+    try {
+      const language = pathname.split("/")[1] || "en";
+      console.log("MixpanelProvider: Tracking page view", {
+        pathname,
+        language,
+      });
+
+      MixpanelTracker.trackPageView(pathname, language);
+    } catch (error) {
+      console.error("MixpanelProvider: Error tracking page view:", error);
+    }
   }, [pathname]);
 
   return <>{children}</>;

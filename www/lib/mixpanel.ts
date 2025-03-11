@@ -3,46 +3,79 @@ import mixpanel from "mixpanel-browser";
 const MIXPANEL_TOKEN = process.env.NEXT_PUBLIC_MIXPANEL_TOKEN;
 
 export const initMixpanel = () => {
+  console.log("Mixpanel initialization started");
+  console.log("Token available:", !!MIXPANEL_TOKEN);
+
   if (!MIXPANEL_TOKEN) {
     console.warn("Mixpanel token is missing! Check your .env file.");
     return;
   }
 
-  mixpanel.init(MIXPANEL_TOKEN, {
-    debug: process.env.NODE_ENV !== "production",
-    track_pageview: true,
-    persistence: "localStorage",
-    api_host: "/mp", // Use proxy to avoid ad blockers
-  });
+  try {
+    mixpanel.init(MIXPANEL_TOKEN, {
+      debug: true, // Enable debug mode to see what's happening
+      track_pageview: true,
+      persistence: "localStorage",
+    });
+    console.log("Mixpanel initialized successfully");
+
+    // Test track an event
+    mixpanel.track("Test Event", {
+      test: true,
+      timestamp: new Date().toISOString(),
+    });
+  } catch (error) {
+    console.error("Error initializing Mixpanel:", error);
+  }
 };
 
 // Utility wrapper for all Mixpanel functions
 export const MixpanelTracker = {
   identify: (id: string) => {
-    mixpanel.identify(id);
+    try {
+      console.log("Attempting to identify user:", id);
+      mixpanel.identify(id);
+      console.log("Successfully identified user");
+    } catch (error) {
+      console.error("Error in Mixpanel identify:", error);
+    }
   },
 
   track: (eventName: string, properties?: Record<string, any>) => {
-    mixpanel.track(eventName, {
-      ...properties,
-      timestamp: new Date().toISOString(),
-    });
+    try {
+      const eventData = {
+        ...properties,
+        timestamp: new Date().toISOString(),
+      };
+      console.log(`Attempting to track event "${eventName}"`, eventData);
+      mixpanel.track(eventName, eventData);
+      console.log("Successfully tracked event");
+    } catch (error) {
+      console.error(`Error tracking event "${eventName}":`, error);
+    }
   },
 
   trackPageView: (pageName: string, language?: string) => {
-    mixpanel.track("Page View", {
-      page_name: pageName,
-      url_path: window.location.pathname,
-      referrer: document.referrer,
-      language,
-      device_info: {
-        screen_width: window.screen.width,
-        screen_height: window.screen.height,
-        user_agent: navigator.userAgent,
-        platform: navigator.platform,
-      },
-      user_language: navigator.language,
-    });
+    try {
+      const pageViewData = {
+        page_name: pageName,
+        url_path: window.location.pathname,
+        referrer: document.referrer,
+        language,
+        device_info: {
+          screen_width: window.screen.width,
+          screen_height: window.screen.height,
+          user_agent: navigator.userAgent,
+          platform: navigator.platform,
+        },
+        user_language: navigator.language,
+      };
+      console.log("Attempting to track page view:", pageViewData);
+      mixpanel.track("Page View", pageViewData);
+      console.log("Successfully tracked page view");
+    } catch (error) {
+      console.error("Error tracking page view:", error);
+    }
   },
 
   trackBookClick: (bookData: {
