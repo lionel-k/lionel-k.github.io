@@ -15,6 +15,7 @@
   "dependencies": {
     "@next/swc-wasm-nodejs": "15.1.6",
     "@tailwindcss/typography": "^0.5.16",
+    "@types/mixpanel-browser": "^2.51.0",
     "@types/node": "20.6.2",
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
@@ -26,6 +27,7 @@
     "eslint-config-next": "15.1.6",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.475.0",
+    "mixpanel-browser": "^2.61.0",
     "next": "15.1.6",
     "next-mdx-remote": "^5.0.0",
     "next-sitemap": "^4.2.3",

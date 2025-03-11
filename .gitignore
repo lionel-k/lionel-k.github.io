@@ -47,3 +47,5 @@ next-env.d.ts
 tools/.env
 tools/package-lock.json
 tools/node_modules
+
+www/.env.local
