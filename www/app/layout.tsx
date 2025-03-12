@@ -96,9 +96,10 @@ export default function RootLayout({
         />
         <script
           defer
-          src="https://cloud.umami.is/script.js"
-          data-website-id="1fe4bb5a-e199-4101-a2cd-f643d7c4130b"
-        />
+          src="https://analytics.lingu.africa/script.js"
+          data-website-id="36dfd617-5a98-443b-90d0-9438ca6c5be0"
+          data-host-url="https://www.lingu.africa"
+        ></script>
       </head>
       <body
         className={`${inter.className} flex min-h-full flex-col`}
