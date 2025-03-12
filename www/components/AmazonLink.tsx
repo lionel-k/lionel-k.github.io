@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { ArrowRight, X } from "lucide-react";
-import { MixpanelTracker } from "@/lib/mixpanel";
 
 interface AmazonLinkProps {
   href: string;
@@ -33,16 +32,6 @@ export function AmazonLink({
   }, []);
 
   const handleClick = async (e: React.MouseEvent<HTMLAnchorElement>) => {
-    // Track the click in Mixpanel
-    if (bookTitle && bookLanguage) {
-      MixpanelTracker.trackBookClick({
-        title: bookTitle,
-        language: bookLanguage,
-        price: bookPrice,
-        location,
-      });
-    }
-
     if (isInstagram) {
       // Prevent the normal link from opening inside IG's WebView
       e.preventDefault();
