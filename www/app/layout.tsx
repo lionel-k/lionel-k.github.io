@@ -96,7 +96,7 @@ export default function RootLayout({
           defer
           src="https://analytics.lingu.africa/script.js"
           data-website-id="36dfd617-5a98-443b-90d0-9438ca6c5be0"
-          data-host-url="https://www.lingu.africa"
+          data-host-url="https://analytics.lingu.africa"
         ></script>
       </head>
       <body
