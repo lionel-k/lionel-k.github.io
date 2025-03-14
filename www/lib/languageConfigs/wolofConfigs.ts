@@ -8,7 +8,8 @@ export const wolofConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in wolof with this book for ages 0-6.",
+        short:
+          "Learn first 100 words in wolof with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This first 100 words book helps children learn wolof through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning wolof fun and accessible.",
       },
       challenges: [
@@ -75,7 +76,7 @@ export const wolofConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn fruits and vegetables in wolof with this book for ages 0-6.",
+          "Learn fruits and vegetables in wolof with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This fruits and vegetables book helps children learn wolof through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning wolof fun and accessible.",
       },
       challenges: [

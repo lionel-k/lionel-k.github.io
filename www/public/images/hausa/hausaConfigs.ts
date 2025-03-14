@@ -10,8 +10,7 @@ export const hausaConfigs = {
       description: {
         short:
           "Discover Hausa First 100 Words for ages 0-6! Engage young minds with vibrant visuals. Start learning today!",
-        long:
-          "Searching for a fun way to teach your child Hausa? This First 100 Words book offers an exciting language adventure! Filled with vibrant illustrations and engaging activities, kids will delight in discovering new words. Each page is crafted to make learning enjoyable, helping your child build essential language skills in Hausa that will last a lifetime.",
+        long: "Searching for a fun way to teach your child Hausa? This First 100 Words book offers an exciting language adventure! Filled with vibrant illustrations and engaging activities, kids will delight in discovering new words. Each page is crafted to make learning enjoyable, helping your child build essential language skills in Hausa that will last a lifetime.",
       },
       challenges: [
         "Limited Language Resources: This book gives kids a fun way to learn Hausa with colorful pictures and easy words.",
@@ -52,7 +51,8 @@ export const hausaConfigs = {
             "This book uses bright pictures and simple words to make learning fun. It's a great tool for kids to start learning Hausa early.",
         },
         {
-          question: "Is it suitable for families living outside Hausa-speaking countries?",
+          question:
+            "Is it suitable for families living outside Hausa-speaking countries?",
           answer:
             "Yes, it's great for families anywhere in the world. It helps kids connect with Hausa culture and language easily.",
         },
@@ -80,9 +80,9 @@ export const hausaConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in hausa with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn hausa through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning hausa fun and accessible.",
+        short:
+          "Learn fruits and vegetables in hausa with this book for ages 0-6.",
+        long: "This fruits and vegetables book helps children learn hausa through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning hausa fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book introduces fruits and vegetables in Hausa with clear pictures, making learning easy and fun.",
@@ -133,7 +133,8 @@ export const hausaConfigs = {
             "This book uses bright images to make learning fun. It's designed to engage children and teach them about fruits and vegetables in Hausa.",
         },
         {
-          question: "Is this book suitable for families outside Hausa-speaking countries?",
+          question:
+            "Is this book suitable for families outside Hausa-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps kids learn a new language and understand different cultures.",
         },
@@ -153,8 +154,7 @@ export const hausaConfigs = {
       description: {
         short:
           "Discover Hausa Action Verbs with your 0-6 year olds! Engage young minds in dynamic learning today!",
-        long:
-          "Want to make learning Hausa fun for your child? This Action Verbs book is the perfect choice! With vibrant illustrations and interactive content, your child will enjoy discovering new verbs. Each page is crafted to engage young minds while enhancing their Hausa vocabulary and language skills. A joyful journey awaits, turning learning into an exciting adventure for your little one!",
+        long: "Want to make learning Hausa fun for your child? This Action Verbs book is the perfect choice! With vibrant illustrations and interactive content, your child will enjoy discovering new verbs. Each page is crafted to engage young minds while enhancing their Hausa vocabulary and language skills. A joyful journey awaits, turning learning into an exciting adventure for your little one!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful pictures to make learning Hausa action verbs exciting and fun.",
@@ -200,7 +200,8 @@ export const hausaConfigs = {
             "No, you don't need to speak Hausa. The book has both Hausa and English words, so everyone can follow along.",
         },
         {
-          question: "Is this book good for families outside Hausa-speaking countries?",
+          question:
+            "Is this book good for families outside Hausa-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps kids learn a new language no matter where you live.",
         },
@@ -219,8 +220,7 @@ export const hausaConfigs = {
       price: "$ 11.99",
       description: {
         short: "Learn animals in hausa with this book for ages 0-6.",
-        long:
-          "This animals book helps children learn hausa through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning hausa fun and accessible.",
+        long: "This animals book helps children learn hausa through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning hausa fun and accessible.",
       },
       challenges: [
         "Hard to Teach New Words: Our book helps kids learn Hausa with animal stories they enjoy.",
@@ -284,9 +284,9 @@ export const hausaConfigs = {
       pages: "58",
       price: "$ 11.99",
       description: {
-        short: "Learn bilingual coloring book in hausa with this book for ages 3-6.",
-        long:
-          "This bilingual coloring book book helps children learn hausa through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning hausa fun and accessible.",
+        short:
+          "Learn bilingual coloring book in hausa with this bilingual book for ages 3-6. Start your child's language journey today!",
+        long: "This bilingual coloring book book helps children learn hausa through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning hausa fun and accessible.",
       },
       challenges: [
         "Bored with Language Books: This book adds color and fun, making learning Hausa exciting for kids.",
@@ -313,7 +313,8 @@ export const hausaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $11.99. It's a great value for a fun and educational experience.",
+          answer:
+            "The book costs $11.99. It's a great value for a fun and educational experience.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -336,7 +337,8 @@ export const hausaConfigs = {
             "This book is special because it teaches Hausa through fun coloring activities. It's great for learning and playtime.",
         },
         {
-          question: "Is the book suitable for families living outside Hausa-speaking countries?",
+          question:
+            "Is the book suitable for families living outside Hausa-speaking countries?",
           answer:
             "Yes, it is! This book helps children learn about a new language and culture no matter where they live.",
         },
@@ -356,8 +358,7 @@ export const hausaConfigs = {
       description: {
         short:
           "Discover our unique Hausa Animals Coloring Book for kids aged 4-8! Spark creativity and learning today!",
-        long:
-          "\"Ko kuna neman hanya mai dadi don koya wa yaranku Hausa? Wannan Littafin Zana Dabbobi yana saukaka karatu! Tare da zanen dabbobi masu ban sha'awa, yaranku za su koyi sababbin kalmomi cikin nishadi. Kowanne shafi yana taimakawa wajen gina kwarewar harshe da za su tuna har abada. Yana da kyau ga yara masu sha'awar dabbobi da koyon Hausa cikin jin dadi.\"",
+        long: "\"Ko kuna neman hanya mai dadi don koya wa yaranku Hausa? Wannan Littafin Zana Dabbobi yana saukaka karatu! Tare da zanen dabbobi masu ban sha'awa, yaranku za su koyi sababbin kalmomi cikin nishadi. Kowanne shafi yana taimakawa wajen gina kwarewar harshe da za su tuna har abada. Yana da kyau ga yara masu sha'awar dabbobi da koyon Hausa cikin jin dadi.\"",
       },
       challenges: [
         "Kids Get Bored Fast: Our book is full of fun animal pictures to color, making learning Hausa exciting every day.",
@@ -384,7 +385,8 @@ export const hausaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's an affordable way to start learning a new language.",
+          answer:
+            "The book costs $9.99. It's an affordable way to start learning a new language.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -402,7 +404,8 @@ export const hausaConfigs = {
             "This book is special because it combines coloring with learning. Kids can have fun while picking up a new language.",
         },
         {
-          question: "Is this book suitable for families outside Hausa-speaking countries?",
+          question:
+            "Is this book suitable for families outside Hausa-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. The English translations make it easy to use, no matter where you live.",
         },
@@ -414,15 +417,16 @@ export const hausaConfigs = {
       ],
     },
     {
-      title: "Hausa - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Hausa - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-hausa",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in hausa with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn hausa through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning hausa fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in hausa with this book for ages 4-8.",
+        long: "This fruits and vegetables coloring book book helps children learn hausa through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning hausa fun and accessible.",
       },
       challenges: [
         "Hard to Get Kids Interested in Learning: This book uses colorful fruits and vegetables to make learning Hausa fun and exciting.",
@@ -449,7 +453,8 @@ export const hausaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for an engaging learning experience.",
+          answer:
+            "The book costs $9.99. It's a great value for an engaging learning experience.",
         },
         {
           question: "Do I need to speak Hausa to use the book?",
@@ -457,7 +462,8 @@ export const hausaConfigs = {
             "No, you don't need to speak Hausa to use the book. It's designed to help beginners learn through pictures and simple words.",
         },
         {
-          question: "Is this book suitable for families living outside Hausa-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Hausa-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. The book helps children learn about Hausa language and culture, no matter where they live.",
         },

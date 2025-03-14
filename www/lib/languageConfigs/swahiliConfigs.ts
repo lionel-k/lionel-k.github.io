@@ -8,7 +8,8 @@ export const swahiliConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in swahili with this book for ages 0-6.",
+        short:
+          "Learn first 100 words in swahili with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This first 100 words book helps children learn swahili through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning swahili fun and accessible.",
       },
       challenges: [
@@ -146,7 +147,8 @@ export const swahiliConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn action verbs in swahili with this book for ages 0-6.",
+        short:
+          "Learn action verbs in swahili with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This action verbs book helps children learn swahili through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning swahili fun and accessible.",
       },
       challenges: [
@@ -217,7 +219,8 @@ export const swahiliConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn animals in swahili with this book for ages 0-6.",
+        short:
+          "Learn animals in swahili with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This animals book helps children learn swahili through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning swahili fun and accessible.",
       },
       challenges: [

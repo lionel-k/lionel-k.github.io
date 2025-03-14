@@ -8,7 +8,8 @@ export const pidginConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in pidgin with this book for ages 0-6.",
+        short:
+          "Learn first 100 words in pidgin with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This first 100 words book helps children learn pidgin through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning pidgin fun and accessible.",
       },
       challenges: [

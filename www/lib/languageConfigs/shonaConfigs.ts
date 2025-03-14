@@ -75,7 +75,7 @@ export const shonaConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn fruits and vegetables in shona with this book for ages 0-6.",
+          "Learn fruits and vegetables in shona with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This fruits and vegetables book helps children learn shona through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning shona fun and accessible.",
       },
       challenges: [

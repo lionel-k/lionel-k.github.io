@@ -10,8 +10,7 @@ export const shonaConfigs = {
       description: {
         short:
           "Discover Shona First 100 Words for ages 0-6. Engage young minds with vibrant visuals and start their language journey today!",
-        long:
-          "Want to introduce your child to Shona in a fun way? This First 100 Words book is perfect for young learners! Packed with vibrant pictures and easy-to-understand words, it makes learning Shona exciting and memorable. Each page encourages language development while sparking curiosity and joy. Help your child discover the beauty of Shona with this engaging learning tool!",
+        long: "Want to introduce your child to Shona in a fun way? This First 100 Words book is perfect for young learners! Packed with vibrant pictures and easy-to-understand words, it makes learning Shona exciting and memorable. Each page encourages language development while sparking curiosity and joy. Help your child discover the beauty of Shona with this engaging learning tool!",
       },
       challenges: [
         "Limited Shona Resources: This book offers colorful pictures and simple words to make learning Shona easy and fun.",
@@ -75,9 +74,9 @@ export const shonaConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in shona with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn shona through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning shona fun and accessible.",
+        short:
+          "Learn fruits and vegetables in shona with this book for ages 0-6.",
+        long: "This fruits and vegetables book helps children learn shona through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning shona fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful fruits and vegetables to make learning Shona exciting.",
@@ -128,7 +127,8 @@ export const shonaConfigs = {
             "This book uniquely combines learning with fun through bright pictures and bilingual text. It's great for young minds eager to explore language.",
         },
         {
-          question: "Is this book suitable for families living outside Shona-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Shona-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. The bilingual format helps children learn Shona while understanding English explanations.",
         },
@@ -148,8 +148,7 @@ export const shonaConfigs = {
       description: {
         short:
           "Discover Shona Action Verbs! Perfect for kids aged 0-6 to learn and play. Dive into fun language adventures now!",
-        long:
-          "Want to make learning Shona exciting for your child? This Action Verbs book is the perfect choice! Filled with vibrant illustrations and simple words, it helps kids discover Shona action verbs in a fun way. Each page invites children to explore and understand everyday actions, building their language skills naturally. A delightful journey into the world of Shona awaits your little learner!",
+        long: "Want to make learning Shona exciting for your child? This Action Verbs book is the perfect choice! Filled with vibrant illustrations and simple words, it helps kids discover Shona action verbs in a fun way. Each page invites children to explore and understand everyday actions, building their language skills naturally. A delightful journey into the world of Shona awaits your little learner!",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses colorful pictures and fun activities to keep kids excited about learning Shona action verbs.",
@@ -190,7 +189,8 @@ export const shonaConfigs = {
             "This book combines colorful illustrations with action words in both Shona and English. It's a fun way for kids to learn through pictures and words.",
         },
         {
-          question: "Is the book suitable for families outside Shona-speaking countries?",
+          question:
+            "Is the book suitable for families outside Shona-speaking countries?",
           answer:
             "Yes, it is! The book is ideal for families anywhere who want to introduce their kids to Shona. It's a great way to learn a new language and culture.",
         },
@@ -215,8 +215,7 @@ export const shonaConfigs = {
       description: {
         short:
           "Discover Animals in Shona! Perfect for kids 0-6, this book invites families to explore and learn together now!",
-        long:
-          "Want a fun way for your child to learn Shona? This Animals book is the perfect choice! Filled with vibrant illustrations and simple Shona words, it makes learning enjoyable. Your child will discover the names of different animals while building language skills. Each page is crafted to inspire curiosity and help your child learn Shona in a playful and engaging way.",
+        long: "Want a fun way for your child to learn Shona? This Animals book is the perfect choice! Filled with vibrant illustrations and simple Shona words, it makes learning enjoyable. Your child will discover the names of different animals while building language skills. Each page is crafted to inspire curiosity and help your child learn Shona in a playful and engaging way.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns Shona learning into an exciting adventure with animal stories and fun facts.",
@@ -280,9 +279,9 @@ export const shonaConfigs = {
       pages: "58",
       price: "$ 11.99",
       description: {
-        short: "Learn bilingual coloring book in shona with this book for ages 3-6.",
-        long:
-          "This bilingual coloring book book helps children learn shona through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning shona fun and accessible.",
+        short:
+          "Learn bilingual coloring book in shona with this bilingual book for ages 3-6. Start your child's language journey today!",
+        long: "This bilingual coloring book book helps children learn shona through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning shona fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Quickly: Our book combines coloring with Shona, keeping learning fun and engaging.",
@@ -333,7 +332,8 @@ export const shonaConfigs = {
             "This book is special because it teaches Shona through fun coloring activities. Kids can learn while they play and be creative.",
         },
         {
-          question: "Is this book suitable for families living outside Shona-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Shona-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps kids learn Shona even if they don't hear it every day.",
         },
@@ -351,9 +351,9 @@ export const shonaConfigs = {
       pages: "83",
       price: "$ 9.99",
       description: {
-        short: "Learn animals coloring book in shona with this book for ages 4-8.",
-        long:
-          "This animals coloring book book helps children learn shona through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning shona fun and accessible.",
+        short:
+          "Learn animals coloring book in shona with this book for ages 4-8.",
+        long: "This animals coloring book book helps children learn shona through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning shona fun and accessible.",
       },
       challenges: [
         "Hard to Keep Kids Engaged: Our book uses animal pictures to make learning Shona exciting and fun.",
@@ -389,7 +389,8 @@ export const shonaConfigs = {
             "No, you don't need to speak Shona. The book includes English translations, making it easy for everyone to enjoy.",
         },
         {
-          question: "Is the book good for families living outside Shona-speaking countries?",
+          question:
+            "Is the book good for families living outside Shona-speaking countries?",
           answer:
             "Yes, it's great for families everywhere! It helps children learn about Shona culture and language, no matter where you live.",
         },
@@ -411,7 +412,8 @@ export const shonaConfigs = {
       ],
     },
     {
-      title: "Shona - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Shona - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-shona",
       age: "4-8",
       pages: "71",
@@ -419,8 +421,7 @@ export const shonaConfigs = {
       description: {
         short:
           "Explore Shona fruits and veggies in this fun coloring book for ages 4-8. Ignite creativity and learn today!",
-        long:
-          "Uri kutsvaga nzira inonakidza yekudzidzisa mwana wako Shona? Bhuku reFruits And Vegetables Coloring Book rinoita kuti zvive nyore uye zvinofadza! Nemifananidzo yakajeka uye inonakidza, mwana wako achada kudzidza mazwi matsva. Peji rega rega rakagadzirirwa kuita kuti kudzidza kunakidze, richivaka unyanzvi hwemitauro hunogara hupenyu hwese.",
+        long: "Uri kutsvaga nzira inonakidza yekudzidzisa mwana wako Shona? Bhuku reFruits And Vegetables Coloring Book rinoita kuti zvive nyore uye zvinofadza! Nemifananidzo yakajeka uye inonakidza, mwana wako achada kudzidza mazwi matsva. Peji rega rega rakagadzirirwa kuita kuti kudzidza kunakidze, richivaka unyanzvi hwemitauro hunogara hupenyu hwese.",
       },
       challenges: [
         "Hard to Learn New Words: This book helps kids learn Shona words with fun fruit and veggie pictures.",
@@ -471,7 +472,8 @@ export const shonaConfigs = {
             "This book combines coloring with language learning. It's a fun way for kids to explore new words.",
         },
         {
-          question: "Is this book suitable for families living outside Shona-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Shona-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. The English translations make it easy to understand and learn.",
         },

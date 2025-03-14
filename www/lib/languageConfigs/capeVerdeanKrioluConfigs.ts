@@ -78,7 +78,7 @@ export const capeVerdeanKrioluConfigs = {
       price: "$11.99",
       description: {
         short:
-          "Learn fruits and vegetables in cape-verdean-kriolu with this book for ages 0-6.",
+          "Learn fruits and vegetables in cape-verdean-kriolu with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This fruits and vegetables book helps children learn cape-verdean-kriolu through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning cape-verdean-kriolu fun and accessible.",
       },
       challenges: [
@@ -145,7 +145,7 @@ export const capeVerdeanKrioluConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn action verbs in cape-verdean-kriolu with this book for ages 0-6.",
+          "Learn action verbs in cape-verdean-kriolu with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This action verbs book helps children learn cape-verdean-kriolu through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning cape-verdean-kriolu fun and accessible.",
       },
       challenges: [

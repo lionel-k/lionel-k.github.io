@@ -8,9 +8,9 @@ export const wolofConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in wolof with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn wolof through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning wolof fun and accessible.",
+        short:
+          "Learn first 100 words in wolof with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This first 100 words book helps children learn wolof through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning wolof fun and accessible.",
       },
       challenges: [
         "Limited Language Resources: Our book offers a simple way to learn Wolof with colorful pictures and easy words.",
@@ -56,7 +56,8 @@ export const wolofConfigs = {
             "No, you don't need to speak Wolof. The book includes English translations, making it easy for everyone to use.",
         },
         {
-          question: "Is this book good for families outside Wolof-speaking countries?",
+          question:
+            "Is this book good for families outside Wolof-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn Wolof even if you live in a non-Wolof-speaking country.",
         },
@@ -74,9 +75,9 @@ export const wolofConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in wolof with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn wolof through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning wolof fun and accessible.",
+        short:
+          "Learn fruits and vegetables in wolof with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This fruits and vegetables book helps children learn wolof through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning wolof fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book teaches Wolof with fun fruit and veggie pictures that kids enjoy.",
@@ -127,7 +128,8 @@ export const wolofConfigs = {
             "This book uses bright images and simple words to make learning fun. It's great for introducing kids to a new language.",
         },
         {
-          question: "Is this book suitable for families outside Wolof-speaking countries?",
+          question:
+            "Is this book suitable for families outside Wolof-speaking countries?",
           answer:
             "Yes, it's perfect for anyone worldwide. The English translations make it easy to use anywhere.",
         },
@@ -147,8 +149,7 @@ export const wolofConfigs = {
       description: {
         short:
           "Explore Wolof Action Verbs with your little ones! Ideal for ages 0-6, this book makes learning lively and fun!",
-        long:
-          "Searching for an exciting way to teach your child Wolof? This Action Verbs book is the perfect choice! Packed with vibrant illustrations and interactive activities, it makes learning Wolof action verbs fun and engaging. Each page encourages language development, helping your child confidently express themselves in Wolof. Make language learning an adventure they will cherish for years!",
+        long: "Searching for an exciting way to teach your child Wolof? This Action Verbs book is the perfect choice! Packed with vibrant illustrations and interactive activities, it makes learning Wolof action verbs fun and engaging. Each page encourages language development, helping your child confidently express themselves in Wolof. Make language learning an adventure they will cherish for years!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses bright pictures and games to make learning Wolof action verbs exciting.",
@@ -199,7 +200,8 @@ export const wolofConfigs = {
             "This book uses bright pictures and simple words. It's a great tool for introducing Wolof to young learners.",
         },
         {
-          question: "Is this book good for families outside Wolof-speaking countries?",
+          question:
+            "Is this book good for families outside Wolof-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The English translations make it easy to learn Wolof no matter where you live.",
         },
@@ -219,8 +221,7 @@ export const wolofConfigs = {
       description: {
         short:
           "Explore Animals in Wolof! Perfect for kids aged 0-6. Discover and learn with this interactive, vibrant book today!",
-        long:
-          "Want to help your child learn Wolof in a fun way? This Animals book is perfect! Filled with vibrant illustrations and simple words, it introduces your child to the world of animals while teaching Wolof. Each page captivates young minds, making language learning a delightful adventure. Ideal for building vocabulary and sparking curiosity, this book is a wonderful tool for lifelong language skills.",
+        long: "Want to help your child learn Wolof in a fun way? This Animals book is perfect! Filled with vibrant illustrations and simple words, it introduces your child to the world of animals while teaching Wolof. Each page captivates young minds, making language learning a delightful adventure. Ideal for building vocabulary and sparking curiosity, this book is a wonderful tool for lifelong language skills.",
       },
       challenges: [
         "Boring Study Time: Our book uses colorful animal pictures to make learning Wolof fun and exciting for kids.",
@@ -271,7 +272,8 @@ export const wolofConfigs = {
             "This book is special because it teaches Wolof with bright pictures and simple words. It's great for kids and parents to explore together.",
         },
         {
-          question: "Is the book suitable for families outside Wolof-speaking countries?",
+          question:
+            "Is the book suitable for families outside Wolof-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. It helps children learn Wolof even if they live in non-Wolof-speaking areas.",
         },
@@ -289,9 +291,9 @@ export const wolofConfigs = {
       pages: "58",
       price: "$ 11.99",
       description: {
-        short: "Learn bilingual coloring book in wolof with this book for ages 3-6.",
-        long:
-          "This bilingual coloring book book helps children learn wolof through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning wolof fun and accessible.",
+        short:
+          "Learn bilingual coloring book in wolof with this bilingual book for ages 3-6. Start your child's language journey today!",
+        long: "This bilingual coloring book book helps children learn wolof through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning wolof fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses colorful images to teach Wolof words, making learning exciting and easy for kids.",
@@ -318,7 +320,8 @@ export const wolofConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $11.99. It's a great value for a bilingual learning experience.",
+          answer:
+            "The book costs $11.99. It's a great value for a bilingual learning experience.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -341,7 +344,8 @@ export const wolofConfigs = {
             "This book uses bright pictures and simple words to teach Wolof. It's great for kids who love to color and learn new languages.",
         },
         {
-          question: "Is this book good for families outside Wolof-speaking countries?",
+          question:
+            "Is this book good for families outside Wolof-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. It helps children learn about different cultures and languages.",
         },
@@ -359,9 +363,9 @@ export const wolofConfigs = {
       pages: "83",
       price: "$ 9.99",
       description: {
-        short: "Learn animals coloring book in wolof with this book for ages 4-8.",
-        long:
-          "This animals coloring book book helps children learn wolof through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning wolof fun and accessible.",
+        short:
+          "Learn animals coloring book in wolof with this book for ages 4-8.",
+        long: "This animals coloring book book helps children learn wolof through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning wolof fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns Wolof learning into a fun adventure with animal coloring pages.",
@@ -388,7 +392,8 @@ export const wolofConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. You can purchase it easily through Amazon.",
+          answer:
+            "The book costs $9.99. You can purchase it easily through Amazon.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -406,7 +411,8 @@ export const wolofConfigs = {
             "No, you don't need to speak Wolof. The book includes English translations to help everyone understand.",
         },
         {
-          question: "Is this book good for families outside Wolof-speaking countries?",
+          question:
+            "Is this book good for families outside Wolof-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The book helps children learn a new language, no matter where they live.",
         },
@@ -418,15 +424,16 @@ export const wolofConfigs = {
       ],
     },
     {
-      title: "Wolof - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Wolof - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-wolof",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in wolof with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn wolof through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning wolof fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in wolof with this book for ages 4-8.",
+        long: "This fruits and vegetables coloring book book helps children learn wolof through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning wolof fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses colorful fruits and veggies to make learning Wolof words easy and fun.",
@@ -477,7 +484,8 @@ export const wolofConfigs = {
             "This book is special because it teaches Wolof through coloring. It's a fun and interactive way for kids to learn.",
         },
         {
-          question: "Is this book good for families outside Wolof-speaking countries?",
+          question:
+            "Is this book good for families outside Wolof-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn Wolof no matter where you live.",
         },

@@ -9,8 +9,7 @@ export const krioConfigs = {
       price: "$ 12.99",
       description: {
         short: "Learn first 100 words in krio with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn krio through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning krio fun and accessible.",
+        long: "This first 100 words book helps children learn krio through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning krio fun and accessible.",
       },
       challenges: [
         "Struggling with Language Basics: Our book introduces Krio words using colorful pictures, making it easier for kids to learn.",
@@ -56,7 +55,8 @@ export const krioConfigs = {
             "No, you don't need to speak Krio. The book includes English translations to help you and your child learn together.",
         },
         {
-          question: "Is this book suitable for families living outside Krio-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Krio-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. The book bridges cultures by teaching Krio with English translations.",
         },
@@ -79,9 +79,9 @@ export const krioConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in krio with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn krio through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning krio fun and accessible.",
+        short:
+          "Learn fruits and vegetables in krio with this book for ages 0-6.",
+        long: "This fruits and vegetables book helps children learn krio through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning krio fun and accessible.",
       },
       challenges: [
         "Limited Krio Resources: Our book uses colorful fruit and vegetable pictures to make Krio learning easy and fun!",
@@ -132,7 +132,8 @@ export const krioConfigs = {
             "This book is special because it helps kids learn Krio and English together. It's filled with engaging pictures and simple words.",
         },
         {
-          question: "Is this book good for families outside Krio-speaking countries?",
+          question:
+            "Is this book good for families outside Krio-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn about different languages and cultures, no matter where you live.",
         },
@@ -152,8 +153,7 @@ export const krioConfigs = {
       description: {
         short:
           "Discover Krio Action Verbs! Perfect for ages 0-6. Engage young minds with vibrant learning. Start the adventure now!",
-        long:
-          "Want your child to learn Krio in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and easy-to-understand content, kids will enjoy discovering new Krio action words. Each page encourages playful learning and helps build strong language skills. It's a wonderful tool for making language learning exciting and engaging for young minds!",
+        long: "Want your child to learn Krio in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and easy-to-understand content, kids will enjoy discovering new Krio action words. Each page encourages playful learning and helps build strong language skills. It's a wonderful tool for making language learning exciting and engaging for young minds!",
       },
       challenges: [
         "Kids Get Bored Quickly: Our book uses colorful pictures and fun activities to make learning Krio and action verbs exciting.",
@@ -219,8 +219,7 @@ export const krioConfigs = {
       description: {
         short:
           "Explore Animals in Krio! Perfect for kids aged 0-6. Dive into a fun, unique learning adventure today!",
-        long:
-          "Want a fun way for your child to learn Krio? This Animals book is the perfect choice! With bright pictures and simple words, your child will discover animals while learning Krio. Each page is crafted to make learning exciting, helping kids build language skills naturally. It's a wonderful way to explore the animal world and embrace the Krio language together!",
+        long: "Want a fun way for your child to learn Krio? This Animals book is the perfect choice! With bright pictures and simple words, your child will discover animals while learning Krio. Each page is crafted to make learning exciting, helping kids build language skills naturally. It's a wonderful way to explore the animal world and embrace the Krio language together!",
       },
       challenges: [
         "Learning Krio Is Boring: Our book uses fun animal stories to make Krio exciting and keep kids interested.",
@@ -284,9 +283,9 @@ export const krioConfigs = {
       pages: "58",
       price: "$ 11.99",
       description: {
-        short: "Learn bilingual coloring book in krio with this book for ages 3-6.",
-        long:
-          "This bilingual coloring book book helps children learn krio through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning krio fun and accessible.",
+        short:
+          "Learn bilingual coloring book in krio with this bilingual book for ages 3-6. Start your child's language journey today!",
+        long: "This bilingual coloring book book helps children learn krio through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning krio fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns Krio learning into a fun game with coloring and stories!",
@@ -350,9 +349,9 @@ export const krioConfigs = {
       pages: "83",
       price: "$ 9.99",
       description: {
-        short: "Learn animals coloring book in krio with this book for ages 4-8.",
-        long:
-          "This animals coloring book book helps children learn krio through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning krio fun and accessible.",
+        short:
+          "Learn animals coloring book in krio with this book for ages 4-8.",
+        long: "This animals coloring book book helps children learn krio through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning krio fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our coloring book has fun animal drawings that keep kids excited about learning Krio.",
@@ -410,15 +409,16 @@ export const krioConfigs = {
       ],
     },
     {
-      title: "Krio - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Krio - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-krio",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in krio with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn krio through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning krio fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in krio with this book for ages 4-8.",
+        long: "This fruits and vegetables coloring book book helps children learn krio through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning krio fun and accessible.",
       },
       challenges: [
         "Hard to Keep Kids Interested: Our book uses bright pictures of fruits and vegetables to make Krio learning fun.",
@@ -469,7 +469,8 @@ export const krioConfigs = {
             "This book combines learning with creativity. It helps kids recognize fruits and vegetables while coloring, making learning fun.",
         },
         {
-          question: "Is this book good for families outside Krio-speaking countries?",
+          question:
+            "Is this book good for families outside Krio-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The book uses English, making it accessible to children worldwide.",
         },

@@ -9,8 +9,7 @@ export const swahiliConfigs = {
       price: "$ 12.99",
       description: {
         short: "Learn first 100 words in swahili with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn swahili through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning swahili fun and accessible.",
+        long: "This first 100 words book helps children learn swahili through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning swahili fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses bright pictures to teach kids Swahili words easily and with joy.",
@@ -61,7 +60,8 @@ export const swahiliConfigs = {
             "This book uses colorful images and simple words to teach Swahili. It's great for kids and helps them learn while having fun.",
         },
         {
-          question: "Is this book suitable for families outside Swahili-speaking countries?",
+          question:
+            "Is this book suitable for families outside Swahili-speaking countries?",
           answer:
             "Yes, it's perfect for any family wanting to learn Swahili. The English translations make it easy to use anywhere.",
         },
@@ -81,8 +81,7 @@ export const swahiliConfigs = {
       description: {
         short:
           "Discover Swahili Fruits And Vegetables. Perfect for ages 0-6. Engage young minds with this fun learning adventure!",
-        long:
-          "Unatafuta njia ya kufurahisha kumsaidia mtoto wako kujifunza Kiswahili? Kitabu hiki cha Matunda na Mboga kinatoa njia rahisi na ya kufurahisha! Kwa michoro ya kupendeza na maudhui ya kuvutia, mtoto wako atafurahia kujifunza maneno mapya. Kila ukurasa umeundwa kufanya kujifunza kuwa burudani huku ukijenga ujuzi wa lugha wa kudumu.",
+        long: "Unatafuta njia ya kufurahisha kumsaidia mtoto wako kujifunza Kiswahili? Kitabu hiki cha Matunda na Mboga kinatoa njia rahisi na ya kufurahisha! Kwa michoro ya kupendeza na maudhui ya kuvutia, mtoto wako atafurahia kujifunza maneno mapya. Kila ukurasa umeundwa kufanya kujifunza kuwa burudani huku ukijenga ujuzi wa lugha wa kudumu.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful pictures of fruits and veggies to make Swahili fun for kids.",
@@ -128,7 +127,8 @@ export const swahiliConfigs = {
             "No, you don't need to speak Swahili. The book includes both Swahili and English, making it easy for anyone to use.",
         },
         {
-          question: "Is this book good for families living outside Swahili-speaking countries?",
+          question:
+            "Is this book good for families living outside Swahili-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. It helps children learn Swahili even if they don't live in a Swahili-speaking country.",
         },
@@ -147,8 +147,7 @@ export const swahiliConfigs = {
       price: "$ 11.99",
       description: {
         short: "Learn action verbs in swahili with this book for ages 0-6.",
-        long:
-          "This action verbs book helps children learn swahili through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning swahili fun and accessible.",
+        long: "This action verbs book helps children learn swahili through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning swahili fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses bright pictures and fun stories to make learning Swahili action verbs exciting.",
@@ -199,7 +198,8 @@ export const swahiliConfigs = {
             "This book uses bright pictures and simple words to teach action verbs. It's a fun way for kids to learn Swahili naturally.",
         },
         {
-          question: "Is this book good for families living outside Swahili-speaking countries?",
+          question:
+            "Is this book good for families living outside Swahili-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The English translations make it easy to use, no matter where you live.",
         },
@@ -218,8 +218,7 @@ export const swahiliConfigs = {
       price: "$ 11.99",
       description: {
         short: "Learn animals in swahili with this book for ages 0-6.",
-        long:
-          "This animals book helps children learn swahili through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning swahili fun and accessible.",
+        long: "This animals book helps children learn swahili through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning swahili fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses animal stories to make Swahili words easy to remember for kids.",
@@ -255,7 +254,8 @@ export const swahiliConfigs = {
             "No, you don't need to speak Swahili. The book includes English translations to help you and your child understand.",
         },
         {
-          question: "Is the book suitable for families living outside Swahili-speaking countries?",
+          question:
+            "Is the book suitable for families living outside Swahili-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. It helps children learn about different cultures and languages.",
         },
@@ -288,9 +288,9 @@ export const swahiliConfigs = {
       pages: "58",
       price: "$ 11.99",
       description: {
-        short: "Learn bilingual coloring book in swahili with this book for ages 3-6.",
-        long:
-          "This bilingual coloring book book helps children learn swahili through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning swahili fun and accessible.",
+        short:
+          "Learn bilingual coloring book in swahili with this bilingual book for ages 3-6. Start your child's language journey today!",
+        long: "This bilingual coloring book book helps children learn swahili through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning swahili fun and accessible.",
       },
       challenges: [
         "Struggle with Language Practice: Our book turns learning Swahili into an exciting adventure with coloring activities.",
@@ -336,7 +336,8 @@ export const swahiliConfigs = {
             "No, you don't need to speak Swahili. The book has both English and Swahili, making it easy for everyone to use.",
         },
         {
-          question: "Is this book good for families living outside Swahili-speaking countries?",
+          question:
+            "Is this book good for families living outside Swahili-speaking countries?",
           answer:
             "Yes, it's great for any family, no matter where you live. The book helps kids learn Swahili, even if it's not spoken at home.",
         },
@@ -354,9 +355,9 @@ export const swahiliConfigs = {
       pages: "83",
       price: "$ 9.99",
       description: {
-        short: "Learn animals coloring book in swahili with this book for ages 4-8.",
-        long:
-          "This animals coloring book book helps children learn swahili through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning swahili fun and accessible.",
+        short:
+          "Learn animals coloring book in swahili with this book for ages 4-8.",
+        long: "This animals coloring book book helps children learn swahili through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning swahili fun and accessible.",
       },
       challenges: [
         "Limited Swahili Resources: Our book offers a fun way to learn Swahili with colorful animal pictures and simple words.",
@@ -383,7 +384,8 @@ export const swahiliConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for fun and learning.",
+          answer:
+            "The book costs $9.99. It's a great value for fun and learning.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -413,7 +415,8 @@ export const swahiliConfigs = {
       ],
     },
     {
-      title: "Swahili - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Swahili - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-swahili",
       age: "4-8",
       pages: "71",
@@ -421,8 +424,7 @@ export const swahiliConfigs = {
       description: {
         short:
           "Fruits And Vegetables Coloring Book ya Kiswahili kwa watoto wa miaka 4-8. Jifunze na ucheze sasa!",
-        long:
-          "Unatafuta njia ya kufurahisha kumfundisha mtoto wako Kiswahili? Kitabu hiki cha Kuchora Matunda na Mboga ni njia rahisi na ya kufurahisha! Picha za kupendeza na maudhui yanayovutia yatamsaidia mtoto wako kujifunza maneno mapya. Kila ukurasa umebuniwa ili kujenga ujuzi wa lugha kwa njia ya kufurahisha na kuelimisha, akifurahia rangi na maneno.",
+        long: "Unatafuta njia ya kufurahisha kumfundisha mtoto wako Kiswahili? Kitabu hiki cha Kuchora Matunda na Mboga ni njia rahisi na ya kufurahisha! Picha za kupendeza na maudhui yanayovutia yatamsaidia mtoto wako kujifunza maneno mapya. Kila ukurasa umebuniwa ili kujenga ujuzi wa lugha kwa njia ya kufurahisha na kuelimisha, akifurahia rangi na maneno.",
       },
       challenges: [
         "Bored with Regular Learning: Our book turns Swahili lessons into exciting coloring adventures with fruits and veggies.",
@@ -468,7 +470,8 @@ export const swahiliConfigs = {
             "This book combines learning with fun through coloring. It helps kids enjoy learning Swahili with colorful images and simple words.",
         },
         {
-          question: "Is the book suitable for families outside Swahili-speaking countries?",
+          question:
+            "Is the book suitable for families outside Swahili-speaking countries?",
           answer:
             "Yes, the book is great for families anywhere. It helps children learn Swahili no matter where they live.",
         },
@@ -517,7 +520,8 @@ export const swahiliConfigs = {
         "You can trust Amazon's reliable shipping service, which includes tracking capabilities. Your books will arrive safely and on time, ensuring a smooth and risk-free shopping experience.",
     },
     {
-      question: "How long will it take for my child to make progress in learning Swahili?",
+      question:
+        "How long will it take for my child to make progress in learning Swahili?",
       answer:
         "Every child learns at their own pace, but with regular practice using our books, you can expect your child to start understanding basic words and phrases within a few weeks.",
     },

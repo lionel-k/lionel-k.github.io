@@ -81,7 +81,7 @@ export const igboConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn fruits and vegetables in igbo with this book for ages 0-6.",
+          "Learn fruits and vegetables in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This fruits and vegetables book helps children learn igbo through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
       },
       challenges: [
@@ -152,7 +152,8 @@ export const igboConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn action verbs in igbo with this book for ages 0-6.",
+        short:
+          "Learn action verbs in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This action verbs book helps children learn igbo through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
       },
       challenges: [
@@ -223,7 +224,8 @@ export const igboConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn animals in igbo with this book for ages 0-6.",
+        short:
+          "Learn animals in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This animals book helps children learn igbo through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
       },
       challenges: [

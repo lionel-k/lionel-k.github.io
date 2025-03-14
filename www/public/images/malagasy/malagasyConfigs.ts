@@ -8,9 +8,9 @@ export const malagasyConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in malagasy with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn malagasy through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning malagasy fun and accessible.",
+        short:
+          "Learn first 100 words in malagasy with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This first 100 words book helps children learn malagasy through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning malagasy fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Malagasy by showing words with colorful pictures they enjoy.",
@@ -69,9 +69,9 @@ export const malagasyConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in malagasy with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn malagasy through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning malagasy fun and accessible.",
+        short:
+          "Learn fruits and vegetables in malagasy with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This fruits and vegetables book helps children learn malagasy through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning malagasy fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Quickly: Our book uses colorful fruits and veggies to make learning Malagasy exciting and fun.",
@@ -122,7 +122,8 @@ export const malagasyConfigs = {
             "This book is unique because it combines fun images with language learning. It's perfect for kids everywhere.",
         },
         {
-          question: "Is the book suitable for families outside Malagasy-speaking countries?",
+          question:
+            "Is the book suitable for families outside Malagasy-speaking countries?",
           answer:
             "Yes, it's great for families worldwide. It helps children learn about a new culture and language.",
         },
@@ -140,9 +141,9 @@ export const malagasyConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn action verbs in malagasy with this book for ages 0-6.",
-        long:
-          "This action verbs book helps children learn malagasy through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning malagasy fun and accessible.",
+        short:
+          "Learn action verbs in malagasy with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This action verbs book helps children learn malagasy through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning malagasy fun and accessible.",
       },
       challenges: [
         "Difficult Words to Remember: Our book uses action verbs with pictures, making it easier for kids to remember and learn Malagasy words.",
@@ -193,7 +194,8 @@ export const malagasyConfigs = {
             "This book uses vibrant illustrations and simple words. It's a great way for kids to learn action verbs in Malagasy and English.",
         },
         {
-          question: "Is this book suitable for families outside of Malagasy-speaking countries?",
+          question:
+            "Is this book suitable for families outside of Malagasy-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. It helps kids learn new languages, no matter where you live.",
         },
@@ -211,9 +213,9 @@ export const malagasyConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn animals in malagasy with this book for ages 0-6.",
-        long:
-          "This animals book helps children learn malagasy through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning malagasy fun and accessible.",
+        short:
+          "Learn animals in malagasy with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This animals book helps children learn malagasy through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning malagasy fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses animal stories to teach Malagasy words in a fun way.",
@@ -279,8 +281,7 @@ export const malagasyConfigs = {
       description: {
         short:
           "Explore the Malagasy Bilingual Coloring Book for ages 3-6. Inspire learning and creativity today!",
-        long:
-          "Want to help your child learn Malagasy in a fun way? This Bilingual Coloring Book is perfect! Filled with vibrant images and easy words, it turns learning into an adventure. Each page encourages creativity while teaching essential Malagasy vocabulary. Make language learning exciting and help your child build skills that will grow with them!",
+        long: "Want to help your child learn Malagasy in a fun way? This Bilingual Coloring Book is perfect! Filled with vibrant images and easy words, it turns learning into an adventure. Each page encourages creativity while teaching essential Malagasy vocabulary. Make language learning exciting and help your child build skills that will grow with them!",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses fun pictures to help kids learn Malagasy words easily and remember them.",
@@ -346,8 +347,7 @@ export const malagasyConfigs = {
       description: {
         short:
           "Discover animals with our Malagasy Animals Coloring Book for ages 4-8. Grab your copy and start coloring today!",
-        long:
-          "Mitady fomba mahafinaritra hampianarana ny zanakao hianatra Malagasy? Ity Boky Fandokoana Biby ity no vahaolana tonga lafatra! Miaraka amin'ny sary mahafinaritra sy votoaty manintona, ho faly ny zanakao hianatra teny vaovao. Ny pejy tsirairay dia natao hahatonga ny fianarana ho mahafinaritra, sady manampy amin'ny fanatsarana ny fahaiza-miteny Malagasy mandritra ny androm-piainana.",
+        long: "Mitady fomba mahafinaritra hampianarana ny zanakao hianatra Malagasy? Ity Boky Fandokoana Biby ity no vahaolana tonga lafatra! Miaraka amin'ny sary mahafinaritra sy votoaty manintona, ho faly ny zanakao hianatra teny vaovao. Ny pejy tsirairay dia natao hahatonga ny fianarana ho mahafinaritra, sady manampy amin'ny fanatsarana ny fahaiza-miteny Malagasy mandritra ny androm-piainana.",
       },
       challenges: [
         "Hard to Keep Kids Interested: Our book uses cute animal pictures that make learning Malagasy exciting and fun.",
@@ -398,7 +398,8 @@ export const malagasyConfigs = {
             "This book uses beautiful illustrations to teach language. It's great for kids who love animals and want to learn something new.",
         },
         {
-          question: "Is this book suitable for families outside Malagasy-speaking countries?",
+          question:
+            "Is this book suitable for families outside Malagasy-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The dual-language format makes it easy for anyone to enjoy and learn.",
         },
@@ -410,7 +411,8 @@ export const malagasyConfigs = {
       ],
     },
     {
-      title: "Malagasy - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Malagasy - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-malagasy",
       age: "4-8",
       pages: "71",
@@ -418,8 +420,7 @@ export const malagasyConfigs = {
       description: {
         short:
           "Discover Malagasy fruits and veggies in this unique Coloring Book for kids aged 4-8. Grab yours and start coloring!",
-        long:
-          "Mitady fomba mahafinaritra hanampiana ny zanakao hianatra Malagasy? Ity Boky Fandokoana Voankazo sy Legioma ity dia manao izany ho mora sy mahafinaritra! Miaraka amin'ny sary miloko sy votoaty mampientanentana, ho tia hianatra teny vaovao ny zanakao. Ny pejy tsirairay dia natao hampiala voly amin'ny fianarana, manampy amin'ny fananganana fahaizana teny maharitra.",
+        long: "Mitady fomba mahafinaritra hanampiana ny zanakao hianatra Malagasy? Ity Boky Fandokoana Voankazo sy Legioma ity dia manao izany ho mora sy mahafinaritra! Miaraka amin'ny sary miloko sy votoaty mampientanentana, ho tia hianatra teny vaovao ny zanakao. Ny pejy tsirairay dia natao hampiala voly amin'ny fianarana, manampy amin'ny fananganana fahaizana teny maharitra.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book keeps kids excited with fun fruits and vegetables to color while learning Malagasy words.",
@@ -446,7 +447,8 @@ export const malagasyConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book is priced at $9.99. It's a great value for a fun learning experience.",
+          answer:
+            "The book is priced at $9.99. It's a great value for a fun learning experience.",
         },
         {
           question: "Do you need to speak Malagasy to use the book?",
@@ -454,7 +456,8 @@ export const malagasyConfigs = {
             "No, you don't need to speak Malagasy to use the book. It's designed to help beginners learn through coloring and simple words.",
         },
         {
-          question: "Is the book suitable for families living outside Malagasy-speaking countries?",
+          question:
+            "Is the book suitable for families living outside Malagasy-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. It helps children learn about fruits and vegetables in Malagasy and English, making it useful worldwide.",
         },

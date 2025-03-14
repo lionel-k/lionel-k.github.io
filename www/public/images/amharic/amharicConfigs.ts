@@ -9,8 +9,7 @@ export const amharicConfigs = {
       price: "$12.99",
       description: {
         short: "Learn first 100 words in amharic with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn amharic through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning amharic fun and accessible.",
+        long: "This first 100 words book helps children learn amharic through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning amharic fun and accessible.",
       },
       challenges: [
         '"Struggling to Learn New Words: Our book teaches Amharic with bright pictures that make learning fun and easy."',
@@ -61,7 +60,8 @@ export const amharicConfigs = {
             "The book combines bright pictures with words in two languages. This makes learning Amharic easy and enjoyable for kids.",
         },
         {
-          question: "Is this book good for families outside Amharic-speaking countries?",
+          question:
+            "Is this book good for families outside Amharic-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn Amharic even if they don't hear it every day.",
         },
@@ -76,8 +76,7 @@ export const amharicConfigs = {
       description: {
         short:
           '"Discover Fruits And Vegetables in Amharic for ages 0-6. Engage young minds today with vibrant learning!"',
-        long:
-          "Searching for a delightful way to introduce your child to Amharic? This Fruits and Vegetables book is perfect! With vibrant illustrations and fun content, children will enjoy discovering new Amharic words. Each page captivates young learners, making language acquisition enjoyable while enhancing vocabulary and fostering a lifelong love for learning. Perfect for curious minds eager to explore!",
+        long: "Searching for a delightful way to introduce your child to Amharic? This Fruits and Vegetables book is perfect! With vibrant illustrations and fun content, children will enjoy discovering new Amharic words. Each page captivates young learners, making language acquisition enjoyable while enhancing vocabulary and fostering a lifelong love for learning. Perfect for curious minds eager to explore!",
       },
       challenges: [
         '"Boring Language Lessons: Our book uses colorful fruits and veggies to make learning Amharic exciting."',
@@ -128,7 +127,8 @@ export const amharicConfigs = {
             "This book is special because it teaches Amharic through fun pictures and easy words. It's perfect for young learners.",
         },
         {
-          question: "Is the book suitable for families outside Amharic-speaking countries?",
+          question:
+            "Is the book suitable for families outside Amharic-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. It helps kids learn a new language and connect with Amharic culture.",
         },
@@ -143,8 +143,7 @@ export const amharicConfigs = {
       description: {
         short:
           '"Discover Amharic Action Verbs for ages 0-6. Engage young minds with vibrant words. Start learning today!"',
-        long:
-          '"Want to make learning Amharic exciting for your child? This Action Verbs book is the perfect choice! Filled with vibrant illustrations and interactive content, it introduces kids to essential verbs in a fun way. Every page encourages language development, helping children confidently use Amharic words while having a great time. Discover a world of action and learning today!"',
+        long: '"Want to make learning Amharic exciting for your child? This Action Verbs book is the perfect choice! Filled with vibrant illustrations and interactive content, it introduces kids to essential verbs in a fun way. Every page encourages language development, helping children confidently use Amharic words while having a great time. Discover a world of action and learning today!"',
       },
       challenges: [
         '"Boring Language Lessons: Our book uses colorful pictures and fun games to make learning Amharic exciting for kids."',
@@ -195,7 +194,8 @@ export const amharicConfigs = {
             "This book uses colorful pictures and simple words to teach action verbs. It's a fun way for children to learn Amharic.",
         },
         {
-          question: "Is this book suitable for families outside Amharic-speaking countries?",
+          question:
+            "Is this book suitable for families outside Amharic-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn a new language while having fun with pictures and words.",
         },
@@ -210,8 +210,7 @@ export const amharicConfigs = {
       description: {
         short:
           "\"Discover 'Animals' in Amharic! Ideal for ages 0-6. Engage young minds with this unique, fun learning adventure!\"",
-        long:
-          '"Looking for a fun way to help your child learn Amharic? This Animals book is the perfect choice! Filled with vibrant illustrations and simple words, it makes learning exciting. Your child will enjoy discovering new animal names while building essential language skills. Each page is crafted to engage young learners and make Amharic fun and memorable for a lifetime."',
+        long: '"Looking for a fun way to help your child learn Amharic? This Animals book is the perfect choice! Filled with vibrant illustrations and simple words, it makes learning exciting. Your child will enjoy discovering new animal names while building essential language skills. Each page is crafted to engage young learners and make Amharic fun and memorable for a lifetime."',
       },
       challenges: [
         '"Boring Language Lessons: Our book uses animals to make learning Amharic exciting and fun for kids."',
@@ -238,7 +237,8 @@ export const amharicConfigs = {
         },
         {
           question: "How much does it cost?",
-          answer: "The book costs $11.99. It's a great investment for your child's learning.",
+          answer:
+            "The book costs $11.99. It's a great investment for your child's learning.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -261,7 +261,8 @@ export const amharicConfigs = {
             "This book uses bright pictures and simple words to teach Amharic. It's great for helping kids learn a new language while having fun.",
         },
         {
-          question: "Is the book good for families living outside Amharic-speaking countries?",
+          question:
+            "Is the book good for families living outside Amharic-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The English translations make it easy to use, no matter where you live.",
         },
@@ -274,9 +275,9 @@ export const amharicConfigs = {
       pages: "58",
       price: "$11.99",
       description: {
-        short: "Learn bilingual coloring book in amharic with this book for ages 3-6.",
-        long:
-          "This bilingual coloring book book helps children learn amharic through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning amharic fun and accessible.",
+        short:
+          "Learn bilingual coloring book in amharic with this bilingual book for ages 3-6. Start your child's language journey today!",
+        long: "This bilingual coloring book book helps children learn amharic through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning amharic fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book mixes Amharic words with fun pictures, helping kids learn easily while coloring.",
@@ -322,7 +323,8 @@ export const amharicConfigs = {
             "This book is unique because it combines coloring with language learning. It helps kids have fun while they learn Amharic.",
         },
         {
-          question: "Is the book suitable for families outside Amharic-speaking countries?",
+          question:
+            "Is the book suitable for families outside Amharic-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The English translations make it easy for anyone to use.",
         },
@@ -342,8 +344,7 @@ export const amharicConfigs = {
       description: {
         short:
           '"Explore our unique Amharic Animals Coloring Book for ages 4-8. Ignite creativity and learn today!"',
-        long:
-          '"Looking for a fun way to help your child learn Amharic? This Animals Coloring Book is perfect! Filled with delightful animal illustrations, it makes learning new Amharic words exciting. Each page invites creativity while building language skills. Your child will enjoy coloring and discovering the names of their favorite animals in Amharic, making learning a joyful adventure!"',
+        long: '"Looking for a fun way to help your child learn Amharic? This Animals Coloring Book is perfect! Filled with delightful animal illustrations, it makes learning new Amharic words exciting. Each page invites creativity while building language skills. Your child will enjoy coloring and discovering the names of their favorite animals in Amharic, making learning a joyful adventure!"',
       },
       challenges: [
         '"Kids Bored with Learning: Our book adds fun to Amharic lessons with cute animal pictures to color."',
@@ -370,7 +371,8 @@ export const amharicConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for an educational resource.",
+          answer:
+            "The book costs $9.99. It's a great value for an educational resource.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -393,14 +395,16 @@ export const amharicConfigs = {
             "This book combines learning with fun coloring activities. It helps kids learn Amharic through engaging pictures and words.",
         },
         {
-          question: "Is this book good for families living outside Amharic-speaking countries?",
+          question:
+            "Is this book good for families living outside Amharic-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn Amharic even if you're not in an Amharic-speaking country.",
         },
       ],
     },
     {
-      title: "Amharic - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Amharic - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-amharic",
       age: "4-8",
       pages: "71",
@@ -408,8 +412,7 @@ export const amharicConfigs = {
       description: {
         short:
           '"Explore the Amharic Fruits And Vegetables Coloring Book for ages 4-8. Ignite creativity and learn today!"',
-        long:
-          "Looking for a fun way to introduce your child to Amharic? This Fruits and Vegetables Coloring Book is the perfect choice! Filled with delightful illustrations, it helps kids learn Amharic names for fruits and vegetables. Each page encourages creativity and language development. Make learning Amharic enjoyable and engaging, building skills that grow with your child!",
+        long: "Looking for a fun way to introduce your child to Amharic? This Fruits and Vegetables Coloring Book is the perfect choice! Filled with delightful illustrations, it helps kids learn Amharic names for fruits and vegetables. Each page encourages creativity and language development. Make learning Amharic enjoyable and engaging, building skills that grow with your child!",
       },
       challenges: [
         "Hard to Learn New Words: This book teaches Amharic words with colorful fruit and veggie pictures, making it fun.",
@@ -460,7 +463,8 @@ export const amharicConfigs = {
             "This coloring book combines learning with fun. It uses bright pictures to teach Amharic and English together.",
         },
         {
-          question: "Is the book suitable for families outside Amharic-speaking countries?",
+          question:
+            "Is the book suitable for families outside Amharic-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. The dual-language format helps kids learn Amharic no matter where you live.",
         },

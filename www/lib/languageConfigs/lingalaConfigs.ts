@@ -8,7 +8,8 @@ export const lingalaConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in lingala with this book for ages 0-6.",
+        short:
+          "Learn first 100 words in lingala with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This first 100 words book helps children learn lingala through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
@@ -80,7 +81,7 @@ export const lingalaConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn fruits and vegetables in lingala with this book for ages 0-6.",
+          "Learn fruits and vegetables in lingala with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This fruits and vegetables book helps children learn lingala through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
@@ -146,7 +147,8 @@ export const lingalaConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn action verbs in lingala with this book for ages 0-6.",
+        short:
+          "Learn action verbs in lingala with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This action verbs book helps children learn lingala through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
@@ -217,7 +219,8 @@ export const lingalaConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn animals in lingala with this book for ages 0-6.",
+        short:
+          "Learn animals in lingala with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This animals book helps children learn lingala through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [

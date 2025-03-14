@@ -8,7 +8,8 @@ export const xhosaConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in xhosa with this book for ages 0-6.",
+        short:
+          "Learn first 100 words in xhosa with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This first 100 words book helps children learn xhosa through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning xhosa fun and accessible.",
       },
       challenges: [
@@ -218,7 +219,8 @@ export const xhosaConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn animals in xhosa with this book for ages 0-6.",
+        short:
+          "Learn animals in xhosa with this bilingual book for ages 0-6. Start your child's language journey today!",
         long: "This animals book helps children learn xhosa through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning xhosa fun and accessible.",
       },
       challenges: [
