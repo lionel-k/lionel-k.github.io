@@ -10,8 +10,7 @@ export const yembaConfigs = {
       description: {
         short:
           "Discover Yemba's First 100 Words for ages 0-6. Engage your child in fun learning. Start your language journey now!",
-        long:
-          "Want to introduce your child to Yemba in a fun way? This First 100 Words book is perfect! Packed with vibrant illustrations and easy-to-read words, your child will delight in learning Yemba. Each page invites exploration and curiosity, making language learning a joyful experience that sparks a love for words. Help your child build a strong Yemba vocabulary with this engaging and educational book!",
+        long: "Want to introduce your child to Yemba in a fun way? This First 100 Words book is perfect! Packed with vibrant illustrations and easy-to-read words, your child will delight in learning Yemba. Each page invites exploration and curiosity, making language learning a joyful experience that sparks a love for words. Help your child build a strong Yemba vocabulary with this engaging and educational book!",
       },
       challenges: [
         "Hard to Learn New Words: Our book teaches Yemba words with bright pictures, making learning easy and fun for kids.",
@@ -62,7 +61,8 @@ export const yembaConfigs = {
             "This book is special because it helps kids learn Yemba with bright pictures and easy words. It's great for bilingual learning.",
         },
         {
-          question: "Is the book suitable for families outside Yemba-speaking countries?",
+          question:
+            "Is the book suitable for families outside Yemba-speaking countries?",
           answer:
             "Yes, it's perfect for any family. It helps kids learn about Yemba language and culture no matter where you live.",
         },
@@ -80,9 +80,9 @@ export const yembaConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in yemba with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn yemba through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning yemba fun and accessible.",
+        short:
+          "Learn fruits and vegetables in yemba with this book for ages 0-6.",
+        long: "This fruits and vegetables book helps children learn yemba through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning yemba fun and accessible.",
       },
       challenges: [
         "Hard to Learn Yemba Words: This book uses pictures of fruits and vegetables to make Yemba words easy to remember.",
@@ -118,7 +118,8 @@ export const yembaConfigs = {
             "No, you don't need to speak Yemba. The book includes both Yemba and English, making it easy for anyone to use.",
         },
         {
-          question: "Is this book suitable for families living outside Yemba-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Yemba-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The bilingual format helps children learn Yemba no matter where you live.",
         },
@@ -148,8 +149,7 @@ export const yembaConfigs = {
       description: {
         short:
           "Explore Yemba Action Verbs with your 0-6 year olds. Dive into fun learning and boost language skills today!",
-        long:
-          "Want your child to learn Yemba in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and interactive exercises, it makes learning Yemba exciting. Each page introduces action verbs, helping your child expand their vocabulary while having fun. Foster language skills and cultural connection with this engaging resource that brings Yemba to life for young learners!",
+        long: "Want your child to learn Yemba in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and interactive exercises, it makes learning Yemba exciting. Each page introduces action verbs, helping your child expand their vocabulary while having fun. Foster language skills and cultural connection with this engaging resource that brings Yemba to life for young learners!",
       },
       challenges: [
         "Struggle with Verb Practice: Our book uses fun exercises with action verbs to make Yemba practice easy and exciting.",
@@ -200,7 +200,8 @@ export const yembaConfigs = {
             "This book combines colorful pictures with action verbs in Yemba and English. It's a fun way for kids to learn a new language.",
         },
         {
-          question: "Is this book suitable for families outside Yemba-speaking countries?",
+          question:
+            "Is this book suitable for families outside Yemba-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. It's a great tool for introducing Yemba to kids around the world.",
         },
@@ -219,8 +220,7 @@ export const yembaConfigs = {
       price: "$ 11.99",
       description: {
         short: "Learn animals in yemba with this book for ages 0-6.",
-        long:
-          "This animals book helps children learn yemba through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning yemba fun and accessible.",
+        long: "This animals book helps children learn yemba through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning yemba fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses animal stories to make learning Yemba exciting for kids.",
@@ -271,7 +271,8 @@ export const yembaConfigs = {
             "This book combines colorful pictures with simple Yemba words. It's a fun way for kids to learn and enjoy a new language.",
         },
         {
-          question: "Is the book suitable for families living outside Yemba-speaking countries?",
+          question:
+            "Is the book suitable for families living outside Yemba-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The English translations make it easy for anyone to use.",
         },
@@ -289,9 +290,9 @@ export const yembaConfigs = {
       pages: "58",
       price: "$ 11.99",
       description: {
-        short: "Learn bilingual coloring book in yemba with this book for ages 3-6.",
-        long:
-          "This bilingual coloring book book helps children learn yemba through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning yemba fun and accessible.",
+        short:
+          "Learn bilingual coloring book in yemba with this bilingual book for ages 3-6. Start your child's language journey today!",
+        long: "This bilingual coloring book book helps children learn yemba through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning yemba fun and accessible.",
       },
       challenges: [
         "Hard to Keep Kids Interested: This book uses fun pictures and coloring to make learning Yemba exciting for kids.",
@@ -342,7 +343,8 @@ export const yembaConfigs = {
             "This book combines learning and fun with colorful images and bilingual text. It's a great way for kids to explore a new language.",
         },
         {
-          question: "Is this book suitable for families living outside Yemba-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Yemba-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The bilingual format helps kids learn Yemba no matter where they are.",
         },
@@ -362,8 +364,7 @@ export const yembaConfigs = {
       description: {
         short:
           "Explore the Yemba Animals Coloring Book for ages 4-8. Unleash creativity and learn about animals. Grab your copy now!",
-        long:
-          "Want to make learning Yemba exciting for your child? This Animals Coloring Book is perfect! Filled with delightful animal illustrations, it helps kids learn Yemba words in a fun way. Each page invites them to explore the world of animals while building language skills. It's a playful and educational journey that parents and children will treasure together!",
+        long: "Want to make learning Yemba exciting for your child? This Animals Coloring Book is perfect! Filled with delightful animal illustrations, it helps kids learn Yemba words in a fun way. Each page invites them to explore the world of animals while building language skills. It's a playful and educational journey that parents and children will treasure together!",
       },
       challenges: [
         "Kids Lose Interest Quickly: Our book keeps kids excited with fun animal pictures and simple Yemba words.",
@@ -390,7 +391,8 @@ export const yembaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for an educational resource.",
+          answer:
+            "The book costs $9.99. It's a great value for an educational resource.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -413,7 +415,8 @@ export const yembaConfigs = {
             "This book combines learning and fun with beautiful illustrations. It's a special way to introduce Yemba language and culture.",
         },
         {
-          question: "Is the book suitable for families living outside Yemba-speaking countries?",
+          question:
+            "Is the book suitable for families living outside Yemba-speaking countries?",
           answer:
             "Yes, it's perfect for anyone, anywhere. The bilingual format helps children learn Yemba no matter where they live.",
         },
@@ -425,15 +428,16 @@ export const yembaConfigs = {
       ],
     },
     {
-      title: "Yemba - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Yemba - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-yemba",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in yemba with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn yemba through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning yemba fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in yemba with this book for ages 4-8.",
+        long: "This fruits and vegetables coloring book book helps children learn yemba through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning yemba fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses fun coloring pages to make Yemba learning exciting for kids.",
@@ -460,7 +464,8 @@ export const yembaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for a fun and educational experience.",
+          answer:
+            "The book costs $9.99. It's a great value for a fun and educational experience.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -478,7 +483,8 @@ export const yembaConfigs = {
             "No, you don't need to speak Yemba to use the book. It's designed to help anyone learn, with both Yemba and English words included.",
         },
         {
-          question: "Is this book suitable for families outside Yemba-speaking countries?",
+          question:
+            "Is this book suitable for families outside Yemba-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere in the world. It's a great way to introduce your child to a new language and culture.",
         },
@@ -527,7 +533,8 @@ export const yembaConfigs = {
         "Amazon's reliable shipping options ensure that your purchase arrives safely and on time. With their tracking capabilities, you can easily monitor your order until it reaches your doorstep.",
     },
     {
-      question: "How long does it usually take to see progress in learning Yemba?",
+      question:
+        "How long does it usually take to see progress in learning Yemba?",
       answer:
         "Learning progress varies, but with regular practice using our books, you can expect to see improvement in understanding and speaking within a few weeks. Consistency is key!",
     },

@@ -280,7 +280,7 @@ export const oromoConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn bilingual coloring book in oromo with this book for ages 3-6.",
+          "Learn bilingual coloring book in oromo with this bilingual book for ages 3-6. Start your child's language journey today!",
         long: "This bilingual coloring book book helps children learn oromo through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning oromo fun and accessible.",
       },
       challenges: [

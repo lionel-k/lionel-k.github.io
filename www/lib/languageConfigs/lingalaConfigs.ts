@@ -289,7 +289,7 @@ export const lingalaConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn bilingual coloring book in lingala with this book for ages 3-6.",
+          "Learn bilingual coloring book in lingala with this bilingual book for ages 3-6. Start your child's language journey today!",
         long: "This bilingual coloring book book helps children learn lingala through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [

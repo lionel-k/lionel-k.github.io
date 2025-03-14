@@ -9,8 +9,7 @@ export const lingalaConfigs = {
       price: "$ 12.99",
       description: {
         short: "Learn first 100 words in lingala with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn lingala through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning lingala fun and accessible.",
+        long: "This first 100 words book helps children learn lingala through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
         "Learning New Words Is Boring: Our book uses colorful pictures to make learning Lingala fun and exciting for kids.",
@@ -37,7 +36,8 @@ export const lingalaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $12.99. It's a great value for a fun and educational experience.",
+          answer:
+            "The book costs $12.99. It's a great value for a fun and educational experience.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -60,7 +60,8 @@ export const lingalaConfigs = {
             "The book combines colorful pictures with words in both Lingala and English. It's a unique way to introduce children to a new language and culture.",
         },
         {
-          question: "Is this book suitable for families living outside Lingala-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Lingala-speaking countries?",
           answer:
             "Yes, it's suitable for all families. The English translations make it easy for anyone to use, no matter where you live.",
         },
@@ -78,9 +79,9 @@ export const lingalaConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in lingala with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn lingala through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
+        short:
+          "Learn fruits and vegetables in lingala with this book for ages 0-6.",
+        long: "This fruits and vegetables book helps children learn lingala through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses colorful pictures of fruits and vegetables to make learning Lingala exciting.",
@@ -126,7 +127,8 @@ export const lingalaConfigs = {
             "No, you don't need to speak Lingala. The book includes English translations, making it easy for everyone to enjoy.",
         },
         {
-          question: "Is this book good for families outside Lingala-speaking countries?",
+          question:
+            "Is this book good for families outside Lingala-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. It helps children learn Lingala, no matter where you live.",
         },
@@ -145,8 +147,7 @@ export const lingalaConfigs = {
       price: "$ 11.99",
       description: {
         short: "Learn action verbs in lingala with this book for ages 0-6.",
-        long:
-          "This action verbs book helps children learn lingala through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
+        long: "This action verbs book helps children learn lingala through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses colorful pictures and fun activities to make learning Lingala action verbs exciting.",
@@ -197,7 +198,8 @@ export const lingalaConfigs = {
             "This book uses bright pictures and simple words to make learning fun. It's made especially for young children.",
         },
         {
-          question: "Is the book suitable for families outside Lingala-speaking countries?",
+          question:
+            "Is the book suitable for families outside Lingala-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps kids learn a new language no matter where they live.",
         },
@@ -216,8 +218,7 @@ export const lingalaConfigs = {
       price: "$ 11.99",
       description: {
         short: "Learn animals in lingala with this book for ages 0-6.",
-        long:
-          "This animals book helps children learn lingala through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
+        long: "This animals book helps children learn lingala through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses fun animal stories to make learning Lingala exciting and enjoyable.",
@@ -268,7 +269,8 @@ export const lingalaConfigs = {
             "This book uses bright pictures and simple words. It's a great tool for learning Lingala and English together.",
         },
         {
-          question: "Is the book suitable for families outside Lingala-speaking countries?",
+          question:
+            "Is the book suitable for families outside Lingala-speaking countries?",
           answer:
             "Yes, it's suitable for everyone. It helps families anywhere learn Lingala while having fun.",
         },
@@ -286,9 +288,9 @@ export const lingalaConfigs = {
       pages: "58",
       price: "$ 11.99",
       description: {
-        short: "Learn bilingual coloring book in lingala with this book for ages 3-6.",
-        long:
-          "This bilingual coloring book book helps children learn lingala through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
+        short:
+          "Learn bilingual coloring book in lingala with this bilingual book for ages 3-6. Start your child's language journey today!",
+        long: "This bilingual coloring book book helps children learn lingala through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book keeps kids engaged with fun pictures and activities while learning Lingala.",
@@ -352,9 +354,9 @@ export const lingalaConfigs = {
       pages: "83",
       price: "$ 9.99",
       description: {
-        short: "Learn animals coloring book in lingala with this book for ages 4-8.",
-        long:
-          "This animals coloring book book helps children learn lingala through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning lingala fun and accessible.",
+        short:
+          "Learn animals coloring book in lingala with this book for ages 4-8.",
+        long: "This animals coloring book book helps children learn lingala through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses fun animal pictures to make learning Lingala exciting and engaging.",
@@ -381,7 +383,8 @@ export const lingalaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for hours of educational fun.",
+          answer:
+            "The book costs $9.99. It's a great value for hours of educational fun.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -404,7 +407,8 @@ export const lingalaConfigs = {
             "This book combines coloring with language learning. It's a unique way to introduce kids to Lingala words and culture.",
         },
         {
-          question: "Is this book suitable for families living outside Lingala-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Lingala-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps kids learn about a new language and culture, no matter where you live.",
         },
@@ -416,15 +420,16 @@ export const lingalaConfigs = {
       ],
     },
     {
-      title: "Lingala - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Lingala - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-lingala",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in lingala with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn lingala through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning lingala fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in lingala with this book for ages 4-8.",
+        long: "This fruits and vegetables coloring book book helps children learn lingala through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning lingala fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book teaches Lingala through fun fruit and veggie names, making it easy for kids to remember.",
