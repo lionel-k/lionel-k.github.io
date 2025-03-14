@@ -37,21 +37,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const bookTitle = `${book.title} - ${languageData.name} Book`;
+  const bookTitle = `${languageData.name} Book - ${book.title}`;
+  const metaTitle = bookTitle.length > 60 ? bookTitle.slice(0, 60) : bookTitle;
   const bookUrl = `${SITE_URL}/books/${language}/${slug}`;
   const coverImageUrl = `${SITE_URL}/images/${language}/${slug}/cover.png`;
-
-  // Create an optimized meta description
   const metaDescription =
     book.description.short.length <= 160
       ? book.description.short
       : `${book.description.short.slice(0, 157)}...`;
 
   return {
-    title: bookTitle,
+    title: metaTitle,
     description: metaDescription,
     openGraph: {
-      title: bookTitle,
+      title: metaTitle,
       description: metaDescription,
       url: bookUrl,
       siteName: "Lingu.Africa",
