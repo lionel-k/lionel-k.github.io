@@ -10,8 +10,7 @@ export const twiConfigs = {
       description: {
         short:
           "Explore Twi with this vibrant First 100 Words book for ages 0-6. Spark curiosity and language skills today!",
-        long:
-          "Want to introduce your child to Twi? This First 100 Words book is perfect for making learning fun! Filled with vibrant illustrations and easy-to-understand words, it captures your child's imagination while teaching essential Twi vocabulary. Each page is crafted to spark curiosity and build language skills, ensuring a joyful and educational experience for your little one.",
+        long: "Want to introduce your child to Twi? This First 100 Words book is perfect for making learning fun! Filled with vibrant illustrations and easy-to-understand words, it captures your child's imagination while teaching essential Twi vocabulary. Each page is crafted to spark curiosity and build language skills, ensuring a joyful and educational experience for your little one.",
       },
       challenges: [
         "Hard to Learn New Words: This book uses pictures to make learning Twi words easy and fun for kids.",
@@ -62,7 +61,8 @@ export const twiConfigs = {
             "This book uses bright images and simple words to make learning fun. It's a great way for kids to start learning Twi early.",
         },
         {
-          question: "Is this book suitable for families living outside Twi-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Twi-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. The English translations make it easy for everyone to use and enjoy.",
         },
@@ -80,9 +80,9 @@ export const twiConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in twi with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn twi through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning twi fun and accessible.",
+        short:
+          "Learn fruits and vegetables in twi with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This fruits and vegetables book helps children learn twi through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning twi fun and accessible.",
       },
       challenges: [
         "Limited Twi Learning Resources: The book offers colorful pictures and games, making Twi words easy and fun for kids.",
@@ -133,7 +133,8 @@ export const twiConfigs = {
             "This book uses bright pictures and simple words to teach Twi. It's great for young children and parents learning together.",
         },
         {
-          question: "Is this book suitable for families outside Twi-speaking countries?",
+          question:
+            "Is this book suitable for families outside Twi-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. It helps children learn Twi no matter where you live.",
         },
@@ -151,9 +152,9 @@ export const twiConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn action verbs in twi with this book for ages 0-6.",
-        long:
-          "This action verbs book helps children learn twi through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning twi fun and accessible.",
+        short:
+          "Learn action verbs in twi with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This action verbs book helps children learn twi through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning twi fun and accessible.",
       },
       challenges: [
         "Vocabulary Is Confusing: Our book uses action verbs to teach Twi, making it easy for kids to learn new words and meanings.",
@@ -204,7 +205,8 @@ export const twiConfigs = {
             "This book combines learning with fun. It uses bright images and simple words to teach action verbs in Twi and English.",
         },
         {
-          question: "Is this book suitable for families living outside Twi-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Twi-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The book helps children connect with Twi culture and language, no matter where you live.",
         },
@@ -224,8 +226,7 @@ export const twiConfigs = {
       description: {
         short:
           "Explore Animals in Twi for ages 0-6. Discover vibrant stories and learn together. Dive into fun today!",
-        long:
-          "Want a fun way to help your child learn Twi? This Animals book is perfect! Filled with vibrant pictures and simple Twi words, kids will enjoy discovering the animals of the world. Each page is designed to make learning exciting, helping your child build language skills while having fun with their new animal friends. It's a great tool for making Twi learning an adventure!",
+        long: "Want a fun way to help your child learn Twi? This Animals book is perfect! Filled with vibrant pictures and simple Twi words, kids will enjoy discovering the animals of the world. Each page is designed to make learning exciting, helping your child build language skills while having fun with their new animal friends. It's a great tool for making Twi learning an adventure!",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Twi words with animal pictures and sounds, making it easy and fun.",
@@ -276,7 +277,8 @@ export const twiConfigs = {
             "This book combines learning with fun by using bright pictures and simple words. It helps kids connect words with images easily.",
         },
         {
-          question: "Is the book suitable for families outside Twi-speaking countries?",
+          question:
+            "Is the book suitable for families outside Twi-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The bilingual format lets any family enjoy learning Twi, no matter where they live.",
         },
@@ -296,8 +298,7 @@ export const twiConfigs = {
       description: {
         short:
           "Discover our Twi Bilingual Coloring Book for ages 3-6. Spark creativity and language skills. Grab your copy today!",
-        long:
-          "Want a fun way for your child to learn Twi? This Bilingual Coloring Book is perfect! Filled with vibrant images and simple words, it makes learning exciting. Each page helps kids discover new Twi vocabulary while coloring. It's a joyful journey that builds language skills and creativity, making learning Twi a delightful adventure for young minds.",
+        long: "Want a fun way for your child to learn Twi? This Bilingual Coloring Book is perfect! Filled with vibrant images and simple words, it makes learning exciting. Each page helps kids discover new Twi vocabulary while coloring. It's a joyful journey that builds language skills and creativity, making learning Twi a delightful adventure for young minds.",
       },
       challenges: [
         "Hard to Learn Twi Words: Our book uses pictures to make learning Twi words easy and fun for kids.",
@@ -348,7 +349,8 @@ export const twiConfigs = {
             "This book is special because it combines learning and creativity. Kids can color while learning Twi and English words.",
         },
         {
-          question: "Is this book good for families outside Twi-speaking countries?",
+          question:
+            "Is this book good for families outside Twi-speaking countries?",
           answer:
             "Yes, it's great for any family wanting to introduce Twi to their kids, no matter where they live.",
         },
@@ -368,8 +370,7 @@ export const twiConfigs = {
       description: {
         short:
           "Explore the Twi Animals Coloring Book! Perfect for ages 4-8. Unleash creativity and learn today!",
-        long:
-          "Looking for an exciting way to help your child learn Twi? This Animals Coloring Book is perfect! With delightful animal illustrations, your child will enjoy coloring while learning Twi words. Each page offers fun and educational content, helping kids build language skills. It's a joyful learning journey that makes language come alive, keeping your child engaged and excited to learn.",
+        long: "Looking for an exciting way to help your child learn Twi? This Animals Coloring Book is perfect! With delightful animal illustrations, your child will enjoy coloring while learning Twi words. Each page offers fun and educational content, helping kids build language skills. It's a joyful learning journey that makes language come alive, keeping your child engaged and excited to learn.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book keeps kids engaged with fun animal pictures to color while learning Twi words.",
@@ -396,7 +397,8 @@ export const twiConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for an educational resource.",
+          answer:
+            "The book costs $9.99. It's a great value for an educational resource.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -419,7 +421,8 @@ export const twiConfigs = {
             "This book teaches Twi with fun animal pictures and words. It's great for kids who love animals and learning new languages.",
         },
         {
-          question: "Is this book good for families living outside Twi-speaking countries?",
+          question:
+            "Is this book good for families living outside Twi-speaking countries?",
           answer:
             "Yes, it's perfect for any family, anywhere. The English translations make it easy to learn Twi from anywhere in the world.",
         },
@@ -431,15 +434,16 @@ export const twiConfigs = {
       ],
     },
     {
-      title: "Twi - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Twi - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-twi",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in twi with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn twi through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning twi fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in twi with this bilingual book for ages 4-8. Start your child's language journey today!",
+        long: "This fruits and vegetables coloring book book helps children learn twi through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning twi fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our coloring book keeps kids engaged with fun fruit and veggie pictures while learning Twi.",
@@ -466,7 +470,8 @@ export const twiConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for a fun and educational resource.",
+          answer:
+            "The book costs $9.99. It's a great value for a fun and educational resource.",
         },
         {
           question: "Can I return the book if I don't like it?",

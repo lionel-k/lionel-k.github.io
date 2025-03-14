@@ -426,7 +426,7 @@ export const hausaConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Learn fruits and vegetables coloring book in hausa with this book for ages 4-8.",
+          "Learn fruits and vegetables coloring book in hausa with this bilingual book for ages 4-8. Start your child's language journey today!",
         long: "This fruits and vegetables coloring book book helps children learn hausa through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning hausa fun and accessible.",
       },
       challenges: [

@@ -10,8 +10,7 @@ export const yorubaConfigs = {
       description: {
         short:
           "Discover 'First 100 Words' in Yoruba! Perfect for kids 0-6. Ignite learning and explore language together today!",
-        long:
-          "Want to help your child learn Yoruba in a fun way? This First 100 Words book is perfect! Filled with bright illustrations and simple words, it makes learning Yoruba easy and enjoyable. Your child will delight in discovering new vocabulary while developing essential language skills. Each page turns learning into an adventure, sparking curiosity and building a strong foundation in Yoruba.",
+        long: "Want to help your child learn Yoruba in a fun way? This First 100 Words book is perfect! Filled with bright illustrations and simple words, it makes learning Yoruba easy and enjoyable. Your child will delight in discovering new vocabulary while developing essential language skills. Each page turns learning into an adventure, sparking curiosity and building a strong foundation in Yoruba.",
       },
       challenges: [
         "Limited Language Resources: Our book offers easy words and pictures, making Yoruba learning simple and fun for kids.",
@@ -38,7 +37,8 @@ export const yorubaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $12.99. It's a great value for learning a new language.",
+          answer:
+            "The book costs $12.99. It's a great value for learning a new language.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -61,7 +61,8 @@ export const yorubaConfigs = {
             "This book is unique because it combines fun illustrations with both Yoruba and English words. It helps children learn language through pictures.",
         },
         {
-          question: "Is this book suitable for families outside Yoruba-speaking countries?",
+          question:
+            "Is this book suitable for families outside Yoruba-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. The English translations make it easy to learn Yoruba even if you're not in a Yoruba-speaking area.",
         },
@@ -79,9 +80,9 @@ export const yorubaConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in yoruba with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn yoruba through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning yoruba fun and accessible.",
+        short:
+          "Learn fruits and vegetables in yoruba with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This fruits and vegetables book helps children learn yoruba through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning yoruba fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful images and fun activities to make learning Yoruba exciting for kids.",
@@ -132,7 +133,8 @@ export const yorubaConfigs = {
             "This book uses bright pictures and simple words to teach both English and Yoruba. It's great for early learning and cultural connection.",
         },
         {
-          question: "Is this book suitable for families outside Yoruba-speaking countries?",
+          question:
+            "Is this book suitable for families outside Yoruba-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. It helps children learn Yoruba, even if they live far from Yoruba-speaking areas.",
         },
@@ -152,8 +154,7 @@ export const yorubaConfigs = {
       description: {
         short:
           "Discover Yoruba Animals for ages 0-6! Engage young minds with vibrant tales. Explore and learn today!",
-        long:
-          "Searching for a fun way to teach your child Yoruba? This delightful Animals book is perfect! Filled with vibrant illustrations and simple words, it makes learning exciting. Your child will explore the animal world while picking up Yoruba effortlessly. Each page is crafted to engage young minds, helping them build strong language skills in a joyful way.",
+        long: "Searching for a fun way to teach your child Yoruba? This delightful Animals book is perfect! Filled with vibrant illustrations and simple words, it makes learning exciting. Your child will explore the animal world while picking up Yoruba effortlessly. Each page is crafted to engage young minds, helping them build strong language skills in a joyful way.",
       },
       challenges: [
         "Limited Resources for Learning Yoruba: Our book offers colorful pictures and fun facts about animals to make learning easy.",
@@ -199,7 +200,8 @@ export const yorubaConfigs = {
             "No, you don't need to speak Yoruba. The book includes English translations to help everyone understand.",
         },
         {
-          question: "Is this book good for families living outside Yoruba-speaking countries?",
+          question:
+            "Is this book good for families living outside Yoruba-speaking countries?",
           answer:
             "Yes, it's great for families anywhere. It helps children learn Yoruba even if they don't hear it every day.",
         },
@@ -224,8 +226,7 @@ export const yorubaConfigs = {
       description: {
         short:
           "Discover Yoruba Action Verbs for kids aged 0-6. Engage and learn with vibrant illustrations. Start the adventure today!",
-        long:
-          "Want to make learning Yoruba exciting for your child? This Action Verbs book is the perfect solution! Packed with vibrant illustrations, it introduces kids to essential Yoruba action words in a fun way. Each page captivates young minds, making language learning a joyful journey. Help your child build strong Yoruba skills with engaging content that sparks curiosity and a love for languages.",
+        long: "Want to make learning Yoruba exciting for your child? This Action Verbs book is the perfect solution! Packed with vibrant illustrations, it introduces kids to essential Yoruba action words in a fun way. Each page captivates young minds, making language learning a joyful journey. Help your child build strong Yoruba skills with engaging content that sparks curiosity and a love for languages.",
       },
       challenges: [
         "Hard to Keep Kids Interested: Our book uses colorful pictures and exciting games to make learning action verbs in Yoruba fun.",
@@ -291,8 +292,7 @@ export const yorubaConfigs = {
       description: {
         short:
           "Explore Yoruba with our Bilingual Coloring Book! Perfect for kids aged 3-6. Inspire learning and creativity today!",
-        long:
-          "Want to spark your child's interest in learning Yoruba? This Bilingual Coloring Book is the perfect choice! Filled with vibrant illustrations, it makes learning new Yoruba words exciting and memorable. Each page offers a fun activity that boosts language skills and creativity, ensuring your child enjoys every moment of learning. Make learning Yoruba an adventure they'll adore!",
+        long: "Want to spark your child's interest in learning Yoruba? This Bilingual Coloring Book is the perfect choice! Filled with vibrant illustrations, it makes learning new Yoruba words exciting and memorable. Each page offers a fun activity that boosts language skills and creativity, ensuring your child enjoys every moment of learning. Make learning Yoruba an adventure they'll adore!",
       },
       challenges: [
         "Boring Language Lessons: Our book turns learning Yoruba into a fun adventure with coloring and activities that kids enjoy.",
@@ -343,7 +343,8 @@ export const yorubaConfigs = {
             "This book is unique because it combines coloring with language learning. It's a fun way for kids to explore a new language.",
         },
         {
-          question: "Is the book suitable for families living outside Yoruba-speaking countries?",
+          question:
+            "Is the book suitable for families living outside Yoruba-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. It helps children learn Yoruba no matter where they live.",
         },
@@ -363,8 +364,7 @@ export const yorubaConfigs = {
       description: {
         short:
           "Explore Yoruba culture with our Animals Coloring Book for ages 4-8. Ignite creativity today!",
-        long:
-          "Want your child to learn Yoruba while having fun? This Animals Coloring Book is perfect! Filled with vibrant animal illustrations, each page invites kids to color and discover Yoruba words. It's an exciting way to boost their language skills and creativity. Make learning Yoruba a joyful adventure with this special book that combines education and entertainment!",
+        long: "Want your child to learn Yoruba while having fun? This Animals Coloring Book is perfect! Filled with vibrant animal illustrations, each page invites kids to color and discover Yoruba words. It's an exciting way to boost their language skills and creativity. Make learning Yoruba a joyful adventure with this special book that combines education and entertainment!",
       },
       challenges: [
         "Kids Get Bored Easily: Our book keeps kids engaged with fun animal pictures and coloring activities.",
@@ -391,7 +391,8 @@ export const yorubaConfigs = {
         },
         {
           question: "How much does it cost?",
-          answer: "The book costs $9.99. It's a great price for a fun and educational experience.",
+          answer:
+            "The book costs $9.99. It's a great price for a fun and educational experience.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -414,7 +415,8 @@ export const yorubaConfigs = {
             "This book uses colorful pictures to teach Yoruba. It's great for keeping children engaged and excited about learning.",
         },
         {
-          question: "Is this book suitable for families living outside Yoruba-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Yoruba-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. It helps kids learn Yoruba even if they're not in a Yoruba-speaking country.",
         },
@@ -426,7 +428,8 @@ export const yorubaConfigs = {
       ],
     },
     {
-      title: "Yoruba - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Yoruba - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-yoruba",
       age: "4-8",
       pages: "71",
@@ -434,8 +437,7 @@ export const yorubaConfigs = {
       description: {
         short:
           "Discover Yoruba culture with our Fruits And Vegetables Coloring Book for ages 4-8. Start coloring today!",
-        long:
-          "Seeking a fun way to introduce your child to Yoruba? This Fruits And Vegetables Coloring Book is the perfect choice! Featuring vibrant illustrations and simple words, your child will enjoy learning Yoruba names for fruits and vegetables. Each page encourages creativity while helping build language skills. It's a delightful way to make learning Yoruba exciting and memorable for young learners.",
+        long: "Seeking a fun way to introduce your child to Yoruba? This Fruits And Vegetables Coloring Book is the perfect choice! Featuring vibrant illustrations and simple words, your child will enjoy learning Yoruba names for fruits and vegetables. Each page encourages creativity while helping build language skills. It's a delightful way to make learning Yoruba exciting and memorable for young learners.",
       },
       challenges: [
         "Hard to Keep Kids Engaged: Our coloring book combines art with learning Yoruba, making it fun and interactive for children.",
@@ -462,7 +464,8 @@ export const yorubaConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great price for a fun and educational experience.",
+          answer:
+            "The book costs $9.99. It's a great price for a fun and educational experience.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -480,7 +483,8 @@ export const yorubaConfigs = {
             "No, you don't need to speak Yoruba. The book is made for everyone, with both Yoruba and English words to help you learn.",
         },
         {
-          question: "Is this book good for families outside Yoruba-speaking countries?",
+          question:
+            "Is this book good for families outside Yoruba-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn about different cultures through language and art.",
         },

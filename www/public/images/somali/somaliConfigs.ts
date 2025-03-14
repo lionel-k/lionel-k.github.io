@@ -8,9 +8,9 @@ export const somaliConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in somali with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn somali through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning somali fun and accessible.",
+        short:
+          "Learn first 100 words in somali with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This first 100 words book helps children learn somali through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning somali fun and accessible.",
       },
       challenges: [
         "Lack of Engaging Resources: Our book uses bright pictures and easy words to make learning Somali exciting for kids.",
@@ -61,7 +61,8 @@ export const somaliConfigs = {
             "The book uses bright images and simple words to teach Somali. It's great for visual learning and keeping kids engaged.",
         },
         {
-          question: "Is the book suitable for families living outside Somali-speaking countries?",
+          question:
+            "Is the book suitable for families living outside Somali-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. It helps kids learn Somali, even if they don't hear it every day.",
         },
@@ -79,9 +80,9 @@ export const somaliConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in somali with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn somali through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning somali fun and accessible.",
+        short:
+          "Learn fruits and vegetables in somali with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This fruits and vegetables book helps children learn somali through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning somali fun and accessible.",
       },
       challenges: [
         "Hard to Make Learning Fun: Our book uses colorful pictures and fun facts about fruits and vegetables to make learning Somali exciting for kids.",
@@ -132,7 +133,8 @@ export const somaliConfigs = {
             "This book is special because it uses fun fruit and vegetable pictures to teach Somali words. It's a great way for kids to learn while they play.",
         },
         {
-          question: "Is the book good for families outside Somali-speaking countries?",
+          question:
+            "Is the book good for families outside Somali-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It's a fun way to introduce Somali to kids who live in different countries.",
         },
@@ -152,8 +154,7 @@ export const somaliConfigs = {
       description: {
         short:
           "Discover Somali Action Verbs for ages 0-6. Engage and learn through fun activities. Start your child's learning journey today!",
-        long:
-          "\"Do you want your child to learn Somali in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and exciting content, kids will enjoy discovering new Somali words. Each page turns learning into an adventure, helping your child build strong language skills while having fun. It's a fantastic tool for parents eager to support their child's language journey.\"",
+        long: "\"Do you want your child to learn Somali in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and exciting content, kids will enjoy discovering new Somali words. Each page turns learning into an adventure, helping your child build strong language skills while having fun. It's a fantastic tool for parents eager to support their child's language journey.\"",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses colorful pictures and games to make learning Somali action verbs exciting.",
@@ -204,7 +205,8 @@ export const somaliConfigs = {
             "The book uses colorful pictures and simple words. It's a great way for young children to start learning Somali while having fun.",
         },
         {
-          question: "Is this book good for families outside of Somali-speaking countries?",
+          question:
+            "Is this book good for families outside of Somali-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. It helps children learn Somali no matter where you live.",
         },
@@ -224,8 +226,7 @@ export const somaliConfigs = {
       description: {
         short:
           "Discover Somali animals in this charming book for ages 0-6. Spark curiosity and fun learning today!",
-        long:
-          "Ma doonaysaa hab xiiso leh oo ilmahaaga uga caawiso barashada Af-Soomaaliga? Buuggan Xayawaanka ayaa ka dhigaya mid fudud oo xiiso leh! Sawirro midab leh iyo qoraal soo jiidasho leh, ilmuhu waxay ku raaxaysan doonaan barashada erayo cusub. Bog kasta wuxuu ka caawinayaa ilmahaaga inuu ku barto xayawaanka iyo luuqadda Somali, iyagoo dhisaya xirfado afeed oo waara.",
+        long: "Ma doonaysaa hab xiiso leh oo ilmahaaga uga caawiso barashada Af-Soomaaliga? Buuggan Xayawaanka ayaa ka dhigaya mid fudud oo xiiso leh! Sawirro midab leh iyo qoraal soo jiidasho leh, ilmuhu waxay ku raaxaysan doonaan barashada erayo cusub. Bog kasta wuxuu ka caawinayaa ilmahaaga inuu ku barto xayawaanka iyo luuqadda Somali, iyagoo dhisaya xirfado afeed oo waara.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses animal pictures to help kids learn Somali words easily and with joy.",
@@ -276,7 +277,8 @@ export const somaliConfigs = {
             "This book uses bright images and simple words to teach Somali. It's designed to engage young children and make learning enjoyable.",
         },
         {
-          question: "Is this book suitable for families living outside Somali-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Somali-speaking countries?",
           answer:
             "Yes, the book is great for families anywhere. It's a fun way to introduce Somali culture and language to kids globally.",
         },
@@ -296,8 +298,7 @@ export const somaliConfigs = {
       description: {
         short:
           "Explore Somali-English colors in this Bilingual Coloring Book for ages 3-6. Inspire creativity and language skills today!",
-        long:
-          "Want a fun way for your child to learn Somali? Discover our Bilingual Coloring Book! Filled with colorful illustrations, this book makes learning new words exciting. Each page combines art and language, helping your child build Somali skills while having fun. It's a perfect tool for young learners to explore and enjoy the beauty of the Somali language together!",
+        long: "Want a fun way for your child to learn Somali? Discover our Bilingual Coloring Book! Filled with colorful illustrations, this book makes learning new words exciting. Each page combines art and language, helping your child build Somali skills while having fun. It's a perfect tool for young learners to explore and enjoy the beauty of the Somali language together!",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Somali with colorful pictures and easy words.",
@@ -324,7 +325,8 @@ export const somaliConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $11.99. It's a great price for a bilingual learning tool.",
+          answer:
+            "The book costs $11.99. It's a great price for a bilingual learning tool.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -347,7 +349,8 @@ export const somaliConfigs = {
             "This book is special because it teaches Somali through coloring. It's a fun way for kids to learn a new language while being creative.",
         },
         {
-          question: "Is this book suitable for families living outside Somali-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Somali-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The bilingual format helps children learn Somali even if they don't hear it every day.",
         },
@@ -365,9 +368,9 @@ export const somaliConfigs = {
       pages: "83",
       price: "$ 9.99",
       description: {
-        short: "Learn animals coloring book in somali with this book for ages 4-8.",
-        long:
-          "This animals coloring book book helps children learn somali through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning somali fun and accessible.",
+        short:
+          "Learn animals coloring book in somali with this bilingual book for ages 4-8. Start your child's language journey today!",
+        long: "This animals coloring book book helps children learn somali through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning somali fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book keeps kids excited with fun animal pictures to color while learning Somali words.",
@@ -418,14 +421,16 @@ export const somaliConfigs = {
             "This book is special because it teaches Somali with fun pictures. Kids can learn words while coloring animals.",
         },
         {
-          question: "Is this book suitable for families outside Somali-speaking countries?",
+          question:
+            "Is this book suitable for families outside Somali-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps kids learn Somali no matter where they live.",
         },
       ],
     },
     {
-      title: "Somali - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Somali - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-somali",
       age: "4-8",
       pages: "71",
@@ -433,8 +438,7 @@ export const somaliConfigs = {
       description: {
         short:
           "Discover Somali Fruits And Vegetables Coloring Book for ages 4-8. Inspire creativity and learning today!",
-        long:
-          "Raadisaa hab xiiso leh oo ilmahaaga ku barto Af-Soomaali? Buuggan Midho iyo Khudaar Midabaynta ah ayaa ka dhigaya mid fudud oo xiiso leh! Sawirro midab leh iyo maado soo jiidasho leh, ilmahaagu wuxuu jeclaan doonaa barashada erayo cusub. Bog kasta waxaa loo qaabeeyey si uu u madadaaliyo isla markaana u dhiso xirfadaha luqadda ee waari doona.",
+        long: "Raadisaa hab xiiso leh oo ilmahaaga ku barto Af-Soomaali? Buuggan Midho iyo Khudaar Midabaynta ah ayaa ka dhigaya mid fudud oo xiiso leh! Sawirro midab leh iyo maado soo jiidasho leh, ilmahaagu wuxuu jeclaan doonaa barashada erayo cusub. Bog kasta waxaa loo qaabeeyey si uu u madadaaliyo isla markaana u dhiso xirfadaha luqadda ee waari doona.",
       },
       challenges: [
         "Hard to Engage Kids in Learning: Our book uses fun coloring pages with fruits and veggies to keep kids excited about learning Somali words.",
@@ -461,7 +465,8 @@ export const somaliConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great price for learning and fun!",
+          answer:
+            "The book costs $9.99. It's a great price for learning and fun!",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -484,7 +489,8 @@ export const somaliConfigs = {
             "This book is special because it teaches Somali through coloring. It's a fun way for kids to learn about fruits and vegetables.",
         },
         {
-          question: "Is this book good for families living outside Somali-speaking countries?",
+          question:
+            "Is this book good for families living outside Somali-speaking countries?",
           answer:
             "Yes, it's great for families everywhere! It helps children learn Somali no matter where you live.",
         },

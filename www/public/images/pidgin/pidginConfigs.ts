@@ -8,9 +8,9 @@ export const pidginConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in pidgin with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn pidgin through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning pidgin fun and accessible.",
+        short:
+          "Learn first 100 words in pidgin with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This first 100 words book helps children learn pidgin through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning pidgin fun and accessible.",
       },
       challenges: [
         "Trouble with Vocabulary: Our book helps kids learn Pidgin words easily with colorful pictures and fun activities.",
@@ -56,7 +56,8 @@ export const pidginConfigs = {
             "No, you don't need to speak Pidgin to use this book. It's designed for everyone, even if you're new to the language.",
         },
         {
-          question: "Is this book good for families outside Pidgin-speaking countries?",
+          question:
+            "Is this book good for families outside Pidgin-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn a new language no matter where you live.",
         },
@@ -76,8 +77,7 @@ export const pidginConfigs = {
       description: {
         short:
           "Explore Pidgin Fruits And Vegetables for kids 0-6. Discover and learn with fun! Grab your copy today.",
-        long:
-          "Want make your pikin sabi Pidgin well-well? This Fruits and Vegetables book na the answer! E get colorful pictures and sweet stories wey go make dem enjoy while dem dey learn. Each page dey packed with fun words to boost language skills. Perfect for curious minds, this book go help your child sabi plenty fruits and vegetables in Pidgin while dem dey enjoy every moment.",
+        long: "Want make your pikin sabi Pidgin well-well? This Fruits and Vegetables book na the answer! E get colorful pictures and sweet stories wey go make dem enjoy while dem dey learn. Each page dey packed with fun words to boost language skills. Perfect for curious minds, this book go help your child sabi plenty fruits and vegetables in Pidgin while dem dey enjoy every moment.",
       },
       challenges: [
         "Struggle to Learn New Words: Our book uses colorful fruits and veggies to teach Pidgin words easily.",
@@ -104,7 +104,8 @@ export const pidginConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $11.99. It's a great investment for your child's learning.",
+          answer:
+            "The book costs $11.99. It's a great investment for your child's learning.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -122,7 +123,8 @@ export const pidginConfigs = {
             "No, you don't need to speak Pidgin. The book shows both Pidgin and English, so anyone can use it.",
         },
         {
-          question: "Is this book good for families outside Pidgin-speaking countries?",
+          question:
+            "Is this book good for families outside Pidgin-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. It helps children learn Pidgin no matter where they live.",
         },
@@ -142,8 +144,7 @@ export const pidginConfigs = {
       description: {
         short:
           "Discover Pidgin Action Verbs for ages 0-6! Engage young minds with fun activities. Explore and learn today!",
-        long:
-          "Want a fun way for your pikin to sabi Pidgin? This Action Verbs book na the perfect choice! Full of colorful pictures and lively activities, your child go enjoy discovering new action words. Each page dey designed to make learning easy and playful, helping your child build strong language skills wey go last forever.",
+        long: "Want a fun way for your pikin to sabi Pidgin? This Action Verbs book na the perfect choice! Full of colorful pictures and lively activities, your child go enjoy discovering new action words. Each page dey designed to make learning easy and playful, helping your child build strong language skills wey go last forever.",
       },
       challenges: [
         "Confusing Verb Meanings: Our book uses pictures to show action verbs, making Pidgin easy to understand.",
@@ -194,7 +195,8 @@ export const pidginConfigs = {
             "This book uses bright pictures and simple words to teach Pidgin. It's great for both kids and parents to enjoy together.",
         },
         {
-          question: "Is this book suitable for families living outside Pidgin-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Pidgin-speaking countries?",
           answer:
             "Yes, it's perfect for anyone interested in Pidgin, no matter where you live. The book helps connect kids to a new language and culture.",
         },
@@ -214,8 +216,7 @@ export const pidginConfigs = {
       description: {
         short:
           "Discover Animals in Pidgin! Perfect for kids aged 0-6. Dive into a fun, educational adventure today!",
-        long:
-          "Want make your pikin sabi Pidgin well-well? This Animals book dey perfect! With bright pictures and simple stories, e dey teach new Pidgin words through animals wey dem like. Each page dey full of fun, making learning sweet and easy. Your child go enjoy as dem dey learn language skills wey go last forever. Perfect for young explorers who love animals and want to learn Pidgin!",
+        long: "Want make your pikin sabi Pidgin well-well? This Animals book dey perfect! With bright pictures and simple stories, e dey teach new Pidgin words through animals wey dem like. Each page dey full of fun, making learning sweet and easy. Your child go enjoy as dem dey learn language skills wey go last forever. Perfect for young explorers who love animals and want to learn Pidgin!",
       },
       challenges: [
         "Hard to Understand Pidgin: Our book teaches Pidgin with easy words and animal stories to make learning simple.",
@@ -266,7 +267,8 @@ export const pidginConfigs = {
             "This book combines fun illustrations with easy-to-read text. It's great for teaching kids Pidgin in an enjoyable way.",
         },
         {
-          question: "Is the book good for families outside Pidgin-speaking countries?",
+          question:
+            "Is the book good for families outside Pidgin-speaking countries?",
           answer:
             "Yes, it's suitable for all families. It helps children learn about different cultures and languages.",
         },
@@ -286,8 +288,7 @@ export const pidginConfigs = {
       description: {
         short:
           "Discover our Pidgin Bilingual Coloring Book for ages 3-6. Engage and learn today with vibrant, fun activities!",
-        long:
-          "Want an exciting way for your child to learn Pidgin? This Bilingual Coloring Book is perfect! Filled with vibrant illustrations, it turns learning into an adventure. Watch your child discover new Pidgin words on each page, making language skills fun and memorable. A delightful tool for young minds eager to explore the world of Pidgin!",
+        long: "Want an exciting way for your child to learn Pidgin? This Bilingual Coloring Book is perfect! Filled with vibrant illustrations, it turns learning into an adventure. Watch your child discover new Pidgin words on each page, making language skills fun and memorable. A delightful tool for young minds eager to explore the world of Pidgin!",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Pidgin with easy words and fun pictures that stick.",
@@ -314,7 +315,8 @@ export const pidginConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $11.99. It's a great price for a fun learning tool.",
+          answer:
+            "The book costs $11.99. It's a great price for a fun learning tool.",
         },
         {
           question: "Do I need to speak Pidgin to use the book?",
@@ -322,7 +324,8 @@ export const pidginConfigs = {
             "No, you don't need to speak Pidgin. The book includes English translations to help everyone understand.",
         },
         {
-          question: "Is this book good for families living outside Pidgin-speaking countries?",
+          question:
+            "Is this book good for families living outside Pidgin-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn about different cultures and languages.",
         },
@@ -352,8 +355,7 @@ export const pidginConfigs = {
       description: {
         short:
           "Discover Pidgin Animals Coloring Book! Perfect for kids 4-8. Grab your crayons and start coloring today!",
-        long:
-          "Want your pikin to sabi Pidgin in a fun way? This Animals Coloring Book dey perfect for am! With bright animal drawings and simple Pidgin words, your child go enjoy every page. Dem go color, learn new words, and build strong language skills wey go last dem forever. Make learning time special and interesting with this unique book!",
+        long: "Want your pikin to sabi Pidgin in a fun way? This Animals Coloring Book dey perfect for am! With bright animal drawings and simple Pidgin words, your child go enjoy every page. Dem go color, learn new words, and build strong language skills wey go last dem forever. Make learning time special and interesting with this unique book!",
       },
       challenges: [
         "Boring Language Lessons: Our book makes Pidgin exciting with lively animal pictures kids enjoy coloring.",
@@ -380,7 +382,8 @@ export const pidginConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for a fun and educational experience.",
+          answer:
+            "The book costs $9.99. It's a great value for a fun and educational experience.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -410,7 +413,8 @@ export const pidginConfigs = {
       ],
     },
     {
-      title: "Pidgin - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Pidgin - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-pidgin",
       age: "4-8",
       pages: "71",
@@ -418,8 +422,7 @@ export const pidginConfigs = {
       description: {
         short:
           "Pidgin Fruits And Vegetables Coloring Book wey go spark joy for kids age 4-8. Grab your copy and start coloring fun today!",
-        long:
-          "Want your pikin to sabi Pidgin well well? This Fruits And Vegetables Coloring Book go make am easy and sweet! With colorful pictures, your child go enjoy new words. Each page dey designed to make learning fun while building language skills. Perfect way to learn Pidgin and know different fruits and vegetables at the same time!",
+        long: "Want your pikin to sabi Pidgin well well? This Fruits And Vegetables Coloring Book go make am easy and sweet! With colorful pictures, your child go enjoy new words. Each page dey designed to make learning fun while building language skills. Perfect way to learn Pidgin and know different fruits and vegetables at the same time!",
       },
       challenges: [
         "Hard to Keep Kids Interested: Our book uses fun fruit and veggie pictures to make learning Pidgin exciting.",

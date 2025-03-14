@@ -10,8 +10,7 @@ export const igboConfigs = {
       description: {
         short:
           "Igbo First 100 Words book for ages 0-6. Engage young minds and explore Igbo language together. Grab it now!",
-        long:
-          "Want to introduce your child to the Igbo language? This First 100 Words book is perfect for young learners! Bursting with vibrant illustrations and simple words, it makes learning Igbo an exciting adventure. Each page is crafted to captivate your child's imagination, helping them build vocabulary and language skills that will grow with them. Start your child's journey in learning Igbo today!",
+        long: "Want to introduce your child to the Igbo language? This First 100 Words book is perfect for young learners! Bursting with vibrant illustrations and simple words, it makes learning Igbo an exciting adventure. Each page is crafted to captivate your child's imagination, helping them build vocabulary and language skills that will grow with them. Start your child's journey in learning Igbo today!",
       },
       challenges: [
         "Trouble Remembering Words: Our book uses bright pictures to help kids remember Igbo words easily.",
@@ -62,7 +61,8 @@ export const igboConfigs = {
             "This book uses bright pictures and easy words to teach Igbo. It's great for kids and helps them learn in an engaging way.",
         },
         {
-          question: "Is this book good for families outside Igbo-speaking countries?",
+          question:
+            "Is this book good for families outside Igbo-speaking countries?",
           answer:
             "Yes, the book is perfect for families everywhere. It helps children learn Igbo no matter where you live.",
         },
@@ -80,9 +80,9 @@ export const igboConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in igbo with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn igbo through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
+        short:
+          "Learn fruits and vegetables in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This fruits and vegetables book helps children learn igbo through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses colorful fruits and vegetables to teach Igbo words easily.",
@@ -109,7 +109,8 @@ export const igboConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $11.99. It's a great investment for early language learning.",
+          answer:
+            "The book costs $11.99. It's a great investment for early language learning.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -132,7 +133,8 @@ export const igboConfigs = {
             "This book combines bright pictures and simple words to teach Igbo. It's great for kids and parents learning together.",
         },
         {
-          question: "Is the book suitable for families outside Igbo-speaking countries?",
+          question:
+            "Is the book suitable for families outside Igbo-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. It helps connect children to their culture and language roots.",
         },
@@ -150,9 +152,9 @@ export const igboConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn action verbs in igbo with this book for ages 0-6.",
-        long:
-          "This action verbs book helps children learn igbo through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
+        short:
+          "Learn action verbs in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This action verbs book helps children learn igbo through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful images and fun activities to make learning Igbo action verbs exciting.",
@@ -203,7 +205,8 @@ export const igboConfigs = {
             "This book uses vibrant images and simple language. It's a great tool for making language learning enjoyable for kids.",
         },
         {
-          question: "Is this book suitable for families outside Igbo-speaking countries?",
+          question:
+            "Is this book suitable for families outside Igbo-speaking countries?",
           answer:
             "Yes, it's perfect for families worldwide. It helps children connect with Igbo culture and language, no matter where they live.",
         },
@@ -221,9 +224,9 @@ export const igboConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn animals in igbo with this book for ages 0-6.",
-        long:
-          "This animals book helps children learn igbo through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
+        short:
+          "Learn animals in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This animals book helps children learn igbo through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning igbo fun and accessible.",
       },
       challenges: [
         "Hard to Keep Kids Interested: Our book uses colorful animal pictures to make Igbo learning exciting.",
@@ -269,7 +272,8 @@ export const igboConfigs = {
             "No, you don't need to speak Igbo. The book has both Igbo and English, so it's easy to use for everyone.",
         },
         {
-          question: "Is this book good for families living outside Igbo-speaking countries?",
+          question:
+            "Is this book good for families living outside Igbo-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The book helps children learn Igbo even if they're not in an Igbo-speaking area.",
         },
@@ -289,8 +293,7 @@ export const igboConfigs = {
       description: {
         short:
           "Igbo Bilingual Coloring Book for ages 3-6. Discover colors and words! Spark creativity and language skills today!",
-        long:
-          "Looking for a fun way to help your child learn Igbo? This Bilingual Coloring Book offers an exciting journey! With vibrant illustrations and simple words, kids will enjoy discovering new Igbo vocabulary. Each page is crafted to make learning fun and interactive, helping your child build lasting language skills while sparking creativity and curiosity.",
+        long: "Looking for a fun way to help your child learn Igbo? This Bilingual Coloring Book offers an exciting journey! With vibrant illustrations and simple words, kids will enjoy discovering new Igbo vocabulary. Each page is crafted to make learning fun and interactive, helping your child build lasting language skills while sparking creativity and curiosity.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns Igbo learning into a fun adventure with colorful pages and easy words.",
@@ -341,7 +344,8 @@ export const igboConfigs = {
             "This book is special because it combines coloring with language learning. It helps kids learn Igbo while having fun with activities.",
         },
         {
-          question: "Is this book suitable for families living outside Igbo-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Igbo-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps kids connect with Igbo culture no matter where they live.",
         },
@@ -361,8 +365,7 @@ export const igboConfigs = {
       description: {
         short:
           "Igbo Animals Coloring Book for ages 4-8. Discover and color! Ignite creativity and learning. Get yours today!",
-        long:
-          "Searching for a playful way to teach your child Igbo? This Animals Coloring Book is perfect! With vibrant illustrations and simple words, your child will enjoy discovering new Igbo vocabulary. Each page combines fun and learning, helping kids connect with language through their favorite animals. It's a delightful tool for enhancing language skills while sparking creativity and curiosity.",
+        long: "Searching for a playful way to teach your child Igbo? This Animals Coloring Book is perfect! With vibrant illustrations and simple words, your child will enjoy discovering new Igbo vocabulary. Each page combines fun and learning, helping kids connect with language through their favorite animals. It's a delightful tool for enhancing language skills while sparking creativity and curiosity.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns Igbo learning into a fun adventure with animal pictures to color.",
@@ -408,7 +411,8 @@ export const igboConfigs = {
             "Amazon provides reliable shipping with tracking. You can check your delivery status online.",
         },
         {
-          question: "Is this book good for families outside Igbo-speaking countries?",
+          question:
+            "Is this book good for families outside Igbo-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The book helps children learn Igbo no matter where you live.",
         },
@@ -420,15 +424,16 @@ export const igboConfigs = {
       ],
     },
     {
-      title: "Igbo - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Igbo - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-igbo",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in igbo with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn igbo through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning igbo fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in igbo with this bilingual book for ages 4-8. Start your child's language journey today!",
+        long: "This fruits and vegetables coloring book book helps children learn igbo through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning igbo fun and accessible.",
       },
       challenges: [
         "Learning Igbo is Boring: Our book uses fun coloring pages to make learning Igbo exciting for kids.",
@@ -479,7 +484,8 @@ export const igboConfigs = {
             "This book uses bright pictures to make learning Igbo exciting for kids. It's great for families who want to explore a new language together.",
         },
         {
-          question: "Is this book suitable for families outside Igbo-speaking countries?",
+          question:
+            "Is this book suitable for families outside Igbo-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The English translations make it easy to use, no matter where you live.",
         },

@@ -8,9 +8,9 @@ export const zuluConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in zulu with this book for ages 0-6.",
-        long:
-          "This first 100 words book helps children learn zulu through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning zulu fun and accessible.",
+        short:
+          "Learn first 100 words in zulu with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This first 100 words book helps children learn zulu through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning zulu fun and accessible.",
       },
       challenges: [
         "Hard to Learn New Words: Our book teaches Zulu words with bright pictures that make learning easy and fun.",
@@ -61,7 +61,8 @@ export const zuluConfigs = {
             "This book uses bright pictures and dual-language text. It's perfect for introducing children to a new language and culture.",
         },
         {
-          question: "Is the book suitable for families outside Zulu-speaking countries?",
+          question:
+            "Is the book suitable for families outside Zulu-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It's an excellent way to introduce kids to a different language and culture, no matter where you live.",
         },
@@ -81,8 +82,7 @@ export const zuluConfigs = {
       description: {
         short:
           "Discover Zulu Fruits And Vegetables! Perfect for kids aged 0-6. Explore and learn together today!",
-        long:
-          "Ufunani indlela yokujabulisa umntwana wakho ekufundeni isiZulu? Le ncwadi yamafutha nezithelo iyenza kube lula futhi kujabulise! Inezithombe ezimibalabala nokuqukethwe okubandakanya, umntwana wakho uzothanda ukufunda amagama amasha. Ikhasi ngalinye lakhelwe ukwenza ukufunda kujabulise, kuthuthukise amakhono olimi aqinile.",
+        long: "Ufunani indlela yokujabulisa umntwana wakho ekufundeni isiZulu? Le ncwadi yamafutha nezithelo iyenza kube lula futhi kujabulise! Inezithombe ezimibalabala nokuqukethwe okubandakanya, umntwana wakho uzothanda ukufunda amagama amasha. Ikhasi ngalinye lakhelwe ukwenza ukufunda kujabulise, kuthuthukise amakhono olimi aqinile.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses bright pictures and fun facts to keep kids interested in learning Zulu.",
@@ -128,7 +128,8 @@ export const zuluConfigs = {
             "No, you don't need to speak Zulu. The book has words in both Zulu and English to help everyone understand.",
         },
         {
-          question: "Is this book good for families living outside Zulu-speaking countries?",
+          question:
+            "Is this book good for families living outside Zulu-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The book helps kids learn Zulu, no matter where you live.",
         },
@@ -148,8 +149,7 @@ export const zuluConfigs = {
       description: {
         short:
           "Discover Zulu Action Verbs in this fun book for ages 0-6. Engage young minds and inspire learning today!",
-        long:
-          "Looking for a fun way to help your child learn Zulu? This Action Verbs book is perfect for making language learning exciting! Packed with colorful illustrations and simple words, your child will enjoy discovering new action verbs. Each page is crafted to engage young minds, helping build essential language skills in Zulu that will last a lifetime. Ideal for curious kids and supportive parents!",
+        long: "Looking for a fun way to help your child learn Zulu? This Action Verbs book is perfect for making language learning exciting! Packed with colorful illustrations and simple words, your child will enjoy discovering new action verbs. Each page is crafted to engage young minds, helping build essential language skills in Zulu that will last a lifetime. Ideal for curious kids and supportive parents!",
       },
       challenges: [
         "Struggling with Boring Lessons: Our book uses bright pictures and games to make learning Zulu action verbs exciting.",
@@ -176,7 +176,8 @@ export const zuluConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $11.99. It's a great price for a fun and educational resource.",
+          answer:
+            "The book costs $11.99. It's a great price for a fun and educational resource.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -199,7 +200,8 @@ export const zuluConfigs = {
             "This book uses bright pictures and simple words to teach action verbs in Zulu and English. It's a fun way for kids to learn a new language.",
         },
         {
-          question: "Is this book good for families outside Zulu-speaking countries?",
+          question:
+            "Is this book good for families outside Zulu-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps kids learn about Zulu while also practicing English.",
         },
@@ -217,9 +219,9 @@ export const zuluConfigs = {
       pages: "27",
       price: "$ 11.99",
       description: {
-        short: "Learn animals in zulu with this book for ages 0-6.",
-        long:
-          "This animals book helps children learn zulu through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning zulu fun and accessible.",
+        short:
+          "Learn animals in zulu with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This animals book helps children learn zulu through engaging content. With 27 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning zulu fun and accessible.",
       },
       challenges: [
         "Hard to Remember New Words: Our book uses animal stories to make Zulu words easy to remember and fun to learn.",
@@ -246,7 +248,8 @@ export const zuluConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $11.99. It's a great price for a fun and educational tool.",
+          answer:
+            "The book costs $11.99. It's a great price for a fun and educational tool.",
         },
         {
           question: "Do I need to speak Zulu to use the book?",
@@ -254,7 +257,8 @@ export const zuluConfigs = {
             "No, you don't need to speak Zulu. The book includes both Zulu and English words, making it easy to learn together.",
         },
         {
-          question: "Is this book suitable for families living outside Zulu-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Zulu-speaking countries?",
           answer:
             "Yes, it's great for families anywhere! It helps kids learn about another culture and language, no matter where you live.",
         },
@@ -284,8 +288,7 @@ export const zuluConfigs = {
       description: {
         short:
           "Discover a Zulu Bilingual Coloring Book for ages 3-6. Spark learning and creativity today!",
-        long:
-          "Want to make learning Zulu fun for your child? This Bilingual Coloring Book is the perfect choice! Filled with vibrant illustrations, it introduces Zulu words in an exciting way. Kids will enjoy coloring while picking up new vocabulary. Each page is crafted to spark joy and enhance language skills, making Zulu learning a delightful adventure that parents and children will treasure!",
+        long: "Want to make learning Zulu fun for your child? This Bilingual Coloring Book is the perfect choice! Filled with vibrant illustrations, it introduces Zulu words in an exciting way. Kids will enjoy coloring while picking up new vocabulary. Each page is crafted to spark joy and enhance language skills, making Zulu learning a delightful adventure that parents and children will treasure!",
       },
       challenges: [
         "Boring Language Lessons: Our book adds fun to Zulu learning with colorful pages and activities kids enjoy.",
@@ -331,7 +334,8 @@ export const zuluConfigs = {
             "No, you don't need to speak Zulu. The book is designed to teach both kids and parents with easy-to-follow translations.",
         },
         {
-          question: "Is the book good for families outside Zulu-speaking countries?",
+          question:
+            "Is the book good for families outside Zulu-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. It helps children learn about a different culture and language.",
         },
@@ -349,9 +353,9 @@ export const zuluConfigs = {
       pages: "83",
       price: "$ 9.99",
       description: {
-        short: "Learn animals coloring book in zulu with this book for ages 4-8.",
-        long:
-          "This animals coloring book book helps children learn zulu through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning zulu fun and accessible.",
+        short:
+          "Learn animals coloring book in zulu with this bilingual book for ages 4-8. Start your child's language journey today!",
+        long: "This animals coloring book book helps children learn zulu through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning zulu fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book keeps kids interested with fun animal pictures to color while learning Zulu words.",
@@ -378,7 +382,8 @@ export const zuluConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for a fun and educational experience.",
+          answer:
+            "The book costs $9.99. It's a great value for a fun and educational experience.",
         },
         {
           question: "Do I need to speak Zulu to use the book?",
@@ -391,7 +396,8 @@ export const zuluConfigs = {
             "The book is special because it combines learning with fun coloring activities. It's a great way for kids to learn Zulu while being creative.",
         },
         {
-          question: "Is this book suitable for families outside Zulu-speaking countries?",
+          question:
+            "Is this book suitable for families outside Zulu-speaking countries?",
           answer:
             "Yes, it's perfect for families anywhere. The English translations make it easy for children worldwide to learn Zulu.",
         },
@@ -413,15 +419,16 @@ export const zuluConfigs = {
       ],
     },
     {
-      title: "Zulu - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Zulu - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-zulu",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in zulu with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn zulu through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning zulu fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in zulu with this bilingual book for ages 4-8. Start your child's language journey today!",
+        long: "This fruits and vegetables coloring book book helps children learn zulu through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning zulu fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Quickly: Our book keeps kids engaged with fun coloring pages of fruits and veggies.",
@@ -448,7 +455,8 @@ export const zuluConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great value for learning and fun.",
+          answer:
+            "The book costs $9.99. It's a great value for learning and fun.",
         },
         {
           question: "Do I need to speak Zulu to use the book?",
@@ -456,7 +464,8 @@ export const zuluConfigs = {
             "No, you don't need to speak Zulu. The book includes both Zulu and English words to help you learn together.",
         },
         {
-          question: "Is this book good for families living outside Zulu-speaking countries?",
+          question:
+            "Is this book good for families living outside Zulu-speaking countries?",
           answer:
             "Yes, it's great for families everywhere. The book helps kids learn Zulu language and culture, no matter where they live.",
         },

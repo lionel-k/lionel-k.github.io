@@ -348,7 +348,7 @@ export const capeVerdeanKrioluConfigs = {
       price: "$9.99",
       description: {
         short:
-          "Learn animals coloring book in cape-verdean-kriolu with this book for ages 4-8.",
+          "Learn animals coloring book in cape-verdean-kriolu with this bilingual book for ages 4-8. Start your child's language journey today!",
         long: "This animals coloring book book helps children learn cape-verdean-kriolu through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning cape-verdean-kriolu fun and accessible.",
       },
       challenges: [

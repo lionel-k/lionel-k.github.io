@@ -10,8 +10,7 @@ export const kikuyuConfigs = {
       description: {
         short:
           "Discover Kikuyu First 100 Words for ages 0-6. Engage young minds with vibrant images and start their language journey today!",
-        long:
-          "Want a fun way to introduce your child to Kikuyu? This First 100 Words book is perfect for young learners! Bursting with vibrant illustrations, it captivates kids while teaching essential Kikuyu vocabulary. Each page is crafted to make learning enjoyable and boost language skills, making it a delightful tool for parents and children to explore Kikuyu together.",
+        long: "Want a fun way to introduce your child to Kikuyu? This First 100 Words book is perfect for young learners! Bursting with vibrant illustrations, it captivates kids while teaching essential Kikuyu vocabulary. Each page is crafted to make learning enjoyable and boost language skills, making it a delightful tool for parents and children to explore Kikuyu together.",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Kikuyu with bright pictures and easy words they can remember.",
@@ -62,7 +61,8 @@ export const kikuyuConfigs = {
             "This book combines bright pictures with simple words in Kikuyu and English. It's a great tool for kids to learn while having fun.",
         },
         {
-          question: "Is the book suitable for families outside Kikuyu-speaking countries?",
+          question:
+            "Is the book suitable for families outside Kikuyu-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The English translations make it easy for anyone to use and enjoy.",
         },
@@ -80,9 +80,9 @@ export const kikuyuConfigs = {
       pages: "36",
       price: "$ 11.99",
       description: {
-        short: "Learn fruits and vegetables in kikuyu with this book for ages 0-6.",
-        long:
-          "This fruits and vegetables book helps children learn kikuyu through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning kikuyu fun and accessible.",
+        short:
+          "Learn fruits and vegetables in kikuyu with this bilingual book for ages 0-6. Start your child's language journey today!",
+        long: "This fruits and vegetables book helps children learn kikuyu through engaging content. With 36 pages of educational material, it's perfect for ages 0-6. Priced at $11.99, this book makes learning kikuyu fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful pictures of fruits and vegetables to make learning Kikuyu exciting.",
@@ -133,7 +133,8 @@ export const kikuyuConfigs = {
             "This book uses bright pictures and simple words to teach Kikuyu. It's a great way for kids to learn while having fun.",
         },
         {
-          question: "Is the book suitable for families living outside Kikuyu-speaking countries?",
+          question:
+            "Is the book suitable for families living outside Kikuyu-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The English translations help kids learn Kikuyu no matter where you live.",
         },
@@ -153,8 +154,7 @@ export const kikuyuConfigs = {
       description: {
         short:
           "Discover Kikuyu Action Verbs for ages 0-6! Engage young minds with fun, dynamic language learning today!",
-        long:
-          "Want an exciting way to help your child learn Kikuyu? This Action Verbs book is perfect! Packed with vibrant illustrations and playful activities, it makes learning Kikuyu verbs fun and interactive. Your child will enjoy discovering new words while enhancing their language skills. This special book turns learning into an adventure, ensuring your child gains valuable knowledge in an enjoyable way.",
+        long: "Want an exciting way to help your child learn Kikuyu? This Action Verbs book is perfect! Packed with vibrant illustrations and playful activities, it makes learning Kikuyu verbs fun and interactive. Your child will enjoy discovering new words while enhancing their language skills. This special book turns learning into an adventure, ensuring your child gains valuable knowledge in an enjoyable way.",
       },
       challenges: [
         "Boring Lessons: Our book uses colorful pictures and fun stories to make learning Kikuyu action verbs exciting.",
@@ -205,7 +205,8 @@ export const kikuyuConfigs = {
             "This book uses fun pictures and easy words to teach Kikuyu action verbs. It's a great way for kids to learn a new language while having fun.",
         },
         {
-          question: "Is the book suitable for families outside Kikuyu-speaking countries?",
+          question:
+            "Is the book suitable for families outside Kikuyu-speaking countries?",
           answer:
             "Yes, it's perfect for any family wanting to learn Kikuyu. The English translations make it accessible wherever you live.",
         },
@@ -225,8 +226,7 @@ export const kikuyuConfigs = {
       description: {
         short:
           "Discover Kikuyu Animals! Perfect for ages 0-6. Engage young minds with vibrant, unique wildlife stories today!",
-        long:
-          "Want to make learning Kikuyu fun for your child? This Animals book is the perfect choice! Filled with vibrant illustrations and simple Kikuyu words, it captivates young minds. Kids will enjoy discovering animals while naturally picking up new vocabulary. It's a delightful way to boost language skills and foster a love for nature. Perfect for curious little learners!",
+        long: "Want to make learning Kikuyu fun for your child? This Animals book is the perfect choice! Filled with vibrant illustrations and simple Kikuyu words, it captivates young minds. Kids will enjoy discovering animals while naturally picking up new vocabulary. It's a delightful way to boost language skills and foster a love for nature. Perfect for curious little learners!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful animal pictures to make learning Kikuyu exciting for kids.",
@@ -272,7 +272,8 @@ export const kikuyuConfigs = {
             "No, you don't need to speak Kikuyu. The book includes English translations, making it easy for everyone to use.",
         },
         {
-          question: "Is the book suitable for families outside Kikuyu-speaking countries?",
+          question:
+            "Is the book suitable for families outside Kikuyu-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. The English translations help children learn Kikuyu no matter where they live.",
         },
@@ -292,8 +293,7 @@ export const kikuyuConfigs = {
       description: {
         short:
           "Discover the Kikuyu Bilingual Coloring Book for ages 3-6. Engage young minds and inspire learning today!",
-        long:
-          "Want to make learning Kikuyu fun for your child? This Bilingual Coloring Book is perfect! Filled with vibrant illustrations and easy words, kids can color while learning Kikuyu. Each page encourages creativity and language development, making it a special way to introduce your child to a new language. Ideal for young learners eager to explore and grow!",
+        long: "Want to make learning Kikuyu fun for your child? This Bilingual Coloring Book is perfect! Filled with vibrant illustrations and easy words, kids can color while learning Kikuyu. Each page encourages creativity and language development, making it a special way to introduce your child to a new language. Ideal for young learners eager to explore and grow!",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses fun pictures to teach Kikuyu words, making it easy for kids to remember.",
@@ -357,9 +357,9 @@ export const kikuyuConfigs = {
       pages: "83",
       price: "$ 9.99",
       description: {
-        short: "Learn animals coloring book in kikuyu with this book for ages 4-8.",
-        long:
-          "This animals coloring book book helps children learn kikuyu through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning kikuyu fun and accessible.",
+        short:
+          "Learn animals coloring book in kikuyu with this bilingual book for ages 4-8. Start your child's language journey today!",
+        long: "This animals coloring book book helps children learn kikuyu through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning kikuyu fun and accessible.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns learning Kikuyu into a fun adventure with animal coloring pages kids enjoy.",
@@ -386,7 +386,8 @@ export const kikuyuConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great price for hours of educational fun.",
+          answer:
+            "The book costs $9.99. It's a great price for hours of educational fun.",
         },
         {
           question: "Can I return the book if I don't like it?",
@@ -409,7 +410,8 @@ export const kikuyuConfigs = {
             "This book combines coloring with language learning. It's fun and educational for children and families.",
         },
         {
-          question: "Is this book suitable for families outside Kikuyu-speaking countries?",
+          question:
+            "Is this book suitable for families outside Kikuyu-speaking countries?",
           answer:
             "Yes, this book is great for anyone wanting to learn Kikuyu, no matter where you live.",
         },
@@ -421,15 +423,16 @@ export const kikuyuConfigs = {
       ],
     },
     {
-      title: "Kikuyu - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
+      title:
+        "Kikuyu - English Fruits and Vegetables Coloring Book for Kids Ages 4-8",
       slug: "fruits-and-vegetables-coloring-book-in-kikuyu",
       age: "4-8",
       pages: "71",
       price: "$ 9.99",
       description: {
-        short: "Learn fruits and vegetables coloring book in kikuyu with this book for ages 4-8.",
-        long:
-          "This fruits and vegetables coloring book book helps children learn kikuyu through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning kikuyu fun and accessible.",
+        short:
+          "Learn fruits and vegetables coloring book in kikuyu with this bilingual book for ages 4-8. Start your child's language journey today!",
+        long: "This fruits and vegetables coloring book book helps children learn kikuyu through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning kikuyu fun and accessible.",
       },
       challenges: [
         "Kids Get Bored Easily: Our book makes learning Kikuyu fun with coloring pages of fruits and vegetables.",
@@ -456,7 +459,8 @@ export const kikuyuConfigs = {
         },
         {
           question: "How much does the book cost?",
-          answer: "The book costs $9.99. It's a great price for a fun and educational experience.",
+          answer:
+            "The book costs $9.99. It's a great price for a fun and educational experience.",
         },
         {
           question: "Do I need to speak Kikuyu to use the book?",
@@ -464,7 +468,8 @@ export const kikuyuConfigs = {
             "No, you don't need to speak Kikuyu. The book uses both Kikuyu and English, so anyone can enjoy it.",
         },
         {
-          question: "Is this book suitable for families living outside Kikuyu-speaking countries?",
+          question:
+            "Is this book suitable for families living outside Kikuyu-speaking countries?",
           answer:
             "Yes, it's perfect for families everywhere. It helps children learn about different cultures and languages.",
         },

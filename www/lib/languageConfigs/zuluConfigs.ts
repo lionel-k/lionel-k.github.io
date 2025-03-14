@@ -354,7 +354,7 @@ export const zuluConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Learn animals coloring book in zulu with this book for ages 4-8.",
+          "Learn animals coloring book in zulu with this bilingual book for ages 4-8. Start your child's language journey today!",
         long: "This animals coloring book book helps children learn zulu through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning zulu fun and accessible.",
       },
       challenges: [
@@ -427,7 +427,7 @@ export const zuluConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Learn fruits and vegetables coloring book in zulu with this book for ages 4-8.",
+          "Learn fruits and vegetables coloring book in zulu with this bilingual book for ages 4-8. Start your child's language journey today!",
         long: "This fruits and vegetables coloring book book helps children learn zulu through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning zulu fun and accessible.",
       },
       challenges: [
