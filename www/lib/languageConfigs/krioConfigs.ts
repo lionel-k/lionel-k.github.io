@@ -2,7 +2,7 @@ export const krioConfigs = {
   name: "Krio",
   books: [
     {
-      title: "Krio - English Words for Toddlers - First 100 Words",
+      title: "Krio - English Words for Kids - First 100 Words",
       slug: "first-100-words-in-krio",
       age: "0-6",
       pages: "52",
