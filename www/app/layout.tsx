@@ -2,7 +2,6 @@ import "./globals.css";
 import GoogleAnalyticsWrapper from "./GoogleAnalyticsWrapper";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
-import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Navbar } from "@/components/navbar";
@@ -115,7 +114,6 @@ export default function RootLayout({
               <main className="flex-1">{children}</main>
               <Footer />
             </div>
-            <Analytics />
           </Providers>
         </GoogleAnalyticsWrapper>
       </body>
