@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const bookTitle = `${languageData.name} Book - ${book.title}`;
+  const bookTitle = `${book.title} - ${languageData.name} Book`;
   const metaTitle = bookTitle.length > 60 ? bookTitle.slice(0, 60) : bookTitle;
   const bookUrl = `${SITE_URL}/books/${language}/${slug}`;
   const coverImageUrl = `${SITE_URL}/images/${language}/${slug}/cover.png`;
