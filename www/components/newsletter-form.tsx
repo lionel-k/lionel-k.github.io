@@ -9,6 +9,8 @@ export function NewsletterForm() {
         width="100%"
         height="320"
         title="Newsletter subscription form"
+        loading="lazy"
+        sandbox="allow-scripts allow-forms allow-same-origin"
         style={{
           borderRadius: "4px",
           margin: "0",
