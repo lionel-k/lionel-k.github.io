@@ -42,7 +42,6 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         {/* Preconnect to domains we need to access */}
-        <link rel="preconnect" href="https://www.lingu.africa" />
         <link rel="preconnect" href="https://analytics.lingu.africa" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
@@ -57,18 +56,6 @@ export default function RootLayout({
             <Footer />
           </div>
         </Providers>
-
-        {/* Cookie consent manager - using local copies to avoid CORS issues */}
-        <Script
-          id="axeptio-config"
-          src="/scripts/axeptio-config.js"
-          strategy="lazyOnload"
-        />
-        <Script
-          id="axeptio-sdk"
-          src="/scripts/axeptio-sdk.js"
-          strategy="lazyOnload"
-        />
 
         {/* Analytics */}
         <Script
