@@ -55,11 +55,17 @@ export default async function Home() {
               <div className="mb-8 inline-block bg-[#DAA520]/20 px-6 py-2 rounded-full text-[#DAA520] text-sm font-semibold">
                 Preserving African Heritage Through Language
               </div>
+              {/* Pre-rendered h1 element to avoid CLS and improve LCP */}
               <h1
-                className="text-5xl font-bold tracking-tight sm:text-7xl text-white"
+                className="text-5xl font-bold tracking-tight sm:text-7xl text-white font-display"
                 style={{
                   textRendering: "optimizeSpeed",
+                  display: "block",
+                  contain: "paint",
+                  willChange: "auto",
+                  maxHeight: "999999px", // Prevent font boosting on mobile
                 }}
+                id="hero-heading"
               >
                 Teach Your Children Their African Language
               </h1>
@@ -110,7 +116,9 @@ export default async function Home() {
                         src={`/images/kirundi/${book.slug}/cover.webp`}
                         alt={`${book.title} cover`}
                         className="w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
-                        priority={true}
+                        priority={index === 0}
+                        width={320}
+                        height={460}
                       />
                     </AmazonLink>
                     <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">

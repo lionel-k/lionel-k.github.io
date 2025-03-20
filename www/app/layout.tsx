@@ -41,6 +41,33 @@ export default function RootLayout({
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        {/* Add font-display: swap in style to ensure text is visible during font loading */}
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
+          @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/fonts/inter.woff2') format('woff2');
+          }
+          @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('/fonts/inter-bold.woff2') format('woff2');
+          }
+          .font-display {
+            font-display: swap;
+          }
+          #hero-heading {
+            content-visibility: auto;
+          }
+        `,
+          }}
+        />
         {/* Preconnect to domains we need to access */}
         <link rel="preconnect" href="https://analytics.lingu.africa" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

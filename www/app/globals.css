@@ -78,4 +78,13 @@ html {
   .text-balance {
     text-wrap: balance;
   }
+
+  /* Optimized heading styles for better LCP */
+  #hero-heading {
+    text-rendering: optimizeSpeed;
+    font-display: swap;
+    content-visibility: auto;
+    contain: layout paint style;
+    will-change: transform;
+  }
 }
