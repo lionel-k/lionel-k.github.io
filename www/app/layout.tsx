@@ -41,6 +41,9 @@ export default function RootLayout({
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        {/* Preconnect to domains we need to access */}
+        <link rel="preconnect" href="https://www.lingu.africa" />
+        <link rel="preconnect" href="https://analytics.lingu.africa" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
@@ -55,29 +58,16 @@ export default function RootLayout({
           </div>
         </Providers>
 
-        {/* Cookie consent manager - using next/script to properly handle loading */}
-        <Script id="axeptio-settings" strategy="lazyOnload">
-          {`
-            window.axeptioSettings = {
-              clientId: "6766f45a3c202b4ab475401f",
-              cookiesVersion: "lingu-en-EU",
-              googleConsentMode: {
-                default: {
-                  analytics_storage: "denied",
-                  ad_storage: "denied",
-                  ad_user_data: "denied",
-                  ad_personalization: "denied",
-                  wait_for_update: 500
-                }
-              }
-            };
-          `}
-        </Script>
+        {/* Cookie consent manager - using local copies to avoid CORS issues */}
         <Script
-          id="axeptio-js"
-          src="https://static.axept.io/sdk.js"
+          id="axeptio-config"
+          src="/scripts/axeptio-config.js"
           strategy="lazyOnload"
-          crossOrigin="anonymous"
+        />
+        <Script
+          id="axeptio-sdk"
+          src="/scripts/axeptio-sdk.js"
+          strategy="lazyOnload"
         />
 
         {/* Analytics */}
