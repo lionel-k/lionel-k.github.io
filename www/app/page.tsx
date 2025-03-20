@@ -68,7 +68,7 @@ export default async function Home() {
                   className="mt-2 sm:mt-0"
                 >
                   <img
-                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=944305&theme=neutral&t=1742489941354"
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=944305&theme=light&t=1742490357236"
                     alt="Lingu&#0046;Africa - Helping&#0032;African&#0032;parents&#0032;pass&#0032;down&#0032;language&#0032;and&#0032;culture | Product Hunt"
                     style={{ width: "250px", height: "54px" }}
                     width="250"
