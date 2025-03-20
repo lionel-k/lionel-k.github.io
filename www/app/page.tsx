@@ -7,6 +7,7 @@ import { languagesConfig } from "@/lib/languagesConfig";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { AmazonLink } from "@/components/AmazonLink";
 import { getLatestBlogPosts } from "@/lib/blog";
+import Head from "next/head";
 
 import { Metadata } from "next";
 
@@ -54,7 +55,7 @@ export default async function Home() {
               <div className="mb-8 inline-block bg-[#DAA520]/20 px-6 py-2 rounded-full text-[#DAA520] text-sm font-semibold">
                 Preserving African Heritage Through Language
               </div>
-              <h1 className="text-5xl font-bold tracking-tight text-white sm:text-7xl bg-gradient-to-r from-[#DAA520] to-[#B8860B] bg-clip-text text-transparent">
+              <h1 className="text-5xl font-bold tracking-tight sm:text-7xl text-white">
                 Teach Your Children Their African Language
               </h1>
               <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
@@ -65,6 +66,7 @@ export default async function Home() {
                 <Link
                   href="#languages"
                   className="flex items-center gap-2 rounded-full bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-lg hover:bg-[#B8860B] transition-all transform hover:scale-105"
+                  prefetch={true}
                 >
                   <Book className="h-6 w-6" />
                   Explore Our Books
@@ -89,7 +91,7 @@ export default async function Home() {
             <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
               {languagesConfig.kirundi.books
                 .filter((book) => book.bestSeller)
-                .map((book) => (
+                .map((book, index) => (
                   <div
                     key={book.slug}
                     className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -103,6 +105,7 @@ export default async function Home() {
                         src={`/images/kirundi/${book.slug}/cover.png`}
                         alt={`${book.title} cover`}
                         className="w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
+                        priority={index === 0}
                       />
                     </AmazonLink>
                     <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">

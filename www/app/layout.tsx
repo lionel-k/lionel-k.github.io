@@ -7,7 +7,12 @@ import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// Optimize font loading
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap", // Use 'swap' to ensure text remains visible during font loading
+  preload: true,
+});
 
 export const metadata: Metadata = {
   title: {
@@ -30,6 +35,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
       <head>
+        {/* Preload critical fonts for LCP improvement */}
+        <link
+          rel="preload"
+          href="/fonts/inter.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         {/* Insert GA script tags directly in <head> here */}
         <script
           async
