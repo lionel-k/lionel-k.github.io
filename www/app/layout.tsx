@@ -39,36 +39,22 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        {/* Cookie consent manager - moved to external file for better caching */}
         <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.axeptioSettings = {
-                clientId: "6766f45a3c202b4ab475401f",
-                cookiesVersion: "lingu-en-EU",
-                googleConsentMode: {
-                  default: {
-                    analytics_storage: "denied",
-                    ad_storage: "denied",
-                    ad_user_data: "denied",
-                    ad_personalization: "denied",
-                    wait_for_update: 500
-                  }
-                }
-              };
-
-              (function(d, s) {
-                var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-                e.async = true; e.src = "//static.axept.io/sdk.js";
-                t.parentNode.insertBefore(e, t);
-              })(document, "script");
-            `,
-          }}
+          src="/scripts/axeptio.js"
+          async
+          defer
+          crossOrigin="anonymous"
+          referrerPolicy="origin"
         />
+
         <script
           defer
           src="https://analytics.lingu.africa/script.js"
           data-website-id="36dfd617-5a98-443b-90d0-9438ca6c5be0"
           data-host-url="https://analytics.lingu.africa"
+          crossOrigin="anonymous"
+          referrerPolicy="strict-origin"
         ></script>
       </head>
       <body
