@@ -98,17 +98,17 @@ export default function BookPageClient({ language, slug }: Props) {
                 {book.description.long}
               </p>
               {/* Chips for Age, Pages, Price, and Availability */}
-              <div className="mt-4 flex space-x-4">
-                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-3 py-1.5 rounded-full">
                   {book.age} years
                 </span>
-                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-3 py-1.5 rounded-full">
                   {book.pages} pages
                 </span>
-                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-3 py-1.5 rounded-full">
                   {book.price}
                 </span>
-                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-3 py-1.5 rounded-full">
                   In Stock
                 </span>
               </div>
