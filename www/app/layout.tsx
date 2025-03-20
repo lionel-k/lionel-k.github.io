@@ -1,5 +1,4 @@
 import "./globals.css";
-import GoogleAnalyticsWrapper from "./GoogleAnalyticsWrapper";
 import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import type { Metadata } from "next";
@@ -45,47 +44,6 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Insert GA script tags directly in <head> here */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZPGXJS23ZM"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ZPGXJS23ZM', {
-                page_path: window.location.pathname,
-              });
-            `,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.axeptioSettings = {
-                clientId: "6766f45a3c202b4ab475401f",
-                googleConsentMode: {
-                  default: {
-                    analytics_storage: "denied",
-                    ad_storage: "denied",
-                    ad_user_data: "denied",
-                    ad_personalization: "denied",
-                    wait_for_update: 500
-                  }
-                }
-              };
-
-              (function(d, s) {
-                var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-                e.async = true; e.src = "//static.axept.io/sdk.js";
-                t.parentNode.insertBefore(e, t);
-              })(document, "script");
-            `,
-          }}
-        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -122,15 +80,13 @@ export default function RootLayout({
         className={`${inter.className} flex min-h-full flex-col`}
         suppressHydrationWarning
       >
-        <GoogleAnalyticsWrapper>
-          <Providers>
-            <div className="flex min-h-screen flex-col">
-              <Navbar />
-              <main className="flex-1">{children}</main>
-              <Footer />
-            </div>
-          </Providers>
-        </GoogleAnalyticsWrapper>
+        <Providers>
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </Providers>
       </body>
     </html>
   );
