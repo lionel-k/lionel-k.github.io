@@ -1,17 +1,12 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import type { Metadata } from "next";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
-// Optimize font loading
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap", // Use 'swap' to ensure text remains visible during font loading
-  preload: true,
-});
+// Define the local font class name
+const interClassName = "font-inter";
 
 export const metadata: Metadata = {
   title: {
@@ -77,7 +72,7 @@ export default function RootLayout({
         ></script>
       </head>
       <body
-        className={`${inter.className} flex min-h-full flex-col`}
+        className={`${interClassName} flex min-h-full flex-col`}
         suppressHydrationWarning
       >
         <Providers>
