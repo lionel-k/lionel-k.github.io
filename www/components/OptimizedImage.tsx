@@ -34,6 +34,9 @@ export function OptimizedImage({
             height={height || 630}
             priority={priority}
             loading={priority ? "eager" : "lazy"}
+            quality={priority ? 90 : 75}
+            fetchPriority={priority ? "high" : "auto"}
+            decoding="async"
           />
         </picture>
       </div>
@@ -56,6 +59,7 @@ export function OptimizedImage({
         height={height}
         loading={priority ? "eager" : "lazy"}
         decoding="async"
+        fetchPriority={priority ? "high" : "auto"}
       />
     </picture>
   );

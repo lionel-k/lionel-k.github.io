@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
+  other: {
+    "google-font-display": "swap",
+  },
 };
 
 export default function RootLayout({
@@ -38,6 +41,21 @@ export default function RootLayout({
           type="font/woff2"
           crossOrigin="anonymous"
         />
+        {/* Preload hero image and logo for faster LCP */}
+        <link
+          rel="preload"
+          href="/images/kirundi/book-1/cover.png"
+          as="image"
+          type="image/png"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          href="/logo.png"
+          as="image"
+          type="image/png"
+          fetchPriority="high"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
@@ -53,7 +71,7 @@ export default function RootLayout({
         </Providers>
 
         {/* Cookie consent manager - using next/script to properly handle loading */}
-        <Script id="axeptio-settings" strategy="afterInteractive">
+        <Script id="axeptio-settings" strategy="lazyOnload">
           {`
             window.axeptioSettings = {
               clientId: "6766f45a3c202b4ab475401f",
@@ -73,7 +91,7 @@ export default function RootLayout({
         <Script
           id="axeptio-js"
           src="https://static.axept.io/sdk.js"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           crossOrigin="anonymous"
         />
 
@@ -84,7 +102,7 @@ export default function RootLayout({
           src="https://analytics.lingu.africa/script.js"
           data-website-id="36dfd617-5a98-443b-90d0-9438ca6c5be0"
           data-host-url="https://analytics.lingu.africa"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           crossOrigin="anonymous"
         />
       </body>

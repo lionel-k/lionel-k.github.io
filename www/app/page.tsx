@@ -55,7 +55,14 @@ export default async function Home() {
               <div className="mb-8 inline-block bg-[#DAA520]/20 px-6 py-2 rounded-full text-[#DAA520] text-sm font-semibold">
                 Preserving African Heritage Through Language
               </div>
-              <h1 className="text-5xl font-bold tracking-tight sm:text-7xl text-white">
+              <h1
+                className="text-5xl font-bold tracking-tight sm:text-7xl text-white"
+                style={{
+                  textRendering: "optimizeSpeed",
+                  contentVisibility: "auto",
+                  contain: "layout paint style",
+                }}
+              >
                 Teach Your Children Their African Language
               </h1>
               <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
@@ -68,8 +75,8 @@ export default async function Home() {
                   className="flex items-center gap-2 rounded-full bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-lg hover:bg-[#B8860B] transition-all transform hover:scale-105"
                   prefetch={true}
                 >
-                  <Book className="h-6 w-6" />
-                  Explore Our Books
+                  <Book aria-hidden="true" className="h-6 w-6" />
+                  <span>Explore Our Books</span>
                 </Link>
               </div>
             </div>
@@ -105,7 +112,7 @@ export default async function Home() {
                         src={`/images/kirundi/${book.slug}/cover.png`}
                         alt={`${book.title} cover`}
                         className="w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
-                        priority={index === 0}
+                        priority={true}
                       />
                     </AmazonLink>
                     <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">
