@@ -33,6 +33,7 @@ export default function BlogPostClient({ post }: Props) {
           <button
             onClick={() => setIsTableOfContentsOpen(!isTableOfContentsOpen)}
             className="w-full flex items-center justify-between px-4 py-3 bg-white text-gray-900 rounded-lg shadow-sm border"
+            title="Toggle table of contents"
           >
             <span className="text-base font-medium">Table of Contents</span>
             <ChevronDown
@@ -53,6 +54,7 @@ export default function BlogPostClient({ post }: Props) {
                       <a
                         href={`#${item.id}`}
                         className="text-gray-600 hover:text-gray-900 transition-colors"
+                        title={item.text}
                       >
                         {item.text}
                       </a>
@@ -82,6 +84,7 @@ export default function BlogPostClient({ post }: Props) {
                       <a
                         href={`#${item.id}`}
                         className="text-gray-600 hover:text-[#DAA520] transition-colors"
+                        title={item.text}
                       >
                         {item.text}
                       </a>
@@ -195,6 +198,7 @@ export default function BlogPostClient({ post }: Props) {
                       <Link
                         href={`/blog/${post.adjacentPosts.previous.slug}`}
                         className="flex flex-col space-y-3"
+                        title={`Read previous article: ${post.adjacentPosts.previous.title}`}
                       >
                         <span className="text-sm text-[#DAA520] font-medium">
                           Previous Article
@@ -212,6 +216,7 @@ export default function BlogPostClient({ post }: Props) {
                       <Link
                         href={`/blog/${post.adjacentPosts.next.slug}`}
                         className="flex flex-col space-y-3"
+                        title={`Read next article: ${post.adjacentPosts.next.title}`}
                       >
                         <span className="text-sm text-[#DAA520] font-medium">
                           Next Article
@@ -231,6 +236,7 @@ export default function BlogPostClient({ post }: Props) {
               <Link
                 href={post.cta.link}
                 className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 text-base font-medium text-center text-black bg-[#F5A524] rounded-lg hover:bg-[#F5A524]/90 transition-colors"
+                title={post.cta.text}
               >
                 {post.cta.text}
                 <ChevronDown className="w-5 h-5 rotate-[-90deg]" />

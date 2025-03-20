@@ -68,6 +68,7 @@ export default function Books() {
                     <Link
                       href={`/books/${language.slug}`}
                       className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                      title={`View ${language.name} book collection`}
                     >
                       View Collection
                       <ArrowRight className="ml-2 h-5 w-5" />

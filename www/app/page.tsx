@@ -78,6 +78,7 @@ export default async function Home() {
                   href="#languages"
                   className="flex items-center gap-2 rounded-full bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-lg hover:bg-[#B8860B] transition-all transform hover:scale-105"
                   prefetch={true}
+                  title="Explore our collection of bilingual books"
                 >
                   <Book aria-hidden="true" className="h-6 w-6" />
                   <span>Explore Our Books</span>
@@ -173,6 +174,7 @@ export default async function Home() {
                       <Link
                         href={`/books/${language.slug}`}
                         className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                        title={`Explore ${language.name} language books`}
                       >
                         Explore {language.name}
                         <ArrowRight className="ml-2 h-5 w-5" />
@@ -249,6 +251,7 @@ export default async function Home() {
                   href={`/blog/${post.slug}`}
                   key={post.slug}
                   className="group"
+                  title={post.title}
                 >
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
                     <div className="relative h-48 overflow-hidden">
@@ -293,6 +296,7 @@ export default async function Home() {
               <Link
                 href="/blog"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-center text-black bg-[#F5A524] rounded-lg hover:bg-[#F5A524]/90 transition-colors"
+                title="View all blog posts"
               >
                 View All Blog Posts
                 <ChevronRight className="w-5 h-5" />
