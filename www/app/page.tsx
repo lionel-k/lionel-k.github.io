@@ -244,7 +244,7 @@ export default async function Home() {
                     </div>
                     <div className="p-6 flex flex-col flex-grow">
                       <div className="mb-2">
-                        <span className="inline-block px-3 py-1 text-xs font-semibold text-[#DAA520] bg-[#DAA520]/10 rounded-full">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold text-[#8B4513] bg-[#DAA520]/20 rounded-full">
                           {post.category}
                         </span>
                       </div>
