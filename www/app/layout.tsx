@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import Script from "next/script";
 
 // Define the local font class name
 const interClassName = "font-inter";
@@ -38,24 +39,6 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-        {/* Cookie consent manager - moved to external file for better caching */}
-        <script
-          src="/scripts/axeptio.js"
-          async
-          defer
-          crossOrigin="anonymous"
-          referrerPolicy="origin"
-        />
-
-        <script
-          defer
-          src="https://analytics.lingu.africa/script.js"
-          data-website-id="36dfd617-5a98-443b-90d0-9438ca6c5be0"
-          data-host-url="https://analytics.lingu.africa"
-          crossOrigin="anonymous"
-          referrerPolicy="strict-origin"
-        ></script>
       </head>
       <body
         className={`${interClassName} flex min-h-full flex-col`}
@@ -68,6 +51,42 @@ export default function RootLayout({
             <Footer />
           </div>
         </Providers>
+
+        {/* Cookie consent manager - using next/script to properly handle loading */}
+        <Script id="axeptio-settings" strategy="afterInteractive">
+          {`
+            window.axeptioSettings = {
+              clientId: "6766f45a3c202b4ab475401f",
+              cookiesVersion: "lingu-en-EU",
+              googleConsentMode: {
+                default: {
+                  analytics_storage: "denied",
+                  ad_storage: "denied",
+                  ad_user_data: "denied",
+                  ad_personalization: "denied",
+                  wait_for_update: 500
+                }
+              }
+            };
+          `}
+        </Script>
+        <Script
+          id="axeptio-js"
+          src="https://static.axept.io/sdk.js"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
+
+        {/* Analytics */}
+        <Script
+          defer
+          id="analytics"
+          src="https://analytics.lingu.africa/script.js"
+          data-website-id="36dfd617-5a98-443b-90d0-9438ca6c5be0"
+          data-host-url="https://analytics.lingu.africa"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
