@@ -107,7 +107,7 @@ export default async function Home() {
                       className="block mb-6 cursor-pointer"
                     >
                       <OptimizedImage
-                        src={`/images/kirundi/${book.slug}/cover.png`}
+                        src={`/images/kirundi/${book.slug}/cover.webp`}
                         alt={`${book.title} cover`}
                         className="w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
                         priority={true}
