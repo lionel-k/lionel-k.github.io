@@ -59,8 +59,6 @@ export default async function Home() {
                 className="text-5xl font-bold tracking-tight sm:text-7xl text-white"
                 style={{
                   textRendering: "optimizeSpeed",
-                  contentVisibility: "auto",
-                  contain: "layout paint style",
                 }}
               >
                 Teach Your Children Their African Language

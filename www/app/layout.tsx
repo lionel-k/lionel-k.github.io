@@ -41,21 +41,6 @@ export default function RootLayout({
           type="font/woff2"
           crossOrigin="anonymous"
         />
-        {/* Preload hero image and logo for faster LCP */}
-        <link
-          rel="preload"
-          href="/images/kirundi/book-1/cover.png"
-          as="image"
-          type="image/png"
-          fetchPriority="high"
-        />
-        <link
-          rel="preload"
-          href="/logo.png"
-          as="image"
-          type="image/png"
-          fetchPriority="high"
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body
