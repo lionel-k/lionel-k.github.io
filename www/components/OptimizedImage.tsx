@@ -6,21 +6,54 @@ type Props = {
   className?: string;
   width?: number;
   height?: number;
+  priority?: boolean;
 };
 
-export function OptimizedImage({ src, alt, className, width, height }: Props) {
-  const webpSrc = src.replace(/\.png$/, ".webp");
+export function OptimizedImage({
+  src,
+  alt,
+  className,
+  width,
+  height,
+  priority = false,
+}: Props) {
+  // Use Next.js Image for better performance when possible
+  if (src.startsWith("/")) {
+    // For static export, we'll use a simpler approach
+    return (
+      <div className="next-image-container">
+        <picture>
+          <img
+            src={src}
+            alt={alt}
+            className={className}
+            width={width || 1200}
+            height={height || 630}
+            loading={priority ? "eager" : "lazy"}
+            decoding="async"
+            fetchPriority={priority ? "high" : "auto"}
+            style={{
+              contentVisibility: priority ? "auto" : undefined,
+              display: "block",
+            }}
+          />
+        </picture>
+      </div>
+    );
+  }
 
+  // Fallback to traditional picture element for external images
   return (
     <picture>
-      <source srcSet={webpSrc} type="image/webp" />
-      <source srcSet={src} type="image/png" />
       <img
         src={src}
         alt={alt}
         className={className}
         width={width}
         height={height}
+        loading={priority ? "eager" : "lazy"}
+        decoding="async"
+        fetchPriority={priority ? "high" : "auto"}
       />
     </picture>
   );

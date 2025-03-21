@@ -98,17 +98,17 @@ export default function BookPageClient({ language, slug }: Props) {
                 {book.description.long}
               </p>
               {/* Chips for Age, Pages, Price, and Availability */}
-              <div className="mt-4 flex space-x-4">
-                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+              <div className="mt-4 flex flex-wrap gap-2">
+                <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-3 py-1.5 rounded-full">
                   {book.age} years
                 </span>
-                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-3 py-1.5 rounded-full">
                   {book.pages} pages
                 </span>
-                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-3 py-1.5 rounded-full">
                   {book.price}
                 </span>
-                <span className="inline-block bg-[#DAA520] text-black text-sm font-semibold px-4 py-2 rounded-full">
+                <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-3 py-1.5 rounded-full">
                   In Stock
                 </span>
               </div>
@@ -296,6 +296,7 @@ export default function BookPageClient({ language, slug }: Props) {
                   <Link
                     href={`/books/${language}/${relatedBook.slug}`}
                     rel="follow"
+                    title={`View ${relatedBook.title} details`}
                   >
                     <OptimizedImage
                       src={`/images/${language}/${relatedBook.slug}/cover.png`}
@@ -310,6 +311,7 @@ export default function BookPageClient({ language, slug }: Props) {
                     href={`/books/${language}/${relatedBook.slug}`}
                     rel="follow"
                     className="mt-4 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                    title={`Read more about ${relatedBook.title}`}
                   >
                     Read More
                     <ArrowRight className="ml-2 h-5 w-5" />

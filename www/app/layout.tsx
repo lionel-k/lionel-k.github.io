@@ -1,13 +1,13 @@
 import "./globals.css";
-import GoogleAnalyticsWrapper from "./GoogleAnalyticsWrapper";
-import { Inter } from "next/font/google";
 import { Providers } from "./providers";
 import type { Metadata } from "next";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+// Define the local font class name
+const interClassName = "font-inter";
 
 export const metadata: Metadata = {
   title: {
@@ -20,6 +20,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
+  other: {
+    "google-font-display": "swap",
+  },
 };
 
 export default function RootLayout({
@@ -30,92 +33,67 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full" suppressHydrationWarning>
       <head>
-        {/* Insert GA script tags directly in <head> here */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZPGXJS23ZM"
+        {/* Preload critical fonts for LCP improvement */}
+        <link
+          rel="preload"
+          href="/fonts/inter.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
         />
-        <script
+        {/* Add font-display: swap in style to ensure text is visible during font loading */}
+        <style
           dangerouslySetInnerHTML={{
             __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-ZPGXJS23ZM', {
-                page_path: window.location.pathname,
-              });
-            `,
+          @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-display: swap;
+            src: url('/fonts/inter.woff2') format('woff2');
+          }
+          @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url('/fonts/inter-bold.woff2') format('woff2');
+          }
+          .font-display {
+            font-display: swap;
+          }
+          #hero-heading {
+            content-visibility: auto;
+          }
+        `,
           }}
         />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.axeptioSettings = {
-                clientId: "6766f45a3c202b4ab475401f",
-                googleConsentMode: {
-                  default: {
-                    analytics_storage: "denied",
-                    ad_storage: "denied",
-                    ad_user_data: "denied",
-                    ad_personalization: "denied",
-                    wait_for_update: 500
-                  }
-                }
-              };
+        {/* Preconnect to domains we need to access */}
+        <link rel="preconnect" href="https://analytics.lingu.africa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body
+        className={`${interClassName} flex min-h-full flex-col`}
+        suppressHydrationWarning
+      >
+        <Providers>
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </Providers>
 
-              (function(d, s) {
-                var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-                e.async = true; e.src = "//static.axept.io/sdk.js";
-                t.parentNode.insertBefore(e, t);
-              })(document, "script");
-            `,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.axeptioSettings = {
-                clientId: "6766f45a3c202b4ab475401f",
-                cookiesVersion: "lingu-en-EU",
-                googleConsentMode: {
-                  default: {
-                    analytics_storage: "denied",
-                    ad_storage: "denied",
-                    ad_user_data: "denied",
-                    ad_personalization: "denied",
-                    wait_for_update: 500
-                  }
-                }
-              };
-
-              (function(d, s) {
-                var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-                e.async = true; e.src = "//static.axept.io/sdk.js";
-                t.parentNode.insertBefore(e, t);
-              })(document, "script");
-            `,
-          }}
-        />
-        <script
+        {/* Analytics */}
+        <Script
           defer
+          id="analytics"
           src="https://analytics.lingu.africa/script.js"
           data-website-id="36dfd617-5a98-443b-90d0-9438ca6c5be0"
           data-host-url="https://analytics.lingu.africa"
-        ></script>
-      </head>
-      <body
-        className={`${inter.className} flex min-h-full flex-col`}
-        suppressHydrationWarning
-      >
-        <GoogleAnalyticsWrapper>
-          <Providers>
-            <div className="flex min-h-screen flex-col">
-              <Navbar />
-              <main className="flex-1">{children}</main>
-              <Footer />
-            </div>
-          </Providers>
-        </GoogleAnalyticsWrapper>
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );

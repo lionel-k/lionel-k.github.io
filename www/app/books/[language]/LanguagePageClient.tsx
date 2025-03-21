@@ -83,7 +83,10 @@ export default function LanguagePageClient({ language }: Props) {
                   const bookDetailsUrl = `/books/${language}/${book.slug}`;
                   return (
                     <>
-                      <Link href={bookDetailsUrl}>
+                      <Link
+                        href={bookDetailsUrl}
+                        title={`View ${book.title} details`}
+                      >
                         <OptimizedImage
                           src={`/images/${language}/${book.slug}/cover.png`}
                           alt={`${book.title} cover`}
@@ -99,6 +102,7 @@ export default function LanguagePageClient({ language }: Props) {
                       <Link
                         href={bookDetailsUrl}
                         className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all cursor-pointer"
+                        title={`Read more about ${book.title}`}
                       >
                         Read More
                         <ArrowRight className="ml-2 h-5 w-5" />

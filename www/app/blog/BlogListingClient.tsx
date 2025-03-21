@@ -24,7 +24,7 @@ export default function BlogListingClient({ posts }: BlogListingClientProps) {
           key={post.slug}
           className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col"
         >
-          <Link href={`/blog/${post.slug}`}>
+          <Link href={`/blog/${post.slug}`} title={post.title}>
             <div className="relative aspect-[4/3] w-full mb-6 overflow-hidden rounded-xl">
               <Image
                 src={post.coverImage}

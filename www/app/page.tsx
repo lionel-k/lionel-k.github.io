@@ -7,6 +7,7 @@ import { languagesConfig } from "@/lib/languagesConfig";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { AmazonLink } from "@/components/AmazonLink";
 import { getLatestBlogPosts } from "@/lib/blog";
+import Head from "next/head";
 
 import { Metadata } from "next";
 
@@ -54,7 +55,18 @@ export default async function Home() {
               <div className="mb-8 inline-block bg-[#DAA520]/20 px-6 py-2 rounded-full text-[#DAA520] text-sm font-semibold">
                 Preserving African Heritage Through Language
               </div>
-              <h1 className="text-5xl font-bold tracking-tight text-white sm:text-7xl bg-gradient-to-r from-[#DAA520] to-[#B8860B] bg-clip-text text-transparent">
+              {/* Pre-rendered h1 element to avoid CLS and improve LCP */}
+              <h1
+                className="text-5xl font-bold tracking-tight sm:text-7xl text-white font-display"
+                style={{
+                  textRendering: "optimizeSpeed",
+                  display: "block",
+                  contain: "paint",
+                  willChange: "auto",
+                  maxHeight: "999999px", // Prevent font boosting on mobile
+                }}
+                id="hero-heading"
+              >
                 Teach Your Children Their African Language
               </h1>
               <p className="mt-8 text-xl leading-8 text-gray-300 max-w-2xl mx-auto">
@@ -78,9 +90,11 @@ export default async function Home() {
                 <Link
                   href="#languages"
                   className="flex items-center gap-2 rounded-full bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-lg hover:bg-[#B8860B] transition-all transform hover:scale-105"
+                  prefetch={true}
+                  title="Explore our collection of bilingual books"
                 >
-                  <Book className="h-6 w-6" />
-                  Explore Our Books
+                  <Book aria-hidden="true" className="h-6 w-6" />
+                  <span>Explore Our Books</span>
                 </Link>
               </div>
             </div>
@@ -102,7 +116,7 @@ export default async function Home() {
             <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
               {languagesConfig.kirundi.books
                 .filter((book) => book.bestSeller)
-                .map((book) => (
+                .map((book, index) => (
                   <div
                     key={book.slug}
                     className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
@@ -113,9 +127,12 @@ export default async function Home() {
                       className="block mb-6 cursor-pointer"
                     >
                       <OptimizedImage
-                        src={`/images/kirundi/${book.slug}/cover.png`}
+                        src={`/images/kirundi/${book.slug}/cover.webp`}
                         alt={`${book.title} cover`}
                         className="w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
+                        priority={index === 0}
+                        width={320}
+                        height={460}
                       />
                     </AmazonLink>
                     <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">
@@ -170,6 +187,7 @@ export default async function Home() {
                       <Link
                         href={`/books/${language.slug}`}
                         className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                        title={`Explore ${language.name} language books`}
                       >
                         Explore {language.name}
                         <ArrowRight className="ml-2 h-5 w-5" />
@@ -246,6 +264,7 @@ export default async function Home() {
                   href={`/blog/${post.slug}`}
                   key={post.slug}
                   className="group"
+                  title={post.title}
                 >
                   <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full">
                     <div className="relative h-48 overflow-hidden">
@@ -257,7 +276,7 @@ export default async function Home() {
                     </div>
                     <div className="p-6 flex flex-col flex-grow">
                       <div className="mb-2">
-                        <span className="inline-block px-3 py-1 text-xs font-semibold text-[#DAA520] bg-[#DAA520]/10 rounded-full">
+                        <span className="inline-block px-3 py-1 text-xs font-semibold text-[#8B4513] bg-[#DAA520]/20 rounded-full">
                           {post.category}
                         </span>
                       </div>
@@ -290,6 +309,7 @@ export default async function Home() {
               <Link
                 href="/blog"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-medium text-center text-black bg-[#F5A524] rounded-lg hover:bg-[#F5A524]/90 transition-colors"
+                title="View all blog posts"
               >
                 View All Blog Posts
                 <ChevronRight className="w-5 h-5" />
