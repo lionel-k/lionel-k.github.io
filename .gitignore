@@ -49,3 +49,4 @@ tools/package-lock.json
 tools/node_modules
 
 www/.env.local
+app-vite/
