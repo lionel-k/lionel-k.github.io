@@ -73,11 +73,11 @@ export default async function Home() {
                 Beautifully bilingual books that make learning fun and natural,
                 no prior language experience needed!
               </p>
-              <div className="mt-12 flex items-center justify-center gap-x-6">
+              <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
                 <a
                   href="https://www.producthunt.com/posts/lingu-africa?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-lingu&#0045;africa"
                   target="_blank"
-                  className="mt-2 sm:mt-0"
+                  className="w-full sm:w-auto"
                 >
                   <img
                     src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=944305&theme=light&t=1742490357236"
@@ -85,11 +85,12 @@ export default async function Home() {
                     style={{ width: "250px", height: "54px" }}
                     width="250"
                     height="54"
+                    className="mx-auto"
                   />
                 </a>
                 <Link
                   href="#languages"
-                  className="flex items-center gap-2 rounded-full bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-lg hover:bg-[#B8860B] transition-all transform hover:scale-105"
+                  className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-lg hover:bg-[#B8860B] transition-all transform hover:scale-105"
                   prefetch={true}
                   title="Explore our collection of bilingual books"
                 >
