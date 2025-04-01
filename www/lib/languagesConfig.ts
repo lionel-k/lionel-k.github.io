@@ -111,7 +111,7 @@ export const languagesConfig: Record<string, LanguageConfig> = {
   },
   tigrinya: {
     ...tigrinyaConfigs,
-    description: `Learn Tigrinya with bilingual picture books. Experience Ethiopian culture through stories in Tigrinya and English. Made for families.`,
+    description: `Learn Tigrinya with bilingual picture books. Experience Eritrean culture through stories in Tigrinya and English. Made for families.`,
   },
   twi: {
     ...twiConfigs,
