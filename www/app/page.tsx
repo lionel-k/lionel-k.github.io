@@ -126,10 +126,7 @@ export default async function Home() {
                     <AmazonLink
                       href={book.amazonUrl}
                       className="block mb-6 cursor-pointer"
-                      bookTitle={book.title}
-                      bookLanguage={book.language}
-                      bookPrice={book.price}
-                      location="best_sellers"
+                      bookSlug={book.slug}
                     >
                       <OptimizedImage
                         src={`/images/kirundi/${book.slug}/cover.webp`}
