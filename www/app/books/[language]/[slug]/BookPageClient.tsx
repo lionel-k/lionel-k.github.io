@@ -36,10 +36,7 @@ function PurchaseCTA({ book, language }: { book: Book; language: string }) {
         <AmazonLink
           href={book.amazonUrl}
           className="inline-flex items-center justify-center rounded-full bg-gray-800 px-8 py-4 text-lg font-bold text-white shadow-lg hover:bg-gray-700 transition-all duration-300 hover:scale-105"
-          bookTitle={book.title}
-          bookLanguage={language}
-          bookPrice={book.price}
-          location="book_page"
+          bookSlug={book.slug}
         >
           Get Your Paperback Now
           <ArrowRight className="ml-2 h-5 w-5" />

@@ -7,20 +7,14 @@ interface AmazonLinkProps {
   href: string;
   className?: string;
   children?: React.ReactNode;
-  bookTitle?: string;
-  bookLanguage?: string;
-  bookPrice?: string;
-  location?: string;
+  bookSlug?: string;
 }
 
 export function AmazonLink({
   href,
   className,
   children,
-  bookTitle,
-  bookLanguage,
-  bookPrice,
-  location = "unknown",
+  bookSlug,
 }: AmazonLinkProps) {
   const [isInstagram, setIsInstagram] = useState(false);
   const [showBanner, setShowBanner] = useState(false);
@@ -96,6 +90,7 @@ export function AmazonLink({
         rel="noopener noreferrer"
         onClick={handleClick}
         className={className}
+        data-umami-event={`${bookSlug}-amz-btn`}
       >
         {children || (
           <>

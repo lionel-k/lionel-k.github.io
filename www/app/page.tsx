@@ -126,6 +126,10 @@ export default async function Home() {
                     <AmazonLink
                       href={book.amazonUrl}
                       className="block mb-6 cursor-pointer"
+                      bookTitle={book.title}
+                      bookLanguage={book.language}
+                      bookPrice={book.price}
+                      location="best_sellers"
                     >
                       <OptimizedImage
                         src={`/images/kirundi/${book.slug}/cover.webp`}
@@ -145,6 +149,7 @@ export default async function Home() {
                     <AmazonLink
                       href={book.amazonUrl}
                       className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                      bookSlug={book.slug}
                     >
                       View on Amazon
                       <ArrowRight className="ml-2 h-5 w-5" />
