@@ -150,16 +150,13 @@ export default async function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section
-          id="faq"
-          className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]"
-        >
+        <section id="faq" className="py-20 bg-[#0A0A0A]">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Your Questions Answered
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-300">
                 Everything you need to know about our bilingual books
               </p>
             </div>
