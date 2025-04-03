@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import { OptimizedImage } from "@/components/OptimizedImage";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,11 @@ export function Navbar() {
       <div className="container max-w-screen-xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
         {/* Left-aligned logo */}
         <Link href="/" className="flex items-center space-x-2">
-          <BookOpen className="h-6 w-6 text-[#DAA520]" />
+          <OptimizedImage
+            src="/logo.png"
+            alt="Lingu.Africa Logo"
+            className="h-6 w-6"
+          />
           <span className="text-xl font-bold text-[#DAA520]">Lingu.Africa</span>
         </Link>
 
