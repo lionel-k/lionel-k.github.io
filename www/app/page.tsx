@@ -103,68 +103,14 @@ export default async function Home() {
           <div className="absolute inset-0 opacity-10 pattern-cross pattern-[#DAA520] pattern-size-6" />
         </section>
 
-        {/* Best Sellers Section */}
-        <section className="py-20 bg-gradient-to-b from-[#FAF8F5] to-white">
+        {/* Languages Section */}
+        <section id="languages" className="py-20 bg-[#FAF8F5] text-gray-900">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Kirundi's Favorite Language Books
-              </h2>
-              <p className="text-xl text-gray-600">
-                Trusted by 5,000+ families worldwide
-              </p>
-            </div>
-            <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
-              {languagesConfig.kirundi.books
-                .filter((book) => book.bestSeller)
-                .map((book, index) => (
-                  <div
-                    key={book.slug}
-                    className="group relative bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300"
-                  >
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#DAA520]/10 to-transparent rounded-2xl pointer-events-none" />
-                    <AmazonLink
-                      href={book.amazonUrl}
-                      className="block mb-6 cursor-pointer"
-                      bookSlug={book.slug}
-                    >
-                      <OptimizedImage
-                        src={`/images/kirundi/${book.slug}/cover.webp`}
-                        alt={`${book.title} cover`}
-                        className="w-full h-64 object-contain transform group-hover:scale-105 transition-transform"
-                        priority={index === 0}
-                        width={320}
-                        height={460}
-                      />
-                    </AmazonLink>
-                    <h3 className="text-2xl text-center font-bold text-gray-900 mb-3">
-                      {book.title}
-                    </h3>
-                    <p className="text-gray-600 text-center mb-6">
-                      {book.description.short}
-                    </p>
-                    <AmazonLink
-                      href={book.amazonUrl}
-                      className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
-                      bookSlug={book.slug}
-                    >
-                      View on Amazon
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </AmazonLink>
-                  </div>
-                ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Languages Section */}
-        <section id="languages" className="py-20 bg-[#0A0A0A] text-white">
-          <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">
                 Explore Our African Languages
               </h2>
-              <p className="text-xl text-gray-300">
+              <p className="text-xl text-gray-600">
                 Celebrating linguistic diversity across the continent. More
                 African languages coming soon!
               </p>
@@ -173,11 +119,11 @@ export default async function Home() {
               {LANGUAGES.map((language) => (
                 <div
                   key={language.slug}
-                  className="relative bg-gradient-to-b from-[#1A1A1A] to-[#0A0A0A] rounded-2xl p-8 border border-[#DAA520]/20 hover:border-[#DAA520]/40 transition-all"
+                  className="relative bg-white rounded-2xl p-8 border border-[#DAA520]/20 hover:border-[#DAA520]/40 transition-all shadow-sm hover:shadow-md"
                 >
                   <div className="absolute inset-0 opacity-10" />
                   <div className="relative">
-                    <h3 className="text-2xl font-bold text-white mb-4">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
                       {language.name}
                     </h3>
                     {language.comingSoon ? (
@@ -204,16 +150,13 @@ export default async function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section
-          id="faq"
-          className="py-20 bg-gradient-to-b from-white to-[#FAF8F5]"
-        >
+        <section id="faq" className="py-20 bg-[#0A0A0A]">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              <h2 className="text-4xl font-bold text-white mb-4">
                 Your Questions Answered
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-300">
                 Everything you need to know about our bilingual books
               </p>
             </div>
