@@ -104,13 +104,13 @@ export default async function Home() {
         </section>
 
         {/* Languages Section */}
-        <section id="languages" className="py-20 bg-[#0A0A0A] text-white">
+        <section id="languages" className="py-20 bg-[#FAF8F5] text-gray-900">
           <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-white mb-4">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">
                 Explore Our African Languages
               </h2>
-              <p className="text-xl text-gray-300">
+              <p className="text-xl text-gray-600">
                 Celebrating linguistic diversity across the continent. More
                 African languages coming soon!
               </p>
@@ -119,11 +119,11 @@ export default async function Home() {
               {LANGUAGES.map((language) => (
                 <div
                   key={language.slug}
-                  className="relative bg-gradient-to-b from-[#1A1A1A] to-[#0A0A0A] rounded-2xl p-8 border border-[#DAA520]/20 hover:border-[#DAA520]/40 transition-all"
+                  className="relative bg-white rounded-2xl p-8 border border-[#DAA520]/20 hover:border-[#DAA520]/40 transition-all shadow-sm hover:shadow-md"
                 >
                   <div className="absolute inset-0 opacity-10" />
                   <div className="relative">
-                    <h3 className="text-2xl font-bold text-white mb-4">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-4">
                       {language.name}
                     </h3>
                     {language.comingSoon ? (
