@@ -5,16 +5,6 @@ export const SITE_URL = "https://www.lingu.africa";
 
 export const LANGUAGES = [
   {
-    name: "Kirundi",
-    slug: "kirundi",
-    comingSoon: false,
-  },
-  {
-    name: "Kinyarwanda",
-    slug: "kinyarwanda",
-    comingSoon: false,
-  },
-  {
     name: "Amharic",
     slug: "amharic",
     comingSoon: false,
@@ -52,6 +42,16 @@ export const LANGUAGES = [
   {
     name: "Kikuyu",
     slug: "kikuyu",
+    comingSoon: false,
+  },
+  {
+    name: "Kinyarwanda",
+    slug: "kinyarwanda",
+    comingSoon: false,
+  },
+  {
+    name: "Kirundi",
+    slug: "kirundi",
     comingSoon: false,
   },
   {

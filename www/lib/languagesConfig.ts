@@ -33,14 +33,6 @@ export type LanguageConfig = {
 };
 
 export const languagesConfig: Record<string, LanguageConfig> = {
-  kirundi: {
-    ...kirundiConfigs,
-    description: `Discover Burundian culture through bilingual Kirundi books. Read side-by-side in Kirundi and English/French. Perfect for kids learning their heritage.`,
-  },
-  kinyarwanda: {
-    ...kinyarwandaConfigs,
-    description: `Learn Kinyarwanda with bilingual picture books. Experience Rwandan culture through stories in Kinyarwanda and English/French. Made for families.`,
-  },
   amharic: {
     ...amharicConfigs,
     description: `Learn Amharic with bilingual picture books. Experience Ethiopian culture through stories in Amharic and English. Made for families.`,
@@ -72,6 +64,14 @@ export const languagesConfig: Record<string, LanguageConfig> = {
   kikuyu: {
     ...kikuyuConfigs,
     description: `Learn Kikuyu with bilingual picture books. Experience Kenyan culture through stories in Kikuyu and English. Made for families.`,
+  },
+  kinyarwanda: {
+    ...kinyarwandaConfigs,
+    description: `Learn Kinyarwanda with bilingual picture books. Experience Rwandan culture through stories in Kinyarwanda and English/French. Made for families.`,
+  },
+  kirundi: {
+    ...kirundiConfigs,
+    description: `Discover Burundian culture through bilingual Kirundi books. Read side-by-side in Kirundi and English/French. Perfect for kids learning their heritage.`,
   },
   krio: {
     ...krioConfigs,
