@@ -111,7 +111,7 @@ export default function BookPageClient({ language, slug }: Props) {
               </div>
             </div>
             <div className="flex-shrink-0">
-              <AmazonLink href={book.amazonUrl}>
+              <AmazonLink href={book.amazonUrl} bookSlug={book.slug}>
                 <OptimizedImage
                   src={`/images/${language}/${slug}/cover.png`}
                   alt={`${book.title} cover`}
