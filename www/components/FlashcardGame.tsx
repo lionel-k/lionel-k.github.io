@@ -6,9 +6,10 @@ import { FlashcardWord } from "@/lib/flashcards";
 
 type Props = {
   words: FlashcardWord[];
+  language: string;
 };
 
-export default function FlashcardGame({ words }: Props) {
+export default function FlashcardGame({ words, language }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
@@ -16,7 +17,6 @@ export default function FlashcardGame({ words }: Props) {
     []
   );
 
-  // Generate options whenever currentIndex changes
   useEffect(() => {
     const currentWord = words[currentIndex];
     const allOptions = words
@@ -51,31 +51,34 @@ export default function FlashcardGame({ words }: Props) {
 
   const getImageStyle = (imageId: string) => {
     if (!selectedAnswer)
-      return "border-4 border-gray-200 hover:border-blue-500";
-    if (imageId === currentWord.id) return "border-4 border-green-500";
-    if (imageId === selectedAnswer) return "border-4 border-red-500";
-    return "border-4 border-gray-200";
+      return "border-2 border-gray-200 hover:border-blue-500";
+    if (imageId === currentWord.id) return "border-2 border-green-500";
+    if (imageId === selectedAnswer) return "border-2 border-red-500";
+    return "border-2 border-gray-200";
   };
 
   return (
-    <div className="max-w-md mx-auto p-4">
-      <div className="text-right mb-4">
-        <span className="text-lg font-semibold">Score: {score}</span>
+    <div className="min-h-[calc(100vh-4rem)] flex flex-col max-w-lg mx-auto px-4 py-2">
+      {/* Compact header */}
+      <div className="flex justify-end mb-1">
+        <span className="text-sm font-medium">Score: {score}</span>
       </div>
 
-      <div className="mb-8 p-6 rounded-lg bg-blue-50 text-center">
-        <p className="text-3xl font-bold text-blue-900">
+      {/* Word to learn */}
+      <div className="bg-blue-50 rounded-lg py-3 px-4 mb-3 text-center">
+        <p className="text-2xl font-bold text-blue-900">
           {currentWord.translation}
         </p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      {/* Image grid with reduced gap */}
+      <div className="grid grid-cols-2 gap-2 mb-2">
         {options.map((option) => (
           <button
             key={option.id}
             onClick={() => !selectedAnswer && handleAnswer(option.id)}
             disabled={selectedAnswer !== null}
-            className="relative aspect-square rounded-lg overflow-hidden transition-transform hover:scale-105 focus:outline-none"
+            className="relative aspect-square rounded-lg overflow-hidden transition-transform hover:scale-102 focus:outline-none"
           >
             <Image
               src={option.image}
@@ -87,10 +90,11 @@ export default function FlashcardGame({ words }: Props) {
         ))}
       </div>
 
+      {/* Feedback and next button */}
       {selectedAnswer && (
-        <div className="mt-6 text-center">
+        <div className="space-y-1.5">
           <div
-            className={`mb-4 p-3 rounded-lg ${
+            className={`py-1.5 px-2 rounded-lg text-center text-sm ${
               selectedAnswer === currentWord.id
                 ? "bg-green-100 text-green-800"
                 : "bg-red-100 text-red-800"
@@ -105,14 +109,14 @@ export default function FlashcardGame({ words }: Props) {
           {currentIndex < words.length - 1 ? (
             <button
               onClick={handleNext}
-              className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+              className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium"
             >
               Next Word
             </button>
           ) : (
-            <div className="mt-8 text-center">
-              <p className="text-xl font-bold mb-4">
-                Game Over! Final Score: {score}/{words.length}
+            <div className="text-center space-y-1.5">
+              <p className="font-bold text-sm">
+                Game Over! Score: {score}/{words.length}
               </p>
               <button
                 onClick={() => {
@@ -120,7 +124,7 @@ export default function FlashcardGame({ words }: Props) {
                   setScore(0);
                   setSelectedAnswer(null);
                 }}
-                className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium"
               >
                 Play Again
               </button>
