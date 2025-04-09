@@ -16,19 +16,13 @@ export default function FlashcardGame({ words }: Props) {
   const currentWord = words[currentIndex];
 
   const options = useMemo(() => {
-    // Get all available images except the current one
-    const otherImages = words
+    const allOptions = words
       .filter((w) => w.id !== currentWord.id)
       .map((w) => ({ id: w.id, image: w.image }));
-
-    // Randomly select 3 images
-    const randomImages = [...otherImages]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 3);
-
-    // Add the correct image and shuffle again
+    const shuffled = [...allOptions].sort(() => Math.random() - 0.5);
+    const distractors = shuffled.slice(0, 3);
     return [
-      ...randomImages,
+      ...distractors,
       { id: currentWord.id, image: currentWord.image },
     ].sort(() => Math.random() - 0.5);
   }, [currentWord, words]);
@@ -65,6 +59,7 @@ export default function FlashcardGame({ words }: Props) {
         <p className="text-3xl font-bold text-blue-900">
           {currentWord.translation}
         </p>
+        <p className="text-sm text-blue-600 mt-2">Choose the matching image</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
