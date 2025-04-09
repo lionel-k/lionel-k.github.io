@@ -12,9 +12,10 @@ export function getFlashcardSet(languageCode: string): FlashcardSet {
   const words: FlashcardWord[] = Object.entries(languageData.translations).map(
     ([wordId, translation]: [string, string]) => ({
       id: wordId,
+      word: commonWords[wordId].english,
       image: commonWords[wordId].image,
-      english: commonWords[wordId].english,
       translation,
+      language: languageData.language,
     })
   );
 

@@ -9,13 +9,13 @@ export type LanguageTranslations = {
   translations: Record<string, string>; // key is the word.id, value is the translation
 };
 
-// Keep the original types for backward compatibility
-export type FlashcardWord = {
+export interface FlashcardWord {
   id: string;
-  image: string;
-  english: string;
+  word: string;
   translation: string;
-};
+  language: string;
+  image: string;
+}
 
 export type FlashcardSet = {
   language: string;

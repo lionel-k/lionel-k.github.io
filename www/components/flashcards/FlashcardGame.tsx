@@ -3,47 +3,26 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FlashcardWord } from "@/lib/flashcards/types";
+import { generateOptions, getPlaysCount, incrementPlaysCount } from "./utils";
 import PaywallModal from "./PaywallModal";
+import { FlashcardGameProps } from "./types";
+import { FREE_PLAYS_LIMIT, STRIPE_PAYMENT_LINK } from "./constants";
 
-const FREE_PLAYS_LIMIT = 3;
-const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/test_cN2eVx7GH50O8BW4gg";
-
-type Props = {
-  words: FlashcardWord[];
-};
-
-export default function FlashcardGame({ words }: Props) {
+export default function FlashcardGame({ words }: FlashcardGameProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [options, setOptions] = useState<Array<{ id: string; image: string }>>(
-    []
-  );
+  const [options, setOptions] = useState<FlashcardWord[]>([]);
   const [showPaywall, setShowPaywall] = useState(false);
   const [playsCount, setPlaysCount] = useState(0);
 
   useEffect(() => {
-    // Load plays count from localStorage
-    const savedPlays = localStorage.getItem("flashcardPlays");
-    if (savedPlays) {
-      setPlaysCount(parseInt(savedPlays, 10));
-    }
+    setPlaysCount(getPlaysCount());
   }, []);
 
   useEffect(() => {
     const currentWord = words[currentIndex];
-    const allOptions = words
-      .filter((w) => w.id !== currentWord.id)
-      .map((w) => ({ id: w.id, image: w.image }));
-
-    const shuffled = [...allOptions].sort(() => Math.random() - 0.5);
-    const distractors = shuffled.slice(0, 3);
-    const newOptions = [
-      ...distractors,
-      { id: currentWord.id, image: currentWord.image },
-    ].sort(() => Math.random() - 0.5);
-
-    setOptions(newOptions);
+    setOptions(generateOptions(words, currentWord));
   }, [currentIndex, words]);
 
   const currentWord = words[currentIndex];
@@ -64,11 +43,9 @@ export default function FlashcardGame({ words }: Props) {
         return;
       }
 
-      // Update plays count in state and localStorage
+      // Update plays count and proceed to next word
+      incrementPlaysCount();
       setPlaysCount(newPlaysCount);
-      localStorage.setItem("flashcardPlays", newPlaysCount.toString());
-
-      // Proceed to next word
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswer(null);
     }
