@@ -10,7 +10,6 @@ export type FlashcardSet = {
   words: FlashcardWord[];
 };
 
-// Initial dataset for French
 export const flashcardSets: Record<string, FlashcardSet> = {
   kirundi: {
     language: "Kirundi",
@@ -59,5 +58,4 @@ export const flashcardSets: Record<string, FlashcardSet> = {
       },
     ],
   },
-  // Add more languages here following the same structure
 };
