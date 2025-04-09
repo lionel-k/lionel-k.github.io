@@ -16,13 +16,19 @@ export default function FlashcardGame({ words }: Props) {
   const currentWord = words[currentIndex];
 
   const options = useMemo(() => {
-    const allOptions = words
+    // Get all available images except the current one
+    const otherImages = words
       .filter((w) => w.id !== currentWord.id)
       .map((w) => ({ id: w.id, image: w.image }));
-    const shuffled = [...allOptions].sort(() => Math.random() - 0.5);
-    const distractors = shuffled.slice(0, 3);
+
+    // Randomly select 3 images
+    const randomImages = [...otherImages]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3);
+
+    // Add the correct image and shuffle again
     return [
-      ...distractors,
+      ...randomImages,
       { id: currentWord.id, image: currentWord.image },
     ].sort(() => Math.random() - 0.5);
   }, [currentWord, words]);
