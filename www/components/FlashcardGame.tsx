@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FlashcardWord } from "@/lib/flashcards";
 
@@ -12,20 +12,28 @@ export default function FlashcardGame({ words }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
+  const [options, setOptions] = useState<Array<{ id: string; image: string }>>(
+    []
+  );
 
-  const currentWord = words[currentIndex];
-
-  const options = useMemo(() => {
+  // Generate options whenever currentIndex changes
+  useEffect(() => {
+    const currentWord = words[currentIndex];
     const allOptions = words
       .filter((w) => w.id !== currentWord.id)
       .map((w) => ({ id: w.id, image: w.image }));
+
     const shuffled = [...allOptions].sort(() => Math.random() - 0.5);
     const distractors = shuffled.slice(0, 3);
-    return [
+    const newOptions = [
       ...distractors,
       { id: currentWord.id, image: currentWord.image },
     ].sort(() => Math.random() - 0.5);
-  }, [currentWord, words]);
+
+    setOptions(newOptions);
+  }, [currentIndex, words]);
+
+  const currentWord = words[currentIndex];
 
   const handleAnswer = (answerId: string) => {
     setSelectedAnswer(answerId);
@@ -91,7 +99,7 @@ export default function FlashcardGame({ words }: Props) {
             {selectedAnswer === currentWord.id ? (
               <p>Correct! 🎉</p>
             ) : (
-              <p>Incorrect. Try to remember this image for next time!</p>
+              <p>Incorrect. The correct image is highlighted in green.</p>
             )}
           </div>
           {currentIndex < words.length - 1 ? (
