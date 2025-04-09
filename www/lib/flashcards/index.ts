@@ -1,6 +1,6 @@
-import { FlashcardSet, FlashcardWord } from "./types";
+import { FlashcardSet, FlashcardWord, LanguageTranslations } from "./types";
 import { commonWords } from "./words";
-import { languageTranslations } from "./translations";
+import { languageTranslations } from "./translations/index";
 
 export * from "./types";
 
@@ -10,7 +10,7 @@ export function getFlashcardSet(languageCode: string): FlashcardSet {
   if (!languageData) throw new Error(`Language ${languageCode} not found`);
 
   const words: FlashcardWord[] = Object.entries(languageData.translations).map(
-    ([wordId, translation]) => ({
+    ([wordId, translation]: [string, string]) => ({
       id: wordId,
       image: commonWords[wordId].image,
       english: commonWords[wordId].english,
