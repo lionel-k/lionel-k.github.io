@@ -18,17 +18,18 @@ export default function FlashcardGame({ words }: Props) {
   const options = useMemo(() => {
     const allOptions = words
       .filter((w) => w.id !== currentWord.id)
-      .map((w) => w.translation);
+      .map((w) => ({ id: w.id, image: w.image }));
     const shuffled = [...allOptions].sort(() => Math.random() - 0.5);
     const distractors = shuffled.slice(0, 3);
-    return [...distractors, currentWord.translation].sort(
-      () => Math.random() - 0.5
-    );
+    return [
+      ...distractors,
+      { id: currentWord.id, image: currentWord.image },
+    ].sort(() => Math.random() - 0.5);
   }, [currentWord, words]);
 
-  const handleAnswer = (answer: string) => {
-    setSelectedAnswer(answer);
-    if (answer === currentWord.translation) {
+  const handleAnswer = (answerId: string) => {
+    setSelectedAnswer(answerId);
+    if (answerId === currentWord.id) {
       setScore(score + 1);
     }
   };
@@ -40,12 +41,12 @@ export default function FlashcardGame({ words }: Props) {
     }
   };
 
-  const getButtonStyle = (option: string) => {
-    if (!selectedAnswer) return "border-gray-200 hover:border-blue-500";
-    if (option === currentWord.translation)
-      return "border-green-500 bg-green-50";
-    if (option === selectedAnswer) return "border-red-500 bg-red-50";
-    return "border-gray-200";
+  const getImageStyle = (imageId: string) => {
+    if (!selectedAnswer)
+      return "border-4 border-gray-200 hover:border-blue-500";
+    if (imageId === currentWord.id) return "border-4 border-green-500";
+    if (imageId === selectedAnswer) return "border-4 border-red-500";
+    return "border-4 border-gray-200";
   };
 
   return (
@@ -54,29 +55,26 @@ export default function FlashcardGame({ words }: Props) {
         <span className="text-lg font-semibold">Score: {score}</span>
       </div>
 
-      <div className="relative aspect-square mb-6 rounded-lg overflow-hidden">
-        <Image
-          src={currentWord.image}
-          alt={currentWord.english}
-          fill
-          className="object-cover"
-        />
-        <div className="absolute bottom-0 left-0 right-0 p-4 bg-black/50">
-          <p className="text-white text-xl font-bold">{currentWord.english}</p>
-        </div>
+      <div className="mb-8 p-6 rounded-lg bg-blue-50 text-center">
+        <p className="text-3xl font-bold text-blue-900">
+          {currentWord.translation}
+        </p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        {options.map((option, index) => (
+        {options.map((option) => (
           <button
-            key={index}
-            onClick={() => !selectedAnswer && handleAnswer(option)}
+            key={option.id}
+            onClick={() => !selectedAnswer && handleAnswer(option.id)}
             disabled={selectedAnswer !== null}
-            className={`p-4 text-center rounded-lg border transition-colors ${getButtonStyle(
-              option
-            )}`}
+            className="relative aspect-square rounded-lg overflow-hidden transition-transform hover:scale-105 focus:outline-none"
           >
-            {option}
+            <Image
+              src={option.image}
+              alt="Option"
+              fill
+              className={`object-cover rounded-lg ${getImageStyle(option.id)}`}
+            />
           </button>
         ))}
       </div>
@@ -85,15 +83,15 @@ export default function FlashcardGame({ words }: Props) {
         <div className="mt-6 text-center">
           <div
             className={`mb-4 p-3 rounded-lg ${
-              selectedAnswer === currentWord.translation
+              selectedAnswer === currentWord.id
                 ? "bg-green-100 text-green-800"
                 : "bg-red-100 text-red-800"
             }`}
           >
-            {selectedAnswer === currentWord.translation ? (
+            {selectedAnswer === currentWord.id ? (
               <p>Correct! 🎉</p>
             ) : (
-              <p>Incorrect. The correct answer is: {currentWord.translation}</p>
+              <p>Incorrect. Try to remember this image for next time!</p>
             )}
           </div>
           {currentIndex < words.length - 1 ? (
