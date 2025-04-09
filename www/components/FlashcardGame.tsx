@@ -6,10 +6,9 @@ import { FlashcardWord } from "@/lib/flashcards";
 
 type Props = {
   words: FlashcardWord[];
-  language: string;
 };
 
-export default function FlashcardGame({ words, language }: Props) {
+export default function FlashcardGame({ words }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
