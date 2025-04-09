@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { flashcardSets } from "@/lib/flashcards";
+import { flashcardSets } from "@/lib/flashcards/index";
 import FlashcardGame from "@/components/FlashcardGame";
 import { LANGUAGES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { FlashcardWord } from "@/lib/flashcards";
+import { FlashcardWord } from "@/lib/flashcards/types";
 
 type Props = {
   words: FlashcardWord[];
