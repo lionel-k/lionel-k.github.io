@@ -51,6 +51,12 @@ export const flashcardSets: Record<string, FlashcardSet> = {
         english: "book",
         translation: "igitabo",
       },
+      {
+        id: "7",
+        image: "/images/flashcards/ball.png",
+        english: "ball",
+        translation: "umupira",
+      },
     ],
   },
   // Add more languages here following the same structure
