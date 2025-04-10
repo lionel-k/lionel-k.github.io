@@ -5,14 +5,14 @@ module.exports = {
   generateIndexSitemap: true,
   changefreq: "daily",
   priority: 0.7,
-  exclude: ["/api/*"],
+  exclude: ["/api/*", "/flashcards/*"],
   robotsTxtOptions: {
     additionalSitemaps: [],
     policies: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/*"],
+        disallow: ["/api/*", "/flashcards/*"],
       },
     ],
   },
