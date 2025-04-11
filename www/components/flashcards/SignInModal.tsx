@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { signInWithOtp } from "@/lib/auth";
+import { Mail, XCircle } from "lucide-react";
 
 interface SignInModalProps {
   onClose: () => void;
@@ -40,13 +41,16 @@ export default function SignInModal({
 
   return (
     <Dialog open={true} onClose={onClose} className="relative z-50">
-      <div className="fixed inset-0 bg-black/30" aria-hidden="true" />
-      <div className="fixed inset-0 flex items-center justify-center p-4">
-        <Dialog.Panel className="mx-auto max-w-sm rounded-2xl bg-white p-8 shadow-xl w-full">
-          <Dialog.Title className="text-2xl font-bold text-gray-900 mb-4">
-            Sign In to Continue
+      <div
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm"
+        aria-hidden="true"
+      />
+      <div className="fixed inset-0 flex items-center justify-center p-4 text-center">
+        <Dialog.Panel className="mx-auto max-w-sm rounded-2xl bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] p-8 shadow-xl border border-[#DAA520]/20 w-full">
+          <Dialog.Title className="text-2xl font-bold text-white mb-4">
+            Sign In to Track Progress
           </Dialog.Title>
-          <Dialog.Description className="text-gray-600 mb-6">
+          <Dialog.Description className="text-gray-300 mb-6">
             Enter your email to receive a magic link for instant access.
           </Dialog.Description>
 
@@ -57,7 +61,7 @@ export default function SignInModal({
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                className="w-full px-4 py-3 rounded-lg bg-[#1A1A1A] border border-[#DAA520]/20 text-white placeholder:text-gray-400 focus:ring-2 focus:ring-[#DAA520] focus:border-[#DAA520] outline-none transition-all"
                 required
               />
             </div>
@@ -66,15 +70,17 @@ export default function SignInModal({
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full py-3 px-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 px-4 bg-[#DAA520] text-black font-semibold rounded-lg hover:bg-[#B8860B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
+                <Mail className="h-5 w-5" />
                 {isLoading ? "Sending..." : "Send Magic Link"}
               </button>
               <button
                 type="button"
                 onClick={onClose}
-                className="w-full py-3 px-4 text-center font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors"
+                className="w-full py-3 px-4 text-center font-semibold text-gray-400 hover:text-gray-300 rounded-lg transition-colors flex items-center justify-center gap-2"
               >
+                <XCircle className="h-5 w-5" />
                 Cancel
               </button>
             </div>
@@ -83,8 +89,8 @@ export default function SignInModal({
               <p
                 className={`text-center font-medium ${
                   message.includes("Error")
-                    ? "text-red-600 bg-red-50 p-3 rounded-lg"
-                    : "text-green-600 bg-green-50 p-3 rounded-lg"
+                    ? "text-red-400 bg-red-950/50 p-3 rounded-lg border border-red-800"
+                    : "text-[#DAA520] bg-[#DAA520]/10 p-3 rounded-lg border border-[#DAA520]/20"
                 }`}
               >
                 {message}

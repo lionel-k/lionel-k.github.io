@@ -1,61 +1,63 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
+import { useAuth } from "@/hooks/flashcards/useAuth";
 import FlashcardGame from "@/components/flashcards/FlashcardGame";
 import { FlashcardSet } from "@/lib/flashcards/types";
-import UserAuthStatus from "@/components/flashcards/UserAuthStatus";
+import AuthStatus from "@/components/flashcards/AuthStatus";
+import Loader from "@/components/flashcards/Loader";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
 type Props = {
   flashcardSet: FlashcardSet;
 };
 
 export default function FlashcardLanguageClient({ flashcardSet }: Props) {
-  const [email, setEmail] = useState<string | null>(null);
-  const [isPaidUser, setIsPaidUser] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const checkAuth = async () => {
-      const {
-        data: { session },
-      } = await supabase.auth.getSession();
-      const userEmail = session?.user?.email;
-
-      if (userEmail) {
-        setEmail(userEmail);
-        // Check if user is paid
-        const { data } = await supabase
-          .from("paid_users")
-          .select()
-          .eq("email", userEmail)
-          .single();
-
-        setIsPaidUser(!!data);
-      }
-
-      setIsLoading(false);
-    };
-
-    checkAuth();
-  }, []);
+  const { email, isPaidUser, isLoading } = useAuth();
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <UserAuthStatus email={email} isPaidUser={isPaidUser} />
+  const breadcrumbItems = [
+    { name: "Home", href: "/" },
+    { name: "Flashcards", href: "/flashcards" },
+    {
+      name: flashcardSet.language,
+      href: `/flashcards/${flashcardSet.language.toLowerCase()}`,
+    },
+  ];
 
-      <h1 className="text-3xl font-bold mb-8 text-center">
-        Learn {flashcardSet.language}
-      </h1>
-      <FlashcardGame
-        words={flashcardSet.words}
-        isPaidUser={isPaidUser}
-        email={email}
-      />
+  return (
+    <div className="min-h-screen">
+      <BreadcrumbNav items={breadcrumbItems} />
+      <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-16 text-white">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="mx-auto max-w-4xl text-center">
+            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white font-display">
+              Learn {flashcardSet.language}
+            </h1>
+            <p className="mt-4 text-xl leading-8 text-gray-300">
+              Practice vocabulary with interactive flashcards
+            </p>
+            <AuthStatus
+              email={email}
+              isPaidUser={isPaidUser}
+              variant="practice"
+            />
+          </div>
+        </div>
+        <div className="absolute inset-0 opacity-10 pattern-cross pattern-[#DAA520] pattern-size-6" />
+      </section>
+
+      <section className="py-16 bg-[#FAF8F5]">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <FlashcardGame
+            words={flashcardSet.words}
+            isPaidUser={isPaidUser}
+            email={email}
+          />
+        </div>
+      </section>
     </div>
   );
 }
