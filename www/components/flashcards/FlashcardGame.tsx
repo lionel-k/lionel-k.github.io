@@ -54,7 +54,7 @@ export default function FlashcardGame({
     if (isCorrect) {
       setFeedback("Correct!");
     } else {
-      setFeedback("Look for the golden highlight! 🌟");
+      setFeedback("The correct image is highlighted in gold!");
     }
     setShowFeedback(true);
 
@@ -145,7 +145,7 @@ export default function FlashcardGame({
               {selectedAnswer === currentWord.id ? (
                 <p>Correct! 🎉</p>
               ) : (
-                <p>{feedback}</p>
+                <p>❌ {feedback}</p>
               )}
             </div>
             {currentIndex < words.length - 1 ? (
