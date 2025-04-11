@@ -1,23 +1,22 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/supabase";
-import { LANGUAGES } from "@/lib/constants";
+import FlashcardGame from "@/components/flashcards/FlashcardGame";
+import { FlashcardSet } from "@/lib/flashcards/types";
 import UserAuthStatus from "@/components/flashcards/UserAuthStatus";
 
-export default function FlashcardsPage() {
+type Props = {
+  flashcardSet: FlashcardSet;
+};
+
+export default function FlashcardLanguageClient({ flashcardSet }: Props) {
   const [email, setEmail] = useState<string | null>(null);
   const [isPaidUser, setIsPaidUser] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const checkAuth = async () => {
-      // Check URL parameters for payment success
-      const params = new URLSearchParams(window.location.search);
-      const paymentSuccess = params.get("payment_success");
-
-      // Get current session
       const {
         data: { session },
       } = await supabase.auth.getSession();
@@ -33,9 +32,6 @@ export default function FlashcardsPage() {
           .single();
 
         setIsPaidUser(!!data);
-      } else if (paymentSuccess) {
-        // If payment was successful but not logged in, show sign in form
-        setEmail(null);
       }
 
       setIsLoading(false);
@@ -53,23 +49,13 @@ export default function FlashcardsPage() {
       <UserAuthStatus email={email} isPaidUser={isPaidUser} />
 
       <h1 className="text-3xl font-bold mb-8 text-center">
-        Choose a Language to Learn
+        Learn {flashcardSet.language}
       </h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {LANGUAGES.map((language) => (
-          <Link
-            key={language.slug}
-            href={`/flashcards/${language.slug}`}
-            className="block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-50 transition-colors"
-          >
-            <h2 className="text-xl font-semibold mb-2">{language.name}</h2>
-            <p className="text-gray-600">
-              Practice {language.name} vocabulary with flashcards
-            </p>
-          </Link>
-        ))}
-      </div>
+      <FlashcardGame
+        words={flashcardSet.words}
+        isPaidUser={isPaidUser}
+        email={email}
+      />
     </div>
   );
 }

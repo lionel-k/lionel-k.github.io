@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { flashcardSets } from "@/lib/flashcards/index";
-import FlashcardGame from "@/components/flashcards/FlashcardGame";
 import { LANGUAGES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
+import FlashcardLanguageClient from "./FlashcardLanguageClient";
 
 type Props = {
   params: Promise<{
@@ -57,12 +57,5 @@ export default async function FlashcardLanguagePage({ params }: Props) {
     notFound();
   }
 
-  return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center">
-        Learn {flashcardSet.language}
-      </h1>
-      <FlashcardGame words={flashcardSet.words} />
-    </div>
-  );
+  return <FlashcardLanguageClient flashcardSet={flashcardSet} />;
 }

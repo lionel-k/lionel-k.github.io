@@ -1,7 +1,8 @@
 export const SITE_NAME = "Lingu.Africa";
 export const SITE_DESCRIPTION =
   "Discover bilingual African books in English and French";
-export const SITE_URL = "https://www.lingu.africa";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.lingu.africa";
 
 export const LANGUAGES = [
   {
@@ -134,7 +135,7 @@ export const LANGUAGES = [
     slug: "zulu",
     comingSoon: false,
   },
-];
+] as const;
 
 export const FAQ_ITEMS = [
   {

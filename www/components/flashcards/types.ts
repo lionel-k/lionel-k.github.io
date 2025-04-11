@@ -1,8 +1,10 @@
 import { FlashcardWord } from "@/lib/flashcards/types";
 
-export type FlashcardGameProps = {
+export interface FlashcardGameProps {
   words: FlashcardWord[];
-};
+  isPaidUser: boolean;
+  email: string | null;
+}
 
 export type ImageOptionProps = {
   id: string;

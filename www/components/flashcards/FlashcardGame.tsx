@@ -5,15 +5,22 @@ import Image from "next/image";
 import { FlashcardWord } from "@/lib/flashcards/types";
 import { generateOptions, getPlaysCount, incrementPlaysCount } from "./utils";
 import PaywallModal from "./PaywallModal";
+import SignInModal from "./SignInModal";
 import { FlashcardGameProps } from "./types";
-import { FREE_PLAYS_LIMIT, STRIPE_PAYMENT_LINK } from "./constants";
 
-export default function FlashcardGame({ words }: FlashcardGameProps) {
+const FREE_PLAYS_LIMIT = 5;
+
+export default function FlashcardGame({
+  words,
+  isPaidUser,
+  email,
+}: FlashcardGameProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [options, setOptions] = useState<FlashcardWord[]>([]);
   const [showPaywall, setShowPaywall] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
   const [playsCount, setPlaysCount] = useState(0);
 
   useEffect(() => {
@@ -36,19 +43,28 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
 
   const handleNext = () => {
     if (currentIndex < words.length - 1) {
-      // Check if user has reached free plays limit
-      const newPlaysCount = playsCount + 1;
-      if (newPlaysCount >= FREE_PLAYS_LIMIT) {
-        setShowPaywall(true);
-        return;
+      if (!isPaidUser) {
+        const newPlaysCount = playsCount + 1;
+        if (newPlaysCount >= FREE_PLAYS_LIMIT) {
+          setShowPaywall(true);
+          return;
+        }
+        incrementPlaysCount();
+        setPlaysCount(newPlaysCount);
       }
 
-      // Update plays count and proceed to next word
-      incrementPlaysCount();
-      setPlaysCount(newPlaysCount);
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswer(null);
     }
+  };
+
+  const handleSignInClick = () => {
+    setShowPaywall(false);
+    setShowSignIn(true);
+  };
+
+  const handleSignInComplete = () => {
+    setShowSignIn(false);
   };
 
   const getImageStyle = (imageId: string) => {
@@ -141,8 +157,16 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
 
       {showPaywall && (
         <PaywallModal
-          stripeLink={STRIPE_PAYMENT_LINK}
+          email={email}
           onClose={() => setShowPaywall(false)}
+          onSignInClick={handleSignInClick}
+        />
+      )}
+
+      {showSignIn && (
+        <SignInModal
+          onClose={() => setShowSignIn(false)}
+          onSignInComplete={handleSignInComplete}
         />
       )}
     </>
