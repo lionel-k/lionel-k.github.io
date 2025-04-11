@@ -3,14 +3,17 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FlashcardWord } from "@/lib/flashcards/types";
-import { generateOptions, getPlaysCount, incrementPlaysCount } from "./utils";
+import {
+  generateOptions,
+  getPlaysCount,
+  incrementPlaysCount,
+  MAX_PLAYS,
+} from "./utils";
 import PaywallModal from "./PaywallModal";
 import SignInModal from "./SignInModal";
 import { FlashcardGameProps } from "./types";
 import Loader from "./Loader";
 import { ArrowRight } from "lucide-react";
-
-const FREE_PLAYS_LIMIT = 5;
 
 export default function FlashcardGame({
   words,
@@ -23,6 +26,8 @@ export default function FlashcardGame({
   const [showPaywall, setShowPaywall] = useState(false);
   const [showSignIn, setShowSignIn] = useState(false);
   const [playsCount, setPlaysCount] = useState(0);
+  const [feedback, setFeedback] = useState<string>("");
+  const [showFeedback, setShowFeedback] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -41,18 +46,32 @@ export default function FlashcardGame({
 
   const currentWord = words[currentIndex];
 
-  const handleAnswer = (answerId: string) => {
-    setSelectedAnswer(answerId);
+  const handleAnswer = (answer: string) => {
+    setSelectedAnswer(answer);
+
+    // Handle correct/incorrect feedback
+    const isCorrect = answer === words[currentIndex].translation;
+    if (isCorrect) {
+      setFeedback("Correct!");
+    } else {
+      setFeedback("Look for the golden highlight! 🌟");
+    }
+    setShowFeedback(true);
+
+    // Check plays count first for any attempt
+    const plays = getPlaysCount();
+    if (plays >= MAX_PLAYS && !isPaidUser) {
+      setShowPaywall(true);
+      return;
+    }
+    incrementPlaysCount();
+    setPlaysCount(plays + 1);
   };
 
   const handleNext = () => {
     if (currentIndex < words.length - 1) {
       if (!isPaidUser) {
         const newPlaysCount = playsCount + 1;
-        if (newPlaysCount >= FREE_PLAYS_LIMIT) {
-          setShowPaywall(true);
-          return;
-        }
         incrementPlaysCount();
         setPlaysCount(newPlaysCount);
       }
@@ -126,7 +145,7 @@ export default function FlashcardGame({
               {selectedAnswer === currentWord.id ? (
                 <p>Correct! 🎉</p>
               ) : (
-                <p>Incorrect. The correct image is highlighted in gold.</p>
+                <p>{feedback}</p>
               )}
             </div>
             {currentIndex < words.length - 1 ? (
