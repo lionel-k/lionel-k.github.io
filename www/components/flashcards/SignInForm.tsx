@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { supabase } from "@/lib/supabase";
+import { signInWithOtp } from "@/lib/auth";
 
 export default function SignInForm() {
   const [email, setEmail] = useState("");
@@ -11,12 +11,7 @@ export default function SignInForm() {
     e.preventDefault();
     setMessage("");
 
-    const { error } = await supabase.auth.signInWithOtp({
-      email,
-      options: {
-        emailRedirectTo: `${window.location.origin}/flashcards`,
-      },
-    });
+    const { error, success } = await signInWithOtp(email);
 
     if (error) {
       setMessage("Error sending magic link");

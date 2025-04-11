@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { supabase } from "@/lib/supabase";
 import { Dialog } from "@headlessui/react";
+import { signInWithOtp } from "@/lib/auth";
 
 interface SignInModalProps {
   onClose: () => void;
@@ -23,12 +23,7 @@ export default function SignInModal({
     setMessage("");
 
     try {
-      const { error } = await supabase.auth.signInWithOtp({
-        email,
-        options: {
-          emailRedirectTo: `${window.location.origin}/flashcards`,
-        },
-      });
+      const { error } = await signInWithOtp(email);
 
       if (error) {
         setMessage("Error sending magic link. Please try again.");
