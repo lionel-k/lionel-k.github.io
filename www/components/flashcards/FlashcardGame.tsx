@@ -57,15 +57,6 @@ export default function FlashcardGame({
       setFeedback("The correct image is highlighted in gold!");
     }
     setShowFeedback(true);
-
-    // Check plays count first for any attempt
-    const plays = getPlaysCount();
-    if (plays >= MAX_PLAYS && !isPaidUser) {
-      setShowPaywall(true);
-      return;
-    }
-    incrementPlaysCount();
-    setPlaysCount(plays + 1);
   };
 
   const handleNext = () => {
