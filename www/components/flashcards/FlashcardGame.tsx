@@ -70,14 +70,18 @@ export default function FlashcardGame({
 
   const handleNext = () => {
     if (currentIndex < words.length - 1) {
-      if (!isPaidUser) {
-        const newPlaysCount = playsCount + 1;
-        incrementPlaysCount();
-        setPlaysCount(newPlaysCount);
+      // Check plays count first
+      const plays = getPlaysCount();
+      if (plays >= MAX_PLAYS && !isPaidUser) {
+        setShowPaywall(true);
+        return;
       }
+      incrementPlaysCount();
+      setPlaysCount(plays + 1);
 
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswer(null);
+      setShowFeedback(false);
     }
   };
 
