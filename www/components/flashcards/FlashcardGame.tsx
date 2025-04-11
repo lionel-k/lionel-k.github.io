@@ -7,6 +7,8 @@ import { generateOptions, getPlaysCount, incrementPlaysCount } from "./utils";
 import PaywallModal from "./PaywallModal";
 import SignInModal from "./SignInModal";
 import { FlashcardGameProps } from "./types";
+import Loader from "./Loader";
+import { ArrowRight } from "lucide-react";
 
 const FREE_PLAYS_LIMIT = 5;
 
@@ -16,15 +18,16 @@ export default function FlashcardGame({
   email,
 }: FlashcardGameProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [options, setOptions] = useState<FlashcardWord[]>([]);
   const [showPaywall, setShowPaywall] = useState(false);
   const [showSignIn, setShowSignIn] = useState(false);
   const [playsCount, setPlaysCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setPlaysCount(getPlaysCount());
+    setIsLoading(false);
   }, []);
 
   useEffect(() => {
@@ -32,13 +35,14 @@ export default function FlashcardGame({
     setOptions(generateOptions(words, currentWord));
   }, [currentIndex, words]);
 
+  if (isLoading) {
+    return <Loader />;
+  }
+
   const currentWord = words[currentIndex];
 
   const handleAnswer = (answerId: string) => {
     setSelectedAnswer(answerId);
-    if (answerId === currentWord.id) {
-      setScore(score + 1);
-    }
   };
 
   const handleNext = () => {
@@ -69,35 +73,32 @@ export default function FlashcardGame({
 
   const getImageStyle = (imageId: string) => {
     if (!selectedAnswer)
-      return "border-2 border-gray-200 hover:border-blue-500";
-    if (imageId === currentWord.id) return "border-2 border-green-500";
-    if (imageId === selectedAnswer) return "border-2 border-red-500";
-    return "border-2 border-gray-200";
+      return "border-2 border-[#DAA520]/20 hover:border-[#DAA520] transition-all duration-200";
+    if (imageId === currentWord.id)
+      return "border-4 border-[#DAA520] ring-2 ring-[#DAA520] shadow-[0_0_15px_rgba(218,165,32,0.5)]";
+    if (imageId === selectedAnswer)
+      return "border-4 border-red-500 ring-2 ring-red-500 shadow-[0_0_15px_rgba(239,68,68,0.5)]";
+    return "border-2 border-[#DAA520]/20 opacity-50";
   };
 
   return (
     <>
       <div className="min-h-[calc(100vh-4rem)] flex flex-col max-w-lg mx-auto px-4 py-2">
-        {/* Compact header */}
-        <div className="flex justify-end mb-1">
-          <span className="text-sm font-medium">Score: {score}</span>
-        </div>
-
         {/* Word to learn */}
-        <div className="bg-blue-50 rounded-lg py-3 px-4 mb-3 text-center">
-          <p className="text-2xl font-bold text-blue-900">
+        <div className="bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] backdrop-blur-sm rounded-lg py-6 px-6 mb-4 text-center border border-[#DAA520]/20">
+          <p className="text-3xl font-bold text-white">
             {currentWord.translation}
           </p>
         </div>
 
-        {/* Image grid with reduced gap */}
-        <div className="grid grid-cols-2 gap-2 mb-2">
+        {/* Image grid */}
+        <div className="grid grid-cols-2 gap-4 mb-4">
           {options.map((option) => (
             <button
               key={option.id}
               onClick={() => !selectedAnswer && handleAnswer(option.id)}
               disabled={selectedAnswer !== null}
-              className="relative aspect-square rounded-lg overflow-hidden transition-transform hover:scale-102 focus:outline-none"
+              className="relative aspect-square rounded-lg overflow-hidden transition-all duration-200 hover:scale-[1.02] focus:outline-none group"
             >
               <Image
                 src={option.image}
@@ -107,47 +108,46 @@ export default function FlashcardGame({
                   option.id
                 )}`}
               />
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity" />
             </button>
           ))}
         </div>
 
         {/* Feedback and next button */}
         {selectedAnswer && (
-          <div className="space-y-1.5">
+          <div className="space-y-3">
             <div
-              className={`py-1.5 px-2 rounded-lg text-center text-sm ${
+              className={`py-3 px-4 rounded-lg text-center ${
                 selectedAnswer === currentWord.id
-                  ? "bg-green-100 text-green-800"
-                  : "bg-red-100 text-red-800"
+                  ? "bg-[#DAA520]/10 text-[#DAA520]"
+                  : "bg-red-500/10 text-red-500"
               }`}
             >
               {selectedAnswer === currentWord.id ? (
                 <p>Correct! 🎉</p>
               ) : (
-                <p>Incorrect. The correct image is highlighted in green.</p>
+                <p>Incorrect. The correct image is highlighted in gold.</p>
               )}
             </div>
             {currentIndex < words.length - 1 ? (
               <button
                 onClick={handleNext}
-                className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium"
+                className="w-full py-3 px-4 bg-[#DAA520] text-black font-semibold rounded-lg hover:bg-[#B8860B] transition-colors flex items-center justify-center gap-2"
               >
                 Next Word
+                <ArrowRight className="h-4 w-4" />
               </button>
             ) : (
-              <div className="text-center space-y-1.5">
-                <p className="font-bold text-sm">
-                  Game Over! Score: {score}/{words.length}
-                </p>
+              <div className="text-center">
                 <button
                   onClick={() => {
                     setCurrentIndex(0);
-                    setScore(0);
                     setSelectedAnswer(null);
                   }}
-                  className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium"
+                  className="w-full py-3 px-4 bg-[#0A0A0A] text-[#DAA520] font-semibold rounded-lg hover:bg-[#1A1A1A] border border-[#DAA520] transition-colors flex items-center justify-center gap-2"
                 >
-                  Play Again
+                  Start Over
+                  <ArrowRight className="h-4 w-4" />
                 </button>
               </div>
             )}
