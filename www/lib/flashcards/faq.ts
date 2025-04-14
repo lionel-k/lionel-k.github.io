@@ -17,6 +17,6 @@ export const faqItems = [
   {
     question: "Can I get a refund?",
     answer:
-      "Yes, if you're not satisfied with your purchase, we offer a 30-day money-back guarantee. Just email us at hello@lingu.africa",
+      "Yes, if you're not satisfied with your purchase, we offer a 30-day money-back guarantee. Just email me at hello@lingu.africa",
   },
 ];
