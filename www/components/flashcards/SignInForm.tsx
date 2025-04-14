@@ -15,7 +15,7 @@ export default function SignInForm() {
     setIsLoading(true);
 
     try {
-      const { error, success } = await signInWithOtp(email);
+      const { error } = await signInWithOtp(email);
 
       if (error) {
         setMessage("Error sending magic link");
