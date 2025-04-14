@@ -8,13 +8,9 @@ import MagicLinkMessage from "./MagicLinkMessage";
 
 interface SignInModalProps {
   onClose: () => void;
-  onSignInComplete: (email: string) => void;
 }
 
-export default function SignInModal({
-  onClose,
-  onSignInComplete,
-}: SignInModalProps) {
+export default function SignInModal({ onClose }: SignInModalProps) {
   const [email, setEmail] = useState("");
   const [showMessage, setShowMessage] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -33,7 +29,6 @@ export default function SignInModal({
         setIsError(true);
       }
       setShowMessage(true);
-      // onSignInComplete(email);
     } catch (error) {
       setIsError(true);
     } finally {

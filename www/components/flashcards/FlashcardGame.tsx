@@ -81,10 +81,6 @@ export default function FlashcardGame({
     setShowSignIn(true);
   };
 
-  const handleSignInComplete = () => {
-    setShowSignIn(false);
-  };
-
   const getImageStyle = (imageId: string) => {
     if (!selectedAnswer)
       return "border-2 border-[#DAA520]/20 hover:border-[#DAA520] transition-all duration-200";
@@ -177,12 +173,7 @@ export default function FlashcardGame({
         />
       )}
 
-      {showSignIn && (
-        <SignInModal
-          onClose={() => setShowSignIn(false)}
-          onSignInComplete={handleSignInComplete}
-        />
-      )}
+      {showSignIn && <SignInModal onClose={() => setShowSignIn(false)} />}
     </>
   );
 }
