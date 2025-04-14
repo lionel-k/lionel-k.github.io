@@ -24,13 +24,29 @@ export default function SignInModal({
     setMessage("");
 
     try {
-      const { error } = await signInWithOtp(email);
+      // const { error } = await signInWithOtp(email);
+      const { error } = { error: null };
 
       if (error) {
         setMessage("Error sending magic link. Please try again.");
       } else {
-        setMessage("Check your email for the magic link!");
-        onSignInComplete(email);
+        setMessage(`
+          <div class="space-y-4">
+            <h3 class="text-xl font-semibold">Magic Link Sent ✨</h3>
+            <p class="text-gray-300">Check your inbox for</p>
+            <p class="font-medium">${email}</p>
+            <p class="text-gray-300">and click the link to sign in!</p>
+            <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer"
+               class="mt-4 inline-flex items-center justify-center w-full gap-2 py-3 px-4 bg-[#DAA520] text-black font-semibold rounded-lg hover:bg-[#B8860B] transition-colors">
+              Open Email Inbox
+              <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+            <p class="text-sm text-gray-400 mt-4">Check spam, just in case. Need help? <a href="mailto:hello@lingu.africa" class="text-[#DAA520] hover:text-[#B8860B]">Email me</a></p>
+          </div>
+        `);
+        // onSignInComplete(email);
       }
     } catch (error) {
       setMessage("An unexpected error occurred.");
@@ -86,15 +102,14 @@ export default function SignInModal({
             </div>
 
             {message && (
-              <p
-                className={`text-center font-medium ${
+              <div
+                className={`text-center ${
                   message.includes("Error")
                     ? "text-red-400 bg-red-950/50 p-3 rounded-lg border border-red-800"
-                    : "text-[#DAA520] bg-[#DAA520]/10 p-3 rounded-lg border border-[#DAA520]/20"
+                    : "bg-[#0A0A0A]/40 border border-[#DAA520]/20 p-6 rounded-lg"
                 }`}
-              >
-                {message}
-              </p>
+                dangerouslySetInnerHTML={{ __html: message }}
+              />
             )}
           </form>
         </Dialog.Panel>
