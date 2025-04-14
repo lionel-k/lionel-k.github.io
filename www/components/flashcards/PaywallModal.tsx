@@ -52,9 +52,14 @@ export default function PaywallModal({
           {/* Pricing */}
           <div className="mb-8">
             <div className="bg-[#1A1A1A] rounded-lg p-6 border border-[#DAA520]/20">
-              <div className="flex items-baseline mb-4">
-                <span className="text-4xl font-bold text-white">€24.99</span>
-                <span className="text-gray-400 ml-1">one-time</span>
+              <div className="flex flex-wrap items-baseline gap-2 mb-4">
+                <span className="text-2xl text-gray-500 line-through">
+                  €34.99
+                </span>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-4xl font-bold text-white">€24.99</span>
+                  <span className="text-gray-400 text-lg">one-time</span>
+                </div>
               </div>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center gap-2 text-gray-300">
@@ -86,16 +91,17 @@ export default function PaywallModal({
                 </button>
               </div>
             </div>
-            <div className="mt-4 text-center">
-              <div className="inline-flex flex-wrap items-center justify-center gap-x-2 text-base">
-                <Gift className="h-5 w-5 text-[#4CAF50]" />
-                <div className="text-[#4CAF50]">
-                  <span>€10</span>
-                  <span className="ml-1">off</span>
+            <div className="mt-4">
+              <div className="flex flex-col items-center text-center space-y-1">
+                <div className="flex items-center gap-2">
+                  <Gift className="h-5 w-5 text-[#4CAF50]" />
+                  <span className="text-[#4CAF50]">€10 off</span>
+                  <span>for the first 500</span>
                 </div>
-                <div className="whitespace-nowrap">for the first 500</div>
-                <div className="whitespace-nowrap">customers</div>
-                <span className="text-gray-400">(10 left)</span>
+                <div className="flex items-center gap-2">
+                  <span>customers</span>
+                  <span className="text-gray-400">(10 left)</span>
+                </div>
               </div>
             </div>
           </div>
