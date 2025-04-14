@@ -59,13 +59,6 @@ export default function PaywallModal({
               <LogIn className="h-5 w-5" />
               Sign In
             </button>
-            <button
-              onClick={onClose}
-              className="block w-full py-3 px-4 text-center font-semibold text-gray-400 hover:text-gray-300 rounded-lg transition-colors flex items-center justify-center gap-2"
-            >
-              <XCircle className="h-5 w-5" />
-              Maybe Later
-            </button>
           </div>
         </Dialog.Panel>
       </div>
