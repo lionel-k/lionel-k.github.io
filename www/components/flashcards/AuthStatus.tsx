@@ -21,7 +21,11 @@ export default function AuthStatus({
 
   const handleSignOut = async () => {
     await supabase.auth.signOut();
-    router.push("/flashcards");
+    if (window.location.pathname === "/flashcards/") {
+      window.location.reload();
+    } else {
+      router.push("/flashcards");
+    }
   };
 
   const UserInfo = () => (
