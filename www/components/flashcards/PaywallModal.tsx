@@ -1,7 +1,7 @@
 "use client";
 
 import { Dialog } from "@headlessui/react";
-import { Crown, LogIn, X } from "lucide-react";
+import { Crown, Gift, LogIn, X } from "lucide-react";
 import { FAQ } from "../FAQ";
 import { faqItems } from "@/lib/flashcards/faq";
 
@@ -87,13 +87,16 @@ export default function PaywallModal({
               </div>
             </div>
             <div className="mt-4 text-center">
-              <p className="inline-flex items-center gap-2 text-[#4CAF50] text-base">
-                <span role="img" aria-label="gift" className="text-xl">
-                  🎁
-                </span>
-                <span>€10 off for the first 500 customers</span>
-                <span className="text-[#4CAF50]/80">(10 left)</span>
-              </p>
+              <div className="inline-flex flex-wrap items-center justify-center gap-x-2 text-base">
+                <Gift className="h-5 w-5 text-[#4CAF50]" />
+                <div className="text-[#4CAF50]">
+                  <span>€10</span>
+                  <span className="ml-1">off</span>
+                </div>
+                <div className="whitespace-nowrap">for the first 500</div>
+                <div className="whitespace-nowrap">customers</div>
+                <span className="text-gray-400">(10 left)</span>
+              </div>
             </div>
           </div>
 
