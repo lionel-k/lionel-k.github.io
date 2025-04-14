@@ -1,7 +1,9 @@
 "use client";
 
 import { Dialog } from "@headlessui/react";
-import { Crown, LogIn, XCircle } from "lucide-react";
+import { ArrowLeft, Crown, LogIn } from "lucide-react";
+import { FAQ } from "../FAQ";
+import { faqItems } from "@/lib/flashcards/faq";
 
 type PaywallModalProps = {
   onClose: () => void;
@@ -34,31 +36,67 @@ export default function PaywallModal({
         className="fixed inset-0 bg-black/70 backdrop-blur-sm"
         aria-hidden="true"
       />
-      <div className="fixed inset-0 flex items-center justify-center p-4 text-center">
-        <Dialog.Panel className="mx-auto max-w-sm rounded-2xl bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] p-8 shadow-xl border border-[#DAA520]/20">
-          <Dialog.Title className="text-2xl font-bold text-white mb-4">
-            Upgrade to Premium
-          </Dialog.Title>
-          <Dialog.Description className="text-gray-300 mb-8">
-            Get unlimited access to all flashcards and languages to accelerate
-            your learning journey.
-          </Dialog.Description>
-
-          <div className="space-y-4">
-            <a
-              href={stripeLinkWithEmail}
-              className="block w-full py-3 px-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors flex items-center justify-center gap-2"
-            >
-              <Crown className="h-5 w-5" />
-              Upgrade Now
-            </a>
+      <div className="fixed inset-0 flex items-center justify-center p-4">
+        <Dialog.Panel className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] p-8 shadow-xl border border-[#DAA520]/20">
+          {/* Header */}
+          <div className="flex items-center gap-4 mb-8">
             <button
-              onClick={onSignInClick}
-              className="block w-full py-3 px-4 text-center font-semibold text-[#DAA520] border border-[#DAA520] hover:bg-[#DAA520]/10 rounded-lg transition-colors flex items-center justify-center gap-2"
+              onClick={onClose}
+              className="p-2 hover:bg-white/5 rounded-lg transition-colors"
             >
-              <LogIn className="h-5 w-5" />
-              Sign In
+              <ArrowLeft className="h-5 w-5 text-white" />
             </button>
+            <h2 className="text-2xl font-bold text-white">Billing</h2>
+          </div>
+
+          {/* Pricing */}
+          <div className="mb-8">
+            <div className="bg-[#1A1A1A] rounded-lg p-6 border border-[#DAA520]/20">
+              <div className="flex items-baseline mb-4">
+                <span className="text-4xl font-bold text-white">€24.99</span>
+                <span className="text-gray-400 ml-1">one-time</span>
+              </div>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-center gap-2 text-gray-300">
+                  <Crown className="h-5 w-5 text-[#DAA520]" />
+                  Unlimited flashcards
+                </li>
+                <li className="flex items-center gap-2 text-gray-300">
+                  <Crown className="h-5 w-5 text-[#DAA520]" />
+                  All languages included
+                </li>
+                <li className="flex items-center gap-2 text-gray-300">
+                  <Crown className="h-5 w-5 text-[#DAA520]" />
+                  Pay once, learn forever
+                </li>
+              </ul>
+              <div className="space-y-4">
+                <a
+                  href={stripeLinkWithEmail}
+                  className="block w-full py-3 px-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
+                >
+                  Upgrade Now
+                </a>
+                <button
+                  onClick={onSignInClick}
+                  className="block w-full py-3 px-4 text-center font-semibold text-[#DAA520] border border-[#DAA520] hover:bg-[#DAA520]/10 rounded-lg transition-colors flex items-center justify-center gap-2"
+                >
+                  <LogIn className="h-5 w-5" />
+                  Sign In
+                </button>
+              </div>
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-[#DAA520] text-sm">
+                🎉 €10 off for the first 500 customers (10 left)
+              </p>
+            </div>
+          </div>
+
+          {/* FAQ */}
+          <div className="mb-4">
+            <h3 className="text-xl font-bold text-white mb-4">FAQ</h3>
+            <FAQ items={faqItems} />
           </div>
         </Dialog.Panel>
       </div>
