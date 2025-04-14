@@ -27,8 +27,7 @@ export default function SignInModal({
     setIsError(false);
 
     try {
-      // const { error } = await signInWithOtp(email);
-      const { error } = { error: null };
+      const { error } = await signInWithOtp(email);
 
       if (error) {
         setIsError(true);

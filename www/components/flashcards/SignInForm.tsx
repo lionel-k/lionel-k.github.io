@@ -18,8 +18,7 @@ export default function SignInForm() {
     setIsLoading(true);
 
     try {
-      // const { error } = await signInWithOtp(email);
-      const { error } = { error: null };
+      const { error } = await signInWithOtp(email);
 
       if (error) {
         setIsError(true);
