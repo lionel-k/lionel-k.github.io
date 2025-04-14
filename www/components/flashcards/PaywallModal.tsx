@@ -1,7 +1,7 @@
 "use client";
 
 import { Dialog } from "@headlessui/react";
-import { ArrowLeft, Crown, LogIn } from "lucide-react";
+import { Crown, LogIn, X } from "lucide-react";
 import { FAQ } from "../FAQ";
 import { faqItems } from "@/lib/flashcards/faq";
 
@@ -39,14 +39,14 @@ export default function PaywallModal({
       <div className="fixed inset-0 flex items-center justify-center p-4">
         <Dialog.Panel className="w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-2xl bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] p-8 shadow-xl border border-[#DAA520]/20">
           {/* Header */}
-          <div className="flex items-center gap-4 mb-8">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-2xl font-bold text-white">Billing</h2>
             <button
               onClick={onClose}
               className="p-2 hover:bg-white/5 rounded-lg transition-colors"
             >
-              <ArrowLeft className="h-5 w-5 text-white" />
+              <X className="h-5 w-5 text-white" />
             </button>
-            <h2 className="text-2xl font-bold text-white">Billing</h2>
           </div>
 
           {/* Pricing */}
@@ -87,8 +87,12 @@ export default function PaywallModal({
               </div>
             </div>
             <div className="mt-4 text-center">
-              <p className="text-[#DAA520] text-sm">
-                🎉 €10 off for the first 500 customers (10 left)
+              <p className="inline-flex items-center gap-2 text-[#4CAF50] text-base">
+                <span role="img" aria-label="gift" className="text-xl">
+                  🎁
+                </span>
+                <span>€10 off for the first 500 customers</span>
+                <span className="text-[#4CAF50]/80">(10 left)</span>
               </p>
             </div>
           </div>
