@@ -1,12 +1,15 @@
 "use client";
 
 import { useAuth } from "@/hooks/flashcards/useAuth";
-import FlashcardGame from "@/components/flashcards/FlashcardGame";
 import { FlashcardSet } from "@/lib/flashcards/types";
-import AuthStatus from "@/components/flashcards/AuthStatus";
-import Loader from "@/components/flashcards/Loader";
-import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { sections } from "../sections";
+import { useRouter } from "next/navigation";
+import PaywallModal from "@/components/flashcards/PaywallModal";
+import SignInModal from "@/components/flashcards/SignInModal";
+import { useState } from "react";
+import FlashcardGame from "@/components/flashcards/FlashcardGame";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import AuthStatus from "@/components/flashcards/AuthStatus";
 
 type Props = {
   flashcardSet: FlashcardSet;
@@ -17,21 +20,48 @@ export default function FlashcardSectionClient({
   flashcardSet,
   section,
 }: Props) {
-  const { email, isPaidUser, isLoading } = useAuth();
+  const { email, isPaidUser } = useAuth();
+  const router = useRouter();
+  const [showPaywall, setShowPaywall] = useState(true);
+  const [showSignIn, setShowSignIn] = useState(false);
 
-  if (isLoading) {
-    return <Loader />;
-  }
+  const handleSignInClick = () => {
+    setShowPaywall(false);
+    setShowSignIn(true);
+  };
 
   const currentSection = sections.find((s) => s.id === section);
 
   if (!currentSection) {
-    return <div>Section not found</div>;
+    router.push(`/flashcards/${flashcardSet.language.toLowerCase()}`);
+    return null;
   }
 
-  // Redirect to paywall if trying to access locked section
+  const sectionWords = flashcardSet.words;
+
   if (currentSection.isLocked && !isPaidUser) {
-    return <div>This section requires a premium account</div>;
+    return (
+      <>
+        {showPaywall && (
+          <PaywallModal
+            onClose={() =>
+              router.push(`/flashcards/${flashcardSet.language.toLowerCase()}`)
+            }
+            email={email}
+            onSignInClick={handleSignInClick}
+          />
+        )}
+        {showSignIn && (
+          <SignInModal
+            onClose={() => {
+              setShowSignIn(false);
+              router.push(`/flashcards/${flashcardSet.language.toLowerCase()}`);
+            }}
+          />
+        )}
+        <div className="min-h-screen bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]" />
+      </>
+    );
   }
 
   const breadcrumbItems = [
@@ -66,13 +96,14 @@ export default function FlashcardSectionClient({
             />
           </div>
         </div>
-        <div className="absolute inset-0 opacity-10 pattern-cross pattern-[#DAA520] pattern-size-6" />
+        <div className="absolute inset-0 bg-[url('/images/pattern-dark.png')] opacity-20 bg-repeat" />
       </section>
 
-      <section className="py-16 bg-[#FAF8F5]">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+      <section className="relative py-16 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]">
+        <div className="absolute inset-0 bg-[url('/images/pattern-dark.png')] opacity-5 bg-repeat" />
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <FlashcardGame
-            words={flashcardSet.words}
+            words={sectionWords}
             isPaidUser={isPaidUser}
             email={email}
           />
