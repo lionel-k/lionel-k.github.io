@@ -9,6 +9,8 @@ export type Word = {
 export type LanguageTranslations = {
   language: string;
   translations: Record<string, string>; // key is the word.id, value is the translation
+  // Optional audio overrides for specific words if they don't follow the standard pattern
+  audioOverrides?: Record<string, string>;
 };
 
 export interface FlashcardWord {

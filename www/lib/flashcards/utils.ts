@@ -18,3 +18,7 @@ export const generateOptions = (
   const options = [currentWord, ...shuffledOtherWords.slice(0, 3)];
   return shuffleArray(options);
 };
+
+export const getAudioPath = (language: string, wordId: string): string => {
+  return `/audios/${language.toLowerCase()}/${wordId}.mp3`;
+};

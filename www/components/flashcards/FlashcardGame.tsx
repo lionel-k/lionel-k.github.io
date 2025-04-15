@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FlashcardWord } from "@/lib/flashcards/types";
-import { generateOptions } from "@/lib/flashcards/utils";
+import { generateOptions, getAudioPath } from "@/lib/flashcards/utils";
 import { FlashcardGameProps } from "@/lib/flashcards/types";
 import Loader from "./Loader";
 import { ArrowRight, Volume2 } from "lucide-react";
@@ -17,6 +17,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   const [feedback, setFeedback] = useState<string>("");
   const [showFeedback, setShowFeedback] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const [audioError, setAudioError] = useState<string | null>(null);
   const router = useRouter();
   const params = useParams();
   const currentSectionId = params.section as string;
@@ -34,6 +35,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   useEffect(() => {
     const currentWord = words[currentIndex];
     setOptions(generateOptions(words, currentWord));
+    setAudioError(null);
   }, [currentIndex, words]);
 
   if (isLoading) {
@@ -41,6 +43,18 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   }
 
   const currentWord = words[currentIndex];
+
+  const playAudio = async () => {
+    try {
+      setAudioError(null);
+      const audioPath = getAudioPath(currentWord.language, currentWord.id);
+      const audio = new Audio(audioPath);
+      await audio.play();
+    } catch (error) {
+      console.error("Error playing audio:", error);
+      setAudioError("Could not play audio");
+    }
+  };
 
   const handleAnswer = (answer: string) => {
     setSelectedAnswer(answer);
@@ -84,11 +98,12 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
       <div className="bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] backdrop-blur-sm rounded-lg py-6 px-6 mb-4 text-center border border-[#DAA520]/20">
         <div className="inline-flex items-center gap-4">
           <button
-            className="p-3 rounded-xl hover:bg-[#DAA520]/10 transition-colors cursor-pointer"
-            onClick={() => {
-              console.log("Play audio for:", currentWord.translation);
-            }}
-            title="Play pronunciation"
+            className={`p-3 rounded-xl hover:bg-[#DAA520]/10 transition-colors ${
+              audioError ? "cursor-not-allowed opacity-50" : "cursor-pointer"
+            }`}
+            onClick={playAudio}
+            title={audioError || "Play pronunciation"}
+            disabled={!!audioError}
           >
             <Volume2 className="h-7 w-7 text-[#DAA520]" />
           </button>
@@ -96,6 +111,9 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
             {currentWord.translation}
           </p>
         </div>
+        {audioError && (
+          <p className="text-red-500 text-sm mt-2">{audioError}</p>
+        )}
       </div>
 
       {/* Image grid */}
