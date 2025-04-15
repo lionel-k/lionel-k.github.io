@@ -25,3 +25,16 @@ export type FlashcardSet = {
 };
 
 export type Section = (typeof sections)[number];
+
+export interface FlashcardGameProps {
+  words: FlashcardWord[];
+}
+
+export type ImageOptionProps = {
+  id: string;
+  image: string;
+  isSelected: boolean;
+  isCorrect: boolean;
+  onClick: () => void;
+  disabled: boolean;
+};

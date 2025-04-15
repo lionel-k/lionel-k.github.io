@@ -3,16 +3,12 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FlashcardWord } from "@/lib/flashcards/types";
-import { generateOptions } from "./utils";
-import { FlashcardGameProps } from "./types";
+import { generateOptions } from "@/lib/flashcards/utils";
+import { FlashcardGameProps } from "@/lib/flashcards/types";
 import Loader from "./Loader";
 import { ArrowRight, Volume2 } from "lucide-react";
 
-export default function FlashcardGame({
-  words,
-  isPaidUser,
-  email,
-}: FlashcardGameProps) {
+export default function FlashcardGame({ words }: FlashcardGameProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [options, setOptions] = useState<FlashcardWord[]>([]);

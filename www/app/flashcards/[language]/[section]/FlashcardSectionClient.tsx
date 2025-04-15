@@ -110,11 +110,7 @@ export default function FlashcardSectionClient({
       <section className="relative py-16 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]">
         <div className="absolute inset-0 opacity-5 bg-repeat" />
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
-          <FlashcardGame
-            words={sectionWords}
-            isPaidUser={isPaidUser}
-            email={email}
-          />
+          <FlashcardGame words={sectionWords} />
         </div>
       </section>
     </div>
