@@ -99,10 +99,10 @@ export default function PaywallModal({
                 <div className="flex items-center gap-2">
                   <Gift className="h-5 w-5 text-[#4CAF50]" />
                   <span className="text-[#4CAF50]">€10 off</span>
-                  <span>for the first 500</span>
+                  <span className="text-gray-300">for the first 500</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span>customers</span>
+                  <span className="text-gray-300">customers</span>
                   <span className="text-gray-400">(10 left)</span>
                 </div>
               </div>
