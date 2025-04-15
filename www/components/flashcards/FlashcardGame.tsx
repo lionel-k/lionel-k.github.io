@@ -7,6 +7,8 @@ import { generateOptions } from "@/lib/flashcards/utils";
 import { FlashcardGameProps } from "@/lib/flashcards/types";
 import Loader from "./Loader";
 import { ArrowRight, Volume2 } from "lucide-react";
+import { sections } from "@/lib/flashcards/sections";
+import { useRouter, useParams } from "next/navigation";
 
 export default function FlashcardGame({ words }: FlashcardGameProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,6 +17,15 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   const [feedback, setFeedback] = useState<string>("");
   const [showFeedback, setShowFeedback] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
+  const router = useRouter();
+  const params = useParams();
+  const currentSectionId = params.section as string;
+  const currentLanguage = params.language as string;
+
+  const currentSectionIndex = sections.findIndex(
+    (s) => s.id === currentSectionId
+  );
+  const nextSection = sections[currentSectionIndex + 1];
 
   useEffect(() => {
     setIsLoading(false);
@@ -49,6 +60,12 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswer(null);
       setShowFeedback(false);
+    }
+  };
+
+  const handleNextSection = () => {
+    if (nextSection) {
+      router.push(`/flashcards/${currentLanguage}/${nextSection.id}`);
     }
   };
 
@@ -126,7 +143,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
               <ArrowRight className="h-4 w-4" />
             </button>
           ) : (
-            <div className="text-center">
+            <div className="space-y-3">
               <button
                 onClick={() => {
                   setCurrentIndex(0);
@@ -137,6 +154,15 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
                 Start Over
                 <ArrowRight className="h-4 w-4" />
               </button>
+              {nextSection && (
+                <button
+                  onClick={handleNextSection}
+                  className="w-full py-3 px-4 bg-[#DAA520] text-black font-semibold rounded-lg hover:bg-[#B8860B] transition-colors flex items-center justify-center gap-2"
+                >
+                  Next Section: {nextSection.title}
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              )}
             </div>
           )}
         </div>
