@@ -8,6 +8,9 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { Lock } from "lucide-react";
 import Link from "next/link";
 import { sections } from "./sections";
+import PaywallModal from "@/components/flashcards/PaywallModal";
+import SignInModal from "@/components/flashcards/SignInModal";
+import { useState } from "react";
 
 type Props = {
   flashcardSet: FlashcardSet;
@@ -15,6 +18,13 @@ type Props = {
 
 export default function FlashcardLanguageClient({ flashcardSet }: Props) {
   const { email, isPaidUser, isLoading } = useAuth();
+  const [showPaywall, setShowPaywall] = useState(false);
+  const [showSignIn, setShowSignIn] = useState(false);
+
+  const handleSignInClick = () => {
+    setShowPaywall(false);
+    setShowSignIn(true);
+  };
 
   if (isLoading) {
     return <Loader />;
@@ -75,9 +85,10 @@ export default function FlashcardLanguageClient({ flashcardSet }: Props) {
                   </p>
                 </Link>
               ) : (
-                <div
+                <button
                   key={section.id}
-                  className="relative p-8 rounded-2xl text-left bg-gradient-to-br from-[#1A1A1A]/40 to-[#252525]/40 border border-[#333333]/30 backdrop-blur"
+                  onClick={() => setShowPaywall(true)}
+                  className="relative p-8 rounded-2xl text-left bg-gradient-to-br from-[#1A1A1A]/40 to-[#252525]/40 border border-[#333333]/30 backdrop-blur w-full hover:border-[#DAA520]/20 transition-colors"
                 >
                   <div className="absolute -inset-[1px] bg-gradient-to-r from-[#333333]/30 via-[#DAA520]/5 to-[#333333]/30 rounded-2xl" />
                   <div className="absolute inset-0 bg-black/40 rounded-2xl" />
@@ -94,12 +105,22 @@ export default function FlashcardLanguageClient({ flashcardSet }: Props) {
                       <span>Premium Feature</span>
                     </div>
                   </div>
-                </div>
+                </button>
               );
             })}
           </div>
         </div>
       </section>
+
+      {showPaywall && (
+        <PaywallModal
+          onClose={() => setShowPaywall(false)}
+          email={email}
+          onSignInClick={handleSignInClick}
+        />
+      )}
+
+      {showSignIn && <SignInModal onClose={() => setShowSignIn(false)} />}
     </div>
   );
 }
