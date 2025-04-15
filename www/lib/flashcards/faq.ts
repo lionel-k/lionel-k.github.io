@@ -1,22 +1,32 @@
 export const faqItems = [
   {
-    question: "Which plan should I choose?",
+    question: "How do I know I'll like what I'm buying?",
     answer:
-      "We offer a simple one-time payment plan. Pay once, learn forever with unlimited access to all flashcards and languages.",
+      "Try it for free first! And if you buy and don't like it, you get 30 days to ask for your money back. Just email hello@lingu.africa - no questions asked.",
   },
   {
-    question: "Is there a free trial?",
+    question: "What exactly will I learn?",
     answer:
-      "Yes! You can practice with 5 flashcards for free. This gives you a good feel for how the app works before upgrading.",
+      "You'll learn everyday words first: food, animals, family, numbers. Then simple verbs like 'eat', 'walk', 'sleep'. Soon you'll make basic sentences like 'I eat bread' or 'The cat sleeps'. As you learn more, you'll talk about shopping, travel, work, and tell stories!",
   },
   {
-    question: "What happens if I get more events than my plan?",
+    question: "How does the learning work?",
     answer:
-      "There are no limits! Once you purchase, you get unlimited access to all current and future flashcards.",
+      "We start super simple with basic words. Once you know these, we teach you actions. Then we help you make sentences using words you already know. It's like building with blocks - start small, then build bigger things! Each lesson builds on what you learned before.",
   },
   {
-    question: "Can I get a refund?",
+    question: "Is this just a guessing game?",
     answer:
-      "Yes, if you're not satisfied with your purchase, we offer a 30-day money-back guarantee. Just email me at hello@lingu.africa",
+      "No! While it feels like a fun game, you're actually following a proven path to speak a language. In 1 month, you'll know 100+ common words. In 3 months, you'll make simple sentences. In 6 months, you can have basic conversations about daily life.",
+  },
+  {
+    question: "What makes this different from other apps?",
+    answer:
+      "We teach you real, useful language. No random words you'll never use. Everything connects to real life - ordering food, taking a taxi, greeting family, shopping at the market.",
+  },
+  {
+    question: "Will I get all future content too?",
+    answer:
+      "Yes! Pay once, learn forever. You'll get all new words, lessons, and features we add. We're always adding more content based on what our learners need.",
   },
 ];
