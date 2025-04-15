@@ -10,6 +10,7 @@ import { useState } from "react";
 import FlashcardGame from "@/components/flashcards/FlashcardGame";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import AuthStatus from "@/components/flashcards/AuthStatus";
+import Loader from "@/components/flashcards/Loader";
 
 type Props = {
   flashcardSet: FlashcardSet;
@@ -20,25 +21,32 @@ export default function FlashcardSectionClient({
   flashcardSet,
   section,
 }: Props) {
-  const { email, isPaidUser } = useAuth();
+  const { email, isPaidUser, isLoading } = useAuth();
   const router = useRouter();
-  const [showPaywall, setShowPaywall] = useState(true);
+  const currentSection = sections.find((s) => s.id === section);
+  // Initialize modal states first, before any conditional returns
+  const [showPaywall, setShowPaywall] = useState(
+    currentSection?.isLocked && !isPaidUser
+  );
   const [showSignIn, setShowSignIn] = useState(false);
 
-  const handleSignInClick = () => {
-    setShowPaywall(false);
-    setShowSignIn(true);
-  };
-
-  const currentSection = sections.find((s) => s.id === section);
+  if (isLoading) {
+    return <Loader />;
+  }
 
   if (!currentSection) {
     router.push(`/flashcards/${flashcardSet.language.toLowerCase()}`);
     return null;
   }
 
+  const handleSignInClick = () => {
+    setShowPaywall(false);
+    setShowSignIn(true);
+  };
+
   const sectionWords = flashcardSet.words;
 
+  // If section is locked and user is not paid, only render the modals and background
   if (currentSection.isLocked && !isPaidUser) {
     return (
       <>
@@ -96,11 +104,11 @@ export default function FlashcardSectionClient({
             />
           </div>
         </div>
-        <div className="absolute inset-0 bg-[url('/images/pattern-dark.png')] opacity-20 bg-repeat" />
+        <div className="absolute inset-0 opacity-20 bg-repeat" />
       </section>
 
       <section className="relative py-16 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]">
-        <div className="absolute inset-0 bg-[url('/images/pattern-dark.png')] opacity-5 bg-repeat" />
+        <div className="absolute inset-0 opacity-5 bg-repeat" />
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <FlashcardGame
             words={sectionWords}
