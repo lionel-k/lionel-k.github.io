@@ -11,6 +11,7 @@ import FlashcardGame from "@/components/flashcards/FlashcardGame";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import AuthStatus from "@/components/flashcards/AuthStatus";
 import Loader from "@/components/flashcards/Loader";
+import { shuffleArray } from "@/lib/flashcards/utils";
 
 type Props = {
   flashcardSet: FlashcardSet;
@@ -44,7 +45,7 @@ export default function FlashcardSectionClient({
     setShowSignIn(true);
   };
 
-  const sectionWords = flashcardSet.words;
+  const sectionWords = shuffleArray(flashcardSet.words);
 
   // If section is locked and user is not paid, only render the modals and background
   if (currentSection.isLocked && !isPaidUser) {
