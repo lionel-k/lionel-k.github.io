@@ -1,34 +1,38 @@
-import { FlashcardSet, FlashcardWord, LanguageTranslations } from "./types";
+import { FlashcardSet, FlashcardWord } from "./types";
+import { languageTranslations } from "./translations";
 import { commonWords } from "./words";
-import { languageTranslations } from "./translations/index";
 
-export * from "./types";
+export async function getFlashcardSet(
+  language: string
+): Promise<FlashcardSet | null> {
+  // Convert to lowercase to match our keys
+  const normalizedLanguage = language.toLowerCase();
+  const translations = languageTranslations[normalizedLanguage];
 
-// Helper function to get flashcard words for a specific language
-export function getFlashcardSet(languageCode: string): FlashcardSet {
-  const languageData = languageTranslations[languageCode];
-  if (!languageData) throw new Error(`Language ${languageCode} not found`);
+  if (!translations) {
+    return null;
+  }
 
-  const words: FlashcardWord[] = Object.entries(languageData.translations).map(
-    ([wordId, translation]: [string, string]) => ({
-      id: wordId,
-      word: commonWords[wordId].english,
-      image: commonWords[wordId].image,
-      translation,
-      language: languageData.language,
-    })
+  // Create FlashcardWords by combining common words with translations
+  const words: FlashcardWord[] = Object.entries(translations.translations).map(
+    ([wordId, translation]) => {
+      const word = commonWords[wordId];
+      if (!word) {
+        throw new Error(`Translation exists for unknown word: ${wordId}`);
+      }
+
+      return {
+        id: wordId,
+        word: word.english,
+        translation,
+        language: translations.language,
+        image: word.image,
+      };
+    }
   );
 
   return {
-    language: languageData.language,
+    language: translations.language,
     words,
   };
 }
-
-// For backward compatibility
-export const flashcardSets: Record<string, FlashcardSet> = Object.keys(
-  languageTranslations
-).reduce((acc, languageCode) => {
-  acc[languageCode] = getFlashcardSet(languageCode);
-  return acc;
-}, {} as Record<string, FlashcardSet>);

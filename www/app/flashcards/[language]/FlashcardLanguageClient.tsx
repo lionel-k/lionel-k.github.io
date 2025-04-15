@@ -1,11 +1,13 @@
 "use client";
 
 import { useAuth } from "@/hooks/flashcards/useAuth";
-import FlashcardGame from "@/components/flashcards/FlashcardGame";
 import { FlashcardSet } from "@/lib/flashcards/types";
 import AuthStatus from "@/components/flashcards/AuthStatus";
 import Loader from "@/components/flashcards/Loader";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import { Lock } from "lucide-react";
+import Link from "next/link";
+import { sections } from "./sections";
 
 type Props = {
   flashcardSet: FlashcardSet;
@@ -37,7 +39,7 @@ export default function FlashcardLanguageClient({ flashcardSet }: Props) {
               Learn {flashcardSet.language}
             </h1>
             <p className="mt-4 text-xl leading-8 text-gray-300">
-              Practice vocabulary with interactive flashcards
+              From basic words to daily conversations
             </p>
             <AuthStatus
               email={email}
@@ -46,16 +48,56 @@ export default function FlashcardLanguageClient({ flashcardSet }: Props) {
             />
           </div>
         </div>
-        <div className="absolute inset-0 opacity-10 pattern-cross pattern-[#DAA520] pattern-size-6" />
+        <div className="absolute inset-0 opacity-20 bg-repeat" />
       </section>
 
-      <section className="py-16 bg-[#FAF8F5]">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <FlashcardGame
-            words={flashcardSet.words}
-            isPaidUser={isPaidUser}
-            email={email}
-          />
+      <section className="relative py-16 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]">
+        <div className="absolute inset-0 opacity-5 bg-repeat" />
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {sections.map((section) => {
+              const isAccessible = !section.isLocked || isPaidUser;
+              const href = `/flashcards/${flashcardSet.language.toLowerCase()}/${
+                section.id
+              }`;
+
+              return isAccessible ? (
+                <Link
+                  key={section.id}
+                  href={href}
+                  className="group p-8 rounded-2xl text-left transition-all bg-gradient-to-br from-[#1A1A1A] to-[#252525] text-white border border-[#333333] hover:border-[#DAA520] hover:from-[#1A1A1A] hover:to-[#252525] hover:shadow-lg hover:shadow-[#DAA520]/10"
+                >
+                  <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-[#DAA520] transition-colors">
+                    {section.title}
+                  </h3>
+                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors">
+                    {section.description}
+                  </p>
+                </Link>
+              ) : (
+                <div
+                  key={section.id}
+                  className="relative p-8 rounded-2xl text-left bg-gradient-to-br from-[#1A1A1A]/40 to-[#252525]/40 border border-[#333333]/30 backdrop-blur"
+                >
+                  <div className="absolute -inset-[1px] bg-gradient-to-r from-[#333333]/30 via-[#DAA520]/5 to-[#333333]/30 rounded-2xl" />
+                  <div className="absolute inset-0 bg-black/40 rounded-2xl" />
+                  <div className="relative flex flex-col items-start">
+                    <div className="flex items-center gap-2 mb-3">
+                      <Lock className="h-6 w-6 text-[#DAA520]" />
+                      <h3 className="text-2xl font-bold text-gray-500">
+                        {section.title}
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 mb-4">{section.description}</p>
+                    <div className="inline-flex items-center gap-2 text-sm text-[#DAA520] bg-[#DAA520]/5 px-3 py-1.5 rounded-full border border-[#DAA520]/10">
+                      <Lock className="h-3.5 w-3.5" />
+                      <span>Premium Feature</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
     </div>

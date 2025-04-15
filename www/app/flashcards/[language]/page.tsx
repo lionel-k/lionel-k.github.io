@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { flashcardSets } from "@/lib/flashcards/index";
+import { getFlashcardSet } from "@/lib/flashcards";
 import { LANGUAGES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
 import FlashcardLanguageClient from "./FlashcardLanguageClient";
@@ -19,7 +19,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { language } = await params;
-  const flashcardSet = flashcardSets[language];
+  const flashcardSet = await getFlashcardSet(language);
 
   if (!flashcardSet) {
     return {
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function FlashcardLanguagePage({ params }: Props) {
   const { language } = await params;
-  const flashcardSet = flashcardSets[language];
+  const flashcardSet = await getFlashcardSet(language);
 
   if (!flashcardSet) {
     notFound();
