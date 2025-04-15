@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ImageOptionProps } from "./types";
+import { ImageOptionProps } from "@/lib/flashcards/types";
 
 export default function ImageOption({
   id,
