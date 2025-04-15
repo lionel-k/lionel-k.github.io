@@ -1,12 +1,12 @@
 "use client";
 
 import { Lock } from "lucide-react";
-import { Section } from "@/app/flashcards/[language]/sections";
+import { sections } from "@/lib/flashcards/sections";
 
 type SectionCardProps = {
-  section: Section;
+  section: (typeof sections)[number];
   isAccessible: boolean;
-  onClick: (section: Section) => void;
+  onClick: (section: (typeof sections)[number]) => void;
 };
 
 const styles = {

@@ -1,3 +1,5 @@
+import { sections } from "./sections";
+
 export type Word = {
   id: string;
   english: string;
@@ -21,3 +23,5 @@ export type FlashcardSet = {
   language: string;
   words: FlashcardWord[];
 };
+
+export type Section = (typeof sections)[number];

@@ -2,7 +2,7 @@
 
 import { useAuth } from "@/hooks/flashcards/useAuth";
 import { FlashcardSet } from "@/lib/flashcards/types";
-import { sections } from "../sections";
+import { sections } from "@/lib/flashcards/sections";
 import { useRouter } from "next/navigation";
 import PaywallModal from "@/components/flashcards/PaywallModal";
 import SignInModal from "@/components/flashcards/SignInModal";
