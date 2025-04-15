@@ -3,17 +3,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { FlashcardWord } from "@/lib/flashcards/types";
-import {
-  generateOptions,
-  getPlaysCount,
-  incrementPlaysCount,
-  MAX_PLAYS,
-} from "./utils";
-import PaywallModal from "./PaywallModal";
-import SignInModal from "./SignInModal";
+import { generateOptions } from "./utils";
 import { FlashcardGameProps } from "./types";
 import Loader from "./Loader";
-import { ArrowRight, Play, Volume2 } from "lucide-react";
+import { ArrowRight, Volume2 } from "lucide-react";
 
 export default function FlashcardGame({
   words,
@@ -23,15 +16,11 @@ export default function FlashcardGame({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [options, setOptions] = useState<FlashcardWord[]>([]);
-  const [showPaywall, setShowPaywall] = useState(false);
-  const [showSignIn, setShowSignIn] = useState(false);
-  const [playsCount, setPlaysCount] = useState(0);
   const [feedback, setFeedback] = useState<string>("");
   const [showFeedback, setShowFeedback] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setPlaysCount(getPlaysCount());
     setIsLoading(false);
   }, []);
 
@@ -61,24 +50,10 @@ export default function FlashcardGame({
 
   const handleNext = () => {
     if (currentIndex < words.length - 1) {
-      // Check plays count first
-      const plays = getPlaysCount();
-      if (plays >= MAX_PLAYS && !isPaidUser) {
-        setShowPaywall(true);
-        return;
-      }
-      incrementPlaysCount();
-      setPlaysCount(plays + 1);
-
       setCurrentIndex(currentIndex + 1);
       setSelectedAnswer(null);
       setShowFeedback(false);
     }
-  };
-
-  const handleSignInClick = () => {
-    setShowPaywall(false);
-    setShowSignIn(true);
   };
 
   const getImageStyle = (imageId: string) => {
@@ -92,98 +67,84 @@ export default function FlashcardGame({
   };
 
   return (
-    <>
-      <div className="min-h-[calc(100vh-4rem)] flex flex-col max-w-lg mx-auto px-4 py-2">
-        <div className="bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] backdrop-blur-sm rounded-lg py-6 px-6 mb-4 text-center border border-[#DAA520]/20">
-          <div className="inline-flex items-center gap-4">
-            <button
-              className="p-3 rounded-xl hover:bg-[#DAA520]/10 transition-colors cursor-pointer"
-              onClick={() => {
-                console.log("Play audio for:", currentWord.translation);
-              }}
-              title="Play pronunciation"
-            >
-              <Volume2 className="h-7 w-7 text-[#DAA520]" />
-            </button>
-            <p className="text-3xl font-bold text-white">
-              {currentWord.translation}
-            </p>
-          </div>
+    <div className="min-h-[calc(100vh-4rem)] flex flex-col max-w-lg mx-auto px-4 py-2">
+      <div className="bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] backdrop-blur-sm rounded-lg py-6 px-6 mb-4 text-center border border-[#DAA520]/20">
+        <div className="inline-flex items-center gap-4">
+          <button
+            className="p-3 rounded-xl hover:bg-[#DAA520]/10 transition-colors cursor-pointer"
+            onClick={() => {
+              console.log("Play audio for:", currentWord.translation);
+            }}
+            title="Play pronunciation"
+          >
+            <Volume2 className="h-7 w-7 text-[#DAA520]" />
+          </button>
+          <p className="text-3xl font-bold text-white">
+            {currentWord.translation}
+          </p>
         </div>
-
-        {/* Image grid */}
-        <div className="grid grid-cols-2 gap-4 mb-4">
-          {options.map((option) => (
-            <button
-              key={option.id}
-              onClick={() => !selectedAnswer && handleAnswer(option.id)}
-              disabled={selectedAnswer !== null}
-              className="relative aspect-square rounded-lg overflow-hidden transition-all duration-200 hover:scale-[1.02] focus:outline-none group"
-            >
-              <Image
-                src={option.image}
-                alt="Option"
-                fill
-                className={`object-cover rounded-lg ${getImageStyle(
-                  option.id
-                )}`}
-              />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity" />
-            </button>
-          ))}
-        </div>
-
-        {/* Feedback and next button */}
-        {selectedAnswer && (
-          <div className="space-y-3">
-            <div
-              className={`py-3 px-4 rounded-lg text-center ${
-                selectedAnswer === currentWord.id
-                  ? "bg-[#DAA520]/10 text-[#DAA520]"
-                  : "bg-red-500/10 text-red-500"
-              }`}
-            >
-              {selectedAnswer === currentWord.id ? (
-                <p>Correct! 🎉</p>
-              ) : (
-                <p>❌ {feedback}</p>
-              )}
-            </div>
-            {currentIndex < words.length - 1 ? (
-              <button
-                onClick={handleNext}
-                className="w-full py-3 px-4 bg-[#DAA520] text-black font-semibold rounded-lg hover:bg-[#B8860B] transition-colors flex items-center justify-center gap-2"
-              >
-                Next Word
-                <ArrowRight className="h-4 w-4" />
-              </button>
-            ) : (
-              <div className="text-center">
-                <button
-                  onClick={() => {
-                    setCurrentIndex(0);
-                    setSelectedAnswer(null);
-                  }}
-                  className="w-full py-3 px-4 bg-[#0A0A0A] text-[#DAA520] font-semibold rounded-lg hover:bg-[#1A1A1A] border border-[#DAA520] transition-colors flex items-center justify-center gap-2"
-                >
-                  Start Over
-                  <ArrowRight className="h-4 w-4" />
-                </button>
-              </div>
-            )}
-          </div>
-        )}
       </div>
 
-      {showPaywall && (
-        <PaywallModal
-          email={email}
-          onClose={() => setShowPaywall(false)}
-          onSignInClick={handleSignInClick}
-        />
-      )}
+      {/* Image grid */}
+      <div className="grid grid-cols-2 gap-4 mb-4">
+        {options.map((option) => (
+          <button
+            key={option.id}
+            onClick={() => !selectedAnswer && handleAnswer(option.id)}
+            disabled={selectedAnswer !== null}
+            className="relative aspect-square rounded-lg overflow-hidden transition-all duration-200 hover:scale-[1.02] focus:outline-none group"
+          >
+            <Image
+              src={option.image}
+              alt="Option"
+              fill
+              className={`object-cover rounded-lg ${getImageStyle(option.id)}`}
+            />
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity" />
+          </button>
+        ))}
+      </div>
 
-      {showSignIn && <SignInModal onClose={() => setShowSignIn(false)} />}
-    </>
+      {/* Feedback and next button */}
+      {selectedAnswer && (
+        <div className="space-y-3">
+          <div
+            className={`py-3 px-4 rounded-lg text-center ${
+              selectedAnswer === currentWord.id
+                ? "bg-[#DAA520]/10 text-[#DAA520]"
+                : "bg-red-500/10 text-red-500"
+            }`}
+          >
+            {selectedAnswer === currentWord.id ? (
+              <p>Correct! 🎉</p>
+            ) : (
+              <p>❌ {feedback}</p>
+            )}
+          </div>
+          {currentIndex < words.length - 1 ? (
+            <button
+              onClick={handleNext}
+              className="w-full py-3 px-4 bg-[#DAA520] text-black font-semibold rounded-lg hover:bg-[#B8860B] transition-colors flex items-center justify-center gap-2"
+            >
+              Next Word
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          ) : (
+            <div className="text-center">
+              <button
+                onClick={() => {
+                  setCurrentIndex(0);
+                  setSelectedAnswer(null);
+                }}
+                className="w-full py-3 px-4 bg-[#0A0A0A] text-[#DAA520] font-semibold rounded-lg hover:bg-[#1A1A1A] border border-[#DAA520] transition-colors flex items-center justify-center gap-2"
+              >
+                Start Over
+                <ArrowRight className="h-4 w-4" />
+              </button>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
   );
 }
