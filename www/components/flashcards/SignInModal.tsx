@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { signInWithOtp } from "@/lib/auth";
-import { Mail, XCircle } from "lucide-react";
+import { Mail, X } from "lucide-react";
 import MagicLinkMessage from "./MagicLinkMessage";
 
 interface SignInModalProps {
@@ -44,9 +44,18 @@ export default function SignInModal({ onClose }: SignInModalProps) {
       />
       <div className="fixed inset-0 flex items-center justify-center p-4 text-center">
         <Dialog.Panel className="mx-auto max-w-sm rounded-2xl bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] p-8 shadow-xl border border-[#DAA520]/20 w-full">
-          <Dialog.Title className="text-2xl font-bold text-white mb-4">
-            Sign In to Track Progress
-          </Dialog.Title>
+          <div className="flex items-center justify-between mb-4">
+            <Dialog.Title className="text-2xl font-bold text-white">
+              Sign In to Track Progress
+            </Dialog.Title>
+            <button
+              onClick={onClose}
+              className="p-2 hover:bg-white/5 rounded-lg transition-colors"
+            >
+              <X className="h-5 w-5 text-white" />
+            </button>
+          </div>
+
           <Dialog.Description className="text-gray-300 mb-6">
             Enter your email to receive a magic link for instant access.
           </Dialog.Description>
@@ -63,24 +72,14 @@ export default function SignInModal({ onClose }: SignInModalProps) {
               />
             </div>
 
-            <div className="space-y-3">
-              <button
-                type="submit"
-                disabled={isLoading}
-                className="w-full py-3 px-4 bg-[#DAA520] text-black font-semibold rounded-lg hover:bg-[#B8860B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
-              >
-                <Mail className="h-5 w-5" />
-                {isLoading ? "Sending..." : "Send Magic Link"}
-              </button>
-              <button
-                type="button"
-                onClick={onClose}
-                className="w-full py-3 px-4 text-center font-semibold text-gray-400 hover:text-gray-300 rounded-lg transition-colors flex items-center justify-center gap-2"
-              >
-                <XCircle className="h-5 w-5" />
-                Cancel
-              </button>
-            </div>
+            <button
+              type="submit"
+              disabled={isLoading}
+              className="w-full py-3 px-4 bg-[#DAA520] text-black font-semibold rounded-lg hover:bg-[#B8860B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            >
+              <Mail className="h-5 w-5" />
+              {isLoading ? "Sending..." : "Send Magic Link"}
+            </button>
 
             {showMessage && (
               <div className="p-6 rounded-lg bg-[#0A0A0A]/40 border border-[#DAA520]/20">
