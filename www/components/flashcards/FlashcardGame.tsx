@@ -13,7 +13,7 @@ import PaywallModal from "./PaywallModal";
 import SignInModal from "./SignInModal";
 import { FlashcardGameProps } from "./types";
 import Loader from "./Loader";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Play, Volume2 } from "lucide-react";
 
 export default function FlashcardGame({
   words,
@@ -94,11 +94,21 @@ export default function FlashcardGame({
   return (
     <>
       <div className="min-h-[calc(100vh-4rem)] flex flex-col max-w-lg mx-auto px-4 py-2">
-        {/* Word to learn */}
         <div className="bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] backdrop-blur-sm rounded-lg py-6 px-6 mb-4 text-center border border-[#DAA520]/20">
-          <p className="text-3xl font-bold text-white">
-            {currentWord.translation}
-          </p>
+          <div className="inline-flex items-center gap-4">
+            <button
+              className="p-3 rounded-xl hover:bg-[#DAA520]/10 transition-colors cursor-pointer"
+              onClick={() => {
+                console.log("Play audio for:", currentWord.translation);
+              }}
+              title="Play pronunciation"
+            >
+              <Volume2 className="h-7 w-7 text-[#DAA520]" />
+            </button>
+            <p className="text-3xl font-bold text-white">
+              {currentWord.translation}
+            </p>
+          </div>
         </div>
 
         {/* Image grid */}
