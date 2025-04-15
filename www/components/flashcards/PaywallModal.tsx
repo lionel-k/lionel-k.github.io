@@ -13,6 +13,12 @@ type PaywallModalProps = {
 
 const stripeLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK!;
 
+const features = [
+  "Pay once, learn forever",
+  "Unlimited flashcards",
+  "All languages included",
+] as const;
+
 export default function PaywallModal({
   onClose,
   email,
@@ -62,18 +68,15 @@ export default function PaywallModal({
                 </div>
               </div>
               <ul className="space-y-3 mb-6">
-                <li className="flex items-center gap-2 text-gray-300">
-                  <Crown className="h-5 w-5 text-[#DAA520]" />
-                  Unlimited flashcards
-                </li>
-                <li className="flex items-center gap-2 text-gray-300">
-                  <Crown className="h-5 w-5 text-[#DAA520]" />
-                  All languages included
-                </li>
-                <li className="flex items-center gap-2 text-gray-300">
-                  <Crown className="h-5 w-5 text-[#DAA520]" />
-                  Pay once, learn forever
-                </li>
+                {features.map((feature) => (
+                  <li
+                    key={feature}
+                    className="flex items-center gap-2 text-gray-300"
+                  >
+                    <Crown className="h-5 w-5 text-[#DAA520]" />
+                    {feature}
+                  </li>
+                ))}
               </ul>
               <div className="space-y-4">
                 <a
