@@ -43,7 +43,7 @@ export default function LanguageClient({ flashcardSet }: Props) {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen animate-in fade-in duration-300">
       {showPaywall && (
         <PaywallModal
           onClose={() => setShowPaywall(false)}
