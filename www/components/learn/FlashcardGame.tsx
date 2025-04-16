@@ -57,6 +57,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   };
 
   const handleAnswer = (answer: string) => {
+    if (selectedAnswer) return; // Prevent state changes if an answer is already selected
     setSelectedAnswer(answer);
 
     // Handle correct/incorrect feedback
@@ -123,7 +124,11 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
             key={option.id}
             onClick={() => !selectedAnswer && handleAnswer(option.id)}
             disabled={selectedAnswer !== null}
-            className="relative aspect-square rounded-lg overflow-hidden transition-all duration-200 hover:scale-[1.02] focus:outline-none group"
+            className={`relative aspect-square rounded-lg overflow-hidden ${
+              !selectedAnswer
+                ? "transition-all duration-200 hover:scale-[1.02]"
+                : ""
+            } focus:outline-none`}
           >
             <Image
               src={option.image}
@@ -131,7 +136,9 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
               fill
               className={`object-cover rounded-lg ${getImageStyle(option.id)}`}
             />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity" />
+            {!selectedAnswer && (
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity" />
+            )}
           </button>
         ))}
       </div>
