@@ -10,6 +10,18 @@ export const sections = [
 
   // Level 2 - Essential Building Blocks
   {
+    id: "objects",
+    title: "Common Objects",
+    description: "Learn words for everyday objects you see and use.",
+    isLocked: true,
+  },
+  {
+    id: "fruits-vegetables",
+    title: "Fruits & Vegetables",
+    description: "Learn names of common fruits and vegetables at the market.",
+    isLocked: true,
+  },
+  {
     id: "numbers",
     title: "Numbers",
     description: "Learn to count and understand prices in your new language.",
@@ -22,21 +34,9 @@ export const sections = [
     isLocked: true,
   },
   {
-    id: "objects",
-    title: "Common Objects",
-    description: "Learn words for everyday objects you see and use.",
-    isLocked: true,
-  },
-  {
     id: "food",
     title: "Food & Drinks",
     description: "Learn words for ordering food and understanding menus.",
-    isLocked: true,
-  },
-  {
-    id: "fruits-vegetables",
-    title: "Fruits & Vegetables",
-    description: "Learn names of common fruits and vegetables at the market.",
     isLocked: true,
   },
 
