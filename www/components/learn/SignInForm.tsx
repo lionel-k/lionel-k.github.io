@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { signInWithOtp } from "@/lib/auth";
+import { supabase } from "@/lib/supabase";
 import { Mail } from "lucide-react";
 import MagicLinkMessage from "./MagicLinkMessage";
 
@@ -9,62 +9,52 @@ export default function SignInForm() {
   const [email, setEmail] = useState("");
   const [showMessage, setShowMessage] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSignIn = async (e: React.FormEvent) => {
     e.preventDefault();
-    setShowMessage(false);
-    setIsError(false);
-    setIsLoading(true);
-
     try {
-      const { error } = await signInWithOtp(email);
-
+      const { error } = await supabase.auth.signInWithOtp({
+        email,
+        options: {
+          emailRedirectTo: `${window.location.origin}/auth/callback`,
+        },
+      });
       if (error) {
         setIsError(true);
+        setShowMessage(true);
+        return;
       }
+      setIsError(false);
       setShowMessage(true);
-    } finally {
-      setIsLoading(false);
+    } catch (error) {
+      setIsError(true);
+      setShowMessage(true);
     }
   };
 
-  return (
-    <form onSubmit={handleSubmit} className="max-w-sm mx-auto mt-8">
-      <div className="text-center mb-6">
-        <h2 className="text-2xl font-bold text-white mb-2">
-          Sign in to continue
-        </h2>
-        <p className="text-gray-400">
-          Enter your email to receive a magic link
-        </p>
-      </div>
+  if (showMessage) {
+    return <MagicLinkMessage email={email} isError={isError} />;
+  }
 
+  return (
+    <form onSubmit={handleSignIn} className="flex items-center gap-2">
       <div className="relative">
         <input
           type="email"
-          placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full bg-[#0A0A0A]/40 border border-[#DAA520]/20 text-white p-3 pl-10 rounded-lg focus:outline-none focus:border-[#DAA520] focus:ring-1 focus:ring-[#DAA520] placeholder-gray-500"
+          placeholder="Enter your email"
           required
+          className="w-64 bg-[#1A1A1A] text-sm text-white placeholder:text-gray-500 rounded-lg py-2 pl-9 pr-4 border border-gray-800 focus:border-[#DAA520] focus:ring-1 focus:ring-[#DAA520] transition-all outline-none"
         />
-        <Mail className="absolute left-3 top-3.5 h-5 w-5 text-[#DAA520]" />
+        <Mail className="absolute left-2.5 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-500" />
       </div>
-
       <button
         type="submit"
-        disabled={isLoading}
-        className="w-full mt-4 bg-[#DAA520] text-black font-semibold py-3 px-4 rounded-lg hover:bg-[#B8860B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        className="bg-[#DAA520] text-sm text-black font-medium rounded-lg px-4 py-2 hover:bg-[#B8860B] transition-colors"
       >
-        {isLoading ? "Sending..." : "Send Magic Link"}
+        Sign in
       </button>
-
-      {showMessage && (
-        <div className="mt-4 p-6 rounded-lg bg-[#0A0A0A]/40 border border-[#DAA520]/20">
-          <MagicLinkMessage email={email} isError={isError} />
-        </div>
-      )}
     </form>
   );
 }

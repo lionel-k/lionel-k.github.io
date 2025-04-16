@@ -40,7 +40,7 @@ export function useAuth(): UseAuthReturn {
         setIsPaidUser(false);
       } finally {
         setIsLoading(false);
-        // setEmail("test@test.com");
+        // setEmail("test@gmail.com");
         // setIsPaidUser(true);
       }
     };

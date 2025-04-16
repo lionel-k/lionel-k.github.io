@@ -44,7 +44,7 @@ export default function SectionCard({
 
         {/* Bottom section with icon */}
         <div className="flex items-center justify-between mt-4">
-          {section.isLocked ? (
+          {section.isLocked && !isPaidUser ? (
             <div className="flex items-center gap-2">
               <Lock className="h-4 w-4 text-[#DAA520]" />
               <span className="text-sm font-medium text-[#DAA520]">

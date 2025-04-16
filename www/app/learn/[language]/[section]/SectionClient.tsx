@@ -6,11 +6,10 @@ import { sections } from "@/lib/learn/sections";
 import { useRouter } from "next/navigation";
 import PaywallModal from "@/components/learn/PaywallModal";
 import SignInModal from "@/components/learn/SignInModal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FlashcardGame from "@/components/learn/FlashcardGame";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
-import { shuffleArray } from "@/lib/learn/utils";
 import { Lock } from "lucide-react";
 import PageHeader from "@/components/learn/PageHeader";
 
@@ -23,10 +22,16 @@ export default function SectionClient({ flashcardSet, section }: Props) {
   const { email, isPaidUser, isLoading } = useAuth();
   const router = useRouter();
   const currentSection = sections.find((s) => s.id === section);
-  const [showPaywall, setShowPaywall] = useState(
-    currentSection?.isLocked && !isPaidUser
-  );
+  const [showPaywall, setShowPaywall] = useState(false);
   const [showSignIn, setShowSignIn] = useState(false);
+
+  useEffect(() => {
+    if (currentSection?.isLocked && !isPaidUser) {
+      setShowPaywall(true);
+    } else {
+      setShowPaywall(false);
+    }
+  }, [currentSection?.isLocked, isPaidUser]);
 
   if (isLoading) {
     return <Loader />;
@@ -46,7 +51,7 @@ export default function SectionClient({ flashcardSet, section }: Props) {
     setShowPaywall(true);
   };
 
-  const sectionWords = shuffleArray(flashcardSet.words);
+  const sectionWords = flashcardSet.words;
 
   const breadcrumbItems = [
     { name: "Home", href: "/" },
