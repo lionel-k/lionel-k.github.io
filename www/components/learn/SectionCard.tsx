@@ -31,7 +31,7 @@ export default function SectionCard({
   return (
     <button
       onClick={handleClick}
-      className={`group relative aspect-video overflow-hidden rounded-xl bg-gradient-to-br from-[#0A0A0A] to-[#1A1A1A] p-8 text-left transition duration-300 hover:shadow-lg`}
+      className={`group relative aspect-video overflow-hidden rounded-xl bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] p-8 text-left transition-all duration-300 hover:shadow-[0_0_25px_rgba(218,165,32,0.15)] hover:translate-y-[-2px] border border-[#DAA520]/10`}
     >
       <div className="relative z-10 h-full flex flex-col">
         <div className="flex-1">
@@ -50,7 +50,7 @@ export default function SectionCard({
         )}
       </div>
       <div
-        className={`absolute inset-0 bg-[#DAA520] opacity-0 transition-opacity duration-300 group-hover:opacity-5`}
+        className={`absolute inset-0 bg-[#DAA520] opacity-0 transition-opacity duration-300 group-hover:opacity-10`}
       />
     </button>
   );
