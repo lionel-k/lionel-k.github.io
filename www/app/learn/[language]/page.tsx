@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getFlashcardSet } from "@/lib/flashcards";
+import { getFlashcardSet } from "@/lib/learn";
 import { LANGUAGES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
-import FlashcardLanguageClient from "./FlashcardLanguageClient";
+import LanguageClient from "./LanguageClient";
 
 type Props = {
   params: Promise<{
@@ -49,13 +49,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function FlashcardLanguagePage({ params }: Props) {
+export default async function LanguagePage({ params }: Props) {
   const { language } = await params;
+  const languageObj = LANGUAGES.find((l) => l.slug === language);
+
+  if (!languageObj) {
+    notFound();
+  }
+
   const flashcardSet = await getFlashcardSet(language);
 
   if (!flashcardSet) {
     notFound();
   }
 
-  return <FlashcardLanguageClient flashcardSet={flashcardSet} />;
+  return <LanguageClient flashcardSet={flashcardSet} />;
 }

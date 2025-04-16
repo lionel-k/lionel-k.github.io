@@ -46,7 +46,7 @@ export default function SignInModal({ onClose }: SignInModalProps) {
         <Dialog.Panel className="mx-auto max-w-sm rounded-2xl bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] p-8 shadow-xl border border-[#DAA520]/20 w-full">
           <div className="flex items-center justify-between mb-4">
             <Dialog.Title className="text-2xl font-bold text-white">
-              Sign In to Track Progress
+              Sign in to continue
             </Dialog.Title>
             <button
               onClick={onClose}

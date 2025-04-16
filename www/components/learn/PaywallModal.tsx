@@ -3,7 +3,7 @@
 import { Dialog } from "@headlessui/react";
 import { Crown, Gift, LogIn, X } from "lucide-react";
 import { FAQ } from "../FAQ";
-import { faqItems } from "@/lib/flashcards/faq";
+import { faqItems } from "@/lib/learn/faq";
 
 type PaywallModalProps = {
   onClose: () => void;
@@ -15,7 +15,7 @@ const stripeLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK!;
 
 const features = [
   "Pay once, learn forever",
-  "Unlimited flashcards",
+  "Unlimited lessons",
   "All languages included",
 ] as const;
 

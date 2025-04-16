@@ -12,7 +12,7 @@ export async function signInWithOtp(
     const { error } = await supabase.auth.signInWithOtp({
       email,
       options: {
-        emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/flashcards`,
+        emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL}/learn/`,
       },
     });
 

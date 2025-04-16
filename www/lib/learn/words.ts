@@ -4,36 +4,36 @@ export const commonWords: Record<string, Word> = {
   cat: {
     id: "cat",
     english: "cat",
-    image: "/images/flashcards/cat.webp",
+    image: "/images/learn/cat.webp",
   },
   dog: {
     id: "dog",
     english: "dog",
-    image: "/images/flashcards/dog.webp",
+    image: "/images/learn/dog.webp",
   },
   tree: {
     id: "tree",
     english: "tree",
-    image: "/images/flashcards/tree.webp",
+    image: "/images/learn/tree.webp",
   },
   house: {
     id: "house",
     english: "house",
-    image: "/images/flashcards/house.webp",
+    image: "/images/learn/house.webp",
   },
   car: {
     id: "car",
     english: "car",
-    image: "/images/flashcards/car.webp",
+    image: "/images/learn/car.webp",
   },
   book: {
     id: "book",
     english: "book",
-    image: "/images/flashcards/book.webp",
+    image: "/images/learn/book.webp",
   },
   ball: {
     id: "ball",
     english: "ball",
-    image: "/images/flashcards/ball.webp",
+    image: "/images/learn/ball.webp",
   },
 };

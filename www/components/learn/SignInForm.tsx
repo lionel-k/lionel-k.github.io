@@ -33,7 +33,7 @@ export default function SignInForm() {
     <form onSubmit={handleSubmit} className="max-w-sm mx-auto mt-8">
       <div className="text-center mb-6">
         <h2 className="text-2xl font-bold text-white mb-2">
-          Sign In to Track Progress
+          Sign in to continue
         </h2>
         <p className="text-gray-400">
           Enter your email to receive a magic link

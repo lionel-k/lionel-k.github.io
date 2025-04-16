@@ -1,4 +1,4 @@
-import { FlashcardWord } from "@/lib/flashcards/types";
+import { FlashcardWord } from "@/lib/learn/types";
 
 export const shuffleArray = <T>(array: T[]): T[] => {
   const shuffled = [...array];

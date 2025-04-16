@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { FlashcardWord } from "@/lib/flashcards/types";
-import { generateOptions, getAudioPath } from "@/lib/flashcards/utils";
-import { FlashcardGameProps } from "@/lib/flashcards/types";
+import { FlashcardWord } from "@/lib/learn/types";
+import { generateOptions, getAudioPath } from "@/lib/learn/utils";
+import { FlashcardGameProps } from "@/lib/learn/types";
 import Loader from "./Loader";
 import { ArrowRight, Volume2 } from "lucide-react";
-import { sections } from "@/lib/flashcards/sections";
+import { sections } from "@/lib/learn/sections";
 import { useRouter, useParams } from "next/navigation";
 
 export default function FlashcardGame({ words }: FlashcardGameProps) {
@@ -79,7 +79,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
 
   const handleNextSection = () => {
     if (nextSection) {
-      router.push(`/flashcards/${currentLanguage}/${nextSection.id}`);
+      router.push(`/learn/${currentLanguage}/${nextSection.id}`);
     }
   };
 
