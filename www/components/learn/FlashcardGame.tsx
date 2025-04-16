@@ -96,18 +96,15 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
 
   return (
     <div className="min-h-[calc(100vh-4rem)] flex flex-col max-w-lg mx-auto px-4 py-2">
-      <div className="bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] backdrop-blur-sm rounded-lg py-6 px-6 mb-4 text-center border border-[#DAA520]/20">
-        <div className="inline-flex items-center gap-4">
-          <button
-            className={`p-3 rounded-xl hover:bg-[#DAA520]/10 transition-colors ${
-              audioError ? "cursor-not-allowed opacity-50" : "cursor-pointer"
-            }`}
-            onClick={playAudio}
-            title={audioError || "Play pronunciation"}
-            disabled={!!audioError}
-          >
-            <Volume2 className="h-7 w-7 text-[#DAA520]" />
-          </button>
+      <button
+        onClick={playAudio}
+        disabled={!!audioError}
+        className={`w-full bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] backdrop-blur-sm rounded-lg py-4 px-4 mb-4 text-center border border-[#DAA520]/20 hover:bg-[#DAA520]/5 transition-colors ${
+          audioError ? "cursor-not-allowed opacity-50" : "cursor-pointer"
+        }`}
+      >
+        <div className="inline-flex items-center gap-3">
+          <Volume2 className="h-6 w-6 text-[#DAA520]" />
           <p className="text-3xl font-bold text-white">
             {currentWord.translation}
           </p>
@@ -115,7 +112,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
         {audioError && (
           <p className="text-red-500 text-sm mt-2">{audioError}</p>
         )}
-      </div>
+      </button>
 
       {/* Image grid */}
       <div className="grid grid-cols-2 gap-4 mb-4">
