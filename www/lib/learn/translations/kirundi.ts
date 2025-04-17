@@ -11,8 +11,4 @@ export const kirundi: LanguageTranslations = {
     book: "igitabo",
     ball: "umupira",
   },
-  audioOverrides: {
-    // Example: if a word has a different audio file name than its ID
-    // dog: "imbwa_formal.mp3",
-  },
 };

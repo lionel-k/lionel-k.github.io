@@ -4,7 +4,7 @@ export const sections = [
     id: "basics",
     title: "First Words",
     description:
-      "Start here! Learn the most common words you'll see and use every day.",
+      "Start here! Learn words you'll use every day with your family.",
     isLocked: false,
   },
 
@@ -12,31 +12,38 @@ export const sections = [
   {
     id: "objects",
     title: "Common Objects",
-    description: "Learn words for everyday objects you see and use.",
+    description:
+      "Learn the names of things you see and use at home and school.",
     isLocked: true,
   },
   {
-    id: "fruits-vegetables",
-    title: "Fruits & Vegetables",
-    description: "Learn names of common fruits and vegetables at the market.",
+    id: "animals",
+    title: "Animals",
+    description: "Learn the names of pets and other cool animals.",
+    isLocked: true,
+  },
+  {
+    id: "fruits",
+    title: "Fruits",
+    description: "Learn the names of yummy fruits you can find at the store.",
+    isLocked: true,
+  },
+  {
+    id: "vegetables",
+    title: "Vegetables",
+    description: "Learn what to call the veggies on your plate.",
     isLocked: true,
   },
   {
     id: "numbers",
     title: "Numbers",
-    description: "Learn to count and understand prices in your new language.",
+    description: "Learn to count and talk about how many things you have.",
     isLocked: true,
   },
   {
     id: "colors",
     title: "Colors",
-    description: "Learn basic colors to describe things around you.",
-    isLocked: true,
-  },
-  {
-    id: "food",
-    title: "Food & Drinks",
-    description: "Learn words for ordering food and understanding menus.",
+    description: "Learn the colors of your favorite things.",
     isLocked: true,
   },
 
@@ -44,19 +51,25 @@ export const sections = [
   {
     id: "family",
     title: "Family",
-    description: "Learn words for family members and relationships.",
+    description: "Learn what to call everyone in your family.",
     isLocked: true,
   },
   {
     id: "home",
     title: "At Home",
-    description: "Learn words for rooms, furniture, and everyday items.",
+    description: "Learn the names of rooms and things in your house.",
     isLocked: true,
   },
   {
-    id: "animals",
-    title: "Animals",
-    description: "Learn names of common pets and animals.",
+    id: "food",
+    title: "Food",
+    description: "Learn how to talk about your favorite foods.",
+    isLocked: true,
+  },
+  {
+    id: "drinks",
+    title: "Drinks",
+    description: "Learn what to call your favorite drinks.",
     isLocked: true,
   },
 
@@ -64,14 +77,13 @@ export const sections = [
   {
     id: "actions",
     title: "Basic Actions",
-    description:
-      "Learn words for common activities like eat, drink, walk, sleep.",
+    description: "Learn words for things you do, like play, run, and jump.",
     isLocked: true,
   },
   {
     id: "feelings",
     title: "Feelings",
-    description: "Express how you feel - happy, sad, tired, hungry.",
+    description: "Learn how to say when you're happy, sad, or excited.",
     isLocked: true,
   },
 
@@ -79,13 +91,14 @@ export const sections = [
   {
     id: "greetings",
     title: "Greetings",
-    description: "Learn to say hello, thank you, and other polite phrases.",
+    description: "Learn how to say hi and be nice to people.",
     isLocked: true,
   },
   {
-    id: "simple-phrases",
+    id: "phrases",
     title: "Simple Phrases",
-    description: "Put words together to make your first simple sentences.",
+    description:
+      "Learn how to put words together to tell people what you want.",
     isLocked: true,
   },
 
@@ -93,13 +106,13 @@ export const sections = [
   {
     id: "shopping",
     title: "Shopping",
-    description: "Learn words for shopping at markets and stores.",
+    description: "Learn how to talk about things you want to buy.",
     isLocked: true,
   },
   {
     id: "directions",
     title: "Directions",
-    description: "Learn to ask for and understand basic directions.",
+    description: "Learn how to find your way around and ask for help.",
     isLocked: true,
   },
 ] as const;

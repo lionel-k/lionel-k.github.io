@@ -20,7 +20,7 @@ export default async function SectionPage({ params }: Props) {
     notFound();
   }
 
-  const flashcardSet = await getFlashcardSet(langSlug);
+  const flashcardSet = await getFlashcardSet(langSlug, sectionId);
 
   if (!flashcardSet) {
     notFound();

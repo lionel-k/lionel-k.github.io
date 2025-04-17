@@ -1,11 +1,11 @@
 import { FlashcardSet, FlashcardWord } from "./types";
 import { languageTranslations } from "./translations";
-import { commonWords } from "./words";
+import { wordsBySection, getAllWords } from "./words";
 
 export async function getFlashcardSet(
-  language: string
+  language: string,
+  sectionId?: string
 ): Promise<FlashcardSet | null> {
-  // Convert to lowercase to match our keys
   const normalizedLanguage = language.toLowerCase();
   const translations = languageTranslations[normalizedLanguage];
 
@@ -13,12 +13,18 @@ export async function getFlashcardSet(
     return null;
   }
 
-  // Create FlashcardWords by combining common words with translations
-  const words: FlashcardWord[] = Object.entries(translations.translations).map(
-    ([wordId, translation]) => {
-      const word = commonWords[wordId];
-      if (!word) {
-        throw new Error(`Translation exists for unknown word: ${wordId}`);
+  const wordsToUse = sectionId ? wordsBySection[sectionId] : getAllWords();
+
+  if (!wordsToUse) {
+    return null;
+  }
+
+  const words: FlashcardWord[] = Object.entries(wordsToUse)
+    .map(([wordId, word]) => {
+      const translation = translations.translations[wordId];
+      if (!translation) {
+        console.warn(`No translation found for word: ${wordId}`);
+        return null;
       }
 
       return {
@@ -28,8 +34,8 @@ export async function getFlashcardSet(
         language: translations.language,
         image: word.image,
       };
-    }
-  );
+    })
+    .filter((word): word is FlashcardWord => word !== null);
 
   return {
     language: translations.language,
