@@ -3,12 +3,13 @@
 import Link from "next/link";
 import { LANGUAGES } from "@/lib/constants";
 import { OptimizedImage } from "@/components/OptimizedImage";
-import { ArrowRight } from "lucide-react";
+
+const languages = LANGUAGES.filter((language) => language.slug === "kirundi");
 
 export default function LanguagesGrid() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      {LANGUAGES.map((language) => (
+      {languages.map((language) => (
         <Link
           key={language.slug}
           href={`/learn/${language.slug}`}
