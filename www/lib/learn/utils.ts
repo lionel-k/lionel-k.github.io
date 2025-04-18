@@ -23,12 +23,10 @@ export const generateOptions = (
   let availableWords: Word[];
 
   if (currentSection.isReview) {
-    // For review sections, use words from all previous sections up to this point
     availableWords = sections
       .filter((s) => s.order <= currentSection.order && !s.isReview)
       .flatMap((section) => Object.values(wordsBySection[section.id]));
   } else {
-    // For regular sections, only use words from the current section
     availableWords = Object.values(wordsBySection[currentSectionId]);
   }
 
