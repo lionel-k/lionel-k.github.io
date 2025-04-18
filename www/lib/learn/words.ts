@@ -40,6 +40,7 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
   },
 
   animals: {
+    cow: { id: "cow", english: "cow", image: "/images/learn/cow.webp" },
     cat: { id: "cat", english: "cat", image: "/images/learn/cat.webp" },
     dog: { id: "dog", english: "dog", image: "/images/learn/dog.webp" },
     fish: { id: "fish", english: "fish", image: "/images/learn/fish.webp" },
@@ -57,7 +58,6 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       english: "elephant",
       image: "/images/learn/elephant.webp",
     },
-    zebra: { id: "zebra", english: "zebra", image: "/images/learn/zebra.webp" },
   },
 };
 
