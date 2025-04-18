@@ -1,4 +1,13 @@
-export const sections = [
+export type Section = {
+  id: string;
+  title: string;
+  description: string;
+  isLocked: boolean;
+  order: number;
+  isReview?: boolean;
+};
+
+export const sections: readonly Section[] = [
   // Level 1 - First Steps (Free)
   {
     id: "basics",
@@ -40,18 +49,26 @@ export const sections = [
     order: 5,
   },
   {
+    id: "review_1",
+    title: "Review 1",
+    description: "Practice all the words you've learned so far!",
+    isLocked: true,
+    order: 6,
+    isReview: true,
+  },
+  {
     id: "numbers",
     title: "Numbers",
     description: "Learn to count and talk about how many things you have.",
     isLocked: true,
-    order: 6,
+    order: 7,
   },
   {
     id: "colors",
     title: "Colors",
     description: "Learn the colors of your favorite things.",
     isLocked: true,
-    order: 7,
+    order: 8,
   },
 
   // Level 3 - Daily Words
@@ -60,28 +77,36 @@ export const sections = [
     title: "Family",
     description: "Learn what to call everyone in your family.",
     isLocked: true,
-    order: 8,
+    order: 9,
   },
   {
     id: "home",
     title: "At Home",
     description: "Learn the names of rooms and things in your house.",
     isLocked: true,
-    order: 9,
+    order: 10,
   },
   {
     id: "food",
     title: "Food",
     description: "Learn how to talk about your favorite foods.",
     isLocked: true,
-    order: 10,
+    order: 11,
+  },
+  {
+    id: "review_2",
+    title: "Review 2",
+    description: "Let's review what you've learned in the last few sections!",
+    isLocked: true,
+    order: 12,
+    isReview: true,
   },
   {
     id: "drinks",
     title: "Drinks",
     description: "Learn what to call your favorite drinks.",
     isLocked: true,
-    order: 11,
+    order: 13,
   },
 
   // Level 4 - Simple Actions
@@ -90,23 +115,21 @@ export const sections = [
     title: "Basic Actions",
     description: "Learn words for things you do, like play, run, and jump.",
     isLocked: true,
-    order: 12,
+    order: 14,
   },
   {
     id: "feelings",
     title: "Feelings",
     description: "Learn how to say when you're happy, sad, or excited.",
     isLocked: true,
-    order: 13,
+    order: 15,
   },
-
-  // Level 5 - First Sentences
   {
     id: "greetings",
     title: "Greetings",
     description: "Learn how to say hi and be nice to people.",
     isLocked: true,
-    order: 14,
+    order: 16,
   },
   {
     id: "phrases",
@@ -114,24 +137,28 @@ export const sections = [
     description:
       "Learn how to put words together to tell people what you want.",
     isLocked: true,
-    order: 15,
+    order: 17,
   },
-
-  // Level 6 - Real Life
+  {
+    id: "review_3",
+    title: "Review 3",
+    description: "Time to practice everything you've learned!",
+    isLocked: true,
+    order: 18,
+    isReview: true,
+  },
   {
     id: "shopping",
     title: "Shopping",
     description: "Learn how to talk about things you want to buy.",
     isLocked: true,
-    order: 16,
+    order: 19,
   },
   {
     id: "directions",
     title: "Directions",
     description: "Learn how to find your way around and ask for help.",
     isLocked: true,
-    order: 17,
+    order: 20,
   },
 ] as const;
-
-export type Section = (typeof sections)[number];
