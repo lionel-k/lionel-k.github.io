@@ -28,22 +28,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const pageTitle = `Learn ${flashcardSet.language} with Flashcards - Lingu.Africa`;
+  const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
 
   return {
     title: pageTitle,
     description: `Practice ${flashcardSet.language} vocabulary with interactive flashcards`,
     openGraph: {
       title: pageTitle,
-      description: `Practice ${flashcardSet.language} vocabulary with interactive flashcards`,
-      url: `${SITE_URL}/flashcards/${language}`,
+      description: `Learn ${flashcardSet.language} vocabulary with interactive flashcards`,
+      url: `${SITE_URL}/learn/${language}`,
       siteName: "Lingu.Africa",
+      images: [
+        {
+          url: languageImageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${flashcardSet.language} Language Flashcards`,
+        },
+      ],
       locale: "en_US",
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
       title: pageTitle,
-      description: `Practice ${flashcardSet.language} vocabulary with interactive flashcards`,
+      description: `Learn ${flashcardSet.language} vocabulary with interactive flashcards`,
+      images: [languageImageUrl],
+
       creator: "@lionel.kubwimana",
     },
   };
