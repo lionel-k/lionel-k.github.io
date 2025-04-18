@@ -60,8 +60,8 @@ export default function LanguageClient({ flashcardSet }: Props) {
       )}
       <BreadcrumbNav items={breadcrumbItems} />
       <PageHeader
-        title={flashcardSet.language}
-        description="Choose a section to start learning."
+        title={`${flashcardSet.language} Vocabulary`}
+        description="Build your vocabulary step by step, from basic words to everyday phrases."
         email={email}
         isPaidUser={isPaidUser}
       />
