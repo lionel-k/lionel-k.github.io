@@ -12,6 +12,13 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     lamp: { id: "lamp", english: "lamp", image: "/images/learn/lamp.webp" },
     car: { id: "car", english: "car", image: "/images/learn/car.webp" },
     plate: { id: "plate", english: "plate", image: "/images/learn/plate.webp" },
+    dad: { id: "dad", english: "dad", image: "/images/learn/dad.webp" },
+    door: { id: "door", english: "door", image: "/images/learn/door.webp" },
+    window: {
+      id: "window",
+      english: "window",
+      image: "/images/learn/window.webp",
+    },
   },
 
   objects: {
@@ -37,6 +44,19 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       english: "umbrella",
       image: "/images/learn/umbrella.webp",
     },
+    phone: { id: "phone", english: "phone", image: "/images/learn/phone.webp" },
+    computer: {
+      id: "computer",
+      english: "computer",
+      image: "/images/learn/computer.webp",
+    },
+    backpack: {
+      id: "backpack",
+      english: "backpack",
+      image: "/images/learn/backpack.webp",
+    },
+    chair: { id: "chair", english: "chair", image: "/images/learn/chair.webp" },
+    key: { id: "key", english: "key", image: "/images/learn/key.webp" },
   },
 
   animals: {
@@ -57,6 +77,1029 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       id: "elephant",
       english: "elephant",
       image: "/images/learn/elephant.webp",
+    },
+    goat: { id: "goat", english: "goat", image: "/images/learn/goat.webp" },
+    sheep: { id: "sheep", english: "sheep", image: "/images/learn/sheep.webp" },
+    chicken: {
+      id: "chicken",
+      english: "chicken",
+      image: "/images/learn/chicken.webp",
+    },
+    bird: { id: "bird", english: "bird", image: "/images/learn/bird.webp" },
+    mouse: { id: "mouse", english: "mouse", image: "/images/learn/mouse.webp" },
+  },
+
+  fruits: {
+    apple: { id: "apple", english: "apple", image: "/images/learn/apple.webp" },
+    banana: {
+      id: "banana",
+      english: "banana",
+      image: "/images/learn/banana.webp",
+    },
+    orange: {
+      id: "orange",
+      english: "orange",
+      image: "/images/learn/orange.webp",
+    },
+    mango: { id: "mango", english: "mango", image: "/images/learn/mango.webp" },
+    pineapple: {
+      id: "pineapple",
+      english: "pineapple",
+      image: "/images/learn/pineapple.webp",
+    },
+    grape: { id: "grape", english: "grape", image: "/images/learn/grape.webp" },
+    watermelon: {
+      id: "watermelon",
+      english: "watermelon",
+      image: "/images/learn/watermelon.webp",
+    },
+    lemon: { id: "lemon", english: "lemon", image: "/images/learn/lemon.webp" },
+    avocado: {
+      id: "avocado",
+      english: "avocado",
+      image: "/images/learn/avocado.webp",
+    },
+    strawberry: {
+      id: "strawberry",
+      english: "strawberry",
+      image: "/images/learn/strawberry.webp",
+    },
+    papaya: {
+      id: "papaya",
+      english: "papaya",
+      image: "/images/learn/papaya.webp",
+    },
+    peach: { id: "peach", english: "peach", image: "/images/learn/peach.webp" },
+    cherry: {
+      id: "cherry",
+      english: "cherry",
+      image: "/images/learn/cherry.webp",
+    },
+    pear: { id: "pear", english: "pear", image: "/images/learn/pear.webp" },
+    kiwi: { id: "kiwi", english: "kiwi", image: "/images/learn/kiwi.webp" },
+  },
+
+  vegetables: {
+    carrot: {
+      id: "carrot",
+      english: "carrot",
+      image: "/images/learn/carrot.webp",
+    },
+    tomato: {
+      id: "tomato",
+      english: "tomato",
+      image: "/images/learn/tomato.webp",
+    },
+    onion: { id: "onion", english: "onion", image: "/images/learn/onion.webp" },
+    potato: {
+      id: "potato",
+      english: "potato",
+      image: "/images/learn/potato.webp",
+    },
+    spinach: {
+      id: "spinach",
+      english: "spinach",
+      image: "/images/learn/spinach.webp",
+    },
+    cabbage: {
+      id: "cabbage",
+      english: "cabbage",
+      image: "/images/learn/cabbage.webp",
+    },
+    pepper: {
+      id: "pepper",
+      english: "pepper",
+      image: "/images/learn/pepper.webp",
+    },
+    eggplant: {
+      id: "eggplant",
+      english: "eggplant",
+      image: "/images/learn/eggplant.webp",
+    },
+    cucumber: {
+      id: "cucumber",
+      english: "cucumber",
+      image: "/images/learn/cucumber.webp",
+    },
+    lettuce: {
+      id: "lettuce",
+      english: "lettuce",
+      image: "/images/learn/lettuce.webp",
+    },
+    broccoli: {
+      id: "broccoli",
+      english: "broccoli",
+      image: "/images/learn/broccoli.webp",
+    },
+    corn: { id: "corn", english: "corn", image: "/images/learn/corn.webp" },
+    garlic: {
+      id: "garlic",
+      english: "garlic",
+      image: "/images/learn/garlic.webp",
+    },
+    pumpkin: {
+      id: "pumpkin",
+      english: "pumpkin",
+      image: "/images/learn/pumpkin.webp",
+    },
+    mushroom: {
+      id: "mushroom",
+      english: "mushroom",
+      image: "/images/learn/mushroom.webp",
+    },
+  },
+
+  numbers: {
+    one: { id: "one", english: "one", image: "/images/learn/one.webp" },
+    two: { id: "two", english: "two", image: "/images/learn/two.webp" },
+    three: { id: "three", english: "three", image: "/images/learn/three.webp" },
+    four: { id: "four", english: "four", image: "/images/learn/four.webp" },
+    five: { id: "five", english: "five", image: "/images/learn/five.webp" },
+    six: { id: "six", english: "six", image: "/images/learn/six.webp" },
+    seven: { id: "seven", english: "seven", image: "/images/learn/seven.webp" },
+    eight: { id: "eight", english: "eight", image: "/images/learn/eight.webp" },
+    nine: { id: "nine", english: "nine", image: "/images/learn/nine.webp" },
+    ten: { id: "ten", english: "ten", image: "/images/learn/ten.webp" },
+    eleven: {
+      id: "eleven",
+      english: "eleven",
+      image: "/images/learn/eleven.webp",
+    },
+    twelve: {
+      id: "twelve",
+      english: "twelve",
+      image: "/images/learn/twelve.webp",
+    },
+    thirteen: {
+      id: "thirteen",
+      english: "thirteen",
+      image: "/images/learn/thirteen.webp",
+    },
+    fourteen: {
+      id: "fourteen",
+      english: "fourteen",
+      image: "/images/learn/fourteen.webp",
+    },
+    fifteen: {
+      id: "fifteen",
+      english: "fifteen",
+      image: "/images/learn/fifteen.webp",
+    },
+  },
+
+  colors: {
+    red: { id: "red", english: "red", image: "/images/learn/red.webp" },
+    blue: { id: "blue", english: "blue", image: "/images/learn/blue.webp" },
+    green: { id: "green", english: "green", image: "/images/learn/green.webp" },
+    yellow: {
+      id: "yellow",
+      english: "yellow",
+      image: "/images/learn/yellow.webp",
+    },
+    black: { id: "black", english: "black", image: "/images/learn/black.webp" },
+    white: { id: "white", english: "white", image: "/images/learn/white.webp" },
+    brown: { id: "brown", english: "brown", image: "/images/learn/brown.webp" },
+    orange_color: {
+      id: "orange_color",
+      english: "orange",
+      image: "/images/learn/orange_color.webp",
+    },
+    pink: { id: "pink", english: "pink", image: "/images/learn/pink.webp" },
+    purple: {
+      id: "purple",
+      english: "purple",
+      image: "/images/learn/purple.webp",
+    },
+    gray: { id: "gray", english: "gray", image: "/images/learn/gray.webp" },
+    gold: { id: "gold", english: "gold", image: "/images/learn/gold.webp" },
+    silver: {
+      id: "silver",
+      english: "silver",
+      image: "/images/learn/silver.webp",
+    },
+    beige: { id: "beige", english: "beige", image: "/images/learn/beige.webp" },
+    violet: {
+      id: "violet",
+      english: "violet",
+      image: "/images/learn/violet.webp",
+    },
+  },
+
+  home: {
+    kitchen: {
+      id: "kitchen",
+      english: "kitchen",
+      image: "/images/learn/kitchen.webp",
+    },
+    bedroom: {
+      id: "bedroom",
+      english: "bedroom",
+      image: "/images/learn/bedroom.webp",
+    },
+    bathroom: {
+      id: "bathroom",
+      english: "bathroom",
+      image: "/images/learn/bathroom.webp",
+    },
+    livingroom: {
+      id: "livingroom",
+      english: "living room",
+      image: "/images/learn/livingroom.webp",
+    },
+    dining: {
+      id: "dining",
+      english: "dining room",
+      image: "/images/learn/dining.webp",
+    },
+    garden: {
+      id: "garden",
+      english: "garden",
+      image: "/images/learn/garden.webp",
+    },
+    garage: {
+      id: "garage",
+      english: "garage",
+      image: "/images/learn/garage.webp",
+    },
+    stairs: {
+      id: "stairs",
+      english: "stairs",
+      image: "/images/learn/stairs.webp",
+    },
+    roof: {
+      id: "roof",
+      english: "roof",
+      image: "/images/learn/roof.webp",
+    },
+    wall: {
+      id: "wall",
+      english: "wall",
+      image: "/images/learn/wall.webp",
+    },
+    floor: {
+      id: "floor",
+      english: "floor",
+      image: "/images/learn/floor.webp",
+    },
+    ceiling: {
+      id: "ceiling",
+      english: "ceiling",
+      image: "/images/learn/ceiling.webp",
+    },
+    balcony: {
+      id: "balcony",
+      english: "balcony",
+      image: "/images/learn/balcony.webp",
+    },
+    fence: {
+      id: "fence",
+      english: "fence",
+      image: "/images/learn/fence.webp",
+    },
+    gate: {
+      id: "gate",
+      english: "gate",
+      image: "/images/learn/gate.webp",
+    },
+  },
+
+  food: {
+    rice: {
+      id: "rice",
+      english: "rice",
+      image: "/images/learn/rice.webp",
+    },
+    bread: {
+      id: "bread",
+      english: "bread",
+      image: "/images/learn/bread.webp",
+    },
+    meat: {
+      id: "meat",
+      english: "meat",
+      image: "/images/learn/meat.webp",
+    },
+    fish_food: {
+      id: "fish_food",
+      english: "fish",
+      image: "/images/learn/fish_food.webp",
+    },
+    chicken_food: {
+      id: "chicken_food",
+      english: "chicken",
+      image: "/images/learn/chicken_food.webp",
+    },
+    egg: {
+      id: "egg",
+      english: "egg",
+      image: "/images/learn/egg.webp",
+    },
+    soup: {
+      id: "soup",
+      english: "soup",
+      image: "/images/learn/soup.webp",
+    },
+    salad: {
+      id: "salad",
+      english: "salad",
+      image: "/images/learn/salad.webp",
+    },
+    cheese: {
+      id: "cheese",
+      english: "cheese",
+      image: "/images/learn/cheese.webp",
+    },
+    milk: {
+      id: "milk",
+      english: "milk",
+      image: "/images/learn/milk.webp",
+    },
+    juice: {
+      id: "juice",
+      english: "juice",
+      image: "/images/learn/juice.webp",
+    },
+    water: {
+      id: "water",
+      english: "water",
+      image: "/images/learn/water.webp",
+    },
+    tea: {
+      id: "tea",
+      english: "tea",
+      image: "/images/learn/tea.webp",
+    },
+    coffee: {
+      id: "coffee",
+      english: "coffee",
+      image: "/images/learn/coffee.webp",
+    },
+    sugar: {
+      id: "sugar",
+      english: "sugar",
+      image: "/images/learn/sugar.webp",
+    },
+    salt: {
+      id: "salt",
+      english: "salt",
+      image: "/images/learn/salt.webp",
+    },
+    oil: {
+      id: "oil",
+      english: "oil",
+      image: "/images/learn/oil.webp",
+    },
+    butter: {
+      id: "butter",
+      english: "butter",
+      image: "/images/learn/butter.webp",
+    },
+    honey: {
+      id: "honey",
+      english: "honey",
+      image: "/images/learn/honey.webp",
+    },
+    pasta: {
+      id: "pasta",
+      english: "pasta",
+      image: "/images/learn/pasta.webp",
+    },
+  },
+
+  drinks: {
+    water_drink: {
+      id: "water_drink",
+      english: "water",
+      image: "/images/learn/water_drink.webp",
+    },
+    milk_drink: {
+      id: "milk_drink",
+      english: "milk",
+      image: "/images/learn/milk_drink.webp",
+    },
+    coffee_drink: {
+      id: "coffee_drink",
+      english: "coffee",
+      image: "/images/learn/coffee_drink.webp",
+    },
+    tea_drink: {
+      id: "tea_drink",
+      english: "tea",
+      image: "/images/learn/tea_drink.webp",
+    },
+    juice_drink: {
+      id: "juice_drink",
+      english: "juice",
+      image: "/images/learn/juice_drink.webp",
+    },
+    soda: {
+      id: "soda",
+      english: "soda",
+      image: "/images/learn/soda.webp",
+    },
+    beer: {
+      id: "beer",
+      english: "beer",
+      image: "/images/learn/beer.webp",
+    },
+    wine: {
+      id: "wine",
+      english: "wine",
+      image: "/images/learn/wine.webp",
+    },
+    cocktail: {
+      id: "cocktail",
+      english: "cocktail",
+      image: "/images/learn/cocktail.webp",
+    },
+    smoothie: {
+      id: "smoothie",
+      english: "smoothie",
+      image: "/images/learn/smoothie.webp",
+    },
+    milkshake: {
+      id: "milkshake",
+      english: "milkshake",
+      image: "/images/learn/milkshake.webp",
+    },
+    lemonade: {
+      id: "lemonade",
+      english: "lemonade",
+      image: "/images/learn/lemonade.webp",
+    },
+    hot_chocolate: {
+      id: "hot_chocolate",
+      english: "hot chocolate",
+      image: "/images/learn/hot_chocolate.webp",
+    },
+    energy_drink: {
+      id: "energy_drink",
+      english: "energy drink",
+      image: "/images/learn/energy_drink.webp",
+    },
+    coconut_water: {
+      id: "coconut_water",
+      english: "coconut water",
+      image: "/images/learn/coconut_water.webp",
+    },
+  },
+
+  actions: {
+    walk: {
+      id: "walk",
+      english: "walk",
+      image: "/images/learn/walk.webp",
+    },
+    run: {
+      id: "run",
+      english: "run",
+      image: "/images/learn/run.webp",
+    },
+    jump: {
+      id: "jump",
+      english: "jump",
+      image: "/images/learn/jump.webp",
+    },
+    eat: {
+      id: "eat",
+      english: "eat",
+      image: "/images/learn/eat.webp",
+    },
+    drink: {
+      id: "drink",
+      english: "drink",
+      image: "/images/learn/drink.webp",
+    },
+    sleep: {
+      id: "sleep",
+      english: "sleep",
+      image: "/images/learn/sleep.webp",
+    },
+    sit: {
+      id: "sit",
+      english: "sit",
+      image: "/images/learn/sit.webp",
+    },
+    stand: {
+      id: "stand",
+      english: "stand",
+      image: "/images/learn/stand.webp",
+    },
+    dance: {
+      id: "dance",
+      english: "dance",
+      image: "/images/learn/dance.webp",
+    },
+    sing: {
+      id: "sing",
+      english: "sing",
+      image: "/images/learn/sing.webp",
+    },
+    read: {
+      id: "read",
+      english: "read",
+      image: "/images/learn/read.webp",
+    },
+    write: {
+      id: "write",
+      english: "write",
+      image: "/images/learn/write.webp",
+    },
+    play: {
+      id: "play",
+      english: "play",
+      image: "/images/learn/play.webp",
+    },
+    work: {
+      id: "work",
+      english: "work",
+      image: "/images/learn/work.webp",
+    },
+    cook: {
+      id: "cook",
+      english: "cook",
+      image: "/images/learn/cook.webp",
+    },
+    clean: {
+      id: "clean",
+      english: "clean",
+      image: "/images/learn/clean.webp",
+    },
+    wash: {
+      id: "wash",
+      english: "wash",
+      image: "/images/learn/wash.webp",
+    },
+    smile: {
+      id: "smile",
+      english: "smile",
+      image: "/images/learn/smile.webp",
+    },
+    laugh: {
+      id: "laugh",
+      english: "laugh",
+      image: "/images/learn/laugh.webp",
+    },
+    cry: {
+      id: "cry",
+      english: "cry",
+      image: "/images/learn/cry.webp",
+    },
+    talk: {
+      id: "talk",
+      english: "talk",
+      image: "/images/learn/talk.webp",
+    },
+    listen: {
+      id: "listen",
+      english: "listen",
+      image: "/images/learn/listen.webp",
+    },
+    open: {
+      id: "open",
+      english: "open",
+      image: "/images/learn/open.webp",
+    },
+    close: {
+      id: "close",
+      english: "close",
+      image: "/images/learn/close.webp",
+    },
+    give: {
+      id: "give",
+      english: "give",
+      image: "/images/learn/give.webp",
+    },
+  },
+
+  feelings: {
+    happy: {
+      id: "happy",
+      english: "happy",
+      image: "/images/learn/happy.webp",
+    },
+    sad: {
+      id: "sad",
+      english: "sad",
+      image: "/images/learn/sad.webp",
+    },
+    angry: {
+      id: "angry",
+      english: "angry",
+      image: "/images/learn/angry.webp",
+    },
+    scared: {
+      id: "scared",
+      english: "scared",
+      image: "/images/learn/scared.webp",
+    },
+    tired: {
+      id: "tired",
+      english: "tired",
+      image: "/images/learn/tired.webp",
+    },
+    excited: {
+      id: "excited",
+      english: "excited",
+      image: "/images/learn/excited.webp",
+    },
+    surprised: {
+      id: "surprised",
+      english: "surprised",
+      image: "/images/learn/surprised.webp",
+    },
+    confused: {
+      id: "confused",
+      english: "confused",
+      image: "/images/learn/confused.webp",
+    },
+    bored: {
+      id: "bored",
+      english: "bored",
+      image: "/images/learn/bored.webp",
+    },
+    hungry: {
+      id: "hungry",
+      english: "hungry",
+      image: "/images/learn/hungry.webp",
+    },
+    thirsty: {
+      id: "thirsty",
+      english: "thirsty",
+      image: "/images/learn/thirsty.webp",
+    },
+    sick: {
+      id: "sick",
+      english: "sick",
+      image: "/images/learn/sick.webp",
+    },
+    healthy: {
+      id: "healthy",
+      english: "healthy",
+      image: "/images/learn/healthy.webp",
+    },
+    hot: {
+      id: "hot",
+      english: "hot",
+      image: "/images/learn/hot.webp",
+    },
+    cold: {
+      id: "cold",
+      english: "cold",
+      image: "/images/learn/cold.webp",
+    },
+    sleepy: {
+      id: "sleepy",
+      english: "sleepy",
+      image: "/images/learn/sleepy.webp",
+    },
+    relaxed: {
+      id: "relaxed",
+      english: "relaxed",
+      image: "/images/learn/relaxed.webp",
+    },
+    stressed: {
+      id: "stressed",
+      english: "stressed",
+      image: "/images/learn/stressed.webp",
+    },
+    proud: {
+      id: "proud",
+      english: "proud",
+      image: "/images/learn/proud.webp",
+    },
+    shy: {
+      id: "shy",
+      english: "shy",
+      image: "/images/learn/shy.webp",
+    },
+  },
+
+  phrases: {
+    mary_opens_the_door: {
+      id: "mary_opens_the_door",
+      english: "Mary opens the door",
+      image: "/images/learn/mary-opens-the-door.webp",
+    },
+    peter_reads_a_book: {
+      id: "peter_reads_a_book",
+      english: "Peter reads a book",
+      image: "/images/learn/peter-reads-a-book.webp",
+    },
+    mary_plays_with_a_ball: {
+      id: "mary_plays_with_a_ball",
+      english: "Mary plays with a ball",
+      image: "/images/learn/mary-plays-with-a-ball.webp",
+    },
+    peter_closes_the_door: {
+      id: "peter_closes_the_door",
+      english: "Peter closes the door",
+      image: "/images/learn/peter-closes-the-door.webp",
+    },
+    mary_closes_the_window: {
+      id: "mary_closes_the_window",
+      english: "Mary closes the window",
+      image: "/images/learn/mary-closes-the-window.webp",
+    },
+    peter_rides_a_bike: {
+      id: "peter_rides_a_bike",
+      english: "Peter rides a bike",
+      image: "/images/learn/peter-rides-a-bike.webp",
+    },
+    mary_sits_on_a_chair: {
+      id: "mary_sits_on_a_chair",
+      english: "Mary sits on a chair",
+      image: "/images/learn/mary-sits-on-a-chair.webp",
+    },
+    peter_and_cat_sleep_on_bed: {
+      id: "peter_and_cat_sleep_on_bed",
+      english: "Peter and the cat sleep on the bed",
+      image: "/images/learn/peter-and-cat-sleep-on-bed.webp",
+    },
+    mary_feeds_the_dog: {
+      id: "mary_feeds_the_dog",
+      english: "Mary feeds the dog",
+      image: "/images/learn/mary-feeds-the-dog.webp",
+    },
+    peter_sees_a_lion: {
+      id: "peter_sees_a_lion",
+      english: "Peter sees a lion",
+      image: "/images/learn/peter-sees-a-lion.webp",
+    },
+    mary_watches_the_fish: {
+      id: "mary_watches_the_fish",
+      english: "Mary watches the fish",
+      image: "/images/learn/mary-watches-the-fish.webp",
+    },
+    peter_runs_with_a_dog: {
+      id: "peter_runs_with_a_dog",
+      english: "Peter runs with a dog",
+      image: "/images/learn/peter-runs-with-a-dog.webp",
+    },
+    mary_draws_with_a_pen: {
+      id: "mary_draws_with_a_pen",
+      english: "Mary draws with a pen",
+      image: "/images/learn/mary-draws-with-a-pen.webp",
+    },
+    peter_throws_a_ball_to_dog: {
+      id: "peter_throws_a_ball_to_dog",
+      english: "Peter throws a ball to the dog",
+      image: "/images/learn/peter-throws-a-ball-to-dog.webp",
+    },
+    mary_reads_a_book_with_cat: {
+      id: "mary_reads_a_book_with_cat",
+      english: "Mary reads a book with the cat",
+      image: "/images/learn/mary-reads-a-book-with-cat.webp",
+    },
+    peter_and_goat_are_in_the_house: {
+      id: "peter_and_goat_are_in_the_house",
+      english: "Peter and the goat are in the house",
+      image: "/images/learn/peter-and-goat-are-in-the-house.webp",
+    },
+    mary_and_chicken_play_under_tree: {
+      id: "mary_and_chicken_play_under_tree",
+      english: "Mary and the chicken play under the tree",
+      image: "/images/learn/mary-and-chicken-play-under-tree.webp",
+    },
+    peter_writes_with_pen_on_table: {
+      id: "peter_writes_with_pen_on_table",
+      english: "Peter writes with a pen on the table",
+      image: "/images/learn/peter-writes-with-pen-on-table.webp",
+    },
+    mary_puts_shoes_under_bed: {
+      id: "mary_puts_shoes_under_bed",
+      english: "Mary puts shoes under the bed",
+      image: "/images/learn/mary-puts-shoes-under-bed.webp",
+    },
+    peter_looks_in_mirror: {
+      id: "peter_looks_in_mirror",
+      english: "Peter looks in the mirror",
+      image: "/images/learn/peter-looks-in-mirror.webp",
+    },
+    mary_sits_next_to_elephant: {
+      id: "mary_sits_next_to_elephant",
+      english: "Mary sits next to the elephant",
+      image: "/images/learn/mary-sits-next-to-elephant.webp",
+    },
+    peter_drinks_water: {
+      id: "peter_drinks_water",
+      english: "Peter drinks water",
+      image: "/images/learn/peter-drinks-water.webp",
+    },
+    mary_eats_bread: {
+      id: "mary_eats_bread",
+      english: "Mary eats bread",
+      image: "/images/learn/mary-eats-bread.webp",
+    },
+    cat_drinks_milk: {
+      id: "cat_drinks_milk",
+      english: "The cat drinks milk",
+      image: "/images/learn/cat-drinks-milk.webp",
+    },
+    dog_sleeps_under_tree: {
+      id: "dog_sleeps_under_tree",
+      english: "The dog sleeps under the tree",
+      image: "/images/learn/dog-sleeps-under-tree.webp",
+    },
+    peter_is_happy: {
+      id: "peter_is_happy",
+      english: "Peter is happy",
+      image: "/images/learn/peter-is-happy.webp",
+    },
+    mary_is_tired: {
+      id: "mary_is_tired",
+      english: "Mary is tired",
+      image: "/images/learn/mary-is-tired.webp",
+    },
+    peter_cooks_rice: {
+      id: "peter_cooks_rice",
+      english: "Peter cooks rice",
+      image: "/images/learn/peter-cooks-rice.webp",
+    },
+    mary_drinks_tea: {
+      id: "mary_drinks_tea",
+      english: "Mary drinks tea",
+      image: "/images/learn/mary-drinks-tea.webp",
+    },
+    cat_sits_on_table: {
+      id: "cat_sits_on_table",
+      english: "The cat sits on the table",
+      image: "/images/learn/cat-sits-on-table.webp",
+    },
+    dog_plays_in_garden: {
+      id: "dog_plays_in_garden",
+      english: "The dog plays in the garden",
+      image: "/images/learn/dog-plays-in-garden.webp",
+    },
+    peter_cleans_kitchen: {
+      id: "peter_cleans_kitchen",
+      english: "Peter cleans the kitchen",
+      image: "/images/learn/peter-cleans-kitchen.webp",
+    },
+    mary_opens_window: {
+      id: "mary_opens_window",
+      english: "Mary opens the window",
+      image: "/images/learn/mary-opens-window.webp",
+    },
+    cat_sleeps_on_chair: {
+      id: "cat_sleeps_on_chair",
+      english: "The cat sleeps on the chair",
+      image: "/images/learn/cat-sleeps-on-chair.webp",
+    },
+    peter_washes_plate: {
+      id: "peter_washes_plate",
+      english: "Peter washes the plate",
+      image: "/images/learn/peter-washes-plate.webp",
+    },
+    mary_works_on_computer: {
+      id: "mary_works_on_computer",
+      english: "Mary works on the computer",
+      image: "/images/learn/mary-works-on-computer.webp",
+    },
+    dog_is_hungry: {
+      id: "dog_is_hungry",
+      english: "The dog is hungry",
+      image: "/images/learn/dog-is-hungry.webp",
+    },
+    peter_feels_cold: {
+      id: "peter_feels_cold",
+      english: "Peter feels cold",
+      image: "/images/learn/peter-feels-cold.webp",
+    },
+    mary_feels_hot: {
+      id: "mary_feels_hot",
+      english: "Mary feels hot",
+      image: "/images/learn/mary-feels-hot.webp",
+    },
+    cat_plays_with_ball: {
+      id: "cat_plays_with_ball",
+      english: "The cat plays with the ball",
+      image: "/images/learn/cat-plays-with-ball.webp",
+    },
+    mary_reads_in_bedroom: {
+      id: "mary_reads_in_bedroom",
+      english: "Mary reads in the bedroom",
+      image: "/images/learn/mary-reads-in-bedroom.webp",
+    },
+    peter_cooks_in_kitchen: {
+      id: "peter_cooks_in_kitchen",
+      english: "Peter cooks in the kitchen",
+      image: "/images/learn/peter-cooks-in-kitchen.webp",
+    },
+    dog_sits_under_table: {
+      id: "dog_sits_under_table",
+      english: "The dog sits under the table",
+      image: "/images/learn/dog-sits-under-table.webp",
+    },
+    cat_jumps_on_bed: {
+      id: "cat_jumps_on_bed",
+      english: "The cat jumps on the bed",
+      image: "/images/learn/cat-jumps-on-bed.webp",
+    },
+    mary_washes_dishes: {
+      id: "mary_washes_dishes",
+      english: "Mary washes the dishes",
+      image: "/images/learn/mary-washes-dishes.webp",
+    },
+    peter_drinks_juice: {
+      id: "peter_drinks_juice",
+      english: "Peter drinks juice",
+      image: "/images/learn/peter-drinks-juice.webp",
+    },
+    mary_sits_in_garden: {
+      id: "mary_sits_in_garden",
+      english: "Mary sits in the garden",
+      image: "/images/learn/mary-sits-in-garden.webp",
+    },
+    peter_walks_dog: {
+      id: "peter_walks_dog",
+      english: "Peter walks the dog",
+      image: "/images/learn/peter-walks-dog.webp",
+    },
+    cat_sleeps_in_box: {
+      id: "cat_sleeps_in_box",
+      english: "The cat sleeps in the box",
+      image: "/images/learn/cat-sleeps-in-box.webp",
+    },
+    mary_is_cold: {
+      id: "mary_is_cold",
+      english: "Mary is cold",
+      image: "/images/learn/mary-is-cold.webp",
+    },
+    peter_is_hot: {
+      id: "peter_is_hot",
+      english: "Peter is hot",
+      image: "/images/learn/peter-is-hot.webp",
+    },
+    dog_is_happy: {
+      id: "dog_is_happy",
+      english: "The dog is happy",
+      image: "/images/learn/dog-is-happy.webp",
+    },
+    cat_is_hungry: {
+      id: "cat_is_hungry",
+      english: "The cat is hungry",
+      image: "/images/learn/cat-is-hungry.webp",
+    },
+    peter_eats_apple: {
+      id: "peter_eats_apple",
+      english: "Peter eats an apple",
+      image: "/images/learn/peter-eats-apple.webp",
+    },
+    mary_drinks_coffee: {
+      id: "mary_drinks_coffee",
+      english: "Mary drinks coffee",
+      image: "/images/learn/mary-drinks-coffee.webp",
+    },
+    peter_sleeps_on_couch: {
+      id: "peter_sleeps_on_couch",
+      english: "Peter sleeps on the couch",
+      image: "/images/learn/peter-sleeps-on-couch.webp",
+    },
+    mary_cooks_dinner: {
+      id: "mary_cooks_dinner",
+      english: "Mary cooks dinner",
+      image: "/images/learn/mary-cooks-dinner.webp",
+    },
+    peter_and_mary_eat_breakfast: {
+      id: "peter_and_mary_eat_breakfast",
+      english: "Peter and Mary eat breakfast",
+      image: "/images/learn/peter-and-mary-eat-breakfast.webp",
+    },
+    dog_runs_in_park: {
+      id: "dog_runs_in_park",
+      english: "The dog runs in the park",
+      image: "/images/learn/dog-runs-in-park.webp",
+    },
+    cat_watches_fish: {
+      id: "cat_watches_fish",
+      english: "The cat watches the fish",
+      image: "/images/learn/cat-watches-fish.webp",
+    },
+    mary_talks_on_phone: {
+      id: "mary_talks_on_phone",
+      english: "Mary talks on the phone",
+      image: "/images/learn/mary-talks-on-phone.webp",
+    },
+    peter_listens_to_music: {
+      id: "peter_listens_to_music",
+      english: "Peter listens to music",
+      image: "/images/learn/peter-listens-to-music.webp",
+    },
+    dog_eats_meat: {
+      id: "dog_eats_meat",
+      english: "The dog eats meat",
+      image: "/images/learn/dog-eats-meat.webp",
+    },
+    cat_drinks_water: {
+      id: "cat_drinks_water",
+      english: "The cat drinks water",
+      image: "/images/learn/cat-drinks-water.webp",
+    },
+    mary_is_surprised: {
+      id: "mary_is_surprised",
+      english: "Mary is surprised",
+      image: "/images/learn/mary-is-surprised.webp",
     },
   },
 };
