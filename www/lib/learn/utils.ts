@@ -11,6 +11,35 @@ export const shuffleArray = <T>(array: T[]): T[] => {
   return shuffled;
 };
 
+const getWordsForReviewSection = (currentSection: Section): Word[] => {
+  return sections
+    .filter((s) => s.order <= currentSection.order && !s.isReview)
+    .flatMap((section) => Object.values(wordsBySection[section.id]));
+};
+
+const getWordsForRegularSection = (sectionId: string): Word[] => {
+  return Object.values(wordsBySection[sectionId]);
+};
+
+const createDistractor = (word: Word, language: string): FlashcardWord => {
+  return {
+    id: word.id,
+    image: word.image,
+    word: "",
+    translation: "",
+    language,
+  };
+};
+
+const getAvailableWords = (
+  currentSection: Section,
+  sectionId: string
+): Word[] => {
+  return currentSection.isReview
+    ? getWordsForReviewSection(currentSection)
+    : getWordsForRegularSection(sectionId);
+};
+
 export const generateOptions = (
   currentWord: FlashcardWord,
   currentSectionId: string
@@ -20,26 +49,12 @@ export const generateOptions = (
     | undefined;
   if (!currentSection) return [currentWord];
 
-  let availableWords: Word[];
-
-  if (currentSection.isReview) {
-    availableWords = sections
-      .filter((s) => s.order <= currentSection.order && !s.isReview)
-      .flatMap((section) => Object.values(wordsBySection[section.id]));
-  } else {
-    availableWords = Object.values(wordsBySection[currentSectionId]);
-  }
+  const availableWords = getAvailableWords(currentSection, currentSectionId);
 
   const distractors = shuffleArray(
     availableWords
       .filter((w) => w.id !== currentWord.id)
-      .map((word) => ({
-        id: word.id,
-        image: word.image,
-        word: "",
-        translation: "",
-        language: currentWord.language,
-      }))
+      .map((word) => createDistractor(word, currentWord.language))
   ).slice(0, 3);
 
   return shuffleArray([currentWord, ...distractors]);
