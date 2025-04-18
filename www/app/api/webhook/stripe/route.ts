@@ -2,6 +2,7 @@ import { headers } from "next/headers";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { supabase } from "@/lib/supabase";
+import { sendPaymentSuccessEmail } from "@/lib/learn/emails";
 
 // Initialize Stripe
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
@@ -70,6 +71,9 @@ export async function POST(req: Request) {
         console.error("Error updating paid user:", error);
         return NextResponse.json({ error: "Database error" }, { status: 500 });
       }
+
+      // Send thank you email
+      await sendPaymentSuccessEmail(customerEmail);
 
       console.log("Successfully updated paid user:", customerEmail);
     }

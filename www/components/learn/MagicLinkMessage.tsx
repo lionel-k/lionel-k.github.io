@@ -59,7 +59,7 @@ export default function MagicLinkMessage({
           <h3 className="text-2xl font-bold text-white">Magic Link Sent ✨</h3>
           <div className="space-y-2">
             <p className="text-gray-400">Check your inbox for</p>
-            <p className="text-white font-medium bg-white/5 py-2 px-4 rounded-lg inline-block">
+            <p className="text-white font-medium bg-white/5 py-2 px-4 rounded-lg inline-block break-all max-w-full">
               {email}
             </p>
             <p className="text-gray-400">and click the link to sign in!</p>
