@@ -5,10 +5,13 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { OptimizedImage } from "@/components/OptimizedImage";
+import UserMenu from "@/components/learn/UserMenu";
+import { useAuth } from "@/hooks/learn/useAuth";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const { email, isPaidUser, isLoading } = useAuth();
 
   const isActive = (href: string) => pathname === href;
 
@@ -73,6 +76,10 @@ export function Navbar() {
                 {label}
               </Link>
             ))}
+            {/* User Menu */}
+            {!isLoading && email && (
+              <UserMenu email={email} isPaidUser={isPaidUser} />
+            )}
           </nav>
         </div>
       </div>

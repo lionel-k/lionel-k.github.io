@@ -1,11 +1,11 @@
 "use client";
 
-import AuthStatus from "@/components/learn/AuthStatus";
 import LanguagesGrid from "@/components/learn/LanguagesGrid";
 import { useAuth } from "@/hooks/learn/useAuth";
 import Loader from "@/components/learn/Loader";
 import PaymentSuccessMessage from "@/components/learn/PaymentSuccessMessage";
 import { Suspense } from "react";
+import NavigationControl from "@/components/learn/NavigationControl";
 
 export default function LearnPage() {
   const { email, isPaidUser, isLoading } = useAuth();
@@ -29,7 +29,7 @@ export default function LearnPage() {
               Master essential words and phrases through interactive flashcards.
               Choose your language and start learning today.
             </p>
-            <AuthStatus
+            <NavigationControl
               email={email}
               isPaidUser={isPaidUser}
               variant="default"

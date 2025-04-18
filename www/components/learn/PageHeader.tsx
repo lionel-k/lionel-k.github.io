@@ -5,7 +5,7 @@ type PageHeaderProps = {
   isPaidUser?: boolean;
 };
 
-import AuthStatus from "./AuthStatus";
+import NavigationControl from "./NavigationControl";
 
 export default function PageHeader({
   title,
@@ -26,7 +26,7 @@ export default function PageHeader({
             </div>
             {email !== undefined && isPaidUser !== undefined && (
               <div className="shrink-0">
-                <AuthStatus
+                <NavigationControl
                   email={email}
                   isPaidUser={isPaidUser}
                   variant="practice"
