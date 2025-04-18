@@ -35,9 +35,9 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
 
   useEffect(() => {
     const currentWord = words[currentIndex];
-    setOptions(generateOptions(words, currentWord));
+    setOptions(generateOptions(currentWord, currentSectionId));
     setAudioError(null);
-  }, [currentIndex, words]);
+  }, [currentIndex, words, currentSectionId]);
 
   if (isLoading) {
     return <Loader />;
@@ -136,7 +136,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
           >
             <Image
               src={option.image}
-              alt="Option"
+              alt={`image for ${option.id}`}
               fill
               className={`object-cover rounded-xl ${getImageStyle(option.id)}`}
             />

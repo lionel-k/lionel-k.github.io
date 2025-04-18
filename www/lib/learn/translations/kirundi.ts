@@ -3,12 +3,40 @@ import { LanguageTranslations } from "../types";
 export const kirundi: LanguageTranslations = {
   language: "Kirundi",
   translations: {
+    // basics
+    house: "inzu",
+    tree: "igiti",
+    ball: "umupira",
+    book: "igitabo",
+    sun: "izuba",
+    mum: "mama",
+    shoe: "ikirato",
+    lamp: "itara",
+    car: "imodoka",
+    plate: "isahani",
+
+    // objects
+    bike: "ikinga",
+    table: "imeza",
+    bed: "igitanda",
+    pen: "ikaramu",
+    clock: "isaha",
+    bottle: "icupa",
+    glass: "ikirahuri",
+    spoon: "ikiyiko",
+    mirror: "ikiyo",
+    umbrella: "umutaka",
+
+    // animals
     cat: "akayabu",
     dog: "imbwa",
-    tree: "igiti",
-    house: "inzu",
-    car: "imodoka",
-    book: "igitabo",
-    ball: "umupira",
+    fish: "ifi",
+    horse: "ifarasi",
+    frog: "igikere",
+    rabbit: "urukwavu",
+    duck: "imbata",
+    lion: "intare",
+    elephant: "inzovu",
+    zebra: "imparage",
   },
 };
