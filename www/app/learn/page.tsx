@@ -4,13 +4,11 @@ import AuthStatus from "@/components/learn/AuthStatus";
 import LanguagesGrid from "@/components/learn/LanguagesGrid";
 import { useAuth } from "@/hooks/learn/useAuth";
 import Loader from "@/components/learn/Loader";
-import { useSearchParams } from "next/navigation";
-import { CheckCircle2 } from "lucide-react";
+import PaymentSuccessMessage from "@/components/learn/PaymentSuccessMessage";
+import { Suspense } from "react";
 
 export default function LearnPage() {
   const { email, isPaidUser, isLoading } = useAuth();
-  const searchParams = useSearchParams();
-  const showPaymentSuccess = searchParams.get("payment_success") === "true";
 
   if (isLoading) {
     return <Loader />;
@@ -18,14 +16,9 @@ export default function LearnPage() {
 
   return (
     <div className="min-h-screen">
-      {showPaymentSuccess && (
-        <div className="bg-[#DAA520]/10 border border-[#DAA520]/20 p-4 flex items-center justify-center gap-2 text-[#DAA520]">
-          <CheckCircle2 className="h-5 w-5" />
-          <p className="text-sm font-medium text-center">
-            Payment successful! Please log in to access premium features.
-          </p>
-        </div>
-      )}
+      <Suspense>
+        <PaymentSuccessMessage />
+      </Suspense>
       <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-16 text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
