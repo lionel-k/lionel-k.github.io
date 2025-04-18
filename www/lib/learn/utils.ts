@@ -1,4 +1,6 @@
-import { FlashcardWord } from "@/lib/learn/types";
+import { FlashcardWord, Word } from "@/lib/learn/types";
+import { sections } from "./sections";
+import { wordsBySection } from "./words";
 
 export const shuffleArray = <T>(array: T[]): T[] => {
   const shuffled = [...array];
@@ -10,13 +12,29 @@ export const shuffleArray = <T>(array: T[]): T[] => {
 };
 
 export const generateOptions = (
-  words: FlashcardWord[],
-  currentWord: FlashcardWord
+  currentWord: FlashcardWord,
+  currentSectionId: string
 ): FlashcardWord[] => {
-  const otherWords = words.filter((word) => word.id !== currentWord.id);
-  const shuffledOtherWords = shuffleArray(otherWords);
-  const options = [currentWord, ...shuffledOtherWords.slice(0, 3)];
-  return shuffleArray(options);
+  const currentSection = sections.find((s) => s.id === currentSectionId);
+  if (!currentSection) return [currentWord];
+
+  const previousAndCurrentWords: Word[] = sections
+    .filter((s) => s.order <= currentSection.order)
+    .flatMap((section) => Object.values(wordsBySection[section.id]));
+
+  const distractors = shuffleArray(
+    previousAndCurrentWords
+      .filter((w) => w.id !== currentWord.id)
+      .map((word) => ({
+        id: word.id,
+        image: word.image,
+        word: "",
+        translation: "",
+        language: currentWord.language,
+      }))
+  ).slice(0, 3);
+
+  return shuffleArray([currentWord, ...distractors]);
 };
 
 export const getAudioPath = (language: string, wordId: string): string => {
