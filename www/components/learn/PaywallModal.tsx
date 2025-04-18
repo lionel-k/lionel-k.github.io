@@ -4,6 +4,7 @@ import { Dialog } from "@headlessui/react";
 import { Crown, Gift, LogIn, X } from "lucide-react";
 import { FAQ } from "../FAQ";
 import { faqItems } from "@/lib/learn/faq";
+import { usePathname } from "next/navigation";
 
 type PaywallModalProps = {
   onClose: () => void;
@@ -14,9 +15,9 @@ type PaywallModalProps = {
 const stripeLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK!;
 
 const features = [
-  "Pay once, learn forever",
-  "Unlimited lessons",
-  "All languages included",
+  "Pay once, learn forever.",
+  "Practice without limits.",
+  "Access to current & future {{language}} lessons.",
 ] as const;
 
 export default function PaywallModal({
@@ -24,6 +25,11 @@ export default function PaywallModal({
   email,
   onSignInClick,
 }: PaywallModalProps) {
+  const pathname = usePathname();
+  const language = pathname.split("/")[2] || "Kinyarwanda"; // Get language from URL or default
+  const capitalizedLanguage =
+    language.charAt(0).toUpperCase() + language.slice(1);
+
   const stripeLinkWithEmail = (() => {
     const params = new URLSearchParams({
       prefilled_promo_code: "LAUNCH",
@@ -73,8 +79,8 @@ export default function PaywallModal({
                     key={feature}
                     className="flex items-center gap-2 text-gray-300"
                   >
-                    <Crown className="h-5 w-5 text-[#DAA520]" />
-                    {feature}
+                    <Crown className="h-5 w-5 text-[#DAA520] flex-shrink-0" />
+                    {feature.replace("{{language}}", capitalizedLanguage)}
                   </li>
                 ))}
               </ul>
