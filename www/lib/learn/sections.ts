@@ -49,7 +49,7 @@ export const sections: readonly Section[] = [
     order: 5,
   },
   {
-    id: "review_1",
+    id: "review-1",
     title: "Review 1",
     description: "Practice all the words you've learned so far!",
     isLocked: true,
@@ -94,7 +94,7 @@ export const sections: readonly Section[] = [
     order: 11,
   },
   {
-    id: "review_2",
+    id: "review-2",
     title: "Review 2",
     description: "Let's review what you've learned in the last few sections!",
     isLocked: true,
@@ -140,7 +140,7 @@ export const sections: readonly Section[] = [
     order: 17,
   },
   {
-    id: "review_3",
+    id: "review-3",
     title: "Review 3",
     description: "Time to practice everything you've learned!",
     isLocked: true,
