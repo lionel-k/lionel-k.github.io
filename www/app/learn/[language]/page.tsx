@@ -27,15 +27,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const pageTitle = `Learn ${flashcardSet.language} with Flashcards - Lingu.Africa`;
+  const pageTitle = `${flashcardSet.language} Vocabulary Flashcards | Lingu.Africa`;
+  const description = `Learn ${flashcardSet.language} effectively with interactive flashcards featuring audio and images. Perfect for beginners and intermediate learners.`;
   const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
 
   return {
     title: pageTitle,
-    description: `Learn ${flashcardSet.language} vocabulary with interactive flashcards`,
+    description: description,
     openGraph: {
       title: pageTitle,
-      description: `Learn ${flashcardSet.language} vocabulary with interactive flashcards`,
+      description: description,
       url: `${SITE_URL}/learn/${language}`,
       siteName: "Lingu.Africa",
       images: [
@@ -52,9 +53,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: "summary_large_image",
       title: pageTitle,
-      description: `Learn ${flashcardSet.language} vocabulary with interactive flashcards`,
+      description: description,
       images: [languageImageUrl],
-
       creator: "@lionel.kubwimana",
     },
   };
