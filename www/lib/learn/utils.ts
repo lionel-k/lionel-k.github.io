@@ -1,5 +1,5 @@
 import { FlashcardWord, Word } from "@/lib/learn/types";
-import { sections } from "./sections";
+import { sections, Section } from "./sections";
 import { wordsBySection } from "./words";
 
 export const shuffleArray = <T>(array: T[]): T[] => {
@@ -15,15 +15,25 @@ export const generateOptions = (
   currentWord: FlashcardWord,
   currentSectionId: string
 ): FlashcardWord[] => {
-  const currentSection = sections.find((s) => s.id === currentSectionId);
+  const currentSection = sections.find((s) => s.id === currentSectionId) as
+    | Section
+    | undefined;
   if (!currentSection) return [currentWord];
 
-  const previousAndCurrentWords: Word[] = sections
-    .filter((s) => s.order <= currentSection.order)
-    .flatMap((section) => Object.values(wordsBySection[section.id]));
+  let availableWords: Word[];
+
+  if (currentSection.isReview) {
+    // For review sections, use words from all previous sections up to this point
+    availableWords = sections
+      .filter((s) => s.order <= currentSection.order && !s.isReview)
+      .flatMap((section) => Object.values(wordsBySection[section.id]));
+  } else {
+    // For regular sections, only use words from the current section
+    availableWords = Object.values(wordsBySection[currentSectionId]);
+  }
 
   const distractors = shuffleArray(
-    previousAndCurrentWords
+    availableWords
       .filter((w) => w.id !== currentWord.id)
       .map((word) => ({
         id: word.id,
