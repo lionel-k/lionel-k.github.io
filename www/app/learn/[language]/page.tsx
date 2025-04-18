@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: pageTitle,
-    description: `Practice ${flashcardSet.language} vocabulary with interactive flashcards`,
+    description: `Learn ${flashcardSet.language} vocabulary with interactive flashcards`,
     openGraph: {
       title: pageTitle,
       description: `Learn ${flashcardSet.language} vocabulary with interactive flashcards`,
