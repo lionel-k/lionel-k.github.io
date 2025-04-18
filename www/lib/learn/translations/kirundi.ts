@@ -28,6 +28,7 @@ export const kirundi: LanguageTranslations = {
     umbrella: "umutaka",
 
     // animals
+    cow: "inka",
     cat: "akayabu",
     dog: "imbwa",
     fish: "ifi",
@@ -37,6 +38,5 @@ export const kirundi: LanguageTranslations = {
     duck: "imbata",
     lion: "intare",
     elephant: "inzovu",
-    zebra: "imparage",
   },
 };
