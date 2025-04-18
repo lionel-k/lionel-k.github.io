@@ -47,12 +47,19 @@ export function Navbar() {
         {/* Right-aligned navigation */}
         <div
           className={`${
-            isOpen
-              ? "fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-4"
-              : "hidden"
+            isOpen ? "fixed inset-0 bg-black bg-opacity-90" : "hidden"
           } md:relative md:bg-transparent md:flex md:items-center md:justify-end md:space-x-4`}
         >
-          <nav className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-4 text-lg md:text-sm">
+          {isOpen && (
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-5 right-4 text-white md:hidden"
+              aria-label="Close navigation menu"
+            >
+              <X className="h-6 w-6" />
+            </button>
+          )}
+          <nav className="flex flex-col h-full items-center justify-center space-y-6 md:flex-row md:space-y-0 md:space-x-4 text-lg md:text-sm">
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}
