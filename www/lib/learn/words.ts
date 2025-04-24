@@ -90,53 +90,76 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
   },
 
   fruits: {
-    apple: { id: "apple", english: "apple", image: "/images/learn/apple.webp" },
-    banana: {
-      id: "banana",
-      english: "banana",
-      image: "/images/learn/banana.webp",
+    figs: {
+      id: "figs",
+      english: "figs",
+      image: "/images/learn/figs.webp",
     },
-    orange: {
-      id: "orange",
-      english: "orange",
-      image: "/images/learn/orange.webp",
+    passion_fruit: {
+      id: "passion_fruit",
+      english: "passion fruit",
+      image: "/images/learn/passion-fruit.webp",
     },
-    mango: { id: "mango", english: "mango", image: "/images/learn/mango.webp" },
     pineapple: {
       id: "pineapple",
       english: "pineapple",
       image: "/images/learn/pineapple.webp",
     },
-    grape: { id: "grape", english: "grape", image: "/images/learn/grape.webp" },
-    watermelon: {
-      id: "watermelon",
-      english: "watermelon",
-      image: "/images/learn/watermelon.webp",
+    lemon: {
+      id: "lemon",
+      english: "lemon",
+      image: "/images/learn/lemon.webp",
     },
-    lemon: { id: "lemon", english: "lemon", image: "/images/learn/lemon.webp" },
-    avocado: {
-      id: "avocado",
-      english: "avocado",
-      image: "/images/learn/avocado.webp",
+    berries: {
+      id: "berries",
+      english: "berries",
+      image: "/images/learn/berries.webp",
     },
-    strawberry: {
-      id: "strawberry",
-      english: "strawberry",
-      image: "/images/learn/strawberry.webp",
+    physalis: {
+      id: "physalis",
+      english: "physalis",
+      image: "/images/learn/physalis.webp",
     },
     papaya: {
       id: "papaya",
       english: "papaya",
       image: "/images/learn/papaya.webp",
     },
-    peach: { id: "peach", english: "peach", image: "/images/learn/peach.webp" },
-    cherry: {
-      id: "cherry",
-      english: "cherry",
-      image: "/images/learn/cherry.webp",
+    guava: {
+      id: "guava",
+      english: "guava",
+      image: "/images/learn/guava.webp",
     },
-    pear: { id: "pear", english: "pear", image: "/images/learn/pear.webp" },
-    kiwi: { id: "kiwi", english: "kiwi", image: "/images/learn/kiwi.webp" },
+    avocado: {
+      id: "avocado",
+      english: "avocado",
+      image: "/images/learn/avocado.webp",
+    },
+    peanut: {
+      id: "peanut",
+      english: "peanut",
+      image: "/images/learn/peanut.webp",
+    },
+    orange: {
+      id: "orange",
+      english: "orange",
+      image: "/images/learn/orange.webp",
+    },
+    banana: {
+      id: "banana",
+      english: "banana",
+      image: "/images/learn/banana.webp",
+    },
+    sugar_cane: {
+      id: "sugar_cane",
+      english: "sugar cane",
+      image: "/images/learn/sugar-cane.webp",
+    },
+    mango: {
+      id: "mango",
+      english: "mango",
+      image: "/images/learn/mango.webp",
+    },
   },
 
   vegetables: {
