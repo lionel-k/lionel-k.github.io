@@ -156,6 +156,8 @@ export const kirundi: LanguageTranslations = {
     bath: "kwoga",
     tickle: "kudigadiga",
 
+    // phrases
+
     // colors
     red: "red",
     blue: "blue",

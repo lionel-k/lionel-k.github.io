@@ -82,8 +82,8 @@ export const sections: readonly Section[] = [
   },
   {
     id: "feelings",
-    title: "Emotion Words",
-    description: "Build vocabulary for different feelings and emotions.",
+    title: "Emotions & Feelings",
+    description: "Build vocabulary for different emotions and feelings.",
     isLocked: true,
     order: 11,
   },
@@ -97,14 +97,14 @@ export const sections: readonly Section[] = [
   },
   {
     id: "colors",
-    title: "Colors & Description",
+    title: "Colors",
     description: "Add color words to your vocabulary.",
     isLocked: true,
     order: 12,
   },
   {
     id: "food",
-    title: "Food Words",
+    title: "Food",
     description: "Build your food and meal vocabulary.",
     isLocked: true,
     order: 14,
