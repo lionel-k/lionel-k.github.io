@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { FlashcardWord } from "@/lib/learn/types";
 import { generateOptions } from "@/lib/learn/utils";
 import { FlashcardGameProps } from "@/lib/learn/types";
-import Loader from "./Loader";
+import Loader from "../Loader";
 import { sections } from "@/lib/learn/sections";
 import { useRouter, useParams } from "next/navigation";
 import ProgressBar from "./ProgressBar";
