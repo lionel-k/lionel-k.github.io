@@ -298,127 +298,6 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     },
   },
 
-  colors: {
-    red: { id: "red", english: "red", image: "/images/learn/red.webp" },
-    blue: { id: "blue", english: "blue", image: "/images/learn/blue.webp" },
-    green: { id: "green", english: "green", image: "/images/learn/green.webp" },
-    yellow: {
-      id: "yellow",
-      english: "yellow",
-      image: "/images/learn/yellow.webp",
-    },
-    black: { id: "black", english: "black", image: "/images/learn/black.webp" },
-    white: { id: "white", english: "white", image: "/images/learn/white.webp" },
-    brown: { id: "brown", english: "brown", image: "/images/learn/brown.webp" },
-    orange_color: {
-      id: "orange_color",
-      english: "orange",
-      image: "/images/learn/orange_color.webp",
-    },
-    pink: { id: "pink", english: "pink", image: "/images/learn/pink.webp" },
-    purple: {
-      id: "purple",
-      english: "purple",
-      image: "/images/learn/purple.webp",
-    },
-    gray: { id: "gray", english: "gray", image: "/images/learn/gray.webp" },
-    gold: { id: "gold", english: "gold", image: "/images/learn/gold.webp" },
-    silver: {
-      id: "silver",
-      english: "silver",
-      image: "/images/learn/silver.webp",
-    },
-    beige: { id: "beige", english: "beige", image: "/images/learn/beige.webp" },
-    violet: {
-      id: "violet",
-      english: "violet",
-      image: "/images/learn/violet.webp",
-    },
-  },
-
-  food: {
-    rice: {
-      id: "rice",
-      english: "rice",
-      image: "/images/learn/rice.webp",
-    },
-    bread: {
-      id: "bread",
-      english: "bread",
-      image: "/images/learn/bread.webp",
-    },
-    meat: {
-      id: "meat",
-      english: "meat",
-      image: "/images/learn/meat.webp",
-    },
-    fish_food: {
-      id: "fish_food",
-      english: "fish",
-      image: "/images/learn/fish_food.webp",
-    },
-    chicken_food: {
-      id: "chicken_food",
-      english: "chicken",
-      image: "/images/learn/chicken_food.webp",
-    },
-    egg: {
-      id: "egg",
-      english: "egg",
-      image: "/images/learn/egg.webp",
-    },
-    soup: {
-      id: "soup",
-      english: "soup",
-      image: "/images/learn/soup.webp",
-    },
-    salad: {
-      id: "salad",
-      english: "salad",
-      image: "/images/learn/salad.webp",
-    },
-    milk: {
-      id: "milk",
-      english: "milk",
-      image: "/images/learn/milk.webp",
-    },
-    water: {
-      id: "water",
-      english: "water",
-      image: "/images/learn/water.webp",
-    },
-    tea: {
-      id: "tea",
-      english: "tea",
-      image: "/images/learn/tea.webp",
-    },
-    coffee: {
-      id: "coffee",
-      english: "coffee",
-      image: "/images/learn/coffee.webp",
-    },
-    sugar: {
-      id: "sugar",
-      english: "sugar",
-      image: "/images/learn/sugar.webp",
-    },
-    salt: {
-      id: "salt",
-      english: "salt",
-      image: "/images/learn/salt.webp",
-    },
-    oil: {
-      id: "oil",
-      english: "oil",
-      image: "/images/learn/oil.webp",
-    },
-    honey: {
-      id: "honey",
-      english: "honey",
-      image: "/images/learn/honey.webp",
-    },
-  },
-
   actions: {
     walk: {
       id: "walk",
@@ -544,6 +423,127 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       id: "give",
       english: "give",
       image: "/images/learn/give.webp",
+    },
+  },
+
+  colors: {
+    red: { id: "red", english: "red", image: "/images/learn/red.webp" },
+    blue: { id: "blue", english: "blue", image: "/images/learn/blue.webp" },
+    green: { id: "green", english: "green", image: "/images/learn/green.webp" },
+    yellow: {
+      id: "yellow",
+      english: "yellow",
+      image: "/images/learn/yellow.webp",
+    },
+    black: { id: "black", english: "black", image: "/images/learn/black.webp" },
+    white: { id: "white", english: "white", image: "/images/learn/white.webp" },
+    brown: { id: "brown", english: "brown", image: "/images/learn/brown.webp" },
+    orange_color: {
+      id: "orange_color",
+      english: "orange",
+      image: "/images/learn/orange_color.webp",
+    },
+    pink: { id: "pink", english: "pink", image: "/images/learn/pink.webp" },
+    purple: {
+      id: "purple",
+      english: "purple",
+      image: "/images/learn/purple.webp",
+    },
+    gray: { id: "gray", english: "gray", image: "/images/learn/gray.webp" },
+    gold: { id: "gold", english: "gold", image: "/images/learn/gold.webp" },
+    silver: {
+      id: "silver",
+      english: "silver",
+      image: "/images/learn/silver.webp",
+    },
+    beige: { id: "beige", english: "beige", image: "/images/learn/beige.webp" },
+    violet: {
+      id: "violet",
+      english: "violet",
+      image: "/images/learn/violet.webp",
+    },
+  },
+
+  food: {
+    rice: {
+      id: "rice",
+      english: "rice",
+      image: "/images/learn/rice.webp",
+    },
+    bread: {
+      id: "bread",
+      english: "bread",
+      image: "/images/learn/bread.webp",
+    },
+    meat: {
+      id: "meat",
+      english: "meat",
+      image: "/images/learn/meat.webp",
+    },
+    fish_food: {
+      id: "fish_food",
+      english: "fish",
+      image: "/images/learn/fish_food.webp",
+    },
+    chicken_food: {
+      id: "chicken_food",
+      english: "chicken",
+      image: "/images/learn/chicken_food.webp",
+    },
+    egg: {
+      id: "egg",
+      english: "egg",
+      image: "/images/learn/egg.webp",
+    },
+    soup: {
+      id: "soup",
+      english: "soup",
+      image: "/images/learn/soup.webp",
+    },
+    salad: {
+      id: "salad",
+      english: "salad",
+      image: "/images/learn/salad.webp",
+    },
+    milk: {
+      id: "milk",
+      english: "milk",
+      image: "/images/learn/milk.webp",
+    },
+    water: {
+      id: "water",
+      english: "water",
+      image: "/images/learn/water.webp",
+    },
+    tea: {
+      id: "tea",
+      english: "tea",
+      image: "/images/learn/tea.webp",
+    },
+    coffee: {
+      id: "coffee",
+      english: "coffee",
+      image: "/images/learn/coffee.webp",
+    },
+    sugar: {
+      id: "sugar",
+      english: "sugar",
+      image: "/images/learn/sugar.webp",
+    },
+    salt: {
+      id: "salt",
+      english: "salt",
+      image: "/images/learn/salt.webp",
+    },
+    oil: {
+      id: "oil",
+      english: "oil",
+      image: "/images/learn/oil.webp",
+    },
+    honey: {
+      id: "honey",
+      english: "honey",
+      image: "/images/learn/honey.webp",
     },
   },
 
