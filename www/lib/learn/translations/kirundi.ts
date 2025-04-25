@@ -123,23 +123,6 @@ export const kirundi: LanguageTranslations = {
     beige: "beige",
     violet: "violet",
 
-    // home
-    kitchen: "kitchen",
-    bedroom: "bedroom",
-    bathroom: "bathroom",
-    livingroom: "living room",
-    dining: "dining room",
-    garden: "garden",
-    garage: "garage",
-    stairs: "stairs",
-    roof: "roof",
-    wall: "wall",
-    floor: "floor",
-    ceiling: "ceiling",
-    balcony: "balcony",
-    fence: "fence",
-    gate: "gate",
-
     // food
     bread: "bread",
     meat: "meat",
@@ -160,23 +143,6 @@ export const kirundi: LanguageTranslations = {
     butter: "butter",
     honey: "honey",
     pasta: "pasta",
-
-    // drinks
-    water_drink: "water",
-    milk_drink: "milk",
-    coffee_drink: "coffee",
-    tea_drink: "tea",
-    juice_drink: "juice",
-    soda: "soda",
-    beer: "beer",
-    wine: "wine",
-    cocktail: "cocktail",
-    smoothie: "smoothie",
-    milkshake: "milkshake",
-    lemonade: "lemonade",
-    hot_chocolate: "hot chocolate",
-    energy_drink: "energy drink",
-    coconut_water: "coconut water",
 
     // actions
     walk: "walk",

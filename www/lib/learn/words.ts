@@ -336,84 +336,6 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     },
   },
 
-  home: {
-    kitchen: {
-      id: "kitchen",
-      english: "kitchen",
-      image: "/images/learn/kitchen.webp",
-    },
-    bedroom: {
-      id: "bedroom",
-      english: "bedroom",
-      image: "/images/learn/bedroom.webp",
-    },
-    bathroom: {
-      id: "bathroom",
-      english: "bathroom",
-      image: "/images/learn/bathroom.webp",
-    },
-    livingroom: {
-      id: "livingroom",
-      english: "living room",
-      image: "/images/learn/livingroom.webp",
-    },
-    dining: {
-      id: "dining",
-      english: "dining room",
-      image: "/images/learn/dining.webp",
-    },
-    garden: {
-      id: "garden",
-      english: "garden",
-      image: "/images/learn/garden.webp",
-    },
-    garage: {
-      id: "garage",
-      english: "garage",
-      image: "/images/learn/garage.webp",
-    },
-    stairs: {
-      id: "stairs",
-      english: "stairs",
-      image: "/images/learn/stairs.webp",
-    },
-    roof: {
-      id: "roof",
-      english: "roof",
-      image: "/images/learn/roof.webp",
-    },
-    wall: {
-      id: "wall",
-      english: "wall",
-      image: "/images/learn/wall.webp",
-    },
-    floor: {
-      id: "floor",
-      english: "floor",
-      image: "/images/learn/floor.webp",
-    },
-    ceiling: {
-      id: "ceiling",
-      english: "ceiling",
-      image: "/images/learn/ceiling.webp",
-    },
-    balcony: {
-      id: "balcony",
-      english: "balcony",
-      image: "/images/learn/balcony.webp",
-    },
-    fence: {
-      id: "fence",
-      english: "fence",
-      image: "/images/learn/fence.webp",
-    },
-    gate: {
-      id: "gate",
-      english: "gate",
-      image: "/images/learn/gate.webp",
-    },
-  },
-
   food: {
     rice: {
       id: "rice",
@@ -455,20 +377,10 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       english: "salad",
       image: "/images/learn/salad.webp",
     },
-    cheese: {
-      id: "cheese",
-      english: "cheese",
-      image: "/images/learn/cheese.webp",
-    },
     milk: {
       id: "milk",
       english: "milk",
       image: "/images/learn/milk.webp",
-    },
-    juice: {
-      id: "juice",
-      english: "juice",
-      image: "/images/learn/juice.webp",
     },
     water: {
       id: "water",
@@ -500,98 +412,10 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       english: "oil",
       image: "/images/learn/oil.webp",
     },
-    butter: {
-      id: "butter",
-      english: "butter",
-      image: "/images/learn/butter.webp",
-    },
     honey: {
       id: "honey",
       english: "honey",
       image: "/images/learn/honey.webp",
-    },
-    pasta: {
-      id: "pasta",
-      english: "pasta",
-      image: "/images/learn/pasta.webp",
-    },
-  },
-
-  drinks: {
-    water_drink: {
-      id: "water_drink",
-      english: "water",
-      image: "/images/learn/water_drink.webp",
-    },
-    milk_drink: {
-      id: "milk_drink",
-      english: "milk",
-      image: "/images/learn/milk_drink.webp",
-    },
-    coffee_drink: {
-      id: "coffee_drink",
-      english: "coffee",
-      image: "/images/learn/coffee_drink.webp",
-    },
-    tea_drink: {
-      id: "tea_drink",
-      english: "tea",
-      image: "/images/learn/tea_drink.webp",
-    },
-    juice_drink: {
-      id: "juice_drink",
-      english: "juice",
-      image: "/images/learn/juice_drink.webp",
-    },
-    soda: {
-      id: "soda",
-      english: "soda",
-      image: "/images/learn/soda.webp",
-    },
-    beer: {
-      id: "beer",
-      english: "beer",
-      image: "/images/learn/beer.webp",
-    },
-    wine: {
-      id: "wine",
-      english: "wine",
-      image: "/images/learn/wine.webp",
-    },
-    cocktail: {
-      id: "cocktail",
-      english: "cocktail",
-      image: "/images/learn/cocktail.webp",
-    },
-    smoothie: {
-      id: "smoothie",
-      english: "smoothie",
-      image: "/images/learn/smoothie.webp",
-    },
-    milkshake: {
-      id: "milkshake",
-      english: "milkshake",
-      image: "/images/learn/milkshake.webp",
-    },
-    lemonade: {
-      id: "lemonade",
-      english: "lemonade",
-      image: "/images/learn/lemonade.webp",
-    },
-    hot_chocolate: {
-      id: "hot_chocolate",
-      english: "hot chocolate",
-      image: "/images/learn/hot_chocolate.webp",
-    },
-    energy_drink: {
-      id: "energy_drink",
-      english: "energy drink",
-      image: "/images/learn/energy_drink.webp",
-    },
-    coconut_water: {
-      id: "coconut_water",
-      english: "coconut water",
-      image: "/images/learn/coconut_water.webp",
     },
   },
 

@@ -8,7 +8,6 @@ export type Section = {
 };
 
 export const sections: readonly Section[] = [
-  // Level 1 - First Steps (Free)
   {
     id: "basics",
     title: "Essential First Words",
@@ -17,8 +16,6 @@ export const sections: readonly Section[] = [
     isLocked: false,
     order: 1,
   },
-
-  // Level 2 - Essential Building Blocks
   {
     id: "objects",
     title: "Everyday Objects",
@@ -55,6 +52,7 @@ export const sections: readonly Section[] = [
     order: 6,
     isReview: true,
   },
+
   {
     id: "numbers",
     title: "Numbers & Counting",
@@ -69,12 +67,10 @@ export const sections: readonly Section[] = [
     isLocked: true,
     order: 8,
   },
-
-  // Level 3 - Daily Words
   {
-    id: "home",
-    title: "Parts of the House",
-    description: "Know the names of rooms and household items.",
+    id: "school",
+    title: "School Words",
+    description: "Know the names of school items.",
     isLocked: true,
     order: 9,
   },
@@ -92,13 +88,6 @@ export const sections: readonly Section[] = [
     isLocked: true,
     order: 11,
     isReview: true,
-  },
-  {
-    id: "drinks",
-    title: "Drinks & Beverages",
-    description: "Learn words for different types of drinks.",
-    isLocked: true,
-    order: 12,
   },
 
   // Level 4 - Simple Actions
@@ -129,35 +118,6 @@ export const sections: readonly Section[] = [
     description: "Test your knowledge of all learned words & phrases.",
     isLocked: true,
     order: 17,
-    isReview: true,
-  },
-  {
-    id: "shopping",
-    title: "Shopping Words",
-    description: "Learn essential shopping vocabulary.",
-    isLocked: true,
-    order: 18,
-  },
-  {
-    id: "directions",
-    title: "Direction Words",
-    description: "Master basic location and direction vocabulary.",
-    isLocked: true,
-    order: 19,
-  },
-  {
-    id: "body-parts",
-    title: "Body Parts",
-    description: "Learn the names of body parts.",
-    isLocked: true,
-    order: 20,
-  },
-  {
-    id: "review-4",
-    title: "Final Vocabulary Review",
-    description: "Test your knowledge of all learned words.",
-    isLocked: true,
-    order: 20,
     isReview: true,
   },
 ] as const;
