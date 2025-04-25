@@ -3,7 +3,7 @@
 import { useAuth } from "@/hooks/learn/useAuth";
 import { FlashcardWord } from "@/lib/learn/types";
 import { sections } from "@/lib/learn/sections";
-import SectionCard from "@/components/learn/SectionCard";
+import SectionCard from "@/components/learn/SectionCard/index";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
 import PaywallModal from "@/components/learn/PaywallModal";
