@@ -68,13 +68,6 @@ export const sections: readonly Section[] = [
     order: 8,
   },
   {
-    id: "school",
-    title: "School Words",
-    description: "Know the names of school items.",
-    isLocked: true,
-    order: 9,
-  },
-  {
     id: "food",
     title: "Food Words",
     description: "Build your food and meal vocabulary.",

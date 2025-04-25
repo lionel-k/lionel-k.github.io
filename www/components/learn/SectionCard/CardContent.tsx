@@ -1,6 +1,6 @@
 import { Lock, ArrowRight } from "lucide-react";
-import { Section, sections } from "@/lib/learn/sections";
-import { wordsBySection } from "@/lib/learn/words";
+import { Section } from "@/lib/learn/sections";
+import { getAvailableWords } from "@/lib/learn/utils";
 
 type CardContentProps = {
   section: Section;
@@ -13,15 +13,7 @@ export function CardContent({
   isPaidUser,
   isAccessible,
 }: CardContentProps) {
-  const getWordCount = (sectionId: string): number => {
-    return Object.keys(wordsBySection[sectionId] || {}).length;
-  };
-
-  const wordsCount = section.isReview
-    ? sections
-        .filter((s) => s.order <= section.order && !s.isReview)
-        .reduce((total, s) => total + getWordCount(s.id), 0)
-    : getWordCount(section.id);
+  const wordsCount = getAvailableWords(section, section.id).length;
 
   return (
     <div className="relative z-10 h-full flex flex-col">
