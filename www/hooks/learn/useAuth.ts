@@ -40,8 +40,10 @@ export function useAuth(): UseAuthReturn {
         setIsPaidUser(false);
       } finally {
         setIsLoading(false);
-        setEmail("test@gmail.com");
-        setIsPaidUser(true);
+        if (process.env.NODE_ENV === "development") {
+          setEmail("test@gmail.com");
+          setIsPaidUser(true);
+        }
       }
     };
 
