@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Volume2 } from "lucide-react";
 import { getAudioPath } from "@/lib/learn/utils";
 
@@ -12,6 +12,10 @@ interface WordCardProps {
 
 export default function WordCard({ word }: WordCardProps) {
   const [audioError, setAudioError] = useState<string | null>(null);
+
+  useEffect(() => {
+    setAudioError(null);
+  }, [word.id]);
 
   const playAudio = async () => {
     try {
