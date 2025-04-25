@@ -34,8 +34,8 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   }, []);
 
   useEffect(() => {
-    setOptions(generateOptions(currentWord, currentSectionId));
-  }, [currentIndex, words, currentSectionId, currentWord]);
+    setOptions(generateOptions(currentWord, words));
+  }, [currentIndex, words, currentWord]);
 
   if (isLoading) {
     return <Loader />;

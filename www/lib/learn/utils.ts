@@ -22,16 +22,6 @@ const getWordsForRegularSection = (sectionId: string): Word[] => {
   return Object.values(wordsBySection[sectionId]);
 };
 
-const createDistractor = (word: Word, language: string): FlashcardWord => {
-  return {
-    id: word.id,
-    image: word.image,
-    word: "",
-    translation: "",
-    language,
-  };
-};
-
 export const getAvailableWords = (
   currentSection: Section,
   sectionId: string
@@ -78,12 +68,16 @@ export const getSectionFlashcards = (
 
 export const generateOptions = (
   currentWord: FlashcardWord,
-  availableWords: Word[]
+  words: FlashcardWord[]
 ): FlashcardWord[] => {
+  if (!words || !Array.isArray(words)) return [currentWord];
+
   const distractors = shuffleArray(
-    availableWords
+    words
       .filter((w) => w.id !== currentWord.id)
-      .map((word) => createDistractor(word, currentWord.language))
+      .map((word) => ({
+        ...word,
+      }))
   ).slice(0, 3);
 
   return shuffleArray([currentWord, ...distractors]);
