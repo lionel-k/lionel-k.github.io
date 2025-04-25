@@ -73,11 +73,7 @@ export const generateOptions = (
   if (!words || !Array.isArray(words)) return [currentWord];
 
   const distractors = shuffleArray(
-    words
-      .filter((w) => w.id !== currentWord.id)
-      .map((word) => ({
-        ...word,
-      }))
+    words.filter((w) => w.id !== currentWord.id)
   ).slice(0, 3);
 
   return shuffleArray([currentWord, ...distractors]);
