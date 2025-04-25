@@ -163,7 +163,7 @@ export const kirundi: LanguageTranslations = {
     mary_eats_orange: "Mariya ariko arafungura umucungwe.",
     peter_eats_eggplant: "Petero ariko arafungura intore.",
     mary_cooks_one_onion: "Mariya ariko arateka igitunguru.",
-    peter_pulls_one_shoe: "Petera arakwega ikirato.",
+    peter_pulls_one_shoe: "Petero ariko arakwega ikirato.",
     mary_eats_two_oranges: "Mariya ariko arafungura umucungwe.",
     peter_drew_three_keys: "Petero ariko aracapa impfunguruzo zitatu.",
     mary_pushes_one_table: "Mariya ariko arusunika imeza.",
