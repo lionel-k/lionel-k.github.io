@@ -261,6 +261,7 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
   },
 
   numbers: {
+    zero: { id: "zero", english: "zero", image: "/images/learn/zero.webp" },
     one: { id: "one", english: "one", image: "/images/learn/one.webp" },
     two: { id: "two", english: "two", image: "/images/learn/two.webp" },
     three: { id: "three", english: "three", image: "/images/learn/three.webp" },
@@ -271,6 +272,134 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     eight: { id: "eight", english: "eight", image: "/images/learn/eight.webp" },
     nine: { id: "nine", english: "nine", image: "/images/learn/nine.webp" },
     ten: { id: "ten", english: "ten", image: "/images/learn/ten.webp" },
+  },
+
+  counting: {
+    one_egg: {
+      id: "one_egg",
+      english: "one egg",
+      image: "/images/learn/one-egg.webp",
+    },
+    one_cow: {
+      id: "one_cow",
+      english: "one cow",
+      image: "/images/learn/one-cow.webp",
+    },
+    one_cup: {
+      id: "one_cup",
+      english: "one cup",
+      image: "/images/learn/one-cup.webp",
+    },
+    one_child: {
+      id: "one_child",
+      english: "one child",
+      image: "/images/learn/one-child.webp",
+    },
+    one_bread: {
+      id: "one_bread",
+      english: "one bread",
+      image: "/images/learn/one-bread.webp",
+    },
+    two_eggs: {
+      id: "two_eggs",
+      english: "two eggs",
+      image: "/images/learn/two-eggs.webp",
+    },
+    two_cows: {
+      id: "two_cows",
+      english: "two cows",
+      image: "/images/learn/two-cows.webp",
+    },
+    two_cups: {
+      id: "two_cups",
+      english: "two cups",
+      image: "/images/learn/two-cups.webp",
+    },
+    two_children: {
+      id: "two_children",
+      english: "two children",
+      image: "/images/learn/two-children.webp",
+    },
+    two_breads: {
+      id: "two_breads",
+      english: "two breads",
+      image: "/images/learn/two-breads.webp",
+    },
+    three_eggs: {
+      id: "three_eggs",
+      english: "three eggs",
+      image: "/images/learn/three-eggs.webp",
+    },
+    three_cows: {
+      id: "three_cows",
+      english: "three cows",
+      image: "/images/learn/three-cows.webp",
+    },
+    three_cups: {
+      id: "three_cups",
+      english: "three cups",
+      image: "/images/learn/three-cups.webp",
+    },
+    three_children: {
+      id: "three_children",
+      english: "three children",
+      image: "/images/learn/three-children.webp",
+    },
+    three_breads: {
+      id: "three_breads",
+      english: "three breads",
+      image: "/images/learn/three-breads.webp",
+    },
+    four_eggs: {
+      id: "four_eggs",
+      english: "four eggs",
+      image: "/images/learn/four-eggs.webp",
+    },
+    four_cows: {
+      id: "four_cows",
+      english: "four cows",
+      image: "/images/learn/four-cows.webp",
+    },
+    four_cups: {
+      id: "four_cups",
+      english: "four cups",
+      image: "/images/learn/four-cups.webp",
+    },
+    four_children: {
+      id: "four_children",
+      english: "four children",
+      image: "/images/learn/four-children.webp",
+    },
+    four_breads: {
+      id: "four_breads",
+      english: "four breads",
+      image: "/images/learn/four-breads.webp",
+    },
+    five_eggs: {
+      id: "five_eggs",
+      english: "five eggs",
+      image: "/images/learn/five-eggs.webp",
+    },
+    five_cows: {
+      id: "five_cows",
+      english: "five cows",
+      image: "/images/learn/five-cows.webp",
+    },
+    five_cups: {
+      id: "five_cups",
+      english: "five cups",
+      image: "/images/learn/five-cups.webp",
+    },
+    five_children: {
+      id: "five_children",
+      english: "five children",
+      image: "/images/learn/five-children.webp",
+    },
+    five_breads: {
+      id: "five_breads",
+      english: "five breads",
+      image: "/images/learn/five-breads.webp",
+    },
   },
 
   actions: {

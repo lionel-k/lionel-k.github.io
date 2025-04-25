@@ -90,6 +90,7 @@ export const kirundi: LanguageTranslations = {
     pumpkin: "umwungu",
 
     // numbers
+    zero: "ubusa",
     one: "rimwe",
     two: "kabiri",
     three: "gatatu",
@@ -100,6 +101,33 @@ export const kirundi: LanguageTranslations = {
     eight: "umunani",
     nine: "icenda",
     ten: "icumi",
+
+    // counting
+    one_egg: "igi rimwe",
+    one_cow: "inka imwe",
+    one_cup: "igikombe kimwe",
+    one_child: "umwana umwe",
+    one_bread: "umukate umwe",
+    two_eggs: "amagi abiri",
+    two_cows: "inka zibiri",
+    two_cups: "two_cups",
+    two_children: "two_children",
+    two_breads: "two_breads",
+    three_eggs: "three_eggs",
+    three_cows: "three_cows",
+    three_cups: "three_cups",
+    three_children: "three_children",
+    three_breads: "three_breads",
+    four_eggs: "four_eggs",
+    four_cows: "four_cows",
+    four_cups: "four_cups",
+    four_children: "four_children",
+    four_breads: "four_breads",
+    five_eggs: "five_eggs",
+    five_cows: "five_cows",
+    five_cups: "five_cups",
+    five_children: "five_children",
+    five_breads: "five_breads",
 
     // actions
     walk: "gutambuka",
