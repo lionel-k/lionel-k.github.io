@@ -663,6 +663,94 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     },
   },
 
+  feelings: {
+    happy: {
+      id: "happy",
+      english: "happy",
+      image: "/images/learn/happy.webp",
+    },
+    sad: {
+      id: "sad",
+      english: "sad",
+      image: "/images/learn/sad.webp",
+    },
+    angry: {
+      id: "angry",
+      english: "angry",
+      image: "/images/learn/angry.webp",
+    },
+    afraid: {
+      id: "afraid",
+      english: "afraid",
+      image: "/images/learn/afraid.webp",
+    },
+    tired: {
+      id: "tired",
+      english: "tired",
+      image: "/images/learn/tired.webp",
+    },
+    excited: {
+      id: "excited",
+      english: "excited",
+      image: "/images/learn/excited.webp",
+    },
+    surprised: {
+      id: "surprised",
+      english: "surprised",
+      image: "/images/learn/surprised.webp",
+    },
+    bored: {
+      id: "bored",
+      english: "bored",
+      image: "/images/learn/bored.webp",
+    },
+    hungry: {
+      id: "hungry",
+      english: "hungry",
+      image: "/images/learn/hungry.webp",
+    },
+    thirsty: {
+      id: "thirsty",
+      english: "thirsty",
+      image: "/images/learn/thirsty.webp",
+    },
+    sick: {
+      id: "sick",
+      english: "sick",
+      image: "/images/learn/sick.webp",
+    },
+    hot: {
+      id: "hot",
+      english: "hot",
+      image: "/images/learn/hot.webp",
+    },
+    cold: {
+      id: "cold",
+      english: "cold",
+      image: "/images/learn/cold.webp",
+    },
+    proud: {
+      id: "proud",
+      english: "proud",
+      image: "/images/learn/proud.webp",
+    },
+    shy: {
+      id: "shy",
+      english: "shy",
+      image: "/images/learn/shy.webp",
+    },
+    embarrassed: {
+      id: "embarrassed",
+      english: "embarrassed",
+      image: "/images/learn/embarrassed.webp",
+    },
+    calm: {
+      id: "calm",
+      english: "calm",
+      image: "/images/learn/calm.webp",
+    },
+  },
+
   colors: {
     red: { id: "red", english: "red", image: "/images/learn/red.webp" },
     blue: { id: "blue", english: "blue", image: "/images/learn/blue.webp" },
@@ -781,109 +869,6 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       id: "honey",
       english: "honey",
       image: "/images/learn/honey.webp",
-    },
-  },
-
-  feelings: {
-    happy: {
-      id: "happy",
-      english: "happy",
-      image: "/images/learn/happy.webp",
-    },
-    sad: {
-      id: "sad",
-      english: "sad",
-      image: "/images/learn/sad.webp",
-    },
-    angry: {
-      id: "angry",
-      english: "angry",
-      image: "/images/learn/angry.webp",
-    },
-    scared: {
-      id: "scared",
-      english: "scared",
-      image: "/images/learn/scared.webp",
-    },
-    tired: {
-      id: "tired",
-      english: "tired",
-      image: "/images/learn/tired.webp",
-    },
-    excited: {
-      id: "excited",
-      english: "excited",
-      image: "/images/learn/excited.webp",
-    },
-    surprised: {
-      id: "surprised",
-      english: "surprised",
-      image: "/images/learn/surprised.webp",
-    },
-    confused: {
-      id: "confused",
-      english: "confused",
-      image: "/images/learn/confused.webp",
-    },
-    bored: {
-      id: "bored",
-      english: "bored",
-      image: "/images/learn/bored.webp",
-    },
-    hungry: {
-      id: "hungry",
-      english: "hungry",
-      image: "/images/learn/hungry.webp",
-    },
-    thirsty: {
-      id: "thirsty",
-      english: "thirsty",
-      image: "/images/learn/thirsty.webp",
-    },
-    sick: {
-      id: "sick",
-      english: "sick",
-      image: "/images/learn/sick.webp",
-    },
-    healthy: {
-      id: "healthy",
-      english: "healthy",
-      image: "/images/learn/healthy.webp",
-    },
-    hot: {
-      id: "hot",
-      english: "hot",
-      image: "/images/learn/hot.webp",
-    },
-    cold: {
-      id: "cold",
-      english: "cold",
-      image: "/images/learn/cold.webp",
-    },
-    sleepy: {
-      id: "sleepy",
-      english: "sleepy",
-      image: "/images/learn/sleepy.webp",
-    },
-    relaxed: {
-      id: "relaxed",
-      english: "relaxed",
-      image: "/images/learn/relaxed.webp",
-    },
-    stressed: {
-      id: "stressed",
-      english: "stressed",
-      image: "/images/learn/stressed.webp",
-    },
-    proud: {
-      id: "proud",
-      english: "proud",
-      image: "/images/learn/proud.webp",
-    },
-    shy: {
-      id: "shy",
-      english: "shy",
-      image: "/images/learn/shy.webp",
     },
   },
 };
