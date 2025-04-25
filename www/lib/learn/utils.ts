@@ -78,15 +78,8 @@ export const getSectionFlashcards = (
 
 export const generateOptions = (
   currentWord: FlashcardWord,
-  currentSectionId: string
+  availableWords: Word[]
 ): FlashcardWord[] => {
-  const currentSection = sections.find((s) => s.id === currentSectionId) as
-    | Section
-    | undefined;
-  if (!currentSection) return [currentWord];
-
-  const availableWords = getAvailableWords(currentSection, currentSectionId);
-
   const distractors = shuffleArray(
     availableWords
       .filter((w) => w.id !== currentWord.id)
