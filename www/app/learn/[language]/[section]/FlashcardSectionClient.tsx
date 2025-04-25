@@ -52,6 +52,9 @@ export default function FlashcardSectionClient({
     },
   ];
 
+  console.log("flashcardSet", flashcardSet);
+  console.log("section", section);
+
   return (
     <div className="min-h-screen animate-in fade-in duration-300">
       {showPaywall && (

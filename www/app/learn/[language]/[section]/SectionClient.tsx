@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import PaywallModal from "@/components/learn/PaywallModal";
 import SignInModal from "@/components/learn/SignInModal";
 import { useState, useEffect } from "react";
-import FlashcardGame from "@/components/learn/flashcard-game";
+import FlashcardGame from "@/components/learn/FlashcardGame/index";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
 import { Lock } from "lucide-react";
