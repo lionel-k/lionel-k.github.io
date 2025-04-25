@@ -306,7 +306,7 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     },
     sit: {
       id: "sit",
-      english: "sit",
+      english: "sit down",
       image: "/images/learn/sit.webp",
     },
     stand: {
@@ -339,65 +339,65 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       english: "play",
       image: "/images/learn/play.webp",
     },
-    work: {
-      id: "work",
-      english: "work",
-      image: "/images/learn/work.webp",
-    },
     cook: {
       id: "cook",
       english: "cook",
       image: "/images/learn/cook.webp",
-    },
-    clean: {
-      id: "clean",
-      english: "clean",
-      image: "/images/learn/clean.webp",
-    },
-    wash: {
-      id: "wash",
-      english: "wash",
-      image: "/images/learn/wash.webp",
-    },
-    smile: {
-      id: "smile",
-      english: "smile",
-      image: "/images/learn/smile.webp",
-    },
-    laugh: {
-      id: "laugh",
-      english: "laugh",
-      image: "/images/learn/laugh.webp",
     },
     cry: {
       id: "cry",
       english: "cry",
       image: "/images/learn/cry.webp",
     },
-    talk: {
-      id: "talk",
-      english: "talk",
-      image: "/images/learn/talk.webp",
+    laugh: {
+      id: "laugh",
+      english: "laugh",
+      image: "/images/learn/laugh.webp",
     },
-    listen: {
-      id: "listen",
-      english: "listen",
-      image: "/images/learn/listen.webp",
+    clap: {
+      id: "clap",
+      english: "clap",
+      image: "/images/learn/clap.webp",
     },
-    open: {
-      id: "open",
-      english: "open",
-      image: "/images/learn/open.webp",
+    crawl: {
+      id: "crawl",
+      english: "crawl",
+      image: "/images/learn/crawl.webp",
     },
-    close: {
-      id: "close",
-      english: "close",
-      image: "/images/learn/close.webp",
+    hug: {
+      id: "hug",
+      english: "hug",
+      image: "/images/learn/hug.webp",
     },
-    give: {
-      id: "give",
-      english: "give",
-      image: "/images/learn/give.webp",
+    kiss: {
+      id: "kiss",
+      english: "kiss",
+      image: "/images/learn/kiss.webp",
+    },
+    kneel: {
+      id: "kneel",
+      english: "kneel",
+      image: "/images/learn/kneel.webp",
+    },
+    pull: {
+      id: "pull",
+      english: "pull",
+      image: "/images/learn/pull.webp",
+    },
+    push: {
+      id: "push",
+      english: "push",
+      image: "/images/learn/push.webp",
+    },
+    bath: {
+      id: "bath",
+      english: "take a bath",
+      image: "/images/learn/bath.webp",
+    },
+    tickle: {
+      id: "tickle",
+      english: "tickle",
+      image: "/images/learn/tickle.webp",
     },
   },
 
