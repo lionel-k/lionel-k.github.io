@@ -4,15 +4,10 @@ import { getAvailableWords } from "@/lib/learn/utils";
 
 type CardContentProps = {
   section: Section;
-  isPaidUser: boolean;
   isAccessible: boolean;
 };
 
-export function CardContent({
-  section,
-  isPaidUser,
-  isAccessible,
-}: CardContentProps) {
+export function CardContent({ section, isAccessible }: CardContentProps) {
   const wordsCount = getAvailableWords(section, section.id).length;
 
   return (

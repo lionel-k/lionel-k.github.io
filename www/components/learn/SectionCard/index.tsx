@@ -40,11 +40,7 @@ export default function SectionCard({
         section.isReview ? "border-[#DAA520]/20" : "border-[#DAA520]/10"
       } overflow-hidden`}
     >
-      <CardContent
-        section={section}
-        isPaidUser={isPaidUser}
-        isAccessible={isAccessible}
-      />
+      <CardContent section={section} isAccessible={isAccessible} />
       <CardDecoration isReview={!!section.isReview} />
     </button>
   );
