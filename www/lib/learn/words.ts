@@ -163,72 +163,100 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
   },
 
   vegetables: {
+    beans: {
+      id: "beans",
+      english: "beans",
+      image: "/images/learn/beans.webp",
+    },
+    mushroom: {
+      id: "mushroom",
+      english: "mushroom",
+      image: "/images/learn/mushroom.webp",
+    },
+    green_banana: {
+      id: "green_banana",
+      english: "green banana",
+      image: "/images/learn/green-banana.webp",
+    },
+    onion: {
+      id: "onion",
+      english: "onion",
+      image: "/images/learn/onion.webp",
+    },
+    garlic: {
+      id: "garlic",
+      english: "garlic",
+      image: "/images/learn/garlic.webp",
+    },
     carrot: {
       id: "carrot",
       english: "carrot",
       image: "/images/learn/carrot.webp",
     },
-    tomato: {
-      id: "tomato",
-      english: "tomato",
-      image: "/images/learn/tomato.webp",
+    corn: {
+      id: "corn",
+      english: "corn",
+      image: "/images/learn/corn.webp",
     },
-    onion: { id: "onion", english: "onion", image: "/images/learn/onion.webp" },
+    sweet_potato: {
+      id: "sweet_potato",
+      english: "sweet potato",
+      image: "/images/learn/sweet-potato.webp",
+    },
     potato: {
       id: "potato",
       english: "potato",
       image: "/images/learn/potato.webp",
     },
-    spinach: {
-      id: "spinach",
-      english: "spinach",
-      image: "/images/learn/spinach.webp",
+    green_beans: {
+      id: "green_beans",
+      english: "green beans",
+      image: "/images/learn/green-beans.webp",
     },
-    cabbage: {
-      id: "cabbage",
-      english: "cabbage",
-      image: "/images/learn/cabbage.webp",
-    },
-    pepper: {
-      id: "pepper",
-      english: "pepper",
-      image: "/images/learn/pepper.webp",
+    wheat: {
+      id: "wheat",
+      english: "wheat",
+      image: "/images/learn/wheat.webp",
     },
     eggplant: {
       id: "eggplant",
       english: "eggplant",
       image: "/images/learn/eggplant.webp",
     },
-    cucumber: {
-      id: "cucumber",
-      english: "cucumber",
-      image: "/images/learn/cucumber.webp",
+    chilli: {
+      id: "chilli",
+      english: "chilli",
+      image: "/images/learn/chilli.webp",
     },
-    lettuce: {
-      id: "lettuce",
-      english: "lettuce",
-      image: "/images/learn/lettuce.webp",
+    cabbage: {
+      id: "cabbage",
+      english: "cabbage",
+      image: "/images/learn/cabbage.webp",
     },
-    broccoli: {
-      id: "broccoli",
-      english: "broccoli",
-      image: "/images/learn/broccoli.webp",
+    soy: {
+      id: "soy",
+      english: "soy",
+      image: "/images/learn/soy.webp",
     },
-    corn: { id: "corn", english: "corn", image: "/images/learn/corn.webp" },
-    garlic: {
-      id: "garlic",
-      english: "garlic",
-      image: "/images/learn/garlic.webp",
+    tomato: {
+      id: "tomato",
+      english: "tomato",
+      image: "/images/learn/tomato.webp",
+    },
+    peas: {
+      id: "peas",
+      english: "peas",
+      image: "/images/learn/peas.webp",
+    },
+    rice: {
+      id: "rice",
+      english: "rice",
+      image: "/images/learn/rice.webp",
     },
     pumpkin: {
       id: "pumpkin",
       english: "pumpkin",
       image: "/images/learn/pumpkin.webp",
-    },
-    mushroom: {
-      id: "mushroom",
-      english: "mushroom",
-      image: "/images/learn/mushroom.webp",
     },
   },
 
