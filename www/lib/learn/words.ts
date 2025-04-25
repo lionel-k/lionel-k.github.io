@@ -751,44 +751,6 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     },
   },
 
-  colors: {
-    red: { id: "red", english: "red", image: "/images/learn/red.webp" },
-    blue: { id: "blue", english: "blue", image: "/images/learn/blue.webp" },
-    green: { id: "green", english: "green", image: "/images/learn/green.webp" },
-    yellow: {
-      id: "yellow",
-      english: "yellow",
-      image: "/images/learn/yellow.webp",
-    },
-    black: { id: "black", english: "black", image: "/images/learn/black.webp" },
-    white: { id: "white", english: "white", image: "/images/learn/white.webp" },
-    brown: { id: "brown", english: "brown", image: "/images/learn/brown.webp" },
-    orange_color: {
-      id: "orange_color",
-      english: "orange",
-      image: "/images/learn/orange_color.webp",
-    },
-    pink: { id: "pink", english: "pink", image: "/images/learn/pink.webp" },
-    purple: {
-      id: "purple",
-      english: "purple",
-      image: "/images/learn/purple.webp",
-    },
-    gray: { id: "gray", english: "gray", image: "/images/learn/gray.webp" },
-    gold: { id: "gold", english: "gold", image: "/images/learn/gold.webp" },
-    silver: {
-      id: "silver",
-      english: "silver",
-      image: "/images/learn/silver.webp",
-    },
-    beige: { id: "beige", english: "beige", image: "/images/learn/beige.webp" },
-    violet: {
-      id: "violet",
-      english: "violet",
-      image: "/images/learn/violet.webp",
-    },
-  },
-
   food: {
     rice: {
       id: "rice",
