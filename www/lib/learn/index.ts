@@ -1,6 +1,7 @@
 import { FlashcardSet, FlashcardWord } from "./types";
 import { languageTranslations } from "./translations";
 import { wordsBySection, getAllWords } from "./words";
+import { shuffleArray } from "./utils";
 
 export async function getFlashcardSet(
   language: string,
@@ -39,6 +40,6 @@ export async function getFlashcardSet(
 
   return {
     language: translations.language,
-    words,
+    words: shuffleArray(words),
   };
 }
