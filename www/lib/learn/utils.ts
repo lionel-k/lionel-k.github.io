@@ -1,6 +1,7 @@
 import { FlashcardWord, Word } from "@/lib/learn/types";
 import { sections, Section } from "./sections";
-import { wordsBySection } from "./words";
+import { wordsBySection, getAllWords } from "./words";
+import { languageTranslations } from "./translations";
 
 export const shuffleArray = <T>(array: T[]): T[] => {
   const shuffled = [...array];
@@ -31,13 +32,48 @@ const createDistractor = (word: Word, language: string): FlashcardWord => {
   };
 };
 
-const getAvailableWords = (
+export const getAvailableWords = (
   currentSection: Section,
   sectionId: string
 ): Word[] => {
   return currentSection.isReview
     ? getWordsForReviewSection(currentSection)
     : getWordsForRegularSection(sectionId);
+};
+
+export const getSectionFlashcards = (
+  language: string,
+  sectionId: string
+): FlashcardWord[] | null => {
+  const normalizedLanguage = language.toLowerCase();
+  const translations = languageTranslations[normalizedLanguage];
+  const currentSection = sections.find((s) => s.id === sectionId);
+
+  if (!translations || !currentSection) {
+    return null;
+  }
+
+  const availableWords = getAvailableWords(currentSection, sectionId);
+
+  const flashcards = availableWords
+    .map((word) => {
+      const translation = translations.translations[word.id];
+      if (!translation) {
+        console.warn(`No translation found for word: ${word.id}`);
+        return null;
+      }
+
+      return {
+        id: word.id,
+        word: word.english,
+        translation,
+        language: translations.language,
+        image: word.image,
+      };
+    })
+    .filter((word): word is FlashcardWord => word !== null);
+
+  return shuffleArray(flashcards);
 };
 
 export const generateOptions = (
@@ -62,4 +98,31 @@ export const generateOptions = (
 
 export const getAudioPath = (language: string, wordId: string): string => {
   return `/audios/${language.toLowerCase()}/${wordId}.mp3`;
+};
+
+export const getLanguageFlashcards = (
+  language: string
+): FlashcardWord[] | null => {
+  const normalizedLanguage = language.toLowerCase();
+  const translations = languageTranslations[normalizedLanguage];
+
+  if (!translations) {
+    return null;
+  }
+
+  const words = getAllWords();
+  return Object.entries(words)
+    .map(([wordId, word]) => {
+      const translation = translations.translations[wordId];
+      if (!translation) return null;
+
+      return {
+        id: wordId,
+        word: word.english,
+        translation,
+        language: translations.language,
+        image: word.image,
+      };
+    })
+    .filter((word): word is FlashcardWord => word !== null);
 };

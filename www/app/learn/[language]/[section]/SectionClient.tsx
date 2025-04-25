@@ -1,7 +1,7 @@
 "use client";
 
 import { useAuth } from "@/hooks/learn/useAuth";
-import { FlashcardSet } from "@/lib/learn/types";
+import { FlashcardWord } from "@/lib/learn/types";
 import { sections } from "@/lib/learn/sections";
 import { useRouter } from "next/navigation";
 import PaywallModal from "@/components/learn/PaywallModal";
@@ -14,11 +14,11 @@ import { Lock } from "lucide-react";
 import PageHeader from "@/components/learn/PageHeader";
 
 type Props = {
-  flashcardSet: FlashcardSet;
+  words: FlashcardWord[];
   section: string;
 };
 
-export default function SectionClient({ flashcardSet, section }: Props) {
+export default function SectionClient({ words, section }: Props) {
   const { email, isPaidUser, isLoading } = useAuth();
   const router = useRouter();
   const currentSection = sections.find((s) => s.id === section);
@@ -38,7 +38,7 @@ export default function SectionClient({ flashcardSet, section }: Props) {
   }
 
   if (!currentSection) {
-    router.push(`/learn/${flashcardSet.language.toLowerCase()}`);
+    router.push("/learn");
     return null;
   }
 
@@ -51,18 +51,18 @@ export default function SectionClient({ flashcardSet, section }: Props) {
     setShowPaywall(true);
   };
 
-  const sectionWords = flashcardSet.words;
+  const language = words[0].language;
 
   const breadcrumbItems = [
     { name: "Home", href: "/" },
     { name: "Learn", href: "/learn" },
     {
-      name: flashcardSet.language,
-      href: `/learn/${flashcardSet.language.toLowerCase()}`,
+      name: language,
+      href: `/learn/${language.toLowerCase()}`,
     },
     {
       name: currentSection.title,
-      href: `/learn/${flashcardSet.language.toLowerCase()}/${section}`,
+      href: `/learn/${language.toLowerCase()}/${section}`,
     },
   ];
 
@@ -103,7 +103,7 @@ export default function SectionClient({ flashcardSet, section }: Props) {
               </button>
             </div>
           ) : (
-            <FlashcardGame words={sectionWords} />
+            <FlashcardGame words={words} />
           )}
         </div>
       </section>

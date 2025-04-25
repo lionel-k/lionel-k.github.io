@@ -29,11 +29,11 @@ export const kirundi: LanguageTranslations = {
     spoon: "ikiyiko",
     mirror: "ikiyo",
     umbrella: "umutaka",
-    phone: "phone",
-    computer: "computer",
-    backpack: "backpack",
-    chair: "chair",
-    key: "key",
+    phone: "itelefone",
+    computer: "inyabwonko",
+    backpack: "isakoshi",
+    chair: "intebe",
+    key: "urupfunguruzo",
 
     // animals
     cow: "inka",

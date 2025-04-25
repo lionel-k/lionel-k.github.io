@@ -1,10 +1,10 @@
 import { Metadata } from "next";
-import { getFlashcardSet } from "@/lib/learn";
 import { LANGUAGES } from "@/lib/constants";
 import { sections } from "@/lib/learn/sections";
 import { notFound } from "next/navigation";
 import { SITE_URL } from "@/lib/constants";
 import SectionClient from "./SectionClient";
+import { getSectionFlashcards } from "@/lib/learn/utils";
 
 type Props = {
   params: Promise<{
@@ -66,11 +66,11 @@ export default async function SectionPage({ params }: Props) {
     notFound();
   }
 
-  const flashcardSet = await getFlashcardSet(langSlug, sectionId);
+  const words = getSectionFlashcards(langSlug, sectionId);
 
-  if (!flashcardSet) {
+  if (!words) {
     notFound();
   }
 
-  return <SectionClient flashcardSet={flashcardSet} section={sectionId} />;
+  return <SectionClient words={words} section={sectionId} />;
 }

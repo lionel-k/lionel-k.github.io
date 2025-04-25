@@ -1,7 +1,7 @@
 "use client";
 
 import { useAuth } from "@/hooks/learn/useAuth";
-import { FlashcardSet } from "@/lib/learn/types";
+import { FlashcardWord } from "@/lib/learn/types";
 import { sections } from "@/lib/learn/sections";
 import SectionCard from "@/components/learn/SectionCard";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
@@ -12,10 +12,10 @@ import { useState } from "react";
 import PageHeader from "@/components/learn/PageHeader";
 
 type Props = {
-  flashcardSet: FlashcardSet;
+  words: FlashcardWord[];
 };
 
-export default function LanguageClient({ flashcardSet }: Props) {
+export default function LanguageClient({ words }: Props) {
   const { email, isPaidUser, isLoading } = useAuth();
   const [showPaywall, setShowPaywall] = useState(false);
   const [showSignIn, setShowSignIn] = useState(false);
@@ -33,12 +33,14 @@ export default function LanguageClient({ flashcardSet }: Props) {
     setShowPaywall(true);
   };
 
+  const language = words[0].language;
+
   const breadcrumbItems = [
     { name: "Home", href: "/" },
     { name: "Learn", href: "/learn" },
     {
-      name: flashcardSet.language,
-      href: `/learn/${flashcardSet.language.toLowerCase()}`,
+      name: language,
+      href: `/learn/${language.toLowerCase()}`,
     },
   ];
 
@@ -60,7 +62,7 @@ export default function LanguageClient({ flashcardSet }: Props) {
       )}
       <BreadcrumbNav items={breadcrumbItems} />
       <PageHeader
-        title={`${flashcardSet.language} Vocabulary`}
+        title={`${language} Vocabulary`}
         description="Build your vocabulary step by step, from basic words to everyday phrases."
         email={email}
         isPaidUser={isPaidUser}
@@ -74,7 +76,7 @@ export default function LanguageClient({ flashcardSet }: Props) {
               <SectionCard
                 key={section.id}
                 section={section}
-                language={flashcardSet.language}
+                language={language}
                 isPaidUser={isPaidUser}
                 onPremiumClick={handleShowPaywall}
               />

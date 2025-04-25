@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getFlashcardSet } from "@/lib/learn";
 import { LANGUAGES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
 import LanguageClient from "./LanguageClient";
+import { getLanguageFlashcards } from "@/lib/learn/utils";
 
 type Props = {
   params: Promise<{
@@ -19,16 +19,16 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { language } = await params;
-  const flashcardSet = await getFlashcardSet(language);
+  const words = getLanguageFlashcards(language);
 
-  if (!flashcardSet) {
+  if (!words) {
     return {
       title: "Language Not Found",
     };
   }
 
-  const pageTitle = `${flashcardSet.language} Vocabulary Flashcards | Lingu.Africa`;
-  const description = `Learn ${flashcardSet.language} effectively with interactive flashcards featuring audio and images. Perfect for beginners and intermediate learners.`;
+  const pageTitle = `${words[0].language} Vocabulary Flashcards | Lingu.Africa`;
+  const description = `Learn ${words[0].language} effectively with interactive flashcards featuring audio and images. Perfect for beginners and intermediate learners.`;
   const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
 
   return {
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: languageImageUrl,
           width: 1200,
           height: 630,
-          alt: `${flashcardSet.language} Language Flashcards`,
+          alt: `${words[0].language} Language Flashcards`,
         },
       ],
       locale: "en_US",
@@ -68,11 +68,11 @@ export default async function LanguagePage({ params }: Props) {
     notFound();
   }
 
-  const flashcardSet = await getFlashcardSet(language);
+  const words = getLanguageFlashcards(language);
 
-  if (!flashcardSet) {
+  if (!words) {
     notFound();
   }
 
-  return <LanguageClient flashcardSet={flashcardSet} />;
+  return <LanguageClient words={words} />;
 }
