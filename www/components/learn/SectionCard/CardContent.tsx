@@ -25,8 +25,7 @@ export function CardContent({ section, isAccessible }: CardContentProps) {
         </div>
         <p className="text-base text-gray-400">{section.description}</p>
         <p className="text-sm text-gray-500 mt-2">
-          {wordsCount} {wordsCount === 1 ? "word" : "words"} to{" "}
-          {section.isReview ? "review" : "learn"}
+          {wordsCount} {wordsCount === 1 ? "flashcard" : "flashcards"}
         </p>
       </div>
 
