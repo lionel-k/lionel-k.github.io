@@ -52,13 +52,41 @@ export const sections: readonly Section[] = [
     order: 6,
     isReview: true,
   },
-
   {
     id: "numbers",
     title: "Numbers & Counting",
     description: "Learn to count and understand basic quantities.",
     isLocked: true,
     order: 7,
+  },
+  {
+    id: "actions",
+    title: "Action Words",
+    description: "Learn common verbs for everyday activities.",
+    isLocked: true,
+    order: 13,
+  },
+  {
+    id: "phrases",
+    title: "Simple Phrases",
+    description: "Learn useful phrases for daily conversations.",
+    isLocked: true,
+    order: 16,
+  },
+  {
+    id: "review-2",
+    title: "Progress Check",
+    description: "Review your growing vocabulary.",
+    isLocked: true,
+    order: 11,
+    isReview: true,
+  },
+  {
+    id: "feelings",
+    title: "Emotion Words",
+    description: "Build vocabulary for different feelings and emotions.",
+    isLocked: true,
+    order: 14,
   },
   {
     id: "colors",
@@ -73,37 +101,6 @@ export const sections: readonly Section[] = [
     description: "Build your food and meal vocabulary.",
     isLocked: true,
     order: 10,
-  },
-  {
-    id: "review-2",
-    title: "Progress Check",
-    description: "Review your growing vocabulary.",
-    isLocked: true,
-    order: 11,
-    isReview: true,
-  },
-
-  // Level 4 - Simple Actions
-  {
-    id: "actions",
-    title: "Action Words",
-    description: "Learn common verbs for everyday activities.",
-    isLocked: true,
-    order: 13,
-  },
-  {
-    id: "feelings",
-    title: "Emotion Words",
-    description: "Build vocabulary for different feelings and emotions.",
-    isLocked: true,
-    order: 14,
-  },
-  {
-    id: "phrases",
-    title: "Common Phrases",
-    description: "Learn useful phrases for daily conversations.",
-    isLocked: true,
-    order: 16,
   },
   {
     id: "review-3",
