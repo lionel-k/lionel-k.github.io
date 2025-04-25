@@ -369,11 +369,6 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       english: "hug",
       image: "/images/learn/hug.webp",
     },
-    kiss: {
-      id: "kiss",
-      english: "kiss",
-      image: "/images/learn/kiss.webp",
-    },
     kneel: {
       id: "kneel",
       english: "kneel",

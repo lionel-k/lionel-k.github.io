@@ -159,7 +159,6 @@ export const kirundi: LanguageTranslations = {
     clap: "gukoma amashi",
     crawl: "kwavura",
     hug: "kuyambira",
-    kiss: "gusoma",
     kneel: "gufukama",
     pull: "gukwega",
     push: "gusunika",
