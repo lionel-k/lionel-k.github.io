@@ -271,31 +271,6 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     eight: { id: "eight", english: "eight", image: "/images/learn/eight.webp" },
     nine: { id: "nine", english: "nine", image: "/images/learn/nine.webp" },
     ten: { id: "ten", english: "ten", image: "/images/learn/ten.webp" },
-    eleven: {
-      id: "eleven",
-      english: "eleven",
-      image: "/images/learn/eleven.webp",
-    },
-    twelve: {
-      id: "twelve",
-      english: "twelve",
-      image: "/images/learn/twelve.webp",
-    },
-    thirteen: {
-      id: "thirteen",
-      english: "thirteen",
-      image: "/images/learn/thirteen.webp",
-    },
-    fourteen: {
-      id: "fourteen",
-      english: "fourteen",
-      image: "/images/learn/fourteen.webp",
-    },
-    fifteen: {
-      id: "fifteen",
-      english: "fifteen",
-      image: "/images/learn/fifteen.webp",
-    },
   },
 
   actions: {
