@@ -121,7 +121,7 @@ export const kirundi: LanguageTranslations = {
     four_eggs: "amagi ane",
     four_cows: "inka zine",
     four_cups: "ibikombe bine",
-    four_children: "abana bans",
+    four_children: "abana bane",
     four_breads: "imikate ine",
     five_eggs: "amagi atanu",
     five_cows: "inka zitanu",
