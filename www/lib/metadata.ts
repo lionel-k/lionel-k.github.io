@@ -26,12 +26,20 @@ export type MetadataConfig = {
       alt: string;
       type: string;
     }>;
+    locale?: string;
+    countryName?: string;
   };
   twitter?: {
     title?: string;
     description?: string;
     images?: any;
     card?: "summary" | "summary_large_image";
+  };
+  other?: {
+    "geo.region"?: string;
+    "geo.placename"?: string;
+    "geo.position"?: string;
+    ICBM?: string;
   };
 };
 
@@ -112,6 +120,8 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       type: "website",
       siteName: SITE_NAME,
       images: [defaultOgImage],
+      locale: "en_US",
+      countryName: "United States",
     },
     twitter: {
       card: "summary_large_image",
@@ -119,6 +129,12 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       description:
         "Discover expert insights and practical tips on language learning and cultural diversity. Learn strategies to master new languages and embrace cultures.",
       images: [defaultOgImage],
+    },
+    other: {
+      "geo.region": "US",
+      "geo.placename": "United States",
+      "geo.position": "37.09024;-95.712891",
+      ICBM: "37.09024, -95.712891",
     },
   },
   terms: {
@@ -214,16 +230,15 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
     },
   },
   books: {
-    title: "Our Books | Lingu.Africa",
+    title: "African Language Books | Lingu.Africa",
     description:
-      "Explore our collection of bilingual African language books. Find stories in " +
-      getAvailableLanguageNames().join(" and ") +
-      ".",
+      "Explore our collection of bilingual African language books. Perfect for children and adults learning African languages.",
     keywords: [
-      "books",
-      "stories",
+      "African books",
+      "bilingual books",
+      "language learning",
+      "children's books",
       ...baseKeywords,
-      ...getAvailableLanguageNames(),
     ],
     canonical: getCanonicalUrl("/books"),
     alternates: {
@@ -232,22 +247,26 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
     openGraph: {
       title: "African Language Books | Lingu.Africa",
       description:
-        "Explore our collection of bilingual African language books. Find stories in " +
-        getAvailableLanguageNames().join(" and ") +
-        ".",
+        "Explore our collection of bilingual African language books. Perfect for children and adults learning African languages.",
       url: getCanonicalUrl("/books"),
       type: "website",
       siteName: SITE_NAME,
       images: [defaultOgImage],
+      locale: "en_US",
+      countryName: "United States",
     },
     twitter: {
       card: "summary_large_image",
       title: "African Language Books | Lingu.Africa",
       description:
-        "Explore our collection of bilingual African language books. Find stories in " +
-        getAvailableLanguageNames().join(" and ") +
-        ".",
+        "Explore our collection of bilingual African language books. Perfect for children and adults learning African languages.",
       images: [defaultOgImage],
+    },
+    other: {
+      "geo.region": "US",
+      "geo.placename": "United States",
+      "geo.position": "37.09024;-95.712891",
+      ICBM: "37.09024, -95.712891",
     },
   },
 };

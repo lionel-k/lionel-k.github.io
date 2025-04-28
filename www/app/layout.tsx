@@ -20,8 +20,21 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
+  alternates: {
+    canonical: "https://www.lingu.africa/",
+    languages: {
+      "en-US": "https://www.lingu.africa/",
+      "x-default": "https://www.lingu.africa/",
+    },
+  },
   other: {
-    "google-font-display": "swap",
+    "geo.region": "US",
+    "geo.placename": "United States",
+    "geo.position": "37.09024;-95.712891",
+  },
+  openGraph: {
+    locale: "en_US",
+    countryName: "United States",
   },
 };
 
@@ -31,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="h-full" suppressHydrationWarning>
+    <html lang="en-US" className="h-full" suppressHydrationWarning>
       <head>
         {/* Preload critical fonts for LCP improvement */}
         <link
@@ -71,6 +84,13 @@ export default function RootLayout({
         {/* Preconnect to domains we need to access */}
         <link rel="preconnect" href="https://analytics.lingu.africa" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* Geo-targeting meta tags */}
+        <meta name="geo.region" content="US" />
+        <meta name="geo.placename" content="United States" />
+        <meta name="geo.position" content="37.09024;-95.712891" />
+        <meta name="ICBM" content="37.09024, -95.712891" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:country-name" content="United States" />
         <Script id="hotjar" strategy="afterInteractive">
           {`
             (function(h,o,t,j,a,r){
