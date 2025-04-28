@@ -4,6 +4,7 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 import { visit, SKIP } from "unist-util-visit";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
@@ -93,6 +94,7 @@ export async function getBlogPost(slug: string): Promise<BlogPost | null> {
     // Convert MDX content to HTML with heading IDs
     const usedIds = new Set<string>();
     const processedContent = await remark()
+      .use(gfm) // Add GitHub Flavored Markdown support (including tables)
       .use(html, { sanitize: false })
       .use(() => (tree) => {
         let foundFirstH1 = false;
