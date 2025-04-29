@@ -4,9 +4,6 @@ import { useAuth } from "@/hooks/learn/useAuth";
 import { FlashcardWord } from "@/lib/learn/types";
 import { sections } from "@/lib/learn/sections";
 import { useRouter } from "next/navigation";
-import PaywallModal from "@/components/learn/PaywallModal";
-import SignInModal from "@/components/learn/SignInModal";
-import { useState, useEffect } from "react";
 import FlashcardGame from "@/components/learn/FlashcardGame/index";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
@@ -22,16 +19,6 @@ export default function SectionClient({ words, section }: Props) {
   const { email, isPaidUser, isLoading } = useAuth();
   const router = useRouter();
   const currentSection = sections.find((s) => s.id === section);
-  const [showPaywall, setShowPaywall] = useState(false);
-  const [showSignIn, setShowSignIn] = useState(false);
-
-  useEffect(() => {
-    if (currentSection?.isLocked && !isPaidUser) {
-      setShowPaywall(true);
-    } else {
-      setShowPaywall(false);
-    }
-  }, [currentSection?.isLocked, isPaidUser]);
 
   if (isLoading) {
     return <Loader />;
@@ -41,15 +28,6 @@ export default function SectionClient({ words, section }: Props) {
     router.push("/learn");
     return null;
   }
-
-  const handleSignInClick = () => {
-    setShowPaywall(false);
-    setShowSignIn(true);
-  };
-
-  const handleShowPaywall = () => {
-    setShowPaywall(true);
-  };
 
   const language = words[0].language;
 
@@ -68,20 +46,6 @@ export default function SectionClient({ words, section }: Props) {
 
   return (
     <div className="min-h-screen">
-      {showPaywall && (
-        <PaywallModal
-          onClose={() => setShowPaywall(false)}
-          email={email}
-          onSignInClick={handleSignInClick}
-        />
-      )}
-      {showSignIn && (
-        <SignInModal
-          onClose={() => {
-            setShowSignIn(false);
-          }}
-        />
-      )}
       <BreadcrumbNav items={breadcrumbItems} />
       <PageHeader
         title={currentSection.title}
@@ -95,7 +59,9 @@ export default function SectionClient({ words, section }: Props) {
           {currentSection.isLocked && !isPaidUser ? (
             <div className="flex justify-center">
               <button
-                onClick={handleShowPaywall}
+                onClick={() =>
+                  router.push(`/learn/${language.toLowerCase()}/pricing`)
+                }
                 className="inline-flex items-center gap-2 px-6 py-3 text-lg font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
               >
                 <Lock className="h-5 w-5" />

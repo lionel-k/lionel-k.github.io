@@ -9,21 +9,19 @@ type SectionCardProps = {
   section: (typeof sections)[number];
   language: string;
   isPaidUser: boolean;
-  onPremiumClick: () => void;
 };
 
 export default function SectionCard({
   section,
   language,
   isPaidUser,
-  onPremiumClick,
 }: SectionCardProps) {
   const router = useRouter();
   const isAccessible = !section.isLocked || isPaidUser;
 
   const handleClick = () => {
     if (!isAccessible) {
-      onPremiumClick();
+      router.push(`/learn/${language.toLowerCase()}/pricing`);
       return;
     }
     router.push(`/learn/${language.toLowerCase()}/${section.id}`);

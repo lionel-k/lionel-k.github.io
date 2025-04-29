@@ -6,9 +6,6 @@ import { sections } from "@/lib/learn/sections";
 import SectionCard from "@/components/learn/SectionCard/index";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
-import PaywallModal from "@/components/learn/PaywallModal";
-import SignInModal from "@/components/learn/SignInModal";
-import { useState } from "react";
 import PageHeader from "@/components/learn/PageHeader";
 
 type Props = {
@@ -17,21 +14,10 @@ type Props = {
 
 export default function LanguageClient({ words }: Props) {
   const { email, isPaidUser, isLoading } = useAuth();
-  const [showPaywall, setShowPaywall] = useState(false);
-  const [showSignIn, setShowSignIn] = useState(false);
 
   if (isLoading) {
     return <Loader />;
   }
-
-  const handleSignInClick = () => {
-    setShowPaywall(false);
-    setShowSignIn(true);
-  };
-
-  const handleShowPaywall = () => {
-    setShowPaywall(true);
-  };
 
   const language = words[0].language;
 
@@ -46,20 +32,6 @@ export default function LanguageClient({ words }: Props) {
 
   return (
     <div className="min-h-screen">
-      {showPaywall && (
-        <PaywallModal
-          onClose={() => setShowPaywall(false)}
-          email={email}
-          onSignInClick={handleSignInClick}
-        />
-      )}
-      {showSignIn && (
-        <SignInModal
-          onClose={() => {
-            setShowSignIn(false);
-          }}
-        />
-      )}
       <BreadcrumbNav items={breadcrumbItems} />
       <PageHeader
         title={`${language} Vocabulary`}
@@ -78,7 +50,6 @@ export default function LanguageClient({ words }: Props) {
                 section={section}
                 language={language}
                 isPaidUser={isPaidUser}
-                onPremiumClick={handleShowPaywall}
               />
             ))}
           </div>
