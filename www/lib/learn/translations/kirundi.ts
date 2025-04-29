@@ -14,7 +14,7 @@ export const kirundi: LanguageTranslations = {
     lamp: "itara",
     car: "imodoka",
     plate: "isahani",
-    dad: "papa",
+    dad: "data",
     door: "umuryango",
     window: "idirisha",
 
