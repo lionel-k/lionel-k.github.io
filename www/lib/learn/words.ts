@@ -45,10 +45,10 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       image: "/images/learn/umbrella.webp",
     },
     phone: { id: "phone", english: "phone", image: "/images/learn/phone.webp" },
-    computer: {
-      id: "computer",
-      english: "computer",
-      image: "/images/learn/computer.webp",
+    cup: {
+      id: "cup",
+      english: "cup",
+      image: "/images/learn/cup.webp",
     },
     backpack: {
       id: "backpack",
@@ -831,6 +831,14 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       id: "honey",
       english: "honey",
       image: "/images/learn/honey.webp",
+    },
+  },
+
+  household: {
+    computer: {
+      id: "computer",
+      english: "computer",
+      image: "/images/learn/computer.webp",
     },
   },
 };

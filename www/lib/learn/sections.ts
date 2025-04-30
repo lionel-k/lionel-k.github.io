@@ -103,11 +103,18 @@ export const sections: readonly Section[] = [
     order: 13,
   },
   {
+    id: "household",
+    title: "Household Items",
+    description: "Learn the names of household items.",
+    isLocked: true,
+    order: 14,
+  },
+  {
     id: "review-3",
     title: "Vocabulary Review",
     description: "Test your knowledge of all learned words & phrases.",
     isLocked: true,
-    order: 14,
+    order: 15,
     isReview: true,
   },
 ] as const;

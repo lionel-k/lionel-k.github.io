@@ -30,7 +30,7 @@ export const kirundi: LanguageTranslations = {
     mirror: "ikiyo",
     umbrella: "umutaka",
     phone: "itelefone",
-    computer: "inyabwonko",
+    cup: "igikombe",
     backpack: "isakoshi",
     chair: "intebe",
     key: "urupfunguruzo",
@@ -224,5 +224,8 @@ export const kirundi: LanguageTranslations = {
     salt: "umunyu",
     oil: "amavuta",
     honey: "ubuki",
+
+    // household
+    computer: "inyabwonko",
   },
 };
