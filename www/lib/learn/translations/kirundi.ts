@@ -160,7 +160,7 @@ export const kirundi: LanguageTranslations = {
     sentence_2: "data afise icupa",
     sentence_3: "yabu yuriye igiti",
     sentence_4: "bitariho ariko arakina",
-    sentence_5: "Karire ariga neza cane",
+    sentence_5: "karire ariga neza cane",
     sentence_6: "buname aherekeje digiri",
     sentence_7: "uyo muforoma avura neza",
     sentence_8: "petero yicaye ku buriri",
