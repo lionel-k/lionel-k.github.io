@@ -525,137 +525,36 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
     },
   },
 
-  phrases: {
-    mary_has_horse: {
-      id: "mary_has_horse",
-      english: "Mary has a horse",
-      image: "/images/learn/mary-has-horse.webp",
-    },
-    peter_eats_papaya: {
-      id: "peter_eats_papaya",
-      english: "Peter eats papaya",
-      image: "/images/learn/peter-eats-papaya.webp",
-    },
-    peter_eats_pumpkins: {
-      id: "peter_eats_pumpkins",
-      english: "Peter eats pumpkins",
-      image: "/images/learn/peter-eats-pumpkins.webp",
-    },
-    mary_eats_orange: {
-      id: "mary_eats_orange",
-      english: "Mary eats an orange",
-      image: "/images/learn/mary-eats-orange.webp",
-    },
-    peter_eats_eggplant: {
-      id: "peter_eats_eggplant",
-      english: "Peter eats eggplant",
-      image: "/images/learn/peter-eats-eggplant.webp",
-    },
-    mary_cooks_one_onion: {
-      id: "mary_cooks_one_onion",
-      english: "Mary cooks one onion",
-      image: "/images/learn/mary-cooks-one-onion.webp",
-    },
-    peter_pulls_one_shoe: {
-      id: "peter_pulls_one_shoe",
-      english: "Peter pulls one shoe",
-      image: "/images/learn/peter-pulls-one-shoe.webp",
-    },
-    mary_eats_two_oranges: {
-      id: "mary_eats_two_oranges",
-      english: "Mary eats two oranges",
-      image: "/images/learn/mary-eats-two-oranges.webp",
-    },
-    peter_drew_three_keys: {
-      id: "peter_drew_three_keys",
-      english: "Peter drew three keys",
-      image: "/images/learn/peter-drew-three-keys.webp",
-    },
-    mary_pushes_one_table: {
-      id: "mary_pushes_one_table",
-      english: "Mary pushes one table",
-      image: "/images/learn/mary-pushes-one-table.webp",
-    },
-    mary_eats_two_avocados: {
-      id: "mary_eats_two_avocados",
-      english: "Mary eats two avocados",
-      image: "/images/learn/mary-eats-two-avocados.webp",
-    },
-    peter_pulls_chicken: {
-      id: "peter_pulls_chicken",
-      english: "Peter pulls the chicken",
-      image: "/images/learn/peter-pulls-chicken.webp",
-    },
-    peter_eats_five_berries: {
-      id: "peter_eats_five_berries",
-      english: "Peter eats five berries",
-      image: "/images/learn/peter-eats-five-berries.webp",
-    },
-    mary_cooks_green_bananas: {
-      id: "mary_cooks_green_bananas",
-      english: "Mary cooks green bananas",
-      image: "/images/learn/mary-cooks-green-bananas.webp",
-    },
-    peter_cooks_three_tomatoes: {
-      id: "peter_cooks_three_tomatoes",
-      english: "Peter cooks three tomatoes",
-      image: "/images/learn/peter-cooks-three-tomatoes.webp",
-    },
-    mary_pushes_toy_house: {
-      id: "mary_pushes_toy_house",
-      english: "Mary pushes the toy house",
-      image: "/images/learn/mary-pushes-toy-house.webp",
-    },
-    mary_plays_with_mirror: {
-      id: "mary_plays_with_mirror",
-      english: "Mary plays with her mirror",
-      image: "/images/learn/mary-plays-with-mirror.webp",
-    },
-    peter_has_cat_and_sheep: {
-      id: "peter_has_cat_and_sheep",
-      english: "Peter has a cat and a sheep",
-      image: "/images/learn/peter-has-cat-and-sheep.webp",
-    },
-    mary_eats_peanuts_and_beans: {
-      id: "mary_eats_peanuts_and_beans",
-      english: "Mary eats peanuts and beans",
-      image: "/images/learn/mary-eats-peanuts-and-beans.webp",
-    },
-    peter_eats_guava_and_pumpkin: {
-      id: "peter_eats_guava_and_pumpkin",
-      english: "Peter eats guava and pumpkin",
-      image: "/images/learn/peter-eats-guava-and-pumpkin.webp",
-    },
-    mary_cooks_corn_and_potatoes: {
-      id: "mary_cooks_corn_and_potatoes",
-      english: "Mary cooks corn and potatoes",
-      image: "/images/learn/mary-cooks-corn-and-potatoes.webp",
-    },
-    peter_eats_pineapple_and_tomatoes: {
-      id: "peter_eats_pineapple_and_tomatoes",
-      english: "Peter eats pineapple and tomatoes",
-      image: "/images/learn/peter-eats-pineapple-and-tomatoes.webp",
-    },
-    mary_plays_with_three_toys_in_bed: {
-      id: "mary_plays_with_three_toys_in_bed",
-      english: "Mary plays with three toys in bed",
-      image: "/images/learn/mary-plays-with-three-toys-in-bed.webp",
-    },
-    peter_pulls_cat_and_chicken: {
-      id: "peter_pulls_cat_and_chicken",
-      english: "Peter pulls the cat and the chicken",
-      image: "/images/learn/peter-pulls-cat-and-chicken.webp",
-    },
-    mary_plays_with_bike_in_sun: {
-      id: "mary_plays_with_bike_in_sun",
-      english: "Mary plays with his bike in the sun",
-      image: "/images/learn/mary-plays-with-bike-in-sun.webp",
-    },
-    peter_plays_by_tree_and_clock: {
-      id: "peter_plays_by_tree_and_clock",
-      english: "Peter plays by the tree and looks at the clock",
-      image: "/images/learn/peter-plays-by-tree-and-clock.webp",
-    },
+  "sentences-1": {
+    ...Object.fromEntries(
+      Array.from({ length: 15 }, (_, i) => {
+        const num = i + 1;
+        return [
+          `sentence_${num}`,
+          {
+            id: `sentence_${num}`,
+            english: `sentence_${num}`,
+            image: `/images/learn/sentence-${num}.webp`,
+          },
+        ];
+      })
+    ),
+  },
+
+  "sentences-2": {
+    ...Object.fromEntries(
+      Array.from({ length: 15 }, (_, i) => {
+        const num = i + 16;
+        return [
+          `sentence_${num}`,
+          {
+            id: `sentence_${num}`,
+            english: `sentence_${num}`,
+            image: `/images/learn/sentence-${num}.webp`,
+          },
+        ];
+      })
+    ),
   },
 
   feelings: {
