@@ -5,10 +5,9 @@ import { FlashcardWord } from "@/lib/learn/types";
 import { sections } from "@/lib/learn/sections";
 import { useRouter } from "next/navigation";
 import FlashcardGame from "@/components/learn/FlashcardGame/index";
-import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
 import { Lock } from "lucide-react";
-import PageHeader from "@/components/learn/PageHeader";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
 type Props = {
   words: FlashcardWord[];
@@ -32,12 +31,8 @@ export default function SectionClient({ words, section }: Props) {
   const language = words[0].language;
 
   const breadcrumbItems = [
-    { name: "Home", href: "/" },
     { name: "Learn", href: "/learn" },
-    {
-      name: language,
-      href: `/learn/${language.toLowerCase()}`,
-    },
+    { name: language, href: `/learn/${language.toLowerCase()}` },
     {
       name: currentSection.title,
       href: `/learn/${language.toLowerCase()}/${section}`,
@@ -45,34 +40,43 @@ export default function SectionClient({ words, section }: Props) {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <BreadcrumbNav items={breadcrumbItems} />
-      <PageHeader
-        title={currentSection.title}
-        description={currentSection.description}
-        email={email}
-        isPaidUser={isPaidUser}
-      />
-      <section className="relative py-16 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]">
-        <div className="absolute inset-0 opacity-5 bg-repeat" />
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
+
+      <div className="flex-1 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]">
+        <div className="h-full flex items-center justify-center">
           {currentSection.isLocked && !isPaidUser ? (
-            <div className="flex justify-center">
+            <div className="max-w-md mx-auto p-8 text-center">
+              <div className="mb-6">
+                <Lock className="h-12 w-12 text-[#DAA520] mx-auto" />
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-2">
+                Premium Content Awaits!
+              </h2>
+              <p className="text-gray-400 mb-6">
+                Unlock this section and many more to continue your language
+                learning journey. Get access to all premium features and
+                content.
+              </p>
               <button
                 onClick={() =>
                   router.push(`/learn/${language.toLowerCase()}/pricing`)
                 }
-                className="inline-flex items-center gap-2 px-6 py-3 text-lg font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
+                className="group w-full inline-flex items-center justify-center gap-2 px-6 py-3 text-lg font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-all duration-300 transform hover:scale-105"
               >
-                <Lock className="h-5 w-5" />
+                <Lock className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
                 Unlock Premium Content
               </button>
+              <p className="mt-4 text-sm text-gray-500">
+                Join thousands of learners who have already unlocked their full
+                potential
+              </p>
             </div>
           ) : (
             <FlashcardGame words={words} />
           )}
         </div>
-      </section>
+      </div>
     </div>
   );
 }

@@ -65,26 +65,46 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   };
 
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex flex-col max-w-lg mx-auto px-4 py-2">
-      <ProgressBar progress={progress} />
-      <WordCard word={currentWord} />
-      <ImageGrid
-        options={options}
-        selectedAnswer={selectedAnswer}
-        currentWordId={currentWord.id}
-        onAnswer={handleAnswer}
-      />
-      {selectedAnswer && (
-        <FeedbackSection
-          selectedAnswer={selectedAnswer}
-          currentWordId={currentWord.id}
-          isLastWord={currentIndex === words.length - 1}
-          nextSection={nextSection}
-          onNext={handleNext}
-          onRestart={handleRestart}
-          onNextSection={handleNextSection}
-        />
-      )}
+    <div className="w-full max-w-4xl mx-auto h-full flex flex-col">
+      {/* Progress Bar */}
+      <div className="px-4 py-4">
+        <ProgressBar progress={progress} language={currentWord.language} />
+      </div>
+
+      {/* Main Game Area */}
+      <div className="flex-1 flex flex-col px-4">
+        {/* Word */}
+        <div className="pb-1">
+          <WordCard word={currentWord} />
+        </div>
+
+        <div className="flex-1 flex flex-col">
+          {/* Images */}
+          <div className="w-full max-w-3xl mx-auto mb-1">
+            <ImageGrid
+              options={options}
+              selectedAnswer={selectedAnswer}
+              currentWordId={currentWord.id}
+              onAnswer={handleAnswer}
+            />
+          </div>
+
+          {/* Feedback */}
+          {selectedAnswer && (
+            <div className="w-full max-w-3xl mx-auto">
+              <FeedbackSection
+                selectedAnswer={selectedAnswer}
+                currentWordId={currentWord.id}
+                isLastWord={currentIndex === words.length - 1}
+                nextSection={nextSection}
+                onNext={handleNext}
+                onRestart={handleRestart}
+                onNextSection={handleNextSection}
+              />
+            </div>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
