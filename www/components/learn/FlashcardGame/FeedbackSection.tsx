@@ -44,7 +44,7 @@ export default function FeedbackSection({
       ) : (
         <button
           onClick={onNext}
-          className="w-full py-3 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
+          className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
         >
           Next Word
         </button>
