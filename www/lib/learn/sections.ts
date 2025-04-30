@@ -5,6 +5,7 @@ export type Section = {
   isLocked: boolean;
   order: number;
   isReview?: boolean;
+  words?: string;
 };
 
 export const sections: readonly Section[] = [
@@ -74,25 +75,34 @@ export const sections: readonly Section[] = [
     order: 9,
   },
   {
-    id: "phrases",
-    title: "Simple Phrases",
-    description: "Learn useful phrases for daily conversations.",
+    id: "sentences_1",
+    title: "Simple Descriptions",
+    description: "Learn to describe objects and scenes in simple sentences.",
     isLocked: true,
     order: 10,
+    words: "phrases",
+  },
+  {
+    id: "sentences_2",
+    title: "More Descriptions",
+    description: "Practice describing more complex scenes and situations.",
+    isLocked: true,
+    order: 11,
+    words: "phrases_2",
   },
   {
     id: "feelings",
     title: "Emotions & Feelings",
     description: "Build vocabulary for different emotions and feelings.",
     isLocked: true,
-    order: 11,
+    order: 12,
   },
   {
     id: "review-2",
     title: "Progress Check",
     description: "Review your growing vocabulary.",
     isLocked: true,
-    order: 12,
+    order: 13,
     isReview: true,
   },
   {
@@ -100,21 +110,21 @@ export const sections: readonly Section[] = [
     title: "Food",
     description: "Build your food and meal vocabulary.",
     isLocked: true,
-    order: 13,
+    order: 14,
   },
   {
     id: "household",
     title: "Household Items",
     description: "Learn the names of household items.",
     isLocked: true,
-    order: 14,
+    order: 15,
   },
   {
     id: "review-3",
     title: "Vocabulary Review",
     description: "Test your knowledge of all learned words & phrases.",
     isLocked: true,
-    order: 15,
+    order: 16,
     isReview: true,
   },
 ] as const;
