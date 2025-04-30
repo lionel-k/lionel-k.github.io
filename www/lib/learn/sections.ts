@@ -76,19 +76,18 @@ export const sections: readonly Section[] = [
   },
   {
     id: "sentences-1",
-    title: "Simple Descriptions",
-    description: "Learn to describe objects and scenes in simple sentences.",
+    title: "First Sentences",
+    description:
+      "Learn your first complete sentences to describe what you see.",
     isLocked: true,
     order: 10,
-    words: "phrases",
   },
   {
     id: "sentences-2",
-    title: "More Descriptions",
-    description: "Practice describing more complex scenes and situations.",
+    title: "More Sentences",
+    description: "Build longer sentences to describe more complex situations.",
     isLocked: true,
     order: 11,
-    words: "phrases_2",
   },
   {
     id: "feelings",
