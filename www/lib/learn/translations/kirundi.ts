@@ -142,7 +142,6 @@ export const kirundi: LanguageTranslations = {
     sing: "kuririmba",
     read: "gusoma",
     draw: "gucapa",
-    write: "kwandika",
     play: "gukina",
     cook: "guteka",
     laugh: "gutwenga",
