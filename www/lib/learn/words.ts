@@ -518,6 +518,11 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
       english: "tickle",
       image: "/images/learn/tickle.webp",
     },
+    sweep: {
+      id: "sweep",
+      english: "sweep",
+      image: "/images/learn/sweep.webp",
+    },
   },
 
   phrases: {

@@ -153,6 +153,7 @@ export const kirundi: LanguageTranslations = {
     push: "gusunika",
     bath: "kwoga",
     tickle: "kudigadiga",
+    sweep: "gukubura",
 
     // phrases
     mary_has_horse: "Mariya arafise ifarasi.",
