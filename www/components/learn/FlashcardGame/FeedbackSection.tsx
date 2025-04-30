@@ -20,8 +20,6 @@ export default function FeedbackSection({
   onRestart,
   onNextSection,
 }: FeedbackSectionProps) {
-  const isCorrect = selectedAnswer === currentWordId;
-
   return (
     <div className="space-y-1">
       {isLastWord ? (
