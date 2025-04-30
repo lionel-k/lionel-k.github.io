@@ -75,7 +75,7 @@ export const sections: readonly Section[] = [
     order: 9,
   },
   {
-    id: "sentences_1",
+    id: "sentences-1",
     title: "Simple Descriptions",
     description: "Learn to describe objects and scenes in simple sentences.",
     isLocked: true,
@@ -83,7 +83,7 @@ export const sections: readonly Section[] = [
     words: "phrases",
   },
   {
-    id: "sentences_2",
+    id: "sentences-2",
     title: "More Descriptions",
     description: "Practice describing more complex scenes and situations.",
     isLocked: true,
