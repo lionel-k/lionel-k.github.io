@@ -23,7 +23,7 @@ export default function FeedbackSection({
   return (
     <div className="space-y-1">
       {isLastWord ? (
-        <div className="space-y-2">
+        <div className="space-y-2 mt-4">
           <button
             onClick={onRestart}
             className="w-full py-3 text-center font-semibold text-[#DAA520] bg-transparent border border-[#DAA520] hover:bg-[#DAA520]/10 rounded-lg transition-colors flex items-center justify-center"
