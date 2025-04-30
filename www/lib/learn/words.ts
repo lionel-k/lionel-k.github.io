@@ -1,5 +1,20 @@
 import { Word } from "./types";
 
+const generateSentenceEntries = (startNum: number, count: number) =>
+  Object.fromEntries(
+    Array.from({ length: count }, (_, i) => {
+      const num = startNum + i;
+      return [
+        `sentence_${num}`,
+        {
+          id: `sentence_${num}`,
+          english: `sentence_${num}`,
+          image: `/images/learn/sentence-${num}.webp`,
+        },
+      ];
+    })
+  );
+
 export const wordsBySection: Record<string, Record<string, Word>> = {
   basics: {
     mum: { id: "mum", english: "mum", image: "/images/learn/mum.webp" },
@@ -526,35 +541,11 @@ export const wordsBySection: Record<string, Record<string, Word>> = {
   },
 
   "sentences-1": {
-    ...Object.fromEntries(
-      Array.from({ length: 15 }, (_, i) => {
-        const num = i + 1;
-        return [
-          `sentence_${num}`,
-          {
-            id: `sentence_${num}`,
-            english: `sentence_${num}`,
-            image: `/images/learn/sentence-${num}.webp`,
-          },
-        ];
-      })
-    ),
+    ...generateSentenceEntries(1, 15),
   },
 
   "sentences-2": {
-    ...Object.fromEntries(
-      Array.from({ length: 15 }, (_, i) => {
-        const num = i + 16;
-        return [
-          `sentence_${num}`,
-          {
-            id: `sentence_${num}`,
-            english: `sentence_${num}`,
-            image: `/images/learn/sentence-${num}.webp`,
-          },
-        ];
-      })
-    ),
+    ...generateSentenceEntries(16, 15),
   },
 
   feelings: {
