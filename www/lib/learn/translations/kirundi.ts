@@ -158,7 +158,7 @@ export const kirundi: LanguageTranslations = {
     // sentences - 1
     sentence_1: "igiti caguye",
     sentence_2: "data afise icupa",
-    sentence_3: "yabu yuriye igiti",
+    sentence_3: "karori yuriye igiti",
     sentence_4: "jeneroza afise amahera",
     sentence_5: "karire ariga neza cane",
     sentence_6: "gatore aherekeje keza",
