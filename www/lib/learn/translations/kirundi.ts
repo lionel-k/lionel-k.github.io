@@ -7,7 +7,7 @@ export const kirundi: LanguageTranslations = {
     house: "inzu",
     tree: "igiti",
     ball: "umupira",
-    book: "igitabo",
+    book: "igitabu",
     sun: "izuba",
     mum: "mama",
     shoe: "ikirato",
