@@ -24,20 +24,6 @@ export default function FeedbackSection({
 
   return (
     <div className="space-y-1">
-      <div
-        className={`rounded-lg p-2 text-center ${
-          isCorrect ? "bg-[#2C2C2C]" : "bg-[#2C1A1A]"
-        }`}
-      >
-        {isCorrect ? (
-          <span className="text-sm">✨ Excellent! Keep going! 🎉</span>
-        ) : (
-          <span className="text-sm text-red-500">
-            ❌ The correct image is highlighted in gold!
-          </span>
-        )}
-      </div>
-
       {isLastWord ? (
         <div className="space-y-2">
           <button
