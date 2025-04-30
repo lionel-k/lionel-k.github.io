@@ -17,7 +17,7 @@ export const faqItems = [
   {
     question: "Is this just a guessing game?",
     answer:
-      "No! While it feels like a fun game, you're actually following a proven path to speak a language. In 1 month, you'll know 100+ common words. In 3 months, you'll make simple sentences. In 6 months, you can have basic conversations about daily life.",
+      "Not at all! While it feels like a fun game, you're actually learning through play - Our interactive approach combines entertainment with proven language learning methods. As you play, you naturally build your vocabulary and progress from simple words to complete sentences, making the journey both enjoyable and effective.",
   },
   {
     question: "What makes this different from other apps?",
