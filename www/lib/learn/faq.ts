@@ -2,7 +2,7 @@ export const faqItems = [
   {
     question: "How do I know I'll like what I'm buying?",
     answer:
-      "Try it for free first! And if you buy and don't like it, you get 30 days to ask for your money back. Just email hello@lingu.africa - no questions asked.",
+      "Try it for free first! And if you buy and don't like it, you get 14 days to ask for your money back. Just email hello@lingu.africa - no questions asked.",
   },
   {
     question: "What exactly will I learn?",
