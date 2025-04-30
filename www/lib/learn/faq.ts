@@ -7,12 +7,12 @@ export const faqItems = [
   {
     question: "What exactly will I learn?",
     answer:
-      "You'll learn everyday words first: food, animals, family, numbers. Then simple verbs like 'eat', 'walk', 'sleep'. Soon you'll make basic sentences like 'I eat bread' or 'The cat sleeps'. As you learn more, you'll talk about shopping, travel, work, and tell stories!",
+      "Our curriculum is carefully structured to build your language skills progressively. We start with essential vocabulary and gradually introduce more complex concepts, following established language learning principles.",
   },
   {
     question: "How does the learning work?",
     answer:
-      "We start super simple with basic words. Once you know these, we teach you actions. Then we help you make sentences using words you already know. It's like building with blocks - start small, then build bigger things! Each lesson builds on what you learned before.",
+      "Our method is based on proven language acquisition research. We use a structured approach where each lesson builds upon previous knowledge, ensuring a solid foundation for language mastery.",
   },
   {
     question: "Is this just a guessing game?",
@@ -22,11 +22,11 @@ export const faqItems = [
   {
     question: "What makes this different from other apps?",
     answer:
-      "We teach you real, useful language. No random words you'll never use. Everything connects to real life - ordering food, taking a taxi, greeting family, shopping at the market.",
+      "Our content is developed in collaboration with native speakers and language experts, following established academic principles. Every lesson is carefully crafted to ensure you're learning authentic, proper language structure.",
   },
   {
     question: "Will I get all future content too?",
     answer:
-      "Yes! Pay once, learn forever. You'll get all new words, lessons, and features we add. We're always adding more content based on what our learners need.",
+      "Yes! Pay once, learn forever. You'll get access to all new content and features as we continue to expand our curriculum based on academic research and user feedback.",
   },
 ];
