@@ -68,14 +68,14 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
     <div className="w-full max-w-4xl mx-auto h-full flex flex-col">
       {/* Progress Bar */}
       <div className="px-4 py-4">
-        <ProgressBar progress={progress} language={currentWord.language} />
+        <ProgressBar progress={progress} language={currentLanguage} />
       </div>
 
       {/* Main Game Area */}
       <div className="flex-1 flex flex-col px-4">
         {/* Word */}
         <div className="pb-1">
-          <WordCard word={currentWord} />
+          <WordCard word={currentWord} language={currentLanguage} />
         </div>
 
         <div className="flex-1 flex flex-col">

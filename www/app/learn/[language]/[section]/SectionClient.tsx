@@ -12,9 +12,13 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 type Props = {
   words: FlashcardWord[];
   section: string;
+  language: {
+    name: string;
+    slug: string;
+  };
 };
 
-export default function SectionClient({ words, section }: Props) {
+export default function SectionClient({ words, section, language }: Props) {
   const { email, isPaidUser, isLoading } = useAuth();
   const router = useRouter();
   const currentSection = sections.find((s) => s.id === section);
@@ -28,14 +32,12 @@ export default function SectionClient({ words, section }: Props) {
     return null;
   }
 
-  const language = words[0].language;
-
   const breadcrumbItems = [
     { name: "Learn", href: "/learn" },
-    { name: language, href: `/learn/${language.toLowerCase()}` },
+    { name: language.name, href: `/learn/${language.slug}` },
     {
       name: currentSection.title,
-      href: `/learn/${language.toLowerCase()}/${section}`,
+      href: `/learn/${language.slug}/${section}`,
     },
   ];
 
@@ -59,9 +61,7 @@ export default function SectionClient({ words, section }: Props) {
                 content.
               </p>
               <button
-                onClick={() =>
-                  router.push(`/learn/${language.toLowerCase()}/pricing`)
-                }
+                onClick={() => router.push(`/learn/${language.slug}/pricing`)}
                 className="group w-full inline-flex items-center justify-center gap-2 px-6 py-3 text-lg font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-all duration-300 transform hover:scale-105"
               >
                 <Lock className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />

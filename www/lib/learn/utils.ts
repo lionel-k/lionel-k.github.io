@@ -1,6 +1,6 @@
 import { FlashcardWord, Word } from "@/lib/learn/types";
 import { sections, Section } from "./sections";
-import { wordsBySection, getAllWords } from "./words";
+import { wordsBySection } from "./words";
 import { languageTranslations } from "./translations";
 
 export const shuffleArray = <T>(array: T[]): T[] => {
@@ -12,20 +12,20 @@ export const shuffleArray = <T>(array: T[]): T[] => {
   return shuffled;
 };
 
-const getWordsForReviewSection = (currentSection: Section): Word[] => {
+const getWordsForReviewSection = (currentSection: Section): string[] => {
   return sections
     .filter((s) => s.order <= currentSection.order && !s.isReview)
-    .flatMap((section) => Object.values(wordsBySection[section.id]));
+    .flatMap((section) => wordsBySection[section.id]);
 };
 
-const getWordsForRegularSection = (sectionId: string): Word[] => {
-  return Object.values(wordsBySection[sectionId]);
+const getWordsForRegularSection = (sectionId: string): string[] => {
+  return wordsBySection[sectionId];
 };
 
 export const getAvailableWords = (
   currentSection: Section,
   sectionId: string
-): Word[] => {
+): string[] => {
   return currentSection.isReview
     ? getWordsForReviewSection(currentSection)
     : getWordsForRegularSection(sectionId);
@@ -46,19 +46,16 @@ export const getSectionFlashcards = (
   const availableWords = getAvailableWords(currentSection, sectionId);
 
   const flashcards = availableWords
-    .map((word) => {
-      const translation = translations.translations[word.id];
+    .map((wordId) => {
+      const translation = translations.translations[wordId];
       if (!translation) {
-        console.warn(`No translation found for word: ${word.id}`);
+        console.warn(`No translation found for word: ${wordId}`);
         return null;
       }
 
       return {
-        id: word.id,
-        word: word.english,
+        id: wordId,
         translation,
-        language: translations.language,
-        image: word.image,
       };
     })
     .filter((word): word is FlashcardWord => word !== null);
@@ -83,29 +80,6 @@ export const getAudioPath = (language: string, wordId: string): string => {
   return `/audios/${language.toLowerCase()}/${wordId}.mp3`;
 };
 
-export const getLanguageFlashcards = (
-  language: string
-): FlashcardWord[] | null => {
-  const normalizedLanguage = language.toLowerCase();
-  const translations = languageTranslations[normalizedLanguage];
-
-  if (!translations) {
-    return null;
-  }
-
-  const words = getAllWords();
-  return Object.entries(words)
-    .map(([wordId, word]) => {
-      const translation = translations.translations[wordId];
-      if (!translation) return null;
-
-      return {
-        id: wordId,
-        word: word.english,
-        translation,
-        language: translations.language,
-        image: word.image,
-      };
-    })
-    .filter((word): word is FlashcardWord => word !== null);
+export const getImagePath = (wordId: string): string => {
+  return `/images/learn/${wordId}.webp`;
 };
