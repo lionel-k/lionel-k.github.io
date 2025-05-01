@@ -56,10 +56,10 @@ export default function PricingPage() {
             <div className="bg-[#1A1A1A] rounded-lg p-8 border border-[#DAA520]/20">
               <div className="flex flex-wrap items-baseline gap-2 mb-4">
                 <span className="text-2xl text-gray-500 line-through">
-                  €34.99
+                  €119
                 </span>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-4xl font-bold text-white">€24.99</span>
+                  <span className="text-4xl font-bold text-white">€99</span>
                   <span className="text-[#4CAF50] font-semibold">
                     one-time payment
                   </span>
