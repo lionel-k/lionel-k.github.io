@@ -72,5 +72,7 @@ export default async function SectionPage({ params }: Props) {
     notFound();
   }
 
-  return <SectionClient words={words} section={sectionId} />;
+  return (
+    <SectionClient words={words} section={sectionId} language={language} />
+  );
 }

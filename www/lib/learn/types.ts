@@ -2,8 +2,6 @@ import { sections } from "./sections";
 
 export type Word = {
   id: string;
-  english: string;
-  image: string;
 };
 
 export type LanguageTranslations = {
@@ -15,10 +13,7 @@ export type LanguageTranslations = {
 
 export interface FlashcardWord {
   id: string;
-  word: string;
   translation: string;
-  language: string;
-  image: string;
 }
 
 export type FlashcardSet = {

@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { LANGUAGES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
 import LanguageClient from "./LanguageClient";
-import { getLanguageFlashcards } from "@/lib/learn/utils";
 
 type Props = {
   params: Promise<{
@@ -19,16 +18,17 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { language } = await params;
-  const words = getLanguageFlashcards(language);
+  const languageObj = LANGUAGES.find((l) => l.slug === language);
 
-  if (!words) {
+  if (!languageObj) {
     return {
       title: "Language Not Found",
     };
   }
 
-  const pageTitle = `${words[0].language} Vocabulary Flashcards | Lingu.Africa`;
-  const description = `Learn ${words[0].language} effectively with interactive flashcards featuring audio and images. Perfect for beginners and intermediate learners.`;
+  const languageName = languageObj.name;
+  const pageTitle = `${languageName} Vocabulary Flashcards | Lingu.Africa`;
+  const description = `Learn ${languageName} effectively with interactive flashcards featuring audio and images. Perfect for beginners and intermediate learners.`;
   const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
 
   return {
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: languageImageUrl,
           width: 1200,
           height: 630,
-          alt: `${words[0].language} Language Flashcards`,
+          alt: `${languageName} Language Flashcards`,
         },
       ],
       locale: "en_US",
@@ -68,11 +68,5 @@ export default async function LanguagePage({ params }: Props) {
     notFound();
   }
 
-  const words = getLanguageFlashcards(language);
-
-  if (!words) {
-    notFound();
-  }
-
-  return <LanguageClient words={words} />;
+  return <LanguageClient language={languageObj} />;
 }

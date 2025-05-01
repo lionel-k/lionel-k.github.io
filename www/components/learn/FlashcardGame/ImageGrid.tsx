@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FlashcardWord } from "@/lib/learn/types";
+import { getImagePath } from "@/lib/learn/utils";
 
 type ImageGridProps = {
   options: FlashcardWord[];
@@ -35,8 +36,8 @@ export default function ImageGrid({
         >
           <div className="absolute inset-0 flex items-center justify-center">
             <Image
-              src={option.image}
-              alt={option.word}
+              src={getImagePath(option.id)}
+              alt={option.id}
               width={400}
               height={400}
               className="object-cover w-full h-full"

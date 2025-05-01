@@ -5,12 +5,12 @@ import { getAudioPath } from "@/lib/learn/utils";
 interface WordCardProps {
   word: {
     translation: string;
-    language: string;
     id: string;
   };
+  language: string;
 }
 
-export default function WordCard({ word }: WordCardProps) {
+export default function WordCard({ word, language }: WordCardProps) {
   const [audioError, setAudioError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function WordCard({ word }: WordCardProps) {
   const playAudio = async () => {
     try {
       setAudioError(null);
-      const audioPath = getAudioPath(word.language, word.id);
+      const audioPath = getAudioPath(language, word.id);
       const audio = new Audio(audioPath);
       await audio.play();
     } catch (error) {
