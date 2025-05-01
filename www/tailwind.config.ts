@@ -81,13 +81,48 @@ const config: Config = {
             height: "0",
           },
         },
+        "bounce-x": {
+          "0%, 100%": {
+            transform: "translateX(0)",
+          },
+          "50%": {
+            transform: "translateX(25%)",
+          },
+        },
+        "pulse-subtle": {
+          "0%, 100%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "0.7",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "bounce-x": "bounce-x 1s ease-in-out infinite",
+        "pulse-subtle": "pulse-subtle 2s ease-in-out infinite",
+      },
+      textShadow: {
+        DEFAULT: "0 1px 3px rgba(0, 0, 0, 0.3)",
+        sm: "0 1px 2px rgba(0, 0, 0, 0.2)",
+        lg: "0 2px 4px rgba(0, 0, 0, 0.4)",
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ matchUtilities, theme }: any) {
+      matchUtilities(
+        {
+          "text-shadow": (value: string) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    },
+  ],
 };
 export default config;
