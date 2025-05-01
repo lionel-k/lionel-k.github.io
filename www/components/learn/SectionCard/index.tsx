@@ -33,15 +33,16 @@ export default function SectionCard({
       className={`group relative aspect-video rounded-xl ${
         section.isReview
           ? "bg-gradient-to-br from-[#2A2010] to-[#3A3020]"
-          : "bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A]"
-      } p-8 text-left transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-[#DAA520]/10 border ${
-        section.isReview ? "border-[#DAA520]/30" : "border-[#DAA520]/20"
-      } overflow-hidden cursor-pointer hover:border-[#DAA520]/50 hover:bg-gradient-to-br ${
+          : "bg-gradient-to-br from-[#222222] to-[#2A2A2A]"
+      } p-8 text-left transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#DAA520]/20 border-2 ${
+        section.isReview ? "border-[#DAA520]/40" : "border-[#DAA520]/30"
+      } overflow-hidden cursor-pointer hover:border-[#DAA520]/60 hover:bg-gradient-to-br ${
         section.isReview
           ? "hover:from-[#3A3020] hover:to-[#4A4030]"
           : "hover:from-[#2A2A2A] hover:to-[#3A3A3A]"
-      }`}
+      } active:scale-[0.98] active:shadow-xl active:translate-y-0`}
     >
+      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
       <CardContent section={section} isAccessible={isAccessible} />
       <CardDecoration isReview={!!section.isReview} />
     </button>
