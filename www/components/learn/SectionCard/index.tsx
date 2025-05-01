@@ -32,11 +32,15 @@ export default function SectionCard({
       onClick={handleClick}
       className={`group relative aspect-video rounded-xl ${
         section.isReview
-          ? "bg-gradient-to-br from-[#2A1A1A] to-[#3A2A1A]"
+          ? "bg-gradient-to-br from-[#2A2010] to-[#3A3020]"
           : "bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A]"
-      } p-8 text-left transition-all duration-300 hover:scale-[1.02] border ${
-        section.isReview ? "border-[#DAA520]/20" : "border-[#DAA520]/10"
-      } overflow-hidden`}
+      } p-8 text-left transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-[#DAA520]/10 border ${
+        section.isReview ? "border-[#DAA520]/30" : "border-[#DAA520]/20"
+      } overflow-hidden cursor-pointer hover:border-[#DAA520]/50 hover:bg-gradient-to-br ${
+        section.isReview
+          ? "hover:from-[#3A3020] hover:to-[#4A4030]"
+          : "hover:from-[#2A2A2A] hover:to-[#3A3A3A]"
+      }`}
     >
       <CardContent section={section} isAccessible={isAccessible} />
       <CardDecoration isReview={!!section.isReview} />

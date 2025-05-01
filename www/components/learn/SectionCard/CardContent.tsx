@@ -18,13 +18,15 @@ export function CardContent({ section, isAccessible }: CardContentProps) {
             {section.title}
           </h3>
           {section.isReview && (
-            <span className="px-2 py-1 rounded-full bg-[#DAA520]/10 text-[#DAA520] text-xs font-medium">
+            <span className="px-2 py-1 rounded-full bg-[#DAA520]/20 text-[#DAA520] text-xs font-medium border border-[#DAA520]/30">
               Review
             </span>
           )}
         </div>
-        <p className="text-base text-gray-400">{section.description}</p>
-        <p className="text-sm text-gray-500 mt-2">
+        <p className="text-base text-gray-300 group-hover:text-gray-200 transition-colors">
+          {section.description}
+        </p>
+        <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors mt-2">
           {wordsCount} {wordsCount === 1 ? "flashcard" : "flashcards"}
         </p>
       </div>
@@ -38,7 +40,7 @@ export function CardContent({ section, isAccessible }: CardContentProps) {
             </span>
           </div>
         ) : (
-          <div className="text-sm text-gray-400">
+          <div className="text-sm font-medium text-gray-300 group-hover:text-[#DAA520] transition-colors">
             {section.isReview ? "Test your knowledge" : "Click to start"}
           </div>
         )}

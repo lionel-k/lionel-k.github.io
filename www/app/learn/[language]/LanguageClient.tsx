@@ -40,7 +40,7 @@ export default function LanguageClient({ words }: Props) {
         isPaidUser={isPaidUser}
       />
 
-      <section className="relative py-16 bg-[#0A0A0A]">
+      <section className="relative py-16 bg-[#111111]">
         <div className="absolute inset-0 opacity-5 bg-repeat" />
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
