@@ -11,12 +11,31 @@ export const shuffleArray = <T>(array: T[]): T[] => {
   return shuffled;
 };
 
+const getWordsForReviewSection = (
+  sectionId: string,
+  language: string
+): string[] => {
+  const currentSection = sections.find((s) => s.id === sectionId);
+  if (!currentSection) return [];
+
+  const sectionWords = getWordsBySection(language);
+  return sections
+    .filter((s) => s.order <= currentSection.order && !s.isReview)
+    .flatMap((section) => sectionWords[section.id] || []);
+};
+
 export const getAvailableWords = (
   sectionId: string,
   language: string
 ): string[] => {
+  const currentSection = sections.find((s) => s.id === sectionId);
+  if (!currentSection) return [];
+
   const sectionWords = getWordsBySection(language);
-  return sectionWords[sectionId] || [];
+
+  return currentSection.isReview
+    ? getWordsForReviewSection(sectionId, language)
+    : sectionWords[sectionId] || [];
 };
 
 export const getSectionFlashcards = (
@@ -30,8 +49,10 @@ export const getSectionFlashcards = (
     return null;
   }
 
-  const sectionWords = translations.filter(
-    (entry: WordEntry) => entry.section_id === sectionId
+  const availableWordIds = getAvailableWords(sectionId, language);
+
+  const sectionWords = translations.filter((entry: WordEntry) =>
+    availableWordIds.includes(entry.word_id)
   );
 
   const flashcards = sectionWords.map((entry) => ({
