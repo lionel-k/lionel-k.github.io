@@ -14,6 +14,7 @@ basics,spoon,ikiyiko
 basics,bottle,icupa
 basics,glass,ikirahuri
 basics,umbrella,umutaka
+
 objects,pen,ikaramu
 objects,clock,isaha
 objects,phone,itelefone
@@ -29,6 +30,7 @@ objects,bed,igitanda
 objects,house,inzu
 objects,cup,igikombe
 objects,key,urupfunguruzo
+
 animals,cow,inka
 animals,cat,akayabu
 animals,dog,imbwa
@@ -44,6 +46,7 @@ animals,sheep,intama
 animals,chicken,inkoko
 animals,bird,inyoni
 animals,mouse,imbeba
+
 fruits,figs,amufe
 fruits,passion-fruit,ibungo
 fruits,pineapple,inanasi
@@ -58,6 +61,7 @@ fruits,orange,umucungwe
 fruits,banana,umuhwi
 fruits,sugar-cane,umusigati
 fruits,mango,umwembe
+
 vegetables,beans,ibiharage
 vegetables,mushroom,ikizinu
 vegetables,green-banana,igitoke
@@ -77,6 +81,7 @@ vegetables,tomato,itomati
 vegetables,peas,ubushaza
 vegetables,rice,umuceri
 vegetables,pumpkin,umwungu
+
 numbers,zero,ubusa
 numbers,one,rimwe
 numbers,two,kabiri
@@ -88,6 +93,7 @@ numbers,seven,indwi
 numbers,eight,umunani
 numbers,nine,icenda
 numbers,ten,icumi
+
 counting,one-egg,igi rimwe
 counting,one-cow,inka imwe
 counting,one-cup,igikombe kimwe
@@ -113,6 +119,7 @@ counting,five-cows,inka zitanu
 counting,five-cups,ibikombe bitanu
 counting,five-children,abana batanu
 counting,five-breads,imikate itanu
+
 actions,walk,ciza ariko aratambuka
 actions,run,kagabo ariko ariruka
 actions,jump,kabura ariko arasimba
@@ -145,6 +152,7 @@ actions,pray,kabura ariko arasenga
 actions,think,keza ariko ariyunvira
 actions,wake-up,ciza ariko aravyuka
 actions,listen,kaneza ariko arunviriza
+
 sentences-1,sentence-1,igiti caguye
 sentences-1,sentence-2,data afise icupa
 sentences-1,sentence-3,ciza yuriye igiti
@@ -160,21 +168,23 @@ sentences-1,sentence-12,ciza ateruye ibitabu
 sentences-1,sentence-13,keza afise umukubuzo
 sentences-1,sentence-14,kabura afise abana batatu
 sentences-1,sentence-15,ciza ariko ariyoga mu maso
-sentences-2,sentence-16,data na mama bagiye ku kazi
-sentences-2,sentence-17,mama afise umutaka mu ntoke
-sentences-2,sentence-18,bucumi aroye kugura umuceri
-sentences-2,sentence-19,tereza ariko yoza amasahani
-sentences-2,sentence-20,jiriberi avuye kugura itara
+
+sentences-2,sentence-16,mama agiye ku kazi
+sentences-2,sentence-17,mama afise umutaka
+sentences-2,sentence-18,kamikazi yagaburiye abana umuceri
+sentences-2,sentence-19,keza ariko yoza amasahani
+sentences-2,sentence-20,ciza ariko aragura itara
 sentences-2,sentence-21,mama ariko aratonora igitoke
-sentences-2,sentence-22,kadoyi aje atuzaniye akayoga
+sentences-2,sentence-22,karorero aje atuzaniye akayoga
 sentences-2,sentence-23,wakana ariko araduza idarapo
-sentences-2,sentence-24,firipo araroba ifi mu kiyaga
+sentences-2,sentence-24,kabura ariko araroba ifi mu kiyaga
 sentences-2,sentence-25,abana bariko barakina umupira
 sentences-2,sentence-26,abana bariko barakina udusoro
 sentences-2,sentence-27,sogokuru yamaze gufata icicaro
-sentences-2,sentence-28,i muhira hariho akayabu gatoyi.
-sentences-2,sentence-29,yohani na yakobo barakina uruvuma
-sentences-2,sentence-30,berahino ariko arakina na basabose
+sentences-2,sentence-28,i muhira hariho akayabu.
+sentences-2,sentence-29,kamikazi ariko aravomera inanasi
+sentences-2,sentence-30,data avuye ku kazi
+
 feelings,afraid,ndafise ubwoba
 feelings,angry,ndashavuye
 feelings,bored,ndarambiwe
@@ -191,6 +201,7 @@ feelings,shy,ndafise isoni
 feelings,sick,ndarwaye
 feelings,thirsty,ndanyotewe
 feelings,tired,ndarushe
+
 food,rice,umuceri
 food,bread,umukate
 food,meat,inyama
@@ -223,11 +234,13 @@ food,food-1,umunyu
 food,food-1,amavuta
 food,food-1,ubuki
 food,honey,ubuki
+
 household,computer,inyabwonko
 household,knife,imbugita
 household,toothbrush,umujigiti
 household,broom,umukubuzo
 household,basket,igiseke
+
 kitchen,soap,isafuriya
 kitchen,soap,ipanu
 kitchen,soap,icaruzo
@@ -239,6 +252,15 @@ kitchen,soap,umunzane
 kitchen,knife,imbugita
 kitchen,soap,ipanu
 kitchen,soap,umudahara
+
 greetings,hello;amahoro
 greetings,bye,bayi
 greetings,thank-you,urakoze
+
+professions,soldier
+professions,priest
+professions,nun
+professions,teacher
+professions,doctor
+professions,nurse
+professions,driver
