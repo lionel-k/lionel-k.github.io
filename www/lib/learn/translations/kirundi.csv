@@ -113,30 +113,38 @@ counting,five-cows,inka zitanu
 counting,five-cups,ibikombe bitanu
 counting,five-children,abana batanu
 counting,five-breads,imikate itanu
-actions,walk,petero ariko aratambuka
-actions,run,jiriberi ariko ariruka
-actions,jump,petero ariko arasimba
-actions,eat,matayo ariko arafungura
-actions,drink,yohani ariko aranywa
-actions,sleep,rusiya araryamye
-actions,sit,petero aricaye
-actions,stand,masabo arahagaze
-actions,dance,buname ariko aratamba
-actions,sing,gatore ariko araririmba
+actions,walk,ciza ariko aratambuka
+actions,run,kagabo ariko ariruka
+actions,jump,kabura ariko arasimba
+actions,eat,karorero ariko arafungura
+actions,drink,ciza ariko aranywa
+actions,sleep,keza araryamye
+actions,sit,kagabo aricaye
+actions,stand,kabura arahagaze
+actions,dance,karorero ariko aratamba
+actions,sing,kaneza ariko araririmba
 actions,read,ciza ariko arasoma
-actions,draw,buname ariko aracapa
-actions,play,karire ariko arakina
+actions,draw,kagabo ariko aracapa
+actions,play,gatore ariko arakina
 actions,cook,mamawacu ariko arateka
 actions,cry,wakana ariko ararira
 actions,laugh,bucumi ariko aratwenga
-actions,clap,petero ariko arakoma amashi
-actions,crawl,berahino ariko aravura
-actions,hug,data arayambiriye mariya
-actions,pull,butoyi ariko arakwega
-actions,push,mariko ariko arusunika
-actions,bath,everina ariko aroga
+actions,clap,kabura ariko arakoma amashi
+actions,crawl,karorero ariko aravura
+actions,hug,data arayambiriye kamikazi
+actions,pull,kagabo ariko arakwega
+actions,push,muco ariko arusunika
+actions,bath,kamikazi ariko aroga
 actions,tickle,mama ariko aradigadiga
-actions,sweep,mariko ariko arakubura
+actions,sweep,karorero ariko arakubura
+actions,wash-hands,kamikazi ariko arakaraba
+actions,comb-hair,gatore ariko arasokoza
+actions,dress,kagabo ariko arambara
+actions,wait,kaneza ararindiriye
+actions,pray,kabura ariko arasenga
+actions,think,keza ariko ariyunvira
+actions,wake-up,ciza aravyutse
+actions,listen,kaneza ariko arunviriza
 sentences-1,sentence-1,igiti caguye
 sentences-1,sentence-2,data afise icupa
 sentences-1,sentence-3,karori yuriye igiti
