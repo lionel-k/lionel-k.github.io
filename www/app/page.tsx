@@ -74,20 +74,6 @@ export default async function Home() {
                 no prior language experience needed!
               </p>
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
-                <a
-                  href="https://www.producthunt.com/posts/lingu-africa?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-lingu&#0045;africa"
-                  target="_blank"
-                  className="w-full sm:w-auto"
-                >
-                  <img
-                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=944305&theme=light&t=1742490357236"
-                    alt="Lingu&#0046;Africa - Helping&#0032;African&#0032;parents&#0032;pass&#0032;down&#0032;language&#0032;and&#0032;culture | Product Hunt"
-                    style={{ width: "250px", height: "54px" }}
-                    width="250"
-                    height="54"
-                    className="mx-auto"
-                  />
-                </a>
                 <Link
                   href="#languages"
                   className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-lg hover:bg-[#B8860B] transition-all transform hover:scale-105"
