@@ -5,10 +5,15 @@ import { getAvailableWords } from "@/lib/learn/utils";
 type CardContentProps = {
   section: Section;
   isAccessible: boolean;
+  language: string;
 };
 
-export function CardContent({ section, isAccessible }: CardContentProps) {
-  const wordsCount = getAvailableWords(section, section.id).length;
+export function CardContent({
+  section,
+  isAccessible,
+  language,
+}: CardContentProps) {
+  const wordsCount = getAvailableWords(section.id, language).length;
 
   return (
     <div className="relative z-10 h-full flex flex-col">

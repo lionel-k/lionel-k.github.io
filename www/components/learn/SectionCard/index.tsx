@@ -21,10 +21,10 @@ export default function SectionCard({
 
   const handleClick = () => {
     if (!isAccessible) {
-      router.push(`/learn/${language.toLowerCase()}/pricing`);
+      router.push(`/learn/${language}/pricing`);
       return;
     }
-    router.push(`/learn/${language.toLowerCase()}/${section.id}`);
+    router.push(`/learn/${language}/${section.id}`);
   };
 
   return (
@@ -45,7 +45,11 @@ export default function SectionCard({
       } active:scale-[0.98] active:shadow-xl active:translate-y-0 focus:outline-none focus:ring-2 focus:ring-[#DAA520]/50 focus:ring-offset-2 focus:ring-offset-[#111111]`}
     >
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-      <CardContent section={section} isAccessible={isAccessible} />
+      <CardContent
+        section={section}
+        isAccessible={isAccessible}
+        language={language}
+      />
       <CardDecoration isReview={!!section.isReview} />
     </button>
   );

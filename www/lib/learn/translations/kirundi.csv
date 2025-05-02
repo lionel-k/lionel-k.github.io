@@ -1,0 +1,200 @@
+section_id,word_id,translation
+basics,mum,mama
+basics,house,inzu
+basics,tree,igiti
+basics,ball,umupira
+basics,book,igitabu
+basics,sun,izuba
+basics,shoe,ikirato
+basics,lamp,itara
+basics,car,umuduga
+basics,plate,isahani
+basics,dad,data
+basics,door,umuryango
+basics,window,idirisha
+objects,bike,ikinga
+objects,table,imeza
+objects,bed,igitanda
+objects,pen,ikaramu
+objects,clock,isaha
+objects,bottle,icupa
+objects,glass,ikirahuri
+objects,spoon,ikiyiko
+objects,mirror,ikiyo
+objects,umbrella,umutaka
+objects,phone,itelefone
+objects,cup,igikombe
+objects,backpack,isakoshi
+objects,chair,intebe
+objects,key,urupfunguruzo
+animals,cow,inka
+animals,cat,akayabu
+animals,dog,imbwa
+animals,fish,ifi
+animals,horse,ifarasi
+animals,frog,igikere
+animals,rabbit,urukwavu
+animals,duck,imbata
+animals,lion,intare
+animals,elephant,inzovu
+animals,goat,impene
+animals,sheep,intama
+animals,chicken,inkoko
+animals,bird,inyoni
+animals,mouse,imbeba
+fruits,figs,amufe
+fruits,passion-fruit,ibungo
+fruits,pineapple,inanasi
+fruits,lemon,indimu
+fruits,berries,inkere
+fruits,physalis,intumbaswa
+fruits,papaya,ipapayi
+fruits,guava,ipera
+fruits,avocado,ivoka
+fruits,peanut,ibiyoba
+fruits,orange,umucungwe
+fruits,banana,umuhwi
+fruits,sugar-cane,umusigati
+fruits,mango,umwembe
+vegetables,beans,ibiharage
+vegetables,mushroom,ikizinu
+vegetables,green-banana,igitoke
+vegetables,onion,igitunguru
+vegetables,garlic,igitunguru sumu
+vegetables,carrot,ikaroti
+vegetables,corn,ikigori
+vegetables,sweet-potato,ikijumbu
+vegetables,potato,ikiraya
+vegetables,green-beans,imikerera
+vegetables,wheat,ingano
+vegetables,eggplant,intore
+vegetables,chilli,ipiripiri
+vegetables,cabbage,ishu
+vegetables,soy,isoya
+vegetables,tomato,itomati
+vegetables,peas,ubushaza
+vegetables,rice,umuceri
+vegetables,pumpkin,umwungu
+numbers,zero,ubusa
+numbers,one,rimwe
+numbers,two,kabiri
+numbers,three,gatatu
+numbers,four,kane
+numbers,five,gatanu
+numbers,six,gatandatu
+numbers,seven,indwi
+numbers,eight,umunani
+numbers,nine,icenda
+numbers,ten,icumi
+counting,one-egg,igi rimwe
+counting,one-cow,inka imwe
+counting,one-cup,igikombe kimwe
+counting,one-child,umwana umwe
+counting,one-bread,umukate umwe
+counting,two-eggs,amagi abiri
+counting,two-cows,inka zibiri
+counting,two-cups,ibikombe bibiri
+counting,two-children,abana babiri
+counting,two-breads,imikate ibiri
+counting,three-eggs,amagi atatu
+counting,three-cows,inka zitatu
+counting,three-cups,ibikombe bitatu
+counting,three-children,abana batatu
+counting,three-breads,imikate itatu
+counting,four-eggs,amagi ane
+counting,four-cows,inka zine
+counting,four-cups,ibikombe bine
+counting,four-children,abana bane
+counting,four-breads,imikate ine
+counting,five-eggs,amagi atanu
+counting,five-cows,inka zitanu
+counting,five-cups,ibikombe bitanu
+counting,five-children,abana batanu
+counting,five-breads,imikate itanu
+actions,walk,petero ariko aratambuka
+actions,run,jiriberi ariko ariruka
+actions,jump,petero ariko arasimba
+actions,eat,matayo ariko arafungura
+actions,drink,yohani ariko aranywa
+actions,sleep,rusiya araryamye
+actions,sit,petero aricaye
+actions,stand,masabo arahagaze
+actions,dance,buname ariko aratamba
+actions,sing,gatore ariko araririmba
+actions,read,ciza ariko arasoma
+actions,draw,buname ariko aracapa
+actions,play,karire ariko arakina
+actions,cook,mamawacu ariko arateka
+actions,cry,wakana ariko ararira
+actions,laugh,bucumi ariko aratwenga
+actions,clap,petero ariko arakoma amashi
+actions,crawl,berahino ariko aravura
+actions,hug,data arayambiriye mariya
+actions,pull,butoyi ariko arakwega
+actions,push,mariko ariko arusunika
+actions,bath,everina ariko aroga
+actions,tickle,mama ariko aradigadiga
+actions,sweep,mariko ariko arakubura
+sentences-1,sentence-1,igiti caguye
+sentences-1,sentence-2,data afise icupa
+sentences-1,sentence-3,karori yuriye igiti
+sentences-1,sentence-4,jeneroza afise amahera
+sentences-1,sentence-5,karire ariga neza cane
+sentences-1,sentence-6,gatore aherekeje keza
+sentences-1,sentence-7,uyo muforoma avura neza
+sentences-1,sentence-8,petero yicaye ku buriri
+sentences-1,sentence-9,suzana yikoreye igiseke
+sentences-1,sentence-10,gatogato ateruye akayoya
+sentences-1,sentence-11,gatore aracari mu bitaro
+sentences-1,sentence-12,zakariya ateruye ibitabu
+sentences-1,sentence-13,doroteya afise umukubuzo
+sentences-1,sentence-14,fideri afise abana batatu
+sentences-1,sentence-15,ciza ariko ariyoga mu maso
+sentences-2,sentence-16,data na mama bagiye ku kazi
+sentences-2,sentence-17,mama afise umutaka mu ntoke
+sentences-2,sentence-18,bucumi aroye kugura umuceri
+sentences-2,sentence-19,tereza ariko yoza amasahani
+sentences-2,sentence-20,jiriberi avuye kugura itara
+sentences-2,sentence-21,mama ariko aratonora igitoke
+sentences-2,sentence-22,kadoyi aje atuzaniye akayoga
+sentences-2,sentence-23,wakana ariko araduza idarapo
+sentences-2,sentence-24,firipo araroba ifi mu kiyaga
+sentences-2,sentence-25,abana bariko barakina umupira
+sentences-2,sentence-26,abana bariko barakina udusoro
+sentences-2,sentence-27,sogokuru yamaze gufata icicaro
+sentences-2,sentence-28,i muhira hariho akayabu gatoyi.
+sentences-2,sentence-29,yohani na yakobo barakina uruvuma
+sentences-2,sentence-30,berahino ariko arakina na basabose
+feelings,afraid,ndafise ubwoba
+feelings,angry,ndashavuye
+feelings,bored,ndarambiwe
+feelings,calm,ndatekanye
+feelings,cold,ndakanye
+feelings,embarrassed,ndaramaye
+feelings,excited,ndashashaye
+feelings,happy,ndaryohewe
+feelings,hot,ndashushe
+feelings,hungry,ndashonje
+feelings,proud,ndahimbawe
+feelings,sad,ndababaye
+feelings,shy,ndafise isoni
+feelings,sick,ndarwaye
+feelings,thirsty,ndanyotewe
+feelings,tired,ndarushe
+food,rice,umuceri
+food,bread,umukate
+food,meat,inyama
+food,fish-food,ifi
+food,chicken-food,inkoko
+food,egg,igi
+food,soup,isupu
+food,salad,isalade
+food,milk,amata
+food,water,amazi
+food,tea,icayi
+food,coffee,ikawa
+food,sugar,isukari
+food,salt,umunyu
+food,oil,amavuta
+food,honey,ubuki
+household,computer,inyabwonko

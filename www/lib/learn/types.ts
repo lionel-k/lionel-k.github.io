@@ -2,6 +2,8 @@ import { sections } from "./sections";
 
 export type Word = {
   id: string;
+  section_id: string;
+  translation: string;
 };
 
 export type LanguageTranslations = {

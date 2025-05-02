@@ -2,128 +2,95 @@ export type Section = {
   id: string;
   title: string;
   description: string;
-  isLocked: boolean;
   order: number;
+  isLocked?: boolean;
   isReview?: boolean;
-  words?: string;
 };
 
-export const sections: readonly Section[] = [
+export const sections: Section[] = [
   {
     id: "basics",
-    title: "Essential First Words",
-    description:
-      "Master the most important words used in daily family conversations.",
-    isLocked: false,
+    title: "Basics",
+    description: "Learn the most common words and phrases",
     order: 1,
   },
   {
     id: "objects",
-    title: "Everyday Objects",
-    description: "Learn to recognize and name common items at home and school.",
-    isLocked: false,
+    title: "Objects",
+    description: "Learn words for everyday objects",
     order: 2,
   },
   {
     id: "animals",
-    title: "Animal Words",
-    description: "Know the names of pets and local wildlife.",
-    isLocked: true,
+    title: "Animals",
+    description: "Learn words for different animals",
     order: 3,
   },
   {
     id: "fruits",
-    title: "Fruit Names",
-    description: "Recognize and name fruits at markets and stores.",
-    isLocked: true,
+    title: "Fruits",
+    description: "Learn words for different fruits",
     order: 4,
   },
   {
     id: "vegetables",
-    title: "Vegetable Vocabulary",
-    description: "Learn to identify vegetables in any market.",
-    isLocked: true,
+    title: "Vegetables",
+    description: "Learn words for different vegetables",
     order: 5,
-  },
-  {
-    id: "review-1",
-    title: "First Vocabulary Check",
-    description: "Test your memory of the first set of words.",
-    isLocked: true,
-    order: 6,
-    isReview: true,
   },
   {
     id: "numbers",
     title: "Numbers",
-    description: "Master the basic numbers from zero to ten.",
-    isLocked: true,
-    order: 7,
+    description: "Learn basic numbers",
+    order: 6,
   },
   {
     id: "counting",
     title: "Counting",
-    description: "Learn to count objects.",
+    description: "Practice counting different objects",
+    order: 7,
     isLocked: true,
-    order: 8,
   },
   {
     id: "actions",
-    title: "Action Words",
-    description: "Learn common verbs for everyday activities.",
+    title: "Actions",
+    description: "Learn common action words",
+    order: 8,
     isLocked: true,
-    order: 9,
   },
   {
     id: "sentences-1",
-    title: "First Sentences",
-    description:
-      "Learn your first complete sentences to describe what you see.",
+    title: "Basic Sentences",
+    description: "Practice basic sentence structures",
+    order: 9,
     isLocked: true,
-    order: 10,
   },
   {
     id: "sentences-2",
     title: "More Sentences",
-    description: "Build longer sentences to describe more complex situations.",
+    description: "Practice more complex sentences",
+    order: 10,
     isLocked: true,
-    order: 11,
   },
   {
     id: "feelings",
-    title: "Emotions & Feelings",
-    description: "Build vocabulary for different emotions and feelings.",
+    title: "Feelings",
+    description: "Learn words for emotions and feelings",
+    order: 11,
     isLocked: true,
-    order: 12,
-  },
-  {
-    id: "review-2",
-    title: "Progress Check",
-    description: "Review your growing vocabulary.",
-    isLocked: true,
-    order: 13,
-    isReview: true,
   },
   {
     id: "food",
     title: "Food",
-    description: "Build your food and meal vocabulary.",
+    description: "Learn words for different foods",
+    order: 12,
     isLocked: true,
-    order: 14,
   },
   {
     id: "household",
-    title: "Household Items",
-    description: "Learn the names of household items.",
+    title: "Household",
+    description: "Learn words for household items",
+    order: 13,
     isLocked: true,
-    order: 15,
   },
-  {
-    id: "review-3",
-    title: "Vocabulary Review",
-    description: "Test your knowledge of all learned words & phrases.",
-    isLocked: true,
-    order: 16,
-    isReview: true,
-  },
-] as const;
+];

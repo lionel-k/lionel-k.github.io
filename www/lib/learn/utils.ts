@@ -1,7 +1,6 @@
-import { FlashcardWord, Word } from "@/lib/learn/types";
-import { sections, Section } from "./sections";
-import { wordsBySection } from "./words";
-import { languageTranslations } from "./translations";
+import { FlashcardWord } from "@/lib/learn/types";
+import { sections } from "./sections";
+import { getTranslations, getWordsBySection, WordEntry } from "./translations";
 
 export const shuffleArray = <T>(array: T[]): T[] => {
   const shuffled = [...array];
@@ -12,53 +11,33 @@ export const shuffleArray = <T>(array: T[]): T[] => {
   return shuffled;
 };
 
-const getWordsForReviewSection = (currentSection: Section): string[] => {
-  return sections
-    .filter((s) => s.order <= currentSection.order && !s.isReview)
-    .flatMap((section) => wordsBySection[section.id]);
-};
-
-const getWordsForRegularSection = (sectionId: string): string[] => {
-  return wordsBySection[sectionId];
-};
-
 export const getAvailableWords = (
-  currentSection: Section,
-  sectionId: string
+  sectionId: string,
+  language: string
 ): string[] => {
-  return currentSection.isReview
-    ? getWordsForReviewSection(currentSection)
-    : getWordsForRegularSection(sectionId);
+  const sectionWords = getWordsBySection(language);
+  return sectionWords[sectionId] || [];
 };
 
 export const getSectionFlashcards = (
   language: string,
   sectionId: string
 ): FlashcardWord[] | null => {
-  const normalizedLanguage = language.toLowerCase();
-  const translations = languageTranslations[normalizedLanguage];
+  const translations = getTranslations(language);
   const currentSection = sections.find((s) => s.id === sectionId);
 
   if (!translations || !currentSection) {
     return null;
   }
 
-  const availableWords = getAvailableWords(currentSection, sectionId);
+  const sectionWords = translations.filter(
+    (entry: WordEntry) => entry.section_id === sectionId
+  );
 
-  const flashcards = availableWords
-    .map((wordId) => {
-      const translation = translations.translations[wordId];
-      if (!translation) {
-        console.warn(`No translation found for word: ${wordId}`);
-        return null;
-      }
-
-      return {
-        id: wordId,
-        translation,
-      };
-    })
-    .filter((word): word is FlashcardWord => word !== null);
+  const flashcards = sectionWords.map((entry) => ({
+    id: entry.word_id,
+    translation: entry.translation,
+  }));
 
   return shuffleArray(flashcards);
 };
