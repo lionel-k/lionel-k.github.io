@@ -1,8 +1,13 @@
-import { LANGUAGES, SITE_NAME, SITE_URL } from "./constants";
+import { SITE_NAME, SITE_URL } from "./constants";
 
-// Get all available language names for keywords
-const getAvailableLanguageNames = () => {
-  return LANGUAGES.filter((lang) => !lang.comingSoon).map((lang) => lang.name);
+export const getTruncatedTitle = (title: string): string => {
+  const MAX_TITLE_LENGTH = 60;
+  const SITE_SUFFIX_LENGTH = 14; // " | Lingu.Africa"
+  const AVAILABLE_LENGTH = MAX_TITLE_LENGTH - SITE_SUFFIX_LENGTH;
+
+  return title.length > AVAILABLE_LENGTH
+    ? title.slice(0, AVAILABLE_LENGTH - 3) + "..."
+    : title;
 };
 
 export type MetadataConfig = {

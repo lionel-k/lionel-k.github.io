@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { languagesConfig } from "@/lib/languagesConfig";
 import BookPageClient from "./BookPageClient";
 import { SITE_URL } from "@/lib/constants";
+import { getTruncatedTitle } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const bookTitle = `${book.title} - ${languageData.name} Book`;
-  const metaTitle = bookTitle.length > 60 ? bookTitle.slice(0, 60) : bookTitle;
+  const metaTitle = getTruncatedTitle(bookTitle);
   const bookUrl = `${SITE_URL}/books/${language}/${slug}`;
   const coverImageUrl = `${SITE_URL}/images/${language}/${slug}/cover.png`;
   const metaDescription =

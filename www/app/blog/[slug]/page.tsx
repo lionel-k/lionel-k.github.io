@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import BlogPostClient from "@/app/blog/[slug]/BlogPostClient";
 import { getBlogPost, getAllBlogPosts } from "@/lib/blog";
+import { getTruncatedTitle } from "@/lib/metadata";
 
 interface StaticParams {
   slug: string;
@@ -47,8 +48,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Full URL for the article
     const articleUrl = `${baseUrl}/blog/${post.slug}`;
 
+    const metaTitle = getTruncatedTitle(post.title);
+
     return {
-      title: `${post.title}`,
+      title: metaTitle,
       description: post.description,
       metadataBase: new URL(baseUrl),
       authors: [{ name: authorName }],
