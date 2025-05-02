@@ -45,7 +45,7 @@ export type MetadataConfig = {
 
 // Shared social media image configuration
 const defaultOgImage = {
-  url: `${SITE_URL}/logo.png`,
+  url: `${SITE_URL}/logo.webp`,
   width: 1200,
   height: 1200,
   alt: "Lingu.Africa - Bilingual African Language Books",

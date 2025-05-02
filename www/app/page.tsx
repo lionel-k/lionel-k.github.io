@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Lingu.Africa",
     images: [
       {
-        url: `${SITE_URL}/logo.png`,
+        url: `${SITE_URL}/logo.webp`,
         width: 1200,
         height: 630,
       },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Lingu.Africa - Bilingual African Language Books",
     description:
       "Explore our collection of bilingual books in various African languages. Perfect for families worldwide.",
-    images: [`${SITE_URL}/logo.png`],
+    images: [`${SITE_URL}/logo.webp`],
     creator: "@lionel.kubwimana",
   },
 };

@@ -28,7 +28,7 @@ export function Navbar() {
         {/* Left-aligned logo */}
         <Link href="/" className="flex items-center space-x-2">
           <OptimizedImage
-            src="/logo.png"
+            src="/logo.webp"
             alt="Lingu.Africa Logo"
             className="h-6 w-6"
           />
