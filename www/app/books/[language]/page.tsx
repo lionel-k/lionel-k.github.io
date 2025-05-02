@@ -28,14 +28,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const pageTitle = `${languageData.name} Books - Bilingual African Language Books`;
   const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
+  const pageUrl = `${SITE_URL}/books/${language}`;
 
   return {
     title: pageTitle,
     description: languageData.description,
+    alternates: {
+      canonical: pageUrl,
+      languages: {
+        "en-US": pageUrl,
+        [languageData.locale]: pageUrl,
+        "x-default": pageUrl,
+      },
+    },
     openGraph: {
       title: pageTitle,
       description: languageData.description,
-      url: `${SITE_URL}/books/${language}`,
+      url: pageUrl,
       siteName: "Lingu.Africa",
       images: [
         {
