@@ -15,6 +15,7 @@ export default function WordCard({ word, language }: WordCardProps) {
 
   useEffect(() => {
     setAudioError(null);
+    playAudio();
   }, [word.id]);
 
   const playAudio = async () => {
