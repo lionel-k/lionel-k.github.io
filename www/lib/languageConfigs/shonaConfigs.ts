@@ -9,8 +9,8 @@ export const shonaConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          "Discover Shona First 100 Words for ages 0-6. Engage young minds with vibrant visuals and start their language journey today!",
-        long: "Want to introduce your child to Shona in a fun way? This First 100 Words book is perfect for young learners! Packed with vibrant pictures and easy-to-understand words, it makes learning Shona exciting and memorable. Each page encourages language development while sparking curiosity and joy. Help your child discover the beauty of Shona with this engaging learning tool!",
+          "Discover Shona First 100 Words for ages 0-6. Engage young minds with great visuals and start their language journey today!",
+        long: "Want to introduce your child to Shona in a fun way? This First 100 Words book is perfect for young learners! Packed with great pictures and easy-to-understand words, it makes learning Shona exciting and memorable. Each page encourages language development while sparking curiosity and joy. Help your child discover the beauty of Shona with this engaging learning tool!",
       },
       challenges: [
         "Limited Shona Resources: This book offers colorful pictures and simple words to make learning Shona easy and fun.",
@@ -148,7 +148,7 @@ export const shonaConfigs = {
       description: {
         short:
           "Discover Shona Action Verbs! Perfect for kids aged 0-6 to learn and play. Dive into fun language adventures now!",
-        long: "Want to make learning Shona exciting for your child? This Action Verbs book is the perfect choice! Filled with vibrant illustrations and simple words, it helps kids discover Shona action verbs in a fun way. Each page invites children to explore and understand everyday actions, building their language skills naturally. A delightful journey into the world of Shona awaits your little learner!",
+        long: "Want to make learning Shona exciting for your child? This Action Verbs book is the perfect choice! Filled with great illustrations and simple words, it helps kids discover Shona action verbs in a fun way. Each page invites children to explore and understand everyday actions, building their language skills naturally. A delightful journey into the world of Shona awaits your little learner!",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses colorful pictures and fun activities to keep kids excited about learning Shona action verbs.",
@@ -215,7 +215,7 @@ export const shonaConfigs = {
       description: {
         short:
           "Discover Animals in Shona! Perfect for kids 0-6, this book invites families to explore and learn together now!",
-        long: "Want a fun way for your child to learn Shona? This Animals book is the perfect choice! Filled with vibrant illustrations and simple Shona words, it makes learning enjoyable. Your child will discover the names of different animals while building language skills. Each page is crafted to inspire curiosity and help your child learn Shona in a playful and engaging way.",
+        long: "Want a fun way for your child to learn Shona? This Animals book is the perfect choice! Filled with great illustrations and simple Shona words, it makes learning enjoyable. Your child will discover the names of different animals while building language skills. Each page is crafted to inspire curiosity and help your child learn Shona in a playful and engaging way.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns Shona learning into an exciting adventure with animal stories and fun facts.",

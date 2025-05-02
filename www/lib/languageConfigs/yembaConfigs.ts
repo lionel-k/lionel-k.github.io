@@ -10,7 +10,7 @@ export const yembaConfigs = {
       description: {
         short:
           "Discover Yemba's First 100 Words for ages 0-6. Engage your child in fun learning. Start your language journey now!",
-        long: "Want to introduce your child to Yemba in a fun way? This First 100 Words book is perfect! Packed with vibrant illustrations and easy-to-read words, your child will delight in learning Yemba. Each page invites exploration and curiosity, making language learning a joyful experience that sparks a love for words. Help your child build a strong Yemba vocabulary with this engaging and educational book!",
+        long: "Want to introduce your child to Yemba in a fun way? This First 100 Words book is perfect! Packed with great illustrations and easy-to-read words, your child will delight in learning Yemba. Each page invites exploration and curiosity, making language learning a joyful experience that sparks a love for words. Help your child build a strong Yemba vocabulary with this engaging and educational book!",
       },
       challenges: [
         "Hard to Learn New Words: Our book teaches Yemba words with bright pictures, making learning easy and fun for kids.",
@@ -149,7 +149,7 @@ export const yembaConfigs = {
       description: {
         short:
           "Explore Yemba Action Verbs with your 0-6 year olds. Dive into fun learning and boost language skills today!",
-        long: "Want your child to learn Yemba in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and interactive exercises, it makes learning Yemba exciting. Each page introduces action verbs, helping your child expand their vocabulary while having fun. Foster language skills and cultural connection with this engaging resource that brings Yemba to life for young learners!",
+        long: "Want your child to learn Yemba in a fun way? This Action Verbs book is perfect! Filled with great illustrations and interactive exercises, it makes learning Yemba exciting. Each page introduces action verbs, helping your child expand their vocabulary while having fun. Foster language skills and cultural connection with this engaging resource that brings Yemba to life for young learners!",
       },
       challenges: [
         "Struggle with Verb Practice: Our book uses fun exercises with action verbs to make Yemba practice easy and exciting.",

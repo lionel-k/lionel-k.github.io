@@ -81,7 +81,7 @@ export const xhosaConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Xhosa Fruits And Vegetables in this vibrant book for ages 0-6. Inspire young learners today!",
+          "Discover Xhosa Fruits And Vegetables in this great book for ages 0-6. Inspire young learners today!",
         long: "Ufuna indlela emnandi yokunceda umntwana wakho afunde isiXhosa? Le ncwadi yeziqhamo nemifuno yenza kube lula kwaye kunomtsalane! Inezithombe ezimibalabala kunye nomxholo okutsalayo, umntwana wakho uya kuthanda ukufunda amagama amatsha. Iphepha ngalinye lenzelwe ukwenza ukufunda kube mnandi ngelixa kwakha izakhono zolwimi eziza kuhlala ubomi bonke.",
       },
       challenges: [
@@ -149,7 +149,7 @@ export const xhosaConfigs = {
       description: {
         short:
           "Discover Xhosa Action Verbs for ages 0-6. Engage young minds in learning with this interactive, fun-filled book!",
-        long: "Searching for an exciting way to introduce your child to Xhosa? This Action Verbs book is the perfect tool! Bursting with vibrant illustrations and captivating activities, your child will have fun discovering new words. Each page is crafted to spark joy in learning, helping your child build strong language skills and a lasting love for Xhosa.",
+        long: "Searching for an exciting way to introduce your child to Xhosa? This Action Verbs book is the perfect tool! Bursting with great illustrations and captivating activities, your child will have fun discovering new words. Each page is crafted to spark joy in learning, helping your child build strong language skills and a lasting love for Xhosa.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses action verbs to make learning Xhosa easy and fun with colorful pictures.",
@@ -293,7 +293,7 @@ export const xhosaConfigs = {
       description: {
         short:
           "Explore a Xhosa Bilingual Coloring Book for ages 3-6. Ignite creativity and language skills. Start coloring today!",
-        long: "Want to help your child learn Xhosa in a fun way? This Bilingual Coloring Book is perfect! Filled with vibrant illustrations and simple words, it makes learning Xhosa easy and exciting. Each page encourages creativity while teaching important language skills. Give your child the gift of language and a love for learning with this special book!",
+        long: "Want to help your child learn Xhosa in a fun way? This Bilingual Coloring Book is perfect! Filled with great illustrations and simple words, it makes learning Xhosa easy and exciting. Each page encourages creativity while teaching important language skills. Give your child the gift of language and a love for learning with this special book!",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Xhosa words with fun pictures and coloring activities.",

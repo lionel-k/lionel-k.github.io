@@ -154,7 +154,7 @@ export const somaliConfigs = {
       description: {
         short:
           "Discover Somali Action Verbs for ages 0-6. Engage and learn through fun activities. Start your child's learning journey today!",
-        long: "\"Do you want your child to learn Somali in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and exciting content, kids will enjoy discovering new Somali words. Each page turns learning into an adventure, helping your child build strong language skills while having fun. It's a fantastic tool for parents eager to support their child's language journey.\"",
+        long: "\"Do you want your child to learn Somali in a fun way? This Action Verbs book is perfect! Filled with great illustrations and exciting content, kids will enjoy discovering new Somali words. Each page turns learning into an adventure, helping your child build strong language skills while having fun. It's a fantastic tool for parents eager to support their child's language journey.\"",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses colorful pictures and games to make learning Somali action verbs exciting.",
@@ -225,7 +225,7 @@ export const somaliConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Somali animals in this charming book for ages 0-6. Spark curiosity and fun learning today!",
+          "Discover Somali animals in this charming book for ages 0-6. Spark curiosity and fun learning with colorful pictures and simple words today!",
         long: "Ma doonaysaa hab xiiso leh oo ilmahaaga uga caawiso barashada Af-Soomaaliga? Buuggan Xayawaanka ayaa ka dhigaya mid fudud oo xiiso leh! Sawirro midab leh iyo qoraal soo jiidasho leh, ilmuhu waxay ku raaxaysan doonaan barashada erayo cusub. Bog kasta wuxuu ka caawinayaa ilmahaaga inuu ku barto xayawaanka iyo luuqadda Somali, iyagoo dhisaya xirfado afeed oo waara.",
       },
       challenges: [

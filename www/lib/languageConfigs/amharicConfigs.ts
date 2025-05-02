@@ -76,8 +76,8 @@ export const amharicConfigs = {
       price: "$11.99",
       description: {
         short:
-          "Discover Fruits And Vegetables in Amharic for ages 0-6. Engage young minds today with vibrant learning!",
-        long: "Searching for a delightful way to introduce your child to Amharic? This Fruits and Vegetables book is perfect! With vibrant illustrations and fun content, children will enjoy discovering new Amharic words. Each page captivates young learners, making language acquisition enjoyable while enhancing vocabulary and fostering a lifelong love for learning. Perfect for curious minds eager to explore!",
+          "Discover Fruits And Vegetables in Amharic for ages 0-6. Engage young minds today with great learning!",
+        long: "Searching for a delightful way to introduce your child to Amharic? This Fruits and Vegetables book is perfect! With great illustrations and fun content, children will enjoy discovering new Amharic words. Each page captivates young learners, making language acquisition enjoyable while enhancing vocabulary and fostering a lifelong love for learning. Perfect for curious minds eager to explore!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful fruits and veggies to make learning Amharic exciting.",
@@ -143,8 +143,8 @@ export const amharicConfigs = {
       price: "$11.99",
       description: {
         short:
-          "Discover Amharic Action Verbs for ages 0-6. Engage young minds with vibrant words. Start learning today!",
-        long: "Want to make learning Amharic exciting for your child? This Action Verbs book is the perfect choice! Filled with vibrant illustrations and interactive content, it introduces kids to essential verbs in a fun way. Every page encourages language development, helping children confidently use Amharic words while having a great time. Discover a world of action and learning today!",
+          "Discover Amharic Action Verbs for ages 0-6. Engage young minds with great words. Start learning today!",
+        long: "Want to make learning Amharic exciting for your child? This Action Verbs book is the perfect choice! Filled with great illustrations and interactive content, it introduces kids to essential verbs in a fun way. Every page encourages language development, helping children confidently use Amharic words while having a great time. Discover a world of action and learning today!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful pictures and fun games to make learning Amharic exciting for kids.",
@@ -211,7 +211,7 @@ export const amharicConfigs = {
       description: {
         short:
           "\"Discover 'Animals' in Amharic! Ideal for ages 0-6. Engage young minds with this unique, fun learning adventure!\"",
-        long: "Looking for a fun way to help your child learn Amharic? This Animals book is the perfect choice! Filled with vibrant illustrations and simple words, it makes learning exciting. Your child will enjoy discovering new animal names while building essential language skills. Each page is crafted to engage young learners and make Amharic fun and memorable for a lifetime.",
+        long: "Looking for a fun way to help your child learn Amharic? This Animals book is the perfect choice! Filled with great illustrations and simple words, it makes learning exciting. Your child will enjoy discovering new animal names while building essential language skills. Each page is crafted to engage young learners and make Amharic fun and memorable for a lifetime.",
       },
       challenges: [
         "Boring Language Lessons: Our book uses animals to make learning Amharic exciting and fun for kids.",
@@ -344,7 +344,7 @@ export const amharicConfigs = {
       price: "$9.99",
       description: {
         short:
-          "Explore our unique Amharic Animals Coloring Book for ages 4-8. Ignite creativity and learn today!",
+          "Explore our unique Amharic Animals Coloring Book for ages 4-8. Ignite creativity and learn new words while having fun today!",
         long: "Looking for a fun way to help your child learn Amharic? This Animals Coloring Book is perfect! Filled with delightful animal illustrations, it makes learning new Amharic words exciting. Each page invites creativity while building language skills. Your child will enjoy coloring and discovering the names of their favorite animals in Amharic, making learning a joyful adventure!",
       },
       challenges: [

@@ -10,7 +10,7 @@ export const igboConfigs = {
       description: {
         short:
           "Igbo First 100 Words book for ages 0-6. Engage young minds and explore Igbo language together. Grab it now!",
-        long: "Want to introduce your child to the Igbo language? This First 100 Words book is perfect for young learners! Bursting with vibrant illustrations and simple words, it makes learning Igbo an exciting adventure. Each page is crafted to captivate your child's imagination, helping them build vocabulary and language skills that will grow with them. Start your child's journey in learning Igbo today!",
+        long: "Want to introduce your child to the Igbo language? This First 100 Words book is perfect for young learners! Bursting with great illustrations and simple words, it makes learning Igbo an exciting adventure. Each page is crafted to captivate your child's imagination, helping them build vocabulary and language skills that will grow with them. Start your child's journey in learning Igbo today!",
       },
       challenges: [
         "Trouble Remembering Words: Our book uses bright pictures to help kids remember Igbo words easily.",
@@ -202,7 +202,7 @@ export const igboConfigs = {
         {
           question: "What makes this book unique?",
           answer:
-            "This book uses vibrant images and simple language. It's a great tool for making language learning enjoyable for kids.",
+            "This book uses great images and simple language. It's a great tool for making language learning enjoyable for kids.",
         },
         {
           question:
@@ -293,7 +293,7 @@ export const igboConfigs = {
       description: {
         short:
           "Igbo Bilingual Coloring Book for ages 3-6. Discover colors and words! Spark creativity and language skills today!",
-        long: "Looking for a fun way to help your child learn Igbo? This Bilingual Coloring Book offers an exciting journey! With vibrant illustrations and simple words, kids will enjoy discovering new Igbo vocabulary. Each page is crafted to make learning fun and interactive, helping your child build lasting language skills while sparking creativity and curiosity.",
+        long: "Looking for a fun way to help your child learn Igbo? This Bilingual Coloring Book offers an exciting journey! With great illustrations and simple words, kids will enjoy discovering new Igbo vocabulary. Each page is crafted to make learning fun and interactive, helping your child build lasting language skills while sparking creativity and curiosity.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns Igbo learning into a fun adventure with colorful pages and easy words.",
@@ -365,7 +365,7 @@ export const igboConfigs = {
       description: {
         short:
           "Igbo Animals Coloring Book for ages 4-8. Discover and color! Ignite creativity and learning. Get yours today!",
-        long: "Searching for a playful way to teach your child Igbo? This Animals Coloring Book is perfect! With vibrant illustrations and simple words, your child will enjoy discovering new Igbo vocabulary. Each page combines fun and learning, helping kids connect with language through their favorite animals. It's a delightful tool for enhancing language skills while sparking creativity and curiosity.",
+        long: "Searching for a playful way to teach your child Igbo? This Animals Coloring Book is perfect! With great illustrations and simple words, your child will enjoy discovering new Igbo vocabulary. Each page combines fun and learning, helping kids connect with language through their favorite animals. It's a delightful tool for enhancing language skills while sparking creativity and curiosity.",
       },
       challenges: [
         "Boring Language Lessons: Our book turns Igbo learning into a fun adventure with animal pictures to color.",

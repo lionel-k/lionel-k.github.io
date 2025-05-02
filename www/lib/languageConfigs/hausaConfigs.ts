@@ -9,8 +9,8 @@ export const hausaConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          "Discover Hausa First 100 Words for ages 0-6! Engage young minds with vibrant visuals. Start learning today!",
-        long: "Searching for a fun way to teach your child Hausa? This First 100 Words book offers an exciting language adventure! Filled with vibrant illustrations and engaging activities, kids will delight in discovering new words. Each page is crafted to make learning enjoyable, helping your child build essential language skills in Hausa that will last a lifetime.",
+          "Discover Hausa First 100 Words for ages 0-6! Engage young minds with great visuals. Start learning today!",
+        long: "Searching for a fun way to teach your child Hausa? This First 100 Words book offers an exciting language adventure! Filled with great illustrations and engaging activities, kids will delight in discovering new words. Each page is crafted to make learning enjoyable, helping your child build essential language skills in Hausa that will last a lifetime.",
       },
       challenges: [
         "Limited Language Resources: This book gives kids a fun way to learn Hausa with colorful pictures and easy words.",
@@ -153,8 +153,8 @@ export const hausaConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Hausa Action Verbs with your 0-6 year olds! Engage young minds in dynamic learning today!",
-        long: "Want to make learning Hausa fun for your child? This Action Verbs book is the perfect choice! With vibrant illustrations and interactive content, your child will enjoy discovering new verbs. Each page is crafted to engage young minds while enhancing their Hausa vocabulary and language skills. A joyful journey awaits, turning learning into an exciting adventure for your little one!",
+          "Discover Hausa Action Verbs with your 0-6 year olds! Engage young minds in dynamic learning with colorful pictures and fun activities today!",
+        long: "Want to make learning Hausa fun for your child? This Action Verbs book is the perfect choice! With great illustrations and interactive content, your child will enjoy discovering new verbs. Each page is crafted to engage young minds while enhancing their Hausa vocabulary and language skills. A joyful journey awaits, turning learning into an exciting adventure for your little one!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful pictures to make learning Hausa action verbs exciting and fun.",

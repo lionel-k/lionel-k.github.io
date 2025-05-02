@@ -9,8 +9,8 @@ export const twiConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          "Explore Twi with this vibrant First 100 Words book for ages 0-6. Spark curiosity and language skills today!",
-        long: "Want to introduce your child to Twi? This First 100 Words book is perfect for making learning fun! Filled with vibrant illustrations and easy-to-understand words, it captures your child's imagination while teaching essential Twi vocabulary. Each page is crafted to spark curiosity and build language skills, ensuring a joyful and educational experience for your little one.",
+          "Explore Twi with this great First 100 Words book for ages 0-6. Spark curiosity and language skills today!",
+        long: "Want to introduce your child to Twi? This First 100 Words book is perfect for making learning fun! Filled with great illustrations and easy-to-understand words, it captures your child's imagination while teaching essential Twi vocabulary. Each page is crafted to spark curiosity and build language skills, ensuring a joyful and educational experience for your little one.",
       },
       challenges: [
         "Hard to Learn New Words: This book uses pictures to make learning Twi words easy and fun for kids.",
@@ -225,8 +225,8 @@ export const twiConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Explore Animals in Twi for ages 0-6. Discover vibrant stories and learn together. Dive into fun today!",
-        long: "Want a fun way to help your child learn Twi? This Animals book is perfect! Filled with vibrant pictures and simple Twi words, kids will enjoy discovering the animals of the world. Each page is designed to make learning exciting, helping your child build language skills while having fun with their new animal friends. It's a great tool for making Twi learning an adventure!",
+          "Explore Animals in Twi for ages 0-6. Discover great stories and learn together. Dive into fun today!",
+        long: "Want a fun way to help your child learn Twi? This Animals book is perfect! Filled with great pictures and simple Twi words, kids will enjoy discovering the animals of the world. Each page is designed to make learning exciting, helping your child build language skills while having fun with their new animal friends. It's a great tool for making Twi learning an adventure!",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Twi words with animal pictures and sounds, making it easy and fun.",
@@ -298,7 +298,7 @@ export const twiConfigs = {
       description: {
         short:
           "Discover our Twi Bilingual Coloring Book for ages 3-6. Spark creativity and language skills. Grab your copy today!",
-        long: "Want a fun way for your child to learn Twi? This Bilingual Coloring Book is perfect! Filled with vibrant images and simple words, it makes learning exciting. Each page helps kids discover new Twi vocabulary while coloring. It's a joyful journey that builds language skills and creativity, making learning Twi a delightful adventure for young minds.",
+        long: "Want a fun way for your child to learn Twi? This Bilingual Coloring Book is perfect! Filled with great images and simple words, it makes learning exciting. Each page helps kids discover new Twi vocabulary while coloring. It's a joyful journey that builds language skills and creativity, making learning Twi a delightful adventure for young minds.",
       },
       challenges: [
         "Hard to Learn Twi Words: Our book uses pictures to make learning Twi words easy and fun for kids.",
@@ -369,7 +369,7 @@ export const twiConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Explore the Twi Animals Coloring Book! Perfect for ages 4-8. Unleash creativity and learn today!",
+          "Explore the Twi Animals Coloring Book! Perfect for ages 4-8. Unleash creativity and learn new words while having fun today!",
         long: "Looking for an exciting way to help your child learn Twi? This Animals Coloring Book is perfect! With delightful animal illustrations, your child will enjoy coloring while learning Twi words. Each page offers fun and educational content, helping kids build language skills. It's a joyful learning journey that makes language come alive, keeping your child engaged and excited to learn.",
       },
       challenges: [

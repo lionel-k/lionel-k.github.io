@@ -8,7 +8,8 @@ export const xhosaConfigs = {
       pages: "52",
       price: "$ 12.99",
       description: {
-        short: "Learn first 100 words in xhosa with this book for ages 0-6.",
+        short:
+          "Discover your first 100 Xhosa words with this engaging book for ages 0-6. Perfect for starting your child's language journey!",
         long: "This first 100 words book helps children learn xhosa through engaging content. With 52 pages of educational material, it's perfect for ages 0-6. Priced at $12.99, this book makes learning xhosa fun and accessible.",
       },
       challenges: [
@@ -148,7 +149,7 @@ export const xhosaConfigs = {
       description: {
         short:
           "Discover Xhosa Action Verbs! Perfect for kids 0-6. Engage young minds with fun and learn through play today!",
-        long: "Want to make learning Xhosa fun for your child? This Action Verbs book is the perfect way! Filled with vibrant illustrations and interactive activities, it introduces essential Xhosa verbs in an exciting way. Each page sparks curiosity and helps your little one build strong language skills. Discover a world of action words that make learning Xhosa an adventure for young minds!",
+        long: "Want to make learning Xhosa fun for your child? This Action Verbs book is the perfect way! Filled with great illustrations and interactive activities, it introduces essential Xhosa verbs in an exciting way. Each page sparks curiosity and helps your little one build strong language skills. Discover a world of action words that make learning Xhosa an adventure for young minds!",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses action verbs to make learning Xhosa easy and exciting for kids.",
@@ -215,7 +216,7 @@ export const xhosaConfigs = {
       description: {
         short:
           "Explore Animals in Xhosa! Perfect for kids aged 0-6. Dive into fun learning and spark their curiosity today!",
-        long: "Want to make learning Xhosa fun for your child? This Animals book is the perfect choice! Packed with vibrant pictures and easy-to-understand words, it introduces kids to the world of animals in Xhosa. Each page brings new excitement and helps build strong language skills. Watch your child's curiosity grow as they discover animals and learn Xhosa in a joyful way!",
+        long: "Want to make learning Xhosa fun for your child? This Animals book is the perfect choice! Packed with great pictures and easy-to-understand words, it introduces kids to the world of animals in Xhosa. Each page brings new excitement and helps build strong language skills. Watch your child's curiosity grow as they discover animals and learn Xhosa in a joyful way!",
       },
       challenges: [
         "Hard to Remember Words: Our book uses animal stories to help kids remember Xhosa words easily.",
@@ -281,7 +282,7 @@ export const xhosaConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Learn bilingual coloring book in xhosa with this book for ages 3-6.",
+          "Discover a Xhosa Bilingual Coloring Book for ages 3-6. Learn essential words while coloring fun pictures. Start your language journey today!",
         long: "This bilingual coloring book book helps children learn xhosa through engaging content. With 58 pages of educational material, it's perfect for ages 3-6. Priced at $11.99, this book makes learning xhosa fun and accessible.",
       },
       challenges: [
@@ -347,7 +348,7 @@ export const xhosaConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Learn animals coloring book in xhosa with this book for ages 4-8.",
+          "Explore Xhosa culture with our Animals Coloring Book for ages 4-8. Ignite creativity and learn new words while having fun today!",
         long: "This animals coloring book book helps children learn xhosa through engaging content. With 83 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning xhosa fun and accessible.",
       },
       challenges: [
@@ -420,7 +421,7 @@ export const xhosaConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Learn fruits and vegetables coloring book in xhosa with this book for ages 4-8.",
+          "Explore Xhosa language with our Fruits and Vegetables Coloring Book for ages 4-8. Ignite creativity and learn new words today!",
         long: "This fruits and vegetables coloring book book helps children learn xhosa through engaging content. With 71 pages of educational material, it's perfect for ages 4-8. Priced at $9.99, this book makes learning xhosa fun and accessible.",
       },
       challenges: [

@@ -365,7 +365,7 @@ export const swahiliConfigs = {
       challenges: [
         "Limited Swahili Resources: Our book offers a fun way to learn Swahili with colorful animal pictures and simple words.",
         "Boring Language Lessons: This coloring book makes learning Swahili exciting with engaging activities that kids enjoy.",
-        "Hard to Keep Kids Focused: The book captures attention with vibrant animal images, making Swahili learning easy and fun.",
+        "Hard to Keep Kids Focused: The book captures attention with great animal images, making Swahili learning easy and fun.",
       ],
       whyChoose: [
         "Fun Animal Adventures: Kids explore animals while learning Swahili words, making language fun and exciting.",
@@ -426,8 +426,8 @@ export const swahiliConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Fruits And Vegetables Coloring Book ya Kiswahili kwa watoto wa miaka 4-8. Jifunze na ucheze sasa!",
-        long: "Unatafuta njia ya kufurahisha kumfundisha mtoto wako Kiswahili? Kitabu hiki cha Kuchora Matunda na Mboga ni njia rahisi na ya kufurahisha! Picha za kupendeza na maudhui yanayovutia yatamsaidia mtoto wako kujifunza maneno mapya. Kila ukurasa umebuniwa ili kujenga ujuzi wa lugha kwa njia ya kufurahisha na kuelimisha, akifurahia rangi na maneno.",
+          "Discover our Swahili-English Fruits and Vegetables Coloring Book for kids 4-8. Learn words while having fun coloring!",
+        long: "Looking for a fun way to teach your child Swahili? This Fruits and Vegetables Coloring Book is the perfect educational tool! With engaging illustrations and interactive content, your child will love learning new vocabulary. Each page is thoughtfully designed to build language skills through enjoyable and educational activities, combining the fun of coloring with word learning.",
       },
       challenges: [
         "Bored with Regular Learning: Our book turns Swahili lessons into exciting coloring adventures with fruits and veggies.",

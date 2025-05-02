@@ -10,7 +10,7 @@ export const oromoConfigs = {
       description: {
         short:
           "Discover the First 100 Words in Oromo for ages 0-6. Engage young minds and start their language journey today!",
-        long: "Want to introduce your child to Oromo in a fun way? This First 100 Words book is perfect! Packed with vibrant pictures and simple words, it makes learning Oromo exciting. Each word comes with an illustration that helps kids connect images to words, making language learning natural and enjoyable. Give your child the gift of language skills that will grow with them!",
+        long: "Want to introduce your child to Oromo in a fun way? This First 100 Words book is perfect! Packed with great pictures and simple words, it makes learning Oromo exciting. Each word comes with an illustration that helps kids connect images to words, making language learning natural and enjoyable. Give your child the gift of language skills that will grow with them!",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses bright pictures to help kids learn Oromo words easily and quickly.",
@@ -82,7 +82,7 @@ export const oromoConfigs = {
       description: {
         short:
           "\"Discover 'Fruits And Vegetables' in Oromo for ages 0-6. Engage young minds with colorful, fun learning today!\"",
-        long: "Want to help your child learn Oromo with joy? This Fruits And Vegetables book is the perfect choice! Filled with vibrant illustrations, it introduces your child to new words while exploring healthy foods. Each page invites fun and discovery, making language learning an exciting adventure. Watch as your child's vocabulary grows, creating a love for languages that will last a lifetime.",
+        long: "Want to help your child learn Oromo with joy? This Fruits And Vegetables book is the perfect choice! Filled with great illustrations, it introduces your child to new words while exploring healthy foods. Each page invites fun and discovery, making language learning an exciting adventure. Watch as your child's vocabulary grows, creating a love for languages that will last a lifetime.",
       },
       challenges: [
         "Kids Don't Like Reading: Our book uses fun pictures and games about fruits and vegetables to make learning Oromo exciting.",
@@ -149,7 +149,7 @@ export const oromoConfigs = {
       description: {
         short:
           "Discover Oromo Action Verbs for ages 0-6! Engage your child with fun, dynamic learning. Grab your copy today!",
-        long: "Want to teach your child Oromo in a fun way? This Action Verbs book is the perfect choice! Featuring vibrant illustrations and simple text, it's designed to make learning enjoyable. Kids will love discovering new verbs while building language skills. Each page helps them connect words to actions, making language learning exciting and memorable. Perfect for young learners eager to explore Oromo!",
+        long: "Want to teach your child Oromo in a fun way? This Action Verbs book is the perfect choice! Featuring great illustrations and simple text, it's designed to make learning enjoyable. Kids will love discovering new verbs while building language skills. Each page helps them connect words to actions, making language learning exciting and memorable. Perfect for young learners eager to explore Oromo!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful images to make learning action verbs in Oromo exciting and fun.",
@@ -214,7 +214,7 @@ export const oromoConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Explore Animals in Oromo! Perfect for ages 0-6. Engage young minds with fun learning. Discover now!",
+          "Explore Animals in Oromo! Perfect for ages 0-6. Engage young minds with fun learning and colorful pictures. Start your journey today!",
         long: "Looking for a fun way to help your child learn Oromo? This Animals book makes it exciting and interactive! With colorful illustrations and simple words, your child will enjoy discovering animals and their names in Oromo. Each page invites kids to explore and learn, making language building an adventure they won't forget. Perfect for sparking curiosity and boosting vocabulary in a joyful way!",
       },
       challenges: [
@@ -429,7 +429,7 @@ export const oromoConfigs = {
         "Need More Screen-Free Activities: Our coloring book offers a creative way for kids to learn and practice Oromo offline.",
       ],
       whyChoose: [
-        "Colorful Exploration: Kids discover fruits and veggies, learning Oromo words with fun and vibrant pictures.",
+        "Colorful Exploration: Kids discover fruits and veggies, learning Oromo words with fun and great pictures.",
         "Boost Creativity: Coloring helps kids get creative while practicing new Oromo words for fruits and veggies.",
         "Interactive Learning: Engaging activities make learning Oromo fun, helping kids remember fruit and veggie names.",
       ],

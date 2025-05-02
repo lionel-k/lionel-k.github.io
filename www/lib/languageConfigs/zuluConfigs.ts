@@ -81,7 +81,7 @@ export const zuluConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Zulu Fruits And Vegetables! Perfect for kids aged 0-6. Explore and learn together today!",
+          "Discover Zulu Fruits And Vegetables! Perfect for kids aged 0-6. Learn essential food words in Zulu and English. Explore and learn together today!",
         long: "Ufunani indlela yokujabulisa umntwana wakho ekufundeni isiZulu? Le ncwadi yamafutha nezithelo iyenza kube lula futhi kujabulise! Inezithombe ezimibalabala nokuqukethwe okubandakanya, umntwana wakho uzothanda ukufunda amagama amasha. Ikhasi ngalinye lakhelwe ukwenza ukufunda kujabulise, kuthuthukise amakhono olimi aqinile.",
       },
       challenges: [
@@ -287,8 +287,8 @@ export const zuluConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover a Zulu Bilingual Coloring Book for ages 3-6. Spark learning and creativity today!",
-        long: "Want to make learning Zulu fun for your child? This Bilingual Coloring Book is the perfect choice! Filled with vibrant illustrations, it introduces Zulu words in an exciting way. Kids will enjoy coloring while picking up new vocabulary. Each page is crafted to spark joy and enhance language skills, making Zulu learning a delightful adventure that parents and children will treasure!",
+          "Discover a Zulu Bilingual Coloring Book for ages 3-6. Learn essential words while coloring fun pictures. Start your language journey today!",
+        long: "Want to make learning Zulu fun for your child? This Bilingual Coloring Book is the perfect choice! Filled with great illustrations, it introduces Zulu words in an exciting way. Kids will enjoy coloring while picking up new vocabulary. Each page is crafted to spark joy and enhance language skills, making Zulu learning a delightful adventure that parents and children will treasure!",
       },
       challenges: [
         "Boring Language Lessons: Our book adds fun to Zulu learning with colorful pages and activities kids enjoy.",
@@ -472,7 +472,7 @@ export const zuluConfigs = {
         {
           question: "What makes this book unique?",
           answer:
-            "This book combines learning with coloring. It helps kids understand Zulu through fun activities and vibrant pictures.",
+            "This book combines learning with coloring. It helps kids understand Zulu through fun activities and great pictures.",
         },
         {
           question: "Can I return the book if I don't like it?",

@@ -191,7 +191,7 @@ export const malagasyConfigs = {
         {
           question: "What makes this book unique?",
           answer:
-            "This book uses vibrant illustrations and simple words. It's a great way for kids to learn action verbs in Malagasy and English.",
+            "This book uses great illustrations and simple words. It's a great way for kids to learn action verbs in Malagasy and English.",
         },
         {
           question:
@@ -280,8 +280,8 @@ export const malagasyConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Explore the Malagasy Bilingual Coloring Book for ages 3-6. Inspire learning and creativity today!",
-        long: "Want to help your child learn Malagasy in a fun way? This Bilingual Coloring Book is perfect! Filled with vibrant images and easy words, it turns learning into an adventure. Each page encourages creativity while teaching essential Malagasy vocabulary. Make language learning exciting and help your child build skills that will grow with them!",
+          "Discover the Malagasy Bilingual Coloring Book for ages 3-6. Learn essential words while coloring fun pictures. Start your journey today!",
+        long: "Want to help your child learn Malagasy in a fun way? This Bilingual Coloring Book is perfect! Filled with great images and easy words, it turns learning into an adventure. Each page encourages creativity while teaching essential Malagasy vocabulary. Make language learning exciting and help your child build skills that will grow with them!",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses fun pictures to help kids learn Malagasy words easily and remember them.",

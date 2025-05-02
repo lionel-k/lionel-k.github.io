@@ -10,7 +10,7 @@ export const lugandaConfigs = {
       description: {
         short:
           "Discover First 100 Words in Luganda for kids aged 0-6. Engage young minds in a fun, bilingual learning adventure!",
-        long: "Want to make learning Luganda fun for your child? This First 100 Words book is the perfect tool! Filled with vibrant images and interactive content, it sparks curiosity and joy in young learners. Each word is carefully chosen to boost vocabulary and language skills. Watch your child explore and grow as they discover everyday words in Luganda, making learning a delightful adventure!",
+        long: "Want to make learning Luganda fun for your child? This First 100 Words book is the perfect tool! Filled with great images and interactive content, it sparks curiosity and joy in young learners. Each word is carefully chosen to boost vocabulary and language skills. Watch your child explore and grow as they discover everyday words in Luganda, making learning a delightful adventure!",
       },
       challenges: [
         "Hard to Learn New Words: Our book teaches Luganda with colorful pictures, making it easy for kids to remember words.",
@@ -58,7 +58,7 @@ export const lugandaConfigs = {
         {
           question: "What makes this book unique?",
           answer:
-            "This book combines vibrant images with Luganda and English words. It's a great tool for learning and bonding.",
+            "This book combines great images with Luganda and English words. It's a great tool for learning and bonding.",
         },
         {
           question:
@@ -130,7 +130,7 @@ export const lugandaConfigs = {
         {
           question: "What makes this book unique?",
           answer:
-            "This book is unique because it combines vibrant images with bilingual text. It makes learning Luganda fun and engaging for young children.",
+            "This book is unique because it combines great images with bilingual text. It makes learning Luganda fun and engaging for young children.",
         },
         {
           question:
@@ -148,8 +148,8 @@ export const lugandaConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Luganda Action Verbs for ages 0-6. Engage young minds in active learning. Explore now!",
-        long: "Looking for an exciting way to teach your child Luganda? This Action Verbs book is perfect! Filled with vibrant illustrations and captivating activities, it makes learning verbs fun and easy. Each page introduces new action words in Luganda, helping kids expand their vocabulary while enjoying the process. A wonderful tool for building lasting language skills in a playful way!",
+          "Discover Luganda Action Verbs for ages 0-6. Engage young minds in active learning with fun pictures and words. Start exploring!",
+        long: "Looking for an exciting way to teach your child Luganda? This Action Verbs book is perfect! Filled with great illustrations and captivating activities, it makes learning verbs fun and easy. Each page introduces new action words in Luganda, helping kids expand their vocabulary while enjoying the process. A wonderful tool for building lasting language skills in a playful way!",
       },
       challenges: [
         "Hard to Find Fun Books: Our book makes learning Luganda fun with pictures and games that kids love.",

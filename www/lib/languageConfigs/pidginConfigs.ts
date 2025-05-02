@@ -287,8 +287,8 @@ export const pidginConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover our Pidgin Bilingual Coloring Book for ages 3-6. Engage and learn today with vibrant, fun activities!",
-        long: "Want an exciting way for your child to learn Pidgin? This Bilingual Coloring Book is perfect! Filled with vibrant illustrations, it turns learning into an adventure. Watch your child discover new Pidgin words on each page, making language skills fun and memorable. A delightful tool for young minds eager to explore the world of Pidgin!",
+          "Discover our Pidgin Bilingual Coloring Book for ages 3-6. Engage and learn today with great, fun activities!",
+        long: "Want an exciting way for your child to learn Pidgin? This Bilingual Coloring Book is perfect! Filled with great illustrations, it turns learning into an adventure. Watch your child discover new Pidgin words on each page, making language skills fun and memorable. A delightful tool for young minds eager to explore the world of Pidgin!",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Pidgin with easy words and fun pictures that stick.",

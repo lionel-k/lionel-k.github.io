@@ -9,7 +9,7 @@ export const tigrinyaConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          "Discover Tigrinya First 100 Words for ages 0-6. Engage your child in learning with vibrant images. Start exploring today!",
+          "Discover Tigrinya First 100 Words for ages 0-6. Engage your child in learning with great images. Start exploring today!",
         long: "Want to introduce your child to Tigrinya in a fun way? This First 100 Words book is perfect! Filled with bright pictures and easy-to-understand words, it turns learning into an adventure. Each page helps your child discover new vocabulary while boosting their language skills. Make learning Tigrinya a joyful experience that sparks curiosity and builds a foundation for a lifetime of learning.",
       },
       challenges: [
@@ -76,7 +76,7 @@ export const tigrinyaConfigs = {
       description: {
         short:
           "Tigrinya Fruits And Vegetables book for ages 0-6. Discover and learn with your child today!",
-        long: "Searching for an engaging way to teach your child Tigrinya? This Fruits And Vegetables book is the perfect choice! Packed with vibrant illustrations and interactive pages, your child will effortlessly learn new words. Designed to make language learning fun, it helps build lasting Tigrinya skills while exploring the colorful world of fruits and vegetables. A delightful journey into language and nature!",
+        long: "Searching for an engaging way to teach your child Tigrinya? This Fruits And Vegetables book is the perfect choice! Packed with great illustrations and interactive pages, your child will effortlessly learn new words. Designed to make language learning fun, it helps build lasting Tigrinya skills while exploring the colorful world of fruits and vegetables. A delightful journey into language and nature!",
       },
       challenges: [
         "Struggle with New Words: Our book helps kids learn Tigrinya words for fruits and veggies with easy pictures.",
@@ -215,7 +215,7 @@ export const tigrinyaConfigs = {
       description: {
         short:
           "Explore Animals in Tigrinya for ages 0-6. Dive into a fun, educational journey today!",
-        long: "Looking for a fun way to help your child learn Tigrinya? This Animals book is the perfect choice! Filled with vibrant illustrations and easy-to-understand words, it introduces your child to Tigrinya through the exciting world of animals. Each page encourages learning and curiosity, making it a delightful way to build language skills while discovering fascinating animals.",
+        long: "Looking for a fun way to help your child learn Tigrinya? This Animals book is the perfect choice! Filled with great illustrations and easy-to-understand words, it introduces your child to Tigrinya through the exciting world of animals. Each page encourages learning and curiosity, making it a delightful way to build language skills while discovering fascinating animals.",
       },
       challenges: [
         "Limited Resources for Learning: Our book uses animal stories and pictures to make Tigrinya learning exciting.",
@@ -287,7 +287,7 @@ export const tigrinyaConfigs = {
       description: {
         short:
           "Explore colors and words with our Tigrinya Bilingual Coloring Book for kids aged 3-6. Inspire learning today!",
-        long: "Want a fun way for your child to learn Tigrinya? This Bilingual Coloring Book is perfect! Filled with vibrant illustrations, it makes learning new words exciting. Each page encourages creativity while teaching essential language skills. It's a delightful way to introduce Tigrinya and spark a love for languages in your child.",
+        long: "Want a fun way for your child to learn Tigrinya? This Bilingual Coloring Book is perfect! Filled with great illustrations, it makes learning new words exciting. Each page encourages creativity while teaching essential language skills. It's a delightful way to introduce Tigrinya and spark a love for languages in your child.",
       },
       challenges: [
         "Hard to Learn New Words: Our book teaches Tigrinya words with fun pictures, making learning easy and exciting.",

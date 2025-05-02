@@ -9,8 +9,8 @@ export const eweConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          "Explore Ewe's First 100 Words with vibrant pictures for kids aged 0-6. Ignite learning and fun today!",
-        long: "Want to help your child learn Ewe in a fun way? This First 100 Words book is just what you need! Packed with vibrant illustrations, it makes learning Ewe words exciting and easy. Your child will enjoy discovering new vocabulary on every page, building essential language skills while having a great time. Perfect for little learners eager to explore the Ewe language!",
+          "Explore Ewe's First 100 Words with great pictures for kids aged 0-6. Ignite learning and fun today!",
+        long: "Want to help your child learn Ewe in a fun way? This First 100 Words book is just what you need! Packed with great illustrations, it makes learning Ewe words exciting and easy. Your child will enjoy discovering new vocabulary on every page, building essential language skills while having a great time. Perfect for little learners eager to explore the Ewe language!",
       },
       challenges: [
         "Kids Get Bored Quickly: Our book uses bright pictures and fun words to keep kids excited about learning Ewe.",
@@ -148,7 +148,7 @@ export const eweConfigs = {
       description: {
         short:
           "Discover Ewe Action Verbs for ages 0-6! Engage young minds with fun, easy verbs. Start their language journey today!",
-        long: "Want to make learning Ewe exciting for your child? This Action Verbs book is perfect! Filled with vibrant illustrations and lively examples, it helps kids grasp Ewe verbs effortlessly. Each page is crafted to turn language learning into an adventure, boosting vocabulary and confidence. Perfect for young learners eager to explore and master the Ewe language through fun and action-packed activities!",
+        long: "Want to make learning Ewe exciting for your child? This Action Verbs book is perfect! Filled with great illustrations and lively examples, it helps kids grasp Ewe verbs effortlessly. Each page is crafted to turn language learning into an adventure, boosting vocabulary and confidence. Perfect for young learners eager to explore and master the Ewe language through fun and action-packed activities!",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses bright pictures and fun games to make learning action verbs in Ewe exciting.",
@@ -359,7 +359,7 @@ export const eweConfigs = {
       description: {
         short:
           "Explore Ewe Animals Coloring Book! Perfect for kids 4-8. Dive into coloring fun and learn about animals today!",
-        long: "Searching for a fun way to teach your child Ewe? This Animals Coloring Book is perfect! Packed with vibrant animal illustrations, it makes learning Ewe words exciting. Each page invites kids to explore and color while discovering new vocabulary. Make language learning a joyful adventure that boosts your child's skills and love for animals!",
+        long: "Searching for a fun way to teach your child Ewe? This Animals Coloring Book is perfect! Packed with great animal illustrations, it makes learning Ewe words exciting. Each page invites kids to explore and color while discovering new vocabulary. Make language learning a joyful adventure that boosts your child's skills and love for animals!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses animal pictures to make learning Ewe exciting and fun for kids.",
@@ -431,8 +431,8 @@ export const eweConfigs = {
       price: "$ 9.99",
       description: {
         short:
-          "Ewe Fruits And Vegetables Coloring Book for kids 4-8. Discover and color! Engage young minds today!",
-        long: "Want to make learning Ewe fun for your child? This Fruits And Vegetables Coloring Book is perfect! Filled with vibrant illustrations, it helps kids learn Ewe names of fruits and vegetables. Each page offers a chance to color and discover new words, making language learning engaging and exciting. A delightful way to boost vocabulary and spark a love for learning!",
+          "Explore the Ewe Fruits and Vegetables Coloring Book for ages 4-8. Discover new words while having fun coloring today!",
+        long: "Want to make learning Ewe fun for your child? This Fruits And Vegetables Coloring Book is perfect! Filled with great illustrations, it helps kids learn Ewe names of fruits and vegetables. Each page offers a chance to color and discover new words, making language learning engaging and exciting. A delightful way to boost vocabulary and spark a love for learning!",
       },
       challenges: [
         "Hard to Teach Ewe at Home: Our book uses fun pictures to help kids learn Ewe words with fruits and veggies.",

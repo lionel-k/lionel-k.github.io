@@ -391,7 +391,7 @@ export const kirundiConfigs = {
         {
           question: "How many pages are there?",
           answer:
-            "The book has 25 vibrant pages filled with cheerful illustrations and simple text.",
+            "The book has 25 great pages filled with cheerful illustrations and simple text.",
         },
         {
           question: "Does the story have a strong message?",

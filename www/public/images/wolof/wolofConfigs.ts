@@ -149,7 +149,7 @@ export const wolofConfigs = {
       description: {
         short:
           "Explore Wolof Action Verbs with your little ones! Ideal for ages 0-6, this book makes learning lively and fun!",
-        long: "Searching for an exciting way to teach your child Wolof? This Action Verbs book is the perfect choice! Packed with vibrant illustrations and interactive activities, it makes learning Wolof action verbs fun and engaging. Each page encourages language development, helping your child confidently express themselves in Wolof. Make language learning an adventure they will cherish for years!",
+        long: "Searching for an exciting way to teach your child Wolof? This Action Verbs book is the perfect choice! Packed with great illustrations and interactive activities, it makes learning Wolof action verbs fun and engaging. Each page encourages language development, helping your child confidently express themselves in Wolof. Make language learning an adventure they will cherish for years!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses bright pictures and games to make learning Wolof action verbs exciting.",
@@ -220,8 +220,8 @@ export const wolofConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Explore Animals in Wolof! Perfect for kids aged 0-6. Discover and learn with this interactive, vibrant book today!",
-        long: "Want to help your child learn Wolof in a fun way? This Animals book is perfect! Filled with vibrant illustrations and simple words, it introduces your child to the world of animals while teaching Wolof. Each page captivates young minds, making language learning a delightful adventure. Ideal for building vocabulary and sparking curiosity, this book is a wonderful tool for lifelong language skills.",
+          "Explore Animals in Wolof! Perfect for kids aged 0-6. Discover and learn with this interactive, great book today!",
+        long: "Want to help your child learn Wolof in a fun way? This Animals book is perfect! Filled with great illustrations and simple words, it introduces your child to the world of animals while teaching Wolof. Each page captivates young minds, making language learning a delightful adventure. Ideal for building vocabulary and sparking curiosity, this book is a wonderful tool for lifelong language skills.",
       },
       challenges: [
         "Boring Study Time: Our book uses colorful animal pictures to make learning Wolof fun and exciting for kids.",

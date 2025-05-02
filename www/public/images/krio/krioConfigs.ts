@@ -153,8 +153,8 @@ export const krioConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Krio Action Verbs! Perfect for ages 0-6. Engage young minds with vibrant learning. Start the adventure now!",
-        long: "Want your child to learn Krio in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and easy-to-understand content, kids will enjoy discovering new Krio action words. Each page encourages playful learning and helps build strong language skills. It's a wonderful tool for making language learning exciting and engaging for young minds!",
+          "Discover Krio Action Verbs! Perfect for ages 0-6. Engage young minds with great learning. Start the adventure now!",
+        long: "Want your child to learn Krio in a fun way? This Action Verbs book is perfect! Filled with great illustrations and easy-to-understand content, kids will enjoy discovering new Krio action words. Each page encourages playful learning and helps build strong language skills. It's a wonderful tool for making language learning exciting and engaging for young minds!",
       },
       challenges: [
         "Kids Get Bored Quickly: Our book uses colorful pictures and fun activities to make learning Krio and action verbs exciting.",

@@ -365,7 +365,7 @@ export const swahiliConfigs = {
       challenges: [
         "Limited Swahili Resources: Our book offers a fun way to learn Swahili with colorful animal pictures and simple words.",
         "Boring Language Lessons: This coloring book makes learning Swahili exciting with engaging activities that kids enjoy.",
-        "Hard to Keep Kids Focused: The book captures attention with vibrant animal images, making Swahili learning easy and fun.",
+        "Hard to Keep Kids Focused: The book captures attention with great animal images, making Swahili learning easy and fun.",
       ],
       whyChoose: [
         "Fun Animal Adventures: Kids explore animals while learning Swahili words, making language fun and exciting.",

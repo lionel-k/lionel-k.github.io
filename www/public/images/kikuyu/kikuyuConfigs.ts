@@ -9,8 +9,8 @@ export const kikuyuConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          "Discover Kikuyu First 100 Words for ages 0-6. Engage young minds with vibrant images and start their language journey today!",
-        long: "Want a fun way to introduce your child to Kikuyu? This First 100 Words book is perfect for young learners! Bursting with vibrant illustrations, it captivates kids while teaching essential Kikuyu vocabulary. Each page is crafted to make learning enjoyable and boost language skills, making it a delightful tool for parents and children to explore Kikuyu together.",
+          "Discover Kikuyu First 100 Words for ages 0-6. Engage young minds with great images and start their language journey today!",
+        long: "Want a fun way to introduce your child to Kikuyu? This First 100 Words book is perfect for young learners! Bursting with great illustrations, it captivates kids while teaching essential Kikuyu vocabulary. Each page is crafted to make learning enjoyable and boost language skills, making it a delightful tool for parents and children to explore Kikuyu together.",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Kikuyu with bright pictures and easy words they can remember.",
@@ -154,7 +154,7 @@ export const kikuyuConfigs = {
       description: {
         short:
           "Discover Kikuyu Action Verbs for ages 0-6! Engage young minds with fun, dynamic language learning today!",
-        long: "Want an exciting way to help your child learn Kikuyu? This Action Verbs book is perfect! Packed with vibrant illustrations and playful activities, it makes learning Kikuyu verbs fun and interactive. Your child will enjoy discovering new words while enhancing their language skills. This special book turns learning into an adventure, ensuring your child gains valuable knowledge in an enjoyable way.",
+        long: "Want an exciting way to help your child learn Kikuyu? This Action Verbs book is perfect! Packed with great illustrations and playful activities, it makes learning Kikuyu verbs fun and interactive. Your child will enjoy discovering new words while enhancing their language skills. This special book turns learning into an adventure, ensuring your child gains valuable knowledge in an enjoyable way.",
       },
       challenges: [
         "Boring Lessons: Our book uses colorful pictures and fun stories to make learning Kikuyu action verbs exciting.",
@@ -225,8 +225,8 @@ export const kikuyuConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Kikuyu Animals! Perfect for ages 0-6. Engage young minds with vibrant, unique wildlife stories today!",
-        long: "Want to make learning Kikuyu fun for your child? This Animals book is the perfect choice! Filled with vibrant illustrations and simple Kikuyu words, it captivates young minds. Kids will enjoy discovering animals while naturally picking up new vocabulary. It's a delightful way to boost language skills and foster a love for nature. Perfect for curious little learners!",
+          "Discover Kikuyu Animals! Perfect for ages 0-6. Engage young minds with great, unique wildlife stories today!",
+        long: "Want to make learning Kikuyu fun for your child? This Animals book is the perfect choice! Filled with great illustrations and simple Kikuyu words, it captivates young minds. Kids will enjoy discovering animals while naturally picking up new vocabulary. It's a delightful way to boost language skills and foster a love for nature. Perfect for curious little learners!",
       },
       challenges: [
         "Boring Language Lessons: Our book uses colorful animal pictures to make learning Kikuyu exciting for kids.",
@@ -293,7 +293,7 @@ export const kikuyuConfigs = {
       description: {
         short:
           "Discover the Kikuyu Bilingual Coloring Book for ages 3-6. Engage young minds and inspire learning today!",
-        long: "Want to make learning Kikuyu fun for your child? This Bilingual Coloring Book is perfect! Filled with vibrant illustrations and easy words, kids can color while learning Kikuyu. Each page encourages creativity and language development, making it a special way to introduce your child to a new language. Ideal for young learners eager to explore and grow!",
+        long: "Want to make learning Kikuyu fun for your child? This Bilingual Coloring Book is perfect! Filled with great illustrations and easy words, kids can color while learning Kikuyu. Each page encourages creativity and language development, making it a special way to introduce your child to a new language. Ideal for young learners eager to explore and grow!",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses fun pictures to teach Kikuyu words, making it easy for kids to remember.",

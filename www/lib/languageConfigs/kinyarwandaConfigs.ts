@@ -86,7 +86,7 @@ Even if you don't speak Kinyarwanda fluently, you can still share this learning 
       whyChoose: [
         "Perfect First Words Book: Introduces essential everyday vocabulary to help young children build a strong language foundation.",
         "Trilingual Format: Kinyarwanda, English, and French on each page—ideal for families who want to reinforce multiple languages.",
-        "Designed for Ages 0-6: Simple text, large images, and vibrant colors keep young learners engaged and excited.",
+        "Designed for Ages 0-6: Simple text, large images, and great colors keep young learners engaged and excited.",
       ],
       amazonUrl: "https://mybook.to/first-book-kinyarwanda",
       bestSeller: false,

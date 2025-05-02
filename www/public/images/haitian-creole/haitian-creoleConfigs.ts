@@ -83,7 +83,7 @@ export const haitianCreoleConfigs = {
       description: {
         short:
           "Discover Fruits And Vegetables in Haitian Creole. Perfect for kids aged 0-6. Engage and learn today!",
-        long: "Looking for a fun way to help your child learn Haitian Creole? This Fruits And Vegetables book is perfect! Filled with vibrant illustrations and simple words, it makes learning exciting. Your child will discover the names of fruits and vegetables while building language skills. Each page is crafted to inspire curiosity and joy in learning Haitian Creole.",
+        long: "Looking for a fun way to help your child learn Haitian Creole? This Fruits And Vegetables book is perfect! Filled with great illustrations and simple words, it makes learning exciting. Your child will discover the names of fruits and vegetables while building language skills. Each page is crafted to inspire curiosity and joy in learning Haitian Creole.",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses pictures of fruits and vegetables to teach Haitian Creole words easily.",
@@ -293,8 +293,8 @@ export const haitianCreoleConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover a vibrant Haitian Creole Bilingual Coloring Book for ages 3-6. Inspire fun learning today!",
-        long: "Searching for a fun way to teach your child Haitian Creole? This Bilingual Coloring Book is the perfect tool! Filled with vibrant illustrations, it makes learning new words exciting. Each page offers a creative journey, helping kids easily grasp Haitian Creole while enhancing their language skills. It's a joyful learning adventure parents and kids will adore!",
+          "Discover a great Haitian Creole Bilingual Coloring Book for ages 3-6. Inspire fun learning today!",
+        long: "Searching for a fun way to teach your child Haitian Creole? This Bilingual Coloring Book is the perfect tool! Filled with great illustrations, it makes learning new words exciting. Each page offers a creative journey, helping kids easily grasp Haitian Creole while enhancing their language skills. It's a joyful learning adventure parents and kids will adore!",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Haitian Creole words with fun pictures, making it easy and fun.",

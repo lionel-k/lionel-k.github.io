@@ -154,7 +154,7 @@ export const somaliConfigs = {
       description: {
         short:
           "Discover Somali Action Verbs for ages 0-6. Engage and learn through fun activities. Start your child's learning journey today!",
-        long: "\"Do you want your child to learn Somali in a fun way? This Action Verbs book is perfect! Filled with vibrant illustrations and exciting content, kids will enjoy discovering new Somali words. Each page turns learning into an adventure, helping your child build strong language skills while having fun. It's a fantastic tool for parents eager to support their child's language journey.\"",
+        long: "\"Do you want your child to learn Somali in a fun way? This Action Verbs book is perfect! Filled with great illustrations and exciting content, kids will enjoy discovering new Somali words. Each page turns learning into an adventure, helping your child build strong language skills while having fun. It's a fantastic tool for parents eager to support their child's language journey.\"",
       },
       challenges: [
         "Kids Get Bored Easily: Our book uses colorful pictures and games to make learning Somali action verbs exciting.",

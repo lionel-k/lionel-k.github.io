@@ -10,8 +10,8 @@ export const capeVerdeanKrioluConfigs = {
       price: "$12.99",
       description: {
         short:
-          "Discover Cape Verdean Kriolu's First 100 Words for kids 0-6. Engage young minds with vibrant learning today!",
-        long: "Want to introduce your child to Cape Verdean Kriolu? This First 100 Words book is the perfect start! Filled with vibrant pictures and easy words, it makes learning Kriolu fun and exciting. Each page captivates young minds, helping them build language skills naturally. Make Kriolu a joyful part of your child's learning journey with this unique book!",
+          "Discover Cape Verdean Kriolu's First 100 Words for kids 0-6. Engage young minds with great learning today!",
+        long: "Want to introduce your child to Cape Verdean Kriolu? This First 100 Words book is the perfect start! Filled with great pictures and easy words, it makes learning Kriolu fun and exciting. Each page captivates young minds, helping them build language skills naturally. Make Kriolu a joyful part of your child's learning journey with this unique book!",
       },
       challenges: [
         "Hard to Learn New Words: Our book uses bright pictures to teach Cape Verdean Kriolu words easily.",
@@ -212,8 +212,8 @@ export const capeVerdeanKrioluConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Animals in Cape Verdean Kriolu! Ideal for ages 0-6. Dive into fun learning today!",
-        long: "Want an exciting way for your child to learn Cape Verdean Kriolu? This Animals book is perfect! Filled with vibrant illustrations and fun facts, it helps kids discover new words in a playful manner. Each page encourages language growth while exploring the animal kingdom, making learning Kriolu a delightful adventure for your little one.",
+          "Discover Animals in Cape Verdean Kriolu! Perfect for ages 0-6. Start a fun learning journey with colorful pictures today!",
+        long: "Want an exciting way for your child to learn Cape Verdean Kriolu? This Animals book is perfect! Filled with great illustrations and fun facts, it helps kids discover new words in a playful manner. Each page encourages language growth while exploring the animal kingdom, making learning Kriolu a delightful adventure for your little one.",
       },
       challenges: [
         "Boring Language Lessons: Our book makes learning Cape Verdean Kriolu exciting with animal stories and colorful pictures.",
@@ -222,7 +222,7 @@ export const capeVerdeanKrioluConfigs = {
       ],
       whyChoose: [
         "Exciting Animal Facts: Learn cool animal facts while picking up Cape Verdean Kriolu words. It's fun and educational!",
-        "Colorful Illustrations: Bright pictures make animals come alive. Kids learn new words while enjoying the vibrant art.",
+        "Colorful Illustrations: Bright pictures make animals come alive. Kids learn new words while enjoying the great art.",
         "Interactive Activities: Fun puzzles and games help kids remember Kriolu words. Learning feels like an adventure!",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0DWMXSKVJ",
@@ -281,7 +281,7 @@ export const capeVerdeanKrioluConfigs = {
       description: {
         short:
           "Discover Cape Verdean Kriolu in this Bilingual Coloring Book for ages 3-6. Inspire learning and creativity today!",
-        long: "Want to make learning Cape Verdean Kriolu exciting for your child? This Bilingual Coloring Book is the perfect tool! Packed with vibrant illustrations, it introduces new words in a fun way. Your child will enjoy coloring while naturally building language skills. Each page sparks curiosity and creativity, making language learning an adventure that parents and kids will love!",
+        long: "Want to make learning Cape Verdean Kriolu exciting for your child? This Bilingual Coloring Book is the perfect tool! Packed with great illustrations, it introduces new words in a fun way. Your child will enjoy coloring while naturally building language skills. Each page sparks curiosity and creativity, making language learning an adventure that parents and kids will love!",
       },
       challenges: [
         "Too Few Bilingual Resources: Our book helps kids learn Cape Verdean Kriolu with fun coloring pages and simple words.",
@@ -417,7 +417,7 @@ export const capeVerdeanKrioluConfigs = {
       description: {
         short:
           "Discover Fruits And Vegetables Coloring Book in Cape Verdean Kriolu for ages 4-8. Explore, color, and learn today!",
-        long: "Looking for a fun way to help your child learn Cape Verdean Kriolu? This Fruits and Vegetables Coloring Book is perfect! With vibrant illustrations, it makes learning new words exciting. Each page encourages creativity while teaching essential language skills. A delightful way for kids to explore fruits and vegetables and boost their Kriolu vocabulary in a playful setting!",
+        long: "Looking for a fun way to help your child learn Cape Verdean Kriolu? This Fruits and Vegetables Coloring Book is perfect! With great illustrations, it makes learning new words exciting. Each page encourages creativity while teaching essential language skills. A delightful way for kids to explore fruits and vegetables and boost their Kriolu vocabulary in a playful setting!",
       },
       challenges: [
         "Hard to Learn New Words: Our book helps kids learn Cape Verdean Kriolu with colorful fruits and veggies.",

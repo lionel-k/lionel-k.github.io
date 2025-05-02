@@ -92,7 +92,7 @@ export const lingalaConfigs = {
       whyChoose: [
         "Fun Learning Time: Kids enjoy learning Lingala with bright pictures and easy activities that make new words stick.",
         "Easy Language Practice: Simple Lingala words help kids talk about fruits and vegetables, making language fun and useful.",
-        "Colorful Adventures: Vibrant pictures make learning fruits and vegetables exciting, helping kids remember words easily.",
+        "Colorful Adventures: great pictures make learning fruits and vegetables exciting, helping kids remember words easily.",
       ],
       amazonUrl: "https://www.amazon.com/gp/product/B0C5P35YB6",
       bestSeller: false,
