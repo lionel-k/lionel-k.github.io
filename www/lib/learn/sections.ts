@@ -11,7 +11,7 @@ export const sections: Section[] = [
   {
     id: "basics",
     title: "Basics",
-    description: "Learn the most common words and phrases",
+    description: "Learn the most common words",
     order: 1,
   },
   {
