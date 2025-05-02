@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     apple: "/favicon.png",
   },
   alternates: {
-    canonical: "https://www.lingu.africa/",
     languages: {
       "en-US": "https://www.lingu.africa/",
       "x-default": "https://www.lingu.africa/",
