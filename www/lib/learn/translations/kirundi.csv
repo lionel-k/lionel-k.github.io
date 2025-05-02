@@ -147,18 +147,18 @@ actions,wake-up,ciza ariko aravyuka
 actions,listen,kaneza ariko arunviriza
 sentences-1,sentence-1,igiti caguye
 sentences-1,sentence-2,data afise icupa
-sentences-1,sentence-3,karori yuriye igiti
-sentences-1,sentence-4,jeneroza afise amahera
-sentences-1,sentence-5,karire ariga neza cane
+sentences-1,sentence-3,ciza yuriye igiti
+sentences-1,sentence-4,keza afise amahera
+sentences-1,sentence-5,kaneza ariga neza cane
 sentences-1,sentence-6,gatore aherekeje keza
 sentences-1,sentence-7,uyo muforoma avura neza
-sentences-1,sentence-8,petero yicaye ku buriri
-sentences-1,sentence-9,suzana yikoreye igiseke
-sentences-1,sentence-10,gatogato ateruye akayoya
+sentences-1,sentence-8,kagabo yicaye ku buriri
+sentences-1,sentence-9,kamikazi yikoreye igiseke
+sentences-1,sentence-10,kabura ateruye akayoya
 sentences-1,sentence-11,gatore aracari mu bitaro
-sentences-1,sentence-12,zakariya ateruye ibitabu
-sentences-1,sentence-13,doroteya afise umukubuzo
-sentences-1,sentence-14,fideri afise abana batatu
+sentences-1,sentence-12,ciza ateruye ibitabu
+sentences-1,sentence-13,keza afise umukubuzo
+sentences-1,sentence-14,kabura afise abana batatu
 sentences-1,sentence-15,ciza ariko ariyoga mu maso
 sentences-2,sentence-16,data na mama bagiye ku kazi
 sentences-2,sentence-17,mama afise umutaka mu ntoke
@@ -226,6 +226,7 @@ food,honey,ubuki
 household,computer,inyabwonko
 household,knife,imbugita
 household,toothbrush,umujigiti
+household,broom,umukubuzo
 kitchen,soap,isafuriya
 kitchen,soap,ipanu
 kitchen,soap,icaruzo
