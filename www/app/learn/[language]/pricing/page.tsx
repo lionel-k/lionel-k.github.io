@@ -92,7 +92,7 @@ export default function PricingPage() {
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex items-center gap-2">
                   <Gift className="h-5 w-5 text-[#4CAF50]" />
-                  <span className="text-[#4CAF50]">€10 off</span>
+                  <span className="text-[#4CAF50]">€20 off</span>
                   <span className="text-gray-300">
                     for the first 500 customers
                   </span>
