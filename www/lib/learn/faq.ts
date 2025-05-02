@@ -29,4 +29,9 @@ export const faqItems = [
     answer:
       "Yes! Pay once, learn forever. You'll get access to all new content and features as we continue to expand our curriculum based on academic research and user feedback.",
   },
+  {
+    question: "I have another question",
+    answer:
+      "Cool, send me an email at hello@lingu.africa and I'll be happy to help.",
+  },
 ];
