@@ -21,9 +21,13 @@ export default function WordCard({ word, language }: WordCardProps) {
   const playAudio = async () => {
     try {
       setAudioError(null);
-      const audioPath = getAudioPath(language, word.id);
-      const audio = new Audio(audioPath);
-      await audio.play();
+      const audio = new Audio(getAudioPath(language, word.id));
+      await audio.play().catch((error) => {
+        if (error.name !== "NotAllowedError") {
+          console.error("Error playing audio:", error);
+          setAudioError("Could not play audio");
+        }
+      });
     } catch (error) {
       console.error("Error playing audio:", error);
       setAudioError("Could not play audio");
