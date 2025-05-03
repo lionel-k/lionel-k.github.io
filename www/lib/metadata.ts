@@ -10,6 +10,13 @@ export const getTruncatedTitle = (title: string): string => {
     : title;
 };
 
+export const getTruncatedDescription = (description: string): string => {
+  const MAX_DESCRIPTION_LENGTH = 160;
+  return description.length > MAX_DESCRIPTION_LENGTH
+    ? description.slice(0, MAX_DESCRIPTION_LENGTH - 3) + "..."
+    : description;
+};
+
 export type MetadataConfig = {
   title: string;
   description: string;

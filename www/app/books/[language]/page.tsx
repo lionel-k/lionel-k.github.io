@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { languagesConfig } from "@/lib/languagesConfig";
 import LanguagePageClient from "./LanguagePageClient";
 import { SITE_URL } from "@/lib/constants";
+import { getTruncatedDescription } from "@/lib/metadata";
 
 type Props = {
   params: Promise<{
@@ -29,10 +30,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const pageTitle = `${languageData.name} Books - Bilingual African Language Books`;
   const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
   const pageUrl = `${SITE_URL}/books/${language}`;
+  const metaDescription = getTruncatedDescription(languageData.description);
 
   return {
     title: pageTitle,
-    description: languageData.description,
+    description: metaDescription,
     alternates: {
       canonical: pageUrl,
       languages: {

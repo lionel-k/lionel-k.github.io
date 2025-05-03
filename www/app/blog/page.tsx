@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/blog";
 import BlogListingClient from "@/app/blog/BlogListingClient";
 import { sharedMetadata, pagesMetadata } from "@/lib/metadata";
-import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   ...sharedMetadata,
