@@ -153,7 +153,7 @@ export const yorubaConfigs = {
       price: "$ 11.99",
       description: {
         short:
-          "Discover Yoruba Animals for ages 0-6! Engage young minds with great tales. Explore and learn today!",
+          "Discover Yoruba Animals for ages 0-6! Engage young minds with colorful illustrations and animal names. Start exploring today!",
         long: "Searching for a fun way to teach your child Yoruba? This delightful Animals book is perfect! Filled with great illustrations and simple words, it makes learning exciting. Your child will explore the animal world while picking up Yoruba effortlessly. Each page is crafted to engage young minds, helping them build strong language skills in a joyful way.",
       },
       challenges: [

@@ -9,7 +9,7 @@ export const eweConfigs = {
       price: "$ 12.99",
       description: {
         short:
-          "Explore Ewe's First 100 Words with great pictures for kids aged 0-6. Ignite learning and fun today!",
+          "Explore Ewe's First 100 Words with colorful pictures and engaging activities for kids aged 0-6. Start a fun learning journey today!",
         long: "Want to help your child learn Ewe in a fun way? This First 100 Words book is just what you need! Packed with great illustrations, it makes learning Ewe words exciting and easy. Your child will enjoy discovering new vocabulary on every page, building essential language skills while having a great time. Perfect for little learners eager to explore the Ewe language!",
       },
       challenges: [
