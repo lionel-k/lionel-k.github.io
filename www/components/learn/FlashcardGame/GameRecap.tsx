@@ -12,11 +12,11 @@ export default function GameRecap({
 
   // Get appropriate message and emoji based on performance
   const getMessage = () => {
-    if (percentage === 100) return { text: "Perfect Score!", emoji: "🌟" };
-    if (percentage >= 80) return { text: "Amazing Job!", emoji: "🎉" };
-    if (percentage >= 60) return { text: "Well Done!", emoji: "⭐" };
-    if (percentage >= 40) return { text: "Good Effort!", emoji: "👏" };
-    return { text: "Keep Practicing!", emoji: "💪" };
+    if (percentage === 100) return { text: "Perfect Score!", emoji: "👑" }; // Crown representing excellence and African royalty
+    if (percentage >= 80) return { text: "Amazing Job!", emoji: "✨" }; // Sparkles for brilliance
+    if (percentage >= 60) return { text: "Well Done!", emoji: "🙌🏾" }; // Celebrating hands with dark skin tone
+    if (percentage >= 40) return { text: "Good Effort!", emoji: "💪🏾" }; // Strong arm with dark skin tone
+    return { text: "Keep Practicing!", emoji: "✊🏾" }; // Raised fist with dark skin tone for perseverance
   };
 
   const { text, emoji } = getMessage();
