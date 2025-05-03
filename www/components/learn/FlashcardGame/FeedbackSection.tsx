@@ -2,8 +2,6 @@ import { ArrowRight, Sparkles, RotateCcw } from "lucide-react";
 import { Section } from "@/lib/learn/sections";
 
 type FeedbackSectionProps = {
-  selectedAnswer: string;
-  currentWordId: string;
   isLastWord: boolean;
   nextSection: Section | undefined;
   onNext: () => void;
@@ -12,8 +10,6 @@ type FeedbackSectionProps = {
 };
 
 export default function FeedbackSection({
-  selectedAnswer,
-  currentWordId,
   isLastWord,
   nextSection,
   onNext,

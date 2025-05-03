@@ -11,12 +11,14 @@ import ProgressBar from "./ProgressBar";
 import WordCard from "./WordCard";
 import ImageGrid from "./ImageGrid";
 import FeedbackSection from "./FeedbackSection";
+import GameRecap from "./GameRecap";
 
 export default function FlashcardGame({ words }: FlashcardGameProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [options, setOptions] = useState<FlashcardWord[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
   const router = useRouter();
   const params = useParams();
   const currentSectionId = params.section as string;
@@ -44,6 +46,9 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   const handleAnswer = (answer: string) => {
     if (selectedAnswer) return;
     setSelectedAnswer(answer);
+    if (answer === currentWord.id) {
+      setCorrectAnswers((prev) => prev + 1);
+    }
   };
 
   const handleNext = () => {
@@ -56,6 +61,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   const handleRestart = () => {
     setCurrentIndex(0);
     setSelectedAnswer(null);
+    setCorrectAnswers(0);
   };
 
   const handleNextSection = () => {
@@ -72,7 +78,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
       </div>
 
       {/* Main Game Area */}
-      <div className="flex-1 flex flex-col px-4">
+      <div className="flex-1 flex flex-col px-4 pb-8">
         {/* Word */}
         <div className="pb-1">
           <WordCard word={currentWord} language={currentLanguage} />
@@ -80,7 +86,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
 
         <div className="flex-1 flex flex-col">
           {/* Images */}
-          <div className="w-full max-w-3xl mx-auto mb-1">
+          <div className="w-full max-w-3xl mx-auto mb-6">
             <ImageGrid
               options={options}
               selectedAnswer={selectedAnswer}
@@ -92,9 +98,13 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
           {/* Feedback */}
           {selectedAnswer && (
             <div className="w-full max-w-3xl mx-auto">
+              {currentIndex === words.length - 1 && (
+                <GameRecap
+                  correctAnswers={correctAnswers}
+                  totalQuestions={words.length}
+                />
+              )}
               <FeedbackSection
-                selectedAnswer={selectedAnswer}
-                currentWordId={currentWord.id}
                 isLastWord={currentIndex === words.length - 1}
                 nextSection={nextSection}
                 onNext={handleNext}
