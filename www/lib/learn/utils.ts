@@ -67,11 +67,10 @@ export const generateOptions = (
   currentWord: FlashcardWord,
   words: FlashcardWord[]
 ): FlashcardWord[] => {
-  if (!words || !Array.isArray(words)) return [currentWord];
+  if (!words?.length) return [currentWord];
 
-  const distractors = shuffleArray(
-    words.filter((w) => w.id !== currentWord.id)
-  ).slice(0, 3);
+  const otherWords = words.filter((w) => w.id !== currentWord.id);
+  const distractors = otherWords.slice(0, 3);
 
   return shuffleArray([currentWord, ...distractors]);
 };
