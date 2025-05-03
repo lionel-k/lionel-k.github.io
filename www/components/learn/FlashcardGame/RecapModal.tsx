@@ -19,12 +19,12 @@ export default function RecapModal({
 }: RecapModalProps) {
   return (
     <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50">
-      <div className="w-full max-w-lg bg-[#1A1A1A] rounded-xl p-6 space-y-6">
+      <div className="w-full max-w-[min(95vw,800px)] bg-[#1A1A1A] rounded-xl p-6 sm:p-8 space-y-6">
         <GameRecap
           correctAnswers={correctAnswers}
           totalQuestions={totalQuestions}
         />
-        <div className="space-y-3">
+        <div className="space-y-3 max-w-md mx-auto">
           <button
             onClick={onRestart}
             className="w-full py-3 text-center font-semibold text-[#DAA520] bg-transparent border border-[#DAA520] hover:bg-[#DAA520]/10 rounded-lg transition-colors flex items-center justify-center"
