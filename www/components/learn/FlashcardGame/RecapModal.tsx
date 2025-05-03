@@ -1,31 +1,36 @@
-import { ArrowRight, Sparkles, RotateCcw } from "lucide-react";
+import { RotateCcw, ArrowRight } from "lucide-react";
+import GameRecap from "./GameRecap";
 import { Section } from "@/lib/learn/sections";
 
-type FeedbackSectionProps = {
-  isLastWord: boolean;
+type RecapModalProps = {
+  correctAnswers: number;
+  totalQuestions: number;
   nextSection: Section | undefined;
-  onNext: () => void;
   onRestart: () => void;
   onNextSection: () => void;
 };
 
-export default function FeedbackSection({
-  isLastWord,
+export default function RecapModal({
+  correctAnswers,
+  totalQuestions,
   nextSection,
-  onNext,
   onRestart,
   onNextSection,
-}: FeedbackSectionProps) {
+}: RecapModalProps) {
   return (
-    <div className="space-y-1">
-      {isLastWord ? (
-        <div className="space-y-2 mt-4">
+    <div className="fixed inset-0 bg-black/80 flex items-center justify-center p-4 z-50">
+      <div className="w-full max-w-lg bg-[#1A1A1A] rounded-xl p-6 space-y-6">
+        <GameRecap
+          correctAnswers={correctAnswers}
+          totalQuestions={totalQuestions}
+        />
+        <div className="space-y-3">
           <button
             onClick={onRestart}
             className="w-full py-3 text-center font-semibold text-[#DAA520] bg-transparent border border-[#DAA520] hover:bg-[#DAA520]/10 rounded-lg transition-colors flex items-center justify-center"
           >
             <RotateCcw className="w-5 h-5 mr-2" />
-            Practice Again
+            <span>Practice Again</span>
           </button>
           {nextSection && (
             <button
@@ -37,14 +42,7 @@ export default function FeedbackSection({
             </button>
           )}
         </div>
-      ) : (
-        <button
-          onClick={onNext}
-          className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
-        >
-          Next Word
-        </button>
-      )}
+      </div>
     </div>
   );
 }
