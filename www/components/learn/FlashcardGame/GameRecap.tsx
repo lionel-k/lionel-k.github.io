@@ -21,24 +21,36 @@ export default function GameRecap({
 
   const { text, emoji } = getMessage();
 
+  // Create array of 3 rows with 5 stars each
+  const starRows = Array.from({ length: 3 }, (_, rowIndex) => {
+    return Array.from({ length: 5 }, (_, colIndex) => {
+      const starIndex = rowIndex * 5 + colIndex;
+      return starIndex < totalQuestions ? starIndex < correctAnswers : false;
+    });
+  });
+
   return (
     <div className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] p-4 sm:p-6 rounded-xl border border-[#DAA520]/20 shadow-lg">
       {/* Progress Stars */}
-      <div className="flex flex-wrap justify-center gap-1 sm:gap-2 mb-3 sm:mb-4 max-w-full">
-        {[...Array(totalQuestions)].map((_, index) => (
-          <div
-            key={index}
-            className={`transform transition-all duration-500 ${
-              index < correctAnswers
-                ? "text-[#DAA520] animate-[bounce_1s_ease-in-out_infinite]"
-                : "text-gray-600"
-            }`}
-            style={{
-              animationDelay: `${index * 0.1}s`,
-              fontSize: "clamp(1.25rem, 4vw, 2rem)",
-            }}
-          >
-            ★
+      <div className="flex flex-col items-center gap-1 mb-3 sm:mb-4">
+        {starRows.map((row, rowIndex) => (
+          <div key={rowIndex} className="flex gap-1 sm:gap-2">
+            {row.map((isActive, colIndex) => (
+              <div
+                key={colIndex}
+                className={`transform transition-all duration-500 ${
+                  isActive
+                    ? "text-[#DAA520] animate-[bounce_1s_ease-in-out_infinite]"
+                    : "text-gray-600"
+                }`}
+                style={{
+                  animationDelay: `${(rowIndex * 5 + colIndex) * 0.1}s`,
+                  fontSize: "clamp(1.25rem, 4vw, 2rem)",
+                }}
+              >
+                ★
+              </div>
+            ))}
           </div>
         ))}
       </div>
