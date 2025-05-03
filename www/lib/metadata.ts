@@ -1,20 +1,23 @@
 import { SITE_NAME, SITE_URL } from "./constants";
 
-export const getTruncatedTitle = (title: string): string => {
-  const MAX_TITLE_LENGTH = 60;
-  const SITE_SUFFIX_LENGTH = 14; // " | Lingu.Africa"
-  const AVAILABLE_LENGTH = MAX_TITLE_LENGTH - SITE_SUFFIX_LENGTH;
+const truncateText = (
+  text: string,
+  maxLength: number,
+  suffixLength: number = 0
+): string => {
+  const availableLength = maxLength - suffixLength;
+  return text.length > availableLength
+    ? text.slice(0, availableLength - 3) + "..."
+    : text;
+};
 
-  return title.length > AVAILABLE_LENGTH
-    ? title.slice(0, AVAILABLE_LENGTH - 3) + "..."
-    : title;
+export const getTruncatedTitle = (title: string): string => {
+  const SITE_SUFFIX_LENGTH = 14; // " | Lingu.Africa"
+  return truncateText(title, 60, SITE_SUFFIX_LENGTH);
 };
 
 export const getTruncatedDescription = (description: string): string => {
-  const MAX_DESCRIPTION_LENGTH = 160;
-  return description.length > MAX_DESCRIPTION_LENGTH
-    ? description.slice(0, MAX_DESCRIPTION_LENGTH - 3) + "..."
-    : description;
+  return truncateText(description, 160);
 };
 
 export type MetadataConfig = {
