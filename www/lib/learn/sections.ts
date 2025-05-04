@@ -115,7 +115,7 @@ export const sections: Section[] = [
   {
     id: "review-3",
     title: "Final Vocabulary Check",
-    description: "Test your memory of the final set of words.",
+    description: "Review the final word set.",
     isLocked: true,
     order: 16,
     isReview: true,
