@@ -24,6 +24,7 @@ export const sections: Section[] = [
     id: "animals",
     title: "Animals",
     description: "Learn words for different animals",
+    isLocked: true,
     order: 3,
   },
   {
