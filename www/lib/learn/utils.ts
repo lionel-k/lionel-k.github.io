@@ -70,7 +70,9 @@ export const generateOptions = (
   if (!words?.length) return [currentWord];
 
   const otherWords = words.filter((w) => w.id !== currentWord.id);
-  const distractors = otherWords.slice(0, 3);
+
+  const shuffledWords = shuffleArray([...otherWords]);
+  const distractors = shuffledWords.slice(0, 3);
 
   return shuffleArray([currentWord, ...distractors]);
 };
