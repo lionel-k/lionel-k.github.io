@@ -43,8 +43,8 @@ export const sections: Section[] = [
   },
   {
     id: "review-1",
-    title: "First Vocabulary Check",
-    description: "Test your memory of the first set of words.",
+    title: "Progress Check",
+    description: "Review the first set of words",
     isLocked: true,
     order: 6,
     isReview: true,
@@ -115,7 +115,7 @@ export const sections: Section[] = [
   },
   {
     id: "review-3",
-    title: "Final Vocabulary Check",
+    title: "Progress Check",
     description: "Review the final word set.",
     isLocked: true,
     order: 16,
