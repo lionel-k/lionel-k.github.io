@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Volume2 } from "lucide-react";
 import { getAudioPath } from "@/lib/learn/utils";
 
@@ -12,21 +12,57 @@ interface WordCardProps {
 
 export default function WordCard({ word, language }: WordCardProps) {
   const [audioError, setAudioError] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    // Cleanup function to stop audio when component unmounts or word changes
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, [word.id]); // Re-run cleanup when word changes
 
   useEffect(() => {
     setAudioError(null);
-    playAudio();
-  }, [word.id]);
+    const audio = new Audio(getAudioPath(language, word.id));
+    audioRef.current = audio;
+
+    // Preload the audio
+    audio.load();
+
+    // Try to play after a short delay to ensure audio is loaded
+    const playTimeout = setTimeout(() => {
+      playAudio();
+    }, 100);
+
+    return () => {
+      clearTimeout(playTimeout);
+    };
+  }, [word.id, language]);
 
   const playAudio = async () => {
     try {
       setAudioError(null);
-      const audio = new Audio(getAudioPath(language, word.id));
+
+      const audio =
+        audioRef.current || new Audio(getAudioPath(language, word.id));
+
+      audio.currentTime = 0;
+
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+
+      audioRef.current = audio;
+
       await audio.play().catch((error) => {
-        if (error.name !== "NotAllowedError") {
-          console.error("Error playing audio:", error);
-          setAudioError("Could not play audio");
+        if (error.name === "NotAllowedError") {
+          return;
         }
+        console.error("Error playing audio:", error);
+        setAudioError("Could not play audio");
       });
     } catch (error) {
       console.error("Error playing audio:", error);
@@ -37,7 +73,6 @@ export default function WordCard({ word, language }: WordCardProps) {
   return (
     <button
       onClick={playAudio}
-      disabled={!!audioError}
       className="group w-full bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] backdrop-blur-sm rounded-xl py-4 px-6 mb-4 text-center border border-[#DAA520]/20 hover:border-[#DAA520]/40 hover:shadow-[0_0_30px_rgba(218,165,32,0.1)] transition-all duration-300 relative overflow-hidden"
     >
       <div className="relative z-10">
