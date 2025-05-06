@@ -152,6 +152,23 @@ actions,pray,kabura ariko arasenga
 actions,think,keza ariko ariyunvira
 actions,wake-up,ciza ariko aravyuka
 actions,listen,kaneza ariko arunviriza
+actions,weigh,kabura ariko arapima
+
+household,basket,igiseke
+household,broom,umukubuzo
+household,bed-1,uburiri
+household,toothbrush,umujigiti
+household,computer,inyabwonko
+household,cupboard,akabati
+household,television,imboneshakure
+household,flower,ishurwe
+household,bedspread,uburegenti
+household,bucket,indobo
+household,doorbell,ikengeri
+household,bedsheet,ishuka
+household,house-dirt,umucafu
+household,clothes,impuzu
+household,money,amahera
 
 sentences-1,sentences-1-1,igiti caguye
 sentences-1,sentences-1-2,data afise icupa
@@ -232,11 +249,6 @@ food,salt,umunyu
 food,oil,amavuta
 food,honey,ubuki
 
-household,computer,inyabwonko
-household,toothbrush,umujigiti
-household,broom,umukubuzo
-household,basket,igiseke
-
 kitchen,sauce-pan,isafuriya
 kitchen,frying-pan,ipanu
 kitchen,ladle,icaruzo
@@ -246,6 +258,7 @@ kitchen,mortar,isekuro
 kitchen,towel,igitambara
 kitchen,scale,umunzane
 kitchen,knife,imbugita
+kitchen,matches,ikibiriti
 
 greetings,hello,amahoro
 greetings,bye,bayi
