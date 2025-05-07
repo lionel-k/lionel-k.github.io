@@ -272,10 +272,6 @@ kitchen,knife,imbugita
 kitchen,matches,ikibiriti
 kitchen,fork,ifurusheti
 
-greetings,hello,amahoro
-greetings,bye,bayi
-greetings,thank-you,urakoze
-
 professions,soldier,umusoda
 professions,priest,umupatiri
 professions,nun,umubikira
@@ -286,3 +282,7 @@ professions,driver,umushoferi
 professions,king,umwami
 professions,carpenter,umubaji
 professions,farmer,umurimyi
+
+greetings,hello,amahoro
+greetings,bye,bayi
+greetings,thank-you,urakoze
