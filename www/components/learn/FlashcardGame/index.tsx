@@ -19,6 +19,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [showRecap, setShowRecap] = useState(false);
+  const [showViewResults, setShowViewResults] = useState(false);
   const router = useRouter();
   const params = useParams();
   const currentSectionId = params.section as string;
@@ -50,8 +51,12 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
       setCorrectAnswers((prev) => prev + 1);
     }
     if (currentIndex === words.length - 1) {
-      setShowRecap(true);
+      setShowViewResults(true);
     }
+  };
+
+  const handleViewResults = () => {
+    setShowRecap(true);
   };
 
   const handleNext = () => {
@@ -66,6 +71,7 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
     setSelectedAnswer(null);
     setCorrectAnswers(0);
     setShowRecap(false);
+    setShowViewResults(false);
   };
 
   const handleNextSection = () => {
@@ -102,12 +108,21 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
           {/* Next Word Button (only show if not last word) */}
           {selectedAnswer && !showRecap && (
             <div className="w-full max-w-3xl mx-auto">
-              <button
-                onClick={handleNext}
-                className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
-              >
-                Next Word
-              </button>
+              {showViewResults ? (
+                <button
+                  onClick={handleViewResults}
+                  className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
+                >
+                  View Results
+                </button>
+              ) : (
+                <button
+                  onClick={handleNext}
+                  className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
+                >
+                  Next Word
+                </button>
+              )}
             </div>
           )}
         </div>
