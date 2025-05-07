@@ -6,6 +6,21 @@ import { SITE_URL } from "@/lib/constants";
 import SectionClient from "./SectionClient";
 import { getSectionFlashcards } from "@/lib/learn/utils";
 
+export async function generateStaticParams() {
+  const params = [];
+  // Only generate for Kirundi since it's the only available language
+  const kirundi = LANGUAGES.find((l) => l.slug === "kirundi");
+  if (kirundi) {
+    for (const section of sections) {
+      params.push({
+        language: kirundi.slug,
+        section: section.id,
+      });
+    }
+  }
+  return params;
+}
+
 type Props = {
   params: Promise<{
     language: string;

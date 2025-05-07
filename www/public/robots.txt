@@ -5,7 +5,6 @@ Allow: /
 # *
 User-agent: *
 Disallow: /api/*
-Disallow: /learn/*
 
 # Host
 Host: https://www.lingu.africa

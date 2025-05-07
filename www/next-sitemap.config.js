@@ -4,7 +4,7 @@ module.exports = {
   generateRobotsTxt: true,
   generateIndexSitemap: true,
   priority: 0.7,
-  exclude: ["/api/*", "/learn/*"],
+  exclude: ["/api/*"],
   robotsTxtOptions: {
     policies: [
       {
@@ -13,7 +13,7 @@ module.exports = {
       },
       {
         userAgent: "*",
-        disallow: ["/api/*", "/learn/*"],
+        disallow: ["/api/*"],
       },
     ],
   },

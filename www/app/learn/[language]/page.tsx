@@ -4,17 +4,23 @@ import { LANGUAGES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
 import LanguageClient from "./LanguageClient";
 
+export async function generateStaticParams() {
+  const kirundi = LANGUAGES.find((l) => l.slug === "kirundi");
+  if (kirundi) {
+    return [
+      {
+        language: kirundi.slug,
+      },
+    ];
+  }
+  return [];
+}
+
 type Props = {
   params: Promise<{
     language: string;
   }>;
 };
-
-export async function generateStaticParams() {
-  return LANGUAGES.map((language) => ({
-    language: language.slug,
-  }));
-}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { language } = await params;
@@ -27,8 +33,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const languageName = languageObj.name;
-  const pageTitle = `${languageName} Vocabulary Flashcards | Lingu.Africa`;
-  const description = `Learn ${languageName} effectively with interactive flashcards featuring audio and images. Perfect for beginners and intermediate learners.`;
+  const pageTitle = `Learn ${languageName} | Lingu.Africa`;
+  const description = `Learn ${languageName} vocabulary with interactive flashcards and audio. Build your vocabulary step by step, from basic words to everyday phrases.`;
   const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
 
   return {
@@ -44,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           url: languageImageUrl,
           width: 1200,
           height: 630,
-          alt: `${languageName} Language Flashcards`,
+          alt: `Learn ${languageName}`,
         },
       ],
       locale: "en_US",
