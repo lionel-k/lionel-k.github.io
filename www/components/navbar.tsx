@@ -18,6 +18,7 @@ export function Navbar() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/books", label: "Books" },
+    { href: "/learn/kirundi", label: "Learn" },
     { href: "/about", label: "About" },
     { href: "/blog", label: "Blog" },
   ];
