@@ -169,6 +169,10 @@ household,bedsheet,ishuka
 household,house-dirt,umucafu
 household,clothes,impuzu
 household,money,amahera
+household,stairs,ingazi
+household,toy,igikinisho
+household,medication,umuti
+household,tablecloth,igitambara
 
 sentences-1,sentences-1-1,igiti caguye
 sentences-1,sentences-1-2,data afise icupa
@@ -180,14 +184,32 @@ sentences-1,sentences-1-7,keza ariko aravura neza
 sentences-1,sentences-1-8,kagabo yicaye ku buriri
 sentences-1,sentences-1-9,kamikazi yikoreye igiseke
 sentences-1,sentences-1-10,kabura ateruye akayoya
-sentences-1,sentences-1-11,gatore aracari mu bitaro
+sentences-2,sentences-1-11,kaneza afise umutaka
 sentences-1,sentences-1-12,ciza ateruye ibitabu
 sentences-1,sentences-1-13,keza afise umukubuzo
 sentences-1,sentences-1-14,kabura afise abana batatu
 sentences-1,sentences-1-15,ciza ariko aroga mu maso
 
+places,hospital,ibitaro
+places,church,isengero
+places,sea,ikiyaga
+places,school,ishure
+places,marketplace,isoko
+places,airport,ikibuga c'indege
+places,road,ibarabara
+places,forest,ishamba
+places,bridge,ikiraro
+places,mosque,umusigiti
+places,town,igisagara
+places,farm,umurima
+places,mountain,umusozi
+places,home,muhira
+places,river,uruzi
+places,country-side,ruguru
+places,university,kaminuza
+
 sentences-2,sentences-2-1,gatore agiye ku kazi
-sentences-2,sentences-2-2,kaneza afise umutaka
+sentences-1,sentences-2-2,gatore aracari mu bitaro
 sentences-2,sentences-2-3,kamikazi ariko aragaburira abana umuceri
 sentences-2,sentences-2-4,keza ariko aroza amasahani
 sentences-2,sentences-2-5,ciza ariko aragura itara
@@ -232,22 +254,11 @@ food,tea,icayi
 food,coffee,ikawa
 food,sugar,isukari
 food,salt,umunyu
-food,oil,amavuta
-food,bread,umukate
-food,meat,inyama
-food,egg,igi
 food,porridge,umusururu
-food,soup,isupu
-food,salad,isalade
-food,milk,amata
 food,juice,umutobe
-food,water,amazi
-food,tea,icayi
-food,coffee,ikawa
-food,sugar,isukari
-food,salt,umunyu
 food,oil,amavuta
 food,honey,ubuki
+food,thick-bread,ubugari
 
 kitchen,sauce-pan,isafuriya
 kitchen,frying-pan,ipanu
@@ -259,6 +270,7 @@ kitchen,towel,igitambara
 kitchen,scale,umunzane
 kitchen,knife,imbugita
 kitchen,matches,ikibiriti
+kitchen,fork,ifurusheti
 
 greetings,hello,amahoro
 greetings,bye,bayi
@@ -271,3 +283,6 @@ professions,teacher,umwigisha
 professions,doctor,umuganga
 professions,nurse,umuforoma
 professions,driver,umushoferi
+professions,king,umwami
+professions,carpenter,umubaji
+professions,farmer,umurimyi
