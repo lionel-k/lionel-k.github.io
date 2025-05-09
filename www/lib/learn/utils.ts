@@ -84,3 +84,21 @@ export const getAudioPath = (language: string, wordId: string): string => {
 export const getImagePath = (wordId: string): string => {
   return `/images/learn/${wordId}.webp`;
 };
+
+export const playFeedbackSound = (isCorrect: boolean) => {
+  let soundPath: string;
+
+  if (isCorrect) {
+    const randomNum = Math.floor(Math.random() * 3) + 1;
+    soundPath = `/sounds/correct-${randomNum}.mp3`;
+  } else {
+    soundPath = "/sounds/wrong.mp3";
+  }
+
+  console.log("Playing feedback sound:", soundPath);
+  const audio = new Audio(soundPath);
+  audio.volume = 0.5;
+  audio.play().catch((error) => {
+    console.error("Error playing feedback sound:", error);
+  });
+};

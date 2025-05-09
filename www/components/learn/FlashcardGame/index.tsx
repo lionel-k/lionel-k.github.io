@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { FlashcardWord } from "@/lib/learn/types";
-import { generateOptions } from "@/lib/learn/utils";
+import { generateOptions, playFeedbackSound } from "@/lib/learn/utils";
 import { FlashcardGameProps } from "@/lib/learn/types";
 import Loader from "../Loader";
 import { sections } from "@/lib/learn/sections";
@@ -47,9 +47,11 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   const handleAnswer = (answer: string) => {
     if (selectedAnswer) return;
     setSelectedAnswer(answer);
-    if (answer === currentWord.id) {
+    const isCorrect = answer === currentWord.id;
+    if (isCorrect) {
       setCorrectAnswers((prev) => prev + 1);
     }
+    playFeedbackSound(isCorrect);
     if (currentIndex === words.length - 1) {
       setShowViewResults(true);
     }
