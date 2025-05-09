@@ -17,12 +17,20 @@ export default function PageHeader({
     <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-8 text-white border-b border-[#DAA520]/10">
       <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="mx-auto max-w-4xl">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <div>
-              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-white/90 font-display">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+            <div className="flex-1 min-w-0">
+              <h1
+                className="text-2xl sm:text-3xl font-bold tracking-tight text-white/90 font-display"
+                itemProp="headline"
+              >
                 {title}
               </h1>
-              <p className="mt-1 text-base text-gray-400">{description}</p>
+              <p
+                className="mt-1 text-base text-gray-400"
+                itemProp="description"
+              >
+                {description}
+              </p>
             </div>
             {email !== undefined && isPaidUser !== undefined && (
               <div className="shrink-0">

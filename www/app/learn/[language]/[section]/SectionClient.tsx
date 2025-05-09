@@ -48,6 +48,10 @@ export default function SectionClient({ words, section, language }: Props) {
 
       <div className="flex-1 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] relative">
         <div className="h-full flex flex-col">
+          <h1 className="sr-only">
+            {currentSection.title} - Learn {language.name} Vocabulary with
+            Flashcards
+          </h1>
           <div className="flex-1 flex items-center justify-center pb-12">
             {currentSection.isLocked && !isPaidUser ? (
               <div className="max-w-md mx-auto p-8 text-center">
