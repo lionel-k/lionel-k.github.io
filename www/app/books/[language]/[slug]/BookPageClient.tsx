@@ -122,7 +122,7 @@ export default function BookPageClient({ language, slug }: Props) {
                   In Stock
                 </span>
                 <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-4 md:px-5 py-2 rounded-lg">
-                  {book.price} on Amazon
+                  {book.price}
                 </span>
               </div>
               <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-8">
