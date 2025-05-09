@@ -1,35 +1,35 @@
 section_id,word_id,translation,english
 basics,mum,mama,mum
-basics,tree,igiti,a tree
-basics,ball,umupira,a ball
-basics,book,igitabu,a book
-basics,sun,izuba,a sun
+basics,tree,igiti,tree
+basics,ball,umupira,ball
+basics,book,igitabu,book
+basics,sun,izuba,sun
 basics,shoe,ikirato, a shoe
-basics,lamp,itara,a lamp
-basics,car,umuduga,a car
-basics,plate,isahani,a plate
+basics,lamp,itara,lamp
+basics,car,umuduga,car
+basics,plate,isahani,plate
 basics,dad,data,dad
-basics,table,imeza,a table
-basics,spoon,ikiyiko,a spoon
-basics,bottle,icupa,a bottle
-basics,glass,ikirahuri,a glass
-basics,umbrella,umutaka,an umbrella
+basics,table,imeza,table
+basics,spoon,ikiyiko,spoon
+basics,bottle,icupa,bottle
+basics,glass,ikirahuri,glass
+basics,umbrella,umutaka,umbrella
 
-objects,pen,ikaramu,a pen
-objects,clock,isaha,a clock
-objects,phone,itelefone,a phone
-objects,mirror,ikiyo,a mirror
-objects,soap,isabuni,a soap
-objects,backpack,isakoshi,a backpack
-objects,comb,igisokozo,a comb
-objects,chair,intebe,a chair
-objects,door,umuryango,a door
-objects,window,idirisha,a window
-objects,bike,ikinga,a bike
-objects,bed,igitanda,a bed
-objects,house,inzu,a house
-objects,cup,igikombe,a cup
-objects,key,urupfunguruzo,a key
+objects,pen,ikaramu,pen
+objects,clock,isaha,clock
+objects,phone,itelefone,phone
+objects,mirror,ikiyo,mirror
+objects,soap,isabuni,soap
+objects,backpack,isakoshi,backpack
+objects,comb,igisokozo,comb
+objects,chair,intebe,chair
+objects,door,umuryango,door
+objects,window,idirisha,window
+objects,bike,ikinga,bike
+objects,bed,igitanda,bed
+objects,house,inzu,house
+objects,cup,igikombe,cup
+objects,key,urupfunguruzo,key
 
 animals,cow,inka
 animals,cat,akayabu
