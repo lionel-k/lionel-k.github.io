@@ -4,6 +4,7 @@ export type WordEntry = {
   section_id: string;
   word_id: string;
   translation: string;
+  english: string;
 };
 
 const translations: Record<string, WordEntry[]> = {
@@ -12,10 +13,10 @@ const translations: Record<string, WordEntry[]> = {
     .slice(1) // Skip header row
     .filter((line: string) => line.trim())
     .map((line: string) => {
-      const [section_id, word_id, translation] = line
+      const [section_id, word_id, translation, english] = line
         .split(",")
         .map((s: string) => s.trim());
-      return { section_id, word_id, translation };
+      return { section_id, word_id, translation, english };
     }),
 };
 

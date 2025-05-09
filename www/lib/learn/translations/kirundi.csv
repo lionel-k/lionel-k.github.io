@@ -1,19 +1,19 @@
-section_id,word_id,translation
-basics,mum,mama
-basics,tree,igiti
-basics,ball,umupira
-basics,book,igitabu
-basics,sun,izuba
-basics,shoe,ikirato
-basics,lamp,itara
-basics,car,umuduga
-basics,plate,isahani
-basics,dad,data
-basics,table,imeza
-basics,spoon,ikiyiko
-basics,bottle,icupa
-basics,glass,ikirahuri
-basics,umbrella,umutaka
+section_id,word_id,translation,english
+basics,mum,mama,mum
+basics,tree,igiti,a tree
+basics,ball,umupira,a ball
+basics,book,igitabu,a book
+basics,sun,izuba,a sun
+basics,shoe,ikirato, a shoe
+basics,lamp,itara,a lamp
+basics,car,umuduga,a car
+basics,plate,isahani,a plate
+basics,dad,data,dad
+basics,table,imeza,a table
+basics,spoon,ikiyiko,a spoon
+basics,bottle,icupa,a bottle
+basics,glass,ikirahuri,a glass
+basics,umbrella,umutaka,an umbrella
 
 objects,pen,ikaramu
 objects,clock,isaha

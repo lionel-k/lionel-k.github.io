@@ -1,28 +1,29 @@
 import { useState, useEffect, useRef } from "react";
-import { Volume2 } from "lucide-react";
+import { Volume2, Info } from "lucide-react";
 import { getAudioPath } from "@/lib/learn/utils";
 
 interface WordCardProps {
   word: {
     translation: string;
     id: string;
+    english?: string;
   };
   language: string;
 }
 
 export default function WordCard({ word, language }: WordCardProps) {
   const [audioError, setAudioError] = useState<string | null>(null);
+  const [showEnglish, setShowEnglish] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Cleanup function to stop audio when component unmounts or word changes
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
       }
     };
-  }, [word.id]); // Re-run cleanup when word changes
+  }, [word.id]);
 
   useEffect(() => {
     setAudioError(null);
@@ -70,6 +71,11 @@ export default function WordCard({ word, language }: WordCardProps) {
     }
   };
 
+  const toggleEnglish = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setShowEnglish(!showEnglish);
+  };
+
   return (
     <button
       onClick={playAudio}
@@ -81,7 +87,20 @@ export default function WordCard({ word, language }: WordCardProps) {
           <p className="text-3xl font-bold text-white tracking-wide inline-flex">
             {word.translation}
           </p>
+          {word.english && (
+            <button
+              onClick={toggleEnglish}
+              className="opacity-30 hover:opacity-100 transition-opacity"
+            >
+              <Info className="h-4 w-4 text-white" />
+            </button>
+          )}
         </div>
+        {showEnglish && word.english && (
+          <p className="text-sm text-[#DAA520]/60 mt-2 italic">
+            {word.english}
+          </p>
+        )}
         {audioError && (
           <p className="text-red-500 text-sm mt-2">{audioError}</p>
         )}

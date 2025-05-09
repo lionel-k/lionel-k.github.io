@@ -58,6 +58,7 @@ export const getSectionFlashcards = (
   const flashcards = sectionWords.map((entry) => ({
     id: entry.word_id,
     translation: entry.translation,
+    english: entry.english,
   }));
 
   return shuffleArray(flashcards);
