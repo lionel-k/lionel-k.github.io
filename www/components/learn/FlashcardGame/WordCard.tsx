@@ -77,35 +77,41 @@ export default function WordCard({ word, language }: WordCardProps) {
   };
 
   return (
-    <button
-      onClick={playAudio}
-      className="group w-full bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] backdrop-blur-sm rounded-xl py-4 px-6 mb-4 text-center border border-[#DAA520]/20 hover:border-[#DAA520]/40 hover:shadow-[0_0_30px_rgba(218,165,32,0.1)] transition-all duration-300 relative overflow-hidden"
-    >
-      <div className="relative z-10">
-        <div className="flex items-center gap-3 justify-center">
-          <Volume2 className="h-6 w-6 shrink-0 text-[#DAA520] group-hover:scale-110 transition-transform" />
-          <p className="text-3xl font-bold text-white tracking-wide inline-flex">
-            {word.translation}
-          </p>
-          {word.english && (
-            <button
-              onClick={toggleEnglish}
-              className="opacity-30 hover:opacity-100 transition-opacity"
-            >
-              <Info className="h-4 w-4 text-white" />
-            </button>
+    <div className="relative w-full mb-4">
+      {/* Main Card with Audio */}
+      <button
+        onClick={playAudio}
+        className="group w-full bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] backdrop-blur-sm rounded-xl py-4 px-6 text-center border border-[#DAA520]/20 hover:border-[#DAA520]/40 hover:shadow-[0_0_30px_rgba(218,165,32,0.1)] transition-all duration-300 relative overflow-hidden"
+      >
+        <div className="relative z-10 pr-10">
+          <div className="flex items-center gap-3 justify-center">
+            <Volume2 className="h-6 w-6 shrink-0 text-[#DAA520] group-hover:scale-110 transition-transform" />
+            <p className="text-3xl font-bold text-white tracking-wide inline-flex">
+              {word.translation}
+            </p>
+          </div>
+          {showEnglish && word.english && (
+            <p className="text-[#DAA520]/80 text-lg mt-2 italic break-words">
+              {word.english}
+            </p>
+          )}
+          {audioError && (
+            <p className="text-red-500 text-sm mt-2">{audioError}</p>
           )}
         </div>
-        {showEnglish && word.english && (
-          <p className="text-sm text-[#DAA520]/60 mt-2 italic">
-            {word.english}
-          </p>
-        )}
-        {audioError && (
-          <p className="text-red-500 text-sm mt-2">{audioError}</p>
-        )}
-      </div>
-      <div className="absolute inset-0 bg-[#DAA520]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
-    </button>
+        <div className="absolute inset-0 bg-[#DAA520]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
+      </button>
+
+      {word.english && (
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 -translate-x-2">
+          <button
+            onClick={toggleEnglish}
+            className="group relative bg-[#1A1A1A]/80 hover:bg-[#1A1A1A] p-2 rounded-full border border-[#DAA520]/20 hover:border-[#DAA520]/40 transition-all"
+          >
+            <Info className="h-4 w-4 text-[#DAA520]/60 group-hover:text-[#DAA520]" />
+          </button>
+        </div>
+      )}
+    </div>
   );
 }
