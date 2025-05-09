@@ -95,7 +95,6 @@ export const playFeedbackSound = (isCorrect: boolean) => {
     soundPath = "/sounds/wrong.mp3";
   }
 
-  console.log("Playing feedback sound:", soundPath);
   const audio = new Audio(soundPath);
   audio.volume = 0.5;
   audio.play().catch((error) => {

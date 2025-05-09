@@ -32,10 +32,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const languageName = languageObj.name;
-  const pageTitle = `Learn ${languageName} | Lingu.Africa`;
-  const description = `Learn ${languageName} vocabulary with interactive flashcards and audio. Build your vocabulary step by step, from basic words to everyday phrases.`;
-  const languageImageUrl = `${SITE_URL}/images/${language}/${language}.png`;
+  const pageTitle = `Learn ${languageObj.name} Vocabulary | Lingu.Africa`;
+  const description = `Build your ${languageObj.name} vocabulary step by step with interactive flashcards and audio. Learn essential words and phrases.`;
+  const languageImageUrl = `${SITE_URL}/images/${languageObj.slug}/${languageObj.slug}.png`;
+  const pageUrl = `${SITE_URL}/learn/${languageObj.slug}`;
 
   return {
     title: pageTitle,
@@ -43,14 +43,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: pageTitle,
       description: description,
-      url: `${SITE_URL}/learn/${language}`,
+      url: pageUrl,
       siteName: "Lingu.Africa",
       images: [
         {
           url: languageImageUrl,
           width: 1200,
           height: 630,
-          alt: `Learn ${languageName}`,
+          alt: `Learn ${languageObj.name} Vocabulary`,
         },
       ],
       locale: "en_US",
@@ -62,6 +62,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: description,
       images: [languageImageUrl],
       creator: "@lionel.kubwimana",
+    },
+    alternates: {
+      canonical: pageUrl,
+      languages: {
+        "en-US": pageUrl,
+        "x-default": pageUrl,
+      },
     },
   };
 }

@@ -29,19 +29,20 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { language: langSlug, section: sectionId } = await params;
-  const language = LANGUAGES.find((l) => l.slug === langSlug);
-  const section = sections.find((s) => s.id === sectionId);
+  const { language, section } = await params;
+  const languageObj = LANGUAGES.find((l) => l.slug === language);
+  const sectionObj = sections.find((s) => s.id === section);
 
-  if (!language || !section) {
+  if (!languageObj || !sectionObj) {
     return {
       title: "Section Not Found",
     };
   }
 
-  const pageTitle = `${section.title} in ${language.name} | Lingu.Africa`;
-  const description = `${section.description} Learn ${language.name} vocabulary with interactive flashcards and audio.`;
-  const languageImageUrl = `${SITE_URL}/images/${langSlug}/${langSlug}.png`;
+  const pageTitle = `${sectionObj.title} in ${languageObj.name} | Lingu.Africa`;
+  const description = `${sectionObj.description} Learn ${languageObj.name} vocabulary with interactive flashcards and audio.`;
+  const languageImageUrl = `${SITE_URL}/images/${languageObj.slug}/${languageObj.slug}.png`;
+  const pageUrl = `${SITE_URL}/learn/${languageObj.slug}/${sectionObj.id}`;
 
   return {
     title: pageTitle,
@@ -49,14 +50,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: pageTitle,
       description: description,
-      url: `${SITE_URL}/learn/${langSlug}/${sectionId}`,
+      url: pageUrl,
       siteName: "Lingu.Africa",
       images: [
         {
           url: languageImageUrl,
           width: 1200,
           height: 630,
-          alt: `${section.title} in ${language.name}`,
+          alt: `${sectionObj.title} in ${languageObj.name}`,
         },
       ],
       locale: "en_US",
@@ -69,25 +70,32 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [languageImageUrl],
       creator: "@lionel.kubwimana",
     },
+    alternates: {
+      canonical: pageUrl,
+      languages: {
+        "en-US": pageUrl,
+        "x-default": pageUrl,
+      },
+    },
   };
 }
 
 export default async function SectionPage({ params }: Props) {
-  const { language: langSlug, section: sectionId } = await params;
-  const language = LANGUAGES.find((l) => l.slug === langSlug);
-  const section = sections.find((s) => s.id === sectionId);
+  const { language, section } = await params;
+  const languageObj = LANGUAGES.find((l) => l.slug === language);
+  const sectionObj = sections.find((s) => s.id === section);
 
-  if (!language || !section) {
+  if (!languageObj || !sectionObj) {
     notFound();
   }
 
-  const words = getSectionFlashcards(langSlug, sectionId);
+  const words = getSectionFlashcards(language, section);
 
   if (!words) {
     notFound();
   }
 
   return (
-    <SectionClient words={words} section={sectionId} language={language} />
+    <SectionClient words={words} section={section} language={languageObj} />
   );
 }
