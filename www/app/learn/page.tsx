@@ -1,50 +1,47 @@
-"use client";
+import { Metadata } from "next";
+import { SITE_URL } from "@/lib/constants";
+import LearnClient from "./LearnClient";
 
-import LanguagesGrid from "@/components/learn/LanguagesGrid";
-import { useAuth } from "@/hooks/learn/useAuth";
-import Loader from "@/components/learn/Loader";
-import PaymentSuccessMessage from "@/components/learn/PaymentSuccessMessage";
-import { Suspense } from "react";
-import NavigationControl from "@/components/learn/NavigationControl";
+export const metadata: Metadata = {
+  title:
+    "Learn African Languages Online | Interactive Vocabulary Flashcards | Lingu.Africa",
+  description:
+    "Master essential African language vocabulary with interactive flashcards and native audio. Choose from multiple languages and start learning today.",
+  openGraph: {
+    title:
+      "Learn African Languages Online | Interactive Vocabulary Flashcards | Lingu.Africa",
+    description:
+      "Master essential African language vocabulary with interactive flashcards and native audio. Choose from multiple languages and start learning today.",
+    url: `${SITE_URL}/learn`,
+    siteName: "Lingu.Africa",
+    images: [
+      {
+        url: `${SITE_URL}/logo.webp`,
+        width: 1200,
+        height: 1200,
+        alt: "Lingu.Africa - Learn African Languages Online",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Learn African Languages Online | Interactive Vocabulary Flashcards",
+    description:
+      "Master essential African language vocabulary with interactive flashcards and native audio. Choose from multiple languages and start learning today.",
+    images: [`${SITE_URL}/logo.webp`],
+    creator: "@lionel.kubwimana",
+  },
+  alternates: {
+    canonical: `${SITE_URL}/learn`,
+    languages: {
+      "en-US": `${SITE_URL}/learn`,
+      "x-default": `${SITE_URL}/learn`,
+    },
+  },
+};
 
 export default function LearnPage() {
-  const { email, isPaidUser, isLoading } = useAuth();
-
-  if (isLoading) {
-    return <Loader />;
-  }
-
-  return (
-    <div className="min-h-screen">
-      <Suspense>
-        <PaymentSuccessMessage />
-      </Suspense>
-      <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-16 text-white">
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="mx-auto max-w-4xl text-center">
-            <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white font-display">
-              Build Your African Language Vocabulary
-            </h1>
-            <p className="mt-4 text-xl leading-8 text-gray-300">
-              Master essential words and phrases through interactive flashcards.
-              Choose your language and start learning today.
-            </p>
-            <NavigationControl
-              email={email}
-              isPaidUser={isPaidUser}
-              variant="default"
-            />
-          </div>
-        </div>
-        <div className="absolute inset-0 opacity-20 bg-repeat" />
-      </section>
-
-      <section className="relative py-16 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]">
-        <div className="absolute inset-0 opacity-5 bg-repeat" />
-        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
-          <LanguagesGrid />
-        </div>
-      </section>
-    </div>
-  );
+  return <LearnClient />;
 }
