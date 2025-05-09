@@ -6,7 +6,7 @@ export const tigrinyaConfigs = {
       slug: "first-100-words-in-tigrinya",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Discover Tigrinya First 100 Words for ages 0-6. Engage your child in learning with great images. Start exploring today!",
@@ -72,7 +72,7 @@ export const tigrinyaConfigs = {
       slug: "fruits-and-vegetables-in-tigrinya",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Tigrinya Fruits And Vegetables book for ages 0-6. Discover and learn with your child today!",
@@ -144,7 +144,7 @@ export const tigrinyaConfigs = {
       slug: "action-verbs-in-tigrinya",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn action verbs in tigrinya with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -211,7 +211,7 @@ export const tigrinyaConfigs = {
       slug: "animals-in-tigrinya",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Animals in Tigrinya for ages 0-6. Dive into a fun, educational journey today!",
@@ -283,7 +283,7 @@ export const tigrinyaConfigs = {
       slug: "bilingual-coloring-book-in-tigrinya",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore colors and words with our Tigrinya Bilingual Coloring Book for kids aged 3-6. Inspire learning today!",
@@ -349,7 +349,7 @@ export const tigrinyaConfigs = {
       slug: "animals-coloring-book-in-tigrinya",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in tigrinya with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -422,7 +422,7 @@ export const tigrinyaConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-tigrinya",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in tigrinya with this bilingual book for ages 4-8. Start your child's language journey today!",

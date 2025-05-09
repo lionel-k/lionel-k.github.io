@@ -44,6 +44,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const coverImageUrl = `${SITE_URL}/images/${language}/${slug}/cover.png`;
   const metaDescription = getTruncatedDescription(book.description.short);
 
+  const schemaProduct = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: book.title,
+    description: book.description.short,
+    image: coverImageUrl,
+    offers: {
+      "@type": "Offer",
+      price: book.price,
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url: bookUrl,
+    },
+  };
+
   return {
     title: metaTitle,
     description: metaDescription,
@@ -76,6 +91,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: metaDescription,
       images: [coverImageUrl],
       creator: "@lionel.kubwimana",
+    },
+    other: {
+      "schema:product": JSON.stringify(schemaProduct),
     },
   };
 }

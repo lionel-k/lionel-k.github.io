@@ -7,7 +7,7 @@ export const capeVerdeanKrioluConfigs = {
       slug: "first-100-words-in-cape-verdean-kriolu",
       age: "0-6",
       pages: "52",
-      price: "$12.99",
+      price: "12.99",
       description: {
         short:
           "Discover Cape Verdean Kriolu's First 100 Words for kids 0-6. Engage young minds with great learning today!",
@@ -75,7 +75,7 @@ export const capeVerdeanKrioluConfigs = {
       slug: "fruits-and-vegetables-in-cape-verdean-kriolu",
       age: "0-6",
       pages: "36",
-      price: "$11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in cape-verdean-kriolu with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -142,7 +142,7 @@ export const capeVerdeanKrioluConfigs = {
       slug: "action-verbs-in-cape-verdean-kriolu",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn action verbs in cape-verdean-kriolu with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -209,7 +209,7 @@ export const capeVerdeanKrioluConfigs = {
       slug: "animals-in-cape-verdean-kriolu",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Animals in Cape Verdean Kriolu! Ideal for ages 0-6. Dive into fun learning today!",
@@ -277,7 +277,7 @@ export const capeVerdeanKrioluConfigs = {
       slug: "bilingual-coloring-book-in-cape-verdean-kriolu",
       age: "3-6",
       pages: "58",
-      price: "$11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Cape Verdean Kriolu in this Bilingual Coloring Book for ages 3-6. Inspire learning and creativity today!",
@@ -345,7 +345,7 @@ export const capeVerdeanKrioluConfigs = {
       slug: "animals-coloring-book-in-cape-verdean-kriolu",
       age: "4-8",
       pages: "83",
-      price: "$9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in cape-verdean-kriolu with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -413,7 +413,7 @@ export const capeVerdeanKrioluConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-cape-verdean-kriolu",
       age: "4-8",
       pages: "71",
-      price: "$9.99",
+      price: "9.99",
       description: {
         short:
           "Discover Fruits And Vegetables Coloring Book in Cape Verdean Kriolu for ages 4-8. Explore, color, and learn today!",

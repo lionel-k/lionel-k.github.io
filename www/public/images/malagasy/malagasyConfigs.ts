@@ -6,7 +6,7 @@ export const malagasyConfigs = {
       slug: "first-100-words-in-malagasy",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in malagasy with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -67,7 +67,7 @@ export const malagasyConfigs = {
       slug: "fruits-and-vegetables-in-malagasy",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in malagasy with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -139,7 +139,7 @@ export const malagasyConfigs = {
       slug: "action-verbs-in-malagasy",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn action verbs in malagasy with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -211,7 +211,7 @@ export const malagasyConfigs = {
       slug: "animals-in-malagasy",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn animals in malagasy with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -277,7 +277,7 @@ export const malagasyConfigs = {
       slug: "bilingual-coloring-book-in-malagasy",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore the Malagasy Bilingual Coloring Book for ages 3-6. Inspire learning and creativity today!",
@@ -343,7 +343,7 @@ export const malagasyConfigs = {
       slug: "animals-coloring-book-in-malagasy",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Discover animals with our Malagasy Animals Coloring Book for ages 4-8. Grab your copy and start coloring today!",
@@ -416,7 +416,7 @@ export const malagasyConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-malagasy",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Discover Malagasy fruits and veggies in this unique Coloring Book for kids aged 4-8. Grab yours and start coloring!",

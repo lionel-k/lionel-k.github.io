@@ -6,7 +6,7 @@ export const krioConfigs = {
       slug: "first-100-words-in-krio",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in krio with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -78,7 +78,7 @@ export const krioConfigs = {
       slug: "fruits-and-vegetables-in-krio",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in krio with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -150,7 +150,7 @@ export const krioConfigs = {
       slug: "action-verbs-in-krio",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Krio Action Verbs! Perfect for ages 0-6. Engage young minds with great learning. Start the adventure now!",
@@ -216,7 +216,7 @@ export const krioConfigs = {
       slug: "animals-in-krio",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Animals in Krio! Perfect for kids aged 0-6. Dive into a fun, unique learning adventure today!",
@@ -282,7 +282,7 @@ export const krioConfigs = {
       slug: "bilingual-coloring-book-in-krio",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in krio with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -348,7 +348,7 @@ export const krioConfigs = {
       slug: "animals-coloring-book-in-krio",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in krio with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -415,7 +415,7 @@ export const krioConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-krio",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in krio with this bilingual book for ages 4-8. Start your child's language journey today!",

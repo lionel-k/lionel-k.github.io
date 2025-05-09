@@ -6,7 +6,7 @@ export const amharicConfigs = {
       slug: "first-100-words-in-amharic",
       age: "0-6",
       pages: "52",
-      price: "$12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in amharic with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -73,7 +73,7 @@ export const amharicConfigs = {
       slug: "fruits-and-vegetables-in-amharic",
       age: "0-6",
       pages: "36",
-      price: "$11.99",
+      price: "11.99",
       description: {
         short:
           '"Discover Fruits And Vegetables in Amharic for ages 0-6. Engage young minds today with great learning!"',
@@ -140,7 +140,7 @@ export const amharicConfigs = {
       slug: "action-verbs-in-amharic",
       age: "0-6",
       pages: "27",
-      price: "$11.99",
+      price: "11.99",
       description: {
         short:
           '"Discover Amharic Action Verbs for ages 0-6. Engage young minds with great words. Start learning today!"',
@@ -207,7 +207,7 @@ export const amharicConfigs = {
       slug: "animals-in-amharic",
       age: "0-6",
       pages: "27",
-      price: "$11.99",
+      price: "11.99",
       description: {
         short:
           "\"Discover 'Animals' in Amharic! Ideal for ages 0-6. Engage young minds with this unique, fun learning adventure!\"",
@@ -274,7 +274,7 @@ export const amharicConfigs = {
       slug: "bilingual-coloring-book-in-amharic",
       age: "3-6",
       pages: "58",
-      price: "$11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in amharic with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -341,7 +341,7 @@ export const amharicConfigs = {
       slug: "animals-coloring-book-in-amharic",
       age: "4-8",
       pages: "83",
-      price: "$9.99",
+      price: "9.99",
       description: {
         short:
           '"Explore our unique Amharic Animals Coloring Book for ages 4-8. Ignite creativity and learn today!"',
@@ -409,7 +409,7 @@ export const amharicConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-amharic",
       age: "4-8",
       pages: "71",
-      price: "$9.99",
+      price: "9.99",
       description: {
         short:
           '"Explore the Amharic Fruits And Vegetables Coloring Book for ages 4-8. Ignite creativity and learn today!"',

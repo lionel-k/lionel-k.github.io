@@ -6,7 +6,7 @@ export const kirundiConfigs = {
       slug: "my-first-picture-book-in-kirundi",
       age: "2-8",
       pages: "28",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily. Great for toddlers and preschoolers.",
@@ -72,7 +72,7 @@ export const kirundiConfigs = {
       slug: "gatore-and-her-parents-visit-burundi",
       age: "3-9",
       pages: "28",
-      price: "$ 20.99",
+      price: "20.99",
       description: {
         short:
           "A fun story about Gatore's trip to Burundi, learning about family and traditions. Great for families teaching Kirundi.",
@@ -144,7 +144,7 @@ export const kirundiConfigs = {
       slug: "the-kirundi-proverb-treasury",
       age: "10+",
       pages: "193",
-      price: "$ 19.99",
+      price: "19.99",
       description: {
         short:
           "Over 900 Kirundi sayings, each with English translations and explanations. These sayings show the rich wisdom of Burundi and are fun to learn.",
@@ -210,7 +210,7 @@ export const kirundiConfigs = {
       slug: "the-adventure-of-shaka-in-burundi",
       age: "1-6",
       pages: "36",
-      price: "$ 21.99",
+      price: "21.99",
       description: {
         short:
           "Join Shaka's first visit to Burundi! A bilingual story with hippos and safari cars that makes learning Kirundi fun.",
@@ -278,7 +278,7 @@ export const kirundiConfigs = {
       slug: "gatore-and-the-burundian-donuts",
       age: "4-10",
       pages: "26",
-      price: "$ 19.99",
+      price: "19.99",
       description: {
         short:
           "A fun Kirundi-English story where Gatore proudly shares donuts at her school's Global Day—perfect for kids ages 4-10!",
@@ -344,7 +344,7 @@ export const kirundiConfigs = {
       slug: "stories-for-children",
       age: "3-7",
       pages: "25",
-      price: "$ 21.99",
+      price: "21.99",
       description: {
         short:
           "A Kirundi-English story about friendship, inclusivity, and caring for the environment—perfect for kids ages 3-7!",
@@ -410,7 +410,7 @@ export const kirundiConfigs = {
       slug: "fruits-and-vegetables-in-kirundi",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "A Kirundi-English-French picture book all about fruits and vegetables, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
@@ -476,7 +476,7 @@ export const kirundiConfigs = {
       slug: "animals-in-kirundi",
       age: "0-6",
       pages: "28",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "A Kirundi-English-French picture book all about animals, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
@@ -543,7 +543,7 @@ export const kirundiConfigs = {
       slug: "action-verbs-in-kirundi",
       age: "0-6",
       pages: "28",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "A Kirundi-English-French picture book focusing on action verbs. Perfect for kids aged 0-6 learning Kirundi in a fun way!",
@@ -610,7 +610,7 @@ export const kirundiConfigs = {
       slug: "colors-in-kirundi",
       age: "1-6",
       pages: "24",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "A trilingual picture book (Kirundi, English, and French) for kids aged 1-6, helping them learn colors in a fun, colorful way!",
@@ -677,7 +677,7 @@ export const kirundiConfigs = {
       slug: "letters-in-kirundi",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "A trilingual (Kirundi-English-French) picture book teaching letters to kids aged 0-6. Great for families wanting to introduce Kirundi in a fun way!",
@@ -745,7 +745,7 @@ export const kirundiConfigs = {
       slug: "i-can-count-in-kirundi",
       age: "0-6",
       pages: "26",
-      price: "$ 10.99",
+      price: "10.99",
       description: {
         short:
           "A fun counting book in Kirundi, English, and French for kids aged 0-6. It's great for learning numbers and connecting with Kirundi culture!",
@@ -812,7 +812,7 @@ export const kirundiConfigs = {
       slug: "coloring-book-in-kirundi",
       age: "3-6",
       pages: "57",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "A trilingual coloring book for kids aged 3-6. Learn new words while coloring animals, shapes, fruits, and more!",
@@ -881,7 +881,7 @@ export const kirundiConfigs = {
       slug: "the-kirundi-joke-treasury",
       age: "12+",
       pages: "53",
-      price: "$ 18.00",
+      price: "18.00",
       description: {
         short:
           "100+ bilingual jokes in Kirundi and English. Learn language through laughter while exploring Burundian culture!",
@@ -946,7 +946,7 @@ export const kirundiConfigs = {
       slug: "melodies-of-burundi",
       age: "6+",
       pages: "40",
-      price: "$ 25.00",
+      price: "25.00",
       description: {
         short:
           "Explore Kirundi children's songs with English translations and chords. Ideal for families and music enthusiasts.",
@@ -1018,7 +1018,7 @@ export const kirundiConfigs = {
       slug: "kirundi-word-search",
       age: "12+",
       pages: "150",
-      price: "$ 8.99",
+      price: " 8.99",
       description: {
         short:
           "100 puzzles featuring 2,000 Kirundi words—ideal for teens, adults, and seniors to learn and enjoy Kirundi!",
@@ -1090,7 +1090,7 @@ export const kirundiConfigs = {
       slug: "traditional-kirundi-songs",
       age: "15+",
       pages: "84",
-      price: "$ 15.99",
+      price: "15.99",
       description: {
         short:
           "20 Kirundi songs from Burundi that celebrate culture and family traditions. Perfect for kids and families!",
@@ -1156,7 +1156,7 @@ export const kirundiConfigs = {
       slug: "riddles-in-kirundi",
       age: "10+",
       pages: "70",
-      price: "$ 22.99",
+      price: "22.99",
       description: {
         short:
           "300+ Kirundi riddles for cultural insights and family fun. Perfect for deepening your connection to Burundi.",

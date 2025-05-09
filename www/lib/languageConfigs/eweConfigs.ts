@@ -6,7 +6,7 @@ export const eweConfigs = {
       slug: "first-100-words-in-ewe",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Explore Ewe's First 100 Words with colorful pictures and engaging activities for kids aged 0-6. Start a fun learning journey today!",
@@ -72,7 +72,7 @@ export const eweConfigs = {
       slug: "fruits-and-vegetables-in-ewe",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in ewe with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -144,7 +144,7 @@ export const eweConfigs = {
       slug: "action-verbs-in-ewe",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Ewe Action Verbs for ages 0-6! Engage young minds with fun, easy verbs. Start their language journey today!",
@@ -211,7 +211,7 @@ export const eweConfigs = {
       slug: "animals-in-ewe",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn animals in ewe with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -283,7 +283,7 @@ export const eweConfigs = {
       slug: "bilingual-coloring-book-in-ewe",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in ewe with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -355,7 +355,7 @@ export const eweConfigs = {
       slug: "animals-coloring-book-in-ewe",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Explore Ewe Animals Coloring Book! Perfect for kids 4-8. Dive into coloring fun and learn about animals today!",
@@ -428,7 +428,7 @@ export const eweConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-ewe",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Explore the Ewe Fruits and Vegetables Coloring Book for ages 4-8. Discover new words while having fun coloring today!",

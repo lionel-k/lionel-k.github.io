@@ -50,7 +50,7 @@ function PurchaseCTA({ book, language }: { book: Book; language: string }) {
               className="w-full sm:w-auto bg-black hover:bg-black/90 text-white rounded-xl px-8 py-4 mb-8 inline-flex items-center justify-center text-lg font-semibold transition-all duration-300"
               bookSlug={book.slug}
             >
-              Purchase on Amazon - {book.price}
+              Purchase on Amazon - ${book.price}
               <ArrowRight className="ml-2 h-5 w-5" strokeWidth={2.5} />
             </AmazonLink>
             <div className="w-full flex flex-col sm:flex-row sm:justify-center items-start sm:items-center gap-3 sm:gap-6">
@@ -122,7 +122,7 @@ export default function BookPageClient({ language, slug }: Props) {
                   In Stock
                 </span>
                 <span className="inline-flex items-center justify-center whitespace-nowrap bg-[#DAA520] text-black text-sm font-semibold px-4 md:px-5 py-2 rounded-lg">
-                  {book.price}
+                  ${book.price}
                 </span>
               </div>
               <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-8">

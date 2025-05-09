@@ -6,7 +6,7 @@ export const swahiliConfigs = {
       slug: "first-100-words-in-swahili",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in swahili with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -78,7 +78,7 @@ export const swahiliConfigs = {
       slug: "fruits-and-vegetables-in-swahili",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Swahili Fruits And Vegetables. Perfect for ages 0-6. Engage young minds with this fun learning adventure!",
@@ -145,7 +145,7 @@ export const swahiliConfigs = {
       slug: "action-verbs-in-swahili",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn action verbs in swahili with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -217,7 +217,7 @@ export const swahiliConfigs = {
       slug: "animals-in-swahili",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn animals in swahili with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -289,7 +289,7 @@ export const swahiliConfigs = {
       slug: "bilingual-coloring-book-in-swahili",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in swahili with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -356,7 +356,7 @@ export const swahiliConfigs = {
       slug: "animals-coloring-book-in-swahili",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in swahili with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -423,7 +423,7 @@ export const swahiliConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-swahili",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Discover our Swahili-English Fruits and Vegetables Coloring Book for kids 4-8. Learn words while having fun coloring!",

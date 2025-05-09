@@ -6,7 +6,7 @@ export const xhosaConfigs = {
       slug: "first-100-words-in-xhosa",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Discover your first 100 Xhosa words with this engaging book for ages 0-6. Perfect for starting your child's language journey!",
@@ -73,7 +73,7 @@ export const xhosaConfigs = {
       slug: "fruits-and-vegetables-in-xhosa",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Xhosa Fruits And Vegetables with colorful pictures! Ideal for ages 0-6. Start your fun learning journey now!",
@@ -145,7 +145,7 @@ export const xhosaConfigs = {
       slug: "action-verbs-in-xhosa",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Xhosa Action Verbs! Perfect for kids 0-6. Engage young minds with fun and learn through play today!",
@@ -212,7 +212,7 @@ export const xhosaConfigs = {
       slug: "animals-in-xhosa",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Animals in Xhosa! Perfect for kids aged 0-6. Dive into fun learning and spark their curiosity today!",
@@ -279,7 +279,7 @@ export const xhosaConfigs = {
       slug: "bilingual-coloring-book-in-xhosa",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover a Xhosa Bilingual Coloring Book for ages 3-6. Learn essential words while coloring fun pictures. Start your language journey today!",
@@ -345,7 +345,7 @@ export const xhosaConfigs = {
       slug: "animals-coloring-book-in-xhosa",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Explore Xhosa culture with our Animals Coloring Book for ages 4-8. Ignite creativity and learn new words while having fun today!",
@@ -418,7 +418,7 @@ export const xhosaConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-xhosa",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Explore Xhosa language with our Fruits and Vegetables Coloring Book for ages 4-8. Ignite creativity and learn new words today!",

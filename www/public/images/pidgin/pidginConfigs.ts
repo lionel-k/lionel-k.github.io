@@ -6,7 +6,7 @@ export const pidginConfigs = {
       slug: "first-100-words-in-pidgin",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in pidgin with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -73,7 +73,7 @@ export const pidginConfigs = {
       slug: "fruits-and-vegetables-in-pidgin",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Pidgin Fruits And Vegetables for kids 0-6. Discover and learn with fun! Grab your copy today.",
@@ -140,7 +140,7 @@ export const pidginConfigs = {
       slug: "action-verbs-in-pidgin",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Pidgin Action Verbs for ages 0-6! Engage young minds with fun activities. Explore and learn today!",
@@ -212,7 +212,7 @@ export const pidginConfigs = {
       slug: "animals-in-pidgin",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Animals in Pidgin! Perfect for kids aged 0-6. Dive into a fun, educational adventure today!",
@@ -284,7 +284,7 @@ export const pidginConfigs = {
       slug: "bilingual-coloring-book-in-pidgin",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover our Pidgin Bilingual Coloring Book for ages 3-6. Engage and learn today with great, fun activities!",
@@ -351,7 +351,7 @@ export const pidginConfigs = {
       slug: "animals-coloring-book-in-pidgin",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Discover Pidgin Animals Coloring Book! Perfect for kids 4-8. Grab your crayons and start coloring today!",
@@ -418,7 +418,7 @@ export const pidginConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-pidgin",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Pidgin Fruits And Vegetables Coloring Book wey go spark joy for kids age 4-8. Grab your copy and start coloring fun today!",

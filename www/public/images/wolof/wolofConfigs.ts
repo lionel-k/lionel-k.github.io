@@ -6,7 +6,7 @@ export const wolofConfigs = {
       slug: "first-100-words-in-wolof",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in wolof with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -73,7 +73,7 @@ export const wolofConfigs = {
       slug: "fruits-and-vegetables-in-wolof",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in wolof with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -145,7 +145,7 @@ export const wolofConfigs = {
       slug: "action-verbs-in-wolof",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Wolof Action Verbs with your little ones! Ideal for ages 0-6, this book makes learning lively and fun!",
@@ -217,7 +217,7 @@ export const wolofConfigs = {
       slug: "animals-in-wolof",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Animals in Wolof! Perfect for kids aged 0-6. Discover and learn with this interactive, great book today!",
@@ -289,7 +289,7 @@ export const wolofConfigs = {
       slug: "bilingual-coloring-book-in-wolof",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in wolof with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -361,7 +361,7 @@ export const wolofConfigs = {
       slug: "animals-coloring-book-in-wolof",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in wolof with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -429,7 +429,7 @@ export const wolofConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-wolof",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in wolof with this bilingual book for ages 4-8. Start your child's language journey today!",
