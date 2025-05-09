@@ -19,8 +19,8 @@ export default function ImageGrid({
     if (!selectedAnswer) return "";
     if (wordId === currentWordId) return "ring-4 ring-[#DAA520]";
     if (wordId === selectedAnswer && wordId !== currentWordId)
-      return "ring-4 ring-red-500 opacity-50";
-    return "opacity-50";
+      return "ring-4 ring-[#FF0000] opacity-80";
+    return "opacity-30";
   };
 
   return (
