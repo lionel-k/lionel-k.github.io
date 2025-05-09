@@ -17,6 +17,10 @@ export default function WordCard({ word, language }: WordCardProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
+    setShowEnglish(false);
+  }, [word.id]);
+
+  useEffect(() => {
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
