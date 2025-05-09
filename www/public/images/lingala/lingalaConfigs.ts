@@ -6,7 +6,7 @@ export const lingalaConfigs = {
       slug: "first-100-words-in-lingala",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in lingala with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -78,7 +78,7 @@ export const lingalaConfigs = {
       slug: "fruits-and-vegetables-in-lingala",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in lingala with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -145,7 +145,7 @@ export const lingalaConfigs = {
       slug: "action-verbs-in-lingala",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn action verbs in lingala with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -217,7 +217,7 @@ export const lingalaConfigs = {
       slug: "animals-in-lingala",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn animals in lingala with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -289,7 +289,7 @@ export const lingalaConfigs = {
       slug: "bilingual-coloring-book-in-lingala",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in lingala with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -355,7 +355,7 @@ export const lingalaConfigs = {
       slug: "animals-coloring-book-in-lingala",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in lingala with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -428,7 +428,7 @@ export const lingalaConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-lingala",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in lingala with this bilingual book for ages 4-8. Start your child's language journey today!",

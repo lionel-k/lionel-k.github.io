@@ -6,7 +6,7 @@ export const yorubaConfigs = {
       slug: "first-100-words-in-yoruba",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Discover 'First 100 Words' in Yoruba! Perfect for kids 0-6. Ignite learning and explore language together today!",
@@ -78,7 +78,7 @@ export const yorubaConfigs = {
       slug: "fruits-and-vegetables-in-yoruba",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in yoruba with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -150,7 +150,7 @@ export const yorubaConfigs = {
       slug: "animals-in-yoruba",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Yoruba Animals for ages 0-6! Engage young minds with colorful illustrations and animal names. Start exploring today!",
@@ -222,7 +222,7 @@ export const yorubaConfigs = {
       slug: "action-verbs-in-yoruba",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Yoruba Action Verbs for kids aged 0-6. Engage and learn with great illustrations. Start the adventure today!",
@@ -288,7 +288,7 @@ export const yorubaConfigs = {
       slug: "bilingual-coloring-book-in-yoruba",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Yoruba with our Bilingual Coloring Book! Perfect for kids aged 3-6. Inspire learning and creativity today!",
@@ -360,7 +360,7 @@ export const yorubaConfigs = {
       slug: "animals-coloring-book-in-yoruba",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Explore Yoruba culture with our Animals Coloring Book for ages 4-8. Ignite creativity and learn new words while having fun today!",
@@ -433,7 +433,7 @@ export const yorubaConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-yoruba",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Discover Yoruba culture with our Fruits And Vegetables Coloring Book for ages 4-8. Start coloring today!",

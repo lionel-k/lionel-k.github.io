@@ -6,7 +6,7 @@ export const hausaConfigs = {
       slug: "first-100-words-in-hausa",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Discover Hausa First 100 Words for ages 0-6! Engage young minds with great visuals. Start learning today!",
@@ -78,7 +78,7 @@ export const hausaConfigs = {
       slug: "fruits-and-vegetables-in-hausa",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in hausa with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -150,7 +150,7 @@ export const hausaConfigs = {
       slug: "action-verbs-in-hausa",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Hausa Action Verbs with your 0-6 year olds! Engage young minds in dynamic learning with colorful pictures and fun activities today!",
@@ -217,7 +217,7 @@ export const hausaConfigs = {
       slug: "animals-in-hausa",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn animals in hausa with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -283,7 +283,7 @@ export const hausaConfigs = {
       slug: "bilingual-coloring-book-in-hausa",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in hausa with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -355,7 +355,7 @@ export const hausaConfigs = {
       slug: "animals-coloring-book-in-hausa",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Discover our unique Hausa Animals Coloring Book for kids aged 4-8! Spark creativity and learning today!",
@@ -423,7 +423,7 @@ export const hausaConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-hausa",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in hausa with this bilingual book for ages 4-8. Start your child's language journey today!",

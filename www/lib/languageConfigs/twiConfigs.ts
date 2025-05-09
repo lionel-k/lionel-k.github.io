@@ -6,7 +6,7 @@ export const twiConfigs = {
       slug: "first-100-words-in-twi",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Explore Twi with this great First 100 Words book for ages 0-6. Spark curiosity and language skills today!",
@@ -78,7 +78,7 @@ export const twiConfigs = {
       slug: "fruits-and-vegetables-in-twi",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in twi with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -150,7 +150,7 @@ export const twiConfigs = {
       slug: "action-verbs-in-twi",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn action verbs in twi with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -222,7 +222,7 @@ export const twiConfigs = {
       slug: "animals-in-twi",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Animals in Twi for ages 0-6. Discover great stories and learn together. Dive into fun today!",
@@ -294,7 +294,7 @@ export const twiConfigs = {
       slug: "bilingual-coloring-book-in-twi",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover our Twi Bilingual Coloring Book for ages 3-6. Spark creativity and language skills. Grab your copy today!",
@@ -366,7 +366,7 @@ export const twiConfigs = {
       slug: "animals-coloring-book-in-twi",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Explore the Twi Animals Coloring Book! Perfect for ages 4-8. Unleash creativity and learn new words while having fun today!",
@@ -439,7 +439,7 @@ export const twiConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-twi",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in twi with this bilingual book for ages 4-8. Start your child's language journey today!",

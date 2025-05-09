@@ -6,7 +6,7 @@ export const shonaConfigs = {
       slug: "first-100-words-in-shona",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Discover Shona First 100 Words for ages 0-6. Engage young minds with great visuals and start their language journey today!",
@@ -72,7 +72,7 @@ export const shonaConfigs = {
       slug: "fruits-and-vegetables-in-shona",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in shona with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -144,7 +144,7 @@ export const shonaConfigs = {
       slug: "action-verbs-in-shona",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Shona Action Verbs! Perfect for kids aged 0-6 to learn and play. Dive into fun language adventures now!",
@@ -211,7 +211,7 @@ export const shonaConfigs = {
       slug: "animals-in-shona",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Animals in Shona! Perfect for kids 0-6, this book invites families to explore and learn together now!",
@@ -277,7 +277,7 @@ export const shonaConfigs = {
       slug: "bilingual-coloring-book-in-shona",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in shona with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -349,7 +349,7 @@ export const shonaConfigs = {
       slug: "animals-coloring-book-in-shona",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in shona with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -417,7 +417,7 @@ export const shonaConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-shona",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Explore Shona fruits and veggies in this fun coloring book for ages 4-8. Ignite creativity and learn today!",

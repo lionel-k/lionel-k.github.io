@@ -6,7 +6,7 @@ export const somaliConfigs = {
       slug: "first-100-words-in-somali",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in somali with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -78,7 +78,7 @@ export const somaliConfigs = {
       slug: "fruits-and-vegetables-in-somali",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in somali with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -150,7 +150,7 @@ export const somaliConfigs = {
       slug: "action-verbs-in-somali",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Somali Action Verbs for ages 0-6. Engage and learn through fun activities. Start your child's learning journey today!",
@@ -222,7 +222,7 @@ export const somaliConfigs = {
       slug: "animals-in-somali",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Somali animals in this charming book for ages 0-6. Spark curiosity and fun learning today!",
@@ -294,7 +294,7 @@ export const somaliConfigs = {
       slug: "bilingual-coloring-book-in-somali",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Somali-English colors in this Bilingual Coloring Book for ages 3-6. Inspire creativity and language skills today!",
@@ -366,7 +366,7 @@ export const somaliConfigs = {
       slug: "animals-coloring-book-in-somali",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in somali with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -434,7 +434,7 @@ export const somaliConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-somali",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Discover Somali Fruits And Vegetables Coloring Book for ages 4-8. Inspire creativity and learning today!",

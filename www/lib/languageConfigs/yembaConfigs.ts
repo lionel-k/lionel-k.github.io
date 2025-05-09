@@ -6,7 +6,7 @@ export const yembaConfigs = {
       slug: "first-100-words-in-yemba",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Discover Yemba's First 100 Words for ages 0-6. Engage your child in fun learning. Start your language journey now!",
@@ -78,7 +78,7 @@ export const yembaConfigs = {
       slug: "fruits-and-vegetables-in-yemba",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in yemba with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -145,7 +145,7 @@ export const yembaConfigs = {
       slug: "action-verbs-in-yemba",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Explore Yemba Action Verbs with your 0-6 year olds. Dive into fun learning and boost language skills today!",
@@ -217,7 +217,7 @@ export const yembaConfigs = {
       slug: "animals-in-yemba",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn animals in yemba with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -289,7 +289,7 @@ export const yembaConfigs = {
       slug: "bilingual-coloring-book-in-yemba",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn bilingual coloring book in yemba with this bilingual book for ages 3-6. Start your child's language journey today!",
@@ -361,7 +361,7 @@ export const yembaConfigs = {
       slug: "animals-coloring-book-in-yemba",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Explore the Yemba Animals Coloring Book for ages 4-8. Unleash creativity and learn about animals. Grab your copy now!",
@@ -434,7 +434,7 @@ export const yembaConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-yemba",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in yemba with this bilingual book for ages 4-8. Start your child's language journey today!",

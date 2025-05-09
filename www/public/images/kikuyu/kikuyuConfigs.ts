@@ -6,7 +6,7 @@ export const kikuyuConfigs = {
       slug: "first-100-words-in-kikuyu",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Discover Kikuyu First 100 Words for ages 0-6. Engage young minds with great images and start their language journey today!",
@@ -78,7 +78,7 @@ export const kikuyuConfigs = {
       slug: "fruits-and-vegetables-in-kikuyu",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in kikuyu with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -150,7 +150,7 @@ export const kikuyuConfigs = {
       slug: "action-verbs-in-kikuyu",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Kikuyu Action Verbs for ages 0-6! Engage young minds with fun, dynamic language learning today!",
@@ -222,7 +222,7 @@ export const kikuyuConfigs = {
       slug: "animals-in-kikuyu",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Kikuyu Animals! Perfect for ages 0-6. Engage young minds with great, unique wildlife stories today!",
@@ -289,7 +289,7 @@ export const kikuyuConfigs = {
       slug: "bilingual-coloring-book-in-kikuyu",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover the Kikuyu Bilingual Coloring Book for ages 3-6. Engage young minds and inspire learning today!",
@@ -355,7 +355,7 @@ export const kikuyuConfigs = {
       slug: "animals-coloring-book-in-kikuyu",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in kikuyu with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -428,7 +428,7 @@ export const kikuyuConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-kikuyu",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in kikuyu with this bilingual book for ages 4-8. Start your child's language journey today!",

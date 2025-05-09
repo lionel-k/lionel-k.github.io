@@ -6,7 +6,7 @@ export const haitianCreoleConfigs = {
       slug: "first-100-words-in-haitian-creole",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Learn first 100 words in Haitian Creole with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -79,7 +79,7 @@ export const haitianCreoleConfigs = {
       slug: "fruits-and-vegetables-in-haitian-creole",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover Fruits And Vegetables in Haitian Creole. Perfect for kids aged 0-6. Engage and learn today!",
@@ -151,7 +151,7 @@ export const haitianCreoleConfigs = {
       slug: "action-verbs-in-haitian-creole",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn action verbs in Haitian Creole with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -223,7 +223,7 @@ export const haitianCreoleConfigs = {
       slug: "animals-in-haitian-creole",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn animals in Haitian Creole with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -290,7 +290,7 @@ export const haitianCreoleConfigs = {
       slug: "bilingual-coloring-book-in-haitian-creole",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Discover a great Haitian Creole Bilingual Coloring Book for ages 3-6. Inspire fun learning and creativity today!",
@@ -357,7 +357,7 @@ export const haitianCreoleConfigs = {
       slug: "animals-coloring-book-in-haitian-creole",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn animals coloring book in Haitian Creole with this bilingual book for ages 4-8. Start your child's language journey today!",
@@ -425,7 +425,7 @@ export const haitianCreoleConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-haitian-creole",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in Haitian Creole with this bilingual book for ages 4-8. Start your child's language journey today!",

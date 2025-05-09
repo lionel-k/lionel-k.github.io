@@ -6,7 +6,7 @@ export const igboConfigs = {
       slug: "first-100-words-in-igbo",
       age: "0-6",
       pages: "52",
-      price: "$ 12.99",
+      price: "12.99",
       description: {
         short:
           "Igbo First 100 Words book for ages 0-6. Engage young minds and explore Igbo language together. Grab it now!",
@@ -78,7 +78,7 @@ export const igboConfigs = {
       slug: "fruits-and-vegetables-in-igbo",
       age: "0-6",
       pages: "36",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn fruits and vegetables in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -150,7 +150,7 @@ export const igboConfigs = {
       slug: "action-verbs-in-igbo",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn action verbs in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -222,7 +222,7 @@ export const igboConfigs = {
       slug: "animals-in-igbo",
       age: "0-6",
       pages: "27",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Learn animals in igbo with this bilingual book for ages 0-6. Start your child's language journey today!",
@@ -289,7 +289,7 @@ export const igboConfigs = {
       slug: "bilingual-coloring-book-in-igbo",
       age: "3-6",
       pages: "58",
-      price: "$ 11.99",
+      price: "11.99",
       description: {
         short:
           "Igbo Bilingual Coloring Book for ages 3-6. Discover colors and words! Spark creativity and language skills today!",
@@ -361,7 +361,7 @@ export const igboConfigs = {
       slug: "animals-coloring-book-in-igbo",
       age: "4-8",
       pages: "83",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Igbo Animals Coloring Book for ages 4-8. Discover and color! Ignite creativity and learning. Get yours today!",
@@ -429,7 +429,7 @@ export const igboConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-igbo",
       age: "4-8",
       pages: "71",
-      price: "$ 9.99",
+      price: "9.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in igbo with this bilingual book for ages 4-8. Start your child's language journey today!",
