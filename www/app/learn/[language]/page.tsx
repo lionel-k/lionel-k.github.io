@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const pageTitle = `Learn ${languageObj.name} Vocabulary | Lingu.Africa`;
-  const description = `Build your ${languageObj.name} vocabulary step by step with interactive flashcards and audio. Learn essential words and phrases.`;
+  const description = `Master essential ${languageObj.name} vocabulary with interactive flashcards and native audio. Perfect for beginners looking to build confidence.`;
   const languageImageUrl = `${SITE_URL}/images/${languageObj.slug}/${languageObj.slug}.png`;
   const pageUrl = `${SITE_URL}/learn/${languageObj.slug}`;
 
