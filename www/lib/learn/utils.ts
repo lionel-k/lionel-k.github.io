@@ -90,8 +90,7 @@ export const playFeedbackSound = (isCorrect: boolean) => {
   let soundPath: string;
 
   if (isCorrect) {
-    const randomNum = Math.floor(Math.random() * 3) + 1;
-    soundPath = `/sounds/correct-${randomNum}.mp3`;
+    soundPath = "/sounds/correct.mp3";
   } else {
     soundPath = "/sounds/wrong.mp3";
   }
