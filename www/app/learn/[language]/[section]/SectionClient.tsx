@@ -8,6 +8,7 @@ import FlashcardGame from "@/components/learn/FlashcardGame/index";
 import Loader from "@/components/learn/Loader";
 import { Lock } from "lucide-react";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import SectionNavigation from "@/components/learn/SectionNavigation";
 
 type Props = {
   words: FlashcardWord[];
@@ -45,36 +46,45 @@ export default function SectionClient({ words, section, language }: Props) {
     <div className="min-h-screen flex flex-col">
       <BreadcrumbNav items={breadcrumbItems} />
 
-      <div className="flex-1 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A]">
-        <div className="h-full flex items-center justify-center">
-          {currentSection.isLocked && !isPaidUser ? (
-            <div className="max-w-md mx-auto p-8 text-center">
-              <div className="mb-6">
-                <Lock className="h-12 w-12 text-[#DAA520] mx-auto" />
+      <div className="flex-1 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] relative">
+        <div className="h-full flex flex-col">
+          <div className="flex-1 flex items-center justify-center pb-12">
+            {currentSection.isLocked && !isPaidUser ? (
+              <div className="max-w-md mx-auto p-8 text-center">
+                <div className="mb-6">
+                  <Lock className="h-12 w-12 text-[#DAA520] mx-auto" />
+                </div>
+                <h2 className="text-2xl font-bold text-white mb-2">
+                  Premium Content Awaits!
+                </h2>
+                <p className="text-gray-400 mb-6">
+                  Unlock this section and many more to continue your language
+                  learning journey. Get access to all premium features and
+                  content.
+                </p>
+                <button
+                  onClick={() => router.push(`/learn/${language.slug}/pricing`)}
+                  className="group w-full inline-flex items-center justify-center gap-2 px-6 py-3 text-lg font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-all duration-300 transform hover:scale-105"
+                >
+                  <Lock className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
+                  Unlock Premium Content
+                </button>
+                <p className="mt-4 text-sm text-gray-500">
+                  Join thousands of learners who have already unlocked their
+                  full potential
+                </p>
               </div>
-              <h2 className="text-2xl font-bold text-white mb-2">
-                Premium Content Awaits!
-              </h2>
-              <p className="text-gray-400 mb-6">
-                Unlock this section and many more to continue your language
-                learning journey. Get access to all premium features and
-                content.
-              </p>
-              <button
-                onClick={() => router.push(`/learn/${language.slug}/pricing`)}
-                className="group w-full inline-flex items-center justify-center gap-2 px-6 py-3 text-lg font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-all duration-300 transform hover:scale-105"
-              >
-                <Lock className="h-5 w-5 transition-transform duration-300 group-hover:rotate-12" />
-                Unlock Premium Content
-              </button>
-              <p className="mt-4 text-sm text-gray-500">
-                Join thousands of learners who have already unlocked their full
-                potential
-              </p>
-            </div>
-          ) : (
-            <FlashcardGame words={words} />
-          )}
+            ) : (
+              <FlashcardGame words={words} />
+            )}
+          </div>
+          <div className="absolute bottom-0 left-0 right-0">
+            <SectionNavigation
+              currentSectionId={section}
+              language={language.slug}
+              isPaidUser={isPaidUser}
+            />
+          </div>
         </div>
       </div>
     </div>
