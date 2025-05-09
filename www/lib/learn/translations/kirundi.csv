@@ -15,21 +15,21 @@ basics,bottle,icupa,a bottle
 basics,glass,ikirahuri,a glass
 basics,umbrella,umutaka,an umbrella
 
-objects,pen,ikaramu
-objects,clock,isaha
-objects,phone,itelefone
-objects,mirror,ikiyo
-objects,soap,isabuni
-objects,backpack,isakoshi
-objects,comb,igisokozo
-objects,chair,intebe
-objects,door,umuryango
-objects,window,idirisha
-objects,bike,ikinga
-objects,bed,igitanda
-objects,house,inzu
-objects,cup,igikombe
-objects,key,urupfunguruzo
+objects,pen,ikaramu,a pen
+objects,clock,isaha,a clock
+objects,phone,itelefone,a phone
+objects,mirror,ikiyo,a mirror
+objects,soap,isabuni,a soap
+objects,backpack,isakoshi,a backpack
+objects,comb,igisokozo,a comb
+objects,chair,intebe,a chair
+objects,door,umuryango,a door
+objects,window,idirisha,a window
+objects,bike,ikinga,a bike
+objects,bed,igitanda,a bed
+objects,house,inzu,a house
+objects,cup,igikombe,a cup
+objects,key,urupfunguruzo,a key
 
 animals,cow,inka
 animals,cat,akayabu
