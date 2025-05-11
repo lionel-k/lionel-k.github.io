@@ -3,13 +3,11 @@ import { SITE_URL } from "@/lib/constants";
 import LearnClient from "./LearnClient";
 
 export const metadata: Metadata = {
-  title:
-    "Learn African Languages Online | Interactive Vocabulary Flashcards | Lingu.Africa",
+  title: "Learn African Languages Online | Interactive Vocabulary Flashcards",
   description:
     "Master essential African language vocabulary with interactive flashcards and native audio. Choose from multiple languages and start learning today.",
   openGraph: {
-    title:
-      "Learn African Languages Online | Interactive Vocabulary Flashcards | Lingu.Africa",
+    title: "Learn African Languages Online | Interactive Vocabulary Flashcards",
     description:
       "Master essential African language vocabulary with interactive flashcards and native audio. Choose from multiple languages and start learning today.",
     url: `${SITE_URL}/learn`,
