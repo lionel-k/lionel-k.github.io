@@ -49,14 +49,29 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     "@type": "Product",
     name: book.title,
     description: book.description.short,
-    image: coverImageUrl,
+    image: [coverImageUrl],
+    brand: {
+      "@type": "Brand",
+      name: "Lingu.Africa",
+    },
     offers: {
       "@type": "Offer",
       price: book.price,
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url: bookUrl,
+      priceValidUntil: new Date(
+        new Date().setFullYear(new Date().getFullYear() + 1)
+      )
+        .toISOString()
+        .split("T")[0],
+      seller: {
+        "@type": "Organization",
+        name: "Lingu.Africa",
+      },
     },
+    sku: book.slug,
+    mpn: `book-${book.slug}`,
   };
 
   return {
