@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "standalone",
+  poweredByHeader: false,
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
@@ -12,6 +13,12 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ["lucide-react"],
+  },
+  // Ensure static files are handled correctly
+  distDir: ".next",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/_next" : "",
+  generateBuildId: async () => {
+    return "build-" + Date.now();
   },
   webpack: (config) => {
     config.module.rules.push({
