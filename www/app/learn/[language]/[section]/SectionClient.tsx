@@ -1,28 +1,39 @@
 "use client";
 
-import { useAuth } from "@/hooks/learn/useAuth";
-import { FlashcardWord } from "@/lib/learn/types";
-import { sections } from "@/lib/learn/sections";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import FlashcardGame from "@/components/learn/FlashcardGame/index";
-import Loader from "@/components/learn/Loader";
 import { Lock } from "lucide-react";
+import { useAuth } from "@/hooks/learn/useAuth";
+import { sections } from "@/lib/learn/sections";
+import { FlashcardWord } from "@/lib/learn/types";
+import { shuffleArray } from "@/lib/learn/utils";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import Loader from "@/components/learn/Loader";
+import FlashcardGame from "@/components/learn/FlashcardGame";
 import SectionNavigation from "@/components/learn/SectionNavigation";
 
-type Props = {
+interface Props {
   words: FlashcardWord[];
   section: string;
   language: {
     name: string;
     slug: string;
   };
-};
+}
 
-export default function SectionClient({ words, section, language }: Props) {
+export default function SectionClient({
+  words: initialWords,
+  section,
+  language,
+}: Props) {
   const { email, isPaidUser, isLoading } = useAuth();
   const router = useRouter();
+  const [words, setWords] = useState<FlashcardWord[]>(initialWords);
   const currentSection = sections.find((s) => s.id === section);
+
+  useEffect(() => {
+    setWords(shuffleArray(initialWords));
+  }, [initialWords]);
 
   if (isLoading) {
     return <Loader />;
