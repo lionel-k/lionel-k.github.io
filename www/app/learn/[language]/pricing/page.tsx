@@ -98,9 +98,11 @@ export default function PricingPage() {
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-gray-400">
-                    (10 spots left at this price)
-                  </span>
+                  {false && (
+                    <span className="text-gray-400">
+                      (10 spots left at this price)
+                    </span>
+                  )}
                 </div>
               </div>
             </div>
