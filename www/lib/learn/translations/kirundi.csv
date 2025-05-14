@@ -154,25 +154,25 @@ actions,wake-up,ciza ariko aravyuka,ciza is waking up
 actions,listen,kaneza ariko arunviriza,kaneza is listening
 actions,weigh,kabura ariko arapima,kabura is weighing
 
-household,basket,igiseke
-household,broom,umukubuzo
-household,bed-1,uburiri
-household,toothbrush,umujigiti
-household,computer,inyabwonko
-household,cupboard,akabati
-household,television,imboneshakure
-household,flower,ishurwe
-household,bedspread,uburegenti
-household,bucket,indobo
-household,doorbell,ikengeri
-household,bedsheet,ishuka
-household,house-dirt,umucafu
-household,clothes,impuzu
-household,money,amahera
-household,stairs,ingazi
-household,toy,igikinisho
-household,medication,umuti
-household,tablecloth,igitambara
+household,basket,igiseke,basket
+household,broom,umukubuzo,broom
+household,bed-1,uburiri,bed
+household,toothbrush,umujigiti,toothbrush
+household,computer,inyabwonko,computer
+household,cupboard,akabati,cupboard
+household,television,imboneshakure,television
+household,flower,ishurwe,flower
+household,bedspread,uburegenti,bedspread
+household,bucket,indobo,bucket
+household,doorbell,ikengeri,doorbell
+household,bedsheet,ishuka,bedsheet
+household,house-dirt,umucafu,dirt
+household,clothes,impuzu,clothes
+household,money,amahera,money
+household,stairs,ingazi,stairs
+household,toy,igikinisho,toy
+household,medication,umuti,medication
+household,tablecloth,igitambara,tablecloth
 
 sentences-1,sentences-1-1,igiti caguye
 sentences-1,sentences-1-2,data afise icupa
