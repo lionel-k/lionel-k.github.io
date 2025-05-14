@@ -82,22 +82,22 @@ vegetables,peas,ubushaza,peas
 vegetables,rice,umuceri,rice
 vegetables,pumpkin,umwungu,pumpkin
 
-numbers,zero,ubusa
-numbers,one,rimwe
-numbers,two,kabiri
-numbers,three,gatatu
-numbers,four,kane
-numbers,five,gatanu
-numbers,six,gatandatu
-numbers,seven,indwi
-numbers,eight,umunani
-numbers,nine,icenda
-numbers,ten,icumi
+numbers,zero,ubusa,zero
+numbers,one,rimwe,one
+numbers,two,kabiri,two
+numbers,three,gatatu,three
+numbers,four,kane,four
+numbers,five,gatanu,five
+numbers,six,gatandatu,six
+numbers,seven,indwi,seven
+numbers,eight,umunani,eight
+numbers,nine,icenda,nine
+numbers,ten,icumi,ten
 
-counting,one-egg,igi rimwe
-counting,one-cow,inka imwe
-counting,one-cup,igikombe kimwe
-counting,one-child,umwana umwe
+counting,one-egg,igi rimwe,one egg
+counting,one-cow,inka imwe,one cow
+counting,one-cup,igikombe kimwe,one cup
+counting,one-child,umwana umwe,one child
 counting,one-bread,umukate umwe
 counting,two-eggs,amagi abiri
 counting,two-cows,inka zibiri
