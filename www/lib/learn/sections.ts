@@ -111,7 +111,7 @@ export const sections: Section[] = [
   {
     id: "feelings",
     title: "Feelings",
-    description: "Learn words for emotions and feelings",
+    description: "Learn words for different feelings",
     order: 15,
     isLocked: true,
   },
