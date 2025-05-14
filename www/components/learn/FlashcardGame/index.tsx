@@ -11,6 +11,7 @@ import ProgressBar from "./ProgressBar";
 import WordCard from "./WordCard";
 import ImageGrid from "./ImageGrid";
 import RecapModal from "./RecapModal";
+import FullscreenToggle from "./FullscreenToggle";
 
 export default function FlashcardGame({ words }: FlashcardGameProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -84,9 +85,12 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
 
   return (
     <div className="w-full max-w-4xl mx-auto h-full flex flex-col">
-      {/* Progress Bar */}
-      <div className="px-4 py-4">
-        <ProgressBar progress={progress} language={currentLanguage} />
+      {/* Progress Bar and Fullscreen Toggle */}
+      <div className="px-4 py-4 flex items-center justify-between">
+        <div className="flex-1 mr-4">
+          <ProgressBar progress={progress} language={currentLanguage} />
+        </div>
+        <FullscreenToggle />
       </div>
 
       {/* Main Game Area */}
