@@ -241,22 +241,42 @@ feelings,sick,ndarwaye,i'm sick
 feelings,thirsty,ndanyotewe,i'm thirsty
 feelings,tired,ndarushe,i'm tired
 
-food,bread,umukate
-food,meat,inyama
-food,fish-food,ifi
-food,egg,igi
-food,soup,isupu
-food,salad,isalade
-food,milk,amata
-food,water,amazi
-food,tea,icayi
-food,coffee,ikawa
-food,sugar,isukari
-food,salt,umunyu
-food,juice,umutobe
-food,oil,amavuta
-food,honey,ubuki
-food,thick-bread,ubugari
+food,bread,umukate,bread
+food,meat,inyama,meat
+food,fish-food,ifi,fish
+food,egg,igi,egg
+food,soup,isupu,soup
+food,salad,isalade,salad
+food,milk,amata,milk
+food,water,amazi,water
+food,tea,icayi,tea
+food,coffee,ikawa,coffee
+food,sugar,isukari,sugar
+food,salt,umunyu,salt
+food,juice,umutobe,juice
+food,oil,amavuta,oil
+food,honey,ubuki,honey
+food,thick-bread,ubugari,thick bread
+
+clothing,shirt,ishati
+clothing,pull,umupira
+clothing,pant,ipantaro
+clothing,skirt,ijipo
+clothing,dress,ikanzu
+clothing,short,ibutura
+clothing,underwear,ikareso
+clothing,coat,ikoti
+clothing,hat,inkofero
+clothing,sock,ishesheti
+clothing,belt,umusipi
+clothing,sandals,isandari
+clothing,burundian-dress,imvutano
+clothing,button,igifungo
+clothing,glasses,amarori
+clothing,bracelet,igikomo
+clothing,necklace,akadede
+clothing,ring,impeta
+clothing,earring,ihereni
 
 kitchen,sauce-pan,isafuriya
 kitchen,frying-pan,ipanu
@@ -285,22 +305,3 @@ greetings,hello,amahoro
 greetings,bye,bayi
 greetings,thank-you,urakoze
 
-clothing,shirt,ishati
-clothing,pull,umupira
-clothing,pant,ipantaro
-clothing,skirt,ijipo
-clothing,dress,ikanzu
-clothing,short,ibutura
-clothing,underwear,ikareso
-clothing,coat,ikoti
-clothing,hat,inkofero
-clothing,sock,ishesheti
-clothing,belt,umusipi
-clothing,sandals,isandari
-clothing,burundian-dress,imvutano
-clothing,button,igifungo
-clothing,glasses,amarori
-clothing,bracelet,igikomo
-clothing,necklace,akadede
-clothing,ring,impeta
-clothing,earring,ihereni
