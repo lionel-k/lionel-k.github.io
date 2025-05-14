@@ -98,27 +98,27 @@ counting,one-egg,igi rimwe,one egg
 counting,one-cow,inka imwe,one cow
 counting,one-cup,igikombe kimwe,one cup
 counting,one-child,umwana umwe,one child
-counting,one-bread,umukate umwe
-counting,two-eggs,amagi abiri
-counting,two-cows,inka zibiri
-counting,two-cups,ibikombe bibiri
-counting,two-children,abana babiri
-counting,two-breads,imikate ibiri
-counting,three-eggs,amagi atatu
-counting,three-cows,inka zitatu
-counting,three-cups,ibikombe bitatu
-counting,three-children,abana batatu
-counting,three-breads,imikate itatu
-counting,four-eggs,amagi ane
-counting,four-cows,inka zine
-counting,four-cups,ibikombe bine
-counting,four-children,abana bane
-counting,four-breads,imikate ine
-counting,five-eggs,amagi atanu
-counting,five-cows,inka zitanu
-counting,five-cups,ibikombe bitanu
-counting,five-children,abana batanu
-counting,five-breads,imikate itanu
+counting,one-bread,umukate umwe,one bread
+counting,two-eggs,amagi abiri,two eggs
+counting,two-cows,inka zibiri,two cows
+counting,two-cups,ibikombe bibiri,two cups
+counting,two-children,abana babiri,two children
+counting,two-breads,imikate ibiri,two breads
+counting,three-eggs,amagi atatu,three eggs
+counting,three-cows,inka zitatu,three cows
+counting,three-cups,ibikombe bitatu,three cups
+counting,three-children,abana batatu,three children
+counting,three-breads,imikate itatu,three breads
+counting,four-eggs,amagi ane,four eggs
+counting,four-cows,inka zine,four cows
+counting,four-cups,ibikombe bine,four cups
+counting,four-children,abana bane,four children
+counting,four-breads,imikate ine,four breads
+counting,five-eggs,amagi atanu,five eggs
+counting,five-cows,inka zitanu,five cows
+counting,five-cups,ibikombe bitanu,five cups
+counting,five-children,abana batanu,five children
+counting,five-breads,imikate itanu,five breads
 
 actions,walk,ciza ariko aratambuka
 actions,run,kagabo ariko ariruka
