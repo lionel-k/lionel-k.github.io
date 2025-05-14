@@ -120,39 +120,39 @@ counting,five-cups,ibikombe bitanu,five cups
 counting,five-children,abana batanu,five children
 counting,five-breads,imikate itanu,five breads
 
-actions,walk,ciza ariko aratambuka
-actions,run,kagabo ariko ariruka
-actions,jump,kabura ariko arasimba
-actions,eat,karorero ariko arafungura
-actions,drink,ciza ariko aranywa
-actions,sleep,keza araryamye
-actions,sit,kagabo aricaye
-actions,stand,kabura arahagaze
-actions,dance,karorero ariko aratamba
-actions,sing,kaneza ariko araririmba
-actions,read,ciza ariko arasoma
-actions,draw,kagabo ariko aracapa
-actions,play,gatore ariko arakina
-actions,cook,mamawacu ariko arateka
-actions,cry,wakana ariko ararira
-actions,laugh,bucumi ariko aratwenga
-actions,clap,kabura ariko arakoma amashi
-actions,crawl,karorero ariko aravura
-actions,hug,data ariko arayambira kamikazi
-actions,pull,kagabo ariko arakwega
-actions,push,muco ariko arasunika
-actions,bath,kamikazi ariko aroga
-actions,tickle,mama ariko aradigadiga
-actions,sweep,karorero ariko arakubura
-actions,wash-hands,kamikazi ariko arakaraba
-actions,comb-hair,gatore ariko arasokoza
-actions,dress,kagabo ariko arambara
-actions,wait,kaneza ariko ararindira
-actions,pray,kabura ariko arasenga
-actions,think,keza ariko ariyunvira
-actions,wake-up,ciza ariko aravyuka
-actions,listen,kaneza ariko arunviriza
-actions,weigh,kabura ariko arapima
+actions,walk,ciza ariko aratambuka,ciza is walking
+actions,run,kagabo ariko ariruka,kagabo is running
+actions,jump,kabura ariko arasimba,kabura is jumping
+actions,eat,karorero ariko arafungura,karorero is eating
+actions,drink,ciza ariko aranywa,ciza is drinking
+actions,sleep,keza araryamye,keza is sleeping
+actions,sit,kagabo aricaye,kagabo is sitting
+actions,stand,kabura arahagaze,kabura is standing
+actions,dance,karorero ariko aratamba,karorero is dancing
+actions,sing,kaneza ariko araririmba,kaneza is singing
+actions,read,ciza ariko arasoma,ciza is reading
+actions,draw,kagabo ariko aracapa,kagabo is drawing
+actions,play,gatore ariko arakina,gatore is playing
+actions,cook,mamawacu ariko arateka,our aunt is cooking
+actions,cry,wakana ariko ararira,wakana is crying
+actions,laugh,bucumi ariko aratwenga,bucumi is laughing
+actions,clap,kabura ariko arakoma amashi,kabura is clapping
+actions,crawl,karorero ariko aravura,karorero is crawling
+actions,hug,data ariko arayambira kamikazi,data is hugging kamikazi
+actions,pull,kagabo ariko arakwega,kagabo is pulling
+actions,push,muco ariko arasunika,muco is pushing
+actions,bath,kamikazi ariko aroga,kamikazi is bathing
+actions,tickle,mama ariko aradigadiga,mama is tickling
+actions,sweep,karorero ariko arakubura,karorero is sweeping
+actions,wash-hands,kamikazi ariko arakaraba,kamikazi is washing hands
+actions,comb-hair,gatore ariko arasokoza,gatore is combing hair
+actions,dress,kagabo ariko arambara,kagabo is getting dressed
+actions,wait,kaneza ariko ararindira,kaneza is waiting
+actions,pray,kabura ariko arasenga,kabura is praying
+actions,think,keza ariko ariyunvira,keza is thinking
+actions,wake-up,ciza ariko aravyuka,ciza is waking up
+actions,listen,kaneza ariko arunviriza,kaneza is listening
+actions,weigh,kabura ariko arapima,kabura is weighing
 
 household,basket,igiseke
 household,broom,umukubuzo
