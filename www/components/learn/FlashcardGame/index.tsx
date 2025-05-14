@@ -2,7 +2,11 @@
 
 import { useState, useEffect } from "react";
 import { FlashcardWord } from "@/lib/learn/types";
-import { generateOptions, playFeedbackSound } from "@/lib/learn/utils";
+import {
+  generateOptions,
+  playFeedbackSound,
+  shuffleArray,
+} from "@/lib/learn/utils";
 import { FlashcardGameProps } from "@/lib/learn/types";
 import Loader from "../Loader";
 import { sections } from "@/lib/learn/sections";
@@ -13,10 +17,15 @@ import ImageGrid from "./ImageGrid";
 import RecapModal from "./RecapModal";
 import FullscreenToggle from "./FullscreenToggle";
 
-export default function FlashcardGame({ words }: FlashcardGameProps) {
+export default function FlashcardGame({
+  words: initialWords,
+}: FlashcardGameProps) {
+  const [words, setWords] = useState(initialWords);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
-  const [options, setOptions] = useState<FlashcardWord[]>([]);
+  const [options, setOptions] = useState(() =>
+    generateOptions(words[0], words)
+  );
   const [isLoading, setIsLoading] = useState(true);
   const [correctAnswers, setCorrectAnswers] = useState(0);
   const [showRecap, setShowRecap] = useState(false);
@@ -38,8 +47,8 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
   }, []);
 
   useEffect(() => {
-    setOptions(generateOptions(currentWord, words));
-  }, [currentIndex, words, currentWord]);
+    setOptions(generateOptions(words[currentIndex], words));
+  }, [currentIndex, words]);
 
   if (isLoading) {
     return <Loader />;
@@ -75,6 +84,9 @@ export default function FlashcardGame({ words }: FlashcardGameProps) {
     setCorrectAnswers(0);
     setShowRecap(false);
     setShowViewResults(false);
+    const shuffledWords = shuffleArray([...words]);
+    setWords(shuffledWords);
+    setOptions(generateOptions(shuffledWords[0], shuffledWords));
   };
 
   const handleNextSection = () => {
