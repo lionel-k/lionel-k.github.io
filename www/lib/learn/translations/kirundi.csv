@@ -259,12 +259,11 @@ food,honey,ubuki,honey
 food,thick-bread,ubugari,thick bread
 
 clothing,shirt,ishati,shirt
-clothing,pull,umupira,sweater
+clothing,sweater,umupira,sweater
 clothing,pant,ipantaro,pants
 clothing,skirt,ijipo,skirt
-clothing,dress,ikanzu,dress
-clothing,short,ibutura,shorts
-clothing,underwear,ikareso,underwear
+clothing,robe,ikanzu,dress
+clothing,shorts,ibutura,shorts
 clothing,coat,ikoti,coat
 clothing,hat,inkofero,hat
 clothing,sock,ishesheti,sock
@@ -274,7 +273,6 @@ clothing,burundian-dress,imvutano,burundian dress
 clothing,button,igifungo,button
 clothing,glasses,amarori,glasses
 clothing,bracelet,igikomo,bracelet
-clothing,necklace,akadede,necklace
 clothing,ring,impeta,ring
 clothing,earring,ihereni,earring
 

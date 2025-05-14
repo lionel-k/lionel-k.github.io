@@ -116,10 +116,17 @@ export const sections: Section[] = [
     isLocked: true,
   },
   {
+    id: "clothing",
+    title: "Clothing",
+    description: "Learn clothing vocabulary",
+    order: 16,
+    isLocked: true,
+  },
+  {
     id: "food",
     title: "Food",
     description: "Learn words for different foods",
-    order: 16,
+    order: 17,
     isLocked: true,
   },
   {
@@ -127,7 +134,7 @@ export const sections: Section[] = [
     title: "Progress Check",
     description: "Review the final word set.",
     isLocked: true,
-    order: 17,
+    order: 18,
     isReview: true,
   },
 ];
