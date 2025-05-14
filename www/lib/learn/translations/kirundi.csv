@@ -31,56 +31,56 @@ objects,house,inzu,house
 objects,cup,igikombe,cup
 objects,key,urupfunguruzo,key
 
-animals,cow,inka
-animals,cat,akayabu
-animals,dog,imbwa
-animals,fish,ifi
-animals,horse,ifarasi
-animals,frog,igikere
-animals,rabbit,urukwavu
-animals,duck,imbata
-animals,lion,intare
-animals,elephant,inzovu
-animals,goat,impene
-animals,sheep,intama
-animals,chicken,inkoko
-animals,bird,inyoni
-animals,mouse,imbeba
+animals,cow,inka,cow
+animals,cat,akayabu,cat
+animals,dog,imbwa,dog
+animals,fish,ifi,fish
+animals,horse,ifarasi,horse
+animals,frog,igikere,frog
+animals,rabbit,urukwavu,rabbit
+animals,duck,imbata,duck
+animals,lion,intare,lion
+animals,elephant,inzovu,elephant
+animals,goat,impene,goat
+animals,sheep,intama,sheep
+animals,chicken,inkoko,chicken
+animals,bird,inyoni,bird
+animals,mouse,imbeba,mouse
 
-fruits,figs,amufe
-fruits,passion-fruit,ibungo
-fruits,pineapple,inanasi
-fruits,lemon,indimu
-fruits,berries,inkere
-fruits,physalis,intumbaswa
-fruits,papaya,ipapayi
-fruits,guava,ipera
-fruits,avocado,ivoka
-fruits,peanut,ibiyoba
-fruits,orange,umucungwe
-fruits,banana,umuhwi
-fruits,sugar-cane,umusigati
-fruits,mango,umwembe
+fruits,figs,amufe,figs
+fruits,passion-fruit,ibungo,passion fruit
+fruits,pineapple,inanasi,pineapple
+fruits,lemon,indimu,lemon
+fruits,berries,inkere,berries
+fruits,physalis,intumbaswa,physalis
+fruits,papaya,ipapayi,papaya
+fruits,guava,ipera,guava
+fruits,avocado,ivoka,avocado
+fruits,peanut,ibiyoba,peanuts
+fruits,orange,umucungwe,orange
+fruits,banana,umuhwi,banana
+fruits,sugar-cane,umusigati,sugar cane
+fruits,mango,umwembe,mango
 
-vegetables,beans,ibiharage
-vegetables,mushroom,ikizinu
-vegetables,green-banana,igitoke
-vegetables,onion,igitunguru
-vegetables,garlic,igitunguru sumu
-vegetables,carrot,ikaroti
-vegetables,corn,ikigori
-vegetables,sweet-potato,ikijumbu
-vegetables,potato,ikiraya
-vegetables,green-beans,imikerera
-vegetables,wheat,ingano
-vegetables,eggplant,urutore
-vegetables,chilli,ipiripiri
-vegetables,cabbage,ishu
-vegetables,soy,isoya
-vegetables,tomato,itomati
-vegetables,peas,ubushaza
-vegetables,rice,umuceri
-vegetables,pumpkin,umwungu
+vegetables,beans,ibiharage,beans
+vegetables,mushroom,ikizinu,mushroom
+vegetables,green-banana,igitoke,green banana
+vegetables,onion,igitunguru,onion
+vegetables,garlic,igitunguru sumu,garlic
+vegetables,carrot,ikaroti,carrot
+vegetables,corn,ikigori,corn
+vegetables,sweet-potato,ikijumbu,sweet potato
+vegetables,potato,ikiraya,potato
+vegetables,green-beans,imikerera,green beans
+vegetables,wheat,ingano,wheat
+vegetables,eggplant,urutore,eggplant
+vegetables,chilli,ipiripiri,chilli
+vegetables,cabbage,ishu,cabbage
+vegetables,soy,isoya,soy
+vegetables,tomato,itomati,tomato
+vegetables,peas,ubushaza,peas
+vegetables,rice,umuceri,rice
+vegetables,pumpkin,umwungu,pumpkin
 
 numbers,zero,ubusa
 numbers,one,rimwe
