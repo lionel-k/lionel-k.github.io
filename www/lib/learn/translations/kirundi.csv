@@ -258,25 +258,25 @@ food,oil,amavuta,oil
 food,honey,ubuki,honey
 food,thick-bread,ubugari,thick bread
 
-clothing,shirt,ishati
-clothing,pull,umupira
-clothing,pant,ipantaro
-clothing,skirt,ijipo
-clothing,dress,ikanzu
-clothing,short,ibutura
-clothing,underwear,ikareso
-clothing,coat,ikoti
-clothing,hat,inkofero
-clothing,sock,ishesheti
-clothing,belt,umusipi
-clothing,sandals,isandari
-clothing,burundian-dress,imvutano
-clothing,button,igifungo
-clothing,glasses,amarori
-clothing,bracelet,igikomo
-clothing,necklace,akadede
-clothing,ring,impeta
-clothing,earring,ihereni
+clothing,shirt,ishati,shirt
+clothing,pull,umupira,sweater
+clothing,pant,ipantaro,pants
+clothing,skirt,ijipo,skirt
+clothing,dress,ikanzu,dress
+clothing,short,ibutura,shorts
+clothing,underwear,ikareso,underwear
+clothing,coat,ikoti,coat
+clothing,hat,inkofero,hat
+clothing,sock,ishesheti,sock
+clothing,belt,umusipi,belt
+clothing,sandals,isandari,sandals
+clothing,burundian-dress,imvutano,burundian dress
+clothing,button,igifungo,button
+clothing,glasses,amarori,glasses
+clothing,bracelet,igikomo,bracelet
+clothing,necklace,akadede,necklace
+clothing,ring,impeta,ring
+clothing,earring,ihereni,earring
 
 kitchen,sauce-pan,isafuriya
 kitchen,frying-pan,ipanu
