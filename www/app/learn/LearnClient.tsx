@@ -6,6 +6,7 @@ import Loader from "@/components/learn/Loader";
 import PaymentSuccessMessage from "@/components/learn/PaymentSuccessMessage";
 import { Suspense } from "react";
 import NavigationControl from "@/components/learn/NavigationControl";
+import CTAButton from "@/components/learn/CTAButton";
 
 export default function LearnClient() {
   const { email, isPaidUser, isLoading } = useAuth();
@@ -29,6 +30,7 @@ export default function LearnClient() {
               Master essential words and phrases through interactive flashcards.
               Choose your language and start learning today.
             </p>
+            <CTAButton href="/learn/kirundi/basics" />
             <NavigationControl
               email={email}
               isPaidUser={isPaidUser}

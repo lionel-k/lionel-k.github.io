@@ -6,6 +6,7 @@ import SectionCard from "@/components/learn/SectionCard/index";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
 import PageHeader from "@/components/learn/PageHeader";
+import CTAButton from "@/components/learn/CTAButton";
 
 type Props = {
   language: {
@@ -38,8 +39,8 @@ export default function LanguageClient({ language }: Props) {
         description="Build your vocabulary step by step, from basic words to everyday phrases."
         email={email}
         isPaidUser={isPaidUser}
+        ctaHref={`/learn/${language.slug}/basics`}
       />
-
       <section className="relative py-16 bg-[#111111]">
         <div className="absolute inset-0 opacity-5 bg-repeat" />
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
