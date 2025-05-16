@@ -98,9 +98,9 @@ export default function PricingPage() {
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  {false && (
+                  {true && (
                     <span className="text-gray-400">
-                      (10 spots left at this price)
+                      (Use code LAUNCH70 to get €70 off)
                     </span>
                   )}
                 </div>
