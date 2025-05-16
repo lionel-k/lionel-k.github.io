@@ -90,19 +90,24 @@ export default function PricingPage() {
               </div>
             </div>
             <div className="mt-6">
-              <div className="flex flex-col items-center text-center space-y-2">
-                <div className="flex items-center gap-2">
-                  <Gift className="h-5 w-5 text-[#4CAF50]" />
-                  <span className="text-[#4CAF50]">€70 off</span>
-                  <span className="text-gray-300">
+              <div className="flex flex-col items-center text-center space-y-4">
+                <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
+                  <Gift className="h-5 w-5 text-[#4CAF50] flex-shrink-0" />
+                  <span className="text-[#4CAF50] whitespace-nowrap">
+                    €70 off
+                  </span>
+                  <span className="text-gray-300 whitespace-nowrap">
                     for the first 500 customers
                   </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <span className="text-gray-400">Code:</span>
-                  <span className="text-gray-300 font-mono" translate="no">
+                <div className="flex flex-wrap justify-center items-center gap-2">
+                  <span className="text-gray-400 whitespace-nowrap">Code:</span>
+                  <code
+                    className="text-gray-300 bg-black/30 px-2 py-1 rounded"
+                    translate="no"
+                  >
                     LAUNCH70
-                  </span>
+                  </code>
                   <CopyToClipboard text="LAUNCH70" />
                 </div>
               </div>
