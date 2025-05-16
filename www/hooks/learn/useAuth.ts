@@ -42,7 +42,7 @@ export function useAuth(): UseAuthReturn {
         setIsLoading(false);
         if (process.env.NODE_ENV === "development") {
           setEmail("test@gmail.com");
-          // setIsPaidUser(true);
+          setIsPaidUser(true);
         }
       }
     };
