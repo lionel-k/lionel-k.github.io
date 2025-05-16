@@ -17,8 +17,13 @@ import ImageGrid from "./ImageGrid";
 import RecapModal from "./RecapModal";
 import FullscreenToggle from "./FullscreenToggle";
 
+const TOTAL_FREE_SECTIONS = sections.filter(
+  (section) => section.isLocked === false
+).length;
+
 export default function FlashcardGame({
   words: initialWords,
+  isPaidUser,
 }: FlashcardGameProps) {
   const [words, setWords] = useState(initialWords);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,6 +44,10 @@ export default function FlashcardGame({
     (s) => s.id === currentSectionId
   );
   const nextSection = sections[currentSectionIndex + 1];
+  const remainingFreeSections = Math.max(
+    0,
+    TOTAL_FREE_SECTIONS - (currentSectionIndex + 1)
+  );
   const progress = ((currentIndex + 1) / words.length) * 100;
   const currentWord = words[currentIndex];
 
@@ -154,6 +163,9 @@ export default function FlashcardGame({
           nextSection={nextSection}
           onRestart={handleRestart}
           onNextSection={handleNextSection}
+          remainingFreeSections={remainingFreeSections}
+          isPaidUser={isPaidUser}
+          language={currentLanguage}
         />
       )}
     </div>

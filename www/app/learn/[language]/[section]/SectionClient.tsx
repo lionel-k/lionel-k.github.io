@@ -90,7 +90,7 @@ export default function SectionClient({
                 </p>
               </div>
             ) : (
-              <FlashcardGame words={words} />
+              <FlashcardGame words={words} isPaidUser={isPaidUser} />
             )}
           </div>
           <div className="absolute bottom-0 left-0 right-0">

@@ -27,6 +27,7 @@ export type Section = (typeof sections)[number];
 
 export interface FlashcardGameProps {
   words: FlashcardWord[];
+  isPaidUser: boolean;
 }
 
 export type ImageOptionProps = {
