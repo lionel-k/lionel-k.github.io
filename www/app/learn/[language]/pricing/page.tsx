@@ -100,7 +100,9 @@ export default function PricingPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-gray-400">Code:</span>
-                  <span className="text-gray-300 font-mono">LAUNCH70</span>
+                  <span className="text-gray-300 font-mono" translate="no">
+                    LAUNCH70
+                  </span>
                   <CopyToClipboard text="LAUNCH70" />
                 </div>
               </div>
