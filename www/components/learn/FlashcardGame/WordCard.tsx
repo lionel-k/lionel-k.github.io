@@ -91,7 +91,10 @@ export default function WordCard({ word, language }: WordCardProps) {
           <div className="relative z-10">
             <div className="flex items-center gap-3 justify-center">
               <Volume2 className="h-6 w-6 shrink-0 text-[#DAA520] group-hover:scale-110 transition-transform" />
-              <p className="text-3xl font-bold text-white tracking-wide">
+              <p
+                className="text-3xl font-bold text-white tracking-wide"
+                translate="no"
+              >
                 {word.translation}
               </p>
             </div>
