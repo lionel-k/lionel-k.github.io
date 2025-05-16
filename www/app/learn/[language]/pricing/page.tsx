@@ -5,6 +5,7 @@ import { FAQ } from "@/components/FAQ";
 import { faqItems } from "@/lib/learn/faq";
 import { usePathname } from "next/navigation";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
+import { CopyToClipboard } from "@/components/learn/CopyToClipboard";
 
 const stripeLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK!;
 
@@ -98,11 +99,10 @@ export default function PricingPage() {
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  {true && (
-                    <span className="text-gray-400">
-                      (Use code LAUNCH70 to get €70 off)
-                    </span>
-                  )}
+                  <span className="text-gray-400">
+                    To get €70 off, use code LAUNCH70
+                  </span>
+                  <CopyToClipboard text="LAUNCH70" />
                 </div>
               </div>
             </div>
