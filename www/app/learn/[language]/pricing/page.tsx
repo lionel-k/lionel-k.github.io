@@ -29,7 +29,7 @@ export default function PricingPage() {
 
   const stripeLinkWithEmail = (() => {
     const params = new URLSearchParams({
-      prefilled_promo_code: "LAUNCH",
+      prefilled_promo_code: "LAUNCH70",
     });
 
     return `${stripeLink}?${params.toString()}`;
@@ -59,7 +59,7 @@ export default function PricingPage() {
                   €119
                 </span>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-4xl font-bold text-white">€99</span>
+                  <span className="text-4xl font-bold text-white">€49</span>
                   <span className="text-[#4CAF50] font-semibold">
                     one-time payment
                   </span>
@@ -92,7 +92,7 @@ export default function PricingPage() {
               <div className="flex flex-col items-center text-center space-y-2">
                 <div className="flex items-center gap-2">
                   <Gift className="h-5 w-5 text-[#4CAF50]" />
-                  <span className="text-[#4CAF50]">€20 off</span>
+                  <span className="text-[#4CAF50]">€70 off</span>
                   <span className="text-gray-300">
                     for the first 500 customers
                   </span>
