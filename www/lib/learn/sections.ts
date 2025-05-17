@@ -137,4 +137,11 @@ export const sections: Section[] = [
     order: 18,
     isReview: true,
   },
+  // {
+  //   id: "professions",
+  //   title: "Professions",
+  //   description: "Learn words for different professions",
+  //   order: 19,
+  //   isLocked: true,
+  // },
 ];
