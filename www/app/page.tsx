@@ -73,7 +73,7 @@ export default async function Home() {
                 Beautifully bilingual books that make learning fun and natural,
                 no prior language experience needed!
               </p>
-              <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-x-6">
+              <div className="mt-12 flex flex-col items-center justify-center gap-4">
                 <Link
                   href="#languages"
                   className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-full bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-lg hover:bg-[#B8860B] transition-all transform hover:scale-105"
@@ -83,6 +83,32 @@ export default async function Home() {
                   <Book aria-hidden="true" className="h-6 w-6" />
                   <span>Explore Our Books</span>
                 </Link>
+                <div className="flex justify-center items-center gap-2 px-4">
+                  <a
+                    href="https://www.producthunt.com/posts/lingu-africa?embed=true&utm_source=badge&utm_medium=badge&utm_source=badge-lingu&#0045;africa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-[160px] sm:w-[250px]"
+                  >
+                    <img
+                      src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=944305&theme=light&t=1747511745752"
+                      alt="Lingu.Africa - Helping African parents pass down language and culture | Product Hunt"
+                      style={{ width: "100%", height: "auto" }}
+                    />
+                  </a>
+                  <a
+                    href="https://tinylaun.ch/launch/1839"
+                    target="_blank"
+                    rel="noopener"
+                    className="w-[130px] sm:w-[202px]"
+                  >
+                    <img
+                      src="https://tinylaun.ch/tinylaunch_badge_1.svg"
+                      alt="TinyLaunch Badge"
+                      style={{ width: "100%", height: "auto" }}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
