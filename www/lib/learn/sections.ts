@@ -144,4 +144,11 @@ export const sections: Section[] = [
   //   order: 19,
   //   isLocked: true,
   // },
+  // {
+  //   id: "kitchen",
+  //   title: "Kitchen",
+  //   description: "Learn words for different kitchen items",
+  //   order: 20,
+  //   isLocked: true,
+  // },
 ];
