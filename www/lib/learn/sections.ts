@@ -137,18 +137,18 @@ export const sections: Section[] = [
     order: 18,
     isReview: true,
   },
-  // {
-  //   id: "professions",
-  //   title: "Professions",
-  //   description: "Learn words for different professions",
-  //   order: 19,
-  //   isLocked: true,
-  // },
-  // {
-  //   id: "kitchen",
-  //   title: "Kitchen",
-  //   description: "Learn words for different kitchen items",
-  //   order: 20,
-  //   isLocked: true,
-  // },
+  {
+    id: "people-jobs",
+    title: "People and Jobs",
+    description: "Learn words for what people do",
+    order: 19,
+    isLocked: true,
+  },
+  {
+    id: "kitchen",
+    title: "Kitchen",
+    description: "Learn words for different kitchen items",
+    order: 20,
+    isLocked: true,
+  },
 ];
