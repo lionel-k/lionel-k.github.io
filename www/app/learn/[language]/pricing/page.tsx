@@ -97,7 +97,7 @@ export default function PricingPage() {
                     €70 off
                   </span>
                   <span className="text-gray-300 whitespace-nowrap">
-                    for the first 500 customers
+                    for the first 50 customers
                   </span>
                 </div>
                 <div className="flex flex-wrap justify-center items-center gap-2">
