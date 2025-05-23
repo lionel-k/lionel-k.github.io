@@ -6,7 +6,7 @@ export const tigrinyaConfigs = {
       slug: "first-100-words-in-tigrinya",
       age: "0-6",
       pages: "52",
-      price: "12.99",
+      price: "11.99",
       description: {
         short:
           "Discover Tigrinya First 100 Words for ages 0-6. Engage your child in learning with great images. Start exploring today!",
