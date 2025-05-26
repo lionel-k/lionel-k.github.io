@@ -96,8 +96,9 @@ export const sections: Section[] = [
   },
   {
     id: "sentences-1",
-    title: "Basic Sentences",
-    description: "Practice basic sentence structures",
+    title: "Action Sentences",
+    description:
+      "Learn sentences about people doing things (like 'Ciza is reading a book')",
     order: 13,
     isLocked: true,
   },
