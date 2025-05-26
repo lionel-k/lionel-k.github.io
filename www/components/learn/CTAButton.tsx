@@ -12,7 +12,7 @@ export default function CTAButton({ href, className = "" }: CTAButtonProps) {
       >
         Start Learning Now
       </a>
-      <p className="text-sm text-gray-400 max-w-lg text-center">
+      <p className="text-xs mt-4 text-gray-400 max-w-lg text-center">
         <span className="font-semibold text-[#DAA520]">Note:</span> Following{" "}
         <a
           href="https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"

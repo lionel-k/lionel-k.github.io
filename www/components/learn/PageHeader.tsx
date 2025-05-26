@@ -27,20 +27,12 @@ export default function PageHeader({
           {email ? (
             <div className="mt-8 mb-6 flex items-center justify-center gap-4">
               {ctaHref && <CTAButton href={ctaHref} className="mt-0 mb-0" />}
-              <NavigationControl
-                email={email}
-                isPaidUser={isPaidUser}
-                variant="default"
-              />
+              <NavigationControl email={email} />
             </div>
           ) : (
             <div className="mt-8 mb-6 flex flex-col items-center gap-6">
               {ctaHref && <CTAButton href={ctaHref} className="mt-0 mb-0" />}
-              <NavigationControl
-                email={email}
-                isPaidUser={isPaidUser}
-                variant="default"
-              />
+              <NavigationControl email={email} />
             </div>
           )}
         </div>

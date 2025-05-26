@@ -31,11 +31,7 @@ export default function LearnClient() {
               Choose your language and start learning today.
             </p>
             <CTAButton href="/learn/kirundi/basics" />
-            <NavigationControl
-              email={email}
-              isPaidUser={isPaidUser}
-              variant="default"
-            />
+            <NavigationControl email={email} />
           </div>
         </div>
         <div className="absolute inset-0 opacity-20 bg-repeat" />
