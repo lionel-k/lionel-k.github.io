@@ -68,7 +68,7 @@ export const sections: Section[] = [
   {
     id: "actions",
     title: "Actions",
-    description: "Learn common action words",
+    description: "Learn common action verbs",
     order: 9,
     isLocked: true,
   },
