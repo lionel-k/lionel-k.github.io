@@ -12,7 +12,7 @@ export default function CTAButton({ href, className = "" }: CTAButtonProps) {
       >
         Start Learning Now
       </a>
-      <p className="text-xs mt-4 text-gray-400 max-w-lg text-center">
+      <p className="text-xs text-gray-400 max-w-lg text-center">
         <span className="font-semibold text-[#DAA520]">Note:</span> Following{" "}
         <a
           href="https://publications.aap.org/pediatrics/article/138/5/e20162591/60503/Media-and-Young-Minds"
@@ -22,9 +22,8 @@ export default function CTAButton({ href, className = "" }: CTAButtonProps) {
         >
           AAP guidelines
         </a>
-        , screen time is not recommended for children under 18 months, and
-        should be limited for children 18-24 months. For ages 2-5, limit screen
-        time to about 1 hour per day.
+        , avoid screens for children under 18-24 months (except video chat). For
+        ages 2-5, limit to 1 hour per day.
       </p>
     </div>
   );
