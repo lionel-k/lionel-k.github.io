@@ -151,4 +151,11 @@ export const sections: Section[] = [
     order: 20,
     isLocked: true,
   },
+  {
+    id: "locations",
+    title: "Where Are Things?",
+    description: "Learn words for different locations",
+    order: 21,
+    isLocked: true,
+  },
 ];

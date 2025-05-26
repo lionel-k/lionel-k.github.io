@@ -301,7 +301,17 @@ kitchen,knife,imbugita
 kitchen,matches,ikibiriti
 kitchen,fork,ifurusheti
 
-greetings,hello,amahoro
+locations,behind,umupira uri inyuma y'imeza,the ball is behind the table
+locations,in-front-of,umupira uri imbere y'imeza,the ball is in front of the table
+locations,above,umupira uri hejuru y'imeza,the ball is above the table
+locations,on,umupira uri ku meza,the ball is on the table
+locations,under,umupira uri munsi y'imeza,the ball is under the table
+locations,beside,umupira uri iruhande y'imeza,the ball is beside the table
+locations,between,umupira uri hagati y'imeza,the ball is between the tables
+locations,in-place-of,umupira uri mu kibanza c'imeza,the ball is in the place of the table
+locations,inside,umupira uri mu kabati,the ball is in the cupboard
+
+greetings,hello,amahoro,hello
 greetings,bye,bayi
 greetings,thank-you,urakoze
 
