@@ -165,4 +165,11 @@ export const sections: Section[] = [
     order: 22,
     isLocked: true,
   },
+  {
+    id: "sentences-4",
+    title: "Asking Sentences",
+    description: "Learn how to ask for things",
+    order: 23,
+    isLocked: true,
+  },
 ];
