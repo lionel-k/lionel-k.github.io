@@ -130,19 +130,19 @@ export const sections: Section[] = [
     isLocked: true,
   },
   {
-    id: "food",
-    title: "Food",
-    description: "Learn words for different foods",
-    order: 18,
-    isLocked: true,
-  },
-  {
     id: "review-3",
     title: "Progress Check",
     description: "Review the final word set.",
     isLocked: true,
-    order: 19,
+    order: 18,
     isReview: true,
+  },
+  {
+    id: "food",
+    title: "Food",
+    description: "Learn words for different foods",
+    order: 19,
+    isLocked: true,
   },
   {
     id: "people-jobs",
