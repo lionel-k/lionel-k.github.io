@@ -16,6 +16,7 @@ import WordCard from "./WordCard";
 import ImageGrid from "./ImageGrid";
 import RecapModal from "./RecapModal";
 import FullscreenToggle from "./FullscreenToggle";
+import { RotateCcw } from "lucide-react";
 
 const TOTAL_FREE_SECTIONS = sections.filter(
   (section) => section.isLocked === false
@@ -107,10 +108,17 @@ export default function FlashcardGame({
   return (
     <div className="w-full max-w-4xl mx-auto h-full flex flex-col">
       {/* Progress Bar and Fullscreen Toggle */}
-      <div className="px-4 py-4 flex items-center justify-between">
-        <div className="flex-1 mr-4">
+      <div className="px-4 py-4 flex items-center gap-4">
+        <div className="flex-1">
           <ProgressBar progress={progress} language={currentLanguage} />
         </div>
+        <button
+          onClick={handleRestart}
+          className="p-2 text-[#DAA520] bg-transparent border border-[#DAA520] hover:bg-[#DAA520]/10 rounded-lg transition-colors flex items-center justify-center"
+          title="Restart Game"
+        >
+          <RotateCcw className="w-5 h-5" />
+        </button>
         <FullscreenToggle />
       </div>
 
