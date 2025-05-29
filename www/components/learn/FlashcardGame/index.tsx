@@ -16,7 +16,7 @@ import WordCard from "./WordCard";
 import ImageGrid from "./ImageGrid";
 import RecapModal from "./RecapModal";
 import FullscreenToggle from "./FullscreenToggle";
-import { RotateCcw } from "lucide-react";
+import { RotateCcw, ArrowRight } from "lucide-react";
 
 const TOTAL_FREE_SECTIONS = sections.filter(
   (section) => section.isLocked === false
@@ -153,9 +153,10 @@ export default function FlashcardGame({
               ) : (
                 <button
                   onClick={handleNext}
-                  className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
+                  className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors flex items-center justify-center"
                 >
-                  Next Word
+                  <span>Next Word</span>
+                  <ArrowRight className="w-5 h-5 ml-2" />
                 </button>
               )}
             </div>
