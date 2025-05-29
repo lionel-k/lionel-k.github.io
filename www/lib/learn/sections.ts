@@ -172,4 +172,19 @@ export const sections: Section[] = [
     order: 23,
     isLocked: true,
   },
+  {
+    id: "review-4",
+    title: "Progress Check",
+    description: "Review the final word set.",
+    isLocked: true,
+    order: 24,
+    isReview: true,
+  },
+  {
+    id: "countries",
+    title: "Countries",
+    description: "Learn words for different countries",
+    order: 25,
+    isLocked: true,
+  },
 ];

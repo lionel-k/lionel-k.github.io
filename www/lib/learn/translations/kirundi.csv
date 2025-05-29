@@ -261,6 +261,7 @@ food,oil,amavuta,oil
 food,honey,ubuki,honey
 food,thick-bread,ubugari,thick bread
 food,doughnut,igitumbura,doughnut
+food,cookie,igisuguti,cookie
 
 clothing,shirt,ishati,shirt
 clothing,sweater,umupira,sweater
@@ -324,6 +325,27 @@ sentences-4,sentences-039,nshaka gucapa,i would like to draw
 sentences-4,sentences-040,nshaka kuja hanze,i would like to go outside
 sentences-4,sentences-041,nshaka kunviriza umuziki,i would like to listen to music
 sentences-4,sentences-042,nshaka kuryama,i would like to sleep
+
+countries,france,mba mu bufaransa,i live in france
+countries,india,mba mu buhindi,i live in india
+countries,belgium,mba mu bubirigi,i live in belgium
+countries,burundi,mba mu burundi,i live in burundi
+countries,canada,mba muri kanada,i live in canada
+countries,china,mba mu bushinwa,i live in china
+countries,germany,mba mu budagi,i live in germany
+countries,italy,mba mu butariyano,i live in italy
+countries,japan,mba mu buyapani,i live in japan
+countries,kenya,mba muri kenya,i live in kenya
+countries,netherlands,mba mu buhorande,i live in netherlands
+countries,norway,mba muri noruveje,i live in norway
+countries,russia,mba mu burusiya,i live in russia
+countries,rwanda,mba mu rwanda,i live in rwanda
+countries,south-africa,mba muri afurika y'epfo,i live in south africa
+countries,south-korea,mba muri koreya y'epfo,i live in south korea
+countries,sweden,mba mu bu suwede,i live in sweden
+countries,switzerland,mba mu busuwisi,i live in switzerland
+countries,united-kingdom,mba mu bwongereza,i live in united kingdom
+countries,usa,mba muri reta zunze umwe za amerika,i live in usa
 
 greetings,hello,amahoro,hello
 greetings,bye,bayi
