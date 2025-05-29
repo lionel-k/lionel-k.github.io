@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Volume2, Info } from "lucide-react";
+import { Volume2, Languages } from "lucide-react";
 import { getAudioPath } from "@/lib/learn/utils";
 
 interface WordCardProps {
@@ -118,7 +118,7 @@ export default function WordCard({ word, language }: WordCardProps) {
             onClick={toggleEnglish}
             className="group bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] backdrop-blur-sm rounded-xl p-4 border border-[#DAA520]/20 hover:border-[#DAA520]/40 hover:shadow-[0_0_30px_rgba(218,165,32,0.1)] transition-all duration-300 relative overflow-hidden"
           >
-            <Info className="h-5 w-5 text-[#DAA520]/60 group-hover:text-[#DAA520] transition-colors" />
+            <Languages className="h-5 w-5 text-[#DAA520]/60 group-hover:text-[#DAA520] transition-colors" />
             <div className="absolute inset-0 bg-[#DAA520]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
           </button>
         </div>
