@@ -283,7 +283,7 @@ export const tigrinyaConfigs = {
       slug: "bilingual-coloring-book-in-tigrinya",
       age: "3-6",
       pages: "58",
-      price: "11.99",
+      price: "9.99",
       description: {
         short:
           "Explore colors and words with our Tigrinya Bilingual Coloring Book for kids aged 3-6. Inspire learning today!",
