@@ -19,6 +19,7 @@ export function Navbar() {
     { href: "/", label: "Home" },
     { href: "/books", label: "Books" },
     { href: "/learn/kirundi/basics", label: "Learn" },
+    { href: "/learn/kirundi/pricing", label: "Pricing" },
     { href: "/about", label: "About" },
     { href: "/blog", label: "Blog" },
   ];
