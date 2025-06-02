@@ -292,17 +292,17 @@ people-jobs,king,umwami,king
 people-jobs,carpenter,umubaji,carpenter
 people-jobs,farmer,umurimyi,farmer
 
-kitchen,sauce-pan,isafuriya
-kitchen,frying-pan,ipanu
-kitchen,ladle,icaruzo
-kitchen,bowl,ibakure
-kitchen,sieve,akayunguruzo
-kitchen,mortar,isekuro
-kitchen,towel,igitambara
-kitchen,scale,umunzane
-kitchen,knife,imbugita
-kitchen,matches,ikibiriti
-kitchen,fork,ifurusheti
+kitchen,sauce-pan,isafuriya,sauce pan
+kitchen,frying-pan,ipanu,frying pan
+kitchen,ladle,icaruzo,ladle
+kitchen,bowl,ibakure,bowl
+kitchen,sieve,akayunguruzo,sieve
+kitchen,mortar,isekuro,mortar
+kitchen,towel,igitambara,towel
+kitchen,scale,umunzane,scale
+kitchen,knife,imbugita,knife
+kitchen,matches,ikibiriti,matches
+kitchen,fork,ifurusheti,fork
 
 locations,behind,umupira uri inyuma y'imeza,the ball is behind the table
 locations,in-front-of,umupira uri imbere y'imeza,the ball is in front of the table
