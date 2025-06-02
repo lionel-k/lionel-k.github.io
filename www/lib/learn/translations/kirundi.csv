@@ -281,16 +281,16 @@ clothing,bracelet,igikomo,bracelet
 clothing,ring,impeta,ring
 clothing,earring,ihereni,earring
 
-people-jobs,soldier,umusoda
-people-jobs,priest,umupatiri
-people-jobs,nun,umubikira
-people-jobs,teacher,umwigisha
-people-jobs,doctor,umuganga
-people-jobs,nurse,umuforoma
-people-jobs,driver,umushoferi
-people-jobs,king,umwami
-people-jobs,carpenter,umubaji
-people-jobs,farmer,umurimyi
+people-jobs,soldier,umusoda,soldier
+people-jobs,priest,umupatiri,priest
+people-jobs,nun,umubikira,nun
+people-jobs,teacher,umwigisha,teacher
+people-jobs,doctor,umuganga,doctor
+people-jobs,nurse,umuforoma,nurse
+people-jobs,driver,umushoferi,driver
+people-jobs,king,umwami,king
+people-jobs,carpenter,umubaji,carpenter
+people-jobs,farmer,umurimyi,farmer
 
 kitchen,sauce-pan,isafuriya
 kitchen,frying-pan,ipanu
