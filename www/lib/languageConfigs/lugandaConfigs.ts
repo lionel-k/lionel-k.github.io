@@ -6,7 +6,7 @@ export const lugandaConfigs = {
       slug: "first-100-words-in-luganda",
       age: "0-6",
       pages: "52",
-      price: "12.99",
+      price: "11.99",
       description: {
         short:
           "Discover First 100 Words in Luganda for kids aged 0-6. Engage young minds in a fun, bilingual learning adventure!",
