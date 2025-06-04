@@ -6,7 +6,7 @@ export const haitianCreoleConfigs = {
       slug: "first-100-words-in-haitian-creole",
       age: "0-6",
       pages: "52",
-      price: "12.99",
+      price: "11.99",
       description: {
         short:
           "Learn first 100 words in Haitian Creole with this bilingual book for ages 0-6. Start your child's language journey today!",
