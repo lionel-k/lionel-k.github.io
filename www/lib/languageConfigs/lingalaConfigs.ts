@@ -355,7 +355,7 @@ export const lingalaConfigs = {
       slug: "animals-coloring-book-in-lingala",
       age: "4-8",
       pages: "83",
-      price: "9.99",
+      price: "7.99",
       description: {
         short:
           "Learn animals coloring book in lingala with this bilingual book for ages 4-8. Start your child's language journey today!",
