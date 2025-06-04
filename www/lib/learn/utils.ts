@@ -79,7 +79,7 @@ export const generateOptions = (
 };
 
 export const getAudioPath = (language: string, wordId: string): string => {
-  return `/audios/${language.toLowerCase()}/${wordId}.mp3`;
+  return `/audios/${language}/${wordId}.mp3`;
 };
 
 export const getImagePath = (wordId: string): string => {
