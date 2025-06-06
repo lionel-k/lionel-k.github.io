@@ -57,7 +57,7 @@ export default function SignInForm() {
           type="submit"
           className="w-full sm:w-auto bg-[#DAA520] text-sm text-black font-medium rounded-lg px-6 py-2.5 hover:bg-[#B8860B] transition-colors whitespace-nowrap"
         >
-          Sign in
+          Sign in to track your progress
         </button>
       </form>
     </div>

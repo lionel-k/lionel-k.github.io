@@ -176,6 +176,7 @@ export default function FlashcardGame({
           remainingFreeSections={remainingFreeSections}
           isPaidUser={isPaidUser}
           language={currentLanguage}
+          sectionId={currentSectionId}
         />
       )}
     </div>

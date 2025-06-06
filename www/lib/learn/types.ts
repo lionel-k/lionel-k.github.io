@@ -38,3 +38,23 @@ export type ImageOptionProps = {
   onClick: () => void;
   disabled: boolean;
 };
+
+export type UserProgress = {
+  id: number;
+  user_email: string;
+  language: string;
+  section_id: string;
+  best_score: number;
+  total_attempts: number;
+  last_attempt_date: string;
+  completion_date?: string;
+  created_at: string;
+  updated_at: string;
+};
+
+export type SectionProgress = {
+  section: Section;
+  progress: UserProgress | null;
+  percentage: number;
+  isCompleted: boolean;
+};

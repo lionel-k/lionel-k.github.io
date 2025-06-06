@@ -1,6 +1,10 @@
-import { RotateCcw, ArrowRight } from "lucide-react";
+import { RotateCcw, ArrowRight, BarChart3 } from "lucide-react";
 import GameRecap from "./GameRecap";
 import { Section } from "@/lib/learn/sections";
+import { saveProgress } from "@/lib/learn/progress";
+import { useAuth } from "@/hooks/learn/useAuth";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 
 type RecapModalProps = {
   correctAnswers: number;
@@ -11,6 +15,7 @@ type RecapModalProps = {
   remainingFreeSections: number;
   isPaidUser: boolean;
   language: string;
+  sectionId: string;
 };
 
 function PremiumFeatureText({
@@ -79,6 +84,18 @@ function RestartButton({ onRestart }: { onRestart: () => void }) {
   );
 }
 
+function ViewProgressButton({ language }: { language: string }) {
+  return (
+    <Link
+      href={`/learn/${language}/progress`}
+      className="w-full py-3 text-center font-semibold text-white bg-transparent border border-gray-600 hover:border-gray-500 hover:bg-gray-800/50 rounded-lg transition-colors flex items-center justify-center"
+    >
+      <BarChart3 className="w-5 h-5 mr-2" />
+      <span>View Progress</span>
+    </Link>
+  );
+}
+
 export default function RecapModal({
   correctAnswers,
   totalQuestions,
@@ -88,7 +105,39 @@ export default function RecapModal({
   remainingFreeSections,
   isPaidUser,
   language,
+  sectionId,
 }: RecapModalProps) {
+  const { email } = useAuth();
+  const [progressSaved, setProgressSaved] = useState(false);
+
+  useEffect(() => {
+    const saveUserProgress = async () => {
+      if (email && !progressSaved) {
+        try {
+          await saveProgress(
+            email,
+            language,
+            sectionId,
+            correctAnswers,
+            totalQuestions
+          );
+          setProgressSaved(true);
+        } catch (error) {
+          console.error("Error saving progress:", error);
+        }
+      }
+    };
+
+    saveUserProgress();
+  }, [
+    email,
+    language,
+    sectionId,
+    correctAnswers,
+    totalQuestions,
+    progressSaved,
+  ]);
+
   const showNextSection = isPaidUser || remainingFreeSections > 0;
   const showPremiumText = !isPaidUser;
 
@@ -101,6 +150,7 @@ export default function RecapModal({
         />
         <div className="space-y-3 max-w-md mx-auto">
           <RestartButton onRestart={onRestart} />
+          {email && <ViewProgressButton language={language} />}
           {nextSection && (
             <div className="space-y-2">
               {showNextSection ? (

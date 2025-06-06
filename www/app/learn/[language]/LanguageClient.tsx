@@ -7,6 +7,8 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
 import PageHeader from "@/components/learn/PageHeader";
 import CTAButton from "@/components/learn/CTAButton";
+import Link from "next/link";
+import { BarChart3 } from "lucide-react";
 
 type Props = {
   language: {
@@ -44,6 +46,19 @@ export default function LanguageClient({ language }: Props) {
       <section className="relative py-16 bg-[#111111]">
         <div className="absolute inset-0 opacity-5 bg-repeat" />
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
+          {/* Progress Button */}
+          {email && (
+            <div className="mb-8 flex justify-center">
+              <Link
+                href={`/learn/${language.slug}/progress`}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#DAA520] hover:bg-[#B8860B] text-black font-semibold rounded-lg transition-colors"
+              >
+                <BarChart3 className="h-5 w-5" />
+                View Your Progress
+              </Link>
+            </div>
+          )}
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {sections.map((section) => (
               <SectionCard
