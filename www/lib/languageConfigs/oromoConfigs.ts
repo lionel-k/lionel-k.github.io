@@ -6,7 +6,7 @@ export const oromoConfigs = {
       slug: "first-100-words-in-oromo",
       age: "0-6",
       pages: "52",
-      price: "12.99",
+      price: "11.99",
       description: {
         short:
           "Discover the First 100 Words in Oromo for ages 0-6. Engage young minds and start their language journey today!",
