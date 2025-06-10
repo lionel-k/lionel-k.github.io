@@ -6,7 +6,7 @@ export const eweConfigs = {
       slug: "first-100-words-in-ewe",
       age: "0-6",
       pages: "52",
-      price: "12.99",
+      price: "11.99",
       description: {
         short:
           "Explore Ewe's First 100 Words with colorful pictures and engaging activities for kids aged 0-6. Start a fun learning journey today!",
