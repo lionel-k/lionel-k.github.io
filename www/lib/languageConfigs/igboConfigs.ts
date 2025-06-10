@@ -429,7 +429,7 @@ export const igboConfigs = {
       slug: "fruits-and-vegetables-coloring-book-in-igbo",
       age: "4-8",
       pages: "71",
-      price: "9.99",
+      price: "7.99",
       description: {
         short:
           "Learn fruits and vegetables coloring book in igbo with this bilingual book for ages 4-8. Start your child's language journey today!",
