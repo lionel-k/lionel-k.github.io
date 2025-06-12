@@ -5,9 +5,7 @@ import { FAQ } from "@/components/FAQ";
 import { faqItems } from "@/lib/learn/faq";
 import { usePathname } from "next/navigation";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
-import { CopyToClipboard } from "@/components/learn/CopyToClipboard";
-
-const stripeLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK!;
+import { useState } from "react";
 
 const features = [
   "Kids speak {{language}}.",
@@ -21,6 +19,7 @@ export default function PricingPage() {
   const language = pathname.split("/")[2] || "Kinyarwanda"; // Get language from URL or default
   const capitalizedLanguage =
     language.charAt(0).toUpperCase() + language.slice(1);
+  const [loading, setLoading] = useState(false);
 
   const breadcrumbItems = [
     { name: "Learn", href: "/learn" },
@@ -28,13 +27,37 @@ export default function PricingPage() {
     { name: "Pricing", href: `/learn/${language}/pricing` },
   ];
 
-  const stripeLinkWithEmail = (() => {
-    const params = new URLSearchParams({
-      prefilled_promo_code: "LAUNCH70",
-    });
+  const handleCheckout = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          language: language,
+          origin: window.location.origin,
+        }),
+      });
 
-    return `${stripeLink}?${params.toString()}`;
-  })();
+      const { url, error } = await response.json();
+
+      if (error) {
+        console.error("Error creating checkout session:", error);
+        alert("There was an error processing your request. Please try again.");
+        return;
+      }
+
+      // Redirect to Stripe Checkout
+      window.location.href = url;
+    } catch (error) {
+      console.error("Error:", error);
+      alert("There was an error processing your request. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -80,12 +103,13 @@ export default function PricingPage() {
                 ))}
               </ul>
               <div className="space-y-4">
-                <a
-                  href={stripeLinkWithEmail}
-                  className="block w-full py-4 px-6 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
+                <button
+                  onClick={handleCheckout}
+                  disabled={loading}
+                  className="block w-full py-4 px-6 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors"
                 >
-                  Yes, I Want This For My Kids
-                </a>
+                  {loading ? "Processing..." : "Yes, I Want This For My Kids"}
+                </button>
               </div>
             </div>
             <div className="mt-6">
@@ -95,16 +119,6 @@ export default function PricingPage() {
                   <span className="text-[#4CAF50] whitespace-nowrap">
                     Save €70 - But Only For 50 Families
                   </span>
-                </div>
-                <div className="flex flex-wrap justify-center items-center gap-2">
-                  <span className="text-gray-400 whitespace-nowrap">Code:</span>
-                  <code
-                    className="text-gray-300 bg-black/30 px-2 py-1 rounded"
-                    translate="no"
-                  >
-                    LAUNCH70
-                  </code>
-                  <CopyToClipboard text="LAUNCH70" />
                 </div>
                 <div className="text-gray-300 text-sm">
                   Don't wait. This deal won't last long.
