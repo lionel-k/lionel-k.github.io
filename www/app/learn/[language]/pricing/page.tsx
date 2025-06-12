@@ -96,6 +96,16 @@ export default function PricingPage() {
                     Save €70 - But Only For 50 Families
                   </span>
                 </div>
+                <div className="flex flex-wrap justify-center items-center gap-2">
+                  <span className="text-gray-400 whitespace-nowrap">Code:</span>
+                  <code
+                    className="text-gray-300 bg-black/30 px-2 py-1 rounded"
+                    translate="no"
+                  >
+                    LAUNCH70
+                  </code>
+                  <CopyToClipboard text="LAUNCH70" />
+                </div>
                 <div className="text-gray-300 text-sm">
                   Don't wait. This deal won't last long.
                 </div>
