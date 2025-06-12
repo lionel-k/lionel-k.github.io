@@ -24,11 +24,10 @@ export default function LearnClient() {
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white font-display">
-              Build Your African Language Vocabulary
+              Keep Your Family's Language Alive
             </h1>
             <p className="mt-4 text-xl leading-8 text-gray-300">
-              Master essential words and phrases through interactive flashcards.
-              Choose your language and start learning today.
+              Your kids will thank you later. Just 10 minutes a day.
             </p>
             <CTAButton href="/learn/kirundi/basics" />
             <NavigationControl email={email} />

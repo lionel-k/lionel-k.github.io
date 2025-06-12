@@ -37,8 +37,8 @@ export default function LanguageClient({ language }: Props) {
     <div className="min-h-screen">
       <BreadcrumbNav items={breadcrumbItems} />
       <PageHeader
-        title={`${language.name} Vocabulary`}
-        description="Build your vocabulary step by step, from basic words to everyday phrases."
+        title={`Your Kids Can Speak ${language.name} Too`}
+        description="Just 10 minutes a day. Watch them get excited about their family's language."
         email={email}
         isPaidUser={isPaidUser}
         ctaHref={`/learn/${language.slug}/basics`}

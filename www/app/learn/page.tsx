@@ -3,13 +3,15 @@ import { SITE_URL } from "@/lib/constants";
 import LearnClient from "./LearnClient";
 
 export const metadata: Metadata = {
-  title: "Learn African Languages Online | Interactive Vocabulary Flashcards",
+  title:
+    "Teach Your Kids African Languages in Just 10 Minutes a Day | Lingu.Africa",
   description:
-    "Master essential African language vocabulary with interactive flashcards and native audio. Choose from multiple languages and start learning today.",
+    "Help your children connect with their heritage through African languages. Perfect for busy parents - just 10 minutes a day with interactive flashcards and native audio.",
   openGraph: {
-    title: "Learn African Languages Online | Interactive Vocabulary Flashcards",
+    title:
+      "Teach Your Kids African Languages in Just 10 Minutes a Day | Lingu.Africa",
     description:
-      "Master essential African language vocabulary with interactive flashcards and native audio. Choose from multiple languages and start learning today.",
+      "Help your children connect with their heritage through African languages. Perfect for busy parents - just 10 minutes a day with interactive flashcards and native audio.",
     url: `${SITE_URL}/learn`,
     siteName: "Lingu.Africa",
     images: [
@@ -17,7 +19,7 @@ export const metadata: Metadata = {
         url: `${SITE_URL}/logo.webp`,
         width: 1200,
         height: 1200,
-        alt: "Lingu.Africa - Learn African Languages Online",
+        alt: "Lingu.Africa - Teach Your Kids African Languages",
       },
     ],
     locale: "en_US",
@@ -25,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Learn African Languages Online | Interactive Vocabulary Flashcards",
+    title: "Teach Your Kids African Languages in Just 10 Minutes a Day",
     description:
-      "Master essential African language vocabulary with interactive flashcards and native audio. Choose from multiple languages and start learning today.",
+      "Help your children connect with their heritage through African languages. Perfect for busy parents - just 10 minutes a day with interactive flashcards and native audio.",
     images: [`${SITE_URL}/logo.webp`],
     creator: "@lionel.kubwimana",
   },
