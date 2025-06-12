@@ -3,8 +3,6 @@
 import LanguagesGrid from "@/components/learn/LanguagesGrid";
 import { useAuth } from "@/hooks/learn/useAuth";
 import Loader from "@/components/learn/Loader";
-import PaymentSuccessMessage from "@/components/learn/PaymentSuccessMessage";
-import { Suspense } from "react";
 import NavigationControl from "@/components/learn/NavigationControl";
 import CTAButton from "@/components/learn/CTAButton";
 
@@ -17,9 +15,6 @@ export default function LearnClient() {
 
   return (
     <div className="min-h-screen">
-      <Suspense>
-        <PaymentSuccessMessage />
-      </Suspense>
       <section className="relative bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-16 text-white">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 relative z-10">
           <div className="mx-auto max-w-4xl text-center">
