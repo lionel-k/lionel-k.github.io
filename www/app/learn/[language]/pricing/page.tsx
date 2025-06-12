@@ -10,10 +10,10 @@ import { CopyToClipboard } from "@/components/learn/CopyToClipboard";
 const stripeLink = process.env.NEXT_PUBLIC_STRIPE_PAYMENT_LINK!;
 
 const features = [
-  "Lifetime access to ALL premium sections",
-  "Unlimited practice on every lesson",
-  "Access to ALL future {{language}} content",
-  "No recurring fees - pay once, own forever",
+  "Kids speak {{language}}.",
+  "Works in just 10 minutes a day.",
+  "All lessons forever - no extra fees.",
+  "All future {{language}} lessons included.",
 ] as const;
 
 export default function PricingPage() {
@@ -44,11 +44,10 @@ export default function PricingPage() {
           {/* Header */}
           <div className="mb-8">
             <h1 className="text-3xl font-bold text-white text-center">
-              Unlock Everything
+              Keep {capitalizedLanguage} Alive
             </h1>
             <p className="text-gray-400 text-center mt-2 max-w-xl mx-auto">
-              One payment unlocks all {capitalizedLanguage} content forever -
-              including future lessons
+              Your kids learn {capitalizedLanguage}. Just 10 minutes a day.
             </p>
           </div>
 
@@ -67,7 +66,7 @@ export default function PricingPage() {
                 </div>
               </div>
               <p className="text-gray-400 mb-6">
-                Single payment - no subscriptions, no hidden fees
+                Pay once. Your kids learn forever.
               </p>
               <ul className="space-y-4 mb-8">
                 {features.map((feature) => (
@@ -85,7 +84,7 @@ export default function PricingPage() {
                   href={stripeLinkWithEmail}
                   className="block w-full py-4 px-6 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors"
                 >
-                  Get Lifetime Access
+                  Yes, I Want This For My Kids
                 </a>
               </div>
             </div>
@@ -94,21 +93,11 @@ export default function PricingPage() {
                 <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
                   <Gift className="h-5 w-5 text-[#4CAF50] flex-shrink-0" />
                   <span className="text-[#4CAF50] whitespace-nowrap">
-                    €70 off
-                  </span>
-                  <span className="text-gray-300 whitespace-nowrap">
-                    for the first 50 customers
+                    Save €70 - But Only For 50 Families
                   </span>
                 </div>
-                <div className="flex flex-wrap justify-center items-center gap-2">
-                  <span className="text-gray-400 whitespace-nowrap">Code:</span>
-                  <code
-                    className="text-gray-300 bg-black/30 px-2 py-1 rounded"
-                    translate="no"
-                  >
-                    LAUNCH70
-                  </code>
-                  <CopyToClipboard text="LAUNCH70" />
+                <div className="text-gray-300 text-sm">
+                  Don't wait. This deal won't last long.
                 </div>
               </div>
             </div>

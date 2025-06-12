@@ -2,36 +2,35 @@ export const faqItems = [
   {
     question: "How do I know I'll like what I'm buying?",
     answer:
-      "Try it for free first! And if you buy and don't like it, you get 14 days to ask for your money back. Just email hello@lingu.africa - no questions asked.",
+      "Try it free first! Don't like it? Get your money back in 14 days. Just email hello@lingu.africa.",
   },
   {
     question: "What exactly will I learn?",
     answer:
-      "Our curriculum is carefully structured to build your language skills progressively. We start with essential vocabulary and gradually introduce more complex concepts, following established language learning principles.",
+      "You start with basic words. Then simple phrases. Then full sentences. Each lesson builds on the last one.",
   },
   {
     question: "How does the learning work?",
     answer:
-      "Our method is based on proven language acquisition research. We use a structured approach where each lesson builds upon previous knowledge, ensuring a solid foundation for language mastery.",
+      "Listen. Repeat. Practice. Each lesson teaches you something new. Then you practice until it sticks.",
   },
   {
     question: "Is this just a guessing game?",
     answer:
-      "Not at all! While it feels like a fun game, you're actually learning through play - Our interactive approach combines entertainment with proven language learning methods. As you play, you naturally build your vocabulary and progress from simple words to complete sentences, making the journey both enjoyable and effective.",
+      "No! It feels like a game but you're really learning. You start with simple words. Then you build sentences. It's fun and it works.",
   },
   {
     question: "What makes this different from other apps?",
     answer:
-      "Our content is developed in collaboration with native speakers and language experts, following established academic principles. Every lesson is carefully crafted to ensure you're learning authentic, proper language structure.",
+      "Real native speakers teach you. Every word is correct. Every lesson is tested. You learn the right way to speak.",
   },
   {
     question: "Will I get all future content too?",
     answer:
-      "Yes! Pay once, learn forever. You'll get access to all new content and features as we continue to expand our curriculum based on academic research and user feedback.",
+      "Yes! Pay once, get everything forever. New lessons, new features, all included. No extra fees ever.",
   },
   {
     question: "I have another question",
-    answer:
-      "Cool, send me an email at hello@lingu.africa and I'll be happy to help.",
+    answer: "Email me at hello@lingu.africa and I'll help you out.",
   },
 ];
