@@ -7,8 +7,7 @@ import { CheckCircle } from "lucide-react";
 export default function SuccessPage() {
   const searchParams = useSearchParams();
   const pathname = usePathname();
-  const sessionId = searchParams.get("session_id");
-  const language = pathname.split("/")[2] || "Kinyarwanda";
+  const language = pathname.split("/")[2] || "Kirundi";
   const capitalizedLanguage =
     language.charAt(0).toUpperCase() + language.slice(1);
 
