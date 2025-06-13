@@ -9,23 +9,20 @@ export const kinyarwandaConfigs = {
       price: "11.99",
       description: {
         short:
-          "A Kinyarwanda-English-French picture book all about animals. Great for kids aged 0-6—perfect for families who want a fun way to learn Kinyarwanda!",
+          "Your child learns animal names in Kinyarwanda, English, and French with bright pictures.",
         long: `
-Are you a parent living outside Rwanda, wishing you had a simple way to teach your child Kinyarwanda?
-This animal-themed picture book introduces 30 colorful pages of creatures and words, set in Kinyarwanda, English, and French.
-It's easy to follow, even if you're not fluent. Let your child explore bright illustrations and fun vocabulary that connect them to their cultural roots.
-Give them a world of words and animals to discover, bonding over language in a relaxed, playful way.
+Your child will love the colorful animal pictures in this book. You can read together and learn 30 different animals. Each page shows the animal name in Kinyarwanda, English, and French. Your little one learns new words while you spend time together. Even if you don't speak Kinyarwanda well, you can still help your child learn.
     `.trim(),
       },
       challenges: [
-        "Hard to find animal books in Kinyarwanda: Many diaspora parents lack kid-friendly materials for teaching the names of creatures.",
-        "Engagement for young learners: Bright images and simple text keep kids focused on learning new words.",
-        "Non-fluent parents: The triple-language format (Kinyarwanda-English-French) helps everyone learn together, step by step.",
+        "Hard to Find Animal Books: This book gives you 30 animals with easy Kinyarwanda names to teach your child.",
+        "Keeping Kids Interested: Bright pictures and simple words help your child stay focused and want to learn more.",
+        "Parents Don't Know Kinyarwanda: Each page has English and French too, so you can learn with your child.",
       ],
       whyChoose: [
-        "Shows everyday animals: Kids learn the names of real creatures they recognize in daily life or storybooks.",
-        "Trilingual Layout: Kinyarwanda, English, and French on each page—perfect for families, no matter their language level.",
-        "Ideal for Ages 0-6: Simple sentences and colorful illustrations capture little ones' attention, making learning fun.",
+        "Real Animals Kids Know: Your child learns names of animals they see in other books and movies.",
+        "Three Languages Together: Kinyarwanda, English, and French on every page helps the whole family learn.",
+        "Perfect for Little Ones: Simple words and bright pictures keep young children happy and learning.",
       ],
       amazonUrl: "https://mybook.to/animals-in-kinyarwanda",
       bestSeller: false,
@@ -70,23 +67,20 @@ Give them a world of words and animals to discover, bonding over language in a r
       price: "11.99",
       description: {
         short:
-          "A picture book designed to introduce young children to their first words in Kinyarwanda with bright and engaging illustrations.",
+          "Your child's first Kinyarwanda book with simple words and bright pictures to start learning.",
         long: `
-Are you a parent living in the diaspora and searching for an easy way to teach your child Kinyarwanda?
-This book is the perfect first step in helping little ones discover the beauty of the language. With 30 colorful pages, your child will learn essential words in Kinyarwanda, English, and French.
-Each page features a clear image and a simple word, making learning fun and effortless for toddlers and young children.
-Even if you don't speak Kinyarwanda fluently, you can still share this learning journey with your child through this accessible and engaging picture book.
+This book helps your child learn their first Kinyarwanda words. Each page has one simple word with a clear picture. Your child sees the word in Kinyarwanda, English, and French. You can read together every day and watch your child learn. It's perfect for families who want to start with easy words.
     `.trim(),
       },
       challenges: [
-        "Hard to find quality Kinyarwanda books: Many parents in the diaspora struggle to access simple, engaging learning materials.",
-        "Keeping young children engaged: Bright illustrations and simple words make learning easy and enjoyable for little ones.",
-        "Parents not fluent in Kinyarwanda: The trilingual format (Kinyarwanda-English-French) allows parents to learn alongside their children.",
+        "No Good Kinyarwanda Books: This book gives you 30 pages of simple words your child can learn easily.",
+        "Hard to Keep Kids Focused: Big pictures and one word per page help your child stay interested.",
+        "Parents Don't Speak Kinyarwanda: You can learn with your child because each word has English and French too.",
       ],
       whyChoose: [
-        "Perfect First Words Book: Introduces essential everyday vocabulary to help young children build a strong language foundation.",
-        "Trilingual Format: Kinyarwanda, English, and French on each page—ideal for families who want to reinforce multiple languages.",
-        "Designed for Ages 0-6: Simple text, large images, and great colors keep young learners engaged and excited.",
+        "First Words Made Easy: Your child learns important everyday words they can use right away.",
+        "Three Languages Per Page: Kinyarwanda, English, and French help your family learn together.",
+        "Made for Young Kids: Simple words and big pictures keep little children happy while learning.",
       ],
       amazonUrl: "https://mybook.to/first-book-kinyarwanda",
       bestSeller: false,
@@ -131,23 +125,20 @@ Even if you don't speak Kinyarwanda fluently, you can still share this learning 
       price: "11.99",
       description: {
         short:
-          "A Kinyarwanda-English-French picture book that teaches action verbs in a simple, fun way to kids aged 0-6—perfect for diaspora families!",
+          "Your child learns action words in Kinyarwanda, English, and French with fun pictures.",
         long: `
-Are you a parent living outside Rwanda who wants an easy and playful resource to teach Kinyarwanda?
-This book features everyday action verbs in Kinyarwanda, English, and French, making it simple for both kids and parents to learn.
-Enjoy 28 bright pages filled with friendly pictures that help children pick up verbs they can use at home or in daily routines.
-Even if you're not fully fluent, you'll discover new words together and strengthen your family's connection to Rwandan heritage.
+Your child will learn action words they use every day. Each page shows one action with a clear picture. Your child sees how to say "run," "jump," and "eat" in Kinyarwanda. You can practice these words together at home. Even if you're learning Kinyarwanda too, the English and French help you both.
         `.trim(),
       },
       challenges: [
-        "Limited Kinyarwanda Books: Many diaspora parents struggle to find lively, kid-friendly materials for teaching verbs.",
-        "Capturing Kids' Attention: Bright images and short phrases help children stay focused and interested in new words.",
-        "Parents Not Fluent in Kinyarwanda: The triple-language format guides families step by step, even if parents are beginners.",
+        "Hard to Find Action Books: This book teaches 28 action words your child can use every day.",
+        "Kids Get Bored Easily: Fun pictures and simple actions keep your child interested in learning.",
+        "Parents Don't Know Kinyarwanda: Each action word has English and French so you can help your child.",
       ],
       whyChoose: [
-        "Teaches Everyday Verbs: Children learn action words they can use in real life, boosting confidence in Kinyarwanda.",
-        "Kinyarwanda, English, and French: A triple-language approach makes learning accessible to families at any skill level.",
-        "Ideal for Ages 0-6: Simple sentences, colorful pages, and engaging design keep little ones excited to learn.",
+        "Words for Daily Life: Your child learns actions they do every day like eating and playing.",
+        "Three Languages Together: Kinyarwanda, English, and French help your whole family learn action words.",
+        "Perfect for Little Kids: Simple actions and bright pictures make learning fun for young children.",
       ],
       amazonUrl: "https://mybook.to/action-verbs-in-rwanda",
       bestSeller: false,
@@ -197,18 +188,18 @@ Even if you're not fully fluent, you'll discover new words together and strength
       price: "11.99",
       description: {
         short:
-          "A fun and colorful Kinyarwanda-English-French picture book introducing fruits and vegetables. Perfect for kids aged 0-6 in diaspora families!",
-        long: "Are you a parent living outside Rwanda who wants a fun and simple way to teach your child Kinyarwanda? This picture book introduces fruits and vegetables in Kinyarwanda, English, and French. With 30 bright pages filled with engaging illustrations, children will easily learn and recognize different foods. Even if you're not fluent in Kinyarwanda, you and your child can explore new words together, making language learning an enjoyable part of your daily routine.",
+          "Your child learns fruit and vegetable names in Kinyarwanda, English, and French with colorful pictures.",
+        long: "Your child will love learning about fruits and vegetables in this book. Each page shows one food with a bright picture. Your child learns to say apple, banana, and carrot in Kinyarwanda. You can talk about these foods when you cook together. Even if you don't speak Kinyarwanda well, you can learn with your child.",
       },
       challenges: [
-        "Limited Kinyarwanda books on food: Many diaspora parents struggle to find engaging learning materials about everyday fruits and vegetables.",
-        "Keeping young kids interested: Colorful images and simple words ensure kids stay focused and excited while learning new vocabulary.",
-        "Non-fluent parents: The trilingual format (Kinyarwanda-English-French) allows parents and children to learn together step by step.",
+        "No Food Books in Kinyarwanda: This book teaches 30 fruits and vegetables your child eats every day.",
+        "Hard to Keep Kids Learning: Colorful food pictures and simple words help your child stay interested.",
+        "Parents Don't Speak Kinyarwanda: Each food name has English and French so you can learn together.",
       ],
       whyChoose: [
-        "Teaches Everyday Food Words: Kids learn common fruits and vegetables they see daily, making learning more relatable.",
-        "Trilingual Format: Kinyarwanda, English, and French translations on each page, helping families learn at any language level.",
-        "Perfect for Ages 0-6: Bright visuals, simple words, and interactive learning make it fun for little ones.",
+        "Foods Kids Already Know: Your child learns names of fruits and vegetables they eat at home.",
+        "Three Languages Per Page: Kinyarwanda, English, and French help your family learn food words together.",
+        "Made for Young Children: Bright pictures and simple words keep little ones happy while learning.",
       ],
       amazonUrl: "https://mybook.to/fruits-veggies-rwanda",
       bestSeller: false,

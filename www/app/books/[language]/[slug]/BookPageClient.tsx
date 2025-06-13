@@ -185,16 +185,6 @@ export default function BookPageClient({ language, slug }: Props) {
                 key={page}
                 className="group relative bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl"
               >
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
-                  <AmazonLink
-                    href={book.amazonUrl}
-                    className="inline-flex items-center justify-center rounded-lg bg-white/95 px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium text-black hover:bg-white transition-all duration-300"
-                    bookSlug={book.slug}
-                  >
-                    View on Amazon
-                    <ArrowRight className="ml-2 h-4 w-4" />
-                  </AmazonLink>
-                </div>
                 <OptimizedImage
                   src={`/images/${language}/${slug}/${page}.png`}
                   alt={`Interior page ${page} of ${book.title} - Click to view on Amazon`}

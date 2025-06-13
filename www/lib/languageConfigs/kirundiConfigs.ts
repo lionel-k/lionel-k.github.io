@@ -9,18 +9,18 @@ export const kirundiConfigs = {
       price: "11.99",
       description: {
         short:
-          "A bilingual picture book for children aged 2-8, with English and French translations to help families teach Kirundi easily. Great for toddlers and preschoolers.",
-        long: "This picture book is for kids aged 2-8 and uses Kirundi, English, and French. It has nice pictures that make learning easy and exciting. Great for families who want to learn Kirundi together, even if they don't speak it well. Helps kids connect with their culture while learning new words.",
+          "A picture book that helps kids learn Kirundi words with English and French too.",
+        long: "Your child will love the bright pictures in this book. You can read together every day. Each page shows simple Kirundi words with English and French too. Your little one learns new words while you bond together. It's perfect for busy families who want to share their culture. Even if you don't speak Kirundi well, you can still help your child learn.",
       },
       challenges: [
-        "No Fun Kirundi Books for Kids!: Burundian parents struggle to find colorful, modern books that make learning our language exciting.",
-        "Losing Culture Abroad?: Diaspora families lack Kirundi resources to teach kids about Burundian heritage.",
-        "Teaching Kirundi Without Fluency!: Most books need fluent parents - ours helps you learn together.",
+        "Hard to Find Fun Kirundi Books: This book has bright pictures that make learning fun for kids.",
+        "Kids Losing Their Culture: Helps families teach Kirundi heritage in a simple way.",
+        "Parents Don't Speak Kirundi Well: English and French help you learn together with your child.",
       ],
       whyChoose: [
-        "Learn 3 Languages Together!: Kirundi, English and French words side-by-side - perfect bilingual kids book.",
-        "Bright Pictures Kids Love!: 30 colorful pages with fun stories - best language learning book for children.",
-        "Teach Kirundi Easily!: Perfect kids language book for parents who want to learn Kirundi together - no fluent speaking needed!",
+        "Three Languages Together: Kids learn Kirundi, English, and French side by side.",
+        "Bright Pictures Kids Love: Colorful pages keep children interested in reading.",
+        "Easy for All Parents: You don't need to speak Kirundi to help your child learn.",
       ],
       amazonUrl: "https://mybook.to/first-book-in-kirundi",
       bestSeller: true,
@@ -75,18 +75,18 @@ export const kirundiConfigs = {
       price: "20.99",
       description: {
         short:
-          "A fun story about Gatore's trip to Burundi, learning about family and traditions. Great for families teaching Kirundi.",
-        long: "Join Gatore on a fun trip to Burundi! At first, she's unsure about trying new foods or activities, but soon she finds out how cool it is to learn about her family's traditions, taste yummy dishes, and play with her cousins and grandparents. Perfect for families who want their kids to learn Kirundi through exciting adventures!",
+          "Follow Gatore's trip to Burundi where she learns about family and food.",
+        long: "Gatore goes to Burundi for the first time. She feels scared about trying new things. But she meets her cousins and tries yummy food. She learns about her family's traditions too. Your child will see how fun it is to learn about their heritage. This story helps kids feel proud of where they come from.",
       },
       challenges: [
-        "Limited Kirundi resources: Bilingual texts help parents who may not be fluent teach kids Kirundi with ease.",
-        "Connecting with heritage: Families living abroad often struggle to teach children about their homeland's culture and language.",
-        "Reluctance to try new foods: Many diaspora kids miss out on local cuisine. This story encourages adventurous eating.",
+        "Kids Don't Know Their Heritage: This story shows children their homeland's culture.",
+        "Parents Struggle Teaching Kirundi: English and Kirundi together make it easy.",
+        "Children Won't Try New Foods: Gatore shows kids how fun new foods can be.",
       ],
       whyChoose: [
-        "Inspires Cultural Curiosity: Gatore's fun journey encourages kids to embrace their roots and new experiences.",
-        "Bilingual Learning: Kirundi & English side-by-side, making it easy for parents and children to learn together.",
-        "Characters You Can Relate To: Gatore's worries and excitement are just like what kids in other countries feel, making them feel like they belong.",
+        "Makes Kids Curious About Culture: Children want to learn more about their roots.",
+        "Two Languages Side by Side: Parents and kids learn Kirundi and English together.",
+        "Kids See Themselves in Gatore: Children relate to her worries and excitement.",
       ],
       amazonUrl: "https://mybook.to/gatore-visit-burundi",
       bestSeller: true,
@@ -147,18 +147,18 @@ export const kirundiConfigs = {
       price: "19.99",
       description: {
         short:
-          "Over 900 Kirundi sayings, each with English translations and explanations. These sayings show the rich wisdom of Burundi and are fun to learn.",
-        long: "This special book has more than 900 Kirundi proverbs. Each proverb has an English equivalent and an explanation, so it's easy to learn. You'll discover lots of old sayings that people in Burundi have shared for many years. It's perfect for kids or grown-ups who want to remember or learn Kirundi wisdom, connect with family roots, or just enjoy clever sayings!",
+          "Over 900 Kirundi sayings with English meanings that teach life lessons.",
+        long: "This book has more than 900 wise sayings from Burundi. Each saying has an English meaning too. Your family can read these together and talk about them. Kids learn important life lessons while practicing Kirundi. These old sayings help children understand their grandparents' wisdom. It's a great way to share your culture at home.",
       },
       challenges: [
-        "Preserving Kirundi Wisdom: Families may lose old sayings if they're not written down.",
-        "Connecting Kids to Ancestry: Many children miss out on learning their grandparents' special words.",
-        "Fun Kirundi Learning: Big books can be dull, but simple explanations make it easy and fun.",
+        "Losing Old Wisdom: These sayings keep grandparents' teachings alive for kids.",
+        "Kids Don't Know Family History: Proverbs teach children about their ancestors.",
+        "Learning Can Be Boring: These wise sayings make learning fun and interesting.",
       ],
       whyChoose: [
-        "Huge Collection of Proverbs: Over 900 Kirundi proverbs showcasing Burundi's rich cultural heritage.",
-        "Easy Translations and Explanations: Each proverb comes with an English equivalent and an explanation, so everyone can learn.",
-        "Great for Families: Perfect for teaching kids about their heritage or just sharing good life lessons.",
+        "Huge Collection of Sayings: Over 900 proverbs show Burundi's rich culture.",
+        "Easy to Understand: English meanings help everyone learn the wisdom.",
+        "Perfect for Families: Parents and kids can share these lessons together.",
       ],
       amazonUrl: "https://mybook.to/kirundi-proverbs",
       bestSeller: true,
@@ -213,25 +213,18 @@ export const kirundiConfigs = {
       price: "21.99",
       description: {
         short:
-          "Join Shaka's first visit to Burundi! A bilingual story with hippos and safari cars that makes learning Kirundi fun.",
-        long: `
-      Shaka arrives in Burundi for the very first time, ready to explore and learn
-      about his family's homeland. Follow him and his cousin Muco as they visit
-      Ruvubu National Park, push a stuck safari car, and encounter hippos up close!
-      This bilingual book (Kirundi and English) is perfect for young
-      readers who want to connect with Burundian culture and discover a fun
-      adventure along the way.
-    `.trim(),
+          "Join Shaka's first visit to Burundi with hippos and safari fun.",
+        long: "Shaka visits Burundi for the first time ever. He goes to a national park with his cousin. They see hippos and help push a stuck car. The pictures are bright and fun to look at. Your child learns Kirundi and English words together. It's a simple story that teaches kids about Burundi while having fun.",
       },
       challenges: [
-        "Few easy Kirundi stories: Families abroad find it hard to keep Kirundi language alive.",
-        "Spark cultural interest: Kids need fun stories to learn about their heritage.",
-        "Make learning exciting: Fun stories and bright pictures help kids enjoy Kirundi and English.",
+        "Few Easy Kirundi Stories: This fun story helps families keep Kirundi alive.",
+        "Kids Need Cultural Connection: Shaka's trip shows children their homeland.",
+        "Learning Should Be Fun: Bright pictures and action keep kids interested.",
       ],
       whyChoose: [
-        "Bilingual Format: Kirundi and English side-by-side, ideal for families at any fluency level.",
-        "Action & Adventure: Shaka's trip to Ruvubu National Park keeps kids hooked while teaching new vocabulary.",
-        "Burundian Heritage: Helps diaspora children discover the sights, sounds, and excitement of Burundi.",
+        "Two Languages Together: Kirundi and English help all families learn.",
+        "Action Keeps Kids Interested: Safari adventure makes learning vocabulary fun.",
+        "Teaches About Burundi: Children discover their heritage through Shaka's trip.",
       ],
       amazonUrl: "https://mybook.to/shaka-in-burundi",
       bestSeller: false,
@@ -281,23 +274,18 @@ export const kirundiConfigs = {
       price: "19.99",
       description: {
         short:
-          "A fun Kirundi-English story where Gatore proudly shares donuts at her school's Global Day—perfect for kids ages 4-10!",
-        long: `
-      Can a school day become a fun cultural celebration?
-      In this bilingual story (Kirundi and English), Gatore shares her Burundian culture
-      by making yummy donuts and wearing a colorful imvutano, a traditional dress.
-      As she shows her heritage to her friends, Gatore learns to be proud of her roots—one tasty donut at a time!
-    `.trim(),
+          "Gatore shares Burundian donuts at school and feels proud of her culture.",
+        long: "Gatore makes special Burundian donuts for school. She wears beautiful traditional clothes too. At first she feels nervous about being different. But her friends love the donuts and her dress. She learns to feel proud of her heritage. Your child will see how nice it is to share their culture with friends.",
       },
       challenges: [
-        "Passing on cultural identity: Diaspora families need engaging ways to keep kids connected to Burundi.",
-        "Limited Kirundi materials: Many parents struggle to find fun, bilingual resources for teaching Kirundi.",
-        "Keeping kids interested: Fun pictures and a simple story make learning new words exciting.",
+        "Kids Feel Different at School: Gatore shows children how to be proud of their culture.",
+        "Hard to Find Kirundi Books: This story uses both languages to help families.",
+        "Keeping Kids Interested: Fun pictures and simple story make learning easy.",
       ],
       whyChoose: [
-        "Burundian Culture on Display: Kids discover how to make donuts (ibitumbura) and see beautiful traditional clothing.",
-        "Bilingual Format: Kirundi and English side by side, so even non-fluent parents can follow along.",
-        "Empowering Story: Inspires children to celebrate their heritage and share it confidently with friends.",
+        "Shows Burundian Culture: Kids learn about traditional food and clothes.",
+        "Two Languages Help Everyone: Kirundi and English work for all parents.",
+        "Builds Confidence: Children learn to be proud of their heritage.",
       ],
       amazonUrl: "https://mybook.to/gatore-donuts",
       bestSeller: false,
@@ -347,23 +335,18 @@ export const kirundiConfigs = {
       price: "21.99",
       description: {
         short:
-          "A Kirundi-English story about friendship, inclusivity, and caring for the environment—perfect for kids ages 3-7!",
-        long: `
-      Is your child learning Kirundi?
-      This fun book is about kids planting a tree. They learn about friendship, being kind, and caring for nature.
-      The book has bright pictures and simple words. It's in Kirundi and English.
-      It's a great way to learn new words and connect with Kirundi culture!
-    `.trim(),
+          "Kids plant a tree and learn about friendship and caring for nature.",
+        long: "Children in this story plant a tree together. They learn to be kind to each other. They also learn to take care of nature. The pictures are bright and fun to look at. Your child learns Kirundi and English words together. It teaches kids how to be good friends and help the earth.",
       },
       challenges: [
-        "Limited Kirundi resources: Hard to find simple stories that engage kids in both languages.",
-        "Teaching cultural values abroad: Diaspora families want to share Burundian heritage and life lessons.",
-        "Keeping young readers interested: Short sentences and lively illustrations capture children's attention.",
+        "Hard to Find Simple Kirundi Stories: This book has easy words and bright pictures.",
+        "Teaching Values Far From Home: Story shows kids important life lessons about friendship.",
+        "Keeping Young Kids Interested: Short sentences and colorful pictures hold attention.",
       ],
       whyChoose: [
-        "Lively Story & Important Themes: Teaches inclusivity, friendship, and environmental care in a kid-friendly way.",
-        "Bilingual Format: Kirundi and English side-by-side—perfect for families of any fluency level.",
-        "Fun Characters: Kids love following the adventures of Keza, Karorero, and friends as they grow their tree.",
+        "Teaches Important Values: Kids learn about friendship and caring for nature.",
+        "Two Languages Help Families: Kirundi and English work for all parents.",
+        "Fun Characters Kids Love: Children enjoy following Keza and her friends.",
       ],
       amazonUrl: "https://mybook.to/magic-tree-kirundi",
       bestSeller: false,
@@ -413,23 +396,18 @@ export const kirundiConfigs = {
       price: "11.99",
       description: {
         short:
-          "A Kirundi-English-French picture book all about fruits and vegetables, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
-        long: `
-      Are you a parent living in the diaspora looking for an exciting way to teach Kirundi?
-      This book shows fruits and vegetables in Kirundi, English, and French.
-      With 36 bright and colorful pages, it's easy for little ones to learn new words and connect with their Kirundi roots.
-      Even if you're not a native speaker, you can still read along and help your child enjoy learning.
-    `.trim(),
+          "Learn fruit and vegetable names in Kirundi, English, and French.",
+        long: "This book shows fruits and vegetables your child sees every day. Each page has the Kirundi word with English and French too. The pictures are big and colorful. Your little one learns food words easily. Even if you don't speak Kirundi, you can help your child. It's perfect for very young children starting to talk.",
       },
       challenges: [
-        "Hard to find Kirundi books: Many families abroad struggle to find simple, colorful resources for teaching fruits and veggies.",
-        "Keeping kids engaged: Bright pictures and short words help children have fun while learning new vocabulary.",
-        "Parents not fluent in Kirundi: This trilingual format (Kirundi-English-French) makes teaching Kirundi much easier.",
+        "Hard to Find Kirundi Food Books: This book teaches kids important food words.",
+        "Kids Need to Stay Interested: Big colorful pictures keep children looking and learning.",
+        "Parents Don't Speak Kirundi: Three languages help everyone learn food words together.",
       ],
       whyChoose: [
-        "Focus on Fruits & Veggies: Kids learn essential words for food, making Kirundi practice more interesting.",
-        "Trilingual Approach: Kirundi, English, and French together let parents and kids learn no matter their fluency.",
-        "Ideal for Ages 0-6: Big pictures, simple words, and fun layouts capture toddlers' and preschoolers' attention.",
+        "Focuses on Food Words: Kids learn words for fruits and vegetables they eat.",
+        "Three Languages Together: Kirundi, English, and French help all families.",
+        "Perfect for Little Kids: Big pictures and simple words work for babies and toddlers.",
       ],
       amazonUrl: "https://mybook.to/fruits-veggies-kirundi",
       bestSeller: false,
@@ -479,24 +457,18 @@ export const kirundiConfigs = {
       price: "11.99",
       description: {
         short:
-          "A Kirundi-English-French picture book all about animals, perfect for kids 0-6. Great for learning Kirundi in a fun way!",
-        long: `
-      Do you want to teach your child Kirundi words for animals?
-      This book helps kids learn the names of animals in Kirundi, English, and French.
-      It's filled with colorful pictures that make learning easy and exciting.
-      Whether you live in Burundi or abroad, this trilingual animal book is perfect
-      for young learners who want to explore Kirundi while having fun.
-    `.trim(),
+          "Learn animal names in Kirundi, English, and French with colorful pictures.",
+        long: "Your child will see animals they know and love. Each page shows an animal with its Kirundi name. English and French words are there too. The pictures are big and bright. Kids love learning about animals while practicing new words. You can help your child even if you don't speak Kirundi well.",
       },
       challenges: [
-        "Hard to find Kirundi books: Many diaspora families struggle to find simple resources for learning animal names.",
-        "Keeping kids engaged: Bright pictures and easy words help children stay interested in new vocabulary.",
-        "Parents not fluent in Kirundi: Trilingual format (Kirundi-English-French) makes teaching Kirundi animals simple.",
+        "Hard to Find Kirundi Animal Books: This book teaches kids animal names simply.",
+        "Kids Get Bored Easily: Bright animal pictures keep children interested in learning.",
+        "Parents Need Help Teaching: Three languages make it easy for all families.",
       ],
       whyChoose: [
-        "Focus on Animals: Kids love learning about animals, making Kirundi vocabulary more fun and memorable.",
-        "Trilingual Approach: Kirundi, English, and French together help both kids and parents learn side by side.",
-        "Perfect for Ages 0-6: Short words, big images, and friendly design keep little ones excited about new languages.",
+        "Kids Love Animals: Learning animal names makes Kirundi vocabulary fun.",
+        "Three Languages Help Everyone: Kirundi, English, and French work for all parents.",
+        "Perfect for Little Kids: Short words and big pictures work for young children.",
       ],
       amazonUrl: "https://mybook.to/animals-in-kirundi",
       bestSeller: false,
@@ -546,24 +518,18 @@ export const kirundiConfigs = {
       price: "11.99",
       description: {
         short:
-          "A Kirundi-English-French picture book focusing on action verbs. Perfect for kids aged 0-6 learning Kirundi in a fun way!",
-        long: `
-      Are you a parent living in the diaspora who wants an easy way to teach Kirundi?
-      This book shows common action verbs in Kirundi, English, and French.
-      With 28 bright pages, kids can see fun pictures and learn important verbs
-      that help them speak Kirundi every day. Even if you're not fluent, you and
-      your child can explore new words together and connect with your heritage.
-    `.trim(),
+          "Learn action words in Kirundi, English, and French with fun pictures.",
+        long: "This book shows kids doing things like running and jumping. Each page has the action word in Kirundi. English and French words are there too. Your child learns words they can use every day. The pictures show kids what each word means. It helps children talk about what they're doing in Kirundi.",
       },
       challenges: [
-        "Hard to find Kirundi resources: Many parents abroad struggle to find interesting materials for teaching action words.",
-        "Keeping kids excited: Bright pictures and short phrases make it easy for young learners to stay focused.",
-        "Not fluent in Kirundi: The trilingual format (Kirundi-English-French) helps families learn and practice together.",
+        "Hard to Find Action Word Books: This book teaches kids important doing words.",
+        "Kids Need to Stay Focused: Fun action pictures keep children interested in learning.",
+        "Parents Need Language Help: Three languages make teaching easier for all families.",
       ],
       whyChoose: [
-        "Focus on Action Verbs: Helps kids express themselves in Kirundi with words they can use daily.",
-        "Trilingual Format: Kirundi, English, and French on the same page—great for families at any fluency level.",
-        "Ideal for Ages 0-6: Fun illustrations, simple sentences, and easy vocabulary keep little ones engaged.",
+        "Teaches Doing Words: Kids learn verbs they can use every single day.",
+        "Three Languages Work Together: Kirundi, English, and French help all families learn.",
+        "Perfect for Young Kids: Simple pictures show exactly what each word means.",
       ],
       amazonUrl: "https://mybook.to/action-verbs-kirundi",
       bestSeller: false,
@@ -613,24 +579,18 @@ export const kirundiConfigs = {
       price: "11.99",
       description: {
         short:
-          "A trilingual picture book (Kirundi, English, and French) for kids aged 1-6, helping them learn colors in a fun, colorful way!",
-        long: `
-      Are you a diaspora parent wanting a simple way to teach Kirundi?
-      This picture book shows everyday colors in Kirundi, English, and French.
-      With 24 bright pages and large illustrations, even non-fluent parents can guide their little ones.
-      It's perfect for ages 1-6, turning learning about colors into a fun adventure!
-      Get ready to expand your child's vocabulary and keep their heritage alive.
-    `.trim(),
+          "Learn color names in Kirundi, English, and French with bright pictures.",
+        long: "Your child will see all their favorite colors. Each page shows a color with its Kirundi name. English and French words are there too. The pictures are big and bright. Kids learn color words they use every day. You can help your child learn even if you don't speak Kirundi yourself.",
       },
       challenges: [
-        "Limited Kirundi color resources: Families find it tough to get kid-friendly books teaching colors in Kirundi.",
-        "Keeping kids engaged: Bright, simple illustrations plus trilingual text keeps their interest and encourages learning.",
-        "Parents not fluent in Kirundi: Having English and French side by side helps non-native speakers teach children easily.",
+        "Hard to Find Kirundi Color Books: This book teaches kids color words simply.",
+        "Kids Need Bright Pictures: Colorful pages keep children interested in learning new words.",
+        "Parents Don't Know Kirundi: Three languages help families learn color words together.",
       ],
       whyChoose: [
-        "Focus on Colors: Kids build everyday vocabulary while having fun with big, bold pictures.",
-        "Trilingual Format: Kirundi, English, and French let families learn together, no matter their fluency level.",
-        "Perfect for Diaspora: Designed for parents abroad who want a simple, joyful way to share Kirundi heritage.",
+        "Teaches Everyday Words: Kids learn colors they see and use all the time.",
+        "Three Languages Help Everyone: Kirundi, English, and French work for all families.",
+        "Made for Families Far Away: Perfect for parents who want to share their heritage.",
       ],
       amazonUrl: "https://mybook.to/colors-kirundi",
       bestSeller: false,
@@ -680,25 +640,18 @@ export const kirundiConfigs = {
       price: "11.99",
       description: {
         short:
-          "A trilingual (Kirundi-English-French) picture book teaching letters to kids aged 0-6. Great for families wanting to introduce Kirundi in a fun way!",
-        long: `
-      Are you a parent living in the diaspora who needs fun and engaging ways
-      to teach Kirundi to your child? This colorful book helps little ones
-      learn their letters in Kirundi, English, and French. Each page includes
-      bright illustrations so kids can better remember the words. Whether
-      you're fluent in Kirundi or not, this book makes it easy for families
-      to pass on their heritage and language.
-    `.trim(),
+          "Learn letters in Kirundi, English, and French with colorful pictures.",
+        long: "This book helps little kids learn their letters. Each page shows a letter with Kirundi words. English and French words are there too. The pictures help kids remember each letter better. You can teach your child even if you're still learning Kirundi. It's perfect for children just starting to read.",
       },
       challenges: [
-        "Teaching basic letters in Kirundi: Many diaspora families struggle to find beginner-friendly Kirundi resources.",
-        "Keeping children engaged: Colorful illustrations and simple text help kids stay excited about learning.",
-        "Language barrier for parents: Trilingual format lets non-fluent parents teach Kirundi confidently.",
+        "Teaching Letters in Kirundi: This book makes learning the alphabet easy for families.",
+        "Kids Need to Stay Interested: Colorful pictures help children focus on learning letters.",
+        "Parents Feel Lost Teaching: Three languages help families learn letters together.",
       ],
       whyChoose: [
-        "Focus on Letters: Perfect for young learners just starting with Kirundi, English, and French alphabets.",
-        "Bright & Kid-Friendly: 27 pages of bold images and simple explanations to hold children's attention.",
-        "Easy for Parents: Even if you're not a native speaker, you can read along and learn with your child.",
+        "Perfect for Learning Letters: Kids learn Kirundi, English, and French alphabets together.",
+        "Bright Pictures Help Learning: Bold images help children remember each letter better.",
+        "Easy for All Parents: You can teach letters even if you're learning Kirundi too.",
       ],
       amazonUrl: "https://mybook.to/letters-in-kirundi",
       bestSeller: false,
@@ -748,24 +701,18 @@ export const kirundiConfigs = {
       price: "10.99",
       description: {
         short:
-          "A fun counting book in Kirundi, English, and French for kids aged 0-6. It's great for learning numbers and connecting with Kirundi culture!",
-        long: `
-      Are you a parent in the diaspora looking for a fun way to teach Kirundi?
-      This picture book helps kids learn numbers in Kirundi, English, and French.
-      It's easy and fun, with 26 colorful pages that keep children interested.
-      Perfect for boosting confidence and learning new words, even if you're not
-      a native Kirundi speaker. Great for kids who love learning languages!
-    `.trim(),
+          "Learn to count in Kirundi, English, and French with fun pictures.",
+        long: "Your child will learn numbers from one to ten. Each page shows a number in Kirundi. English and French numbers are there too. The pictures help kids see what each number means. Children love counting while learning new words. You can help your child count even if you're learning Kirundi yourself.",
       },
       challenges: [
-        "Few Kirundi counting books: Families struggle to find engaging resources for teaching numbers in Kirundi.",
-        "Keeping kids engaged: Bright images and simple words help children stay interested as they learn to count.",
-        "Parents not fluent in Kirundi: The trilingual format lets families compare Kirundi, English, and French side-by-side.",
+        "Hard to Find Kirundi Counting Books: This book teaches kids numbers in three languages.",
+        "Kids Get Bored Learning Numbers: Fun pictures make counting interesting and easy.",
+        "Parents Don't Know Kirundi Numbers: Three languages help families learn counting together.",
       ],
       whyChoose: [
-        "Numbers Made Easy: Helps children learn to count in Kirundi with the support of English and French translations.",
-        "Fun Illustrations: Each page shows colorful images so kids can visualize and remember numbers more effectively.",
-        "Perfect for Ages 0-6: Simple wording, big pictures, and an engaging design keep younger learners excited.",
+        "Makes Numbers Easy: Kids learn to count in Kirundi with English and French help.",
+        "Pictures Help Learning: Colorful images show kids what each number means.",
+        "Perfect for Families Far Away: Great way to teach Kirundi numbers at home.",
       ],
       amazonUrl: "https://mybook.to/i-can-count-in-kirundi",
       bestSeller: false,
@@ -815,26 +762,18 @@ export const kirundiConfigs = {
       price: "12.99",
       description: {
         short:
-          "A trilingual coloring book for kids aged 3-6. Learn new words while coloring animals, shapes, fruits, and more!",
-        long: `
-      Begin raising trilingual children in a fun and easy way!
-      This Kirundi-English-French coloring book is perfect for kids ages 3-6.
-      Each page has one simple picture with words in all three languages,
-      helping your child build vocabulary in Kirundi, English, and French.
-      From animals and shapes to fruits and everyday objects, young learners
-      will enjoy practicing their coloring skills and learning new words—ideal
-      for diaspora families or anyone wanting an exciting path to Kirundi language learning.
-    `.trim(),
+          "Color pictures while learning Kirundi, English, and French words.",
+        long: "Your child colors animals, shapes, and fruits. Each page has words in Kirundi, English, and French. Kids learn new words while they color. The pictures are simple and fun to color. Children practice holding crayons and learn language at the same time. It's perfect for quiet time together.",
       },
       challenges: [
-        "Hard to find Kirundi resources: Parents struggle to find coloring books that cover all three languages.",
-        "Engaging children: Bright illustrations and easy outlines make it fun for young learners to pick up new words.",
-        "Parents not fluent in Kirundi: Trilingual format means you can compare Kirundi, English, and French side by side.",
+        "Hard to Find Kirundi Coloring Books: This book lets kids color while learning three languages.",
+        "Kids Need Fun Activities: Coloring keeps children busy while they learn new words.",
+        "Parents Want Easy Teaching: Three languages make it simple for all families.",
       ],
       whyChoose: [
-        "Trilingual Approach: Every page shows Kirundi, English, and French words to encourage natural language discovery.",
-        "Boost Vocabulary: Explore everyday concepts—animals, shapes, fruits, vegetables—through coloring and simple text.",
-        "Perfect for Ages 3-6: Kid-friendly outlines, single-sided pages, and easy words keep children excited to learn.",
+        "Three Languages While Coloring: Kids learn Kirundi, English, and French while having fun.",
+        "Builds Word Knowledge: Children learn about animals, shapes, and fruits through coloring.",
+        "Perfect for Quiet Time: Single-sided pages work great for young children coloring.",
       ],
       amazonUrl: "https://mybook.to/coloring-book-kirundi",
       bestSeller: false,
@@ -884,22 +823,18 @@ export const kirundiConfigs = {
       price: "18.00",
       description: {
         short:
-          "100+ bilingual jokes in Kirundi and English. Learn language through laughter while exploring Burundian culture!",
-        long: `
-      Discover the fun of Kirundi jokes with over 100 bilingual jokes! This book is great for kids, families, and anyone who loves to laugh. Enjoy jokes that bring people together and learn about Burundian culture in a fun way!
-
-      Made with help from funny people in Burundi, this book shows the happy and lively spirit of Kirundi culture.
-        `.trim(),
+          "Over 100 funny jokes in Kirundi and English that families can share.",
+        long: "This book has more than 100 jokes from Burundi. Each joke is in Kirundi and English too. Your family can laugh together while learning. The jokes are clean and fun for everyone. Kids learn about Burundian humor and culture. It's a great way to practice language while having a good time.",
       },
       challenges: [
-        "Limited Kirundi Comedy Books: Many diaspora families can't find playful ways to enjoy or learn Kirundi.",
-        "Bridging Language Gaps: Most joke books are in English only, leaving Kirundi speakers without relevant content.",
-        "Linking Diaspora to Heritage: Families abroad want to experience authentic Burundian culture.",
+        "Hard to Find Kirundi Fun Books: These jokes help families enjoy learning together.",
+        "Most Joke Books Are English Only: This book shares authentic Burundian humor.",
+        "Families Want Cultural Connection: Jokes help kids understand Burundian daily life.",
       ],
       whyChoose: [
-        "Over 100 Kirundi Jokes: Each joke is presented in Kirundi and English, making humor universal.",
-        "Bilingual Touch: Great for fans of Kirundi and English looking for a cultural twist on jokes.",
-        "Cultural Insights: Discover daily life in Burundi through witty, clean jokes that reflect local traditions.",
+        "Over 100 Clean Jokes: Each joke works in Kirundi and English for everyone.",
+        "Two Languages Together: Great for families learning Kirundi and English side by side.",
+        "Shows Real Culture: Kids learn about daily life in Burundi through funny stories.",
       ],
       amazonUrl: "https://mybook.to/kirundi-jokes",
       bestSeller: false,
@@ -949,24 +884,18 @@ export const kirundiConfigs = {
       price: "25.00",
       description: {
         short:
-          "Explore Kirundi children's songs with English translations and chords. Ideal for families and music enthusiasts.",
-        long: `
-      Discover the fun of Burundian music!
-      Enjoy 11 easy Kirundi songs for kids with English words and simple guitar or piano chords.
-      The chords and lead sheets have been reviewed by a professional musician,
-      making it perfect for families, music teachers, and anyone who wants
-      to learn African music in a fun and easy way.
-    `.trim(),
+          "Learn Kirundi children's songs with English words and simple music chords.",
+        long: "This book has 11 children's songs from Burundi. Each song has Kirundi and English words. Simple guitar and piano chords are included too. Your family can sing these songs together. Kids learn Kirundi while making music. Even if you're not a musician, the chords are easy to follow.",
       },
       challenges: [
-        "Few Kirundi Music Resources: Many diaspora families struggle to find authentic Burundian songs for kids.",
-        "Connecting Culture & Music: Parents want an easy way to share African heritage through simple, kid-friendly tunes.",
-        "Beginner-Friendly Instruments: Guitar and piano learners need accessible chords and lead sheets without complicated tablature.",
+        "Hard to Find Kirundi Music: These authentic songs help families share Burundian culture.",
+        "Parents Want Easy Music Teaching: Simple chords work for beginning guitar and piano players.",
+        "Kids Need Cultural Connection: Traditional songs help children learn about their heritage.",
       ],
       whyChoose: [
-        "Authentic Kirundi Songs: Enjoy 11 traditional children's melodies direct from Burundi.",
-        "Easy-to-Use Lead Sheets: Great for beginners on piano or guitar—no advanced skills required.",
-        "Perfect for Culture & Language: Combines Kirundi lyrics, English translations, and simple chords to help families learn together.",
+        "Real Burundian Songs: 11 traditional children's songs straight from Burundi.",
+        "Easy Music Sheets: Simple chords work great for beginners on guitar and piano.",
+        "Perfect for Culture and Language: Kids learn Kirundi words and traditional music together.",
       ],
       amazonUrl: "https://mybook.to/melodies-burundi",
       bestSeller: false,
@@ -1021,24 +950,18 @@ export const kirundiConfigs = {
       price: " 8.99",
       description: {
         short:
-          "100 puzzles featuring 2,000 Kirundi words—ideal for teens, adults, and seniors to learn and enjoy Kirundi!",
-        long: `
-      Are you ready to challenge your mind and expand your Kirundi vocabulary?
-      This puzzle book offers 100 exciting word searches featuring 2,000 essential Kirundi words.
-      Ideal for families, language enthusiasts, or anyone wanting an engaging way to improve
-      Kirundi skills, each puzzle is designed to be both fun and educational. It provides a cultural connection for diaspora families
-      and anyone curious about this rich language.
-    `.trim(),
+          "100 word puzzles with 2,000 Kirundi words for teens and adults.",
+        long: "This puzzle book has 100 word search games. You'll find 2,000 Kirundi words hidden in the puzzles. Each puzzle teaches new vocabulary while you have fun. The letters are big and easy to see. Answers are in the back if you get stuck. It's perfect for family game time or quiet learning.",
       },
       challenges: [
-        "Lack of Fun Kirundi Puzzles: Traditional language methods can be boring. This word search book adds excitement to learning.",
-        "Building Strong Vocabulary: Many learners struggle to find comprehensive Kirundi vocab lists in one place.",
-        "Engaging All Ages: Teens, adults, and seniors want a puzzle that's accessible, fun, and culturally enriching.",
+        "Learning Kirundi Can Be Boring: These fun puzzles make building vocabulary enjoyable.",
+        "Hard to Find Kirundi Word Lists: 2,000 words give you lots of vocabulary practice.",
+        "Need Activities for All Ages: Large print puzzles work great for teens and adults.",
       ],
       whyChoose: [
-        "2,000 Kirundi Words: Explore a broad range of vocabulary while enjoying 100 themed puzzles.",
-        "Beginner-Friendly Format: Large print, easy-to-follow puzzles, and answers included for quick reference.",
-        "Diaspora Connection: Great for families abroad seeking a deeper bond with their Burundian roots.",
+        "2,000 Kirundi Words: Learn lots of vocabulary through 100 different themed puzzles.",
+        "Easy to Read Format: Large print makes puzzles gentle on eyes for all ages.",
+        "Great for Families Far Away: Perfect way to practice Kirundi while having fun together.",
       ],
       amazonUrl: "https://mybook.to/kirundi-word-search",
       bestSeller: false,
@@ -1093,23 +1016,18 @@ export const kirundiConfigs = {
       price: "15.99",
       description: {
         short:
-          "20 Kirundi songs from Burundi that celebrate culture and family traditions. Perfect for kids and families!",
-        long: `
-      Discover the heart of Burundi with 20 Kirundi songs! These songs are perfect
-      for learning about weddings, independence celebrations, and everyday life in Burundi.
-      Each song has simple explanations to help you understand the music's meaning.
-      This collection is great for families to enjoy together and learn about Burundian culture.
-    `.trim(),
+          "20 traditional Kirundi songs that celebrate culture and family traditions.",
+        long: "This book has 20 songs from Burundi. The songs are about weddings, celebrations, and daily life. Each song has simple explanations to help you understand. Your family can learn about Burundian traditions together. The songs teach kids about their heritage while having fun. Perfect for sharing culture at home.",
       },
       challenges: [
-        "Few Kirundi music resources: Many diaspora families struggle to find authentic Burundian songs in one place.",
-        "Preserving cultural roots: Easy way to share traditional tunes with family.",
-        "Lack of accessible explanations: People need clear, beginner-friendly info about each song's meaning and history.",
+        "Hard to Find Burundian Music: These 20 songs bring authentic culture to families.",
+        "Parents Want to Share Heritage: Easy explanations help teach traditions through music.",
+        "Need Simple Cultural Resources: Clear notes help everyone understand each song's meaning.",
       ],
       whyChoose: [
-        "20 Curated Songs: Each melody highlights a key aspect of Burundian life, from weddings to independence.",
-        "Beginner-Friendly Explanations: Offers simple details on every tune, so everyone can enjoy without confusion.",
-        "Bridge Generations: Families can sing together, teaching kids about Burundian culture while having fun.",
+        "20 Real Burundian Songs: Each song teaches about weddings, celebrations, and daily life.",
+        "Easy Explanations Included: Simple notes help families understand what each song means.",
+        "Perfect for Teaching Heritage: Families can sing together and learn about Burundian culture.",
       ],
       amazonUrl: "https://mybook.to/OBYrzk",
       bestSeller: false,
@@ -1159,24 +1077,18 @@ export const kirundiConfigs = {
       price: "22.99",
       description: {
         short:
-          "300+ Kirundi riddles for cultural insights and family fun. Perfect for deepening your connection to Burundi.",
-        long: `
-Have you ever wondered about the secrets buried within the riddles of a culture that's rich in history?
-In this book, you'll explore 300+ Kirundi riddles that blend clever wit with meaningful life lessons.
-Dive into Burundi's traditions, discover fun challenges for the whole family, and connect with the
-humor and heritage that make these riddles a special part of Burundian identity. Perfect for educators,
-language learners, and all who love a good brain teaser!
-    `.trim(),
+          "Over 300 Kirundi riddles that teach culture and bring families together.",
+        long: "This book has more than 300 riddles from Burundi. Each riddle teaches about life and culture. Your family can solve them together and learn. The riddles are fun brain teasers for everyone. Kids learn wise lessons while practicing Kirundi. It's perfect for family game nights and cultural learning.",
       },
       challenges: [
-        "Limited exposure to Kirundi riddles: Many diaspora families and learners rarely see the playful, wise side of Kirundi culture.",
-        "Needing deeper cultural insights: Riddles provide a window into everyday life and values, but they can be tough to find in English.",
-        "Keeping traditions alive: These riddles encourage storytelling and bonding, ensuring younger generations stay connected to their roots.",
+        "Hard to Find Kirundi Riddles: These 300+ riddles share the fun side of Burundian culture.",
+        "Kids Need Cultural Learning: Riddles teach about daily life and values in Burundi.",
+        "Families Want Bonding Activities: Solving riddles together builds family connections and traditions.",
       ],
       whyChoose: [
-        "Over 300 Riddles: A broad range of clever Kirundi riddles for all ages to enjoy and learn from.",
-        "Cultural Context: Each riddle hints at the customs, beliefs, and daily life of Burundi, deepening your understanding.",
-        "For Teens and Adults: Designed for anyone 10+, these riddles are challenging, funny, and perfect for group activities or solo fun.",
+        "Over 300 Brain Teasers: Lots of clever riddles that teach life lessons and culture.",
+        "Shows Real Culture: Each riddle gives insights into Burundian customs and daily life.",
+        "Perfect for Ages 10 and Up: Challenging and funny riddles work great for family activities.",
       ],
       amazonUrl: "https://mybook.to/riddles-in-kirundi",
       bestSeller: false,
