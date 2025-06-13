@@ -24,13 +24,13 @@ export default function ImageGrid({
   };
 
   return (
-    <div className="grid grid-cols-2 gap-4 sm:gap-6 w-full">
+    <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 w-full h-full">
       {options.map((option) => (
         <button
           key={option.id}
           onClick={() => onAnswer(option.id)}
           disabled={!!selectedAnswer}
-          className={`relative aspect-square w-full overflow-hidden rounded-xl border-2 border-[#DAA520]/20 bg-[#1A1A1A] transition-all hover:border-[#DAA520]/40 ${getButtonStyle(
+          className={`relative aspect-square w-full h-full max-h-full overflow-hidden rounded-lg sm:rounded-xl border-2 border-[#DAA520]/20 bg-[#1A1A1A] transition-all hover:border-[#DAA520]/40 ${getButtonStyle(
             option.id
           )}`}
         >

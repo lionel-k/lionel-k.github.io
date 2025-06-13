@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FlashcardWord } from "@/lib/learn/types";
 import {
   generateOptions,
   playFeedbackSound,
@@ -108,7 +107,7 @@ export default function FlashcardGame({
   return (
     <div className="w-full max-w-4xl mx-auto h-full flex flex-col">
       {/* Progress Bar and Fullscreen Toggle */}
-      <div className="px-4 py-4 flex items-center gap-4">
+      <div className="px-4 py-2 sm:py-4 flex items-center gap-4 flex-shrink-0">
         <div className="flex-1">
           <ProgressBar progress={progress} language={currentLanguage} />
         </div>
@@ -119,19 +118,19 @@ export default function FlashcardGame({
         >
           <RotateCcw className="w-5 h-5" />
         </button>
-        <FullscreenToggle />
+        {/* <FullscreenToggle /> */}
       </div>
 
       {/* Main Game Area */}
-      <div className="flex-1 flex flex-col px-4 pb-8">
+      <div className="flex-1 flex flex-col px-4 pb-4 min-h-0">
         {/* Word */}
-        <div className="pb-1">
+        <div className="pb-2 sm:pb-4 flex-shrink-0">
           <WordCard word={currentWord} language={currentLanguage} />
         </div>
 
-        <div className="flex-1 flex flex-col">
-          {/* Images */}
-          <div className="w-full max-w-3xl mx-auto mb-6">
+        {/* Images - takes remaining space but ensures button is visible */}
+        <div className="flex-1 flex flex-col min-h-0">
+          <div className="w-full max-w-3xl mx-auto flex-1 min-h-0 mb-3 sm:mb-6">
             <ImageGrid
               options={options}
               selectedAnswer={selectedAnswer}
@@ -140,13 +139,13 @@ export default function FlashcardGame({
             />
           </div>
 
-          {/* Next Word Button (only show if not last word) */}
+          {/* Next Word Button - always visible at bottom */}
           {selectedAnswer && !showRecap && (
-            <div className="w-full max-w-3xl mx-auto">
+            <div className="w-full max-w-3xl mx-auto flex-shrink-0">
               {showViewResults ? (
                 <button
                   onClick={handleViewResults}
-                  className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors flex items-center justify-center"
+                  className="w-full py-3 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors flex items-center justify-center"
                 >
                   <BarChart3 className="w-5 h-5 mr-2" />
                   <span>View Results</span>
@@ -154,7 +153,7 @@ export default function FlashcardGame({
               ) : (
                 <button
                   onClick={handleNext}
-                  className="w-full py-3 mt-4 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors flex items-center justify-center"
+                  className="w-full py-3 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] rounded-lg transition-colors flex items-center justify-center"
                 >
                   <span>Next Word</span>
                   <ArrowRight className="w-5 h-5 ml-2" />
