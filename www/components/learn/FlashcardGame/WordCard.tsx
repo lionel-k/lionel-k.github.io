@@ -81,25 +81,25 @@ export default function WordCard({ word, language }: WordCardProps) {
   };
 
   return (
-    <div className="flex gap-3 mb-4">
+    <div className="flex gap-2 sm:gap-3 mb-2 sm:mb-4">
       {/* Main Word Card */}
       <div className="flex-1">
         <button
           onClick={playAudio}
-          className="w-full bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] backdrop-blur-sm rounded-xl py-4 px-6 text-center border border-[#DAA520]/20 hover:border-[#DAA520]/40 hover:shadow-[0_0_30px_rgba(218,165,32,0.1)] transition-all duration-300 relative overflow-hidden group"
+          className="w-full bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] backdrop-blur-sm rounded-xl py-3 px-4 sm:py-4 sm:px-6 text-center border border-[#DAA520]/20 hover:border-[#DAA520]/40 hover:shadow-[0_0_30px_rgba(218,165,32,0.1)] transition-all duration-300 relative overflow-hidden group"
         >
           <div className="relative z-10">
-            <div className="flex items-center gap-3 justify-center">
-              <Volume2 className="h-6 w-6 shrink-0 text-[#DAA520] group-hover:scale-110 transition-transform" />
+            <div className="flex items-center gap-2 sm:gap-3 justify-center">
+              <Volume2 className="h-5 w-5 sm:h-6 sm:w-6 shrink-0 text-[#DAA520] group-hover:scale-110 transition-transform" />
               <p
-                className="text-3xl font-bold text-white tracking-wide"
+                className="text-2xl sm:text-3xl font-bold text-white tracking-wide"
                 translate="no"
               >
                 {word.translation}
               </p>
             </div>
             {showEnglish && word.english && (
-              <p className="text-[#DAA520]/80 text-l mt-3 italic break-words">
+              <p className="text-[#DAA520]/80 text-sm sm:text-base mt-2 sm:mt-3 italic break-words">
                 {word.english}
               </p>
             )}
@@ -116,9 +116,9 @@ export default function WordCard({ word, language }: WordCardProps) {
         <div className="flex items-center">
           <button
             onClick={toggleEnglish}
-            className="group bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] backdrop-blur-sm rounded-xl p-4 border border-[#DAA520]/20 hover:border-[#DAA520]/40 hover:shadow-[0_0_30px_rgba(218,165,32,0.1)] transition-all duration-300 relative overflow-hidden"
+            className="group bg-gradient-to-br from-[#1A1A1A] to-[#2A2A2A] backdrop-blur-sm rounded-xl p-3 sm:p-4 border border-[#DAA520]/20 hover:border-[#DAA520]/40 hover:shadow-[0_0_30px_rgba(218,165,32,0.1)] transition-all duration-300 relative overflow-hidden"
           >
-            <Languages className="h-5 w-5 text-[#DAA520]/60 group-hover:text-[#DAA520] transition-colors" />
+            <Languages className="h-4 w-4 sm:h-5 sm:w-5 text-[#DAA520]/60 group-hover:text-[#DAA520] transition-colors" />
             <div className="absolute inset-0 bg-[#DAA520]/5 opacity-0 group-hover:opacity-100 transition-opacity" />
           </button>
         </div>
