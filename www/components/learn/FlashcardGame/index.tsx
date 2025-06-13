@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FlashcardWord } from "@/lib/learn/types";
 import {
   generateOptions,
   playFeedbackSound,
@@ -119,7 +118,7 @@ export default function FlashcardGame({
         >
           <RotateCcw className="w-5 h-5" />
         </button>
-        <FullscreenToggle />
+        {/* <FullscreenToggle /> */}
       </div>
 
       {/* Main Game Area */}
