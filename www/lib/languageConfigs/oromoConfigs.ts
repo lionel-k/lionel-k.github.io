@@ -349,7 +349,7 @@ export const oromoConfigs = {
       slug: "animals-coloring-book-in-oromo",
       age: "4-8",
       pages: "83",
-      price: "9.99",
+      price: "7.99",
       description: {
         short:
           "Oromo Animals Coloring Book for ages 4-8. Discover and color unique animals. Ignite your child's creativity today!",
