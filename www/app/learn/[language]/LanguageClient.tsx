@@ -6,7 +6,6 @@ import SectionCard from "@/components/learn/SectionCard/index";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import Loader from "@/components/learn/Loader";
 import PageHeader from "@/components/learn/PageHeader";
-import CTAButton from "@/components/learn/CTAButton";
 import Link from "next/link";
 import { BarChart3 } from "lucide-react";
 
