@@ -8,10 +8,10 @@ import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { useState } from "react";
 
 const features = [
-  "Kids speak {{language}}.",
+  "Pay once, own forever.",
+  "Unlock all premium lessons.",
+  "Future {{language}} lessons included.",
   "Works in just 10 minutes a day.",
-  "All lessons forever - no extra fees.",
-  "All future {{language}} lessons included.",
 ] as const;
 
 export default function PricingPage() {
@@ -65,12 +65,12 @@ export default function PricingPage() {
       <div className="min-h-screen bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] py-12 px-4">
         <div className="max-w-2xl mx-auto">
           {/* Header */}
-          <div className="mb-8">
-            <h1 className="text-3xl font-bold text-white text-center">
-              Keep {capitalizedLanguage} Alive
+          <div className="mb-12 text-center">
+            <h1 className="text-4xl font-bold text-white mb-4">
+              Don't let your kids lose {capitalizedLanguage}
             </h1>
-            <p className="text-gray-400 text-center mt-2 max-w-xl mx-auto">
-              Your kids learn {capitalizedLanguage}. Just 10 minutes a day.
+            <p className="text-gray-400 text-lg">
+              Give them their heritage in 10 minutes a day.
             </p>
           </div>
 
@@ -88,9 +88,7 @@ export default function PricingPage() {
                   </span>
                 </div>
               </div>
-              <p className="text-gray-400 mb-6">
-                Pay once. Your kids learn forever.
-              </p>
+
               <ul className="space-y-4 mb-8">
                 {features.map((feature) => (
                   <li
@@ -117,11 +115,11 @@ export default function PricingPage() {
                 <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
                   <Gift className="h-5 w-5 text-[#4CAF50] flex-shrink-0" />
                   <span className="text-[#4CAF50] whitespace-nowrap">
-                    Save €70 - But Only For 50 Families
+                    Save €70 - Limited to 50 families
                   </span>
                 </div>
                 <div className="text-gray-300 text-sm">
-                  Don't wait. This deal won't last long.
+                  Before it's too late for your kids.
                 </div>
               </div>
             </div>
