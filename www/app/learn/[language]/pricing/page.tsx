@@ -72,6 +72,12 @@ export default function PricingPage() {
             <p className="text-gray-400 text-lg">
               Give them their heritage in 10 minutes a day.
             </p>
+            <div className="mt-6 p-4 bg-red-900/20 border border-red-500/30 rounded-lg">
+              <p className="text-red-300 font-medium">
+                Don't let your child be the first generation to lose their
+                mother tongue
+              </p>
+            </div>
           </div>
 
           {/* Pricing */}
@@ -109,6 +115,11 @@ export default function PricingPage() {
                 >
                   {loading ? "Processing..." : "Buy Now"}
                 </button>
+                <div className="text-center">
+                  <p className="text-[#4CAF50] text-sm font-medium">
+                    ✓ 14-day money-back guarantee
+                  </p>
+                </div>
               </div>
             </div>
             <div className="mt-6">
@@ -116,7 +127,7 @@ export default function PricingPage() {
                 <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
                   <Gift className="h-5 w-5 text-[#4CAF50] flex-shrink-0" />
                   <span className="text-[#4CAF50] whitespace-nowrap">
-                    Save €70 - Limited to 50 families
+                    Save €70 - Only 23 spots left of 50
                   </span>
                 </div>
                 <div className="text-gray-300 text-sm">
