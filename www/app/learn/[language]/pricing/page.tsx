@@ -16,7 +16,7 @@ const features = [
 
 export default function PricingPage() {
   const pathname = usePathname();
-  const language = pathname.split("/")[2] || "Kinyarwanda"; // Get language from URL or default
+  const language = pathname.split("/")[2] || "Kirundi";
   const capitalizedLanguage =
     language.charAt(0).toUpperCase() + language.slice(1);
   const [loading, setLoading] = useState(false);
@@ -105,6 +105,7 @@ export default function PricingPage() {
                   onClick={handleCheckout}
                   disabled={loading}
                   className="block w-full py-4 px-6 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors"
+                  data-umami-event={`${language}-buy-now-btn`}
                 >
                   {loading ? "Processing..." : "Buy Now"}
                 </button>
