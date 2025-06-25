@@ -106,7 +106,7 @@ export default function PricingPage() {
                   disabled={loading}
                   className="block w-full py-4 px-6 text-center font-semibold text-black bg-[#DAA520] hover:bg-[#B8860B] disabled:opacity-50 disabled:cursor-not-allowed rounded-lg transition-colors"
                 >
-                  {loading ? "Processing..." : "Yes, I Want This For My Kids"}
+                  {loading ? "Processing..." : "Buy Now"}
                 </button>
               </div>
             </div>
