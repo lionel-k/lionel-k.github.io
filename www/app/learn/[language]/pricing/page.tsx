@@ -67,10 +67,10 @@ export default function PricingPage() {
           {/* Header */}
           <div className="mb-12 text-center">
             <h1 className="text-4xl font-bold text-white mb-4">
-              Don't let your child lose {capitalizedLanguage}
+              Help Your Child Learn {capitalizedLanguage}
             </h1>
             <p className="text-gray-400 text-lg">
-              Give them their heritage in 10 minutes a day.
+              The solution you've been looking for - just 10 minutes a day.
             </p>
           </div>
 
