@@ -70,7 +70,7 @@ export default function PricingPage() {
               Help Your Child Learn {capitalizedLanguage}
             </h1>
             <p className="text-gray-400 text-lg">
-              The solution you've been looking for - just 10 minutes a day.
+              While they're still young enough to learn naturally.
             </p>
           </div>
 
