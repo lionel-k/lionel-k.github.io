@@ -84,6 +84,13 @@ export default function RootLayout({
         {/* Preconnect to domains we need to access */}
         <link rel="preconnect" href="https://analytics.lingu.africa" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* PWA Meta Tags */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#DAA520" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="Lingu.Africa" />
+        <link rel="apple-touch-icon" href="/logo.png" />
         {/* Geo-targeting meta tags */}
         <meta name="geo.region" content="US" />
         <meta name="geo.placename" content="United States" />
@@ -101,6 +108,15 @@ export default function RootLayout({
               r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
               a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+          `}
+        </Script>
+        <Script id="sw-register" strategy="afterInteractive">
+          {`
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js');
+              });
+            }
           `}
         </Script>
       </head>
