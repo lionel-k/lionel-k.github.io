@@ -1,11 +1,5 @@
 const CACHE_NAME = "lingu-africa-v2";
-const urlsToCache = [
-  "/",
-  "/learn/kirundi/",
-  "/manifest.json",
-  "/logo.png",
-  "/favicon.png",
-];
+const urlsToCache = ["/", "/manifest.json", "/logo.png", "/favicon.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
