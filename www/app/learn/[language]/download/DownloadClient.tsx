@@ -126,6 +126,7 @@ export default function DownloadClient({ language }: Props) {
             <button
               onClick={handleInstallClick}
               className="bg-[#DAA520] hover:bg-[#B8941F] text-black font-bold text-lg px-8 py-4 rounded-lg transition-colors duration-200 inline-flex items-center gap-3 shadow-lg hover:shadow-xl transform hover:scale-105"
+              data-umami-event={`${language.slug}-download-btn`}
             >
               <Download className="h-6 w-6" />
               Install
