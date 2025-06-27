@@ -188,9 +188,9 @@ export default function DownloadClient({ language }: Props) {
                   Using Chrome:
                 </h4>
                 <ol className="space-y-2 text-gray-300 text-sm">
-                  <li>1. Tap the three dots menu in the top right</li>
-                  <li>2. Tap "Add to Home Screen"</li>
-                  <li>3. Tap "Add" to confirm</li>
+                  <li>1. Tap the share icon in the top-right corner.</li>
+                  <li>2. Tap "Add to Home Screen".</li>
+                  <li>3. Tap "Add" to confirm.</li>
                 </ol>
                 {/* Chrome installation image */}
                 <div className="mt-3">
