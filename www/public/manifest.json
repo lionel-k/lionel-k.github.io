@@ -2,7 +2,7 @@
   "name": "Lingu.Africa - Learn African Languages",
   "short_name": "Lingu.Africa",
   "description": "Learn African languages through interactive lessons and exercises",
-  "start_url": "/learn/kirundi",
+  "start_url": "/learn/kirundi/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#DAA520",
@@ -13,13 +13,19 @@
       "src": "/logo.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     },
     {
       "src": "/favicon.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ],
   "categories": ["education", "books", "reference"],
