@@ -156,9 +156,56 @@ export default function DownloadClient({ language }: Props) {
             How to Get the App
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
+            {/* iPhone Instructions */}
             <div>
               <h3 className="text-lg font-semibold mb-4 text-[#DAA520]">
-                On Your Phone
+                On iPhone
+              </h3>
+
+              {/* Safari Instructions */}
+              <div className="mb-6">
+                <h4 className="text-md font-medium mb-2 text-gray-200">
+                  Using Safari:
+                </h4>
+                <ol className="space-y-2 text-gray-300 text-sm">
+                  <li>1. Tap the Share button at the bottom</li>
+                  <li>2. Scroll down and tap "Add to Home Screen"</li>
+                  <li>3. Tap "Add" in the top right corner</li>
+                </ol>
+                {/* Safari installation image */}
+                <div className="mt-3">
+                  <img
+                    src="/images/install/iphone-safari-install.jpeg"
+                    alt="How to install app on iPhone using Safari"
+                    className="w-full rounded-lg border border-gray-600"
+                  />
+                </div>
+              </div>
+
+              {/* Chrome Instructions */}
+              <div>
+                <h4 className="text-md font-medium mb-2 text-gray-200">
+                  Using Chrome:
+                </h4>
+                <ol className="space-y-2 text-gray-300 text-sm">
+                  <li>1. Tap the three dots menu in the top right</li>
+                  <li>2. Tap "Add to Home Screen"</li>
+                  <li>3. Tap "Add" to confirm</li>
+                </ol>
+                {/* Chrome installation image */}
+                <div className="mt-3">
+                  <img
+                    src="/images/install/iphone-chrome-install.jpeg"
+                    alt="How to install app on iPhone using Chrome"
+                    className="w-full rounded-lg border border-gray-600"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Android Instructions */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4 text-[#DAA520]">
+                On Android Phone
               </h3>
               <ol className="space-y-2 text-gray-300">
                 <li>1. Tap the "Install {language.name} App" button above</li>
