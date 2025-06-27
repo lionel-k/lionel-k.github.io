@@ -1,4 +1,4 @@
-const CACHE_NAME = "lingu-africa-v2";
+const CACHE_NAME = "lingu-africa-v3";
 const urlsToCache = ["/", "/manifest.json", "/logo.png", "/favicon.png"];
 
 self.addEventListener("install", (event) => {
