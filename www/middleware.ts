@@ -2,6 +2,14 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(request: NextRequest) {
+  const url = request.nextUrl.clone();
+
+  // Handle trailing slash redirects for learn routes
+  if (url.pathname.match(/^\/learn\/[^\/]+$/) && !url.pathname.endsWith("/")) {
+    url.pathname += "/";
+    return NextResponse.redirect(url);
+  }
+
   // Set CORS headers on all responses
   const response = NextResponse.next();
 

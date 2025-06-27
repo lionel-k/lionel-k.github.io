@@ -1,7 +1,7 @@
-const CACHE_NAME = "lingu-africa-v1";
+const CACHE_NAME = "lingu-africa-v2";
 const urlsToCache = [
   "/",
-  "/learn/kirundi",
+  "/learn/kirundi/",
   "/manifest.json",
   "/logo.png",
   "/favicon.png",
