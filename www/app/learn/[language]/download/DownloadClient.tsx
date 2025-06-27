@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Download, Smartphone, Globe, Zap } from "lucide-react";
+import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
 interface BeforeInstallPromptEvent extends Event {
   prompt(): Promise<void>;
@@ -85,8 +86,15 @@ export default function DownloadClient({ language }: Props) {
     },
   ];
 
+  const breadcrumbItems = [
+    { name: "Learn", href: "/learn" },
+    { name: language.name, href: `/learn/${language.slug}` },
+    { name: "Download", href: `/learn/${language.slug}/download` },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white">
+      <BreadcrumbNav items={breadcrumbItems} />
       <div className="container max-w-4xl mx-auto px-4 py-16">
         {/* Header */}
         <div className="text-center mb-16">
