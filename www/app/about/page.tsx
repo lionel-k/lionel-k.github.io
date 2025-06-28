@@ -95,33 +95,39 @@ export default function About() {
           </p>
           <div className="max-w-3xl mx-auto space-y-6 leading-relaxed text-gray-700">
             <p>
-              Hello! My name is Lionel, and I'm from Burundi in East Africa.
-              When I was little, everyone around me spoke Kirundi, our local
-              African language. I didn't think much about it back then. But when
-              I moved to France for school, I realized how special my culture
-              and mother tongue really were. They reminded me of my African
-              roots and my family traditions.
+              <strong>Hello! My name is Lionel.</strong> I'm from Burundi in
+              East Africa. When I was little, everyone spoke Kirundi. That's our
+              local African language. Back then, I didn't think it was special.
+              But when I moved to France for school, everything changed. I
+              realized how <strong>important my culture and language</strong>{" "}
+              really were. They connected me to my African roots and family
+              traditions.
             </p>
             <p>
-              One day, I met a girl who was also from Burundi, but she grew up
-              in another country. She felt shy because she didn't speak Kirundi
-              very well. It made me sad because I knew lots of children from the
-              African diaspora felt the same way. I wanted to help them feel
-              proud of their heritage.
+              One day, I met a girl from Burundi. She grew up in another
+              country. She felt shy because{" "}
+              <strong>she couldn't speak Kirundi very well.</strong>
+              This made me sad. I knew many kids from African families felt the
+              same way. They lived far from Africa but wanted to connect with
+              their heritage.
+              <strong>I wanted to help them feel proud</strong> of where they
+              came from.
             </p>
             <p>
-              Later on, when I became a dad, I really wanted my daughter to grow
-              up celebrating our African culture and language. But it was hard
-              to find bilingual children's books in Kirundi or other African
-              languages like Kinyarwanda, Lingala, Swahili, or Yoruba. That's
-              when I started making books myself, so kids everywhere can learn
-              their mother tongue and connect to their African heritage, no
-              matter where they live.
+              When I became a dad, things got personal. I wanted{" "}
+              <strong>my daughter to celebrate our African culture.</strong> I
+              looked for children's books in Kirundi. I also searched for books
+              in other African languages like Kinyarwanda and Swahili. But I
+              couldn't find many good ones.{" "}
+              <strong>That's when I decided to make books myself.</strong>I
+              wanted kids everywhere to learn their mother tongue. No matter
+              where they lived.
             </p>
             <p>
-              Now, I create African children's books for families all over the
-              world. I hope these bilingual stories bring smiles, new words, and
-              a stronger bond to everyone's cultural identity!
+              <strong>Now, I create African children's books</strong> for
+              families around the world. These bilingual stories help kids learn
+              new words. They bring families together. Most importantly, they
+              help children <strong>connect with their cultural roots!</strong>
             </p>
           </div>
         </div>
