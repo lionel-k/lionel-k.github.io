@@ -95,39 +95,35 @@ export default function About() {
           </p>
           <div className="max-w-3xl mx-auto space-y-6 leading-relaxed text-gray-700">
             <p>
-              <strong>Hello! My name is Lionel.</strong> I'm from Burundi in
-              East Africa. When I was little, everyone spoke Kirundi. That's our
-              local African language. Back then, I didn't think it was special.
-              But when I moved to France for school, everything changed. I
-              realized how <strong>important my culture and language</strong>{" "}
-              really were. They connected me to my African roots and family
-              traditions.
+              Hello! My name is Lionel. I'm from Burundi in East Africa. When I
+              was little, everyone spoke Kirundi. That's our local African
+              language. Back then, I didn't think it was special. But when I
+              moved to France for school, everything changed. I realized how
+              important my culture and language really were. They connected me
+              to my African roots and family traditions.
             </p>
             <p>
               One day, I met a girl from Burundi. She grew up in another
-              country. She felt shy because{" "}
-              <strong>she couldn't speak Kirundi very well.</strong>
-              This made me sad. I knew many kids from African families felt the
-              same way. They lived far from Africa but wanted to connect with
-              their heritage.
-              <strong>I wanted to help them feel proud</strong> of where they
-              came from.
+              country. She felt shy because she couldn't speak Kirundi very
+              well. This made me sad. I knew many kids from African families
+              felt the same way. They lived far from Africa but wanted to
+              connect with their heritage. I wanted to help them feel proud of
+              where they came from.
             </p>
             <p>
-              When I became a dad, things got personal. I wanted{" "}
-              <strong>my daughter to celebrate our African culture.</strong> I
-              looked for children's books in Kirundi. I also searched for books
-              in other African languages like Kinyarwanda and Swahili. But I
-              couldn't find many good ones.{" "}
-              <strong>That's when I decided to make books myself.</strong>I
-              wanted kids everywhere to learn their mother tongue. No matter
-              where they lived.
+              When I became a dad, things got personal. I wanted my daughter to
+              celebrate our African culture. I looked for children's books in
+              Kirundi. I also searched for books in other African languages like
+              Kinyarwanda and Swahili. But I couldn't find many good ones.
+              That's when I decided to make books myself. I wanted kids
+              everywhere to learn their mother tongue. No matter where they
+              lived.
             </p>
             <p>
-              <strong>Now, I create African children's books</strong> for
-              families around the world. These bilingual stories help kids learn
-              new words. They bring families together. Most importantly, they
-              help children <strong>connect with their cultural roots!</strong>
+              Now, I create African children's books for families around the
+              world. These bilingual stories help kids learn new words. They
+              bring families together. Most importantly, they help children
+              connect with their cultural roots!
             </p>
           </div>
         </div>
@@ -176,34 +172,25 @@ export default function About() {
           </p>
           <div className="max-w-3xl mx-auto space-y-6 leading-relaxed text-gray-700">
             <p>
-              <strong>Lingu.Africa is a special place.</strong> We make
-              bilingual books in African languages. Languages like Kirundi,
-              Kinyarwanda, Lingala, Swahili, and Yoruba.{" "}
-              <strong>We believe language is more than just words.</strong>
+              Lingu.Africa is a special place. We make bilingual books in
+              African languages. Languages like Kirundi, Kinyarwanda, Lingala,
+              Swahili, and Yoruba. We believe language is more than just words.
               It's about stories, songs, and heritage. Our mission is simple:
-              <strong>
-                help kids learn their mother tongue in a fun way.
-              </strong>{" "}
-              Especially kids in the African diaspora who want to feel proud of
-              their roots.
+              help kids learn their mother tongue in a fun way. Especially kids
+              in the African diaspora who want to feel proud of their roots.
             </p>
             <p>
-              <strong>Our books bring families together.</strong> When families
-              read together, they share African culture. They make new memories.
-              We want every child to
-              <strong>
-                feel connected to their history and traditions.
-              </strong>{" "}
-              It doesn't matter where you live. Whether you're in Africa or
+              Our books bring families together. When families read together,
+              they share African culture. They make new memories. We want every
+              child to feel connected to their history and traditions. It
+              doesn't matter where you live. Whether you're in Africa or
               anywhere else in the world. Our bilingual books will spark
-              curiosity. They build a strong bridge to your
-              <strong>cultural identity.</strong>
+              curiosity. They build a strong bridge to your cultural identity.
             </p>
             <p className="text-lg font-medium text-[#DAA520]">
-              <strong>Join us as we celebrate African heritage.</strong> Help us
-              empower kids to speak their mother tongue. Together, we can keep
-              our rich traditions
-              <strong>alive for generations to come.</strong>
+              Join us as we celebrate African heritage. Help us empower kids to
+              speak their mother tongue. Together, we can keep our rich
+              traditions alive for generations to come.
             </p>
           </div>
         </div>
