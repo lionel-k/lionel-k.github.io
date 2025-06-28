@@ -176,24 +176,34 @@ export default function About() {
           </p>
           <div className="max-w-3xl mx-auto space-y-6 leading-relaxed text-gray-700">
             <p>
-              Lingu.Africa is a special place where we make bilingual books in
-              African languages like Kirundi, Kinyarwanda, Lingala, Swahili,
-              Yoruba, and more. We believe language is more than words—it's
-              about stories, songs, and heritage. Our mission is to help kids,
-              especially those in the African diaspora, learn their mother
-              tongue in a fun way and feel proud of their roots.
+              <strong>Lingu.Africa is a special place.</strong> We make
+              bilingual books in African languages. Languages like Kirundi,
+              Kinyarwanda, Lingala, Swahili, and Yoruba.{" "}
+              <strong>We believe language is more than just words.</strong>
+              It's about stories, songs, and heritage. Our mission is simple:
+              <strong>
+                help kids learn their mother tongue in a fun way.
+              </strong>{" "}
+              Especially kids in the African diaspora who want to feel proud of
+              their roots.
             </p>
             <p>
-              By reading our books, families can share African culture together
-              and make new memories. We want every child to feel connected to
-              their history and traditions. Whether you live in Africa or on the
-              other side of the world, our bilingual children's books will spark
-              curiosity and build a strong bridge to your cultural identity.
+              <strong>Our books bring families together.</strong> When families
+              read together, they share African culture. They make new memories.
+              We want every child to
+              <strong>
+                feel connected to their history and traditions.
+              </strong>{" "}
+              It doesn't matter where you live. Whether you're in Africa or
+              anywhere else in the world. Our bilingual books will spark
+              curiosity. They build a strong bridge to your
+              <strong>cultural identity.</strong>
             </p>
             <p className="text-lg font-medium text-[#DAA520]">
-              Join us as we celebrate African heritage, empower kids to speak
-              their mother tongue, and keep our rich traditions alive for
-              generations to come.
+              <strong>Join us as we celebrate African heritage.</strong> Help us
+              empower kids to speak their mother tongue. Together, we can keep
+              our rich traditions
+              <strong>alive for generations to come.</strong>
             </p>
           </div>
         </div>
