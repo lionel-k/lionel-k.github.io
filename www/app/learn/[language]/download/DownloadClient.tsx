@@ -52,20 +52,10 @@ export default function DownloadClient({ language }: Props) {
     if (!deferredPrompt) {
       // Fallback for browsers that don't support install prompt
       alert(
-        'To get this app, look for "Add to Home Screen" in your browser menu.'
+        'To get this app: \n\nOn iPhone, press the Share button, then "Add to Home Screen". \n\nOn Android, look for "Add to Home Screen" in your browser menu.'
       );
       return;
     }
-
-    deferredPrompt.prompt();
-    const { outcome } = await deferredPrompt.userChoice;
-
-    if (outcome === "accepted") {
-      setIsInstalled(true);
-    }
-
-    setDeferredPrompt(null);
-    setIsInstallable(false);
   };
 
   const features = [
