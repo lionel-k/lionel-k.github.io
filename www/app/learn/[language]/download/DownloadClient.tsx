@@ -58,24 +58,6 @@ export default function DownloadClient({ language }: Props) {
     }
   };
 
-  const features = [
-    {
-      icon: <Globe className="h-6 w-6" />,
-      title: "Easy to Use",
-      description: `Simple and fun way to learn ${language.name}`,
-    },
-    {
-      icon: <Zap className="h-6 w-6" />,
-      title: "Super Fast",
-      description: "Open lessons and games in seconds",
-    },
-    {
-      icon: <Smartphone className="h-6 w-6" />,
-      title: "Like a Real App",
-      description: "Works just like an app on your phone",
-    },
-  ];
-
   const breadcrumbItems = [
     { name: "Learn", href: "/learn" },
     { name: language.name, href: `/learn/${language.slug}` },
@@ -122,22 +104,6 @@ export default function DownloadClient({ language }: Props) {
               Install
             </button>
           )}
-        </div>
-
-        {/* Features Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-gray-900/50 border border-gray-700 rounded-lg p-6 text-center"
-            >
-              <div className="inline-flex items-center justify-center w-12 h-12 bg-[#DAA520]/20 rounded-full mb-4">
-                <div className="text-[#DAA520]">{feature.icon}</div>
-              </div>
-              <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
-              <p className="text-gray-400">{feature.description}</p>
-            </div>
-          ))}
         </div>
 
         {/* Installation Instructions */}
@@ -206,6 +172,7 @@ export default function DownloadClient({ language }: Props) {
             </div>
           </div>
         </div>
+        {/* Features Grid */}
       </div>
     </div>
   );
