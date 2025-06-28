@@ -127,6 +127,38 @@ export default function About() {
         </div>
       </section>
 
+      {/* Interview Section (Dark Gradient) */}
+      <section className="py-20 bg-gradient-to-b from-[#0A0A0A] to-[#1A1A1A] text-white">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <h2 className="text-center text-4xl font-bold mb-4 text-[#DAA520]">
+            My Journey in My Own Words
+          </h2>
+          <p className="text-center text-xl text-gray-300 mb-12">
+            Watch my interview about the inspiration behind Lingu.Africa
+          </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative aspect-video rounded-lg overflow-hidden shadow-2xl">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/qx7cY-cxel4"
+                title="Lionel Kubwimana Interview - The Journey Behind Lingu.Africa"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                className="absolute inset-0"
+              ></iframe>
+            </div>
+            <div className="mt-6 text-center">
+              <p className="text-sm text-gray-400 italic">
+                <strong>Disclaimer:</strong> This interview is conducted in
+                Kirundi, my mother tongue.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* About Lingu.Africa (Light Gradient) */}
       <section className="py-20 bg-gradient-to-b from-[#F5F2EC] to-[#FAF8F5] text-gray-900">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
