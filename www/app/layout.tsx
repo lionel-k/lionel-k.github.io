@@ -5,6 +5,7 @@ import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import PageTracker from "@/components/PageTracker";
 import Script from "next/script";
 
 // Define the local font class name
@@ -125,6 +126,7 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <Providers>
+          <PageTracker />
           <div className="flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-1">{children}</main>
