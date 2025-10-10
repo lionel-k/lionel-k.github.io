@@ -1,10 +1,22 @@
 # Blog Post Rewrite Template for African Diaspora Parents
 
+## Task Definition
+
+**Your task**: Rewrite the blog posts provided in context to make them parent-friendly, SEO-optimized, and accessible to African diaspora families. Follow this proven template to transform academic or complex content into practical guides that busy parents can use immediately.
+
+**What to do**:
+
+1. Analyze the original blog post(s) provided in context
+2. Create new SEO-friendly filenames and structure
+3. Completely rewrite the content using grade 5-7 English
+4. Optimize all metadata (title, description, highlights, tags, categories)
+5. Ensure the final result is actionable, encouraging, and culturally sensitive
+
 ## Overview
 
 Transform existing blog posts into parent-friendly, SEO-optimized content using grade 5-7 English, listicle format, and clear structure. Target 2000-3500+ words with optimized metadata for better search visibility.
 
-**Note**: This template is designed to work with any blog posts provided in context. Simply provide the original blog post content and follow this proven process to create parent-friendly, SEO-optimized versions.
+**Note**: This template is designed to work with any blog posts provided in context. The original blog post content will be provided, and you should follow this proven process to create parent-friendly, SEO-optimized versions.
 
 ## File Naming Strategy (Tested & Proven)
 
@@ -287,22 +299,41 @@ This process will generate:
 
 ## Usage Instructions
 
-### Step 1: Provide Context
+### How to Use This Template
 
-When using this template, include:
+**When you receive this template, the user will provide:**
 
-- Original blog post content (full MDX file)
+- Original blog post content (full MDX files)
 - Any specific requirements or focus areas
 - Target audience details if different from general African diaspora parents
 
-### Step 2: Follow the Process
+**Your job is to:**
 
-Use the 5-phase implementation process outlined above, adapting the specific content transformation based on the original post's topic and structure.
+### Step 1: Analyze the Provided Content
 
-### Step 3: Quality Check
+- Read and understand the original blog post(s)
+- Identify the main topic, current tone, and target transformation type
+- Plan the new structure and approach
 
-Use the provided checklists to ensure the rewritten content meets all requirements for parent-friendly, SEO-optimized blog posts.
+### Step 2: Execute the 5-Phase Process
+
+- Follow the step-by-step implementation process outlined above
+- Adapt the specific content transformation based on the original post's topic
+- Create new files with proper naming conventions
+- Rewrite all content to be parent-friendly and actionable
+
+### Step 3: Quality Assurance
+
+- Use the provided checklists to ensure all requirements are met
+- Verify reading level, word count, and SEO optimization
+- Ensure encouraging tone and practical actionability
+
+### Step 4: File Management
+
+- Create new files with proper naming (dates for posts, no dates for images)
+- Delete original files after successful rewrite
+- Update all image paths and references
 
 ---
 
-**This template has been tested and proven effective, achieving better SEO performance, higher parent engagement, and improved readability scores. It can be applied to any blog post content provided in context.**
+**This template serves as your complete instruction guide. When blog posts are provided in context, follow this template to transform them into parent-friendly, SEO-optimized content that African diaspora families will love and use.**
