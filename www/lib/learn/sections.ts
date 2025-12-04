@@ -33,14 +33,14 @@ export const sections: Section[] = [
     id: "fruits",
     title: "Fruits",
     description: "Learn words for different fruits",
-    isLocked: false,
+    isLocked: true,
     order: 4,
   },
   {
     id: "vegetables",
     title: "Vegetables",
     description: "Learn words for different vegetables",
-    isLocked: false,
+    isLocked: true,
     order: 5,
   },
   {
