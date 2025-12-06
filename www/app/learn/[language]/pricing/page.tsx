@@ -5,7 +5,7 @@ import { FAQ } from "@/components/FAQ";
 import { faqItems } from "@/lib/learn/faq";
 import { usePathname } from "next/navigation";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 const features = [
   "Pay once, own forever.",
@@ -14,12 +14,43 @@ const features = [
   "Works in just 10 minutes a day.",
 ] as const;
 
+// Dynamic spots calculation
+// This creates urgency by showing spots decreasing over time over the next 6 months
+function calculateRemainingSpots() {
+  const startDate = new Date(); // Start counting from today
+  startDate.setHours(0, 0, 0, 0); // Reset to start of day
+  const endDate = new Date(startDate);
+  endDate.setMonth(endDate.getMonth() + 6); // 6 months from start
+  const initialSpots = 21; // Starting number
+  const finalSpots = 2; // Minimum spots remaining at end date
+
+  const now = new Date();
+  const totalDays = Math.ceil(
+    (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
+  );
+  const daysElapsed = Math.max(
+    0,
+    Math.min(
+      totalDays,
+      Math.ceil((now.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24))
+    )
+  );
+
+  // Linear decrease: spots taken increases over time
+  const spotsToLose = initialSpots - finalSpots;
+  const spotsLost = Math.floor((daysElapsed / totalDays) * spotsToLose);
+  const remaining = Math.max(finalSpots, initialSpots - spotsLost);
+
+  return remaining;
+}
+
 export default function PricingPage() {
   const pathname = usePathname();
   const language = pathname.split("/")[2] || "Kirundi";
   const capitalizedLanguage =
     language.charAt(0).toUpperCase() + language.slice(1);
   const [loading, setLoading] = useState(false);
+  const remainingSpots = useMemo(() => calculateRemainingSpots(), []);
 
   const breadcrumbItems = [
     { name: "Learn", href: "/learn" },
@@ -121,7 +152,7 @@ export default function PricingPage() {
                 <div className="flex flex-wrap justify-center items-center gap-x-2 gap-y-1">
                   <Gift className="h-5 w-5 text-[#4CAF50] flex-shrink-0" />
                   <span className="text-[#4CAF50] whitespace-nowrap">
-                    Save €70 - Only 23 spots left of 50
+                    Save €70 - Only {remainingSpots} spots left of 50
                   </span>
                 </div>
                 <div className="text-gray-300 text-sm">
