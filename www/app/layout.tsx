@@ -99,6 +99,23 @@ export default function RootLayout({
         <meta name="ICBM" content="37.09024, -95.712891" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:country-name" content="United States" />
+      </head>
+      <body
+        className={`${interClassName} flex min-h-full flex-col`}
+        suppressHydrationWarning
+      >
+        <Providers>
+          <div className="flex min-h-screen flex-col">
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            <Footer />
+            <WhatsAppButton />
+          </div>
+          {/* PageTracker moved to end to avoid Next.js initialization issues */}
+          <PageTracker />
+        </Providers>
+
+        {/* Scripts moved to body to prevent interference with Next.js initialization */}
         <Script id="hotjar" strategy="afterInteractive">
           {`
             (function(h,o,t,j,a,r){
@@ -120,21 +137,6 @@ export default function RootLayout({
             }
           `}
         </Script>
-      </head>
-      <body
-        className={`${interClassName} flex min-h-full flex-col`}
-        suppressHydrationWarning
-      >
-        <Providers>
-          <PageTracker />
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1">{children}</main>
-            <Footer />
-            <WhatsAppButton />
-          </div>
-        </Providers>
-
         {/* Analytics */}
         <Script
           defer

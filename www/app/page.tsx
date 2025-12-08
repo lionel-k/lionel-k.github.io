@@ -7,7 +7,6 @@ import { languagesConfig } from "@/lib/languagesConfig";
 import { OptimizedImage } from "@/components/OptimizedImage";
 import { AmazonLink } from "@/components/AmazonLink";
 import { getLatestBlogPosts } from "@/lib/blog";
-import Head from "next/head";
 
 import { Metadata } from "next";
 

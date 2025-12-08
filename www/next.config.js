@@ -8,7 +8,12 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ["images.unsplash.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+    ],
   },
   experimental: {
     optimizeCss: true,
@@ -16,7 +21,6 @@ const nextConfig = {
   },
   // Ensure static files are handled correctly
   distDir: ".next",
-  assetPrefix: process.env.NODE_ENV === "production" ? "/_next" : "",
   generateBuildId: async () => {
     return "build-" + Date.now();
   },
