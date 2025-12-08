@@ -26,10 +26,10 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-black text-white">
-      <div className="container max-w-screen-xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6">
+    <header className="sticky top-0 z-[100] w-full border-b bg-black text-white">
+      <div className="container max-w-screen-xl mx-auto flex h-16 items-center justify-between px-4 sm:px-6 relative">
         {/* Left-aligned logo */}
-        <Link href="/" className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2 z-10 relative">
           <OptimizedImage
             src="/logo.webp"
             alt="Lingu.Africa Logo"
@@ -39,12 +39,18 @@ export function Navbar() {
         </Link>
 
         {/* Hamburger Icon for Mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden relative z-[110]">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-white"
+            onTouchStart={(e) => {
+              // Ensure touch events work properly on mobile
+              e.stopPropagation();
+            }}
+            className="text-white relative z-[110]"
+            style={{ touchAction: 'manipulation' }}
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
+            type="button"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -53,14 +59,20 @@ export function Navbar() {
         {/* Right-aligned navigation */}
         <div
           className={`${
-            isOpen ? "fixed inset-0 bg-black bg-opacity-90" : "hidden"
+            isOpen ? "fixed inset-0 bg-black bg-opacity-90 z-[105]" : "hidden"
           } md:relative md:bg-transparent md:flex md:items-center md:justify-end md:space-x-4`}
         >
           {isOpen && (
             <button
               onClick={() => setIsOpen(false)}
-              className="absolute top-5 right-4 text-white md:hidden"
+              onTouchStart={(e) => {
+                // Ensure touch events work properly on mobile
+                e.stopPropagation();
+              }}
+              className="absolute top-5 right-4 text-white md:hidden z-[110]"
+              style={{ touchAction: 'manipulation' }}
               aria-label="Close navigation menu"
+              type="button"
             >
               <X className="h-6 w-6" />
             </button>
