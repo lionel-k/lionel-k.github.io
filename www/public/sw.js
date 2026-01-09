@@ -1,5 +1,5 @@
-const CACHE_NAME = "lingu-africa-v4";
-const urlsToCache = ["/", "/manifest.json", "/logo.png", "/favicon.png"];
+const CACHE_NAME = "lingu-africa-v5";
+const urlsToCache = ["/manifest.json", "/logo.png", "/favicon.png"];
 
 // Force update on install
 self.addEventListener("install", (event) => {
@@ -27,6 +27,18 @@ self.addEventListener("fetch", (event) => {
   if (event.request.url.includes("/_next/") ||
       event.request.url.includes("/api/") ||
       event.request.url.includes("webpack")) {
+    return;
+  }
+
+  // Don't cache HTML pages - always fetch fresh to see navbar updates
+  if (event.request.method === "GET" &&
+      event.request.headers.get("accept")?.includes("text/html")) {
+    event.respondWith(
+      fetch(event.request).then((response) => {
+        // Return fresh response without caching
+        return response;
+      })
+    );
     return;
   }
 
