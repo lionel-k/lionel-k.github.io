@@ -39,22 +39,24 @@ export function Navbar() {
         </Link>
 
         {/* Hamburger Icon for Mobile */}
-        <div className="md:hidden relative z-[110]">
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            onTouchStart={(e) => {
-              // Ensure touch events work properly on mobile
-              e.stopPropagation();
-            }}
-            className="text-white relative z-[110]"
-            style={{ touchAction: "manipulation" }}
-            aria-label="Toggle navigation menu"
-            aria-expanded={isOpen}
-            type="button"
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
-        </div>
+        {!isOpen && (
+          <div className="md:hidden relative z-[110]">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              onTouchStart={(e) => {
+                // Ensure touch events work properly on mobile
+                e.stopPropagation();
+              }}
+              className="text-white relative z-[110]"
+              style={{ touchAction: "manipulation" }}
+              aria-label="Toggle navigation menu"
+              aria-expanded={isOpen}
+              type="button"
+            >
+              <Menu className="h-6 w-6" />
+            </button>
+          </div>
+        )}
 
         {/* Right-aligned navigation */}
         <div
