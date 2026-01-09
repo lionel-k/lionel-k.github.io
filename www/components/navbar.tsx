@@ -47,7 +47,7 @@ export function Navbar() {
               e.stopPropagation();
             }}
             className="text-white relative z-[110]"
-            style={{ touchAction: 'manipulation' }}
+            style={{ touchAction: "manipulation" }}
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
             type="button"
@@ -70,7 +70,7 @@ export function Navbar() {
                 e.stopPropagation();
               }}
               className="absolute top-5 right-4 text-white md:hidden z-[110]"
-              style={{ touchAction: 'manipulation' }}
+              style={{ touchAction: "manipulation" }}
               aria-label="Close navigation menu"
               type="button"
             >
