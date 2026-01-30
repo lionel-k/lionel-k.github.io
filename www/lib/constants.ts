@@ -137,6 +137,16 @@ export const LANGUAGES = [
   },
 ] as const;
 
+// Languages with flashcard apps available
+export const FLASHCARD_LANGUAGES = [
+  {
+    name: "Kirundi",
+    slug: "kirundi",
+    appName: "Kirundi Flashcards",
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.lingu.kirundi.flashcards", // placeholder
+  },
+] as const;
+
 export const FAQ_ITEMS = [
   {
     question: "What languages do your books include?",
