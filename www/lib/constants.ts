@@ -143,7 +143,7 @@ export const FLASHCARD_LANGUAGES = [
     name: "Kirundi",
     slug: "kirundi",
     appName: "Kirundi Flashcards",
-    playStoreUrl: "https://play.google.com/store/apps/details?id=com.lingu.kirundi.flashcards", // placeholder
+    playStoreUrl: "#", // placeholder
   },
 ] as const;
 
