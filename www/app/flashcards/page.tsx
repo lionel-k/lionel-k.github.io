@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { SITE_URL, FLASHCARD_LANGUAGES } from "@/lib/constants";
+import { OptimizedImage } from "@/components/OptimizedImage";
 import { Smartphone, Zap, WifiOff, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -90,17 +91,23 @@ export default function FlashcardsPage() {
               <Link
                 key={language.slug}
                 href={`/flashcards/${language.slug}`}
-                className="group block p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700 hover:border-[#DAA520] transition-all duration-300 hover:shadow-lg hover:shadow-[#DAA520]/10"
+                className="group block overflow-hidden rounded-xl bg-white hover:shadow-lg transition duration-300"
               >
-                <h3 className="text-xl font-bold text-white group-hover:text-[#DAA520] transition-colors">
-                  {language.name}
-                </h3>
-                <p className="text-gray-400 mt-2 text-sm">
-                  {language.appName} for Android
-                </p>
-                <span className="inline-block mt-4 text-[#DAA520] text-sm font-medium">
-                  Learn more →
-                </span>
+                <div className="aspect-[4/3] overflow-hidden bg-[#F8F3E9] flex items-center justify-center p-8">
+                  <OptimizedImage
+                    src={`/images/${language.slug}/${language.slug}.webp`}
+                    alt={`${language.name} flag`}
+                    className="w-full h-auto max-h-full object-contain"
+                  />
+                </div>
+                <div className="p-4 text-center">
+                  <h3 className="text-lg font-semibold text-gray-900">
+                    {language.name}
+                  </h3>
+                  <p className="text-gray-600 mt-1 text-sm">
+                    {language.appName} for Android
+                  </p>
+                </div>
               </Link>
             ))}
           </div>
