@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = `${lang.appName} - Learn ${lang.name} Vocabulary | Lingu.Africa`;
   const description = `Master essential ${lang.name} vocabulary with ${lang.appName}. 100+ flashcards with real-world examples. 100% offline, zero tracking. Free download on Google Play.`;
+  const languageImageUrl = `${SITE_URL}/images/${lang.slug}/${lang.slug}.png`;
   const pageUrl = `${SITE_URL}/flashcards/${lang.slug}`;
 
   return {
@@ -48,6 +49,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description,
       url: pageUrl,
       siteName: "Lingu.Africa",
+      images: [
+        {
+          url: languageImageUrl,
+          width: 1200,
+          height: 630,
+          alt: `${lang.appName} - Learn ${lang.name}`,
+        },
+      ],
       locale: "en_US",
       type: "website",
     },
@@ -55,6 +64,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
+      images: [languageImageUrl],
       creator: "@lionel.kubwimana",
     },
     alternates: {
