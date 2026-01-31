@@ -127,6 +127,33 @@ export default async function FlashcardsLanguagePage({ params }: Props) {
         </div>
       </section>
 
+      {/* App Screenshots */}
+      <section className="py-16 bg-black/20">
+        <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
+          <h2 className="text-2xl font-bold text-center mb-10">
+            See the App in Action
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-6xl mx-auto">
+            {Array.from({ length: lang.screenshots }, (_, i) => i + 1).map(
+              (num) => (
+                <div
+                  key={num}
+                  className="group relative overflow-hidden rounded-xl bg-gray-800/30 border border-gray-700 hover:border-[#DAA520] transition-all duration-300"
+                >
+                  <Image
+                    src={`/images/${lang.slug}/flashcards/${num}.webp`}
+                    alt={`${lang.appName} screenshot ${num}`}
+                    width={300}
+                    height={650}
+                    className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              )
+            )}
+          </div>
+        </div>
+      </section>
+
       {/* What's Inside */}
       <section className="py-12 bg-black/30">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
@@ -152,7 +179,9 @@ export default async function FlashcardsLanguagePage({ params }: Props) {
       {/* Key Features */}
       <section className="py-16">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl font-bold text-center mb-10">Why This App?</h2>
+          <h2 className="text-2xl font-bold text-center mb-10">
+            Why This App?
+          </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {/* Feature Cards */}
             <FeatureCard
@@ -207,7 +236,9 @@ export default async function FlashcardsLanguagePage({ params }: Props) {
       {/* Bottom CTA */}
       <section className="py-16 bg-gradient-to-b from-transparent to-black/50">
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-2xl font-bold mb-4">Ready to Learn {lang.name}?</h2>
+          <h2 className="text-2xl font-bold mb-4">
+            Ready to Learn {lang.name}?
+          </h2>
           <p className="text-gray-400 mb-8">
             Download now and start with our free Greetings & Family packs.
           </p>

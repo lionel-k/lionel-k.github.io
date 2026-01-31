@@ -144,6 +144,7 @@ export const FLASHCARD_LANGUAGES = [
     slug: "kirundi",
     appName: "Kirundi Flashcards",
     playStoreUrl: "#", // placeholder
+    screenshots: 6,
   },
 ] as const;
 
