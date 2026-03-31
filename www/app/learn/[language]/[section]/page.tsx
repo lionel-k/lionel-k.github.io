@@ -3,22 +3,14 @@ import { LANGUAGES } from "@/lib/constants";
 import { sections } from "@/lib/learn/sections";
 import { notFound } from "next/navigation";
 import { SITE_URL } from "@/lib/constants";
+import { VOCAB_LANGUAGE_SLUGS } from "@/lib/learn/translations";
 import SectionClient from "./SectionClient";
 import { getSectionFlashcards } from "@/lib/learn/utils";
 
 export async function generateStaticParams() {
-  const params = [];
-  // Only generate for Kirundi since it's the only available language
-  const kirundi = LANGUAGES.find((l) => l.slug === "kirundi");
-  if (kirundi) {
-    for (const section of sections) {
-      params.push({
-        language: kirundi.slug,
-        section: section.id,
-      });
-    }
-  }
-  return params;
+  return VOCAB_LANGUAGE_SLUGS.flatMap((slug) =>
+    sections.map((section) => ({ language: slug, section: section.id }))
+  );
 }
 
 type Props = {

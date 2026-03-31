@@ -18,6 +18,12 @@ export interface FlashcardWord {
   translation: string;
 }
 
+export interface PresentableWord {
+  id: string;
+  translation: string;
+  english: string;
+}
+
 export type FlashcardSet = {
   language: string;
   words: FlashcardWord[];

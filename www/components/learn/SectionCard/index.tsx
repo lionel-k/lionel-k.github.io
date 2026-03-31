@@ -8,23 +8,26 @@ import { CardDecoration } from "./CardDecoration";
 type SectionCardProps = {
   section: (typeof sections)[number];
   language: string;
-  isPaidUser: boolean;
+  isPaidUser?: boolean;
+  variant?: "learn" | "teach";
 };
 
 export default function SectionCard({
   section,
   language,
-  isPaidUser,
+  isPaidUser = false,
+  variant = "learn",
 }: SectionCardProps) {
   const router = useRouter();
-  const isAccessible = !section.isLocked || isPaidUser;
+  const isTeach = variant === "teach";
+  const isAccessible = isTeach || !section.isLocked || isPaidUser;
 
   const handleClick = () => {
     if (!isAccessible) {
       router.push(`/learn/${language}/pricing`);
       return;
     }
-    router.push(`/learn/${language}/${section.id}`);
+    router.push(`/${variant}/${language}/${section.id}`);
   };
 
   return (
@@ -72,6 +75,7 @@ export default function SectionCard({
         section={section}
         isAccessible={isAccessible}
         language={language}
+        footerLabel={isTeach ? "Open presenter" : undefined}
       />
       <CardDecoration isReview={!!section.isReview} />
     </button>

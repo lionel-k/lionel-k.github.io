@@ -188,3 +188,5 @@ export const sections: Section[] = [
     isLocked: true,
   },
 ];
+
+export const contentSections = sections.filter((s) => !s.isReview);

@@ -20,6 +20,8 @@ const translations: Record<string, WordEntry[]> = {
     }),
 };
 
+export const VOCAB_LANGUAGE_SLUGS = Object.keys(translations) as string[];
+
 export const getTranslations = (language: string): WordEntry[] => {
   return translations[language];
 };

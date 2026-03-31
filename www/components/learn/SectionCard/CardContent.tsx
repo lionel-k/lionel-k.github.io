@@ -6,12 +6,14 @@ type CardContentProps = {
   section: Section;
   isAccessible: boolean;
   language: string;
+  footerLabel?: string;
 };
 
 export function CardContent({
   section,
   isAccessible,
   language,
+  footerLabel,
 }: CardContentProps) {
   const wordsCount = getAvailableWords(section.id, language).length;
 
@@ -67,7 +69,7 @@ export function CardContent({
           </div>
         ) : (
           <div className="text-xs sm:text-sm font-semibold text-[#DAA520] truncate">
-            Click to start
+            {footerLabel ?? "Click to start"}
           </div>
         )}
         <ArrowRight

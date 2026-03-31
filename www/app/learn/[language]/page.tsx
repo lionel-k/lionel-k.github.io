@@ -2,18 +2,11 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LANGUAGES } from "@/lib/constants";
 import { SITE_URL } from "@/lib/constants";
+import { VOCAB_LANGUAGE_SLUGS } from "@/lib/learn/translations";
 import LanguageClient from "./LanguageClient";
 
 export async function generateStaticParams() {
-  const kirundi = LANGUAGES.find((l) => l.slug === "kirundi");
-  if (kirundi) {
-    return [
-      {
-        language: kirundi.slug,
-      },
-    ];
-  }
-  return [];
+  return VOCAB_LANGUAGE_SLUGS.map((slug) => ({ language: slug }));
 }
 
 type Props = {

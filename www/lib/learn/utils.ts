@@ -1,4 +1,4 @@
-import { FlashcardWord } from "@/lib/learn/types";
+import { FlashcardWord, PresentableWord } from "@/lib/learn/types";
 import { sections } from "./sections";
 import { getTranslations, getWordsBySection, WordEntry } from "./translations";
 
@@ -38,30 +38,35 @@ export const getAvailableWords = (
     : sectionWords[sectionId] || [];
 };
 
-export const getSectionFlashcards = (
+export const getOrderedSectionWords = (
   language: string,
   sectionId: string
-): FlashcardWord[] | null => {
-  const translations = getTranslations(language);
+): PresentableWord[] | null => {
+  const allTranslations = getTranslations(language);
   const currentSection = sections.find((s) => s.id === sectionId);
 
-  if (!translations || !currentSection) {
+  if (!allTranslations || !currentSection) {
     return null;
   }
 
   const availableWordIds = getAvailableWords(sectionId, language);
 
-  const sectionWords = translations.filter((entry: WordEntry) =>
-    availableWordIds.includes(entry.word_id)
-  );
+  return allTranslations
+    .filter((entry: WordEntry) => availableWordIds.includes(entry.word_id))
+    .map((entry) => ({
+      id: entry.word_id,
+      translation: entry.translation,
+      english: entry.english,
+    }));
+};
 
-  const flashcards = sectionWords.map((entry) => ({
-    id: entry.word_id,
-    translation: entry.translation,
-    english: entry.english,
-  }));
-
-  return shuffleArray(flashcards);
+export const getSectionFlashcards = (
+  language: string,
+  sectionId: string
+): FlashcardWord[] | null => {
+  const ordered = getOrderedSectionWords(language, sectionId);
+  if (!ordered) return null;
+  return shuffleArray(ordered);
 };
 
 export const generateOptions = (
