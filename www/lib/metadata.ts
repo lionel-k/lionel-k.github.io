@@ -244,6 +244,49 @@ export const pagesMetadata: Record<string, MetadataConfig> = {
       images: [defaultOgImage],
     },
   },
+  translationServices: {
+    title: "Translation Services for African Languages | Lingu.Africa",
+    description:
+      "Need document, audio, or video translation for African languages? Lingu.Africa works with freelance language partners. Contact us to get a quote.",
+    keywords: [
+      "African language translation",
+      "translation services",
+      "document translation",
+      "audio translation",
+      "video translation",
+      "Krio translation",
+      "Pidgin translation",
+      ...baseKeywords,
+    ],
+    canonical: getCanonicalUrl("/translation-services"),
+    alternates: {
+      canonical: getCanonicalUrl("/translation-services"),
+    },
+    openGraph: {
+      title: "Translation Services for African Languages | Lingu.Africa",
+      description:
+        "Need document, audio, or video translation for African languages? Lingu.Africa works with freelance language partners. Contact us to get a quote.",
+      url: getCanonicalUrl("/translation-services"),
+      type: "website",
+      siteName: SITE_NAME,
+      images: [defaultOgImage],
+      locale: "en_US",
+      countryName: "United States",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Translation Services for African Languages | Lingu.Africa",
+      description:
+        "Need document, audio, or video translation for African languages? Lingu.Africa works with freelance language partners. Contact us to get a quote.",
+      images: [defaultOgImage],
+    },
+    other: {
+      "geo.region": "US",
+      "geo.placename": "United States",
+      "geo.position": "37.09024;-95.712891",
+      ICBM: "37.09024, -95.712891",
+    },
+  },
   books: {
     title: "African Language Books | Lingu.Africa",
     description:
