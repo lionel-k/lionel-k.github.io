@@ -2,7 +2,11 @@ import Link from "next/link";
 import { ArrowRight, Mail } from "lucide-react";
 import { Metadata } from "next";
 import { pagesMetadata, sharedMetadata } from "@/lib/metadata";
-import { translationLanguages } from "@/lib/translationServices";
+import {
+  translationLanguages,
+  CTA_EMAIL,
+  buildTranslationQuoteMailto,
+} from "@/lib/translationServices";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 
 export const metadata: Metadata = {
@@ -11,6 +15,8 @@ export const metadata: Metadata = {
 };
 
 export default function TranslationServicesPage() {
+  const hubQuoteMailto = buildTranslationQuoteMailto();
+
   return (
     <div className="flex flex-col">
       {/* Breadcrumb */}
@@ -43,7 +49,7 @@ export default function TranslationServicesPage() {
             </p>
             <div className="mt-10">
               <a
-                href="mailto:hello@lingu.africa"
+                href={hubQuoteMailto}
                 className="inline-flex items-center justify-center rounded-lg bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-md hover:bg-[#B8860B] transition-all duration-300"
               >
                 <Mail className="mr-2 h-5 w-5" />
@@ -64,10 +70,10 @@ export default function TranslationServicesPage() {
               projects. Each page covers documents, audio, video, subtitles,
               and transcripts. Open a language for details, or email{" "}
               <a
-                href="mailto:hello@lingu.africa"
+                href={hubQuoteMailto}
                 className="text-[#DAA520] font-medium hover:underline"
               >
-                hello@lingu.africa
+                {CTA_EMAIL}
               </a>{" "}
               with your project to get a quote.
             </p>
@@ -87,14 +93,24 @@ export default function TranslationServicesPage() {
                 <div className="relative">
                   <h3 className="text-2xl font-bold mb-4">{lang.name}</h3>
 
-                  <Link
-                    href={`/translation-services/${lang.slug}-to-english`}
-                    className="mt-6 inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
-                    title={`${lang.name} translation services — to English`}
-                  >
-                    Learn more
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
+                  <div className="mt-6 flex flex-col gap-3">
+                    <Link
+                      href={`/translation-services/${lang.slug}-to-english`}
+                      className="inline-flex items-center justify-center w-full py-3 px-6 text-lg font-semibold text-black bg-[#DAA520] rounded-lg hover:bg-[#B8860B] transition-all"
+                      title={`${lang.name} translation services — to English`}
+                    >
+                      Learn more
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Link>
+                    <a
+                      href={buildTranslationQuoteMailto(lang.name)}
+                      className="inline-flex items-center justify-center w-full py-3 px-6 text-base font-semibold text-gray-800 bg-gray-100 rounded-lg border border-gray-200 hover:bg-gray-200 transition-all"
+                      title={`Email a quote request for ${lang.name}`}
+                    >
+                      <Mail className="mr-2 h-5 w-5" />
+                      Email quote
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -116,7 +132,7 @@ export default function TranslationServicesPage() {
               {
                 step: "1",
                 title: "Email your file",
-                desc: "Send your file and project details to hello@lingu.africa.",
+                desc: `Send your file and project details to ${CTA_EMAIL}.`,
               },
               {
                 step: "2",
@@ -158,16 +174,15 @@ export default function TranslationServicesPage() {
             Ready to get a quote?
           </h2>
           <p className="text-lg mb-8 opacity-80 max-w-xl mx-auto">
-            Send your project details to{" "}
-            <strong>hello@lingu.africa</strong>. Include the language, file
-            type, duration or page count, and your deadline.
+            Send your project details to <strong>{CTA_EMAIL}</strong>. Include the
+            language, file type, duration or page count, and your deadline.
           </p>
           <a
-            href="mailto:hello@lingu.africa"
+            href={hubQuoteMailto}
             className="inline-flex items-center justify-center rounded-lg bg-black px-8 py-4 text-lg font-semibold text-white hover:bg-black/80 transition-all duration-300"
           >
             <Mail className="mr-2 h-5 w-5" />
-            hello@lingu.africa
+            {CTA_EMAIL}
           </a>
         </div>
       </section>

@@ -12,7 +12,12 @@ import {
 } from "lucide-react";
 import { Metadata } from "next";
 import { sharedMetadata } from "@/lib/metadata";
-import { translationLanguages, getTranslationFaqs, CTA_EMAIL } from "@/lib/translationServices";
+import {
+  translationLanguages,
+  getTranslationFaqs,
+  CTA_EMAIL,
+  buildTranslationQuoteMailto,
+} from "@/lib/translationServices";
 import { BreadcrumbNav } from "@/components/BreadcrumbNav";
 import { FAQ } from "@/components/FAQ";
 import { SITE_URL } from "@/lib/constants";
@@ -118,6 +123,7 @@ export default async function TranslationServicePage({
   if (!language) notFound();
 
   const pageTitle = `${language.name} to English Translation Services`;
+  const quoteMailto = buildTranslationQuoteMailto(language.name);
 
   return (
     <div className="flex flex-col">
@@ -147,7 +153,7 @@ export default async function TranslationServicePage({
               depends on the language and the project.
             </p>
             <a
-              href={`mailto:${CTA_EMAIL}`}
+              href={quoteMailto}
               className="inline-flex items-center justify-center rounded-lg bg-[#DAA520] px-8 py-4 text-lg font-semibold text-black shadow-md hover:bg-[#B8860B] transition-all duration-300"
             >
               <Mail className="mr-2 h-5 w-5" />
@@ -298,7 +304,7 @@ export default async function TranslationServicePage({
             </ul>
             <div className="text-center">
               <a
-                href={`mailto:${CTA_EMAIL}`}
+                href={quoteMailto}
                 className="inline-flex items-center justify-center rounded-lg bg-black px-8 py-4 text-lg font-semibold text-white hover:bg-black/80 transition-all duration-300"
               >
                 <Mail className="mr-2 h-5 w-5" />
@@ -326,7 +332,7 @@ export default async function TranslationServicePage({
           <div className="text-center mt-12">
             <p className="text-gray-600 mb-4">Have another question?</p>
             <a
-              href={`mailto:${CTA_EMAIL}`}
+              href={quoteMailto}
               className="inline-flex items-center justify-center rounded-lg bg-[#DAA520] px-6 py-3 text-base font-semibold text-black hover:bg-[#B8860B] transition-all duration-300"
             >
               <Mail className="mr-2 h-4 w-4" />

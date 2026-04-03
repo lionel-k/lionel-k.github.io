@@ -4,6 +4,42 @@ export const CTA_EMAIL = "hello@lingu.africa";
 
 export const translationLanguages = LANGUAGES.filter((l) => !l.comingSoon);
 
+function translationQuoteEmailBody(languagePairLine: string): string {
+  return [
+    "Hello,",
+    "",
+    "I'd like a quote for translation services.",
+    "",
+    `Language pair: ${languagePairLine}`,
+    "Service type: [document / audio / video / subtitles / transcript / other]",
+    "Scope: [approx. word count, minutes, or pages]",
+    "Deadline: [date]",
+    "Subtitles or transcript needed: [yes / no / N/A]",
+    "Deliverable: [e.g. same format as source, or specify]",
+    "",
+    "[I'll attach the file to this email. / Link to file: ]",
+    "",
+    "Thanks,",
+    "[Your name]",
+  ].join("\n");
+}
+
+/** Pre-filled mailto for translation quote requests (hub: omit languageName). */
+export function buildTranslationQuoteMailto(languageName?: string): string {
+  const trimmed = languageName?.trim() ?? "";
+  const hasLang = trimmed.length > 0;
+  const subject = hasLang
+    ? `Translation quote — ${trimmed} to English`
+    : "Translation services — quote request";
+  const languagePairLine = hasLang
+    ? `${trimmed} to English`
+    : "[language] to English (or English to [language] — specify)";
+
+  const body = translationQuoteEmailBody(languagePairLine);
+  const q = `subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  return `mailto:${CTA_EMAIL}?${q}`;
+}
+
 export function getTranslationFaqs(name: string) {
   return [
     {
