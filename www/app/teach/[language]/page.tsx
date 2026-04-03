@@ -16,7 +16,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { language } = await params;
   const languageObj = LANGUAGES.find((l) => l.slug === language);
 
-  if (!languageObj) return { title: "Language Not Found" };
+  if (!languageObj || !VOCAB_LANGUAGE_SLUGS.includes(language))
+    return { title: "Language Not Found" };
 
   const pageTitle = `Teach ${languageObj.name} | Lingu.Africa`;
   const description = `A classroom-ready presenter for teaching ${languageObj.name} vocabulary to young learners. Section-by-section slides with images and translations.`;
@@ -52,7 +53,7 @@ export default async function TeachLanguagePage({ params }: Props) {
   const { language } = await params;
   const languageObj = LANGUAGES.find((l) => l.slug === language);
 
-  if (!languageObj) notFound();
+  if (!languageObj || !VOCAB_LANGUAGE_SLUGS.includes(language)) notFound();
 
   return <TeachLanguageClient language={languageObj} />;
 }
