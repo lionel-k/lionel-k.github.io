@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { SITE_NAME, SITE_DESCRIPTION } from "@/lib/constants";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import PageTracker from "@/components/PageTracker";
 import Script from "next/script";
 
@@ -109,7 +108,6 @@ export default function RootLayout({
             <Navbar />
             <main className="flex-1">{children}</main>
             <Footer />
-            <WhatsAppButton />
           </div>
           {/* PageTracker moved to end to avoid Next.js initialization issues */}
           <PageTracker />
