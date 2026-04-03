@@ -1,6 +1,15 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, Mail, FileText, Mic, Video, Subtitles, FileAudio } from "lucide-react";
+import {
+  ArrowLeft,
+  Mail,
+  FileText,
+  Mic,
+  Video,
+  Subtitles,
+  FileAudio,
+  Globe,
+} from "lucide-react";
 import { Metadata } from "next";
 import { sharedMetadata } from "@/lib/metadata";
 import { translationLanguages, getTranslationFaqs, CTA_EMAIL } from "@/lib/translationServices";
@@ -87,6 +96,13 @@ const contentTypes = [
     icon: <FileAudio className="w-6 h-6 text-[#DAA520]" />,
     title: "Transcripts",
     examples: "Written transcripts from audio or video recordings",
+  },
+  {
+    key: "webDigital",
+    icon: <Globe className="w-6 h-6 text-[#DAA520]" />,
+    title: "Website and digital content",
+    examples:
+      "Website copy, app or product strings, marketing emails, social posts, blog articles",
   },
 ];
 
