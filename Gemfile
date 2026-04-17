@@ -1,12 +1,19 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
+# Gems extracted from Ruby standard library in 3.4+
+gem "csv"
+gem "logger"
+gem "base64"
+gem "bigdecimal"
+
+gem "jekyll", "~> 4.4"
+# GitHub Pages compatible theme
+gem "minima"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "jekyll-seo-tag"
-  gem "jemoji"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
