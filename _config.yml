@@ -26,8 +26,16 @@ collections:
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
+
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
 
 # Author info
 author:
