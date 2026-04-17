@@ -19,4 +19,4 @@ I've started building with OpenClaw to explore how AI agents can augment my work
 ## Get in Touch
 
 - **GitHub:** [@lionel-k](https://github.com/lionel-k)
-- **Email:** lionel.kubwimana@gmail.com
+- **Email:** [{{ site.author.email }}](mailto:{{ site.author.email }})
