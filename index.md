@@ -8,7 +8,7 @@ layout: home
     <p class="hero-tagline">{{ site.tagline }}</p>
   </div>
   <div class="hero-image">
-    <img src="/assets/images/avatar-placeholder.svg" alt="Lionel Kubwimana" />
+    <img src="/assets/images/avatar.jpeg" alt="Lionel Kubwimana" />
   </div>
 </section>
 
