@@ -6,10 +6,6 @@ layout: home
   <div class="hero-content">
     <h1 class="hero-title">{{ site.title }}</h1>
     <p class="hero-tagline">{{ site.tagline }}</p>
-    <div class="hero-cta">
-      <a href="/about" class="button">Learn more about me</a>
-      <a href="/blog" class="button button-secondary">Read my blog</a>
-    </div>
   </div>
   <div class="hero-image">
     <img src="/assets/images/avatar-placeholder.svg" alt="Lionel Kubwimana" />
