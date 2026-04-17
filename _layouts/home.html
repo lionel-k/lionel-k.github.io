@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  {%- assign show_post_list = false -%}
+  {%- if paginator -%}
+    {%- if paginator.total_posts > 0 -%}{%- assign show_post_list = true -%}{%- endif -%}
+  {%- else -%}
+    {%- if site.posts.size > 0 -%}{%- assign show_post_list = true -%}{%- endif -%}
+  {%- endif -%}
+
+  {%- if show_post_list -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- if paginator -%}
+        {%- for post in paginator.posts -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+        {%- endfor -%}
+      {%- else -%}
+        {%- for post in site.posts limit:5 -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+        {%- endfor -%}
+      {%- endif -%}
+    </ul>
+
+    {%- if paginator and paginator.total_pages > 1 -%}
+    <nav class="pagination" aria-label="Blog pagination">
+      {%- if paginator.previous_page -%}
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">« Newer</a>
+      {%- else -%}
+        <span class="previous">« Newer</span>
+      {%- endif -%}
+      <span class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {%- if paginator.next_page -%}
+        <a href="{{ paginator.next_page_path | relative_url }}" class="next">Older »</a>
+      {%- else -%}
+        <span class="next">Older »</span>
+      {%- endif -%}
+    </nav>
+    {%- endif -%}
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+  {%- endif -%}
+
+</div>

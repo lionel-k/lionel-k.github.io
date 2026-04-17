@@ -1,0 +1,61 @@
+# Site Settings
+title: Lionel Kubwimana
+description: >-
+  Personal website and blog documenting my journey as a software engineer
+  and builder, including my experiences with OpenClaw.
+
+# GitHub Pages settings
+baseurl: ""
+url: "https://lionel-k.github.io"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:title/
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+
+# Author info
+author:
+  name: Lionel Kubwimana
+  email: lionel@lingu.africa
+  github: lionel-k
+
+# Social links
+social:
+  github: lionel-k
+
+# Theme (GitHub Pages compatible)
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .sass-cache/
+  - .jekyll-cache/
+  - .git/
+  - gemfiles/
