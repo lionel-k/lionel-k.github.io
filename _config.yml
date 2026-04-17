@@ -3,6 +3,7 @@ title: Lionel Kubwimana
 description: >-
   Personal website and blog documenting my journey as a software engineer
   and builder, including my experiences with OpenClaw.
+tagline: Software Engineer & Builder
 
 # GitHub Pages settings
 baseurl: ""
@@ -38,6 +39,7 @@ author:
 # Social links
 social:
   github: lionel-k
+  linkedin: lionel-kubwimana
 
 # Theme (GitHub Pages compatible)
 theme: minima

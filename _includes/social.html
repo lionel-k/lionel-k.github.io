@@ -7,4 +7,12 @@
     </a>
   </li>
   {%- endif -%}
+  {%- if site.social.linkedin -%}
+  <li>
+    <a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">
+      <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg>
+      <span class="username">{{ site.social.linkedin }}</span>
+    </a>
+  </li>
+  {%- endif -%}
 </ul>
