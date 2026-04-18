@@ -24,12 +24,30 @@
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #f1f5f9;
-  --color-code-text: #0f172a;
+  --color-code-text: #111827;
+  // Doc-style code (OpenClaw-like): soft panel + pill inline
+  --color-code-inline-bg: #f3f4f6;
+  --color-code-inline-border: #e5e7eb;
+  --color-code-block-bg: #ffffff;
+  --color-code-block-border: #e5e7eb;
+  --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  // Rouge — doc palette: lavender builtins, teal strings, coral operators
+  --syntax-comment: #6b7280;
+  --syntax-keyword: #5b21b6;
+  --syntax-string: #0f766e;
+  --syntax-number: #0369a1;
+  --syntax-name: #1f2937;
+  --syntax-builtin: #6d28d9;
+  --syntax-flag: #4b5563;
+  --syntax-operator: #c2410c;
+  --syntax-error-fg: #991b1b;
+  --syntax-error-bg: #fee2e2;
 
   // Elevation
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
   --shadow-hero: var(--shadow-md);
+  --shadow-code-block: 0 1px 2px rgba(15, 23, 42, 0.05);
 
   // Typography
   --font-family-base: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -60,6 +78,8 @@
   --radius-sm: 0.375rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
+  --radius-code-block: 0.625rem;
+  --radius-code-inline: 0.375rem;
   --border-radius: var(--radius-sm);
   --border-width: 1px;
 
@@ -88,10 +108,25 @@
     --color-link: var(--color-primary);
     --color-link-hover: var(--color-primary-dark);
     --color-code-background: #1e293b;
-    --color-code-text: #e2e8f0;
+    --color-code-text: #e5e7eb;
+    --color-code-inline-bg: rgba(148, 163, 184, 0.12);
+    --color-code-inline-border: #3f4f63;
+    --color-code-block-bg: #1c2128;
+    --color-code-block-border: #3d4554;
+    --syntax-comment: #9ca3af;
+    --syntax-keyword: #c4b5fd;
+    --syntax-string: #5eead4;
+    --syntax-number: #7dd3fc;
+    --syntax-name: #e5e7eb;
+    --syntax-builtin: #a78bfa;
+    --syntax-flag: #d1d5db;
+    --syntax-operator: #fb923c;
+    --syntax-error-fg: #fecaca;
+    --syntax-error-bg: rgba(127, 29, 29, 0.45);
     --shadow-sm: 0 1px 0 rgba(255, 255, 255, 0.06);
     --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.04);
     --shadow-hero: var(--shadow-md);
+    --shadow-code-block: 0 1px 3px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -110,10 +145,25 @@
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #f1f5f9;
-  --color-code-text: #0f172a;
+  --color-code-text: #111827;
+  --color-code-inline-bg: #f3f4f6;
+  --color-code-inline-border: #e5e7eb;
+  --color-code-block-bg: #ffffff;
+  --color-code-block-border: #e5e7eb;
+  --syntax-comment: #6b7280;
+  --syntax-keyword: #5b21b6;
+  --syntax-string: #0f766e;
+  --syntax-number: #0369a1;
+  --syntax-name: #1f2937;
+  --syntax-builtin: #6d28d9;
+  --syntax-flag: #4b5563;
+  --syntax-operator: #c2410c;
+  --syntax-error-fg: #991b1b;
+  --syntax-error-bg: #fee2e2;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
   --shadow-hero: var(--shadow-md);
+  --shadow-code-block: 0 1px 2px rgba(15, 23, 42, 0.05);
 }
 
 [data-theme="dark"] {
@@ -131,10 +181,25 @@
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #1e293b;
-  --color-code-text: #e2e8f0;
+  --color-code-text: #e5e7eb;
+  --color-code-inline-bg: rgba(148, 163, 184, 0.12);
+  --color-code-inline-border: #3f4f63;
+  --color-code-block-bg: #1c2128;
+  --color-code-block-border: #3d4554;
+  --syntax-comment: #9ca3af;
+  --syntax-keyword: #c4b5fd;
+  --syntax-string: #5eead4;
+  --syntax-number: #7dd3fc;
+  --syntax-name: #e5e7eb;
+  --syntax-builtin: #a78bfa;
+  --syntax-flag: #d1d5db;
+  --syntax-operator: #fb923c;
+  --syntax-error-fg: #fecaca;
+  --syntax-error-bg: rgba(127, 29, 29, 0.45);
   --shadow-sm: 0 1px 0 rgba(255, 255, 255, 0.06);
   --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.04);
   --shadow-hero: var(--shadow-md);
+  --shadow-code-block: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 // Minima SCSS variables
@@ -377,18 +442,204 @@ a {
   box-shadow: 0 -1px 0 var(--color-border);
 }
 
-// Code & misc
+// Code & misc — overrides Minima’s fixed #eef + nested .highlight + default borders
 code,
 pre {
-  background-color: var(--color-code-background);
-  color: var(--color-code-text);
-  border-radius: var(--border-radius);
-  padding: 0.2em 0.4em;
+  font-family: var(--font-family-mono);
+  font-size: 0.9375em;
+  border-radius: var(--radius-sm);
 }
 
-pre {
-  padding: var(--spacing-md);
-  overflow: auto;
+// Inline: soft pill (doc-style)
+:not(pre) > code {
+  background-color: var(--color-code-inline-bg);
+  color: var(--color-code-text);
+  border: 1px solid var(--color-code-inline-border);
+  padding: 0.2em 0.45em;
+  border-radius: var(--radius-code-inline);
+  font-size: 0.9em;
+}
+
+// Fenced / Rouge blocks: single surface (no lavender outer box)
+.post-content,
+.page-content {
+  .highlight,
+  .highlighter-rouge .highlight {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .highlighter-rouge {
+    background: transparent !important;
+    margin: var(--spacing-md) 0 var(--spacing-lg);
+  }
+
+  pre.highlight,
+  .highlight pre {
+    margin: 0;
+    background-color: var(--color-code-block-bg) !important;
+    color: var(--color-code-text);
+    border: 1px solid var(--color-code-block-border);
+    border-radius: var(--radius-code-block);
+    padding: 1.125rem 1.25rem;
+    line-height: 1.7;
+    font-size: 0.9375em;
+    letter-spacing: 0.01em;
+    overflow-x: auto;
+    box-shadow: var(--shadow-code-block);
+  }
+
+  pre.highlight > code,
+  .highlight pre > code {
+    background: transparent !important;
+    color: inherit !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: inherit;
+  }
+
+  // Indented / plain ``` code blocks without Rouge wrapper class
+  pre:not(.highlight) {
+    background-color: var(--color-code-block-bg);
+    color: var(--color-code-text);
+    border: 1px solid var(--color-code-block-border);
+    border-radius: var(--radius-code-block);
+    padding: 1.125rem 1.25rem;
+    line-height: 1.7;
+    font-size: 0.9375em;
+    overflow-x: auto;
+    box-shadow: var(--shadow-code-block);
+    margin: var(--spacing-md) 0 var(--spacing-lg);
+  }
+
+  pre:not(.highlight) > code {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    color: inherit;
+  }
+
+  // Theme-aware Rouge tokens (replaces Minima’s fixed light-theme colors)
+  .highlight {
+    .c,
+    .cm,
+    .c1,
+    .cs,
+    .cp { color: var(--syntax-comment); font-style: italic; }
+
+    .err {
+      color: var(--syntax-error-fg);
+      background-color: var(--syntax-error-bg);
+    }
+
+    .k,
+    .kc,
+    .kd,
+    .kp,
+    .kr,
+    .kt,
+    .ow { color: var(--syntax-keyword); font-weight: 500; }
+
+    .o { color: var(--syntax-operator); font-weight: 500; }
+
+    .nt { color: var(--syntax-flag); font-weight: 500; }
+
+    .m,
+    .mf,
+    .mh,
+    .mi,
+    .mo,
+    .il { color: var(--syntax-number); }
+
+    .s,
+    .s1,
+    .s2,
+    .sb,
+    .sc,
+    .sd,
+    .se,
+    .sh,
+    .si,
+    .sx,
+    .sr,
+    .ss { color: var(--syntax-string); }
+
+    .nb { color: var(--syntax-builtin); font-weight: 500; }
+
+    .na,
+    .nc,
+    .no,
+    .nn,
+    .nv,
+    .vc,
+    .vg,
+    .vi { color: var(--syntax-name); }
+
+    .nf,
+    .ne { color: var(--syntax-builtin); font-weight: 600; }
+
+    .bp { color: var(--syntax-comment); }
+  }
+
+  // Copy button (assets/js/code-copy.js) — works on all posts automatically
+  .code-block--copyable {
+    position: relative;
+  }
+
+  .code-block--copyable pre.highlight,
+  .code-block--copyable .highlight pre,
+  .code-block--copyable > pre {
+    padding-right: 2.75rem;
+  }
+
+  .code-block--wrap-plain {
+    margin: var(--spacing-md) 0 var(--spacing-lg);
+  }
+
+  .code-block--wrap-plain > pre:not(.highlight) {
+    margin: 0;
+  }
+
+  .code-copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: 1px solid var(--color-code-block-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-background);
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: var(--transition-link);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .code-copy-button:hover {
+    color: var(--color-text);
+    border-color: var(--color-border-strong);
+  }
+
+  .code-copy-button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  .code-copy-button--copied {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  .code-copy-button svg {
+    flex-shrink: 0;
+  }
 }
 
 blockquote {
