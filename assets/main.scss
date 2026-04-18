@@ -24,21 +24,22 @@
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #f1f5f9;
-  --color-code-text: #0f172a;
-  // Inline vs blocks — must read clearly against --color-background
-  --color-code-inline-bg: #cbd5e1;
-  --color-code-inline-border: #94a3b8;
-  --color-code-block-bg: #e2e8f0;
-  --color-code-block-border: #94a3b8;
-  --color-code-block-accent: var(--color-primary);
+  --color-code-text: #111827;
+  // Doc-style code (OpenClaw-like): soft panel + pill inline
+  --color-code-inline-bg: #f3f4f6;
+  --color-code-inline-border: #e5e7eb;
+  --color-code-block-bg: #ffffff;
+  --color-code-block-border: #e5e7eb;
   --font-family-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  // Rouge — tuned for readability on light backgrounds
-  --syntax-comment: #64748b;
-  --syntax-keyword: #0f766e;
-  --syntax-string: #b45309;
-  --syntax-number: #0d9488;
-  --syntax-name: #1e293b;
-  --syntax-builtin: #0369a1;
+  // Rouge — doc palette: lavender builtins, teal strings, coral operators
+  --syntax-comment: #6b7280;
+  --syntax-keyword: #5b21b6;
+  --syntax-string: #0f766e;
+  --syntax-number: #0369a1;
+  --syntax-name: #1f2937;
+  --syntax-builtin: #6d28d9;
+  --syntax-flag: #4b5563;
+  --syntax-operator: #c2410c;
   --syntax-error-fg: #991b1b;
   --syntax-error-bg: #fee2e2;
 
@@ -46,6 +47,7 @@
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
   --shadow-hero: var(--shadow-md);
+  --shadow-code-block: 0 1px 2px rgba(15, 23, 42, 0.05);
 
   // Typography
   --font-family-base: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -76,6 +78,8 @@
   --radius-sm: 0.375rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
+  --radius-code-block: 0.625rem;
+  --radius-code-inline: 0.375rem;
   --border-radius: var(--radius-sm);
   --border-width: 1px;
 
@@ -104,23 +108,25 @@
     --color-link: var(--color-primary);
     --color-link-hover: var(--color-primary-dark);
     --color-code-background: #1e293b;
-    --color-code-text: #e2e8f0;
-    --color-code-inline-bg: #334155;
-    --color-code-inline-border: #64748b;
-    --color-code-block-bg: #1e293b;
-    --color-code-block-border: #475569;
-    --color-code-block-accent: #38bdf8;
-    --syntax-comment: #94a3b8;
-    --syntax-keyword: #38bdf8;
-    --syntax-string: #fcd34d;
-    --syntax-number: #2dd4bf;
-    --syntax-name: #e2e8f0;
-    --syntax-builtin: #7dd3fc;
+    --color-code-text: #e5e7eb;
+    --color-code-inline-bg: rgba(148, 163, 184, 0.12);
+    --color-code-inline-border: #3f4f63;
+    --color-code-block-bg: #1c2128;
+    --color-code-block-border: #3d4554;
+    --syntax-comment: #9ca3af;
+    --syntax-keyword: #c4b5fd;
+    --syntax-string: #5eead4;
+    --syntax-number: #7dd3fc;
+    --syntax-name: #e5e7eb;
+    --syntax-builtin: #a78bfa;
+    --syntax-flag: #d1d5db;
+    --syntax-operator: #fb923c;
     --syntax-error-fg: #fecaca;
     --syntax-error-bg: rgba(127, 29, 29, 0.45);
     --shadow-sm: 0 1px 0 rgba(255, 255, 255, 0.06);
     --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.04);
     --shadow-hero: var(--shadow-md);
+    --shadow-code-block: 0 1px 3px rgba(0, 0, 0, 0.4);
   }
 }
 
@@ -139,23 +145,25 @@
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #f1f5f9;
-  --color-code-text: #0f172a;
-  --color-code-inline-bg: #cbd5e1;
-  --color-code-inline-border: #94a3b8;
-  --color-code-block-bg: #e2e8f0;
-  --color-code-block-border: #94a3b8;
-  --color-code-block-accent: var(--color-primary);
-  --syntax-comment: #64748b;
-  --syntax-keyword: #0f766e;
-  --syntax-string: #b45309;
-  --syntax-number: #0d9488;
-  --syntax-name: #1e293b;
-  --syntax-builtin: #0369a1;
+  --color-code-text: #111827;
+  --color-code-inline-bg: #f3f4f6;
+  --color-code-inline-border: #e5e7eb;
+  --color-code-block-bg: #ffffff;
+  --color-code-block-border: #e5e7eb;
+  --syntax-comment: #6b7280;
+  --syntax-keyword: #5b21b6;
+  --syntax-string: #0f766e;
+  --syntax-number: #0369a1;
+  --syntax-name: #1f2937;
+  --syntax-builtin: #6d28d9;
+  --syntax-flag: #4b5563;
+  --syntax-operator: #c2410c;
   --syntax-error-fg: #991b1b;
   --syntax-error-bg: #fee2e2;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
   --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.06), 0 1px 2px rgba(15, 23, 42, 0.04);
   --shadow-hero: var(--shadow-md);
+  --shadow-code-block: 0 1px 2px rgba(15, 23, 42, 0.05);
 }
 
 [data-theme="dark"] {
@@ -173,23 +181,25 @@
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #1e293b;
-  --color-code-text: #e2e8f0;
-  --color-code-inline-bg: #334155;
-  --color-code-inline-border: #64748b;
-  --color-code-block-bg: #1e293b;
-  --color-code-block-border: #475569;
-  --color-code-block-accent: #38bdf8;
-  --syntax-comment: #94a3b8;
-  --syntax-keyword: #38bdf8;
-  --syntax-string: #fcd34d;
-  --syntax-number: #2dd4bf;
-  --syntax-name: #e2e8f0;
-  --syntax-builtin: #7dd3fc;
+  --color-code-text: #e5e7eb;
+  --color-code-inline-bg: rgba(148, 163, 184, 0.12);
+  --color-code-inline-border: #3f4f63;
+  --color-code-block-bg: #1c2128;
+  --color-code-block-border: #3d4554;
+  --syntax-comment: #9ca3af;
+  --syntax-keyword: #c4b5fd;
+  --syntax-string: #5eead4;
+  --syntax-number: #7dd3fc;
+  --syntax-name: #e5e7eb;
+  --syntax-builtin: #a78bfa;
+  --syntax-flag: #d1d5db;
+  --syntax-operator: #fb923c;
   --syntax-error-fg: #fecaca;
   --syntax-error-bg: rgba(127, 29, 29, 0.45);
   --shadow-sm: 0 1px 0 rgba(255, 255, 255, 0.06);
   --shadow-md: 0 12px 40px rgba(0, 0, 0, 0.35), 0 1px 0 rgba(255, 255, 255, 0.04);
   --shadow-hero: var(--shadow-md);
+  --shadow-code-block: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 // Minima SCSS variables
@@ -440,13 +450,14 @@ pre {
   border-radius: var(--radius-sm);
 }
 
-// Inline only: clear contrast vs body text
+// Inline: soft pill (doc-style)
 :not(pre) > code {
   background-color: var(--color-code-inline-bg);
   color: var(--color-code-text);
   border: 1px solid var(--color-code-inline-border);
-  padding: 0.15em 0.4em;
-  border-radius: var(--radius-sm);
+  padding: 0.2em 0.45em;
+  border-radius: var(--radius-code-inline);
+  font-size: 0.9em;
 }
 
 // Fenced / Rouge blocks: single surface (no lavender outer box)
@@ -455,13 +466,14 @@ pre {
   .highlight,
   .highlighter-rouge .highlight {
     background: transparent !important;
-    margin: 0 0 var(--spacing-md);
+    margin: 0;
     padding: 0;
     border: none;
   }
 
   .highlighter-rouge {
     background: transparent !important;
+    margin: var(--spacing-md) 0 var(--spacing-lg);
   }
 
   pre.highlight,
@@ -470,13 +482,13 @@ pre {
     background-color: var(--color-code-block-bg) !important;
     color: var(--color-code-text);
     border: 1px solid var(--color-code-block-border);
-    border-left: 4px solid var(--color-code-block-accent);
-    border-radius: var(--radius-md);
-    padding: var(--spacing-md) var(--spacing-lg);
-    line-height: 1.65;
-    font-size: 1em;
+    border-radius: var(--radius-code-block);
+    padding: 1.125rem 1.25rem;
+    line-height: 1.7;
+    font-size: 0.9375em;
+    letter-spacing: 0.01em;
     overflow-x: auto;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-code-block);
   }
 
   pre.highlight > code,
@@ -493,13 +505,13 @@ pre {
     background-color: var(--color-code-block-bg);
     color: var(--color-code-text);
     border: 1px solid var(--color-code-block-border);
-    border-left: 4px solid var(--color-code-block-accent);
-    border-radius: var(--radius-md);
-    padding: var(--spacing-md) var(--spacing-lg);
-    line-height: 1.65;
-    font-size: 1em;
+    border-radius: var(--radius-code-block);
+    padding: 1.125rem 1.25rem;
+    line-height: 1.7;
+    font-size: 0.9375em;
     overflow-x: auto;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-code-block);
+    margin: var(--spacing-md) 0 var(--spacing-lg);
   }
 
   pre:not(.highlight) > code {
@@ -528,9 +540,11 @@ pre {
     .kp,
     .kr,
     .kt,
-    .ow { color: var(--syntax-keyword); font-weight: 600; }
+    .ow { color: var(--syntax-keyword); font-weight: 500; }
 
-    .o { font-weight: 600; }
+    .o { color: var(--syntax-operator); font-weight: 500; }
+
+    .nt { color: var(--syntax-flag); font-weight: 500; }
 
     .m,
     .mf,
@@ -552,12 +566,12 @@ pre {
     .sr,
     .ss { color: var(--syntax-string); }
 
+    .nb { color: var(--syntax-builtin); font-weight: 500; }
+
     .na,
-    .nb,
     .nc,
     .no,
     .nn,
-    .nt,
     .nv,
     .vc,
     .vg,
@@ -567,6 +581,64 @@ pre {
     .ne { color: var(--syntax-builtin); font-weight: 600; }
 
     .bp { color: var(--syntax-comment); }
+  }
+
+  // Copy button (assets/js/code-copy.js) — works on all posts automatically
+  .code-block--copyable {
+    position: relative;
+  }
+
+  .code-block--copyable pre.highlight,
+  .code-block--copyable .highlight pre,
+  .code-block--copyable > pre {
+    padding-right: 2.75rem;
+  }
+
+  .code-block--wrap-plain {
+    margin: var(--spacing-md) 0 var(--spacing-lg);
+  }
+
+  .code-block--wrap-plain > pre:not(.highlight) {
+    margin: 0;
+  }
+
+  .code-copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: 1px solid var(--color-code-block-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-background);
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: var(--transition-link);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .code-copy-button:hover {
+    color: var(--color-text);
+    border-color: var(--color-border-strong);
+  }
+
+  .code-copy-button:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  .code-copy-button--copied {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+  }
+
+  .code-copy-button svg {
+    flex-shrink: 0;
   }
 }
 
