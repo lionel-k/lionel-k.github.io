@@ -64,7 +64,7 @@ Our setup is simple but effective:
 
 Here’s a typical sequence:
 
-1. **kazi‑pm** creates issue [#42](https://github.com/lionel‑k/lionel‑k.github.io/issues/42) and labels it `pm:ready`.
+1. **kazi‑pm** creates issue [#23](https://github.com/lionel‑k/lionel‑k.github.io/issues/23) and labels it `pm:ready`.
 2. Five minutes later, the cron job wakes up, sees `last_processed: 41` and `pm:ready` label on #42, and spawns a sub‑agent for #42.
 3. The sub‑agent clones the repo, analyzes the issue, implements the fix, pushes a branch `fix/issue‑42`, and opens a PR.
 4. The cron job updates `last_processed` to 42 and exits.
