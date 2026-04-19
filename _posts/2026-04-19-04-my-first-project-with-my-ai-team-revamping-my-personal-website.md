@@ -63,7 +63,7 @@ Each of these PRs was created by kazi‑dev, reviewed by me, and merged after an
 
 This first project has validated the basic workflow and built confidence that an AI team can contribute meaningfully to a real‑world codebase. Now we’re ready to apply the same model to more complex projects:
 
-- **Lingu.Africa** – Bringing the AI team into my main product, where they’ll help with feature development, bug fixes, and documentation.
+- **[Lingu.Africa](https://lingu.africa)** – Bringing the AI team into my main product, where they’ll help with feature development, bug fixes, and documentation.
 
 - **More automation** – Exploring how much of the review and merge process can be safely automated while preserving quality.
 
