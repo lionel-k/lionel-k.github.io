@@ -7,7 +7,7 @@ categories: [openclaw, ai, team, workflow]
 
 As a technical founder, I've been exploring how AI agents can augment my workflow. Early on, I fell into the trap of treating a single AI assistant as a “do‑everything” Swiss Army knife. That monolithic approach quickly broke down: the agent would context‑switch between planning, coding, reviewing, and communicating, leading to muddled thinking, inconsistent decisions, and a frustrating lack of focus.
 
-The solution? **Build a team.** Just as a human team separates roles, you can structure multiple AI agents that each have a clear purpose and well‑defined boundaries. In this post I'll walk through the real‑world setup I’ve been using: a three‑agent team powered by [OpenClaw](https://openclaw.dev), consisting of **Kazi** (the main agent), **kazi‑pm** (the product manager), and **kazi‑dev** (the engineer). I’ll show you exactly how they’re configured, how work flows between them, and what I’ve learned from running this setup day‑to‑day.
+The solution? **Build a team.** Just as a human team separates roles, you can structure multiple AI agents that each have a clear purpose and well‑defined boundaries. In this post I'll walk through the real‑world setup I’ve been using: a three‑agent team powered by [OpenClaw](https://openclaw.ai), consisting of **Kazi** (the main agent), **kazi‑pm** (the product manager), and **kazi‑dev** (the engineer). I’ll show you exactly how they’re configured, how work flows between them, and what I’ve learned from running this setup day‑to‑day.
 
 ## 1. The problem with monolithic AI
 
@@ -160,5 +160,3 @@ If you’re exploring multi‑agent workflows with OpenClaw, I recommend startin
 Once that feels comfortable, add a third “coordinator” agent (like Kazi) to handle the handoffs and keep the conversation unified.
 
 The biggest lesson? **Treat your AI agents like a team, not a toolbox.** Give them clear responsibilities, let them specialize, and build processes that play to their strengths. The result is a more reliable, more scalable, and more enjoyable AI‑augmented workflow.
-
-You can browse the actual configuration files and workspaces in the [openclaw‑config](https://github.com/lionel‑k/openclaw‑config) repo (coming soon). If you’ve built your own agent team, I’d love to hear about your experience—reach out on [Twitter/X](https://twitter.com/lionel‑k) or [GitHub](https://github.com/lionel‑k).
