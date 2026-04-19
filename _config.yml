@@ -18,10 +18,6 @@ kramdown:
       line_numbers: false
 permalink: /blog/:title/
 
-# Pagination
-paginate: 5
-paginate_path: "/blog/page:num/"
-
 # Collections
 collections:
   posts:
@@ -31,7 +27,6 @@ collections:
 # Plugins
 plugins:
   - jekyll-feed
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-seo-tag
 

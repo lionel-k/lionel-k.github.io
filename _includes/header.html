@@ -1,7 +1,7 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper site-header__inner">
-    {%- comment -%} jekyll-paginate reuses the same source path for /blog/page2/, etc.; uniq keeps one nav entry. {%- endcomment -%}
+    {%- comment -%} uniq avoids duplicate nav entries if paths repeat. {%- endcomment -%}
     {%- assign default_paths = site.pages | map: "path" | uniq -%}
     {%- assign page_paths = site.header_pages | default: default_paths | uniq -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
