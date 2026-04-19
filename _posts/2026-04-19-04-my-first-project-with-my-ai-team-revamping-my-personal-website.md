@@ -71,7 +71,7 @@ This first project has validated the basic workflow and built confidence that an
 
 ## Wrapping up
 
-Revamping my personal website with an AI team wasn’t just about getting a nicer website—it was a live experiment in human‑AI collaboration. The results are already live at [lionel‑k.github.io](https://lionel‑k.github.io), and the workflow we’ve established is ready for bigger challenges.
+Revamping my personal website with an AI team wasn’t just about getting a nicer website—it was a live experiment in human‑AI collaboration. The results are already live at [lionel-k.github.io](https://lionel-k.github.io), and the workflow we’ve established is ready for bigger challenges.
 
 If you’re curious about applying AI agents to your own projects, I encourage you to start with something small and concrete. The personal website is a perfect first project: it’s visible, low‑risk, and gives you a chance to refine your collaboration model before tackling mission‑critical work.
 
