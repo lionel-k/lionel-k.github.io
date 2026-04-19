@@ -50,6 +50,15 @@ social:
 # Theme (GitHub Pages compatible)
 theme: minima
 
+# Nav links (explicit paths). GitHub Pages still builds with Jekyll 3.x; jekyll-paginate
+# registers page 2+ as separate Page objects with distinct paths, so auto-discovered
+# header pages list duplicates "Blog". Local Jekyll 4 often reports the same path for
+# all paginated siblings, which hides the bug. Listing pages here matches Minima's
+# recommended approach and works on both builders.
+header_pages:
+  - about.md
+  - blog/index.html
+
 # Exclude from processing
 exclude:
   - Gemfile

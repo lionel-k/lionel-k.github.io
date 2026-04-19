@@ -1,7 +1,7 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper site-header__inner">
-    {%- comment -%} uniq avoids duplicate nav entries if paths repeat. {%- endcomment -%}
+    {%- comment -%} Prefer site.header_pages in _config.yml: paginated blog paths can differ per page, so default path|uniq may still duplicate “Blog”. uniq on the final list drops any repeated paths. {%- endcomment -%}
     {%- assign default_paths = site.pages | map: "path" | uniq -%}
     {%- assign page_paths = site.header_pages | default: default_paths | uniq -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
