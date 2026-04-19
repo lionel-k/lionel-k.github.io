@@ -11,6 +11,11 @@ url: "https://lionel-k.github.io"
 # Build settings
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 permalink: /blog/:title/
 
 # Pagination
