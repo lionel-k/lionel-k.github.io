@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "Automating Our AI Team: How We Built a Self‑Assigning Workflow with OpenClaw Cron"
-date: 2026-04-23 08:00:00 +0200
+date: 2026-04-19 08:00:00 +0200
 categories: [ai, openclaw, automation, cron]
 ---
 
 ## Why automate assignment?
 
-In the [previous post]({% post_url 2026-04-22-my-first-project-with-my-ai-team-revamping-my-personal-website %}), we saw how our AI team revamped this website. Now we take the next step: removing the last manual trigger.
+In the [previous post]({% post_url 2026-04-19-04-my-first-project-with-my-ai-team-revamping-my-personal-website %}), we saw how our AI team revamped this website. Now we take the next step: removing the last manual trigger.
 
-When we built our AI team ([kazi-pm]({% post_url 2026-04-22-building-an-ai-team-with-openclaw-meet-kazi-kazi-pm-and-kazi-dev %}) and [kazi-dev]({% post_url 2026-04-22-my-first-project-with-my-ai-team-revamping-my-personal-website %})), the workflow was already efficient: the PM would create well‑specified GitHub issues, the dev would pick them up, implement the fix, and open a pull request. But there was still a manual step: **someone had to tell kazi‑dev which issues to work on next**.
+When we built our AI team ([kazi-pm]({% post_url 2026-04-19-02-building-an-ai-team-with-openclaw-meet-kazi-kazi-pm-and-kazi-dev %}) and [kazi-dev]({% post_url 2026-04-19-04-my-first-project-with-my-ai-team-revamping-my-personal-website %})), the workflow was already efficient: the PM would create well‑specified GitHub issues, the dev would pick them up, implement the fix, and open a pull request. But there was still a manual step: **someone had to tell kazi‑dev which issues to work on next**.
 
 That’s fine for a small project, but as the number of repositories and issues grows, manually triggering each batch of work becomes a bottleneck. More importantly, it breaks the “self‑running” promise of an AI team. What we really wanted was:
 
@@ -84,7 +84,7 @@ More importantly, the mental load of “what should the AI team work on next?”
 - **Start with a low‑stakes repository** – We first tested the cron workflow on our personal website repo, where mistakes are harmless. Once we trusted the system, we rolled it out to more critical projects.
 - **Keep the cursor and claim files readable** – When something goes wrong (e.g., an issue stuck `in_progress`), being able to manually edit the JSON files is a lifesaver.
 - **Monitor with lightweight alerts** – We set up a simple Telegram notification (`--notify‑channel`) that reports each new PR. That gives us visibility without needing to watch the repo constantly.
-- **Balance autonomy with oversight** – The AI team can now run fully autonomously, but we still review every PR before merging. That’s a conscious choice: automation handles the *execution*, humans keep the *quality gate*.
+- **Balance autonomy with oversight** – The AI team can now run fully autonomously, but we still review every PR before merging. That’s a conscious choice: automation handles the _execution_, humans keep the _quality gate_.
 
 ## What’s next
 
@@ -99,5 +99,3 @@ But the core is already here: a fully autonomous AI team that picks up its own w
 ## Try it yourself
 
 If you’re using OpenClaw and the `gh‑issues` skill, adding `--cron` is literally a one‑flag change. The skill handles all the state‑tracking and concurrency for you. Start with a low‑risk repo, set up a cron job, and watch your AI team start running itself.
-
-*Have you built a self‑assigning workflow with OpenClaw or another AI‑agent platform? I’d love to hear about your approach. Reach out on [LinkedIn](https://www.linkedin.com/in/lionel‑kubwimana/) or open an issue on the [repo](https://github.com/lionel‑k/lionel‑k.github.io).*
