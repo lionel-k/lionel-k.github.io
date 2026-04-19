@@ -5,8 +5,6 @@ date: 2026-04-19 08:00:00 +0200
 categories: [openclaw, ai, models]
 ---
 
-*This is post 2 of a 4-part series documenting my OpenClaw setup journey: VPS Setup → AI Model → AI Team → Model Switch.*
-
 When you start building with AI agents, the default choice is often "just use OpenAI." It's the most documented, the most integrated, and for many tasks, it works exceptionally well. But default choices come with hidden trade-offs: cost, lock‑in, and sometimes a one‑size‑fits‑all model that isn't actually the best fit for your specific needs.
 
 In this post I'll walk through the real evaluation process I used to pick a default model for my OpenClaw‑based AI team—and why I ended up switching from OpenAI to **Kimi K2.5** (delivered via NVIDIA) while keeping OpenAI models as a deliberate backup.
@@ -20,7 +18,7 @@ OpenAI’s models are fantastic, but they’re not the only game in town. Relyin
 - **Vendor lock‑in** – your workflows become tied to one company’s pricing, availability, and policy changes.
 - **Missing specialized strengths** – different models excel at different things (coding, reasoning, long‑context comprehension).
 
-The goal wasn’t to *replace* OpenAI, but to **choose the right default** for the majority of daily tasks, while keeping OpenAI available for situations where it’s worth the premium.
+The goal wasn’t to _replace_ OpenAI, but to **choose the right default** for the majority of daily tasks, while keeping OpenAI available for situations where it’s worth the premium.
 
 ## 2. Evaluation criteria
 
@@ -37,17 +35,17 @@ These criteria reflect real‑world needs: I wanted my AI agents to handle lengt
 
 OpenClaw’s plugin architecture lets me configure multiple model providers side‑by‑side. I set up the following candidates (all accessible from the same agent interface):
 
-| Model | Provider | Context Window | Max Tokens | Cost (per 1M tokens) |
-|-------|----------|----------------|------------|----------------------|
-| GPT‑5.4 | OpenAI | 128k | 16,384 | ~$5 input / $15 output |
-| GPT‑5.4 Pro | OpenAI | 128k | 16,384 | ~$10 input / $30 output |
-| GPT‑5.2 | OpenAI | 128k | 16,384 | ~$2 input / $6 output |
-| GPT‑5.1 Codex | OpenAI | 32k | 8,192 | ~$1 input / $3 output |
-| GPT‑4.1 | OpenAI | 32k | 8,192 | ~$0.5 input / $1.5 output |
-| **Kimi K2.5** | **NVIDIA (Moonshot)** | **262,144** | **8,192** | **$0** (current setup) |
-| DeepSeek‑v3.2 | OpenRouter | 128k | 8,192 | ~$0.1 input / $0.4 output |
+| Model         | Provider              | Context Window | Max Tokens | Cost (per 1M tokens)      |
+| ------------- | --------------------- | -------------- | ---------- | ------------------------- |
+| GPT‑5.4       | OpenAI                | 128k           | 16,384     | ~$5 input / $15 output    |
+| GPT‑5.4 Pro   | OpenAI                | 128k           | 16,384     | ~$10 input / $30 output   |
+| GPT‑5.2       | OpenAI                | 128k           | 16,384     | ~$2 input / $6 output     |
+| GPT‑5.1 Codex | OpenAI                | 32k            | 8,192      | ~$1 input / $3 output     |
+| GPT‑4.1       | OpenAI                | 32k            | 8,192      | ~$0.5 input / $1.5 output |
+| **Kimi K2.5** | **NVIDIA (Moonshot)** | **262,144**    | **8,192**  | **$0** (current setup)    |
+| DeepSeek‑v3.2 | OpenRouter            | 128k           | 8,192      | ~$0.1 input / $0.4 output |
 
-*Note: The zero cost for Kimi K2.5 reflects a promotional credit in my current NVIDIA account; actual pricing may apply later, but the per‑token rate is still extremely low.*
+_Note: The zero cost for Kimi K2.5 reflects a promotional credit in my current NVIDIA account; actual pricing may apply later, but the per‑token rate is still extremely low._
 
 Each model brings different trade‑offs. The OpenAI lineup is mature and well‑understood, but the context windows are limited and costs add up. DeepSeek‑v3.2 is remarkably affordable, yet its 128k window is half of Kimi’s. Kimi K2.5’s **262k context** stood out immediately—enough to hold an entire codebase or a series of long documents in a single conversation.
 
@@ -96,7 +94,12 @@ Configuring multiple models in OpenClaw is straightforward. Here’s the relevan
             "name": "Kimi K2.5",
             "reasoning": false,
             "input": ["text", "image"],
-            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
             "contextWindow": 262144,
             "maxTokens": 8192,
             "api": "openai-completions"
@@ -138,5 +141,3 @@ Looking back, here’s what I would do differently—and what I’d recommend to
 The move from OpenAI to Kimi K2.5 wasn’t about rejecting a great tool—it was about **choosing the right tool for the job**. With a 262k context window, zero cost (for now), and robust reasoning, Kimi has become the workhorse of my AI team, while OpenAI stays on the bench for specialized moments.
 
 If you’re evaluating models for your own OpenClaw (or any LLM‑based) setup, I hope this real‑world breakdown helps you make a more informed choice. The landscape changes fast, but the principles of context, cost, and capability will stay relevant.
-
-*Next up: [Building an AI Team with OpenClaw – Meet Kazi, Kazi‑PM, and Kazi‑Dev](/blog/2026/04/20/building-an-ai-team-with-openclaw).*
