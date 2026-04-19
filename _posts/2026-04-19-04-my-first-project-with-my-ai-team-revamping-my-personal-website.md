@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My First Project with My AI Team: Revamping My Personal Website"
-date: 2026-04-22 08:00:00 +0200
+date: 2026-04-19 08:00:00 +0200
 categories: [ai, openclaw, workflow]
 ---
 
@@ -37,7 +37,7 @@ In just a few days the team has already shipped several tangible improvements:
 
 - **[Add avatar](https://github.com/lionel-k/lionel-k.github.io/pull/16)** – Replaced the placeholder avatar with a real image and cleaned up unused files.
 
-- **Clean professional styling with design tokens** – Introduced CSS custom properties for colors, spacing, and typography, making the site’s visual design more consistent and easier to maintain.
+- **[Clean professional styling with design tokens](https://github.com/lionel-k/lionel-k.github.io/pull/20)** – Introduced CSS custom properties for colors, spacing, and typography, making the site’s visual design more consistent and easier to maintain.
 
 Each of these PRs was created by kazi‑dev, reviewed by me, and merged after any tweaks. The process feels remarkably similar to working with a human developer—just faster and available around the clock.
 
@@ -75,4 +75,4 @@ Revamping my personal website with an AI team wasn’t just about getting a nice
 
 If you’re curious about applying AI agents to your own projects, I encourage you to start with something small and concrete. The personal website is a perfect first project: it’s visible, low‑risk, and gives you a chance to refine your collaboration model before tackling mission‑critical work.
 
-*Thanks to kazi‑pm and kazi‑dev for their contributions to this post—and to the website itself.*
+_Thanks to kazi‑pm and kazi‑dev for their contributions to this post—and to the website itself._
