@@ -253,16 +253,29 @@ body {
   outline-offset: 3px;
 }
 
-a {
+// Minima sets a:visited to darken($brand-color); it beats plain `a` and stays illegible in dark mode.
+a,
+a:visited {
   color: var(--color-link);
   text-decoration: none;
   transition: var(--transition-link);
+}
 
-  &:hover {
-    color: var(--color-link-hover);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-  }
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+// Inline links in posts / pages: always show an underline so color is not the only cue.
+.post-content a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-skip-ink: auto;
+}
+
+.post-content a:hover {
+  text-decoration-thickness: 2px;
 }
 
 // Tables — Minima compiles fixed gray text + light zebra rows; unusable on dark backgrounds.
