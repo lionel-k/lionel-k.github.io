@@ -21,6 +21,8 @@
   --color-border: #e2e8f0;
   --color-border-strong: #cbd5e1;
   --color-accent-subtle: rgba(2, 132, 199, 0.12);
+  --color-post-row-hover: rgba(2, 132, 199, 0.09);
+  --color-table-stripe: var(--color-surface);
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #f1f5f9;
@@ -94,19 +96,23 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    // Brighter accent for focus / UI chrome; links use dedicated tokens below.
     --color-primary: #38bdf8;
     --color-primary-dark: #7dd3fc;
     --color-secondary: #94a3b8;
     --color-secondary-dark: #cbd5e1;
     --color-background: #0f172a;
     --color-surface: #1e293b;
-    --color-text: #f1f5f9;
-    --color-text-muted: #94a3b8;
-    --color-border: #334155;
-    --color-border-strong: #475569;
-    --color-accent-subtle: rgba(56, 189, 248, 0.18);
-    --color-link: var(--color-primary);
-    --color-link-hover: var(--color-primary-dark);
+    --color-text: #f8fafc;
+    --color-text-muted: #cbd5e1;
+    --color-border: #3d4f63;
+    --color-border-strong: #64748b;
+    --color-accent-subtle: rgba(56, 189, 248, 0.14);
+    --color-post-row-hover: rgba(248, 250, 252, 0.06);
+    --color-table-stripe: #1e293b;
+    // High-contrast links on navy (AA-friendly at body sizes).
+    --color-link: #bae6fd;
+    --color-link-hover: #f0f9ff;
     --color-code-background: #1e293b;
     --color-code-text: #e5e7eb;
     --color-code-inline-bg: rgba(148, 163, 184, 0.12);
@@ -131,6 +137,7 @@
 }
 
 [data-theme="light"] {
+  color-scheme: light;
   --color-primary: #0284c7;
   --color-primary-dark: #0369a1;
   --color-secondary: #64748b;
@@ -142,6 +149,8 @@
   --color-border: #e2e8f0;
   --color-border-strong: #cbd5e1;
   --color-accent-subtle: rgba(2, 132, 199, 0.12);
+  --color-post-row-hover: rgba(2, 132, 199, 0.09);
+  --color-table-stripe: var(--color-surface);
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #f1f5f9;
@@ -167,19 +176,22 @@
 }
 
 [data-theme="dark"] {
+  color-scheme: dark;
   --color-primary: #38bdf8;
   --color-primary-dark: #7dd3fc;
   --color-secondary: #94a3b8;
   --color-secondary-dark: #cbd5e1;
   --color-background: #0f172a;
   --color-surface: #1e293b;
-  --color-text: #f1f5f9;
-  --color-text-muted: #94a3b8;
-  --color-border: #334155;
-  --color-border-strong: #475569;
-  --color-accent-subtle: rgba(56, 189, 248, 0.18);
-  --color-link: var(--color-primary);
-  --color-link-hover: var(--color-primary-dark);
+  --color-text: #f8fafc;
+  --color-text-muted: #cbd5e1;
+  --color-border: #3d4f63;
+  --color-border-strong: #64748b;
+  --color-accent-subtle: rgba(56, 189, 248, 0.14);
+  --color-post-row-hover: rgba(248, 250, 252, 0.06);
+  --color-table-stripe: #1e293b;
+  --color-link: #bae6fd;
+  --color-link-hover: #f0f9ff;
   --color-code-background: #1e293b;
   --color-code-text: #e5e7eb;
   --color-code-inline-bg: rgba(148, 163, 184, 0.12);
@@ -201,24 +213,6 @@
   --shadow-hero: var(--shadow-md);
   --shadow-code-block: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
-
-// Minima SCSS variables
-$base-font-family: var(--font-family-base);
-$base-font-size: var(--font-size-base);
-$base-line-height: var(--line-height-base);
-$spacing-unit: var(--spacing-unit);
-$text-color: var(--color-text);
-$background-color: var(--color-background);
-$brand-color: var(--color-primary);
-$grey-color: var(--color-secondary);
-$grey-color-light: var(--color-border);
-$grey-color-dark: var(--color-secondary-dark);
-$table-text-align: left;
-$header-background-color: var(--color-surface);
-$footer-background-color: var(--color-surface);
-$link-color: var(--color-link);
-$link-hover-color: var(--color-link-hover);
-$code-background-color: var(--color-code-background);
 
 // Base
 html {
@@ -259,16 +253,64 @@ body {
   outline-offset: 3px;
 }
 
-a {
+// Minima sets a:visited to darken($brand-color); it beats plain `a` and stays illegible in dark mode.
+a,
+a:visited {
   color: var(--color-link);
   text-decoration: none;
   transition: var(--transition-link);
+}
 
-  &:hover {
-    color: var(--color-link-hover);
-    text-decoration: underline;
-    text-underline-offset: 0.15em;
-  }
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+// Inline links in posts / pages: always show an underline so color is not the only cue.
+.post-content a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-skip-ink: auto;
+}
+
+.post-content a:hover {
+  text-decoration-thickness: 2px;
+}
+
+// Tables — Minima compiles fixed gray text + light zebra rows; unusable on dark backgrounds.
+table {
+  color: var(--color-text);
+  border: var(--border-width) solid var(--color-border);
+}
+
+table th,
+table td {
+  border: var(--border-width) solid var(--color-border);
+  color: inherit;
+}
+
+table th {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border-color: var(--color-border-strong);
+  border-bottom-color: var(--color-border-strong);
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: var(--color-background);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: var(--color-table-stripe);
+}
+
+table > tr:nth-child(odd) {
+  background-color: var(--color-background);
+}
+
+table > tr:nth-child(even) {
+  background-color: var(--color-table-stripe);
 }
 
 // Layout
@@ -340,7 +382,8 @@ a {
   }
 }
 
-.page-link {
+// Beat Minima’s .site-nav .page-link; header is the only place this class is used.
+.site-header .site-nav .page-link {
   display: inline-block;
   padding: var(--spacing-xs) var(--spacing-sm);
   margin: 0 0.1rem;
@@ -362,7 +405,7 @@ a {
   }
 }
 
-.page-link--current {
+.site-header .site-nav .page-link--current {
   color: var(--color-text);
   font-weight: 600;
   background-color: var(--color-accent-subtle);
@@ -781,7 +824,7 @@ li {
     }
 
     &:hover {
-      background-color: var(--color-accent-subtle);
+      background-color: var(--color-post-row-hover);
     }
   }
 }
@@ -813,9 +856,95 @@ li {
   font-size: var(--font-size-lg);
   font-weight: 600;
   color: var(--color-link);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: auto;
 
   &:hover {
     color: var(--color-link-hover);
+  }
+
+  &:visited {
+    color: var(--color-link);
+  }
+}
+
+.home-posts-cta {
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+  text-align: center;
+}
+
+.home-posts-cta__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-text) !important;
+  background-color: var(--color-accent-subtle);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-decoration: none !important;
+  transition: var(--transition-link);
+  box-shadow: var(--shadow-sm);
+
+  &:hover {
+    color: var(--color-link-hover) !important;
+    border-color: var(--color-primary);
+    background-color: var(--color-surface);
+    text-decoration: none !important;
+  }
+
+  &::after {
+    content: "→";
+    font-weight: 700;
+    opacity: 0.85;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin: var(--spacing-xl) 0 var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+
+  a {
+    font-weight: 600;
+    color: var(--color-link);
+
+    &:hover {
+      color: var(--color-link-hover);
+    }
+  }
+
+  .page_number {
+    font-variant-numeric: tabular-nums;
+    color: var(--color-text);
+  }
+
+  .previous,
+  .next {
+    min-width: 5.5rem;
+    text-align: center;
+  }
+
+  span.previous,
+  span.next {
+    opacity: 0.45;
+    font-weight: 500;
   }
 }
 
