@@ -202,24 +202,6 @@
   --shadow-code-block: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-// Minima SCSS variables
-$base-font-family: var(--font-family-base);
-$base-font-size: var(--font-size-base);
-$base-line-height: var(--line-height-base);
-$spacing-unit: var(--spacing-unit);
-$text-color: var(--color-text);
-$background-color: var(--color-background);
-$brand-color: var(--color-primary);
-$grey-color: var(--color-secondary);
-$grey-color-light: var(--color-border);
-$grey-color-dark: var(--color-secondary-dark);
-$table-text-align: left;
-$header-background-color: var(--color-surface);
-$footer-background-color: var(--color-surface);
-$link-color: var(--color-link);
-$link-hover-color: var(--color-link-hover);
-$code-background-color: var(--color-code-background);
-
 // Base
 html {
   -webkit-font-smoothing: antialiased;
@@ -340,7 +322,8 @@ a {
   }
 }
 
-.page-link {
+// Beat Minima’s .site-nav .page-link; header is the only place this class is used.
+.site-header .site-nav .page-link {
   display: inline-block;
   padding: var(--spacing-xs) var(--spacing-sm);
   margin: 0 0.1rem;
@@ -362,7 +345,7 @@ a {
   }
 }
 
-.page-link--current {
+.site-header .site-nav .page-link--current {
   color: var(--color-text);
   font-weight: 600;
   background-color: var(--color-accent-subtle);
