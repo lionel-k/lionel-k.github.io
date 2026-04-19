@@ -1,11 +1,9 @@
 ---
 layout: post
 title: "Why I Switched Again - From Kimi K2.5 to DeepSeek-v3.2 on OpenRouter"
-date: 2026-04-21 08:00:00 +0200
+date: 2026-04-19 08:00:00 +0200
 categories: [openclaw, ai, models]
 ---
-
-*This is post 4 of a 4-part series documenting my OpenClaw setup journey: VPS Setup → AI Model → AI Team → Model Switch.*
 
 In the second post of this series, I explained why I initially chose **Kimi K2.5** (via NVIDIA) as the default model for my AI agent team. Fast forward a few weeks, and I’ve switched again—this time to **DeepSeek‑v3.2** delivered through OpenRouter. Why the change, and what did it involve? This post walks through the real‑world decision, the step‑by‑step configuration updates, and the practical differences I’ve observed.
 
@@ -76,6 +74,7 @@ I also updated the default primary model under `agents.defaults.model`:
 Each agent has its own YAML file that overrides the global model setting. I edited both files to reflect the new model.
 
 **`/data/.openclaw/agents/kazi-pm/agent/agent.yaml`**:
+
 ```yaml
 id: kazi-pm
 name: kazi-pm
@@ -85,6 +84,7 @@ emoji: 📋
 ```
 
 **`/data/.openclaw/agents/kazi-dev/agent/agent.yaml`**:
+
 ```yaml
 id: kazi-dev
 name: kazi-dev
@@ -115,13 +115,13 @@ I kept the NVIDIA plugin enabled for now; there’s no harm in leaving it as a b
 
 After a day of usage, here’s what I observed:
 
-| Aspect | Kimi K2.5 (NVIDIA) | DeepSeek‑v3.2 (OpenRouter) |
-|--------|-------------------|----------------------------|
-| **Context window** | 262k | 128k |
-| **Speed** | ~3–5 seconds per typical response | ~2–4 seconds per typical response |
-| **Cost** | ~$0.60 / 1M input tokens | ~$0.10 / 1M input tokens (OpenRouter’s tiered pricing) |
-| **Reasoning quality** | Strong on planning and coding tasks | Equally strong, with a slight edge on code‑generation precision |
-| **Provider stability** | Single‑provider dependency | Multi‑provider aggregation (OpenRouter can route to other backends) |
+| Aspect                 | Kimi K2.5 (NVIDIA)                  | DeepSeek‑v3.2 (OpenRouter)                                          |
+| ---------------------- | ----------------------------------- | ------------------------------------------------------------------- |
+| **Context window**     | 262k                                | 128k                                                                |
+| **Speed**              | ~3–5 seconds per typical response   | ~2–4 seconds per typical response                                   |
+| **Cost**               | ~$0.60 / 1M input tokens            | ~$0.10 / 1M input tokens (OpenRouter’s tiered pricing)              |
+| **Reasoning quality**  | Strong on planning and coding tasks | Equally strong, with a slight edge on code‑generation precision     |
+| **Provider stability** | Single‑provider dependency          | Multi‑provider aggregation (OpenRouter can route to other backends) |
 
 The **smaller context window (128k vs 262k)** hasn’t been a problem for my agent workflows. Most agent conversations stay well under 50k tokens, and the 128k limit is still generous.
 
@@ -135,7 +135,7 @@ The **smaller context window (128k vs 262k)** hasn’t been a problem for my age
 
 One of my main concerns was whether the model switch would disrupt the handoff between `kazi‑pm` and `kazi‑dev`. The two agents rely on a shared understanding of task context, issue descriptions, and acceptance criteria.
 
-Happily, the transition was seamless. Because both agents now use the *same* model, there’s even more consistency in how they interpret instructions and format outputs. The PM still writes clear, actionable issues, and the Dev still picks them up and turns them into branches and PRs—no extra configuration or prompt adjustments required.
+Happily, the transition was seamless. Because both agents now use the _same_ model, there’s even more consistency in how they interpret instructions and format outputs. The PM still writes clear, actionable issues, and the Dev still picks them up and turns them into branches and PRs—no extra configuration or prompt adjustments required.
 
 ## 8. Lessons learned – when to reconsider a model choice, how to test without disrupting workflow
 
@@ -154,5 +154,3 @@ Happily, the transition was seamless. Because both agents now use the *same* mod
 Switching from Kimi K2.5 to DeepSeek‑v3.2 turned out to be a low‑effort, high‑reward change. It cut costs, kept performance on par (or slightly better), and moved me to a more flexible provider setup. Most importantly, it didn’t disrupt the daily workflow of my AI agent team.
 
 If you’re running OpenClaw with a single‑provider model, take a look at OpenRouter’s offerings—you might already have a better option sitting in your config file, waiting to be activated.
-
-*This is the final post in a four‑part series about self‑hosting OpenClaw. You can read the previous posts: [VPS Setup](/blog/self-hosting-openclaw-on-a-vps-a-complete-setup-guide), [AI Model Configuration](/blog/choosing-the-right-ai-model-why-i-switched-from-openai-to-kimi-k2-5), and [Building an AI Team](/blog/building-an-ai-team-with-openclaw-meet-kazi-kazi-pm-and-kazi-dev).*
