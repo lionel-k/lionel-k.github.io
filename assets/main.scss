@@ -21,6 +21,7 @@
   --color-border: #e2e8f0;
   --color-border-strong: #cbd5e1;
   --color-accent-subtle: rgba(2, 132, 199, 0.12);
+  --color-post-row-hover: rgba(2, 132, 199, 0.09);
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #f1f5f9;
@@ -94,19 +95,22 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    // Brighter accent for focus / UI chrome; links use dedicated tokens below.
     --color-primary: #38bdf8;
     --color-primary-dark: #7dd3fc;
     --color-secondary: #94a3b8;
     --color-secondary-dark: #cbd5e1;
     --color-background: #0f172a;
     --color-surface: #1e293b;
-    --color-text: #f1f5f9;
-    --color-text-muted: #94a3b8;
-    --color-border: #334155;
-    --color-border-strong: #475569;
-    --color-accent-subtle: rgba(56, 189, 248, 0.18);
-    --color-link: var(--color-primary);
-    --color-link-hover: var(--color-primary-dark);
+    --color-text: #f8fafc;
+    --color-text-muted: #cbd5e1;
+    --color-border: #3d4f63;
+    --color-border-strong: #64748b;
+    --color-accent-subtle: rgba(56, 189, 248, 0.14);
+    --color-post-row-hover: rgba(248, 250, 252, 0.06);
+    // High-contrast links on navy (AA-friendly at body sizes).
+    --color-link: #bae6fd;
+    --color-link-hover: #f0f9ff;
     --color-code-background: #1e293b;
     --color-code-text: #e5e7eb;
     --color-code-inline-bg: rgba(148, 163, 184, 0.12);
@@ -131,6 +135,7 @@
 }
 
 [data-theme="light"] {
+  color-scheme: light;
   --color-primary: #0284c7;
   --color-primary-dark: #0369a1;
   --color-secondary: #64748b;
@@ -142,6 +147,7 @@
   --color-border: #e2e8f0;
   --color-border-strong: #cbd5e1;
   --color-accent-subtle: rgba(2, 132, 199, 0.12);
+  --color-post-row-hover: rgba(2, 132, 199, 0.09);
   --color-link: var(--color-primary);
   --color-link-hover: var(--color-primary-dark);
   --color-code-background: #f1f5f9;
@@ -167,19 +173,21 @@
 }
 
 [data-theme="dark"] {
+  color-scheme: dark;
   --color-primary: #38bdf8;
   --color-primary-dark: #7dd3fc;
   --color-secondary: #94a3b8;
   --color-secondary-dark: #cbd5e1;
   --color-background: #0f172a;
   --color-surface: #1e293b;
-  --color-text: #f1f5f9;
-  --color-text-muted: #94a3b8;
-  --color-border: #334155;
-  --color-border-strong: #475569;
-  --color-accent-subtle: rgba(56, 189, 248, 0.18);
-  --color-link: var(--color-primary);
-  --color-link-hover: var(--color-primary-dark);
+  --color-text: #f8fafc;
+  --color-text-muted: #cbd5e1;
+  --color-border: #3d4f63;
+  --color-border-strong: #64748b;
+  --color-accent-subtle: rgba(56, 189, 248, 0.14);
+  --color-post-row-hover: rgba(248, 250, 252, 0.06);
+  --color-link: #bae6fd;
+  --color-link-hover: #f0f9ff;
   --color-code-background: #1e293b;
   --color-code-text: #e5e7eb;
   --color-code-inline-bg: rgba(148, 163, 184, 0.12);
@@ -764,7 +772,7 @@ li {
     }
 
     &:hover {
-      background-color: var(--color-accent-subtle);
+      background-color: var(--color-post-row-hover);
     }
   }
 }
@@ -796,9 +804,17 @@ li {
   font-size: var(--font-size-lg);
   font-weight: 600;
   color: var(--color-link);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+  text-decoration-skip-ink: auto;
 
   &:hover {
     color: var(--color-link-hover);
+  }
+
+  &:visited {
+    color: var(--color-link);
   }
 }
 
