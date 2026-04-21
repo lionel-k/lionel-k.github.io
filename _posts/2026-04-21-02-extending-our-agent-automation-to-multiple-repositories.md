@@ -9,7 +9,7 @@ This week, we expanded the reach of our AI‑agent team beyond a single reposito
 
 ## 1. Why a second repo was added – real need: Lingu.Africa site and blog
 
-Our flagship project **Lingu.Africa** needed a dedicated blog site (`lingu‑africa`) alongside the **personal branding site** (`lionel‑k.github.io`). Instead of building a monolithic platform, we extended the existing dispatcher to operate on two independent repositories, ensuring:
+Our flagship project **Lingu.Africa** needed a dedicated blog site [lingu.africa](https://lingu.africa) alongside the **personal branding site** [lionel‑k.github.io](https://lionel‑k.github.io). Instead of building a monolithic platform, we extended the existing dispatcher to operate on two independent repositories, ensuring:
 
 - **Workspace isolation** – each project owns its own working directory, preventing accidental file overlap.
 - **Repository‑aware labeling** – every issue, branch, and commit attaches the correct repository slug.
