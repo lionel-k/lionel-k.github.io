@@ -21,13 +21,13 @@ The config is expressed in a single file, `automation/repos.json`:
 [
   {
     "slug": "lionel‑k/lionel‑k.github.io",
-    "installation_id": 125259445,
+    "installation_id": INSTALLATION_ID,
     "workspace_path": "/data/.openclaw/workspace/lionel‑k.github.io",
     "repository_url": "https://github.com/lionel‑k/lionel‑k.github.io"
   },
   {
     "slug": "lionel‑k/lingu_africa",
-    "installation_id": 125259445,
+    "installation_id": INSTALLATION_ID,
     "workspace_path": "/data/.openclaw/workspace/lingu_africa",
     "repository_url": "https://github.com/lionel‑k/lingu_africa"
   }
@@ -65,12 +65,14 @@ This ensures no two tasks run in parallel across the repos, maintaining a **pred
 ## 3. How repo routing and workspace isolation work – each repo has its own workspace path, explicit routing rules
 
 Each repository entry in `repos.json` includes:
+
 - `slug` → GitHub `owner/repo` identifier
 - `installation_id` → required for GitHub App API token scoping
 - `workspace_path` → absolute local path where the repository is cloned
 - `repository_url` → HTTPS URL for cloning
 
 When the dispatcher starts:
+
 1. `load_repos()` reads the config, resulting in `REPOS = […]`.
 2. A **global lock** (`/data/.openclaw/workspace/automation/kazi‑dev.lock`) ensures at most one agent instance is active across both repos.
 3. The dispatcher iterates over `REPOS`, **checking for `pm:ready` issues** in each repository, **evaluating priority**, and **selecting the oldest issue** when priority matches.
@@ -89,6 +91,7 @@ This directory switch guarantees that any shell commands executed by the agent (
 ## 4. How the dispatcher now supports both repos – single active kazi‑dev, global lock across repos, priority‑then‑oldest tie‑break
 
 The dispatcher implements a **conservative concurrency scheme**:
+
 1. **A single active `kazi‑dev` agent** runs across all repositories, acquired via a lock file.
 2. **Priority ranking**: `p0` issues are processed before `p1`,`p1` before `p2`.
 3. **Tie‑break**: among issues with the same priority, the **oldest issue** (by creation date) is chosen.
@@ -132,5 +135,3 @@ What started as a **single‑repo dispatcher** is now a **multi‑repo orchestra
 - **Routes each job to the correct repository’s workspace**.
 
 The changes we made today are **real, tested, and already running** – extending our agent automation to multiple repos wasn’t hypothetical; it was necessary and done.
-
-The full code is available at our public repository: https://github.com/lionel‑k/kazi‑dev/blob/main/automation/repos.json and https://github.com/lionel‑k/kazi‑dev/blob/main/automation/dispatcher_v2.py.
