@@ -5,7 +5,7 @@ date: 2026-04-20 08:00:00 +0200
 categories: [openclaw, ai, models]
 ---
 
-In the [last post](2026-04-19-03-why-i-switched-again-from-kimi-k2-5-to-deepseek-v3-2-on-openrouter.md), I explained why DeepSeek‑v3.2 on OpenRouter became the default model for my AI team. That switch cut costs, kept performance on par, and moved me to a more flexible provider setup. But there's another decision worth sharing: why I looked at—and then skipped—**OpenRouter/Free**, the zero‑cost tier that OpenRouter offers alongside its paid models.
+In the [last post](/blog/03-why-i-switched-again-from-kimi-k2-5-to-deepseek-v3-2-on-openrouter), I explained why DeepSeek‑v3.2 on OpenRouter became the default model for my AI team. That switch cut costs, kept performance on par, and moved me to a more flexible provider setup. But there's another decision worth sharing: why I looked at—and then skipped—**OpenRouter/Free**, the zero‑cost tier that OpenRouter offers alongside its paid models.
 
 This post explains the trade‑offs between “free” and “fit‑for‑purpose,” and why for a production‑grade AI‑agent team, **DeepSeek‑v3.2 remains the right default—even when a free option exists**.
 
@@ -51,14 +51,14 @@ Crucially, DeepSeek‑v3.2 also keeps the **single‑provider convenience** of O
 
 Let's compare the real costs:
 
-| Aspect          | OpenRouter/Free           | DeepSeek‑v3.2 (via OpenRouter)         |
-| --------------- | ------------------------- | --------------------------------------- |
-| **Monetary**    | $0                        | ~$0.10 / 1M input tokens                |
-| **Context**     | 4k‑8k tokens              | 128k tokens                             |
-| **Reasoning**   | Suitable for simple tasks | Production‑grade, multi‑step reasoning  |
-| **Latency**     | Variable, often higher    | Consistent, low‑single‑digit seconds    |
-| **Uptime**      | Best‑effort               | Service‑level guarantees                |
-| **Billing**     | None                      | Consolidated via OpenRouter             |
+| Aspect        | OpenRouter/Free           | DeepSeek‑v3.2 (via OpenRouter)         |
+| ------------- | ------------------------- | -------------------------------------- |
+| **Monetary**  | $0                        | ~$0.10 / 1M input tokens               |
+| **Context**   | 4k‑8k tokens              | 128k tokens                            |
+| **Reasoning** | Suitable for simple tasks | Production‑grade, multi‑step reasoning |
+| **Latency**   | Variable, often higher    | Consistent, low‑single‑digit seconds   |
+| **Uptime**    | Best‑effort               | Service‑level guarantees               |
+| **Billing**   | None                      | Consolidated via OpenRouter            |
 
 For my use case, the **context window alone** justifies the modest expense. Losing the ability to hold a full conversation would force a complete redesign of the agent workflow—a hidden cost vastly higher than a few dollars a month.
 
