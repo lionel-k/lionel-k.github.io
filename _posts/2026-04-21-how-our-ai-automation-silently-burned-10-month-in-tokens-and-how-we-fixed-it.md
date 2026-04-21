@@ -34,14 +34,17 @@ Automation can become a cost leak if not monitored. After noticing token consump
 Two simple changes:
 
 **a. Reduce frequency**
+
 - Changed the cron schedule from hourly to every 3 hours (`0 9,12,15,18,21 * * 1‑6`).
 - Runs/day: 13 → 5 (60% reduction).
 
 **b. Add light‑context**
+
 - Added `lightContext: true` to the cron payload, telling the agent to load only essential context.
 - Expected token load per run drops from ~97k to ~5k (~95% reduction).
 
 **Result:**
+
 - Immediate cost savings: daily cost expected to drop from $0.33 to ≈$0.13 (60% reduction).
 - Token burn per run should fall significantly once light‑context takes effect (we’re monitoring this now).
 
@@ -62,15 +65,16 @@ Two simple changes:
 
 ### OpenRouter logs (example token usage)
 
-| Run Time (Paris)     | input_tokens | output_tokens | total_tokens (billed) | Notes                              |
-| -------------------- | ------------ | ------------- | --------------------- | ---------------------------------- |
-| 2026‑04‑20 12:00     | 73,958       | 1,047         | 19,673               | Pre‑light‑context                  |
-| 2026‑04‑20 14:01     | 61,293       | 3,292         | 21,125               | First run after adding lightContext and schedule change |
-| 2026‑04‑18 12:32     | 134,728      | 12,506        | 34,030               | Baseline (older run, full context) |
+| Run Time (Paris) | input_tokens | output_tokens | total_tokens (billed) | Notes                                                   |
+| ---------------- | ------------ | ------------- | --------------------- | ------------------------------------------------------- |
+| 2026‑04‑20 12:00 | 73,958       | 1,047         | 19,673                | Pre‑light‑context                                       |
+| 2026‑04‑20 14:01 | 61,293       | 3,292         | 21,125                | First run after adding lightContext and schedule change |
+| 2026‑04‑18 12:32 | 134,728      | 12,506        | 34,030                | Baseline (older run, full context)                      |
 
 ### Cron configuration (before/after)
 
 **Before** (`/data/.openclaw/cron/jobs.json`):
+
 ```json
 {
   "schedule": {
@@ -86,6 +90,7 @@ Two simple changes:
 ```
 
 **After**:
+
 ```json
 {
   "schedule": {
@@ -113,7 +118,3 @@ Two simple changes:
 - Simple frequency reduction already cuts cost by 60%.
 - Adding `lightContext` further reduces token load per run (expected ~95%).
 - The fix is already applied and being monitored.
-
----
-
-*This blog post was automatically generated as part of our AI team workflow. For more posts about AI automation, check out the [automation category](/categories/automation).*
