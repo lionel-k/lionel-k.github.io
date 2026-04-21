@@ -11,11 +11,15 @@ layout: default
 
   {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
   {%- assign show_post_list = false -%}
-  {%- if paginator -%}
-    {%- if paginator.total_posts > 0 -%}{%- assign show_post_list = true -%}{%- endif -%}
-  {%- else -%}
-    {%- if site.posts.size > 0 -%}{%- assign show_post_list = true -%}{%- endif -%}
-  {%- endif -%}
+  {%- comment -%}
+    post_limit (optional): show only the N newest posts (e.g. landing page).
+    Omit post_limit on /blog/ to list every post. Set show_posts: false to hide the list.
+  {%- endcomment -%}
+  {%- unless page.show_posts == false -%}
+    {%- if site.posts.size > 0 -%}
+      {%- assign show_post_list = true -%}
+    {%- endif -%}
+  {%- endunless -%}
 
   {%- if show_post_list -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
@@ -34,8 +38,22 @@ layout: default
         {%- endif -%}
       </li>
         {%- endfor -%}
+      {%- elsif page.post_limit -%}
+        {%- for post in site.posts limit: page.post_limit -%}
+      <li>
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+        {%- endfor -%}
       {%- else -%}
-        {%- for post in site.posts limit:5 -%}
+        {%- for post in site.posts -%}
       <li>
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         <h3>
@@ -50,6 +68,18 @@ layout: default
         {%- endfor -%}
       {%- endif -%}
     </ul>
+
+    {%- if page.post_limit -%}
+    <p class="home-posts-cta">
+      <a class="home-posts-cta__link" href="{{ '/blog/' | relative_url }}">
+        {%- if site.posts.size > page.post_limit -%}
+          View all {{ site.posts.size }} posts
+        {%- else -%}
+          Browse the full blog
+        {%- endif -%}
+      </a>
+    </p>
+    {%- endif -%}
 
     {%- if paginator and paginator.total_pages > 1 -%}
     <nav class="pagination" aria-label="Blog pagination">

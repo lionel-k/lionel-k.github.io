@@ -1,5 +1,7 @@
 ---
 layout: home
+post_limit: 5
+list_title: Latest posts
 ---
 
 <section class="hero">
