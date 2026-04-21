@@ -27,4 +27,4 @@ This repository hosts my personal website — a simple, clean, and professional 
 
 ## License
 
-MIT
+MIT<!-- Test comment: dispatcher validation 2026-04-21 12:10:40 -->
