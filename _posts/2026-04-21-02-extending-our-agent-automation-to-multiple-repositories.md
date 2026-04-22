@@ -3,13 +3,14 @@ layout: post
 title: "Extending our open‑source agent automation to multiple repositories"
 date: 2026-04-21 08:00:00 +0200
 categories: [openclaw, ai, automation, github, agents, multi‑repo]
+description: "How we extended our AI‑agent automation from one repository to two, with workspace isolation, global locking, and priority‑based dispatch—keeping the system simple and reliable."
 ---
 
 This week, we expanded the reach of our AI‑agent team beyond a single repository. What started as an automation experiment for `lionel‑k.github.io` now runs across two separate repos, each with its own workspace, routing rules, and priority queue.
 
 ## 1. Why a second repo was added – real need: Lingu.Africa site and blog
 
-Our flagship project **Lingu.Africa** needed a dedicated blog site [lingu.africa](https://lingu.africa) alongside the **personal branding site** [lionel‑k.github.io](https://lionel‑k.github.io). Instead of building a monolithic platform, we extended the existing dispatcher to operate on two independent repositories, ensuring:
+Our flagship project **Lingu.Africa** needed a dedicated blog site [lingu.africa](https://lingu.africa) alongside the **personal branding site** [lionel.kubwimana.me](https://lionel.kubwimana.me). Instead of building a monolithic platform, we extended the existing dispatcher to operate on two independent repositories, ensuring:
 
 - **Workspace isolation** – each project owns its own working directory, preventing accidental file overlap.
 - **Repository‑aware labeling** – every issue, branch, and commit attaches the correct repository slug.
@@ -36,7 +37,7 @@ The config is expressed in a single file, `automation/repos.json`:
 
 ## 2. What changed in the automation – dispatcher loading repos.json, repo‑aware label/branch operations, spawn‑line fix
 
-`dispatcher_v2.py` became **repo‑aware**, loading the repository list at startup:
+`dispatcher_v2.py` (covered in our earlier post about [automating our AI team with OpenClaw Cron]({% post_url 2026-04-19-05-automating-our-ai-team-how-we-built-a-self-assigning-workflow-with-openclaw-cron %})) became **repo‑aware**, loading the repository list at startup:
 
 ```python
 def load_repos():
