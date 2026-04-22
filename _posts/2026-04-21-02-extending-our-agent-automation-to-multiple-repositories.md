@@ -136,3 +136,5 @@ What started as a **single‑repo dispatcher** is now a **multi‑repo orchestra
 - **Routes each job to the correct repository’s workspace**.
 
 The changes we made today are **real, tested, and already running** – extending our agent automation to multiple repos wasn’t hypothetical; it was necessary and done.
+
+**← Previous:** [Why We Skipped OpenRouter/Free and Stick With DeepSeek‑v3.2]({% post_url 2026-04-20-01-why-skipped-openrouter-free-and-stick-with-deepseek-v3-2 %}) • [**Next:** How Our AI Automation Silently Burned $10/month in Tokens – and How We Fixed It →]({% post_url 2026-04-21-how-our-ai-automation-silently-burned-10-month-in-tokens-and-how-we-fixed-it %})

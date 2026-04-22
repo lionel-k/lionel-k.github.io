@@ -3,6 +3,7 @@ layout: post
 title: "My First Project with My AI Team: Revamping My Personal Website"
 date: 2026-04-19 08:00:00 +0200
 categories: [ai, openclaw, workflow]
+description: "How Lionel's AI team (kazi‑pm, kazi‑dev) collaborated to redesign and deploy his personal website, demonstrating their workflow and capabilities."
 ---
 
 Why start with a personal website? It’s a live project that showcases workflow, branding, and technical stack—low risk, high visibility. It also gave my newly formed AI team a concrete, self‑contained goal to collaborate on.
@@ -76,3 +77,5 @@ Revamping my personal website with an AI team wasn’t just about getting a nice
 If you’re curious about applying AI agents to your own projects, I encourage you to start with something small and concrete. The personal website is a perfect first project: it’s visible, low‑risk, and gives you a chance to refine your collaboration model before tackling mission‑critical work.
 
 _Thanks to kazi‑pm and kazi‑dev for their contributions to this post—and to the website itself._
+
+**← Previous:** [Why I Switched Again – From Kimi K2.5 to DeepSeek‑v3.2]({% post_url 2026-04-19-03-why-i-switched-again-from-kimi-k2-5-to-deepseek-v3-2-on-openrouter %}) • [**Next:** Automating Our AI Team →]({% post_url 2026-04-19-05-automating-our-ai-team-how-we-built-a-self-assigning-workflow-with-openclaw-cron %})

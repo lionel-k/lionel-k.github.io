@@ -3,6 +3,7 @@ layout: post
 title: "How Our AI Automation Silently Burned $10/month in Tokens – and How We Fixed It"
 date: 2026-04-21 08:00:00 +0200
 categories: [openclaw, ai, automation, cost]
+description: "A cautionary tale about an unexpected token‑burning bug in OpenClaw automation, with steps to diagnose and prevent similar issues."
 ---
 
 ## Hook
@@ -118,3 +119,5 @@ Two simple changes:
 - Simple frequency reduction already cuts cost by 60%.
 - Adding `lightContext` further reduces token load per run (expected ~95%).
 - The fix is already applied and being monitored.
+
+**← Previous:** [Extending our open‑source agent automation to multiple repositories]({% post_url 2026-04-21-02-extending-our-agent-automation-to-multiple-repositories %})

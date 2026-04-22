@@ -3,6 +3,7 @@ layout: post
 title: "Automating Our AI Team: How We Built a Self‑Assigning Workflow with OpenClaw Cron"
 date: 2026-04-19 08:00:00 +0200
 categories: [ai, openclaw, automation, cron]
+description: "A technical walkthrough of automating AI agent task assignment using OpenClaw's cron integration, including lock files, label updates, and scheduling."
 ---
 
 ## Why automate assignment?
@@ -101,3 +102,5 @@ But the core idea is already working on this site: the agents can pick up `pm:re
 ## Try it yourself
 
 If you’re using OpenClaw and the `gh‑issues` skill, adding `--cron` is literally a one‑flag change. The skill handles all the state‑tracking and concurrency for you. Start with a low‑risk repo, set up a cron job, and watch your AI team start running itself.
+
+**← Previous:** [My First Project with My AI Team: Revamping My Personal Website]({% post_url 2026-04-19-04-my-first-project-with-my-ai-team-revamping-my-personal-website %}) • [**Next:** Why We Skipped OpenRouter/Free and Stick With DeepSeek‑v3.2 →]({% post_url 2026-04-20-01-why-skipped-openrouter-free-and-stick-with-deepseek-v3-2 %})
