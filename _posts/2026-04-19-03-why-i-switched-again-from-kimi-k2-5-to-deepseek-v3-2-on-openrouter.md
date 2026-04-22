@@ -3,9 +3,10 @@ layout: post
 title: "Why I Switched Again - From Kimi K2.5 to DeepSeek-v3.2 on OpenRouter"
 date: 2026-04-19 08:00:00 +0200
 categories: [openclaw, ai, models]
+description: "Follow‑up post detailing the reasons for switching from Kimi K2.5 to DeepSeek‑v3.2 on OpenRouter, with configuration steps and performance evaluation."
 ---
 
-In the second post of this series, I explained why I initially chose **Kimi K2.5** (via NVIDIA) as the default model for my AI agent team. Fast forward a few weeks, and I’ve switched again—this time to **DeepSeek‑v3.2** delivered through OpenRouter. Why the change, and what did it involve? This post walks through the real‑world decision, the step‑by‑step configuration updates, and the practical differences I’ve observed.
+In the [second post of this series]({% post_url 2026-04-19-01-choosing-the-right-ai-model-why-i-switched-from-openai-to-kimi-k2-5 %}), I explained why I initially chose **Kimi K2.5** (via NVIDIA) as the default model for my AI agent team. Fast forward a few weeks, and I’ve switched again—this time to **DeepSeek‑v3.2** delivered through OpenRouter. Why the change, and what did it involve? This post walks through the real‑world decision, the step‑by‑step configuration updates, and the practical differences I’ve observed.
 
 ## 1. Why we initially chose Kimi K2.5 – a quick recap
 
@@ -154,3 +155,5 @@ Happily, the transition was seamless. Because both agents now use the _same_ mod
 Switching from Kimi K2.5 to DeepSeek‑v3.2 turned out to be a low‑effort, high‑reward change. It cut costs, kept performance on par (or slightly better), and moved me to a more flexible provider setup. Most importantly, it didn’t disrupt the daily workflow of my AI agent team.
 
 If you’re running OpenClaw with a single‑provider model, take a look at OpenRouter’s offerings—you might already have a better option sitting in your config file, waiting to be activated.
+
+**← Previous:** [Building an AI Team with OpenClaw]({% post_url 2026-04-19-02-building-an-ai-team-with-openclaw-meet-kazi-kazi-pm-and-kazi-dev %}) • [**Next:** My First Project with My AI Team: Revamping My Personal Website →]({% post_url 2026-04-19-04-my-first-project-with-my-ai-team-revamping-my-personal-website %})

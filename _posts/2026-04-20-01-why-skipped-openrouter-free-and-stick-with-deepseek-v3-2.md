@@ -3,6 +3,7 @@ layout: post
 title: "Why We Skipped OpenRouter/Free and Stick With DeepSeek‑v3.2"
 date: 2026-04-20 08:00:00 +0200
 categories: [openclaw, ai, models]
+description: "An investigation into why skipping OpenRouter's free tier and sticking with DeepSeek‑v3.2 on the paid tier leads to more stable results."
 ---
 
 In the [last post](/blog/03-why-i-switched-again-from-kimi-k2-5-to-deepseek-v3-2-on-openrouter), I explained why DeepSeek‑v3.2 on OpenRouter became the default model for my AI team. That switch cut costs, kept performance on par, and moved me to a more flexible provider setup. But there's another decision worth sharing: why I looked at—and then skipped—**OpenRouter/Free**, the zero‑cost tier that OpenRouter offers alongside its paid models.

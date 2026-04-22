@@ -3,6 +3,7 @@ layout: post
 title: "Setting up OpenClaw with Hostinger's One‑Click Installation – A Complete Setup Guide"
 date: 2026-04-18 08:00:00 +0200
 categories: [openclaw, hostinger, tutorial]
+description: "A step‑by‑step tutorial on deploying OpenClaw using Hostinger's managed platform, from installation to verification and troubleshooting."
 ---
 
 ## 1. Why choose Hostinger's managed OpenClaw? (Managed vs self‑hosted, convenience vs control, zero maintenance)
@@ -279,3 +280,5 @@ That’s the whole process distilled into nine repeatable steps. Bookmark this l
 ---
 
 Happy automating! 🚀
+
+**← Previous:** [Welcome to My Journey]({% post_url 2026-04-17-welcome-to-my-journey %}) • [**Next:** Choosing the Right AI Model →]({% post_url 2026-04-19-01-choosing-the-right-ai-model-why-i-switched-from-openai-to-kimi-k2-5 %})

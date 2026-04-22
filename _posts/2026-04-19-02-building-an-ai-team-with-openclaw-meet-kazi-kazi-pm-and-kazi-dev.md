@@ -3,6 +3,7 @@ layout: post
 title: "Building an AI Team with OpenClaw - Meet Kazi, kazi-pm, and kazi-dev"
 date: 2026-04-19 08:00:00 +0200
 categories: [openclaw, ai, team, workflow]
+description: "Introduction to Lionel's AI team (Kazi, kazi‑pm, kazi‑dev), each with specialized roles, configured on OpenClaw as separate agents for different tasks."
 ---
 
 As a technical founder, I've been exploring how AI agents can augment my workflow. Early on, I fell into the trap of treating a single AI assistant as a “do‑everything” Swiss Army knife. That monolithic approach quickly broke down: the agent would context‑switch between planning, coding, reviewing, and communicating, leading to muddled thinking, inconsistent decisions, and a frustrating lack of focus.
@@ -160,3 +161,5 @@ If you’re exploring multi‑agent workflows with OpenClaw, I recommend startin
 Once that feels comfortable, add a third “coordinator” agent (like Kazi) to handle the handoffs and keep the conversation unified.
 
 The biggest lesson? **Treat your AI agents like a team, not a toolbox.** Give them clear responsibilities, let them specialize, and build processes that play to their strengths. The result is a more reliable, more scalable, and more enjoyable AI‑augmented workflow.
+
+**← Previous:** [Choosing the Right AI Model]({% post_url 2026-04-19-01-choosing-the-right-ai-model-why-i-switched-from-openai-to-kimi-k2-5 %}) • [**Next:** Why I Switched Again – From Kimi K2.5 to DeepSeek‑v3.2 →]({% post_url 2026-04-19-03-why-i-switched-again-from-kimi-k2-5-to-deepseek-v3-2-on-openrouter %})
