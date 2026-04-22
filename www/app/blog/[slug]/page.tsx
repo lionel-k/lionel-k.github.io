@@ -1,8 +1,23 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 import BlogPostClient from "@/app/blog/[slug]/BlogPostClient";
 import { getBlogPost, getAllBlogPosts } from "@/lib/blog";
+import { SITE_URL } from "@/lib/constants";
 import { getTruncatedTitle, getTruncatedDescription } from "@/lib/metadata";
+import type { BlogPost } from "@/lib/types/blog";
+
+function getBlogPostPublicUrls(post: BlogPost) {
+  const baseUrl = new URL(SITE_URL).origin;
+  const authorName =
+    typeof post.author === "string" ? post.author : post.author.name;
+  const imageUrl = post.coverImage.startsWith("http")
+    ? post.coverImage
+    : `${baseUrl}${post.coverImage}`;
+  // Match Next.js trailingSlash: true and alternates.canonical
+  const articleUrl = `${baseUrl}/blog/${post.slug}/`;
+  return { baseUrl, articleUrl, imageUrl, authorName };
+}
 
 interface StaticParams {
   slug: string;
@@ -30,13 +45,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       };
     }
 
-    const authorName =
-      typeof post.author === "string" ? post.author : post.author.name;
-
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
-    const imageUrl = post.coverImage.startsWith("http")
-      ? post.coverImage
-      : `${baseUrl}${post.coverImage}`;
+    const { baseUrl, articleUrl, imageUrl, authorName } =
+      getBlogPostPublicUrls(post);
 
     const imageMetadata = {
       url: imageUrl,
@@ -44,9 +54,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       height: 630,
       alt: post.title,
     };
-
-    // Full URL for the article
-    const articleUrl = `${baseUrl}/blog/${post.slug}`;
 
     const metaTitle = getTruncatedTitle(post.title);
     const metaDescription = getTruncatedDescription(post.description);
@@ -104,7 +111,42 @@ export default async function BlogPostPage({ params }: Props) {
       notFound();
     }
 
-    return <BlogPostClient post={post} />;
+    const { articleUrl, imageUrl, authorName } = getBlogPostPublicUrls(post);
+
+    const blogPostingJsonLd = {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.description,
+      image: imageUrl,
+      author: {
+        "@type": "Person" as const,
+        name: authorName,
+      },
+      publisher: {
+        "@type": "Organization" as const,
+        name: "Lingu Africa",
+      },
+      datePublished: post.date,
+      dateModified: post.date,
+      mainEntityOfPage: {
+        "@type": "WebPage" as const,
+        "@id": articleUrl,
+      },
+    };
+
+    return (
+      <>
+        <Script
+          id={`blogpost-schema-${post.slug}`}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(blogPostingJsonLd),
+          }}
+        />
+        <BlogPostClient post={post} />
+      </>
+    );
   } catch (error) {
     console.error("Error loading blog post:", error);
     notFound();
