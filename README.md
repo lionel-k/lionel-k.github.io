@@ -35,25 +35,11 @@ Analytics settings are defined in `_config.yml`:
 
 ```yaml
 umami:
-  website_id: "PERSONAL_WEBSITE_ID"  # Replace with actual website ID from Umami dashboard
+  website_id: "f1519f41-6b8d-44ad-900d-bf9921c2c4eb"
   host_url: "https://analytics.lingu.africa"
 ```
 
-The website ID is specific to the personal website property in Umami. To get the ID:
-
-1. Log into the Umami dashboard at https://analytics.lingu.africa
-2. Navigate to the personal website property
-3. Copy the website ID from the property settings
-4. Update `_config.yml` with the correct ID
-
-### Environment Variables (Optional)
-
-For local development or different environments, you can override the configuration via environment variables:
-
-- `UMAMI_WEBSITE_ID`: Overrides `site.umami.website_id`
-- `UMAMI_HOST_URL`: Overrides `site.umami.host_url`
-
-These can be set in GitHub Pages as repository secrets for production builds.
+To use a different Umami property or host, edit those values in `_config.yml`.
 
 ### Verification
 
