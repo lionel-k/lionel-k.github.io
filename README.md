@@ -1,4 +1,4 @@
-# lionel-k.github.io
+# lionel.kubwimana.me
 
 My personal branding website and blog.
 
