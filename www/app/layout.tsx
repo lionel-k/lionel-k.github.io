@@ -26,6 +26,9 @@ export const metadata: Metadata = {
       "en-US": "https://www.lingu.africa/",
       "x-default": "https://www.lingu.africa/",
     },
+    types: {
+      "application/rss+xml": "/feed.xml",
+    },
   },
   other: {
     "geo.region": "US",
