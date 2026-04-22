@@ -51,7 +51,6 @@ Crucially, DeepSeek‑v3.2 also keeps the **single‑provider convenience** of O
 
 Let's compare the real costs:
 
-<<<<<<< HEAD
 | Aspect | OpenRouter/Free | DeepSeek‑v3.2 (via OpenRouter) |
 | --------------- | ------------------------- | --------------------------------------- |
 | **Monetary** | $0 | ~$0.10 / 1M input tokens |
@@ -60,17 +59,6 @@ Let's compare the real costs:
 | **Latency** | Variable, often higher | Consistent, low‑single‑digit seconds |
 | **Uptime** | Best‑effort | Service‑level guarantees |
 | **Billing** | None | Consolidated via OpenRouter |
-=======
-| Aspect | OpenRouter/Free | DeepSeek‑v3.2 (via OpenRouter) |
-| ------------- | ------------------------- | -------------------------------------- |
-| **Monetary** | $0 | ~$0.10 / 1M input tokens |
-| **Context** | 4k‑8k tokens | 128k tokens |
-| **Reasoning** | Suitable for simple tasks | Production‑grade, multi‑step reasoning |
-| **Latency** | Variable, often higher | Consistent, low‑single‑digit seconds |
-| **Uptime** | Best‑effort | Service‑level guarantees |
-| **Billing** | None | Consolidated via OpenRouter |
-
-> > > > > > > origin/main
 
 For my use case, the **context window alone** justifies the modest expense. Losing the ability to hold a full conversation would force a complete redesign of the agent workflow—a hidden cost vastly higher than a few dollars a month.
 
@@ -82,9 +70,4 @@ Switching defaults doesn't mean abandoning the free tier. I've kept the free‑p
 
 OpenRouter/Free is a generous offering for the right stage—just not for mine. By investing a few dollars a month in DeepSeek‑v3.2, I keep my AI team running smoothly, my context windows long, and my automation reliable.
 
-<<<<<<< HEAD
 If you're at a similar crossroads, remember: the cheapest model isn't always the most cost‑effective. Sometimes paying a little ensures you get a lot more done.
-=======
-If you're at a similar crossroads, remember: the cheapest model isn't always the most cost‑effective. Sometimes paying a little ensures you get a lot more done.
-
-> > > > > > > origin/main
