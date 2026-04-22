@@ -21,4 +21,7 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
+  {%- if jekyll.environment == 'production' and site.umami.website_id -%}
+    <script defer src="{{ site.umami.host_url | default: 'https://analytics.lingu.africa' }}/script.js" data-website-id="{{ site.umami.website_id }}" data-host-url="{{ site.umami.host_url | default: 'https://analytics.lingu.africa' }}"></script>
+  {%- endif -%}
 </head>

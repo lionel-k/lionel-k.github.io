@@ -47,6 +47,11 @@ author:
 social:
   github: lionel-k
 
+# Umami Analytics
+umami:
+  website_id: "PERSONAL_WEBSITE_ID"
+  host_url: "https://analytics.lingu.africa"
+
 # Theme (GitHub Pages compatible)
 theme: minima
 
