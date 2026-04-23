@@ -107,11 +107,11 @@ Now we have a pipeline that can handle that volume, but we’re not there yet. T
 
 ## Current reference examples
 
-See [issue #199][issue‑199] and [issue #200][issue‑200] in lionel‑k/lingu_africa. These are the baseline. All future blog issues must follow this structure.
+We validated the pipeline on **two full reference issues** in our private content repository. They are the baseline: every field filled (including the cover‑image prompt), sources tied to real pages, and the same structure we expect for every new topic. We keep using them as the pattern, not a one‑off experiment.
 
 **We are not yet at the weekly 5–6‑issue workflow.** The weekly batch production is a possible step, but we’re not there yet.
 
-Today’s baseline: **2 reference issues** that work, reliably, for ≤45 minutes each.
+Today’s baseline: **2 reference issues** that work, reliably, for ≤45 minutes each—proof inside our repo, not a link we can hand you.
 
 ## What’s next for our pipeline
 
@@ -119,7 +119,7 @@ We still rely on a **single cron job** for the dispatcher.
 
 Next steps:
 
-1. **Multi‑repo polling** – one job that rotates through `lionel‑k/lingu_africa`, `lionel‑k/kazi‑dev`, `lionel‑k/kazi‑rsr`, etc.
+1. **Multi‑repo polling** – one job that round‑robins our private content monorepo and the agent repositories (kazi‑dev, kazi‑rsr, and others) instead of a single hard‑coded project.
 2. **Priority queues** – GitHub milestones, custom tags.
 3. **Timeout handling** – currently, dead issues are just skipped. We want retry‑failover with a fallback model, longer deadline.
 4. **Weekly blog‑planning batch** – today it’s one‑off. Weekly batch is not required yet, but the pipeline can handle it. The foundation is solid.
@@ -130,13 +130,6 @@ And yes, we plan to scale to a weekly 5–6 post schedule, with each batch passi
 
 ## See the pipeline in action
 
-Watch the PRs merge into our lingu_africa repository. Issues labeled `pm:ready` become PRs within 45 minutes.
+The proof that matters to readers is **on this site**: new posts, each with its own cover image, and a path from `pm:ready` to merged work that stays under our 45‑minute target. We still route changes through private pull requests and human review, but you do not need a repository URL to see that the loop is real—the published posts are the output.
 
-Watch the images appear in the PR.
-
-Watch the reviews.
-
-**It’s real.** It started with two reference issues. Now it’s a published‑post pipeline that **runs itself**.
-
-[issue‑199]: //github.com/lionel‑k/lingu_africa/issues/199
-[issue‑200]: //github.com/lionel‑k/lingu_africa/issues/200
+**It’s real.** It started with two internal reference issues. What you can click is what ships here: a blog that **runs itself** on the agent side, with us on quality.
