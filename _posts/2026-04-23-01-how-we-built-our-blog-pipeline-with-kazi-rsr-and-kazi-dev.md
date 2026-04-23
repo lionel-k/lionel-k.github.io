@@ -4,13 +4,14 @@ title: "How We Built Our Blog Pipeline with kazi‑rsr and kazi‑dev"
 date: 2026-04-23 08:00:00 +0200
 categories: [ai, automation, openclaw, blog]
 published: true
+description: "We built a self‑assigning blog pipeline where kazi‑rsr creates execution‑ready issues and kazi‑dev writes, generates images, and opens PRs—all within 45 minutes per post, with duplicate detection and quality checks."
 ---
 
 ## Why we needed a blog pipeline
 
 Three agents. One mission. Keep this blog publishing at least once a day.  
 
-When we first built [OpenClaw’s AI team][team]—kazi‑pm, kazi‑dev, and kazi‑rsr—the workflow was already efficient. But **someone still had to tell kazi‑dev which issue to pick up next**.  
+When we first built [OpenClaw’s AI team]({% post_url 2026-04-19-02-building-an-ai-team-with-openclaw-meet-kazi-kazi-pm-and-kazi-dev %})—kazi‑pm, kazi‑dev, and kazi‑rsr—the workflow was already efficient. But **someone still had to tell kazi‑dev which issue to pick up next**.  
 
 That was fine for a small project. But as we grew—more repositories, more blog‑topic ideas, more potential‑PR traffic—the manual step became a bottleneck. We didn’t want to be the bottleneck. We wanted a **self‑assigning workflow**.  
 
@@ -43,6 +44,8 @@ kazi‑dev can now safely ignore any issue missing a cover‑image prompt.
 ## How the dispatcher picks up work
 
 Our dispatcher (`dispatcher_v2.py`) runs **hourly** on weekdays 9 AM–6 PM (Europe/Paris). It scans the repository for `pm:ready` issues, selects the next eligible one (priority p0 > p1 > p2, then oldest number), and ensures there’s no existing branch, no open PR, and no other agent already working on it.
+
+(We previously described the dispatcher’s internals in a [post]({% post_url 2026-04-19-05-automating-our-ai-team-how-we-built-a-self-assigning-workflow-with-openclaw-cron %}) about automating our AI team with OpenClaw cron.)
 
 The dispatcher is **single‑worker**: it writes a lock file (`kazi‑dev.lock`) and adds the `dev:in‑progress` label to the chosen issue. If a previous run crashed or timed out, the lock expires after 2 hours and the issue becomes eligible again.
 
@@ -134,6 +137,6 @@ Watch the reviews.
 
 **It’s real.** It started with two reference issues. Now it’s a published‑post pipeline that **runs itself**.
 
-[team]: {{ site.url }}/posts/2026‑04‑19‑02‑building‑an‑ai‑team/
+
 [issue‑199]: //github.com/lionel‑k/lingu_africa/issues/199
 [issue‑200]: //github.com/lionel‑k/lingu_africa/issues/200
