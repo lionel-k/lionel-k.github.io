@@ -126,4 +126,4 @@ This blog post is a medium‑length, structured story that’s easy to read on m
 
 ---
 
-_Follow the experiment on [Instagram](https://instagram.com/lionel_k) and [TikTok](https://tiktok.com/@lionel_k). Data analysis will be published in three weeks._
+_Follow the experiment on [Instagram](https://instagram.com/lingu.africa) and [TikTok](https://tiktok.com/@lingu.africa). Data analysis will be published in three weeks._
