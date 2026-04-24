@@ -4,7 +4,7 @@ title: "Social Media Marketing Experiment for Kirundi Bilingual Books"
 date: 2026-04-24 08:00:00 +0200
 categories: [marketing, social-media, kirundi, books, experiment]
 published: true
-description: "A practical, real‑world marketing experiment designed to grow sales of Kirundi bilingual books using Instagram and TikTok. We test 3 video types across 6 emotional angles to discover what actually converts."
+description: "A practical, real‑world marketing experiment designed to grow sales of Kirundi bilingual books using Instagram and TikTok. I test 3 video types across 6 emotional angles to discover what actually converts."
 ---
 
 ## The Problem
@@ -15,11 +15,11 @@ Posting regularly on social media but not knowing what actually drives sales is 
 
 ## The Insight
 
-One type of content was already working: videos showing multiple books one after another. Instead of reinventing content every day, we asked: “What if the goal wasn’t to create more… but to do more with less?”
+One type of content was already working: videos showing multiple books one after another. Instead of reinventing content every day, I asked: “What if the goal wasn’t to create more… but to do more with less?”
 
 ## The Strategy
 
-We designed a simple, almost deceptively simple system:
+I designed a simple, almost deceptively simple system:
 
 a. Keep the format constant
 
@@ -49,7 +49,7 @@ For children’s books:
 
 ## The System
 
-Here’s how we execute:
+Here’s how I execute it:
 
 - 3 videos
 - 6 angles
@@ -65,13 +65,13 @@ Each post includes:
 
 ## The Constraint (Important)
 
-Why does the system work? Because we commit to no changes during the experiment. No reacting emotionally to early results. Focus on learning, not optimizing too early.
+Why does the system work? Because I commit to no changes during the experiment. No reacting emotionally to early results. Focus on learning, not optimizing too early.
 
 **Key idea:** “The goal is not to win every post. The goal is to understand what wins.”
 
 ## The Measurement
 
-We track everything in a simple Google Sheet:
+I track everything in a simple Google Sheet:
 
 - views
 - likes
@@ -81,7 +81,7 @@ We track everything in a simple Google Sheet:
 - follows
 - (optional: sales signals)
 
-We also track:
+I also track:
 
 - angle
 - hook
@@ -89,7 +89,7 @@ We also track:
 
 ## The Hypothesis
 
-What we expect to discover:
+What I expect to discover:
 
 - 1–2 angles will outperform the rest
 - some hooks will convert significantly more
@@ -99,7 +99,7 @@ What we expect to discover:
 
 ## The Next Step (Open Loop)
 
-In 3 weeks, we’ll:
+In 3 weeks, I’ll:
 
 - analyze the data
 - identify winning angles
