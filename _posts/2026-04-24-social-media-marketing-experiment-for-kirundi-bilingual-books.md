@@ -23,27 +23,27 @@ We designed a simple, almost deceptively simple system:
 
 a. Keep the format constant
 
-* Same type of video: showing all books in sequence
+- Same type of video: showing all books in sequence
 
 b. Introduce controlled variation
 
 Two variables:
 
 1. **Video Types** (3 variations)
-   * A → fast / dynamic (energy, abundance)
-   * B → slow / emotional (identity, fear)
-   * C → practical / usage (inside pages, real use)
+   - A → fast / dynamic (energy, abundance)
+   - B → slow / emotional (identity, fear)
+   - C → practical / usage (inside pages, real use)
 
 2. **Angles** (6 emotional drivers)
 
 For children’s books:
 
-* action
-* fear
-* simplicity
-* child (future)
-* practical
-* pride
+- action
+- fear
+- simplicity
+- child (future)
+- practical
+- pride
 
 **Key idea:** “Same video. Different meaning.”
 
@@ -51,17 +51,17 @@ For children’s books:
 
 Here’s how we execute:
 
-* 3 videos
-* 6 angles
-* 3 weeks
-* 1 post per day (Mon–Sat)
-* Total: 18 posts
+- 3 videos
+- 6 angles
+- 3 weeks
+- 1 post per day (Mon–Sat)
+- Total: 18 posts
 
 Each post includes:
 
-* a strong hook (first 2 seconds)
-* a short caption (SEO + clarity)
-* a subtle CTA (Amazon)
+- a strong hook (first 2 seconds)
+- a short caption (SEO + clarity)
+- a subtle CTA (Amazon)
 
 ## The Constraint (Important)
 
@@ -73,27 +73,27 @@ Why does the system work? Because we commit to no changes during the experiment.
 
 We track everything in a simple Google Sheet:
 
-* views
-* likes
-* comments
-* saves
-* shares
-* follows
-* (optional: sales signals)
+- views
+- likes
+- comments
+- saves
+- shares
+- follows
+- (optional: sales signals)
 
 We also track:
 
-* angle
-* hook
-* video type
+- angle
+- hook
+- video type
 
 ## The Hypothesis
 
 What we expect to discover:
 
-* 1–2 angles will outperform the rest
-* some hooks will convert significantly more
-* some videos will outperform others
+- 1–2 angles will outperform the rest
+- some hooks will convert significantly more
+- some videos will outperform others
 
 **Key idea:** “80% of results will likely come from 20% of the variations.”
 
@@ -101,20 +101,20 @@ What we expect to discover:
 
 In 3 weeks, we’ll:
 
-* analyze the data
-* identify winning angles
-* scale what works
-* cut what doesn’t
+- analyze the data
+- identify winning angles
+- scale what works
+- cut what doesn’t
 
 **Teaser:** “This is not a content strategy. It’s the beginning of a system.”
 
 ## Key Messages to Highlight
 
-* Simplicity scales
-* Repetition is not laziness, it’s strategy
-* Content = testing system, not creativity only
-* Emotion (angles) matters more than format
-* Data > intuition
+- Simplicity scales
+- Repetition is not laziness, it’s strategy
+- Content = testing system, not creativity only
+- Emotion (angles) matters more than format
+- Data > intuition
 
 ## Deliverable
 
@@ -126,4 +126,4 @@ This blog post is a medium‑length, structured story that’s easy to read on m
 
 ---
 
-*Follow the experiment on [Instagram](https://instagram.com/lionel_k) and [TikTok](https://tiktok.com/@lionel_k). Data analysis will be published in three weeks.*
+_Follow the experiment on [Instagram](https://instagram.com/lionel_k) and [TikTok](https://tiktok.com/@lionel_k). Data analysis will be published in three weeks._
