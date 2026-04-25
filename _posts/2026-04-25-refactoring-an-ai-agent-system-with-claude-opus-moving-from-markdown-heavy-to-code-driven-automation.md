@@ -1,22 +1,10 @@
 ---
 layout: post
 title: "Refactoring an AI-agent system with Claude Opus: moving from markdown-heavy to code-driven automation"
-description: "How I used Claude Opus to audit and refactor an OpenClaw‑based multi‑agent system, moving from fragile markdown‑heavy instructions to deterministic Python and Bash scripts."
-category: "Automation"
-coverImage: "/images/blog/refactoring-an-ai-agent-system-with-claude-opus-moving-from-markdown-heavy-to-code-driven-automation.webp"
-author: "Lionel Kubwimana"
 date: 2026-04-25 08:00:00 +0200
+categories: [ai-agents, automation, openclaw, refactoring, claude-opus]
 published: true
-highlights:
-  - "Using Claude Opus as a senior‑engineer reviewer"
-  - "The limits of markdown‑heavy agent behavior"
-  - "Moving to Python and Bash for determinism"
-  - "Real prompts and concrete refactoring steps"
-tags:
-  - "ai-agents"
-  - "automation"
-  - "refactoring"
-  - "claude-opus"
+description: "How I used Claude Opus to audit and refactor an OpenClaw‑based multi‑agent system, moving from fragile markdown‑heavy instructions to deterministic Python and Bash scripts."
 ---
 
 ## Opening the OpenClaw system in Cursor
