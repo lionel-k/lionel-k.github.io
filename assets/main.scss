@@ -959,6 +959,34 @@ li {
   margin-bottom: var(--spacing-xl);
 }
 
+// Categories under title (enabled via site.minima.show_post_categories in _config.yml)
+.post-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  align-items: center;
+  list-style: none;
+  margin: var(--spacing-sm) 0 0;
+  padding: 0;
+  font-size: var(--font-size-sm);
+}
+
+.post-category {
+  margin: 0;
+}
+
+.post-category__text {
+  display: inline-block;
+  padding: 0.2em 0.55em;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-accent-subtle);
+  border: var(--border-width) solid var(--color-border);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+}
+
 .post-title {
   letter-spacing: var(--letter-spacing-tight);
 }
