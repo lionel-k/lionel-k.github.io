@@ -13,6 +13,14 @@ layout: default
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
       {%- endif -%}</p>
+    {%- if site.minima and site.minima.show_post_categories and page.categories and page.categories.size > 0 -%}
+    {%- assign _cat_label = site.minima.post_categories_label | default: "Categories" -%}
+    <ul class="post-categories" aria-label="{{ _cat_label | escape }}">
+      {%- for c in page.categories -%}
+      <li class="post-category"><span class="post-category__text">{{ c | replace: "-", " " | escape }}</span></li>
+      {%- endfor -%}
+    </ul>
+    {%- endif -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

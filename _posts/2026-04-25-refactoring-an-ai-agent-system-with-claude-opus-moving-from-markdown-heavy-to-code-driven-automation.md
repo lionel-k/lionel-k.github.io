@@ -1,0 +1,82 @@
+---
+layout: post
+title: "Refactoring an AI-agent system with Claude Opus: moving from markdown-heavy to code-driven automation"
+date: 2026-04-25 08:00:00 +0200
+categories: [ai-agents, automation, openclaw, refactoring, claude-opus]
+published: true
+description: "How I used Claude Opus to audit and refactor an OpenClaw‑based multi‑agent system, moving from fragile markdown‑heavy instructions to deterministic Python and Bash scripts."
+---
+
+## Opening the OpenClaw system in Cursor
+
+When an AI‑agent system grows organically, it often accumulates patches and workarounds that eventually start to hurt. That’s exactly what happened with my OpenClaw‑based multi‑agent setup—Kazi, kazi‑dev, kazi‑pm, and kazi‑rsr—which I had been using to automate GitHub workflows, blog production, and dispatcher‑based issue pickup across two repositories.
+
+After months of incremental tweaks, the system still worked, but it became brittle. Issues would occasionally stick in a `dev:in‑progress` state, lock files clung after failures, and the dispatcher sometimes skipped work because it incorrectly thought an agent was still active. PRs could be opened without required assets (such as cover images), and cleanup after timeouts was inconsistent. The GitHub CRUD glue code felt fragile.
+
+Instead of another ad‑fix, I decided to ask Claude Opus to act as a senior‑staff‑engineer reviewer. I opened Cursor, navigated to the automation folder, and wrote:
+
+> “I want you to review this automation system like a senior staff engineer.
+>
+> Context: This is an OpenClaw‑based multi‑agent setup with Kazi, kazi‑dev, kazi‑pm, kazi‑rsr. It automates GitHub issue/PR workflows, blog production across 2 repos, dispatcher‑based issue pickup, and GitHub App auth via curl/scripts.
+>
+> The system currently works, but it was patched incrementally and I suspect:
+>
+> - duplicated logic,
+> - weak abstractions,
+> - mixed sources of truth,
+> - junior‑level glue code,
+> - fragile recovery behavior,
+> - too many scripts/files/paths.
+>
+> I do **NOT** want a rewrite. I want a safe refactor plan that preserves current behavior.”
+
+## Asking Claude Opus to review it like a senior engineer
+
+Claude Opus responded with a structured audit. It first identified the primary sources of truth—`AGENTS.md`, `SOUL.md`, `GITHUB‑AUTH.md`, and `automation/ship.py`—and pointed out that the same information was being repeated across Markdown files, shell scripts, and Python modules. It flagged the duplication of authentication logic (two different token‑fetching scripts) and the intermixing of high‑level orchestration with low‑level GitHub API calls.
+
+The most valuable insight was about **Markdown‑heavy agent behavior**. Each agent’s instructions were stored in lengthy Markdown files that the model had to parse on every turn. This led to several problems:
+
+- **Instruction drift** – small edits in one place were not reflected elsewhere.
+- **Context‑window waste** – large blocks of static documentation consumed precious tokens.
+- **Ambiguous branching** – decision logic embedded in prose made the agent’s next step unpredictable.
+
+Claude Opus noted that a system that relies on natural‑language prompts for every operational step is inherently non‑deterministic. It recommended moving as much logic as possible into executable scripts (Python or Bash) that the agent could call with well‑defined inputs and outputs.
+
+## Discovering the limits of Markdown‑heavy agent behavior
+
+The audit revealed concrete examples of the Markdown‑heavy approach breaking down:
+
+1.  **Label updates** – agents were occasionally using `curl` to apply GitHub labels directly, bypassing the central `automation/ship.py` module that already handled label transitions.
+2.  **Cover‑image generation** – the blog‑post workflow required the agent to run `image_generate` with specific arguments, but the instructions were buried inside a paragraph of prose, leading to mistakes in size or format.
+3.  **Branch‑name collisions** – the dispatcher used a simple `issue‑{number}` naming convention, but agents sometimes created their own branch names, causing stale‑branch detection to fail.
+
+These weren’t bugs in the agents themselves; they were symptoms of a system that asked a large language model to re‑interpret complex prose instructions on every iteration. The more the system grew, the more those interpretations diverged.
+
+## Refactoring toward Python and Bash for determinism
+
+Armed with Claude Opus’s recommendations, I refactored the automation stack around three principles:
+
+1.  **One source of truth per repository** – instead of cloning repos inside each agent’s workspace, all agents now share a single clone at the workspace root. This eliminated duplicate copies and path confusion.
+2.  **Centralized GitHub operations** – every GitHub API call (labels, PRs, issues) now flows through `automation/gh.py`. Agents never hand‑roll `curl` commands or JWT tokens.
+3.  **Deterministic scripts for repeatable tasks** – the `automation/ship.py` module encapsulates the entire “pick up an issue → ship a PR” lifecycle. The agent’s loop is now trivial:
+
+    ```bash
+    python3 -m automation.ship start    --issue N
+    # read NEXT:, do what it says
+    python3 -m automation.ship continue --issue N
+    # repeat until DONE: or ERROR:
+    ```
+
+The script enforces preflight checks (cover‑image size, unique hash, front‑matter completeness) and guarantees that label transitions happen atomically with the corresponding Git operations. As a result:
+
+- **Stuck issues disappeared** – the dispatcher now reliably detects when a branch truly is stale.
+- **Cover‑image errors are caught before the PR is opened** – the script validates dimensions and uniqueness.
+- **Agent context is smaller and more focused** – the model receives a single, unambiguous `NEXT:` instruction instead of paragraphs of background.
+
+## The outcome
+
+Today, the same multi‑agent system runs with fewer surprises. Issues move predictably from `pm:ready` → `dev:in‑progress` → `dev:review` → `dev:done`. Blog posts get the right cover images, and PRs are opened only after all validations pass.
+
+The key lesson wasn’t to write less documentation—it was to move the documentation that described **process** into **code** that enforces that process. Markdown is excellent for explaining why, but Python and Bash are better at guaranteeing how.
+
+If you’re building or maintaining an AI‑agent automation stack, I encourage you to ask a model like Claude Opus to audit it as a senior engineer. Look for places where natural‑language instructions are doing the work that a few lines of deterministic code could do more reliably. The result will be a system that still feels magical but no longer feels fragile.

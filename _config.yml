@@ -55,6 +55,13 @@ umami:
 # Theme (GitHub Pages compatible)
 theme: minima
 
+# Minima extensions (consumed by _layouts/post.html; see also assets/main.scss)
+minima:
+  # When true, show each post’s Jekyll `categories` under the date (per-post front matter).
+  show_post_categories: true
+  # Accessible name for the category list; shown as aria-label on the <ul>
+  post_categories_label: "Categories"
+
 # Nav links (explicit paths). GitHub Pages still builds with Jekyll 3.x; jekyll-paginate
 # registers page 2+ as separate Page objects with distinct paths, so auto-discovered
 # header pages list duplicates "Blog". Local Jekyll 4 often reports the same path for
