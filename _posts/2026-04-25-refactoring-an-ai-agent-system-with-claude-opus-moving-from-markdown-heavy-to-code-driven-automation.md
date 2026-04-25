@@ -17,7 +17,6 @@ tags:
   - "automation"
   - "refactoring"
   - "claude-opus"
-readingTime: "6 min"
 ---
 
 ## Opening the OpenClaw system in Cursor
