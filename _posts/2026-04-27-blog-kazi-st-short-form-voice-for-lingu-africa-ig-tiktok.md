@@ -44,4 +44,3 @@ If you run a heritage‑language project or a community‑focused blog, consider
 ---
 
 kazi‑st is now live for every new Lingu.Africa blog post. Follow [@lingu.africa](https://instagram.com/lingu.africa) on Instagram and TikTok to see the short‑form moments in action.
-
