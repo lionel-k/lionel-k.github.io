@@ -1,20 +1,11 @@
 ---
-title: "Blog: kazi-st — short-form voice for Lingu.Africa (IG & TikTok)"
+layout: post
+title: "kazi-st — short-form voice for Lingu.Africa (IG & TikTok)"
 description: "Introducing kazi-st, the dedicated short-form voice that translates Lingu.Africa's deep blog posts into relatable Instagram and TikTok moments for heritage-language families."
-category: "Blog"
-
+date: 2026-04-27 08:00:00 +0200
+categories: ["blog", "short-form", "social-media", "lingu-africa", "kazi-st"]
+published: true
 author: "Lionel Kubwimana"
-date: "2026-04-27"
-highlights:
-  - "Bridges long-form blog depth to fast-scroll platforms"
-  - "Uses a parent-to-parent, friend-to-friend voice that respects reader experience"
-  - "Designed to keep short-form content tied to real stories, not ads or advice"
-tags:
-  - "blog"
-  - "short-form"
-  - "social-media"
-  - "lingu-africa"
-  - "kazi-st"
 ---
 
 In today's fast-scroll world, where Instagram and TikTok feeds move at lightning speed, deep blog posts about heritage languages can easily get lost. That’s why we built **kazi‑st**—a dedicated short‑form voice that turns Lingu.Africa’s long‑form articles into relatable moments for heritage‑language families.
