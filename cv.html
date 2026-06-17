@@ -1,0 +1,60 @@
+---
+layout: null
+permalink: /cv/
+title: CV
+pdf_url: https://cdn.jsdelivr.net/gh/lionel-k/cv@main/variants/pafen/pafen.pdf
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | escape }} — {{ site.title | escape }}</title>
+    <meta
+      name="description"
+      content="Curriculum vitae of {{ site.author.name | escape }}."
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: #525659;
+      }
+
+      .cv-frame {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .cv-fallback {
+        box-sizing: border-box;
+        min-height: 100%;
+        padding: 2rem;
+        font-family: system-ui, sans-serif;
+        text-align: center;
+        background: #f8fafc;
+        color: #0f172a;
+      }
+
+      .cv-fallback a {
+        color: #0284c7;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      class="cv-frame"
+      src="{{ page.pdf_url }}"
+      title="{{ page.title | escape }}"
+    ></iframe>
+    <noscript>
+      <div class="cv-fallback">
+        <p><a href="{{ page.pdf_url }}">Open CV (PDF)</a></p>
+      </div>
+    </noscript>
+  </body>
+</html>
