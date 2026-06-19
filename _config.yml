@@ -9,6 +9,9 @@ baseurl: ""
 url: "https://lionel.kubwimana.me"
 
 # Build settings
+# Post dates without an explicit offset are interpreted in this zone; "today" for
+# future-post filtering matches Europe/Paris (not UTC on GitHub Actions runners).
+timezone: Europe/Paris
 markdown: kramdown
 highlighter: rouge
 kramdown:
