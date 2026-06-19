@@ -60,9 +60,15 @@ The render script dispatches on `reel.type`:
 
 ```typescript
 switch (reel.type) {
-  case "blog":  await renderBlogReel(reel, outDir); break;
-  case "image": await renderImageReel(reel, outDir, force); break;
-  case "video": await renderVideoReel(reel, outDir); break;
+  case "blog":
+    await renderBlogReel(reel, outDir);
+    break;
+  case "image":
+    await renderImageReel(reel, outDir, force);
+    break;
+  case "video":
+    await renderVideoReel(reel, outDir);
+    break;
 }
 ```
 
@@ -148,5 +154,3 @@ The `render-pilot.ts` debug script predates the new pipeline and still partially
 Any solo builder with a content-heavy product faces the same daily posting grind. The usual solutions are either manual (unsustainable) or a paid SaaS tool (another dependency, another bill, another login).
 
 A static video factory like this one — git-backed content files, nightly CI, no cloud transcoding bill, runs in under a minute on GitHub-hosted runners — is cheap to build and free to run. The hard part is not the code. It is deciding that the repetitive work is worth automating at all, then committing to the boring infrastructure choices that make it run every night without your attention.
-
-The PR for this feature is [here](https://github.com/lionel-k/lingu_africa/pull/345). The content files and scripts are all in the open.
